@@ -141,6 +141,20 @@ body {
   height: 310px !important;
 }
 
+.scrolled-content {
+  display: flex;
+}
+
+.scrolled-text {
+  flex: 0 0 35%;
+  padding-right: 6%;
+}
+
+.scrolled-images {
+  flex: 0 0 60%;
+  position: relative;
+}
+
 .description-devices {
   display: flex;
   justify-content: center;

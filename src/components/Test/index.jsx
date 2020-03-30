@@ -11,7 +11,7 @@ import TestFooter from "./TestFooter.jsx";
 import testScrollContent from "../../assets/scroll-content/test";
 
 
-export default class Extension extends Component {
+export default class Test extends Component {
 
   state = {
     bgImgId: 0,
@@ -33,20 +33,20 @@ export default class Extension extends Component {
   }
 
   scrollPageView = () => {
-    const pos = window.pageYOffset;
+    const position = window.pageYOffset;
 
-    testScrollContent.forEach((content, i, arr) => {
-      const el = content.parentRef;
-      const nextItem = arr[i + 1] && arr[i + 1].parentRef;
+    testScrollContent.forEach((content, index, arr) => {
+      const element = content.parentRef;
+      const nextItem = arr[index + 1] && arr[index + 1].parentRef;
 
       if (
-        this.state.imgId !== i &&
-        pos + 250 + this.imgTopOffset >= el.offsetTop &&
-        (nextItem ? pos + 250 + this.imgTopOffset < nextItem.offsetTop : true)
+        this.state.imgId !== index &&
+        position + 250 + this.imgTopOffset >= element.offsetTop &&
+        (nextItem ? position + 250 + this.imgTopOffset < nextItem.offsetTop : true)
       ) {
         this.setState(old => ({
           bgImgId: old.imgId,
-          imgId: i
+          imgId: index
         }));
       }
     });
@@ -54,8 +54,16 @@ export default class Extension extends Component {
 
   render() {
 
+    // As imgTopOffset is used in scrollPage View, insert this styled block into separate constant
+    const scrolledImagesStyle = {
+      width: "100%",
+      position: "sticky",
+      left: 0,
+      top: this.imgTopOffset
+    }
+
     return (
-      <div style={{ fontFamily: "Montserrat" }}>
+      <div>
         <Header text={this.props.text} />
 
         <TestHeader text={this.props.text} />
@@ -66,15 +74,15 @@ export default class Extension extends Component {
 
         <div className="Description-Scroll">
 
-          <div style={{ display: "flex" }}>
+          <div className="scrolled-content">
 
-            <div style={{ flex: "0 0 35%", paddingRight: "6%" }}>
-              {testScrollContent.map((content, i) => {
+            <div className="scrolled-text">
+              {testScrollContent.map((content, index) => {
                 return (
                   <div
                     className="extension-block"
                     ref={ref => (content.parentRef = ref)}
-                    key={i}
+                    key={index}
                   >
                     <div className="content">
                       <div className="extension-header content">
@@ -93,14 +101,9 @@ export default class Extension extends Component {
               })}
             </div>
 
-            <div style={{ flex: "0 0 60%", position: "relative" }}>
+            <div className="scrolled-images">
               <div
-                style={{
-                  width: "100%",
-                  position: "sticky",
-                  left: 0,
-                  top: this.imgTopOffset
-                }}
+                style={scrolledImagesStyle}
               >
                 <img
                   className="scrolled-item"
