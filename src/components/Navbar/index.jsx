@@ -134,6 +134,15 @@ export default class Navbar extends React.Component {
                                             {this.props.text.test}
                                         </Link>
                                     </li>
+                                    <li className="menu-item">
+                                        <Link
+                                            to="test_2/"
+                                            className="menu-nav__link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.test_2}
+                                        </Link>
+                                    </li>
                                     <li>
                                         <a
                                             className="menu-nav__link start-button"

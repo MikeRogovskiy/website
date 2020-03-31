@@ -6,6 +6,7 @@ import Privacy from '../Privacy';
 import Extension from "../Extension";
 import Player from "../Player";
 import Test from "../Test";
+import Test_2 from "../Test_2";
 import Prices from "../Prices";
 import Blog from "../Blog";
 import NotFound from '../NotFound';
@@ -46,6 +47,7 @@ export default class App extends React.Component {
             <Privacy path="/privacy" text={this.props.text}></Privacy>
             <Extension path="/extension/" text={this.props.text} lang={this.props.language}/>
             <Test path="/test/" text={this.props.text} lang={this.props.language}/>
+            <Test_2 path="/test_2/" text={this.props.text} lang={this.props.language}/>
             <Player path="/player/" text={this.props.text} />
             <Prices path="/prices/" text={this.props.text} />
             <Blog path="/blog/*"></Blog>

@@ -7,6 +7,7 @@
       "extension": "Read & Learn",
       "player": "Watch & Learn",
       "test": "Test",
+      "test_2": "Test 2",
       "ourApp": "EasyLang应用",
       "HowItWork": "怎么运作",
       "learningSources": "学习的来源",
@@ -127,6 +128,15 @@
           "2-SlideTestBody": "test test test test test test test test test test",
           "3-SlideTestHeader": "Test Header",
           "3-SlideTestBody": "test test test test test test test test test test",
+
+          
+        "TEST_2_PAGE": "TEST_PAGE",
+        "1-SlideTest_2_Header": "Test Header № 2",
+        "1-SlideTest_2_Body": "test test test test test test test test test test",
+        "2-SlideTest_2_Header": "Test Header № 2",
+        "2-SlideTest_2_Body": "test test test test test test test test test test",
+        "3-SlideTest_2_Header": "Test Header № 2",
+        "3-SlideTest_2_Body": "test test test test test test test test test test",
 
         "PLANS_PAGE": "PLANS_PAGE",
         "PlansTitle": "We are a free OpenSource startup that strives to help people!",
