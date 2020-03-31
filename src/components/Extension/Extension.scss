@@ -4,6 +4,9 @@ body {
   margin: 0;
 }
 
+.scrolled-page {
+  font-family: "Montserrat", sans-serif !important;
+}
 
 @media (min-width: 1760px) {
   .Description-Scroll {
@@ -139,6 +142,20 @@ body {
 
 .content {
   height: 310px !important;
+}
+
+.scrolled-content {
+  display: flex;
+}
+
+.scrolled-text {
+  flex: 0 0 35%;
+  padding-right: 6%;
+}
+
+.scrolled-images {
+  flex: 0 0 60%;
+  position: relative;
 }
 
 .description-devices {
@@ -352,10 +369,6 @@ body {
     }
   }
 }
-
-/* 13 - Extension Description */
-
-/* Get Extension top button */
 
 /* Get Extension bottom button */
 
