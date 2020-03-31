@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import ReactHtmlParser from "react-html-parser";
 import Header from "../Header";
+import '../../i18n';
+// the hoc to set multilangeage
+import { withNamespaces } from 'react-i18next';
+
 
 import "./Test_2.scss";
 
@@ -67,6 +71,17 @@ export default class Test_2 extends Component {
         <Header text={this.props.text} />
 
         <Test_2_Header text={this.props.text} />
+
+        <div>
+          <h1>
+            Test multilang text goes here:
+          </h1>
+          <h3></h3>
+          <h3></h3>
+          <h3></h3>
+          <h3></h3>
+          <h3></h3>
+        </div>
 
         <div className="scrolled-content-header">
           <h1>{this.getLangText("ScrolledContentHeader")}</h1>
