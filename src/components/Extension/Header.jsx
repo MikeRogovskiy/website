@@ -5,7 +5,7 @@ import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
 
 import "./Extension.scss";
 
-const ExtensionHeader = (props) => {
+const Header = (props) => {
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
@@ -37,4 +37,4 @@ const ExtensionHeader = (props) => {
 
 };
 
-export default ExtensionHeader;
+export default Header;

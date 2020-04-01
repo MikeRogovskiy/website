@@ -6,6 +6,8 @@
       "ourBlog": "博客",
       "extension": "Read & Learn",
       "player": "Watch & Learn",
+      "test": "Test",
+      "test_2": "Test 2",
       "ourApp": "EasyLang应用",
       "HowItWork": "怎么运作",
       "learningSources": "学习的来源",
@@ -134,6 +136,6 @@
         "1-SuperPremiumPoint": "Unlimited translates to add into your lessons",
         "2-SuperPremiumPoint": "Unlimited translations with convenient Google Translate window",
         "Free": "Free",
-        "Month": "mo",
+        "Month": "/mo",
         "Choose": "Choose"
 }

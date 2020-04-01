@@ -3,7 +3,7 @@ import ReactHtmlParser from "react-html-parser";
 
 import "./Extension.scss";
 
-const ExtensionFooter = (props) => {
+const Footer = (props) => {
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
@@ -27,4 +27,4 @@ const ExtensionFooter = (props) => {
 
 };
 
-export default ExtensionFooter;
+export default Footer;

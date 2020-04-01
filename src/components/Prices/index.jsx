@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
-import Header from "../Header";
+import MainHeader from "../MainHeader";
 
 import "./Prices.scss";
 
@@ -17,7 +17,7 @@ export default class Prices extends Component {
   render() {
     return (
       <div style={{ fontFamily: "Montserrat" }}>
-        <Header text={this.props.text} />
+        <MainHeader />
 
         <header className="getStartedPlans-header">
           <div className="wrapper-getStartedPlans">
@@ -61,7 +61,10 @@ export default class Prices extends Component {
               <div className="plans-item">
                 <div className="plans-content">
                   <h2 style={{ color: "#34D086" }}>{this.getLangText("Premium")}</h2>
-                  <h1>$7.99<span style={{ color: "silver"}}>/{this.getLangText("Month")}</span></h1>
+                  <h1><span style={{ fontSize: "1.8rem" }}>$</span>
+                        7.99
+                      <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
+                  </h1>
                   <div className="advantages-block">
                     <div className="advantages-item">
                       <img src={green_dot} />
@@ -89,7 +92,10 @@ export default class Prices extends Component {
               <div className="plans-item" style={{ border: "3.5px solid #F2C94C"}}>
                 <div className="plans-content">
                 <h2 style={{ color: "#F2994A" }}>{this.getLangText("SuperPremium")}</h2>
-                  <h1>$4.99<span style={{ color: "silver"}}>/{this.getLangText("Month")}</span></h1>
+                <h1><span style={{ fontSize: "1.8rem" }}>$</span>
+                        4.99
+                      <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
+                  </h1>
                   <p style={{ fontSize: "1.4rem" }}>{this.getLangText("PremiumSubtitle")}</p>
                   <div className="advantages-block">
                     <div className="advantages-item" style={{ marginTop: "-6%" }}>
