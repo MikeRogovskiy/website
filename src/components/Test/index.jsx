@@ -9,12 +9,11 @@ import "./Test.scss";
 import TestHeader from "./TestHeader.jsx";
 import TestFooter from "./TestFooter.jsx";
 
-import ScrollContent from "../ScrollContent";
+import WithScrollContent from "../WithScrollContent";
 
 export default class Test extends Component {
 
   getLangText = (text) => {
-    console.log(this.props)
     return ReactHtmlParser(this.props.text[text]);
   }
 
@@ -25,9 +24,8 @@ export default class Test extends Component {
         <Header text={this.props.text} />
 
         <TestHeader text={this.props.text} />
-        <ScrollContent getLangText={this.getLangText} scrollContent={testScrollContent} />
+        <WithScrollContent getLangText={this.getLangText} scrollContent={testScrollContent} />
         <TestFooter text={this.props.text} />
-
       </div>
     );
   }

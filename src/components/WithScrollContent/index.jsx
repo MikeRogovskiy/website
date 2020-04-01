@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import Fade from "react-reveal/Fade";
 
-class ScrollContent extends React.Component {
-    
+// Component that receives scroll content as props and implement scroll block
+class WithScrollContent extends React.Component {
     state = {
         bgImgId: 0,
         imgId: 0
@@ -111,4 +111,4 @@ class ScrollContent extends React.Component {
     }
 }
 
-export default ScrollContent;
+export default WithScrollContent;
