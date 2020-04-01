@@ -6,6 +6,8 @@ import ReactHtmlParser from "react-html-parser";
 import MainHeader from '../MainHeader';
 import "./NotFound.scss";
 
+import notFoundImg from "../../assets/images/404.svg";
+
 export default class NotFound extends Component {
 
 
@@ -19,7 +21,7 @@ export default class NotFound extends Component {
                 <MainHeader />
                 <div className="NotFound">
                     <div>
-                        <h1>{this.getLangText("NotFound")}</h1>
+                        <img src={notFoundImg}/>
                     </div>
 
                     <Link to="/">

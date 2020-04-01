@@ -11,6 +11,10 @@
     justify-content: center;
     align-items: center;
 
+    img {
+        width: 100%;
+    }
+
     .button-homepage {
         margin-top: 20px;
         border-radius: 34.5px;
@@ -18,5 +22,7 @@
         padding: 15px 25px;
     }
 }
+
+
 
 
