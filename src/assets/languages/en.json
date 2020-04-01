@@ -45,7 +45,8 @@
     "movieParagraph": "Watch movies in original",
     "getStarted": "Add to Chrome",
     "HomePage": "Home Page",
-    "NotFound": "Not found",
+    "NotFoundTitle": "Page is not found",
+    "NotFoundSubtitle": "Sorry, but the page you are looking for is not found. Please, make sure you have typed the correct URL.",
     "PrivacyPolicy": "Privacy Policy",
 
   

@@ -20,10 +20,9 @@ export default class NotFound extends Component {
             <Fragment>
                 <MainHeader />
                 <div className="NotFound">
-                    <div>
-                        <img src={notFoundImg}/>
-                    </div>
-
+                    <img src={notFoundImg} />
+                    <h1>{this.getLangText("NotFoundTitle")}</h1>
+                    <p>{this.getLangText("NotFoundSubtitle")}</p>
                     <Link to="/">
                         <div className="button-homepage">
                             {this.getLangText("HomePage")}
