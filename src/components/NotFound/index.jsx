@@ -3,7 +3,7 @@ import { Link } from "@reach/router";
 
 import ReactHtmlParser from "react-html-parser";
 
-import Header from '../Header';
+import MainHeader from '../MainHeader';
 import "./NotFound.scss";
 
 export default class NotFound extends Component {
@@ -16,7 +16,7 @@ export default class NotFound extends Component {
     render() {
         return (
             <Fragment>
-                <Header text={this.props.text} />
+                <MainHeader />
                 <div className="NotFound">
                     <div>
                         <h1>{this.getLangText("NotFound")}</h1>

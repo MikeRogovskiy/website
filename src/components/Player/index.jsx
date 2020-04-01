@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import ReactHtmlParser from "react-html-parser";
-import Header from "../Header";
+import MainHeader from "../MainHeader";
 
 import "./Player.scss";
 
@@ -119,8 +119,8 @@ export default class Player extends Component {
 
   render() {
     return (
-      <div style={{ fontFamily: "Montserrat" }}>
-        <Header text={this.props.text} />
+      <div>
+        <MainHeader />
         <PlayerHeader text={this.props.text} />
 
 

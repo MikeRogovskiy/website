@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import ReactHtmlParser from "react-html-parser";
-import Header from '../Header';
+import MainHeader from '../MainHeader';
 
 import './Privacy.scss';
 
@@ -14,7 +14,7 @@ export default class Privacy extends Component {
     render() {
         return (
             <Fragment>
-                <Header text={this.props.text} />
+                <MainHeader />
                 <div className="Privacy">
 
                     <br />

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
-import Header from "../Header";
+import MainHeader from "../MainHeader";
 
 import "./Prices.scss";
 
@@ -17,7 +17,7 @@ export default class Prices extends Component {
   render() {
     return (
       <div style={{ fontFamily: "Montserrat" }}>
-        <Header text={this.props.text} />
+        <MainHeader />
 
         <header className="getStartedPlans-header">
           <div className="wrapper-getStartedPlans">

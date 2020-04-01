@@ -120,22 +120,6 @@
     "10-SlidePlayerHeader": "Nothing to install!",
     "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!",
 
-    "TEST_PAGE": "TEST_PAGE",
-      "1-SlideTestHeader": "Test Header",
-      "1-SlideTestBody": "test test test test test test test test test test",
-      "2-SlideTestHeader": "Test Header",
-      "2-SlideTestBody": "test test test test test test test test test test",
-      "3-SlideTestHeader": "Test Header",
-      "3-SlideTestBody": "test test test test test test test test test test",
-
-    "TEST_2_PAGE": "TEST_PAGE",
-      "1-SlideTest_2_Header": "Test Header № 2",
-      "1-SlideTest_2_Body": "test test test test test test test test test test",
-      "2-SlideTest_2_Header": "Test Header № 2",
-      "2-SlideTest_2_Body": "test test test test test test test test test test",
-      "3-SlideTest_2_Header": "Test Header № 2",
-      "3-SlideTest_2_Body": "test test test test test test test test test test",
-
   "PLANS_PAGE": "PLANS_PAGE",
     "PlansTitle": "We are a free OpenSource startup that strives to help people!",
     "1-PlansSubtitle": "However, our company has to buy services from Google. If you enjoy Easylang, consider supporting our efforts by choosing our premium-services!",
