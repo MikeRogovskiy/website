@@ -4,7 +4,7 @@ import ReactHtmlParser from "react-html-parser";
 import "./Player.scss";
 
 
-const PlayerFooter = (props) => {
+const Footer = (props) => {
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
@@ -35,4 +35,4 @@ const PlayerFooter = (props) => {
 
 };
 
-export default PlayerFooter;
+export default Footer;

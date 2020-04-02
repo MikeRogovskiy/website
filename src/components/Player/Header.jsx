@@ -5,7 +5,7 @@ import "./Player.scss";
 
 import PlayerLogo from "../../assets/images/PlayerLogo.png";
 
-const PlayerHeader = (props) => {
+const Header = (props) => {
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
@@ -45,4 +45,4 @@ const PlayerHeader = (props) => {
 
 };
 
-export default PlayerHeader;
+export default Header;
