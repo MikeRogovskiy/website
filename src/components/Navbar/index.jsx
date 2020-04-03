@@ -132,7 +132,7 @@ export default class Navbar extends React.Component {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            {this.getLangText("GetStartedButton")}
+                                            {this.props.text.GetStartedButton}
                                         </a>
                                     </li>
                                     {/* <li>

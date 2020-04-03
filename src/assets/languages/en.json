@@ -1,12 +1,9 @@
 {
-  "HOME_PAGE": "HOME_PAGE",
+  "name": "English",
 
-    "name": "English",
+  "HomePage": {
     "home": "Home",
     "ourBlog": "Blog",
-    "products": "Products",
-    "extension": "Read & Learn",
-    "player": "Watch & Learn",
     "ourApp": "our app",
     "HowItWork": "how it works",
     "learningSources": "sources for learning",
@@ -42,13 +39,24 @@
     "movie": "movies",
     "movieParagraph": "Watch movies in original",
     "getStarted": "Add to Chrome",
+    "PrivacyPolicy": "Privacy Policy"
+  },
+
+  "NavBar": {
+    "ourBlog": "Blog",
+    "products": "Products",
+    "extension": "Read & Learn",
+    "player": "Watch & Learn",
+    "GetStartedButton": "FREE START"
+  },
+
+  "NotFoundPage": {
     "HomePage": "Home Page",
     "NotFoundTitle": "Page is not found",
-    "NotFoundSubtitle": "Sorry, but the page you are looking for is not found. Please, make sure you have typed the correct URL.",
-    "PrivacyPolicy": "Privacy Policy",
+    "NotFoundSubtitle": "Sorry, but the page you are looking for is not found. Please, make sure you have typed the correct URL."
+  },
 
-  
-  "PRODUCTS_PAGE": "PRODUCTS_PAGE",
+  "ProductsPage": {
     "ProductsHeader": "Two products for one purpose",
     "ProductsTopHeader": "We help to learn the language for free and comfortably, doing what you love - watching TV shows, reading books, or listening to music.",
     "ProductsTopText": "In order to start you need: <br>- set up extension for browser; <br>- create an account in tutor to work with content you like; ",
@@ -61,10 +69,10 @@
     "ContextTutorDescription": "— easy mechanics of simulator <br>— lessons are based on your reading and viewing history <br>— we help your contextual memory <br>— suitable for learning terms",
     "BottomInfoText": "Still have questions? <br><a href='mailto:support@easylang.by' style='font-family: Open Sans, sans-serif; color:#1E4470'><u>Сontact</u></a> us - we will surely help you!",
     "Add": "Add",
-    "GetStarted": "Start",
+    "GetStarted": "Start"
+  },
 
-
-  "EXTENSION_PAGE": "EXTENSION_PAGE",
+  "ExtensionPage": {
     "AddToChromeButton": "Add to Chrome",
     "GetStartedButton": "FREE START",
     "GetStartedText": "Handy extension <br/> in Google Chrome for learning language",
@@ -89,9 +97,10 @@
     "9-SlideExtensionHeader": "Just scan",
     "9-SlideExtensionBody": "For fast transition from PC to mobile, scan the QR code available under the “Open on mobile tab”.",
     "10-SlideExtensionHeader": "And be mobile! <br /> Don't waste your time!",
-    "10-SlideExtensionBody": "Now you can revise material anywhere, with games we created for you it will be way more fun!",
+    "10-SlideExtensionBody": "Now you can revise material anywhere, with games we created for you it will be way more fun!"
+  },
 
-  "PLAYER_PAGE": "PLAYER_PAGE",
+  "PlayerPage": {
     "GetPlayerButtonWindows": "DOWNLOAD for WINDOWS",
     "GetPlayerButtonMac": "DOWNLOAD for MAC",
     "GetStartedPlayerText": "Handy program <br/> for learning language",
@@ -117,9 +126,10 @@
     "9-SlidePlayerHeader": "To repeat words <br/> just scan QR code <br/> and go to games",
     "9-SlidePlayerBody": "In order to play scan the QR code.",
     "10-SlidePlayerHeader": "Nothing to install!",
-    "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!",
+    "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!"
+  },
 
-  "PLANS_PAGE": "PLANS_PAGE",
+  "PricesPage": {
     "PlansTitle": "We are a free OpenSource startup that strives to help people!",
     "1-PlansSubtitle": "However, our company has to buy services from Google. If you enjoy Easylang, consider supporting our efforts by choosing our premium-services!",
     "2-PlansSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort.",
@@ -137,4 +147,5 @@
     "Free": "Free",
     "Month": "/mo",
     "Choose": "Choose"
+  }
 }

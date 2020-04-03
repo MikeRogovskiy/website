@@ -34,20 +34,20 @@ export default class App extends React.Component {
           curLang={this.props.language}
           langList={this.props.langList}
           handleLanguage={this.props.handleLanguage}
-          text={this.props.text}
+          text={this.props.text.NavBar}
           noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
             u => this.props.location.pathname.match(u) !== null
           )}
         ></Navbar>
         <Router>
           <ScrollToTop path="/">
-            <Home path="/" text={this.props.text}></Home>
+            <Home path="/" text={this.props.text.HomePage}></Home>
             <Privacy path="/privacy" text={this.props.text}></Privacy>
-            <Extension path="/extension/" text={this.props.text} lang={this.props.language}/>
-            <Player path="/player/" text={this.props.text} />
-            <Prices path="/prices/" text={this.props.text} />
+            <Extension path="/extension/" text={this.props.text.ExtensionPage} lang={this.props.language}/>
+            <Player path="/player/" text={this.props.text.PlayerPage} />
+            <Prices path="/prices/" text={this.props.text.PricesPage} />
             <Blog path="/blog/*"></Blog>
-            <NotFound path="*" text={this.props.text}></NotFound>
+            <NotFound path="*" text={this.props.text.NotFoundPage}></NotFound>
             {/* <Redirect from="/" to="/" default noThrow></Redirect> */}
           </ScrollToTop>
         </Router>
