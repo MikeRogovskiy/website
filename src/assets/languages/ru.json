@@ -9,8 +9,6 @@
     "products": "Продукты",
     "extension": "Читай и Учись",
     "player": "Смотри и Учись",
-    "test": "Тест",
-    "test_2": "Тест 2",
     "ourApp": "Приложение",
     "HowItWork": "Как пользоваться",
     "learningSources": "Ресурсы",
@@ -66,7 +64,6 @@
     "BottomInfoText": "Остались вопросы? <br><a href='mailto:support@easylang.by' style='font-family: Open Sans, sans-serif; color:#1E4470'><u>Свяжитесь</u></a> с нами - мы обязательно поможем!",
     "Add": "Добавить",
     "GetStarted": "Начать работу",
-
 
   "EXTENSION_PAGE": "EXTENSION_PAGE",
     "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО",

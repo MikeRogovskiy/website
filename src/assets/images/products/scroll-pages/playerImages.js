@@ -1,21 +1,49 @@
 // Import images to description pages (that are using onScroll effect)
-import img_en_1 from '../player/en/1.png';
-import img_en_2 from '../player/en/2.png';
-import img_en_3 from '../player/en/3.png';
-import img_en_4 from '../player/en/4.png';
-import img_en_5 from '../player/en/5.png';
-import img_en_6 from '../player/en/6.png';
-import img_en_7 from '../player/en/7.png';
-import img_en_8 from '../player/en/8.png';
-import img_en_9 from '../player/en/9.png';
-import img_en_10 from '../player/en/10.png';
+import player_image_1 from '../player/1.png';
+import player_image_2 from '../player/2.png';
+import player_image_3 from '../player/3.png';
+import player_image_4 from '../player/4.png';
+import player_image_5 from '../player/5.png';
+import player_image_6 from '../player/6.png';
+import player_image_7 from '../player/7.png';
+import player_image_8 from '../player/8.png';
+import player_image_9 from '../player/9.png';
+import player_image_10 from '../player/10.png';
 
 
-//An object of player images to scroll (both en & ru). Later add addition ru images
-export const playerImages = {
-    en: [img_en_1, img_en_2, img_en_3, img_en_4, img_en_5, img_en_6, img_en_7, img_en_8, img_en_9, img_en_10],
-    ru: [img_en_1, img_en_2, img_en_3, img_en_4, img_en_5, img_en_6, img_en_7, img_en_8, img_en_9, img_en_10],
-};
+//An array of objects to scroll (image src + coordinates to display)
+export const playerImages = [
+    {
+        src: player_image_1,
+    },
+    {
+        src: player_image_2,
+    },
+    {
+        src: player_image_3,
+    },
+    {
+        src: player_image_4,
+    },
+    {
+        src: player_image_5,
+    },
+    {
+        src: player_image_6,
+    },
+    {
+        src: player_image_7,
+    },
+    {
+        src: player_image_8,
+    },
+    {
+        src: player_image_9,
+    },
+    {
+        src: player_image_10,
+    }
+];
 
 
 

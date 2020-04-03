@@ -21,7 +21,7 @@ const Header = (props) => {
                 <div className="getStartedPlayer-button">
                     <a
                         className="startedPlayer-button top"
-                        href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-mac.dmg"
+                        href="http://easylang.app/downloads/EasyLang.Player-Beta-mac.dmg"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -29,7 +29,7 @@ const Header = (props) => {
                     </a>
                     <a
                         className="startedPlayer-button top"
-                        href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
+                        href="http://easylang.app/downloads/EasyLang.Player-Beta-win.exe"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
