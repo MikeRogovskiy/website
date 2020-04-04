@@ -44,17 +44,6 @@ export default class Prices extends Component {
                       <p>{this.getLangText("2-StandartPoint")}</p>
                     </div>
                   </div>
-                  <div className="plans-button">
-                    <a
-                      className="plans-started-button top"
-                      style={{ backgroundColor: "#ECEFFF", color: "#195AA9" }}
-                      href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>{this.getLangText("Choose")}</span>
-                    </a>
-                  </div>
                 </div>
               </div>
 
@@ -65,7 +54,7 @@ export default class Prices extends Component {
                         7.99
                       <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
                   </h1>
-                  <div className="advantages-block">
+                  <div className="advantages-block-center">
                     <div className="advantages-item">
                       <img src={green_dot} />
                       <p>{this.getLangText("1-PremiumPoint")}</p>
