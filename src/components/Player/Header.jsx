@@ -10,6 +10,10 @@ const Header = (props) => {
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
     }
+    
+    const macLink = 'http://easylang.app/downloads/EasyLang.Player-Beta-mac.dmg';
+    const windowsLink = 'http://easylang.app/downloads/EasyLang.Player-Beta-win.exe';
+    
 
     return (
         <header className="getStartedPlayer-header">
@@ -21,7 +25,7 @@ const Header = (props) => {
                 <div className="getStartedPlayer-button">
                     <a
                         className="startedPlayer-button top"
-                        href="http://easylang.app/downloads/EasyLang.Player-Beta-mac.dmg"
+                        href={macLink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -29,7 +33,7 @@ const Header = (props) => {
                     </a>
                     <a
                         className="startedPlayer-button top"
-                        href="http://easylang.app/downloads/EasyLang.Player-Beta-win.exe"
+                        href={windowsLink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >

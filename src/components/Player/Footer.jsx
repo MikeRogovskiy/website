@@ -10,12 +10,15 @@ const Footer = (props) => {
         return ReactHtmlParser(props.text[text]);
     }
 
+    const macLink = 'http://easylang.app/downloads/EasyLang.Player-Beta-mac.dmg';
+    const windowsLink = 'http://easylang.app/downloads/EasyLang.Player-Beta-win.exe';
+
     return (
         <footer className="getStarted-footer">
             <div className="getStartedPlayer-button">
                 <a
                     className="startedPlayer-button top"
-                    href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-mac.dmg"
+                    href={macLink}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -23,7 +26,7 @@ const Footer = (props) => {
                 </a>
                 <a
                     className="startedPlayer-button top"
-                    href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
+                    href={windowsLink}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
