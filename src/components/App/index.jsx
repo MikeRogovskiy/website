@@ -4,6 +4,7 @@ import "./App.scss";
 import languageEn from "../../assets/languages/en.json";
 import languageRu from "../../assets/languages/ru.json";
 import languageCn from "../../assets/languages/cn.json";
+import languageSp from "../../assets/languages/sp.json";
 import Main from "../Main";
 import createHashSource from "hash-source";
 
@@ -17,7 +18,8 @@ class App extends React.Component {
     this.langStore = {
       en: languageEn,
       ru: languageRu,
-      cn: languageCn
+      cn: languageCn,
+      sp: languageSp,
     };
   }
   getUserLanguageFromInputList() {

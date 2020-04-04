@@ -39,7 +39,8 @@
     "movie": "movies",
     "movieParagraph": "Watch movies in original",
     "getStarted": "Add to Chrome",
-    "PrivacyPolicy": "Privacy Policy"
+    "PrivacyPolicy": "Privacy Policy",
+    "GetStartedButton": "FREE START"
   },
 
   "NavBar": {
