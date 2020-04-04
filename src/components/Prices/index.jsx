@@ -49,7 +49,7 @@ export default class Prices extends Component {
 
               <div className="plans-item">
                 <div className="plans-content">
-                  <h2 style={{ color: "#34D086" }}>{this.getLangText("Premium")}</h2>
+                  <h2 style={{ color: "#F2994A" }}>{this.getLangText("Premium")}</h2>
                   <h1><span style={{ fontSize: "1.8rem" }}>$</span>
                         7.99
                       <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
@@ -67,7 +67,7 @@ export default class Prices extends Component {
                   <div className="plans-button">
                     <a
                       className="plans-started-button top"
-                      style={{ backgroundColor: "#34D086" }}
+                      style={{ backgroundColor: "#F2994A" }}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -78,9 +78,9 @@ export default class Prices extends Component {
                 </div>
               </div>
 
-              <div className="plans-item" style={{ border: "3.5px solid #F2C94C"}}>
+              <div className="plans-item" style={{ border: "3.5px solid #34D086"}}>
                 <div className="plans-content">
-                <h2 style={{ color: "#F2994A" }}>{this.getLangText("SuperPremium")}</h2>
+                <h2 style={{ color: "#34D086" }}>{this.getLangText("SuperPremium")}</h2>
                 <h1><span style={{ fontSize: "1.8rem" }}>$</span>
                         4.99
                       <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
@@ -99,7 +99,7 @@ export default class Prices extends Component {
                   <div className="plans-button">
                     <a
                       className="plans-started-button top"
-                      style={{ backgroundColor: "#F2994A" }}
+                      style={{ backgroundColor: "#34D086" }}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"

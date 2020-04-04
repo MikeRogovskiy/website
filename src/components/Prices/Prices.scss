@@ -156,7 +156,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 0.5%;
-    padding-top: 12%;
+    padding-top: 15%;
     &.bottom{
       margin: 0;
       transform: translateY(-50%);
@@ -200,7 +200,13 @@ body {
     background-color: #ECEFFF;
   }
 
-  @media(max-width: "1106px") {
+  @media(max-width: "1260px") {
+    .advantages-block-center {
+      margin-top: 18% !important;
+    }
+  }
+
+  @media(max-width: "1120px") {
     .advantages-block-center {
       margin-top: 24% !important;
     }
