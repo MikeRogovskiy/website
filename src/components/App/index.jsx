@@ -17,9 +17,9 @@ class App extends React.Component {
     super(props);
     this.langStore = {
       en: languageEn,
+      sp: languageSp,
       ru: languageRu,
       cn: languageCn,
-      sp: languageSp,
     };
   }
   getUserLanguageFromInputList() {
