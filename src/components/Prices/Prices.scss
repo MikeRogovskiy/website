@@ -77,6 +77,10 @@ body {
     align-items: center;
   }
 
+  .header-block {
+    height: 27%;
+  }
+
   .plans-content h2 { 
     color: #759CCB;
     font-style: normal;
@@ -109,13 +113,7 @@ body {
   }
 
   .advantages-block {
-    margin-top: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .advantages-block-center {
+    height: 40%;
     margin-top: 15%;
     display: flex;
     flex-direction: column;
@@ -126,7 +124,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 5% 0;
+    padding: 3% 0;
     border-top: 1.9px solid #ECEFFF;
   }
 
@@ -149,14 +147,14 @@ body {
     letter-spacing: 1.41px;
   }
 
-  .plans-button {
+  .button-block {
     font-family: "Montserrat", sans-serif !important;
-    width: 100%;
     border-top: 1.9px solid #ECEFFF;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 0.5%;
-    padding-top: 15%;
+    margin-top: -5%;
+    padding-top: 25%;
     &.bottom{
       margin: 0;
       transform: translateY(-50%);
@@ -198,18 +196,6 @@ body {
   .blue-button {
     color: #195AA9;
     background-color: #ECEFFF;
-  }
-
-  @media(max-width: "1260px") {
-    .advantages-block-center {
-      margin-top: 18% !important;
-    }
-  }
-
-  @media(max-width: "1120px") {
-    .advantages-block-center {
-      margin-top: 24% !important;
-    }
   }
 
 
@@ -288,7 +274,7 @@ body {
       margin-right: 7%;
     }
 
-    .plans-button {
+    .button-block {
       font-family: "Montserrat", sans-serif !important;
       width: 100%;
       display: flex;

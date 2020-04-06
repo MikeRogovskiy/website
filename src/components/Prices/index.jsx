@@ -30,10 +30,12 @@ export default class Prices extends Component {
 
             <div className="plans-container">
 
-              <div className="plans-item">
+              <container className="plans-item">
                 <div className="plans-content">
-                  <h2>{this.getLangText("Standart")}</h2>
-                  <h1>{this.getLangText("Free")}</h1>
+                  <div className="header-block">
+                    <h2>{this.getLangText("Standart")}</h2>
+                    <h1>{this.getLangText("Free")}</h1>
+                  </div>
                   <div className="advantages-block">
                     <div className="advantages-item">
                       <img src={blue_dot} />
@@ -45,26 +47,28 @@ export default class Prices extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </container>
 
-              <div className="plans-item">
+              <container className="plans-item">
                 <div className="plans-content">
-                  <h2 style={{ color: "#F2994A" }}>{this.getLangText("Premium")}</h2>
-                  <h1><span style={{ fontSize: "1.8rem" }}>$</span>
+                  <div className="header-block">
+                    <h2 style={{ color: "#F2994A" }}>{this.getLangText("Premium")}</h2>
+                    <h1><span style={{ fontSize: "1.8rem" }}>$</span>
                         7.99
                       <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
-                  </h1>
-                  <div className="advantages-block-center">
+                    </h1>
+                  </div>
+                  <div className="advantages-block">
                     <div className="advantages-item">
-                      <img src={green_dot} />
+                      <img src={yellow_dot} />
                       <p>{this.getLangText("1-PremiumPoint")}</p>
                     </div>
                     <div className="advantages-item">
-                      <img src={green_dot} />
+                      <img src={yellow_dot} />
                       <p>{this.getLangText("2-PremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="plans-button">
+                  <div className="button-block">
                     <a
                       className="plans-started-button top"
                       style={{ backgroundColor: "#F2994A" }}
@@ -76,27 +80,29 @@ export default class Prices extends Component {
                     </a>
                   </div>
                 </div>
-              </div>
+              </container>
 
-              <div className="plans-item" style={{ border: "3.5px solid #34D086"}}>
+              <container className="plans-item" style={{ border: "3.5px solid #34D086" }}>
                 <div className="plans-content">
-                <h2 style={{ color: "#34D086" }}>{this.getLangText("SuperPremium")}</h2>
-                <h1><span style={{ fontSize: "1.8rem" }}>$</span>
+                  <div className="header-block">
+                    <h2 style={{ color: "#34D086" }}>{this.getLangText("SuperPremium")}</h2>
+                    <h1><span style={{ fontSize: "1.8rem" }}>$</span>
                         4.99
                       <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
-                  </h1>
-                  <p style={{ fontSize: "1.4rem" }}>{this.getLangText("PremiumSubtitle")}</p>
+                    </h1>
+                    <p style={{ fontSize: "1.2rem" }}>{this.getLangText("PremiumSubtitle")}</p>
+                  </div>
                   <div className="advantages-block">
-                    <div className="advantages-item" style={{ marginTop: "-6%" }}>
-                      <img src={yellow_dot} />
+                    <div className="advantages-item">
+                      <img src={green_dot} />
                       <p>{this.getLangText("1-SuperPremiumPoint")}</p>
                     </div>
                     <div className="advantages-item">
-                      <img src={yellow_dot} />
+                      <img src={green_dot} />
                       <p>{this.getLangText("2-SuperPremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="plans-button">
+                  <div className="button-block">
                     <a
                       className="plans-started-button top"
                       style={{ backgroundColor: "#34D086" }}
@@ -108,10 +114,10 @@ export default class Prices extends Component {
                     </a>
                   </div>
                 </div>
-              </div>
+              </container>
+
             </div>
           </div>
-
         </header>
       </div>
     );
