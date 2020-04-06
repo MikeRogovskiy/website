@@ -1,8 +1,14 @@
 # See on https://easylang.app
 
-To start work on this project you should download zip file and unpacked it, then
+To start work on this project you should download zip file and unpacked it, 
 
-To start editing website you should run in your command line:
+then open unpacked zip folder in any code editor you have (VS Code (https://code.visualstudio.com/) etc)
+
+Before that, install some additionals you need to work on:
+1. node.js (https://nodejs.org/en/)
+2. git version control (https://git-scm.com/)
+
+After all installations, to start editing website you should run in your command line (in code editor):
 
 ### `npm install` 
 
