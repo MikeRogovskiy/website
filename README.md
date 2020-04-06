@@ -1,10 +1,12 @@
 # See on https://easylang.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To start work on this project you should download zip file and unpacked it, then
 
-## Available Scripts
+To start editing website you should run in your command line:
 
-In the project directory, you can run:
+### `npm install` 
+
+This command will install all nessasary dependencies and libraries, then run 
 
 ### `npm start`
 
@@ -12,12 +14,8 @@ Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To build done project after changes run (this will create a build folder in project root) ready to udate ftp server 
 
 ### `npm run build`
 
@@ -28,6 +26,16 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+
+
+Additional commands:
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run eject`
 
