@@ -15,6 +15,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 
+### `npm run deploy`
+
+This command will deploy app on gh-pages, so, all your changes will be available here:<br>
+https://easably.github.io/website/#/
+
+
 To build done project after changes run (this will create a build folder in project root) ready to udate ftp server 
 
 ### `npm run build`
@@ -26,7 +32,6 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 
 
 
