@@ -6,6 +6,7 @@ import Privacy from '../Privacy';
 import Extension from "../Extension";
 import Player from "../Player";
 import Prices from "../Prices";
+import PricesTest from "../PricesTest";
 import Blog from "../Blog";
 import NotFound from '../NotFound';
 
@@ -46,6 +47,7 @@ export default class App extends React.Component {
             <Extension path="/extension/" text={this.props.text.ExtensionPage} lang={this.props.language}/>
             <Player path="/player/" text={this.props.text.PlayerPage} />
             <Prices path="/prices/" text={this.props.text.PricesPage} />
+            <PricesTest path="/prices-b/" text={this.props.text.PricesTestPage} />
             <Blog path="/blog/*"></Blog>
             <NotFound path="*" text={this.props.text.NotFoundPage}></NotFound>
             {/* <Redirect from="/" to="/" default noThrow></Redirect> */}
