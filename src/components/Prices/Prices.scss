@@ -12,7 +12,7 @@ body {
 }
   
   /* Desctop tariff-plans styles */
-  .getStartedPlans-header {
+  .Plans {
     background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlans.svg");
     text-align: center;
     margin-top: -100px;
@@ -20,7 +20,7 @@ body {
     padding-bottom: 100px;
   }
   
-  .wrapper-getStartedPlans {
+  .wrapper-plans {
     padding: 1% 0 4%;
     font-family: "Montserrat", sans-serif !important;
   }
@@ -105,11 +105,8 @@ body {
   .plans-content p {
     color: #535353;
     font-style: normal;
-    font-weight: 300 !important;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 1.4rem !important;
     letter-spacing: 1.41px;
-    opacity: 0.6 !important;
   }
 
   .advantages-block {
@@ -142,7 +139,7 @@ body {
     text-align: left;
     font-weight: 500 !important;
     color: #535353;
-    font-size: 14px;
+    font-size: 14px !important;
     line-height: 150%;
     letter-spacing: 1.41px;
   }
@@ -153,8 +150,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -5%;
-    padding-top: 25%;
+    margin-top: -3%;
+    padding-top: 23%;
     &.bottom{
       margin: 0;
       transform: translateY(-50%);
