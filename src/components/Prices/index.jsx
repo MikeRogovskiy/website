@@ -16,8 +16,7 @@ export default class Prices extends Component {
 
   render() {
 
-    const dollarSize = { fontSize: '1.8rem',
-    }
+    const dollarSize = { fontSize: '1.8rem' }
 
     const MonthStyles = {
       color: 'silver',
