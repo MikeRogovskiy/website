@@ -130,7 +130,7 @@
       "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!"
     },
 
-    "PricesPage": {
+    "PlansPage": {
       "PlansTitle": "We are a free OpenSource startup that strives to help people!",
       "1-PlansSubtitle": "However, our company has to buy services from Google. If you enjoy Easylang, consider supporting our efforts by choosing our premium-services!",
       "2-PlansSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort.",
@@ -151,7 +151,7 @@
     },
 
     
-    "PricesPage_b": {
+    "PlansPage_b": {
       "PlansTitle": "ПЛАТНАЯ ПОДПИСКА ДЛЯ ОТКРЫТОГО ПРОЕКТА",
       "1-PlansSubtitle": "МЫ ХОТИМ УМЕНЬШИТЬ КОЛ-ВО КОНФЛИКТОВ В МИРЕ <br/>ПОЭТОМУ НАШ ЯЗЫКОВОЙ ПРОЕКТ РАЗРАБАТЫВАЕТСЯ КАК <a href='https://simple.wikipedia.org/wiki/Open_source' target='_blank' style='text-decoration: underline;'>OPENSOURCE.</a>",
       "2-PlansSubtitle": "Для работы нашего сервиса мы должны приобретать платные сервисы. <br/>Например хостинг или Google Translate.<br/>Если Вам полезен EasyLang, Вы можете полностью снять ограничения на нем.",

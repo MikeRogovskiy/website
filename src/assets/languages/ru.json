@@ -129,7 +129,7 @@
     "10-SlidePlayerBody": "Все в привычном для тебя браузере. Теперь повторять материал можно в любом удобном для Вас месте. А чтобы было не скучно мы создали несколько игр для процесса повторения слов."
   },
 
-  "PricesPage": {
+  "PlansPage": {
     "PlansTitle": "ПЛАТНАЯ ПОДПИСКА ДЛЯ ОТКРЫТОГО ПРОЕКТА",
     "1-PlansSubtitle": "МЫ ХОТИМ УМЕНЬШИТЬ КОЛ-ВО КОНФЛИКТОВ В МИРЕ <br/>ПОЭТОМУ НАШ ЯЗЫКОВОЙ ПРОЕКТ РАЗРАБАТЫВАЕТСЯ КАК <a href='https://simple.wikipedia.org/wiki/Open_source' target='_blank' style='text-decoration: underline;'>OPENSOURCE.</a>",
     "2-PlansSubtitle": "Для работы нашего сервиса мы должны приобретать платные сервисы. <br/>Например хостинг или Google Translate.<br/>Если Вам полезен EasyLang, Вы можете полностью снять ограничения на нем.",
@@ -153,7 +153,7 @@
     "Choose": "Выбрать"
   },
 
-  "PricesPage_b": {
+  "PlansPage_b": {
     "PlansTitle": "ПЛАТНАЯ ПОДПИСКА ДЛЯ ОТКРЫТОГО ПРОЕКТА",
     "1-PlansSubtitle": "МЫ ХОТИМ УМЕНЬШИТЬ КОЛ-ВО КОНФЛИКТОВ В МИРЕ <br/>ПОЭТОМУ НАШ ЯЗЫКОВОЙ ПРОЕКТ РАЗРАБАТЫВАЕТСЯ КАК <a href='https://simple.wikipedia.org/wiki/Open_source' target='_blank' style='text-decoration: underline;'>OPENSOURCE.</a>",
     "2-PlansSubtitle": "Для работы нашего сервиса мы должны приобретать платные сервисы. <br/>Например хостинг или Google Translate.<br/>Если Вам полезен EasyLang, Вы можете полностью снять ограничения на нем.",
