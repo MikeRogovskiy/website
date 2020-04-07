@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 body {
     padding: 0;
     margin: 0;
@@ -26,7 +28,7 @@ body {
     .getStartedPlans-title {
       text-transform: uppercase;
       text-align: left;
-      color: #fff;
+      color: $color;
       font-weight: bold;
       letter-spacing: 1.41px;
       margin: 2% 18% 1.5%;
@@ -55,7 +57,7 @@ body {
     }
   
     .plans-item {
-      background-color: #fff;
+      background-color: $bgColor;
       border-radius: 40px;
       box-shadow: 0px 4px 40px rgba(42, 82, 130, 0.12);
       width: 360px;
@@ -97,7 +99,7 @@ body {
     }
   
     .plans-content p {
-      color: #535353;
+      color: $plansParagraphColor;
       font-size: 1.4rem !important;
       letter-spacing: 1.41px;
     }
@@ -115,7 +117,7 @@ body {
       display: flex;
       flex-direction: row;
       padding: 3% 0;
-      border-top: 1.9px solid #ECEFFF;
+      border-top: 1.9px solid $plansBorderTopColor;
     }
   
     .advantages-item img {
@@ -130,14 +132,14 @@ body {
       margin-left: 2%;
       text-align: left;
       font-weight: 500 !important;
-      color: #535353;
+      color: $plansParagraphColor;
       font-size: 14px !important;
       line-height: 150%;
       letter-spacing: 1.41px;
     }
   
     .button-block {
-      border-top: 1.9px solid #ECEFFF;
+      border-top: 1.9px solid $plansBorderTopColor;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -150,7 +152,7 @@ body {
       width: auto;
       font-size: 1.5rem;
       letter-spacing: 1px;
-      color: #fff;
+      color: $color;
       font-weight: 800 !important;
       line-height: 32px;
       border-radius: 80px;
