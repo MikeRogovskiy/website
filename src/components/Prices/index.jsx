@@ -15,12 +15,27 @@ export default class Prices extends Component {
   }
 
   render() {
+
+    const dollarSize = { fontSize: '1.8rem',
+    }
+
+    const MonthStyles = {
+      color: 'silver',
+      fontSize: "1.8rem",
+    }
+
+    const premiumColor = { color: '#F2994A'}
+    const premiumBackgroundColor = { backgroundColor: '#F2994A' };
+    const premiumBorder = { border: '3.5px solid #34D086' }
+    const superPremiumColor = { color: '#34D086'}
+    const superPremiumBackgroundColor = { backgroundColor: '#34D086' };
+
     return (
-      <div style={{ fontFamily: "Montserrat" }}>
+      <div>
         <MainHeader />
 
-        <header className="getStartedPlans-header">
-          <div className="wrapper-getStartedPlans">
+        <div className="Plans">
+          <div className="wrapper-plans">
             <div>
               <h1 className="getStartedPlans-title">{this.getLangText("PlansTitle")}</h1>
               <p className="getStartedPlans-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
@@ -52,10 +67,10 @@ export default class Prices extends Component {
               <container className="plans-item">
                 <div className="plans-content">
                   <div className="header-block">
-                    <h2 style={{ color: "#F2994A" }}>{this.getLangText("Premium")}</h2>
-                    <h1><span style={{ fontSize: "1.8rem" }}>$</span>
+                    <h2 style={premiumColor}>{this.getLangText("Premium")}</h2>
+                    <h1><span style={dollarSize}>$</span>
                         7.99
-                      <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
+                      <span style={MonthStyles}>{this.getLangText("Month")}</span>
                     </h1>
                   </div>
                   <div className="advantages-block">
@@ -71,7 +86,7 @@ export default class Prices extends Component {
                   <div className="button-block">
                     <a
                       className="plans-started-button top"
-                      style={{ backgroundColor: "#F2994A" }}
+                      style={premiumBackgroundColor}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -82,15 +97,15 @@ export default class Prices extends Component {
                 </div>
               </container>
 
-              <container className="plans-item" style={{ border: "3.5px solid #34D086" }}>
+              <container className="plans-item" style={premiumBorder}>
                 <div className="plans-content">
                   <div className="header-block">
-                    <h2 style={{ color: "#34D086" }}>{this.getLangText("SuperPremium")}</h2>
-                    <h1><span style={{ fontSize: "1.8rem" }}>$</span>
+                    <h2 style={superPremiumColor}>{this.getLangText("SuperPremium")}</h2>
+                    <h1><span style={dollarSize}>$</span>
                         4.99
-                      <span style={{ color: "silver", fontSize: "1.8rem" }}>{this.getLangText("Month")}</span>
+                      <span style={MonthStyles}>{this.getLangText("Month")}</span>
                     </h1>
-                    <p style={{ fontSize: "1.2rem" }}>{this.getLangText("PremiumSubtitle")}</p>
+                    <p>{this.getLangText("PremiumSubtitle")}</p>
                   </div>
                   <div className="advantages-block">
                     <div className="advantages-item">
@@ -105,7 +120,7 @@ export default class Prices extends Component {
                   <div className="button-block">
                     <a
                       className="plans-started-button top"
-                      style={{ backgroundColor: "#34D086" }}
+                      style={superPremiumBackgroundColor}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -118,7 +133,7 @@ export default class Prices extends Component {
 
             </div>
           </div>
-        </header>
+        </div>
       </div>
     );
   }
