@@ -6,7 +6,7 @@ import Privacy from '../Privacy';
 import Extension from "../Extension";
 import Player from "../Player";
 import Prices from "../Prices";
-import PricesTest from "../PricesTest";
+import PricesTest from "../Prices/b";
 import Blog from "../Blog";
 import NotFound from '../NotFound';
 

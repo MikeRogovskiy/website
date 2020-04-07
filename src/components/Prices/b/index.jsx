@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
-import MainHeader from "../MainHeader";
+import MainHeader from "../../MainHeader";
 
-import "./PricesTest.scss";
+import "../Prices.scss";
 
-import blue_dot from '../../assets/images/Plans/blue_dot.png';
-import green_dot from '../../assets/images/Plans/green_dot.png';
-import yellow_dot from '../../assets/images/Plans/yellow_dot.png';
+import blue_dot from '../../../assets/images/Plans/blue_dot.png';
+import green_dot from '../../../assets/images/Plans/green_dot.png';
+import yellow_dot from '../../../assets/images/Plans/yellow_dot.png';
 
 export default class PricesTest extends Component {
 
