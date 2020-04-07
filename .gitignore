@@ -63,3 +63,6 @@ typings/
 
 # my
 .DS_Store
+
+# Idea's files
+.idea
