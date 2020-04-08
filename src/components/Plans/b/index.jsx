@@ -36,21 +36,21 @@ export default class PlansTest extends Component {
         <div className="Plans">
           <div className="wrapper-plans">
             <div>
-              <h1 className="getStartedPlans-title">{this.getLangText("PlansTitle")}</h1>
-              <p className="getStartedPlans-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
-              <p className="getStartedPlans-subtitle">{this.getLangText("2-PlansSubtitle")}</p>
-              <p className="getStartedPlans-subtitle">{this.getLangText("3-PlansSubtitle")}</p>
+              <h1 className="top-title">{this.getLangText("PlansTitle")}</h1>
+              <p className="top-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
+              <p className="top-subtitle">{this.getLangText("2-PlansSubtitle")}</p>
+              <p className="top-subtitle">{this.getLangText("3-PlansSubtitle")}</p>
             </div>
 
-            <div className="plans-container">
+            <div className="container">
 
-              <container className="plans-item">
-                <div className="plans-content">
-                  <div className="header-block">
+              <container className="item">
+                <div className="content">
+                  <div className="header">
                     <h2>{this.getLangText("Standart")}</h2>
                     <h1>{this.getLangText("Free")}</h1>
                   </div>
-                  <div className="advantages-block">
+                  <div className="advantages">
                     <div className="advantages-item">
                       <img src={blue_dot} />
                       <p>{this.getLangText("1-StandartPoint")}</p>
@@ -63,16 +63,16 @@ export default class PlansTest extends Component {
                 </div>
               </container>
 
-              <container className="plans-item">
-                <div className="plans-content">
-                  <div className="header-block">
+              <container className="item">
+                <div className="content">
+                  <div className="header">
                     <h2 style={premiumColor}>{this.getLangText("Premium")}</h2>
                     <h1><span style={dollarSize}>$</span>
                         7.99
                       <span style={MonthStyles}>{this.getLangText("Month")}</span>
                     </h1>
                   </div>
-                  <div className="advantages-block">
+                  <div className="advantages">
                     <div className="advantages-item">
                       <img src={yellow_dot} />
                       <p>{this.getLangText("1-PremiumPoint")}</p>
@@ -82,9 +82,9 @@ export default class PlansTest extends Component {
                       <p>{this.getLangText("2-PremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="button-block">
+                  <div className="button">
                     <a
-                      className="plans-started-button top"
+                      className="plans-button top"
                       style={premiumBackgroundColor}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
@@ -96,9 +96,9 @@ export default class PlansTest extends Component {
                 </div>
               </container>
 
-              <container className="plans-item" style={premiumBorder}>
-                <div className="plans-content">
-                  <div className="header-block">
+              <container className="item" style={premiumBorder}>
+                <div className="content">
+                  <div className="header">
                     <h2 style={superPremiumColor}>{this.getLangText("SuperPremium")}</h2>
                     <h1><span style={dollarSize}>$</span>
                         4.99
@@ -106,7 +106,7 @@ export default class PlansTest extends Component {
                     </h1>
                     <p>{this.getLangText("PremiumSubtitle")}</p>
                   </div>
-                  <div className="advantages-block">
+                  <div className="advantages">
                     <div className="advantages-item">
                       <img src={green_dot} />
                       <p>{this.getLangText("1-SuperPremiumPoint")}</p>
@@ -116,9 +116,9 @@ export default class PlansTest extends Component {
                       <p>{this.getLangText("2-SuperPremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="button-block">
+                  <div className="button">
                     <a
-                      className="plans-started-button top"
+                      className="plans-button top"
                       style={superPremiumBackgroundColor}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"

@@ -6,7 +6,7 @@ body {
   }
 
 @media (min-width: 1640px) {
-  .plans-container {
+  .container {
     width: 65% !important;
     margin: 5% 16% !important;
   }
@@ -25,7 +25,7 @@ body {
       font-family: "Montserrat", sans-serif !important;
     }
     
-    .getStartedPlans-title {
+    .top-title {
       text-transform: uppercase;
       text-align: left;
       color: $color;
@@ -36,7 +36,7 @@ body {
       line-height: 40px;
     }
     
-    .getStartedPlans-subtitle {
+    .top-subtitle {
       color:  #E6EAFF;
       text-align: left;
       margin: 0 18%;
@@ -47,7 +47,7 @@ body {
       padding-top: 1%;
     }
   
-    .plans-container {
+    .container {
       width: 85%;
       margin: 5% 9%;
       display: flex;
@@ -56,7 +56,7 @@ body {
       flex-direction: row;
     }
   
-    .plans-item {
+    .item {
       background-color: $bgColor;
       border-radius: 40px;
       box-shadow: 0px 4px 40px rgba(42, 82, 130, 0.12);
@@ -68,18 +68,18 @@ body {
       align-items: center;
     }
   
-    .plans-content {
+    .content {
       width: 90%;
       height: 80%;
       margin: 13% 0 5%;
       align-items: center;
     }
   
-    .header-block {
+    .header {
       height: 27%;
     }
   
-    .plans-content h2 { 
+    .content h2 { 
       color: #759CCB;
       font-weight: bold;
       font-size: 20px;
@@ -88,7 +88,7 @@ body {
       text-transform: uppercase;
     }
   
-    .plans-content h1 { 
+    .content h1 { 
       padding-top: 7%;
       color: #232323;
       font-weight: bold;
@@ -98,13 +98,13 @@ body {
       opacity: 0.8;
     }
   
-    .plans-content p {
+    .content p {
       color: $plansParagraphColor;
       font-size: 1.4rem !important;
       letter-spacing: 1.41px;
     }
   
-    .advantages-block {
+    .advantages {
       height: 40%;
       margin-top: 15%;
       display: flex;
@@ -138,7 +138,7 @@ body {
       letter-spacing: 1.41px;
     }
   
-    .button-block {
+    .button {
       border-top: 1.9px solid $plansBorderTopColor;
       width: 100%;
       display: flex;
@@ -147,7 +147,7 @@ body {
       padding-top: 23%;
     }
     
-    .plans-started-button {
+    .plans-button {
       display: block;
       width: auto;
       font-size: 1.5rem;
@@ -167,47 +167,47 @@ body {
   // Mobile tariff-plans styles
   @media(max-width: "599px") {
     .Plans {
-      .getStartedPlans-title {
+      .top-title {
         font-size: 18px !important;
         line-height: 22px !important;
       }
 
-      .getStartedPlans-subtitle {
+      .top-subtitle {
           font-size: 14px !important;
           line-height: 150% !important;
       }
 
-      .plans-container {
+      .container {
         margin: 7% auto;
         justify-content: space-around;
         flex-direction: column;
       }
 
-      .plans-item {
+      .item {
         margin-bottom: 10% !important;
         width: 85%;
         height: 450px;
         margin: 8% 2%;
       }
 
-      .plans-item-center {
+      .item-center {
         width: 72%;
         height: 400px;
         margin: 10% 2%;
       }
 
-      .plans-content h2 { 
+      .content h2 { 
         font-size: 16px;
         line-height: 20px;
       }
     
-      .plans-content h1 { 
+      .content h1 { 
         padding-top: 20px;
         font-size: 30px;
         line-height: 38px;
       }
     
-      .plans-content p {
+      .content p {
         font-size: 13px;
         line-height: 16px;
       }
@@ -222,16 +222,16 @@ body {
         margin-right: 7%;
       }
 
-      .advantages-block {
+      .advantages {
         height: 33%;
       }
 
-      .button-block {
+      .button {
         margin-top: 2%;
         padding-top: 25%;
       }
       
-      .plans-started-button {
+      .plans-button {
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 17px;
