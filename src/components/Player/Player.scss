@@ -127,19 +127,6 @@ body {
     width: 100%;
   }
 
-  .content-header h2 {
-    color: #232323 !important;
-    font-size: 1.6rem !important;
-    font-family: "Montserrat", sans-serif !important;
-    margin-bottom: 10px !important;
-  }
-
-  .content-body p {
-    color: rgba(46, 46, 46, 0.82) !important;
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 1.2rem !important;
-  }
-
   margin-bottom: 2vh;
   padding: 1% 8%;
   font-style: "Comfortaa", sans-serif !important;
@@ -347,23 +334,8 @@ body {
       font-size: 0.9rem !important;
     }
 
-    .content-body p {
-      color: rgba(46, 46, 46, 0.82) !important;
-      opacity: 0.82;
-      font-family: "Montserrat", sans-serif !important;
-      font-size: 0.9rem !important;
-    }
-
-    .content-header h2 {
-      font-size: 1.1rem !important;
-    }
-
     .player-block {
       margin-left: -30px;
-    }
-
-    .icon {
-      width: 20px;
     }
 
     .player-content {
