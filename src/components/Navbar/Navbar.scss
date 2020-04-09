@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .Navbar {
     position: -webkit-sticky;
 		position: sticky;
@@ -21,7 +23,7 @@
 .fixed-bar {
     display: flex;
     width: 100%;
-    background: white !important;
+    background: $color !important;
     box-shadow: 0 0 4px rgba(2, 0, 0, 0.33);
     animation: showMenu1 0.3s;
 }
@@ -57,7 +59,7 @@
 }
 @keyframes showMenu2 {
     0% {
-        background-color: white;
+        background-color: $color;
     }
 
     100% {
@@ -186,7 +188,7 @@ a.menu-nav__link {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #fff !important;
+    color: $color !important;
     font-weight: bold;
     font-style: normal;
     padding: 5% 20px;
@@ -247,7 +249,7 @@ a.menu-nav__link {
         margin: 10px auto !important;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: #fff !important;
+        color: $color !important;
         font-weight: bold;
         font-style: normal;
         padding: 1px 25px !important;
@@ -476,7 +478,7 @@ a.menu-nav__link {
         margin: 10px auto;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: #fff !important;
+        color: $color !important;
         font-weight: bold;
         font-style: normal;
         padding: 1px 25px;

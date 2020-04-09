@@ -1,28 +1,6 @@
+@import "../../styles/variables";
+
 .Home {
-  .slick-slide {
-    height: auto !important;
-  }
-
-  .slider {
-    margin: 0 18%;
-  }
-
-  .slide img {
-    width: 100%;
-  }
-
-  .image-carousel-caption {
-    padding: 2% 0;
-
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .slick-dots li button::before {
-    color: #00b9ed !important;
-    font-size: 20px !important;
-  }
-
   .hero {
     background: no-repeat bottom/cover url("../../assets/images/home/bcg3.svg");
     text-align: center;
@@ -40,11 +18,11 @@
     font-size: 2.3rem;
     font-weight: normal;
     line-height: 3.2rem;
-    color: #fff;
+    color: $color;
   }
 
   .subtitle {
-    color: #fff;
+    color: $color;
     font-size: 1.5rem;
     font-weight: 100;
     margin-bottom: 3rem;
@@ -68,7 +46,7 @@
 
     font-size: 1.4rem;
     text-transform: capitalize;
-    color: #fff;
+    color: $color;
 
     background-color: #f26d6d;
     border: none;

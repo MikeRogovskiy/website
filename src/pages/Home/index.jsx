@@ -10,12 +10,6 @@ import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
 import puzzle from "../../assets/images/home/puzzle.svg";
 import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
-import slide3en from "../../assets/images/home/slider/3.png";
-import slide4en from "../../assets/images/home/slider/4.png";
-import slide3ru from "../../assets/images/home/slider/3ru.svg";
-import slide4ru from "../../assets/images/home/slider/4ru.svg";
-import slide3cn from "../../assets/images/home/slider/3cn.svg";
-import slide4cn from "../../assets/images/home/slider/4cn.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
 
@@ -84,23 +78,6 @@ export default class Home extends React.Component {
     return ReactHtmlParser(this.props.text[text]);
   }
   render() {
-    const slickSettings = {
-      slides_to_show: 1,
-      dots: true,
-      pause_on_hover: true,
-      autoplay: true,
-      infinite: true,
-      speed: 900,
-      fade: true
-    };
-    const slideImg = {
-      slide3en,
-      slide4en,
-      slide3ru,
-      slide4ru,
-      slide3cn,
-      slide4cn
-    };
     const mobileClasses = classNames("img-phone-front", {
       show: this.state.showMobileWow
     });
@@ -120,11 +97,6 @@ export default class Home extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* <img
-                  src={chromeStoreSvg}
-                  alt="Chrome-store"
-                  className="icon get-started-button__icon"
-                /> */}
                 <span>{this.getLangText("StartLearning")}</span>
               </Link>
             </div>
@@ -195,113 +167,12 @@ export default class Home extends React.Component {
                         {this.getLangText("GetStartedButton")}
                       </span>
                     </a>
-                    {/* <a
-                                            href="https://support.google.com/chrome_webstore/answer/2664769"
-                                            className="button-install button-guide"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            role="button"
-                                        >
-                                            <i className="fa fa-cog"> </i>{" "}
-                                            <span>
-                                                {this.getLangText(
-                                                    "extensionGuide"
-                                                )}
-                                            </span>
-                                        </a> */}
                   </div>
 
-                  {/* <div className="button-group button-group-2">
-                    <a
-                      className="button-install button-web"
-                      href="http://easy4learn.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Context-Tutor
-                    </a>
-                  </div> */}
-
-                  {/* <div className="button-group button-group-3">
-                    <a
-                      className="button-install button-android disabled"
-                      href="https://github.com/easably/context-tutor/releases/latest/download/EasyLang.apk"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Android
-                    </a>
-                    <a
-                      className="button-install button-iOS disabled"
-                      href="https://testflight.apple.com/join/w0Dyxqef"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      iOS
-                      <span className="button-group-comment">
-                        {this.getLangText("comingSoon")}
-                      </span>
-                    </a>
-                  </div> */}
                 </div>
               </div>
             </div>
           </section>
-
-          {/* <section
-            className="content-home content-howItWorks"
-            id={this.sections.howItWork.id}
-            ref={this.sections.howItWork.ref}
-          >
-            <div>
-              <h2>{this.getLangText("headHowItWorks")}</h2>
-              <div className="slider-wrapper">
-                <div className="slider">
-                  <Slider className="slides" {...slickSettings}>
-                    <div className="slide 1th">
-                      <figure className="slick-slide-inner">
-                        <img src={slide1} alt="" />
-                        <figcaption className="image-carousel-caption">
-                          {this.getLangText("sliderCaptionFirst")}
-                        </figcaption>
-                      </figure>
-                    </div>
-
-                    <div className="slide 2th">
-                      <figure className="slick-slide-inner">
-                        <img src={slide2} alt="" />
-                        <figcaption className="image-carousel-caption">
-                          {this.getLangText("sliderCaptionSecond")}
-                        </figcaption>
-                      </figure>
-                    </div>
-                    <div className="slide 3th">
-                      <img
-                        src={slideImg[this.getLangText("slideThird")]}
-                        alt=""
-                      />
-                    </div>
-                    <div className="slide 4th">
-                      <img
-                        src={slideImg[this.getLangText("slideFourth")]}
-                        alt=""
-                      />
-                    </div>
-                  </Slider>
-                </div>
-              </div>
-
-               <div className="extension">
-                                <div className="extension-img">
-                                    {" "}
-                                    <img
-                                        src={extensionImg}
-                                        alt="extension for Chrome"
-                                    />
-                                </div>
-                            </div> 
-            </div>
-          </section> */}
 
           <div className="call-to-action">
             <section
@@ -361,11 +232,6 @@ export default class Home extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* <img
-                src={chromeStoreSvg}
-                alt="Chrome-store"
-                className="icon get-started-button__icon"
-              /> */}
               <span>{this.getLangText("StartLearning")}</span>
             </Link>
           </div>

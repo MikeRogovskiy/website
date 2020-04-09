@@ -1,8 +1,7 @@
 @import "../../styles/variables";
 
 .Products {
-  background-color: #fff;
-  //background-image: url("../../assets/images/home/home_footer.svg");
+  background-color: $bgColor;
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
@@ -133,14 +132,6 @@
   margin-left: 10%;
   padding-bottom: 7%;
 }
-
-/* Footer Section */
-
-// .get-started-footer {
-//   background: url("../../assets/images/home/home_footer.svg") bottom/cover no-repeat;
-//   height: 20vw;
-//   margin-top: -10%;
-// }
 
 .footer-links {
   padding-top: 7%;
