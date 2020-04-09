@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import ReactHtmlParser from "react-html-parser";
-import MainHeader from '../MainHeader';
+import MainHeader from '../../components/MainHeader';
 
 import './Privacy.scss';
 

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
-import Header from '../Header';
 import ReactHtmlParser from "react-html-parser";
-
 
 import productsFirstNumber from "../../assets/images/products/productsFirstNumber.svg";
 import productsSecondNumber from "../../assets/images/products/productsSecondNumber.svg";
@@ -10,6 +8,7 @@ import devices_image from "../../assets/images/devices_image.png";
 
 
 import "./Products.scss";
+import MainHeader from "../../components/MainHeader";
 
 
 export default class Products extends React.Component {
@@ -21,7 +20,7 @@ export default class Products extends React.Component {
     render() {
         return (
             <div className="Products">
-                <Header text={this.props.text} />
+                <MainHeader text={this.props.text} />
                 <div className="products-header-block">
                     <h1>{this.getLangText('ProductsHeader')}</h1>
                     <p>{this.getLangText("ProductsTopHeader")}</p>

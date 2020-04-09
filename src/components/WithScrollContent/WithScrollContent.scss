@@ -31,6 +31,12 @@ body {
     line-height: 34px;
   }
 
+  .content {
+    height: 420px !important;
+    margin: 3px;
+    width: 100% !important;
+  }
+
   .content-body p {
     color: rgba(46, 46, 46, 0.82) !important;
     opacity: 0.82;
@@ -40,7 +46,7 @@ body {
 }
 
 .content {
-  height: 310px !important;
+  height: 310px;
 }
 
 .scrolled-content {
@@ -193,12 +199,6 @@ body {
       opacity: 0.82;
       font-size: 0.9rem !important;
       line-height: 1.6rem !important;
-    }
-
-    .content {
-      height: 380px !important;
-      margin: 3px;
-      width: 100% !important;
     }
   }
   .scrolled-content-header {

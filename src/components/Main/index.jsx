@@ -1,23 +1,15 @@
 import React from "react";
 import { Router } from "@reach/router";
 import Navbar from "../Navbar";
-import Home from "../Home";
-import Privacy from '../Privacy';
-import Extension from "../Extension";
-import Player from "../Player";
-import Plans from "../Plans";
-import PlansTest from "../Plans/b";
 import Blog from "../Blog";
-import NotFound from '../NotFound';
-
-// import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
+import { Home, Extension, NotFound, Plans, Player, Privacy, PlansTest } from '../../pages';
+
 
 export default class App extends React.Component {
 
   urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*privacy.*/g];
-
 
   render() {
     if (typeof window.gtag === "function") {
@@ -50,10 +42,8 @@ export default class App extends React.Component {
             <PlansTest path="/plans-b/" text={this.props.text.PlansPage_b} />
             <Blog path="/blog/*"></Blog>
             <NotFound path="*" text={this.props.text.NotFoundPage}></NotFound>
-            {/* <Redirect from="/" to="/" default noThrow></Redirect> */}
           </ScrollToTop>
         </Router>
-        {/* <BtnTop></BtnTop> */}
       </div>
     );
   }

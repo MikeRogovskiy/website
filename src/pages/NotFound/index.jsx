@@ -3,7 +3,7 @@ import { Link } from "@reach/router";
 
 import ReactHtmlParser from "react-html-parser";
 
-import MainHeader from '../MainHeader';
+import MainHeader from '../../components/MainHeader';
 import "./NotFound.scss";
 
 import notFoundImg from "../../assets/images/404.svg";

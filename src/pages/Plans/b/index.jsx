@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
-import MainHeader from "../../MainHeader";
+import MainHeader from "../../../components/MainHeader";
 
 import "../Plans.scss";
 

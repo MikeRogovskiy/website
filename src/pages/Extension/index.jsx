@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
-import MainHeader from "../MainHeader";
+import MainHeader from "../../components/MainHeader";
 
 import "./Extension.scss";
 
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
-import WithScrollContent from "../WithScrollContent";
+import WithScrollContent from "../../components/WithScrollContent";
 
 import extensionContent from "../../assets/scroll-content/extension";
 
