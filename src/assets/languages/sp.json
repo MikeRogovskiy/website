@@ -68,7 +68,7 @@
     "ExtensionDescription": "- funciona con Google Chrome <br> - traduce todo lo que dices",
     "ContextTutor": "Tutor BETA",
     "ContextTutorDescription": "Simulador simple de mecánica <br> - lecciones basadas en su historial de lectura y visualización <br> - ayudamos a su memoria contextual <br> - adecuado para aprender términos",
-    "BottomInfoText": "¿Aún tienes preguntas? <br> <a href = 'mailto: support@easylang.by' style = 'font-family: Open Sans, sans-serif; color: # 1E4470 '> <u> Póngase en contacto </u> </a> con nosotros, ¡lo ayudaremos!",
+    "BottomInfoText": "¿Aún tienes preguntas? <br> <a href = 'mailto: support@easylang.by' style = 'color: # 1E4470 '> <u> Póngase en contacto </u> </a> con nosotros, ¡lo ayudaremos!",
     "Add": "Agregar",
     "GetStarted": "Empezar"
   },

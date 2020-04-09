@@ -68,7 +68,7 @@
     "ExtensionDescription": "- работает с google chrome <br>- переводит все что скажете",
     "ContextTutor": "Тьютор BETA",
     "ContextTutorDescription": "- простая механика тренажера<br>- уроки основаны на вашей истории чтения и просмотра<br>- мы помогаем вашей контекстной памяти<br>- подходит для изучения терминов",
-    "BottomInfoText": "Остались вопросы? <br><a href='mailto:support@easylang.by' style='font-family: Open Sans, sans-serif; color:#1E4470'><u>Свяжитесь</u></a> с нами - мы обязательно поможем!",
+    "BottomInfoText": "Остались вопросы? <br><a href='mailto:support@easylang.by' style='color:#1E4470'><u>Свяжитесь</u></a> с нами - мы обязательно поможем!",
     "Add": "Добавить",
     "GetStarted": "Начать работу"
   },
