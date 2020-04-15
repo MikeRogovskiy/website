@@ -31,8 +31,7 @@ To build done project after changes run (this will create a build folder in proj
 
 ### `npm run ftp`
 
-This command will deploy app on server by ftp, so, all your changes will be available here:<br>
-https://easylang.app/
+This command will deploy app on server by ftp
 
 **Note: for a successful deployment, the *.env* file must be in the root with the code:**
 ```javascript
