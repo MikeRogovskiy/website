@@ -81,13 +81,14 @@ export default class Plans extends Component {
                       <p>{this.getLangText("2-PremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="button">
+                  <div className="button"
+                  >
                     <a
                       className="plans-button top"
                       style={premiumBackgroundColor}
-                      href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={myFunction}
                     >
                       <span>{this.getLangText("Choose")}</span>
                     </a>
@@ -119,9 +120,9 @@ export default class Plans extends Component {
                     <a
                       className="plans-button top"
                       style={superPremiumBackgroundColor}
-                      href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={myFunction}
                     >
                       <span>{this.getLangText("Choose")}</span>
                     </a>
@@ -135,3 +136,7 @@ export default class Plans extends Component {
     );
   };
 };
+
+function myFunction() {
+  alert("На текущий момент продукт бесплатный. Для его использования вы можете ввести бесплатный купон EASYTUTOR30 в своем аккаунте. Спасибо за использование продукта!");
+}
