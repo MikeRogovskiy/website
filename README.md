@@ -29,6 +29,18 @@ https://easably.github.io/website/#/
 
 To build done project after changes run (this will create a build folder in project root) ready to udate ftp server 
 
+### `npm run ftp`
+
+This command will deploy app on server by ftp, so, all your changes will be available here:<br>
+https://easylang.app/
+
+**Note: for a successful deployment, the *.env* file must be in the root with the code:**
+```javascript
+FTP_HOST=ftp.someserver.com
+FTP_USER=user
+FTP_PASSWORD=password
+```
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
