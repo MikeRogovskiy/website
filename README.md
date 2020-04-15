@@ -14,7 +14,7 @@ After all installations, to start editing website you should run in your command
 
 This command will install all nessasary dependencies and libraries, then run 
 
-### `npm start`
+### `npm run start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -54,6 +54,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 Additional commands:
+### `npm run ftp` 
+
+you need .env file with ftp credentials 
 
 ### `npm test`
 
