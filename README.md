@@ -29,6 +29,17 @@ https://easably.github.io/website/#/
 
 To build done project after changes run (this will create a build folder in project root) ready to udate ftp server 
 
+### `npm run ftp`
+
+This command will deploy app on server by ftp
+
+**Note: for a successful deployment, the *.env* file must be in the root with the code:**
+```javascript
+FTP_HOST=ftp.someserver.com
+FTP_USER=user
+FTP_PASSWORD=password
+```
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
@@ -41,10 +52,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-Additional commands:
-### `npm run ftp` 
-
-you need .env file with ftp credentials 
+*Additional commands:*
 
 ### `npm test`
 
