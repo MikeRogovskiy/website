@@ -156,7 +156,7 @@ export default class Home extends React.Component {
                       className="button-install button-chrome"
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                      href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
                     >
                       <span className="button-chrome-wrapper">
                         <img

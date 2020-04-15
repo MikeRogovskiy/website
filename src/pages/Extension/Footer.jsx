@@ -15,7 +15,7 @@ const Footer = (props) => {
                 <a
                     className="started-button top"
                     style={{ marginTop: "-20px" }}
-                    href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                    href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

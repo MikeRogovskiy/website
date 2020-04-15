@@ -128,7 +128,7 @@ export default class Navbar extends React.Component {
                                     <li>
                                         <a
                                             className="menu-nav__link start-button"
-                                            href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                                            href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >

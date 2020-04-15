@@ -21,7 +21,7 @@ const Header = (props) => {
           <div className="getStarted-button">
             <a
               className="started-button top"
-              href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+              href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
               target="_blank"
               rel="noopener noreferrer"
             >
