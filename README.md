@@ -53,10 +53,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-Additional commands:
-### `npm run ftp` 
-
-you need .env file with ftp credentials 
+*Additional commands:*
 
 ### `npm test`
 
