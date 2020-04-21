@@ -90,7 +90,7 @@ export default class Home extends React.Component {
               <p className="subtitle">{this.getLangText("headerSubtitle")}</p>
             </div>
 
-            <div className="button-started">
+            {/* <div className="button-started">
               <Link
                 className="get-started-button top"
                 to="extension/"
@@ -99,7 +99,7 @@ export default class Home extends React.Component {
               >
                 <span>{this.getLangText("StartLearning")}</span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </header>
 
@@ -225,7 +225,7 @@ export default class Home extends React.Component {
           </div>
         </div>
         <footer className="get-started-footer">
-          <div className="button-started bottom">
+          {/* <div className="button-started bottom">
             <Link
               className="get-started-button bottom"
               to="extension/"
@@ -234,7 +234,7 @@ export default class Home extends React.Component {
             >
               <span>{this.getLangText("StartLearning")}</span>
             </Link>
-          </div>
+          </div> */}
           <div>
             <Link to="/privacy">
               <p className="privacy">{this.getLangText("PrivacyPolicy")}</p>
