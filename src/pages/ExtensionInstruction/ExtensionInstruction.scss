@@ -1,0 +1,206 @@
+@import "../../styles/variables";
+
+@mixin centralPosition{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+};
+
+@mixin centralPositionHW{
+  // H - Height;
+  // W - Width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+};
+
+@mixin buttonCorrect{
+  outline: none;
+  border: none;
+  cursor: pointer;
+};
+
+*{
+  font-family: "Montserrat", sans-serif;
+};
+
+.instruction {
+  @include centralPositionHW;
+
+  .instruction_container{
+    @include centralPosition;
+    width: 85%;
+    height: 100%;
+    flex-direction: column;
+
+    .instruction_container_header{
+      @include centralPositionHW;
+      padding-top: 10%;
+
+      .instruction_container_header_title, .instruction_container_header_text{
+        @include centralPositionHW;
+      };
+
+      .instruction_container_header_title h1{
+        color: $extensionInstructionColor;
+        font-style: Bold;
+        font-size: 59px;
+        line-height: 72px;
+        line-height: 100%;
+      };
+
+      .instruction_container_header_text{
+        @include centralPositionHW;
+        padding-top: 5%;
+      };
+
+      .instruction_container_header_text p{
+        color: $extensionInstructionColor;
+        font-style: Regular;
+        font-size: 25px;
+        line-height: 30px;
+        line-height: 100%;
+        text-align: center;
+        margin: 0px;
+      };
+
+    };
+
+    .instruction_container_start{
+      @include centralPositionHW;
+      padding-top: 100px;
+
+      .start-free{
+        @include buttonCorrect;
+        background-color: $startBtnColor;
+        color: $color;
+        height: 89.52px;
+        width: 35%;
+        border-radius: 110px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
+      };
+
+    };
+
+
+
+
+
+  };
+
+  .instruction_container_main{
+
+    .instruction_container_main_text-hints{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 150px;
+      width: 100%;
+      heihgt: 100%;
+
+
+      .instruction_container_main_text-hints_a, .instruction_container_main_text-hints_b{
+        @include centralPosition;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        border-radius: 13px;
+        border: $extensionInstructionColor solid;
+      };
+
+      .hints_title{
+        padding-top: 3%;
+      };
+
+      .hints_folder_top{
+        display: flex;
+        align-items: center;
+
+        .hints-img-a{
+          padding-left: 20px;
+        };
+      };
+
+
+
+      .hints_folder{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+
+        .hints_folder_content{
+          display: inline-flex;
+          width: 100%;
+
+          .hints-img-b{
+            width: 40px;
+            height: 40px;
+          };
+        };
+
+        .hints_folder_content p{
+          display: flex;
+          padding-left: 40px;
+        };
+
+      };
+
+      .hints_footer{
+        display: inline-flex;
+        //align-items: center;
+        //justify-content: space-between;
+        padding-bottom: 30px;
+
+        .register{
+          @include buttonCorrect;
+          width: 200px;
+          background: linear-gradient(179.1deg, #6178F5 22.38%, #195AA9 82.85%);
+          border-radius: 5px;
+        };
+
+      };
+
+    };
+
+    .instruction_container_main_presentation{
+      @include centralPositionHW;
+
+      .instruction_container_main_presentation_height{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      };
+
+
+
+
+
+
+
+
+
+
+
+
+    };
+
+
+
+
+
+
+
+
+
+  };
+
+};
