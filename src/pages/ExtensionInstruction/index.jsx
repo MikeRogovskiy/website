@@ -83,7 +83,7 @@ export default class ExtensionInstruction extends Component{
 
                                 <div className="hints_footer">
                                     <input type="button" value="Зарегистироваться" className="register"/>
-                                    <a>Войти</a>
+                                    <a href="https://easylang.app/">Войти</a>
                                 </div>
                             </div>
                         </div>
@@ -116,46 +116,45 @@ export default class ExtensionInstruction extends Component{
                                             <h3>Выдели слово и</h3>
                                             <h3>переведи все предложение</h3>
                                         </div>
-                                        <div className="presentation_section_main">
-                                            <img src={sectionGeneral} />
-                                            <h2>It’s such a <span>beautiful</span> life!</h2>
-                                        </div>
+                                    </div>
+
+                                    <div className="presentation_section_main">
+                                        <img src={sectionGeneral} />
+                                        <h2>It’s such a <span>beautiful</span> life!</h2>
                                     </div>
                                 </div>
                             </div>
                             <div className="instruction_container_main_presentation_low">
                                 <div className="presentation_section">
-                                    <div className="presentation_section">
-                                        <div className="presentation_section_header">
-                                            <div className="presentation_section_header_image">
-                                                <img src={cNumSection} />
-                                            </div>
-                                            <div className="presentation_section_header_text">
-                                                <h3>Сохрани новое слово в</h3>
-                                                <h3>контекстном меню в тьютер</h3>
-                                            </div>
-                                            <div className="presentation_section_main">
-                                                <img src={sectionGeneral} />
-                                                <h2>It’s such a <span>beautiful</span> life!</h2>
-                                            </div>
+                                    <div className="presentation_section_header">
+                                        <div className="presentation_section_header_image">
+                                            <img src={cNumSection} />
                                         </div>
+                                        <div className="presentation_section_header_text">
+                                            <h3>Сохрани новое слово в</h3>
+                                            <h3>контекстном меню в тьютер</h3>
+                                        </div>
+                                    </div>
+
+                                    <div className="presentation_section_main">
+                                        <img src={sectionGeneral} />
+                                        <h2>It’s such a <span>beautiful</span> life!</h2>
                                     </div>
                                 </div>
 
                                 <div className="presentation_section">
-                                    <div className="presentation_section">
-                                        <div className="presentation_section_header">
-                                            <div className="presentation_section_header_image">
-                                                <img src={dNumSection} />
-                                            </div>
-                                            <div className="presentation_section_header_text">
-                                                <h3>Повтори их с помощью игр,</h3>
-                                                <h3>на компьютере или телефоне</h3>
-                                            </div>
-                                            <div className="presentation_section_main">
-                                                <img src={sectionSpecific} />
-                                            </div>
+                                    <div className="presentation_section_header">
+                                        <div className="presentation_section_header_image">
+                                            <img src={dNumSection} />
                                         </div>
+                                        <div className="presentation_section_header_text">
+                                            <h3>Повтори их с помощью игр,</h3>
+                                            <h3>на компьютере или телефоне</h3>
+                                        </div>
+                                    </div>
+
+                                    <div className="presentation_section_main">
+                                        <img src={sectionSpecific} />
                                     </div>
                                 </div>
                             </div>

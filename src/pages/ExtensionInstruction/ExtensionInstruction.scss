@@ -99,16 +99,20 @@
     .instruction_container_main_text-hints{
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-evenly;
       padding-top: 150px;
       width: 100%;
       heihgt: 100%;
 
+      .instruction_container_main_text-hints_b .hints_folder_content{
+        padding-top: 20px;
+      };
+
 
       .instruction_container_main_text-hints_a, .instruction_container_main_text-hints_b{
         @include centralPosition;
-        width: 50%;
-        height: 100%;
+        width: 45%;
+        height: 485px;
         flex-direction: column;
         border-radius: 13px;
         border: $extensionInstructionColor solid;
@@ -121,12 +125,31 @@
       .hints_folder_top{
         display: flex;
         align-items: center;
+        color: $blackColor;
 
         .hints-img-a{
           padding-left: 20px;
         };
       };
 
+      .hints_folder h2, .hints_folder p{
+        color: $blackColor;
+      };
+
+      .hints_header{
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+      };
+
+      .hints_header h2{
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $blackColor;
+      };
 
 
       .hints_folder{
@@ -150,21 +173,41 @@
         .hints_folder_content p{
           display: flex;
           padding-left: 40px;
+          color: $blackColor;
         };
 
+      };
+
+      .hints_footer a{
+        @include centralPosition;
+        color: $extensionInstructionColor;
+        text-decoration-line: underline;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 40px;
       };
 
       .hints_footer{
         display: inline-flex;
         //align-items: center;
-        //justify-content: space-between;
-        padding-bottom: 30px;
+        width: 100%;
+        justify-content: space-around;
+        padding-bottom: 60px;
 
         .register{
           @include buttonCorrect;
-          width: 200px;
+          width: 300px;
           background: linear-gradient(179.1deg, #6178F5 22.38%, #195AA9 82.85%);
           border-radius: 5px;
+          height: 40px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 20px;
+          color: $color;
+          margin-right: 30px;
         };
 
       };
@@ -173,33 +216,74 @@
 
     .instruction_container_main_presentation{
       @include centralPositionHW;
+      padding-top: 20px;
 
-      .instruction_container_main_presentation_height{
+      .instruction_container_main_presentation_low{
+        padding-top: 10%;
+      };
+
+      .instruction_container_main_presentation_low, .instruction_container_main_presentation_height{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
+        width: 100%;
+
+      };
+
+      .presentation-section{
+        width: 40%;
+      };
+
+      .presentation_section_header{
+        display: inline-flex;
+      };
+
+      .presentation_section_header h3{
+        color: $blackColor;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-left: 30px;
+      };
+
+      .presentation_section_header_image{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      };
+
+      .presentation_section_header_image img{
+        height: 45px;
+      };
+
+      .presentation_section_main{
+        padding-top: 60px;
+      };
+
+      .presentation_section_main img{
+        padding-left: 80px;
+      };
+
+      .presentation_section_main h2{
+        color: $blackColor;
+      };
+
+      .presentation_section_main h2 span{
+        background-color: #6078F4;
+        color: $color;
       };
 
 
 
 
-
-
-
-
-
+      //.presentation_section_header{
+      //  display: flex;
+      //  align-items: center;
+      //  justify-content: space-around;
+      //};
 
 
 
     };
-
-
-
-
-
-
-
-
 
   };
 
