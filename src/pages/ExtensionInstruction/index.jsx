@@ -17,6 +17,8 @@ import bNumSection from  "../../assets/images/extension-instruction/bNumSection.
 import cNumSection from  "../../assets/images/extension-instruction/cNumSection.svg";
 import dNumSection from  "../../assets/images/extension-instruction/dNumSection.svg";
 
+import arrow from  "../../assets/images/extension-instruction/arrow.svg";
+
 import "./ExtensionInstruction.scss";
 
 export default class ExtensionInstruction extends Component{
@@ -54,7 +56,7 @@ export default class ExtensionInstruction extends Component{
 
                                 <div className="hints_folder">
                                     <p className="hints_folder_top">Ваш родной язык:<img className="hints-img-a"  src={pickLanguageExample} /></p>
-                                    <p>Слова и выражения будут по умолчанию переведены на Ваш родной язык</p>
+                                    <p>Слова и выражения будут по умолчанию<br></br>переведены на Ваш родной язык</p>
                                     <h2>Не переводить страницы на родном языке:</h2>
                                     <p>По умолчанию функции перевода отключены,<br></br>если язык страницы совпадает с Вашим родным<br></br> языком. Вы можете активировать перевод для<br></br> таких страниц в Настройках.</p>
                                 </div>
@@ -89,7 +91,7 @@ export default class ExtensionInstruction extends Component{
                         </div>
 
                         <div className="instruction_container_main_presentation">
-                            <div className="instruction_container_main_presentation_height">
+                            <div className="instruction_container_main_presentation_left">
                                 <div className="presentation_section">
                                     <div className="presentation_section_header">
                                         <div className="presentation_section_header_image">
@@ -106,25 +108,6 @@ export default class ExtensionInstruction extends Component{
                                         <h2>It’s such a <span>beautiful</span> life!</h2>
                                     </div>
                                 </div>
-
-                                <div className="presentation_section">
-                                    <div className="presentation_section_header">
-                                        <div className="presentation_section_header_image">
-                                            <img src={bNumSection} />
-                                        </div>
-                                        <div className="presentation_section_header_text">
-                                            <h3>Выдели слово и</h3>
-                                            <h3>переведи все предложение</h3>
-                                        </div>
-                                    </div>
-
-                                    <div className="presentation_section_main">
-                                        <img src={sectionGeneral} />
-                                        <h2>It’s such a <span>beautiful</span> life!</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="instruction_container_main_presentation_low">
                                 <div className="presentation_section">
                                     <div className="presentation_section_header">
                                         <div className="presentation_section_header_image">
@@ -133,6 +116,27 @@ export default class ExtensionInstruction extends Component{
                                         <div className="presentation_section_header_text">
                                             <h3>Сохрани новое слово в</h3>
                                             <h3>контекстном меню в тьютер</h3>
+                                        </div>
+                                    </div>
+
+                                    <div className="presentation_section_main">
+                                        <img src={sectionGeneral} />
+                                        <img src={arrow} className="presentation-arrow"/>
+                                        <h2>It’s such a <span>beautiful</span> life!</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div className="instruction_container_main_presentation_right">
+                                <div className="presentation_section">
+                                    <div className="presentation_section_header">
+                                        <div className="presentation_section_header_image">
+                                            <img src={bNumSection} />
+                                        </div>
+                                        <div className="presentation_section_header_text">
+                                            <h3>Выдели слово и</h3>
+                                            <h3>переведи все предложение</h3>
                                         </div>
                                     </div>
 

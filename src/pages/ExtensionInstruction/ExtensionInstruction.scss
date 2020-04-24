@@ -71,14 +71,14 @@
 
     .instruction_container_start{
       @include centralPositionHW;
-      padding-top: 100px;
+      padding: 100px 0 100px 0;
 
       .start-free{
         @include buttonCorrect;
         background-color: $startBtnColor;
         color: $color;
         height: 89.52px;
-        width: 35%;
+        width: 30%;
         border-radius: 110px;
         font-style: normal;
         font-weight: bold;
@@ -95,14 +95,18 @@
   };
 
   .instruction_container_main{
+    //@include centralPositionHW;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 75%;
 
     .instruction_container_main_text-hints{
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-      padding-top: 150px;
-      width: 100%;
-      heihgt: 100%;
+      justify-content: space-between;
+      width: 94%;
 
       .instruction_container_main_text-hints_b .hints_folder_content{
         padding-top: 20px;
@@ -110,8 +114,7 @@
 
 
       .instruction_container_main_text-hints_a, .instruction_container_main_text-hints_b{
-        @include centralPosition;
-        width: 45%;
+        width: 49%;
         height: 485px;
         flex-direction: column;
         border-radius: 13px;
@@ -119,13 +122,14 @@
       };
 
       .hints_title{
-        padding-top: 3%;
+        padding-top: 5%;
       };
 
       .hints_folder_top{
         display: flex;
         align-items: center;
         color: $blackColor;
+        padding-top: 5%;
 
         .hints-img-a{
           padding-left: 20px;
@@ -134,6 +138,12 @@
 
       .hints_folder h2, .hints_folder p{
         color: $blackColor;
+        font-size: 16px;
+      };
+
+      .hints_folder h2{
+        font-weight: 700;
+        padding: 3% 0 3% 0;
       };
 
       .hints_header{
@@ -147,6 +157,9 @@
 
       .hints_header h2{
         text-transform: uppercase;
+        font-size: 19px;
+        line-height: 23px;
+        font-size: 19px;
         font-weight: 700;
         color: $blackColor;
       };
@@ -156,7 +169,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
+        //height: 100%;
         padding: 20px;
 
 
@@ -165,8 +178,8 @@
           width: 100%;
 
           .hints-img-b{
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
           };
         };
 
@@ -186,28 +199,25 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 20px;
-        padding-right: 40px;
+        padding-right: 100px;
       };
 
       .hints_footer{
         display: inline-flex;
-        //align-items: center;
         width: 100%;
         justify-content: space-around;
-        padding-bottom: 60px;
 
         .register{
           @include buttonCorrect;
           width: 300px;
           background: linear-gradient(179.1deg, #6178F5 22.38%, #195AA9 82.85%);
           border-radius: 5px;
-          height: 40px;
+          height: 50px;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
           line-height: 20px;
           color: $color;
-          margin-right: 30px;
         };
 
       };
@@ -215,23 +225,52 @@
     };
 
     .instruction_container_main_presentation{
-      @include centralPositionHW;
-      padding-top: 20px;
+      display: flex;
+      width: 94%;
+      height: 100%;
+      background-color: gray;
+      margin-top: 20px;
+      border-radius: 13px;
 
-      .instruction_container_main_presentation_low{
-        padding-top: 10%;
-      };
-
-      .instruction_container_main_presentation_low, .instruction_container_main_presentation_height{
+      .instruction_container_main_presentation_right, .instruction_container_main_presentation_left{
         display: flex;
-        align-items: flex-start;
+        flex-direction: column;
         justify-content: space-between;
-        width: 100%;
-
+        width: 50%;
+        height: 100%;
+        padding-bottom: 3%;
       };
 
-      .presentation-section{
-        width: 40%;
+      .instruction_container_main_presentation_left{
+        padding-left: 30px;
+      };
+
+      .instruction_container_main_presentation_left .presentation_section:nth-child(2),
+      .instruction_container_main_presentation_right .presentation_section:nth-child(2){
+        padding-top: 30%;
+      };
+
+      .instruction_container_main_presentation_left .presentation_section:nth-child(2)
+      .presentation_section_main{
+        padding-top: 30%;
+      };
+
+      .instruction_container_main_presentation_right .presentation_section:nth-child(2)
+      .presentation_section_main img{
+        width: 100%;
+        height: 100%;
+        //padding-left: 3%;
+        padding: 0 3% 0 3%;
+      };
+
+      .instruction_container_main_presentation_right{
+        padding-left: 3%;
+      };
+
+
+      .presentation_section{
+        padding-top: 20px;
+        width: 100%;
       };
 
       .presentation_section_header{
@@ -252,19 +291,23 @@
       };
 
       .presentation_section_header_image img{
-        height: 45px;
+        height: 85%;
       };
 
       .presentation_section_main{
         padding-top: 60px;
       };
 
-      .presentation_section_main img{
+      .presentation_section_main img:nth-child(1){
+        width: 85%;
         padding-left: 80px;
+        position: relative;
+        z-index: 5;
       };
 
       .presentation_section_main h2{
         color: $blackColor;
+        padding-top: 20px;
       };
 
       .presentation_section_main h2 span{
@@ -273,18 +316,21 @@
       };
 
 
-
-
-      //.presentation_section_header{
-      //  display: flex;
-      //  align-items: center;
-      //  justify-content: space-around;
-      //};
-
-
+      .presentation-arrow{
+        width: 40%;
+        position: relative;
+        z-index: 0;
+        margin-bottom: -40px;
+        margin-top: -90px;
+        margin-left: 70%;
+      };
 
     };
 
   };
+
+  .instruction_container_footer{
+    @include centralPositionHW;
+  }
 
 };
