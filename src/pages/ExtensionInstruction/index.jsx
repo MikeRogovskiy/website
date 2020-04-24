@@ -18,6 +18,7 @@ import cNumSection from  "../../assets/images/extension-instruction/cNumSection.
 import dNumSection from  "../../assets/images/extension-instruction/dNumSection.svg";
 
 import arrow from  "../../assets/images/extension-instruction/arrow.svg";
+import arrowAnimation from "../../assets/images/extension-instruction/arrowAnimation.svg";
 
 import "./ExtensionInstruction.scss";
 import "./ExtensionInstructionMedia.scss";
@@ -28,6 +29,10 @@ export default class ExtensionInstruction extends Component{
             <div className="instruction">
                 <MainHeader />
                 <div className="instruction_container">
+
+                    {/*<div className="instruction_container_arrow">*/}
+                    {/*    <img src={arrowAnimation} />*/}
+                    {/*</div> animation arrow unfinished */}
 
                     <div className="instruction_container_header">
 
@@ -43,7 +48,9 @@ export default class ExtensionInstruction extends Component{
                     </div>
 
                     <div className="instruction_container_start">
-                        <input type="button" value="GET STARTED FREE" className="start-free"/>
+                        <a href="https://easylang.app/extension" target="_blank">
+                            <input type="button" value="GET STARTED FREE" className="start-free"/>
+                        </a>
                     </div>
 
                     <div className="instruction_container_main">
@@ -175,7 +182,9 @@ export default class ExtensionInstruction extends Component{
 
                     <div className="instruction_container_footer">
                         <div className="instruction_container_start">
-                            <input type="button" value="GET STARTED FREE" className="start-free"/>
+                            <a href="https://easylang.app/extension" target="_blank">
+                                <input type="button" value="GET STARTED FREE" className="start-free"/>
+                            </a>
                         </div>
                     </div>
 

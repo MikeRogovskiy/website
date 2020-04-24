@@ -36,6 +36,19 @@
     height: 100%;
     flex-direction: column;
 
+    .instruction_container_arrow{
+      width: 100%;
+      height: 20px;
+      align-items: flex-end;
+      justify-content: flex-end;
+      display: flex;
+    };
+
+    .instruction_container_arrow img{
+      margin-right: -400px;
+      margin-bottom: -300px;
+    };
+
     .instruction_container_header{
       @include centralPositionHW;
       padding-top: 10%;
