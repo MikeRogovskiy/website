@@ -4,10 +4,10 @@ import MainHeader from "../../components/MainHeader";
 
 import pickLanguageExample from "../../assets/images/extension-instruction/pickLanguageExample.svg";
 
-import hintsA from "../../assets/images/extension-instruction/hintsA.svg";
-import hintsB from "../../assets/images/extension-instruction/hintsB.svg";
-import hintsC from "../../assets/images/extension-instruction/hintsC.svg";
-import hintsD from "../../assets/images/extension-instruction/hintsD.svg";
+import cardA from "../../assets/images/extension-instruction/cardA.svg";
+import cardB from "../../assets/images/extension-instruction/cardB.svg";
+import cardC from "../../assets/images/extension-instruction/cardC.svg";
+import cardD from "../../assets/images/extension-instruction/cardD.svg";
 
 import sectionGeneral from "../../assets/images/extension-instruction/sectionGeneral.svg";
 import sectionSpecific from "../../assets/images/extension-instruction/sectionSpecific.svg";
@@ -48,17 +48,17 @@ export default class ExtensionInstruction extends Component{
 
                     <div className="instruction_container_main">
 
-                        <div className="instruction_container_main_text-hints">
-                            <div className="instruction_container_main_text-hints_a">
+                        <div className="instruction_container_main_text-card">
+                            <div className="instruction_container_main_text-card_a">
 
-                                <div className="hints_header">
-                                    <h2 className="hints_title">Выбери свой язык</h2>
+                                <div className="card_header">
+                                    <h2 className="card_title">Выбери свой язык</h2>
                                 </div>
 
-                                <div className="hints_folder">
-                                    <div className="hints_folder_content">
-                                        <p className="hints_folder_top">Ваш родной язык:</p>
-                                        <img className="hints-img-a"  src={pickLanguageExample} />
+                                <div className="card_folder">
+                                    <div className="card_folder_content">
+                                        <p className="card_folder_top">Ваш родной язык:</p>
+                                        <img className="card-img-a"  src={pickLanguageExample} />
                                     </div>
 
                                     <p>Слова и выражения будут по умолчанию<br></br>переведены на Ваш родной язык</p>
@@ -66,103 +66,105 @@ export default class ExtensionInstruction extends Component{
                                     <p>По умолчанию функции перевода отключены,<br></br>если язык страницы совпадает с Вашим родным<br></br> языком. Вы можете активировать перевод для<br></br> таких страниц в Настройках.</p>
                                 </div>
                             </div>
-                            <div className="instruction_container_main_text-hints_b">
+                            <div className="instruction_container_main_text-card_b">
 
-                                <div className="hints_header">
-                                    <h2 className="hints_title">Зарегистрируйся и получи</h2>
+                                <div className="card_header">
+                                    <h2 className="card_title">Зарегистрируйся и получи</h2>
                                     <h2>больше преимуществ</h2>
                                 </div>
 
-                                <div className="hints_folder">
-                                    <div className="hints_folder_content">
-                                        <img className="hints-img-b" src={hintsA} /><p>Переведи слова и словосочетания</p>
+                                <div className="card_folder">
+                                    <div className="card_folder_content">
+                                        <img className="card-img-b" src={cardA} /><p>Переведи слова и словосочетания</p>
                                     </div>
-                                    <div className="hints_folder_content">
-                                        <img className="hints-img-b" src={hintsB} /><p>Добавляй слова для повторения</p>
+                                    <div className="card_folder_content">
+                                        <img className="card-img-b" src={cardB} /><p>Добавляй слова для повторения</p>
                                     </div>
-                                    <div className="hints_folder_content">
-                                        <img className="hints-img-b" src={hintsC} /><p>Играй в игры и повторяй новые слова</p>
+                                    <div className="card_folder_content">
+                                        <img className="card-img-b" src={cardC} /><p>Играй в игры и повторяй новые слова</p>
                                     </div>
-                                    <div className="hints_folder_content">
-                                        <img className="hints-img-b" src={hintsD} /><p>Возварщайся к прочитанным статьям</p>
+                                    <div className="card_folder_content">
+                                        <img className="card-img-b" src={cardD} /><p>Возварщайся к прочитанным статьям</p>
                                     </div>
                                 </div>
 
-                                <div className="hints_footer">
-                                    <input type="button" value="Зарегистироваться" className="register"/>
-                                    <a href="https://easylang.app/">Войти</a>
+                                <div className="card_footer">
+                                    <a href="https://easy4learn.com/login" target="_blank">
+                                        <input type="button" value="Зарегистироваться" className="register" />
+                                    </a>
+                                    <a href="https://easy4learn.com/login" target="_blank">Войти</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="instruction_container_main_presentation">
-                            <div className="instruction_container_main_presentation_left">
-                                <div className="presentation_section">
-                                    <div className="presentation_section_header">
-                                        <div className="presentation_section_header_image">
+                        <div className="instruction_container_main_step">
+                            <div className="instruction_container_main_step_left">
+                                <div className="step_section">
+                                    <div className="step_section_header">
+                                        <div className="step_section_header_image">
                                             <img src={aNumSection} />
                                         </div>
-                                        <div className="presentation_section_header_text">
+                                        <div className="step_section_header_text">
                                             <h3>Выдели и</h3>
                                             <h3>переведи слово</h3>
                                         </div>
                                     </div>
 
-                                    <div className="presentation_section_main">
+                                    <div className="step_section_main">
                                         <img src={sectionGeneral} />
                                         <h2>It’s such a <span>beautiful</span> life!</h2>
                                     </div>
                                 </div>
-                                <div className="presentation_section">
-                                    <div className="presentation_section_header">
-                                        <div className="presentation_section_header_image">
+                                <div className="step_section">
+                                    <div className="step_section_header">
+                                        <div className="step_section_header_image">
                                             <img src={cNumSection} />
                                         </div>
-                                        <div className="presentation_section_header_text">
+                                        <div className="step_section_header_text">
                                             <h3>Сохрани новое слово в</h3>
                                             <h3>контекстном меню в тьютер</h3>
                                         </div>
                                     </div>
 
-                                    <div className="presentation_section_main">
+                                    <div className="step_section_main">
                                         <img src={sectionGeneral} />
-                                        <img src={arrow} className="presentation-arrow"/>
+                                        <img src={arrow} className="step-arrow"/>
                                         <h2>It’s such a <span>beautiful</span> life!</h2>
                                     </div>
                                 </div>
 
 
                             </div>
-                            <div className="instruction_container_main_presentation_right">
-                                <div className="presentation_section">
-                                    <div className="presentation_section_header">
-                                        <div className="presentation_section_header_image">
+                            <div className="instruction_container_main_step_right">
+                                <div className="step_section">
+                                    <div className="step_section_header">
+                                        <div className="step_section_header_image">
                                             <img src={bNumSection} />
                                         </div>
-                                        <div className="presentation_section_header_text">
+                                        <div className="step_section_header_text">
                                             <h3>Выдели слово и</h3>
                                             <h3>переведи все предложение</h3>
                                         </div>
                                     </div>
 
-                                    <div className="presentation_section_main">
+                                    <div className="step_section_main">
                                         <img src={sectionGeneral} />
                                         <h2>It’s such a <span>beautiful</span> life!</h2>
                                     </div>
                                 </div>
 
-                                <div className="presentation_section">
-                                    <div className="presentation_section_header">
-                                        <div className="presentation_section_header_image">
+                                <div className="step_section">
+                                    <div className="step_section_header">
+                                        <div className="step_section_header_image">
                                             <img src={dNumSection} />
                                         </div>
-                                        <div className="presentation_section_header_text">
+                                        <div className="step_section_header_text">
                                             <h3>Повтори их с помощью игр,</h3>
                                             <h3>на компьютере или телефоне</h3>
                                         </div>
                                     </div>
 
-                                    <div className="presentation_section_main">
+                                    <div className="step_section_main">
                                         <img src={sectionSpecific} />
                                     </div>
                                 </div>

@@ -98,13 +98,13 @@
 
   .instruction_container_main{
 
-    .instruction_container_main_text-hints{
+    .instruction_container_main_text-card{
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
 
-      .instruction_container_main_text-hints_a, .instruction_container_main_text-hints_b{
+      .instruction_container_main_text-card_a, .instruction_container_main_text-card_b{
         width: 485px;
         height: 387px;
         flex-direction: column;
@@ -112,31 +112,31 @@
         border: $extensionInstructionColor solid;
       };
 
-      .hints_title{
+      .card_title{
         padding-top: 5%;
       };
 
-      .hints_folder_content{
+      .card_folder_content{
         padding-top: 10px;
       };
 
-      .hints_folder_top{
+      .card_folder_top{
         display: flex;
         align-items: center;
         color: $blackColor;
       };
 
-      .hints_folder h2, .hints_folder p{
+      .card_folder h2, .card_folder p{
         color: $blackColor;
         font-size: 15px;
       };
 
-      .hints_folder h2{
+      .card_folder h2{
         font-weight: 700;
         padding: 2% 0 2% 0;
       };
 
-      .hints_header{
+      .card_header{
         align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
@@ -145,7 +145,7 @@
         padding-left: 30px;
       };
 
-      .hints_header h2{
+      .card_header h2{
         text-transform: uppercase;
         line-height: 23px;
         font-size: 19px;
@@ -153,43 +153,43 @@
         color: $blackColor;
       };
 
-      .instruction_container_main_text-hints_a .hints_folder{
+      .instruction_container_main_text-card_a .card_folder{
         margin-top: 30px;
       };
 
-      .hints_folder{
+      .card_folder{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding-left: 30px;
 
-        .hints_folder_content{
+        .card_folder_content{
           display: inline-flex;
           width: 100%;
 
-          .hints-img-a{
+          .card-img-a{
             padding-left: 10px;
           };
 
-          .hints-img-b{
+          .card-img-b{
             width: 45px;
             height: 45px;
           };
         };
 
-        .hints_folder_content p{
+        .card_folder_content p{
           display: flex;
           padding-left: 30px;
           color: $blackColor;
         };
 
-        .hints_folder_content p:nth-child(1){
+        .card_folder_content p:nth-child(1){
           padding: 0;
         };
 
       };
 
-      .hints_footer a{
+      .card_footer a{
         @include centralPosition;
         color: $extensionInstructionColor;
         text-decoration-line: underline;
@@ -200,7 +200,7 @@
         padding-right: 50px;
       };
 
-      .hints_footer{
+      .card_footer{
         display: inline-flex;
         width: 100%;
         justify-content: space-around;
@@ -224,7 +224,7 @@
 
     };
 
-    .instruction_container_main_presentation{
+    .instruction_container_main_step{
       display: flex;
       width: 100%;
       height: 100%;
@@ -235,7 +235,7 @@
       z-index: 1;
       background: linear-gradient(175.62deg, rgba(97, 120, 245, 0.1) 22.38%, rgba(25, 90, 169, 0.1) 82.85%);
 
-      .instruction_container_main_presentation_right, .instruction_container_main_presentation_left{
+      .instruction_container_main_step_right, .instruction_container_main_step_left{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -244,88 +244,88 @@
         padding-bottom: 3%;
       };
 
-      .instruction_container_main_presentation_left{
+      .instruction_container_main_step_left{
         padding-left: 30px;
       };
 
-      .instruction_container_main_presentation_left .presentation_section:nth-child(2),
-      .instruction_container_main_presentation_right .presentation_section:nth-child(2){
+      .instruction_container_main_step_left .step_section:nth-child(2),
+      .instruction_container_main_step_right .step_section:nth-child(2){
         padding-top: 30%;
       };
 
-      .instruction_container_main_presentation_left .presentation_section:nth-child(2)
-      .presentation_section_main{
+      .instruction_container_main_step_left .step_section:nth-child(2)
+      .step_section_main{
         padding-top: 30%;
       };
 
-      .instruction_container_main_presentation_right .presentation_section:nth-child(2)
-      .presentation_section_main img{
+      .instruction_container_main_step_right .step_section:nth-child(2)
+      .step_section_main img{
         width: 100%;
         height: 100%;
         padding: 0 3% 0 3%;
       };
 
-      .instruction_container_main_presentation_right{
+      .instruction_container_main_step_right{
         padding-left: 3%;
       };
 
 
-      .presentation_section{
+      .step_section{
         padding-top: 20px;
         width: 100%;
       };
 
-      .presentation_section_header{
+      .step_section_header{
         display: inline-flex;
       };
 
-      .presentation_section_header h3{
+      .step_section_header h3{
         color: $blackColor;
         text-transform: uppercase;
         font-weight: 700;
         padding-left: 30px;
       };
 
-      .presentation_section_header_text{
+      .step_section_header_text{
         padding-right: 10px;
       };
 
-      .presentation_section_header_image{
+      .step_section_header_image{
         align-items: center;
         justify-content: center;
         //display: flex;
       };
 
-      .presentation_section_header_image img{
+      .step_section_header_image img{
         height: 45px;
       };
 
-      .presentation_section_main{
+      .step_section_main{
         padding-top: 60px;
       };
 
-      .presentation_section_main:nth-child(2){
+      .step_section_main:nth-child(2){
         padding-top: 30px;
       };
 
-      .presentation_section_main img:nth-child(1){
+      .step_section_main img:nth-child(1){
         width: 85%;
         padding-left: 80px;
         position: relative;
         z-index: 5;
       };
 
-      .presentation_section_main h2{
+      .step_section_main h2{
         color: $blackColor;
         padding-top: 20px;
       };
 
-      .presentation_section_main h2 span{
+      .step_section_main h2 span{
         background-color: #6078F4;
         color: $color;
       };
 
-      .presentation-arrow{
+      .step-arrow{
         width: 40%;
         position: relative;
         z-index: 0;
