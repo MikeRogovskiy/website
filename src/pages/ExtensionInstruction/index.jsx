@@ -20,6 +20,7 @@ import dNumSection from  "../../assets/images/extension-instruction/dNumSection.
 import arrow from  "../../assets/images/extension-instruction/arrow.svg";
 
 import "./ExtensionInstruction.scss";
+import "./ExtensionInstructionMedia.scss";
 
 export default class ExtensionInstruction extends Component{
     render() {
@@ -55,7 +56,11 @@ export default class ExtensionInstruction extends Component{
                                 </div>
 
                                 <div className="hints_folder">
-                                    <p className="hints_folder_top">Ваш родной язык:<img className="hints-img-a"  src={pickLanguageExample} /></p>
+                                    <div className="hints_folder_content">
+                                        <p className="hints_folder_top">Ваш родной язык:</p>
+                                        <img className="hints-img-a"  src={pickLanguageExample} />
+                                    </div>
+
                                     <p>Слова и выражения будут по умолчанию<br></br>переведены на Ваш родной язык</p>
                                     <h2>Не переводить страницы на родном языке:</h2>
                                     <p>По умолчанию функции перевода отключены,<br></br>если язык страницы совпадает с Вашим родным<br></br> языком. Вы можете активировать перевод для<br></br> таких страниц в Настройках.</p>
@@ -173,6 +178,7 @@ export default class ExtensionInstruction extends Component{
                     </div>
 
                 </div>
+                <div className="instruction_footer_background"></div>
             </div>
         );
     }

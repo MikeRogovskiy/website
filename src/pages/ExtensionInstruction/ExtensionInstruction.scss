@@ -32,7 +32,7 @@
 
   .instruction_container{
     @include centralPosition;
-    width: 85%;
+    width: 1020px;
     height: 100%;
     flex-direction: column;
 
@@ -72,13 +72,15 @@
     .instruction_container_start{
       @include centralPositionHW;
       padding: 100px 0 100px 0;
+      position: relative;
+      z-index: 5;
 
       .start-free{
         @include buttonCorrect;
         background-color: $startBtnColor;
         color: $color;
         height: 89.52px;
-        width: 30%;
+        width: 483px;
         border-radius: 110px;
         font-style: normal;
         font-weight: bold;
@@ -95,27 +97,16 @@
   };
 
   .instruction_container_main{
-    //@include centralPositionHW;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 75%;
 
     .instruction_container_main_text-hints{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 94%;
-
-      .instruction_container_main_text-hints_b .hints_folder_content{
-        padding-top: 20px;
-      };
-
+      width: 100%;
 
       .instruction_container_main_text-hints_a, .instruction_container_main_text-hints_b{
-        width: 49%;
-        height: 485px;
+        width: 485px;
+        height: 387px;
         flex-direction: column;
         border-radius: 13px;
         border: $extensionInstructionColor solid;
@@ -125,25 +116,24 @@
         padding-top: 5%;
       };
 
+      .hints_folder_content{
+        padding-top: 10px;
+      };
+
       .hints_folder_top{
         display: flex;
         align-items: center;
         color: $blackColor;
-        padding-top: 5%;
-
-        .hints-img-a{
-          padding-left: 20px;
-        };
       };
 
       .hints_folder h2, .hints_folder p{
         color: $blackColor;
-        font-size: 16px;
+        font-size: 15px;
       };
 
       .hints_folder h2{
         font-weight: 700;
-        padding: 3% 0 3% 0;
+        padding: 2% 0 2% 0;
       };
 
       .hints_header{
@@ -152,30 +142,34 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-left: 20px;
+        padding-left: 30px;
       };
 
       .hints_header h2{
         text-transform: uppercase;
-        font-size: 19px;
         line-height: 23px;
         font-size: 19px;
         font-weight: 700;
         color: $blackColor;
       };
 
+      .instruction_container_main_text-hints_a .hints_folder{
+        margin-top: 30px;
+      };
 
       .hints_folder{
         display: flex;
         flex-direction: column;
         width: 100%;
-        //height: 100%;
-        padding: 20px;
-
+        padding-left: 30px;
 
         .hints_folder_content{
           display: inline-flex;
           width: 100%;
+
+          .hints-img-a{
+            padding-left: 10px;
+          };
 
           .hints-img-b{
             width: 45px;
@@ -185,8 +179,12 @@
 
         .hints_folder_content p{
           display: flex;
-          padding-left: 40px;
+          padding-left: 30px;
           color: $blackColor;
+        };
+
+        .hints_folder_content p:nth-child(1){
+          padding: 0;
         };
 
       };
@@ -199,23 +197,25 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 20px;
-        padding-right: 100px;
+        padding-right: 50px;
       };
 
       .hints_footer{
         display: inline-flex;
         width: 100%;
         justify-content: space-around;
+        padding-top: 30px;
 
         .register{
           @include buttonCorrect;
-          width: 300px;
+          width: 221px;
+          margin-right: 15px;
           background: linear-gradient(179.1deg, #6178F5 22.38%, #195AA9 82.85%);
           border-radius: 5px;
-          height: 50px;
+          height: 40px;
           font-style: normal;
           font-weight: bold;
-          font-size: 16px;
+          max-font-size: 16px;
           line-height: 20px;
           color: $color;
         };
@@ -226,11 +226,14 @@
 
     .instruction_container_main_presentation{
       display: flex;
-      width: 94%;
+      width: 100%;
       height: 100%;
-      background-color: gray;
-      margin-top: 20px;
+      position: relative;
+      z-index: 5;
+      margin-top: 60px;
       border-radius: 13px;
+      z-index: 1;
+      background: linear-gradient(175.62deg, rgba(97, 120, 245, 0.1) 22.38%, rgba(25, 90, 169, 0.1) 82.85%);
 
       .instruction_container_main_presentation_right, .instruction_container_main_presentation_left{
         display: flex;
@@ -259,7 +262,6 @@
       .presentation_section_main img{
         width: 100%;
         height: 100%;
-        //padding-left: 3%;
         padding: 0 3% 0 3%;
       };
 
@@ -284,18 +286,26 @@
         padding-left: 30px;
       };
 
+      .presentation_section_header_text{
+        padding-right: 10px;
+      };
+
       .presentation_section_header_image{
         align-items: center;
         justify-content: center;
-        display: flex;
+        //display: flex;
       };
 
       .presentation_section_header_image img{
-        height: 85%;
+        height: 45px;
       };
 
       .presentation_section_main{
         padding-top: 60px;
+      };
+
+      .presentation_section_main:nth-child(2){
+        padding-top: 30px;
       };
 
       .presentation_section_main img:nth-child(1){
@@ -315,7 +325,6 @@
         color: $color;
       };
 
-
       .presentation-arrow{
         width: 40%;
         position: relative;
@@ -331,6 +340,15 @@
 
   .instruction_container_footer{
     @include centralPositionHW;
-  }
+  };
+
+  .instruction_footer_background{
+    background: no-repeat bottom/110% url("../../assets/images/extension-instruction/backgroundFlowers.svg");
+    display: flex;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: -520px;
+  };
 
 };
