@@ -23,12 +23,38 @@ import arrowAnimation from "../../assets/images/extension-instruction/arrowAnima
 import "./ExtensionInstruction.scss";
 import "./ExtensionInstructionMedia.scss";
 
+
 export default class ExtensionInstruction extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            afterExtensionURL: "http://localhost:3000/extension-instruction?",
+            afterExtensionURLEN: "http://localhost:3000/en/extension-instruction?",
+            afterExtensionURLRU: "http://localhost:3000/ru/extension-instruction?",
+            afterExtensionURLSP: "http://localhost:3000/sp/extension-instruction?",
+            afterExtensionURLCN: "http://localhost:3000/cn/extension-instruction?",
+            extensionArrowAnimation:
+                <div className="instruction_container_arrow">
+                    <img src={arrowAnimation} />
+                </div>,
+            extensionStartButton:
+                <div className="instruction_container_start">
+                    <a href="https://easylang.app/extension" target="_blank">
+                        <input type="button" value="GET STARTED FREE" className="start-free"/>
+                    </a>
+                </div>,
+        }
+    }
+
+
+
     render() {
+
         return (
             <div className="instruction">
                 <MainHeader />
                 <div className="instruction_container">
+                    { window.location.href === this.state.afterExtensionURL && this.state.extensionArrowAnimation }
 
                     {/*<div className="instruction_container_arrow">*/}
                     {/*    <img src={arrowAnimation} />*/}
@@ -47,11 +73,13 @@ export default class ExtensionInstruction extends Component{
 
                     </div>
 
-                    <div className="instruction_container_start">
-                        <a href="https://easylang.app/extension" target="_blank">
-                            <input type="button" value="GET STARTED FREE" className="start-free"/>
-                        </a>
-                    </div>
+
+                    { window.location.href !== this.state.afterExtensionURL && this.state.extensionStartButton }
+                    {/*<div className="instruction_container_start">*/}
+                    {/*    <a href="https://easylang.app/extension" target="_blank">*/}
+                    {/*        <input type="button" value="GET STARTED FREE" className="start-free"/>*/}
+                    {/*    </a>*/}
+                    {/*</div>*/}
 
                     <div className="instruction_container_main">
 
@@ -181,11 +209,12 @@ export default class ExtensionInstruction extends Component{
                     </div>
 
                     <div className="instruction_container_footer">
-                        <div className="instruction_container_start">
-                            <a href="https://easylang.app/extension" target="_blank">
-                                <input type="button" value="GET STARTED FREE" className="start-free"/>
-                            </a>
-                        </div>
+                        {window.location.href !== this.state.afterExtensionURL && this.state.extensionStartButton}
+                        {/*<div className="instruction_container_start">*/}
+                        {/*    <a href="https://easylang.app/extension" target="_blank">*/}
+                        {/*        <input type="button" value="GET STARTED FREE" className="start-free"/>*/}
+                        {/*    </a>*/}
+                        {/*</div>*/}
                     </div>
 
                 </div>

@@ -139,4 +139,5 @@ export default class Plans extends Component {
 
 function myFunction() {
   alert("На текущий момент продукт бесплатный. Для его использования вы можете ввести бесплатный купон EASYTUTOR30 в своем аккаунте. Спасибо за использование продукта!");
+  
 }
