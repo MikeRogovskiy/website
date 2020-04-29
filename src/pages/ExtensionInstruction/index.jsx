@@ -28,11 +28,6 @@ export default class ExtensionInstruction extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            afterExtensionURL: "http://localhost:3000/extension-instruction?",
-            afterExtensionURLEN: "http://localhost:3000/en/extension-instruction?",
-            afterExtensionURLRU: "http://localhost:3000/ru/extension-instruction?",
-            afterExtensionURLSP: "http://localhost:3000/sp/extension-instruction?",
-            afterExtensionURLCN: "http://localhost:3000/cn/extension-instruction?",
             extensionArrowAnimation:
                 <div className="instruction_container_arrow">
                     <img src={arrowAnimation} />
@@ -43,9 +38,19 @@ export default class ExtensionInstruction extends Component{
                         <input type="button" value="GET STARTED FREE" className="start-free"/>
                     </a>
                 </div>,
-        }
-    }
+            checkURLDevelopment: window.location.href === "http://localhost:3000/extension-instruction?",
+                // || "http://localhost:3000/en/extension-instruction?"
+            // || "http://localhost:3000/ru/extension-instruction?"
+                // || "http://localhost:3000/sp/extension-instruction?" || "http://localhost:3000/cn/extension-instruction?",
 
+
+            checkURLProduction : window.location.href === "https://easylang.app/extension-instruction?"
+            //     || "https://easylang.app/en/extension-instruction?" || "https://easylang.app/ru/extension-instruction?"
+            //     || "https://easylang.app/sp/extension-instruction?" || "https://easylang.app/ch/extension-instruction?",
+        }
+
+        /* For now, to start development, you should put specific state(checkURLDevelopment) to the DOM */
+    }
 
 
     render() {
@@ -54,7 +59,7 @@ export default class ExtensionInstruction extends Component{
             <div className="instruction">
                 <MainHeader />
                 <div className="instruction_container">
-                    { window.location.href === this.state.afterExtensionURL && this.state.extensionArrowAnimation }
+                    { this.state.checkURLDevelopment === true && this.state.extensionArrowAnimation }
 
                     {/*<div className="instruction_container_arrow">*/}
                     {/*    <img src={arrowAnimation} />*/}
@@ -74,7 +79,7 @@ export default class ExtensionInstruction extends Component{
                     </div>
 
 
-                    { window.location.href !== this.state.afterExtensionURL && this.state.extensionStartButton }
+                    { this.state.checkURLDevelopment !== true && this.state.extensionStartButton }
                     {/*<div className="instruction_container_start">*/}
                     {/*    <a href="https://easylang.app/extension" target="_blank">*/}
                     {/*        <input type="button" value="GET STARTED FREE" className="start-free"/>*/}
@@ -209,7 +214,7 @@ export default class ExtensionInstruction extends Component{
                     </div>
 
                     <div className="instruction_container_footer">
-                        {window.location.href !== this.state.afterExtensionURL && this.state.extensionStartButton}
+                        { this.state.checkURLDevelopment !== true  && this.state.extensionStartButton }
                         {/*<div className="instruction_container_start">*/}
                         {/*    <a href="https://easylang.app/extension" target="_blank">*/}
                         {/*        <input type="button" value="GET STARTED FREE" className="start-free"/>*/}
