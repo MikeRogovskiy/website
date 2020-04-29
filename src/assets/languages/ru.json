@@ -100,6 +100,36 @@
     "10-SlideExtensionBody": "Теперь повторять материал можно везде, а с играми которые мы создали для Вас это будет намного интереснее!"
   },
 
+  "ExtensionInstructionPage": {
+    "InstructionStartButton": "GET STARTED FREE",
+    "InstructionHeaderTitle": "Добро пожаловать в EasyLang!",
+    "1-InstructionParagraph-a": "Теперь Вы можете переводить слова и словосочетания в контексте",
+    "2-InstructionParagraph-a": "Улучшайте Ваши языковые навыки вместе с EasyLang",
+    "1-InstructionCardHeading-a": "Выбери свой язык",
+    "3-InstructionCardParagraph-a": "Ваш родной язык:",
+    "4-InstructionCardParagraph-a": "Слова и выражения будут по умолчанию<br></br>переведены на Ваш родной язык",
+    "2-InstructionCardHeading-a": "Не переводить страницы на родном языке:",
+    "5-InstructionCardParagraph-a": "По умолчанию функции перевода отключены,<br></br>если язык страницы совпадает с Вашим родным<br></br> языком. Вы можете активировать перевод для<br></br> таких страниц в Настройках.",
+    "1-InstructionCardHeading-a": "Зарегистрируйся и получи",
+    "2-InstructionCardHeading-b": "больше преимуществ",
+    "1-InstructionCardParagraph-b": "Переведи слова и словосочетания",
+    "2-InstructionCardParagraph-b": "Добавляй слова для повторения",
+    "3-InstructionCardParagraph-b": "Играй в игры и повторяй новые слова",
+    "4-InstructionCardParagraph-b": "Возварщайся к прочитанным статьям",
+    "1-InstructionCardLink-b": "Войти",
+    "1-StepLeftHeading-a": "Выдели и",
+    "2-StepLeftHeading-a": "переведи слово",
+    "3-StepLeftHeading-a": "It’s such a <span>beautiful</span> life!",
+    "1-StepLeftHeading-c": "Сохрани новое слово в",
+    "2-StepLeftHeading-c": "контекстном меню в тьютер",
+    "3-StepLeftHeading-c": "It’s such a <span>beautiful</span> life!",
+    "1-StepLeftHeading-b": "Выдели слово и",
+    "2-StepLeftHeading-b": "переведи все предложение",
+    "3-StepLeftHeading-b": "It’s such a <span>beautiful</span> life!",
+    "1-StepLeftHeading-d": "Повтори их с помощью игр,",
+    "2-StepLeftHeading-d": "на компьютере или телефоне"
+  },
+
   "PlayerPage": {
     "GetPlayerButtonWindows": "СКАЧАТЬ для WINDOWS",
     "GetPlayerButtonMac": "СКАЧАТЬ для MAC",

@@ -38,19 +38,19 @@ export default class ExtensionInstruction extends Component{
                         <input type="button" value="GET STARTED FREE" className="start-free"/>
                     </a>
                 </div>,
-            checkURLDevelopment: window.location.href === "http://localhost:3000/extension-instruction?",
-                // || "http://localhost:3000/en/extension-instruction?"
-            // || "http://localhost:3000/ru/extension-instruction?"
-                // || "http://localhost:3000/sp/extension-instruction?" || "http://localhost:3000/cn/extension-instruction?",
-
-
-            checkURLProduction : window.location.href === "https://easylang.app/extension-instruction?"
-            //     || "https://easylang.app/en/extension-instruction?" || "https://easylang.app/ru/extension-instruction?"
-            //     || "https://easylang.app/sp/extension-instruction?" || "https://easylang.app/ch/extension-instruction?",
+            checkURLDevelopment: window.location.href === "http://localhost:3000/extension-instruction",
+            checkURLProduction : window.location.href === "https://easylang.app/extension-instruction"
+            /* For now, to start development, you should put specific state(checkURLDevelopment) to the DOM */
         }
 
-        /* For now, to start development, you should put specific state(checkURLDevelopment) to the DOM */
-    }
+
+    };
+
+    getLangText(text) {
+        return ReactHtmlParser(this.props.text[text]);
+    };
+
+
 
 
     render() {
@@ -59,11 +59,8 @@ export default class ExtensionInstruction extends Component{
             <div className="instruction">
                 <MainHeader />
                 <div className="instruction_container">
-                    { this.state.checkURLProduction === true && this.state.extensionArrowAnimation }
-
-                    {/*<div className="instruction_container_arrow">*/}
-                    {/*    <img src={arrowAnimation} />*/}
-                    {/*</div> animation arrow unfinished */}
+                    {/*{ this.state.checkURLProduction === true && this.state.extensionArrowAnimation }*/}
+                    { this.state.checkURLDevelopment === true && this.state.extensionArrowAnimation }
 
                     <div className="instruction_container_header">
 
@@ -78,13 +75,8 @@ export default class ExtensionInstruction extends Component{
 
                     </div>
 
-
-                    { this.state.checkURLProduction !== true && this.state.extensionStartButton }
-                    {/*<div className="instruction_container_start">*/}
-                    {/*    <a href="https://easylang.app/extension" target="_blank">*/}
-                    {/*        <input type="button" value="GET STARTED FREE" className="start-free"/>*/}
-                    {/*    </a>*/}
-                    {/*</div>*/}
+                    {/*{ this.state.checkURLProduction !== true && this.state.extensionStartButton }*/}
+                    { this.state.checkURLDevelopment !== true && this.state.extensionStartButton }
 
                     <div className="instruction_container_main">
 
@@ -214,12 +206,10 @@ export default class ExtensionInstruction extends Component{
                     </div>
 
                     <div className="instruction_container_footer">
-                        { this.state.checkURLProduction !== true  && this.state.extensionStartButton }
-                        {/*<div className="instruction_container_start">*/}
-                        {/*    <a href="https://easylang.app/extension" target="_blank">*/}
-                        {/*        <input type="button" value="GET STARTED FREE" className="start-free"/>*/}
-                        {/*    </a>*/}
-                        {/*</div>*/}
+
+                        {/*{ this.state.checkURLProduction !== true  && this.state.extensionStartButton }*/}
+                        { this.state.checkURLDevelopment !== true && this.state.extensionStartButton }
+
                     </div>
 
                 </div>
