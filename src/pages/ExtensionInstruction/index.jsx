@@ -59,7 +59,7 @@ export default class ExtensionInstruction extends Component{
             <div className="instruction">
                 <MainHeader />
                 <div className="instruction_container">
-                    { this.state.checkURLDevelopment === true && this.state.extensionArrowAnimation }
+                    { this.state.checkURLProduction === true && this.state.extensionArrowAnimation }
 
                     {/*<div className="instruction_container_arrow">*/}
                     {/*    <img src={arrowAnimation} />*/}
@@ -79,7 +79,7 @@ export default class ExtensionInstruction extends Component{
                     </div>
 
 
-                    { this.state.checkURLDevelopment !== true && this.state.extensionStartButton }
+                    { this.state.checkURLProduction !== true && this.state.extensionStartButton }
                     {/*<div className="instruction_container_start">*/}
                     {/*    <a href="https://easylang.app/extension" target="_blank">*/}
                     {/*        <input type="button" value="GET STARTED FREE" className="start-free"/>*/}
@@ -214,7 +214,7 @@ export default class ExtensionInstruction extends Component{
                     </div>
 
                     <div className="instruction_container_footer">
-                        { this.state.checkURLDevelopment !== true  && this.state.extensionStartButton }
+                        { this.state.checkURLProduction !== true  && this.state.extensionStartButton }
                         {/*<div className="instruction_container_start">*/}
                         {/*    <a href="https://easylang.app/extension" target="_blank">*/}
                         {/*        <input type="button" value="GET STARTED FREE" className="start-free"/>*/}
