@@ -54,10 +54,10 @@ export default class ExtensionInstruction extends Component{
             <div className="instruction">
                 <MainHeader />
                 <div className="instruction_container">
-                    { this.state.checkURL === true && this.state.extensionArrowAnimation }
+
 
                     <div className="instruction_container_header">
-
+                        { this.state.checkURL === true && this.state.extensionArrowAnimation }
                         <div className="instruction_container_header_title">
                             {/*<h1>Добро пожаловать в EasyLang!</h1>*/}
                             <h1>{this.getLangText("InstructionHeaderTitle")}</h1>

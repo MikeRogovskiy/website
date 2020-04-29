@@ -1,11 +1,23 @@
 @import "../../styles/variables";
 
-@keyframes popArrowAnimation {
-  0%, 100% {
-    margin-bottom: -290px;
+@keyframes appearPopArrow {
+  0%, 60%, 90%{
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
   }
   50% {
-    margin-bottom: -320px;
+    opacity: 1;
+  }
+};
+
+@keyframes popArrow {
+  0%, 100% {
+    bottom: 85%;
+  }
+  50% {
+    bottom: 88%;
   }
 };
 
@@ -40,16 +52,22 @@
 .instruction_container_arrow{
   width: 100%;
   height: 20px;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: flex-start;
+  left: 85%;
+  bottom: 90%;
   display: flex;
-
+  position: fixed;
+  animation-name: appearPopArrow, popArrow;
+  animation-duration: 100s, 1s;
+  animation-timing-function:  ease-in, linear;
+  animation-iteration-count: infinite, infinite;
 };
 
 .instruction_container_arrow img{
-  margin-right: -400px;
-  margin-bottom: -300px;
-  animation: popArrowAnimation 1s linear infinite;
+  display: flex;
+  width: 200px;
+  height: 329px;
 };
 
 
