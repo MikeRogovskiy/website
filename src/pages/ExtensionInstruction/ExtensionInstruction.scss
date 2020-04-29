@@ -27,6 +27,15 @@
   font-family: "Montserrat", sans-serif;
 };
 
+.instruction_container_arrow{
+  display: flex;
+};
+
+.instruction_container_arrow img{
+  margin-right: -400px;
+  margin-bottom: -300px;
+};
+
 .instruction {
   @include centralPositionHW;
 
@@ -44,10 +53,6 @@
       display: flex;
     };
 
-    .instruction_container_arrow img{
-      margin-right: -400px;
-      margin-bottom: -300px;
-    };
 
     .instruction_container_header{
       @include centralPositionHW;
