@@ -38,9 +38,8 @@ export default class ExtensionInstruction extends Component{
                         <input type="button" value="GET STARTED FREE" className="start-free"/>
                     </a>
                 </div>,
-            checkURLDevelopment: window.location.href === "http://localhost:3000/extension-instruction",
-            checkURLProduction : window.location.href === "https://easylang.app/extension-instruction"
-            /* For now, to start development, you should put specific state(checkURLDevelopment) to the DOM */
+            checkURL: window.location.href.includes("static"),
+
         }
 
 
@@ -59,8 +58,7 @@ export default class ExtensionInstruction extends Component{
             <div className="instruction">
                 <MainHeader />
                 <div className="instruction_container">
-                    {/*{ this.state.checkURLProduction === true && this.state.extensionArrowAnimation }*/}
-                    { this.state.checkURLDevelopment === true && this.state.extensionArrowAnimation }
+                    { this.state.checkURL === true && this.state.extensionArrowAnimation }
 
                     <div className="instruction_container_header">
 
@@ -75,8 +73,7 @@ export default class ExtensionInstruction extends Component{
 
                     </div>
 
-                    {/*{ this.state.checkURLProduction !== true && this.state.extensionStartButton }*/}
-                    { this.state.checkURLDevelopment !== true && this.state.extensionStartButton }
+                    { this.state.checkURL !== true && this.state.extensionStartButton }
 
                     <div className="instruction_container_main">
 
@@ -207,8 +204,7 @@ export default class ExtensionInstruction extends Component{
 
                     <div className="instruction_container_footer">
 
-                        {/*{ this.state.checkURLProduction !== true  && this.state.extensionStartButton }*/}
-                        { this.state.checkURLDevelopment !== true && this.state.extensionStartButton }
+                        { this.state.checkURL !== true && this.state.extensionStartButton }
 
                     </div>
 
