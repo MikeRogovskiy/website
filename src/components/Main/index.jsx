@@ -37,8 +37,8 @@ export default class App extends React.Component {
             <Home path="/" text={this.props.text.HomePage}></Home>
             <Privacy path="/privacy" text={this.props.text}></Privacy>
             <Extension path="/extension/" text={this.props.text.ExtensionPage} lang={this.props.language} />
-            <ExtensionInstruction path="/extension-instruction-static/" text={this.props.text.ExtensionInstructionPage} />
-            <ExtensionInstruction path="/extension-instruction/" text={this.props.text.ExtensionInstructionPage} />
+            <ExtensionInstruction path="/extension-instruction-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
+            <ExtensionInstruction path="/extension-instruction/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
             <Player path="/player/" text={this.props.text.PlayerPage} />
             <Plans path="/plans/" text={this.props.text.PlansPage} />
             <PlansTest path="/plans-b/" text={this.props.text.PlansPage_b} />

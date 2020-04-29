@@ -35,11 +35,10 @@ export default class ExtensionInstruction extends Component{
             extensionStartButton:
                 <div className="instruction_container_start">
                     <a href="https://easylang.app/extension" target="_blank">
-                        <input type="button" value="GET STARTED FREE" className="start-free"/>
+                        <input type="button" value={this.getLangText("InstructionStartButton")} className="start-free"/>
                     </a>
                 </div>,
             checkURL: window.location.href.includes("static"),
-
         }
 
 
@@ -48,9 +47,6 @@ export default class ExtensionInstruction extends Component{
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
     };
-
-
-
 
     render() {
 
@@ -63,12 +59,13 @@ export default class ExtensionInstruction extends Component{
                     <div className="instruction_container_header">
 
                         <div className="instruction_container_header_title">
-                            <h1>Добро пожаловать в EasyLang!</h1>
+                            {/*<h1>Добро пожаловать в EasyLang!</h1>*/}
+                            <h1>{this.getLangText("InstructionHeaderTitle")}</h1>
                         </div>
 
                         <div className="instruction_container_header_text">
-                            <p>Теперь Вы можете переводить слова и словосочетания в контексте</p>
-                            <p>Улучшайте Ваши языковые навыки вместе с EasyLang </p>
+                            <p>{this.getLangText("1-InstructionParagraph-a")}</p>
+                            <p>{this.getLangText("2-InstructionParagraph-a")}</p>
                         </div>
 
                     </div>
@@ -81,47 +78,47 @@ export default class ExtensionInstruction extends Component{
                             <div className="instruction_container_main_text-card_a">
 
                                 <div className="card_header">
-                                    <h2 className="card_title">Выбери свой язык</h2>
+                                    <h2 className="card_title">{this.getLangText("1-InstructionCardHeading-a")}</h2>
                                 </div>
 
                                 <div className="card_folder">
                                     <div className="card_folder_content">
-                                        <p className="card_folder_top">Ваш родной язык:</p>
+                                        <p className="card_folder_top">{this.getLangText("3-InstructionCardParagraph-a")}</p>
                                         <img className="card-img-a"  src={pickLanguageExample} />
                                     </div>
 
-                                    <p>Слова и выражения будут по умолчанию<br></br>переведены на Ваш родной язык</p>
-                                    <h2>Не переводить страницы на родном языке:</h2>
-                                    <p>По умолчанию функции перевода отключены,<br></br>если язык страницы совпадает с Вашим родным<br></br> языком. Вы можете активировать перевод для<br></br> таких страниц в Настройках.</p>
+                                    <p>{this.getLangText("4-InstructionCardParagraph-a")}</p>
+                                    <h2>{this.getLangText("2-InstructionCardHeading-a")}</h2>
+                                    <p>{this.getLangText("5-InstructionCardParagraph-a")}</p>
                                 </div>
                             </div>
                             <div className="instruction_container_main_text-card_b">
 
                                 <div className="card_header">
-                                    <h2 className="card_title">Зарегистрируйся и получи</h2>
-                                    <h2>больше преимуществ</h2>
+                                    <h2 className="card_title">{this.getLangText("1-InstructionCardHeading-b")}</h2>
+                                    <h2>{this.getLangText("2-InstructionCardHeading-b")}</h2>
                                 </div>
 
                                 <div className="card_folder">
                                     <div className="card_folder_content">
-                                        <img className="card-img-b" src={cardA} /><p>Переведи слова и словосочетания</p>
+                                        <img className="card-img-b" src={cardA} /><p>{this.getLangText("1-InstructionCardParagraph-b")}</p>
                                     </div>
                                     <div className="card_folder_content">
-                                        <img className="card-img-b" src={cardB} /><p>Добавляй слова для повторения</p>
+                                        <img className="card-img-b" src={cardB} /><p>{this.getLangText("2-InstructionCardParagraph-b")}</p>
                                     </div>
                                     <div className="card_folder_content">
-                                        <img className="card-img-b" src={cardC} /><p>Играй в игры и повторяй новые слова</p>
+                                        <img className="card-img-b" src={cardC} /><p>{this.getLangText("3-InstructionCardParagraph-b")}</p>
                                     </div>
                                     <div className="card_folder_content">
-                                        <img className="card-img-b" src={cardD} /><p>Возварщайся к прочитанным статьям</p>
+                                        <img className="card-img-b" src={cardD} /><p>{this.getLangText("4-InstructionCardParagraph-b")}</p>
                                     </div>
                                 </div>
 
                                 <div className="card_footer">
                                     <a href="https://easy4learn.com/login" target="_blank">
-                                        <input type="button" value="Зарегистироваться" className="register" />
+                                        <input type="button" value={this.getLangText("1-InstructionCardButton-b")} className="register" />
                                     </a>
-                                    <a href="https://easy4learn.com/login" target="_blank">Войти</a>
+                                    <a href="https://easy4learn.com/login" target="_blank">{this.getLangText("1-InstructionCardLink-b")}</a>
                                 </div>
                             </div>
                         </div>
@@ -134,14 +131,14 @@ export default class ExtensionInstruction extends Component{
                                             <img src={aNumSection} />
                                         </div>
                                         <div className="step_section_header_text">
-                                            <h3>Выдели и</h3>
-                                            <h3>переведи слово</h3>
+                                            <h3>{this.getLangText("1-StepLeftHeading-a")}</h3>
+                                            <h3>{this.getLangText("2-StepLeftHeading-a")}</h3>
                                         </div>
                                     </div>
 
                                     <div className="step_section_main">
                                         <img src={sectionGeneral} />
-                                        <h2>It’s such a <span>beautiful</span> life!</h2>
+                                        <h2>{this.getLangText("3-StepLeftHeading-a")}</h2>
                                     </div>
                                 </div>
                                 <div className="step_section">
@@ -150,15 +147,15 @@ export default class ExtensionInstruction extends Component{
                                             <img src={cNumSection} />
                                         </div>
                                         <div className="step_section_header_text">
-                                            <h3>Сохрани новое слово в</h3>
-                                            <h3>контекстном меню в тьютер</h3>
+                                            <h3>{this.getLangText("1-StepLeftHeading-c")}</h3>
+                                            <h3>{this.getLangText("2-StepLeftHeading-c")}</h3>
                                         </div>
                                     </div>
 
                                     <div className="step_section_main">
                                         <img src={sectionGeneral} />
                                         <img src={arrow} className="step-arrow"/>
-                                        <h2>It’s such a <span>beautiful</span> life!</h2>
+                                        <h2>{this.getLangText("3-StepLeftHeading-c")}</h2>
                                     </div>
                                 </div>
 
@@ -171,14 +168,14 @@ export default class ExtensionInstruction extends Component{
                                             <img src={bNumSection} />
                                         </div>
                                         <div className="step_section_header_text">
-                                            <h3>Выдели слово и</h3>
-                                            <h3>переведи все предложение</h3>
+                                            <h3>{this.getLangText("1-StepLeftHeading-b")}</h3>
+                                            <h3>{this.getLangText("2-StepLeftHeading-b")}</h3>
                                         </div>
                                     </div>
 
                                     <div className="step_section_main">
                                         <img src={sectionGeneral} />
-                                        <h2>It’s such a <span>beautiful</span> life!</h2>
+                                        <h2>{this.getLangText("3-StepLeftHeading-b")}</h2>
                                     </div>
                                 </div>
 
@@ -188,8 +185,8 @@ export default class ExtensionInstruction extends Component{
                                             <img src={dNumSection} />
                                         </div>
                                         <div className="step_section_header_text">
-                                            <h3>Повтори их с помощью игр,</h3>
-                                            <h3>на компьютере или телефоне</h3>
+                                            <h3>{this.getLangText("1-StepLeftHeading-d")}</h3>
+                                            <h3>{this.getLangText("2-StepLeftHeading-d")}</h3>
                                         </div>
                                     </div>
 
