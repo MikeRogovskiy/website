@@ -16,13 +16,6 @@ body {
     margin: 0;
 }
 
-@media (min-width: 162.5rem) {
-  .plans_wrapper_container {
-    width: 65% !important;
-    margin: 5% 16% !important;
-  }
-}
-
 .plans-folder{
   background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlans.svg");
 }
@@ -35,6 +28,7 @@ body {
     padding-top: 100px;
     padding-bottom: 400px;
     transition: 1s ease-in;
+    width: 100%;
 
     .plans_wrapper_head{
       width: 100%;
@@ -221,112 +215,3 @@ body {
     }
 
   }
-
-//  // Styles for media devices
-//  @media screen and (min-width: 600px) and (max-width: 850px) {
-//    .Plans {
-//      .item {
-//        height: 40rem;
-//      }
-//      .content h2 {
-//        font-size: 1.3rem;
-//        line-height: 1.1rem;
-//      }
-//      .content h1 {
-//        font-size: 2rem;
-//        line-height: 1.6rem;
-//      }
-//      .content p {
-//        font-size: 1rem !important;
-//      }
-//      .advantages {
-//        height: 55%;
-//      }
-//      .advantages-item p {
-//        font-size: 0.8rem !important;
-//      }
-//    }
-//}
-//
-//  // Mobile tariff-plans styles
-//  @media(max-width: "600px") {
-//    .Plans {
-//      background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlansMobile.jpg");
-//
-//      .top-title {
-//        font-size: 1.125rem !important;
-//        line-height: 1.375rem !important;
-//      }
-//
-//      .top-subtitle {
-//          font-size: 0.875rem !important;
-//          line-height: 150% !important;
-//      }
-//
-//      .container {
-//        margin: 7% auto;
-//        justify-content: space-around;
-//        flex-direction: column;
-//      }
-//
-//      .item {
-//        margin-bottom: 10% !important;
-//        width: 85%;
-//        height: 450px;
-//        margin: 8% 2%;
-//      }
-//
-//      .item-center {
-//        width: 72%;
-//        height: 400px;
-//        margin: 10% 2%;
-//      }
-//
-//      .content h2 {
-//        font-size: 1rem;
-//        line-height: 1.25rem;
-//      }
-//
-//      .content h1 {
-//        padding-top: 1.25rem;
-//        font-size: 1.8rem;
-//        line-height: 2.2rem;
-//      }
-//
-//      .advantages {
-//        margin-top: 20%;
-//        height: 35%;
-//      }
-//      .advantages-item {
-//        width: 80% !important;
-//      }
-//
-//      .advantages-item p {
-//        margin-left: -3%;
-//        font-size: 1rem !important;
-//        line-height: 0.94rem;
-//      }
-//
-//      .advantages-item img {
-//        margin-right: 7%;
-//      }
-//
-//      .button {
-//        margin-top: 15%;
-//        padding-top: 20%;
-//      }
-//
-//      .plans-button {
-//        font-size: 0.875rem;
-//        letter-spacing: 1px;
-//        line-height: 1.06rem;
-//        border-radius: 110px;
-//        &.top,&.bottom{
-//          padding: 5% 10%;
-//        }
-//      }
-//    }
-//  }
-  
-  
-  

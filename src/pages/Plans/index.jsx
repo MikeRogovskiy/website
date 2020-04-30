@@ -5,6 +5,7 @@ import PopUpWindow from "./PopUpWindow";
 import PopUpBackground from "./PopUpBackground";
 
 import "./Plans.scss";
+import "./PlansMedia.scss";
 
 import plansV from "../../assets/images/Plans/plansV.svg";
 
