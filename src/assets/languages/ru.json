@@ -161,27 +161,25 @@
   },
 
   "PlansPage": {
-    "PlansTitle": "ПЛАТНАЯ ПОДПИСКА ДЛЯ ОТКРЫТОГО ПРОЕКТА",
-    "1-PlansSubtitle": "МЫ ХОТИМ УМЕНЬШИТЬ КОЛ-ВО КОНФЛИКТОВ В МИРЕ <br/>ПОЭТОМУ НАШ ЯЗЫКОВОЙ ПРОЕКТ РАЗРАБАТЫВАЕТСЯ КАК <a href='https://simple.wikipedia.org/wiki/Open_source' target='_blank' style='text-decoration: underline;'>OPENSOURCE.</a>",
-    "2-PlansSubtitle": "Для работы нашего сервиса мы должны приобретать платные сервисы. <br/>Например хостинг или Google Translate.<br/>Если Вам полезен EasyLang, Вы можете полностью снять ограничения на нем.",
-    "3-PlansSubtitle": "Бесплатный план почти без ограничений, <br/>но он имеет дневные лимиты и поэтому он менее удобный для обучения.<br/><b>СПАСИБО за поддержку.</b>",
-
-    "Standart": "Для всех",
-    "1-StandartPoint": "Словарь Пользователя <br/><b>5 добавлений</b> в день",
-    "2-StandartPoint": "Быстрый Перевод <br/><b>20 в день</b>",
-
-    "Premium": "Стандарт",
-    "PremiumSubtitle": "<b>за год вперед</b> $59.88",
-    "1-PremiumPoint": "Словарь Пользователя <br/><b>10 добавлений</b> в день",
-    "2-PremiumPoint": "Быстрый Перевод <br/><b>БЕЗЛИМИТ</b>",
-
-    "SuperPremium": "Продвинутый План",
-    "1-SuperPremiumPoint": "Словарь Пользователя <br/><b>БЕЗЛИМИТ</b>",
-    "2-SuperPremiumPoint": "Быстрый Перевод <br/><b>БЕЗЛИМИТ</b>",
-
-    "Free": "Бесплатно",
-    "Month": "/в месяц",
-    "Choose": "Выбрать"
+    "PlansTitle": "We are a free OpenSource startup that strives to help people!",
+    "1-PlansSubtitle": "Our company has to buy services from Google.</br>Consider supporting our efforts If you enjoy EasyLang by choosing our premium-services!",
+    "2-PlansSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort.",
+    "Standard": "Standard",
+    "StandardCondition": "Free",
+    "StandardSubtitle": "For all time",
+    "1-StandardPoint": "Full functionality",
+    "2-StandardPoint": "10 translations/day limit.</br><span>After we will send you</br>direct link to translation.</span>",
+    "Premium": "Premium",
+    "PremiumCondition": "<span>$</span>7<span>.99</span>",
+    "PremiumSubtitle": "Per month",
+    "1-PremiumPoint": "Full functionality",
+    "2-PremiumPoint": "Convenient Google Translate window",
+    "SuperPremium": "Premium",
+    "SuperPremiumCondition": "<span>$</span>4<span>.99</span>",
+    "SuperPremiumSubtitle": "Per month</br>if you pay $59.88 for year",
+    "1-SuperPremiumPoint": "Full functionality",
+    "2-SuperPremiumPoint": "Convenient Google Translate window",
+    "ButtonName": "Choose"
   },
 
   "PlansPage_b": {
