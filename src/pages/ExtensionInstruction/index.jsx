@@ -54,7 +54,6 @@ export default class ExtensionInstruction extends Component{
                 <MainHeader />
                 <div className="instruction_container">
 
-
                     <div className="instruction_container_header">
                         { this.state.checkURL === true && this.state.extensionArrowAnimation }
                         <div className="instruction_container_header_title">
