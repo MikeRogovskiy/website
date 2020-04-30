@@ -180,7 +180,15 @@
     "SuperPremiumSubtitle": "Per month</br>if you pay $59.88 for year",
     "1-SuperPremiumPoint": "Full functionality",
     "2-SuperPremiumPoint": "Convenient Google Translate window",
-    "ButtonName": "Choose"
+    "ButtonName": "Choose",
+
+    "PopUpWindow-header-title": "Congratulations!",
+    "PopUpWindow-header-text": "You get </br>a free coupon",
+    "PopUpWindow-main-key": "EASYTUTOR30",
+    "PopUpWindow-main-title": "-<span>Share</span> our page on</br>social networks <a href=https://easylang.app/>EasyLang</a>",
+    "PopUpWindow-main-text": "-Activate the coupon in your </br> account",
+    "PopUpWindow-footer-text": "Thanks for<br> using the product!",
+    "PopUpWindow-footer-input": "Got it!"
   },
 
   "PlansPage_b": {

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
+import PopUpWindow from "./PopUpWindow";
+import PopUpBackground from "./PopUpBackground";
 
 import "./Plans.scss";
 
@@ -14,10 +16,41 @@ export default class Plans extends Component {
 
   render() {
 
+    function removePopUp(){
+      const popUpWindow = document.querySelector(".container-pop-up");
+      const popUpBackground = document.querySelector(".pop-up-background");
+      const plans = document.querySelector(".plans");
+      plans.style.opacity = "1";
+      plans.style.backgroundColor = "";
+      popUpWindow.style.opacity = "0";
+      popUpBackground.style.opacity = "0";
+
+      setTimeout(deletePopUp, 500);
+
+      function deletePopUp(){
+        popUpWindow.style.display = "none";
+        popUpBackground.style.display = "none";
+      };
+    };
+
+    function appearPopUp(){
+      const popUpWindow = document.querySelector(".container-pop-up");
+      const popUpBackground = document.querySelector(".pop-up-background");
+      const plans = document.querySelector(".plans");
+      plans.style.opacity = "47%";
+      plans.style.backgroundColor = "#245FAB";
+      popUpWindow.style.opacity = "1";
+      popUpBackground.style.opacity = "1";
+      popUpWindow.style.display = "flex";
+      popUpBackground.style.display = "flex";
+    };
+
     return (
-      <div>
+      <div className="plans-folder">
         <MainHeader />
 
+        <PopUpWindow action={removePopUp} text={this.props.text}/>
+        <PopUpBackground />
         <div className="plans">
           <div className="plans_wrapper">
             <div className="plans_wrapper_head">
@@ -46,7 +79,7 @@ export default class Plans extends Component {
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
                            target="_blank"  rel="noopener noreferrer" id="unique-item-button"
-                           onClick={myFunction} value={this.getLangText("ButtonName")}>
+                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
                 </div>
@@ -72,7 +105,7 @@ export default class Plans extends Component {
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
                            target="_blank"  rel="noopener noreferrer"
-                           onClick={myFunction} value={this.getLangText("ButtonName")}>
+                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
                 </div>
@@ -98,7 +131,7 @@ export default class Plans extends Component {
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
                            target="_blank"  rel="noopener noreferrer"
-                           onClick={myFunction} value={this.getLangText("ButtonName")}>
+                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
                 </div>
@@ -110,8 +143,3 @@ export default class Plans extends Component {
     );
   };
 };
-
-function myFunction() {
-  alert("На текущий момент продукт бесплатный. Для его использования вы можете ввести бесплатный купон EASYTUTOR30 в своем аккаунте. Спасибо за использование продукта!");
-  
-}
