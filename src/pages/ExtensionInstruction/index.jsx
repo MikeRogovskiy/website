@@ -51,7 +51,7 @@ export default class ExtensionInstruction extends Component{
 
         return (
             <div className="instruction">
-                <MainHeader />
+                {/*<MainHeader />*/}
                 <div className="instruction_container">
 
                     <div className="instruction_container_header">
