@@ -25,7 +25,7 @@ body {
     @include flexAlignJustifyCenter;
     text-align: center;
     margin-top: -100px;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 400px;
     transition: 1s ease-in;
     width: 100%;
@@ -36,7 +36,7 @@ body {
       .head-title {
         text-align: left;
         color: $color;
-        margin: 2% 11% 1.5%;
+        padding-left: 4%;
         font-style: normal;
         font-weight: bold;
         font-size: 40px;
@@ -47,8 +47,7 @@ body {
 
       .head-subtitle {
         text-align: left;
-        margin-left: 11%;
-        padding-top: 1%;
+        padding: 1% 0% 0% 4%;
         font-style: normal;
         font-weight: 300;
         font-size: 30px;
@@ -63,9 +62,8 @@ body {
   
     .plans_wrapper_container {
       @include flexAlignCenter;
-      width: 85%;
-      margin: 5% 9%;
-      justify-content: space-evenly;
+      width: 100%;
+      justify-content: space-between;
       flex-direction: row;
 
       .container-item {
