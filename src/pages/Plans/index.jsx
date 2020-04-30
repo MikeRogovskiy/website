@@ -61,7 +61,7 @@ export default class Plans extends Component {
             </div>
 
             <div className="plans_wrapper_container">
-              <div className="container-item">
+              <div className="container-item" id="item-standard">
                 <div className="container-item_content">
                   <div className="container-item_content_header">
                     <h2 id="unique-item-paragraph">{this.getLangText("Standard")}</h2>
@@ -86,7 +86,7 @@ export default class Plans extends Component {
                 </div>
               </div>
 
-              <div className="container-item">
+              <div className="container-item" id="item-premium">
                 <div className="container-item_content">
                   <div className="container-item_content_header">
                     <h2>{this.getLangText("Premium")}</h2>
@@ -112,8 +112,8 @@ export default class Plans extends Component {
                 </div>
               </div>
 
-              <div className="container-item">
-                <div className="container-item_content">
+              <div className="container-item" id="item-super-premium">
+                <div className="container-item_content" >
                   <div className="container-item_content_header">
                     <h2>{this.getLangText("SuperPremium")}</h2>
                     <h1>{this.getLangText("SuperPremiumCondition")}</h1>
