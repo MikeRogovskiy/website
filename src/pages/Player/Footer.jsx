@@ -10,8 +10,8 @@ const Footer = (props) => {
         return ReactHtmlParser(props.text[text]);
     }
 
-    const macLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_mac.dmg';
-    const windowsLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_win.exe';
+    const macLink = 'https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta_mac_prod.dmg';
+    const windowsLink = 'https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta_win_prod.exe';
 
     return (
         <footer className="getStarted-footer">

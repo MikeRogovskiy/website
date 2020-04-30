@@ -34,7 +34,7 @@ export default class ExtensionInstruction extends Component{
                 </div>,
             extensionStartButton:
                 <div className="instruction_container_start">
-                    <a href="https://easylang.app/extension" target="_blank">
+                    <a href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel" target="_blank">
                         <input type="button" value={this.getLangText("InstructionStartButton")} className="start-free"/>
                     </a>
                 </div>,
