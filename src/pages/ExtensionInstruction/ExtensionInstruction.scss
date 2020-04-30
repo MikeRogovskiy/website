@@ -97,7 +97,7 @@
 
       .instruction_container_header_text{
         @include centralPositionHW;
-        padding: 5% 0px 100px 0px;
+        padding: 5% 0px 0px 0px;
       };
 
       .instruction_container_header_text p{
@@ -129,6 +129,7 @@
         font-weight: bold;
         font-size: 28px;
         line-height: 34px;
+        margin-top: 100px;
       };
 
     };
