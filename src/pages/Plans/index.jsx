@@ -33,28 +33,28 @@ export default class Plans extends Component {
       <div>
         <MainHeader />
 
-        <div className="Plans">
-          <div className="wrapper-plans">
-            <div>
-              <h1 className="top-title">{this.getLangText("PlansTitle")}</h1>
-              <p className="top-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
-              <p className="top-subtitle">{this.getLangText("2-PlansSubtitle")}</p>
-              <p className="top-subtitle">{this.getLangText("3-PlansSubtitle")}</p>
+        <div className="plans">
+          <div className="plans_wrapper">
+            <div className="plans_wrapper_head">
+              <h1 className="head-title">{this.getLangText("PlansTitle")}</h1>
+              <p className="head-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
+              <p className="head-subtitle">{this.getLangText("2-PlansSubtitle")}</p>
+              <p className="head-subtitle">{this.getLangText("3-PlansSubtitle")}</p>
             </div>
 
-            <div className="container">
-              <container className="item">
-                <div className="content">
-                  <div className="header">
+            <div className="plans_wrapper_container">
+              <container className="container-item">
+                <div className="container-item_content">
+                  <div className="container-item_content_header">
                     <h2>{this.getLangText("Standart")}</h2>
                     <h1>{this.getLangText("Free")}</h1>
                   </div>
-                  <div className="advantages">
-                    <div className="advantages-item">
+                  <div className="container-item_content_main">
+                    <div className="main-item">
                       <img src={blue_dot} />
                       <p>{this.getLangText("1-StandartPoint")}</p>
                     </div>
-                    <div className="advantages-item">
+                    <div className="main-item">
                       <img src={blue_dot} />
                       <p>{this.getLangText("2-StandartPoint")}</p>
                     </div>
@@ -62,33 +62,32 @@ export default class Plans extends Component {
                 </div>
               </container>
 
-              <container className="item">
-                <div className="content">
-                  <div className="header">
+              <container className="container-item">
+                <div className="container-item_content">
+                  <div className="container-item_content_header">
                     <h2 style={premiumColor}>{this.getLangText("Premium")}</h2>
                     <h1><span style={dollarSize}>$</span>
-                        7.99
+                      7.99
                       <span style={MonthStyles}>{this.getLangText("Month")}</span>
                     </h1>
                   </div>
-                  <div className="advantages">
-                    <div className="advantages-item">
+                  <div className="container-item_content_main">
+                    <div className="main-item">
                       <img src={yellow_dot} />
                       <p>{this.getLangText("1-PremiumPoint")}</p>
                     </div>
-                    <div className="advantages-item">
+                    <div className="main-item">
                       <img src={yellow_dot} />
                       <p>{this.getLangText("2-PremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="button"
-                  >
+                  <div className="container-item_content_footer">
                     <a
-                      className="plans-button top"
-                      style={premiumBackgroundColor}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={myFunction}
+                        className="container-item_content_footer_btn top"
+                        style={premiumBackgroundColor}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={myFunction}
                     >
                       <span>{this.getLangText("Choose")}</span>
                     </a>
@@ -96,33 +95,33 @@ export default class Plans extends Component {
                 </div>
               </container>
 
-              <container className="item" style={premiumBorder}>
-                <div className="content">
-                  <div className="header">
+              <container className="container-item" style={premiumBorder}>
+                <div className="container-item_content">
+                  <div className="container-item_content_header">
                     <h2 style={superPremiumColor}>{this.getLangText("SuperPremium")}</h2>
                     <h1><span style={dollarSize}>$</span>
-                        4.99
+                      4.99
                       <span style={MonthStyles}>{this.getLangText("Month")}</span>
                     </h1>
                     <p>{this.getLangText("PremiumSubtitle")}</p>
                   </div>
-                  <div className="advantages">
-                    <div className="advantages-item">
+                  <div className="container-item_content_main">
+                    <div className="main-item">
                       <img src={green_dot} />
                       <p>{this.getLangText("1-SuperPremiumPoint")}</p>
                     </div>
-                    <div className="advantages-item">
+                    <div className="main-item">
                       <img src={green_dot} />
                       <p>{this.getLangText("2-SuperPremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="button">
+                  <div className="container-item_content_footer">
                     <a
-                      className="plans-button top"
-                      style={superPremiumBackgroundColor}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={myFunction}
+                        className="container-item_content_footer_btn top"
+                        style={superPremiumBackgroundColor}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={myFunction}
                     >
                       <span>{this.getLangText("Choose")}</span>
                     </a>

@@ -41,7 +41,6 @@ export default class ExtensionInstruction extends Component{
             checkURL: window.location.href.includes("static"),
         }
 
-
     };
 
     getLangText(text) {
