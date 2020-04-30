@@ -38,6 +38,7 @@ export default class ExtensionInstruction extends Component{
                         <input type="button" value={this.getLangText("InstructionStartButton")} className="start-free"/>
                     </a>
                 </div>,
+
             checkURL: window.location.href.includes("static"),
         }
 
@@ -55,11 +56,10 @@ export default class ExtensionInstruction extends Component{
                 <MainHeader />
                 <div className="instruction_container">
 
-
                     <div className="instruction_container_header">
                         { this.state.checkURL === true && this.state.extensionArrowAnimation }
+
                         <div className="instruction_container_header_title">
-                            {/*<h1>Добро пожаловать в EasyLang!</h1>*/}
                             <h1>{this.getLangText("InstructionHeaderTitle")}</h1>
                         </div>
 
