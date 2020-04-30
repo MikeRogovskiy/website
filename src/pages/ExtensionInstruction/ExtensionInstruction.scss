@@ -147,11 +147,15 @@
 
       .instruction_container_main_text-card_a, .instruction_container_main_text-card_b{
         width: 485px;
-        height: 387px;
+        height: 465px;
         flex-direction: column;
         border-radius: 13px;
         border: $extensionInstructionColor solid;
       };
+
+      .instruction_container_main_text-card_b .card_header{
+        margin-bottom: 60px;
+      }
 
       .card_title{
         padding-top: 5%;
@@ -194,9 +198,9 @@
         color: $blackColor;
       };
 
-      .instruction_container_main_text-card_a .card_folder{
-        margin-top: 30px;
-      };
+      //.instruction_container_main_text-card_a .card_folder{
+      //  //margin-top: 30px;
+      //};
 
       .card_folder{
         display: flex;
@@ -209,7 +213,9 @@
           width: 100%;
 
           .card-img-a{
-            padding-left: 10px;
+            width: 100%;
+            height: 100%;
+            margin-left: -15px;
           };
 
           .card-img-b{
@@ -275,7 +281,7 @@
       height: 100%;
       position: relative;
       z-index: 5;
-      margin-top: 60px;
+      margin-top: 160px;
       border-radius: 13px;
       background: linear-gradient(175.62deg, rgba(97, 120, 245, 0.1) 22.38%, rgba(25, 90, 169, 0.1) 82.85%);
 
