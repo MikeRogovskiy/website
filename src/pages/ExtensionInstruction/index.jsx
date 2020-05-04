@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
-import MainHeader from "../../components/MainHeader";
+import HintArrow from "./hintArrow";
 
 import pickLanguageExample from "../../assets/images/extension-instruction/pickLanguageExample.svg";
 
@@ -18,30 +18,22 @@ import cNumSection from  "../../assets/images/extension-instruction/cNumSection.
 import dNumSection from  "../../assets/images/extension-instruction/dNumSection.svg";
 
 import arrow from  "../../assets/images/extension-instruction/arrow.svg";
-import arrowAnimation from "../../assets/images/extension-instruction/arrowAnimation.svg";
 
 import "./ExtensionInstruction.scss";
 import "./ExtensionInstructionMedia.scss";
-
 
 export default class ExtensionInstruction extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            extensionArrowAnimation:
-                <div className="instruction_container_arrow">
-                    <img src={arrowAnimation} />
-                </div>,
             extensionStartButton:
                 <div className="instruction_container_start">
                     <a href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel" target="_blank">
                         <input type="button" value={this.getLangText("InstructionStartButton")} className="start-free"/>
                     </a>
                 </div>,
-
             checkURL: window.location.href.includes("static"),
         }
-
     };
 
     getLangText(text) {
@@ -51,12 +43,14 @@ export default class ExtensionInstruction extends Component{
     render() {
 
         return (
+
             <div className="instruction">
-                {/*<MainHeader />*/}
+
                 <div className="instruction_container">
 
                     <div className="instruction_container_header">
-                        { this.state.checkURL === true && this.state.extensionArrowAnimation }
+
+                        <HintArrow  urlCondition={this.state.checkURL}/>
 
                         <div className="instruction_container_header_title">
                             <h1>{this.getLangText("InstructionHeaderTitle")}</h1>
@@ -209,5 +203,6 @@ export default class ExtensionInstruction extends Component{
                 <div className="instruction_footer_background"></div>
             </div>
         );
+
     }
 }
