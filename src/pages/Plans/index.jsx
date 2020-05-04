@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
+import PopUpWindow from "./PopUpWindow";
+import PopUpBackground from "./PopUpBackground";
 
 import "./Plans.scss";
+import "./PlansMedia.scss";
 
-import blue_dot from '../../assets/images/Plans/blue_dot.png';
-import green_dot from '../../assets/images/Plans/green_dot.png';
-import yellow_dot from '../../assets/images/Plans/yellow_dot.png';
+import plansV from "../../assets/images/Plans/plansV.svg";
 
 export default class Plans extends Component {
 
@@ -16,119 +17,126 @@ export default class Plans extends Component {
 
   render() {
 
-    const dollarSize = { fontSize: '1.8rem' }
+    function removePopUp(){
+      const popUpWindow = document.querySelector(".container-pop-up");
+      const popUpBackground = document.querySelector(".pop-up-background");
+      const plans = document.querySelector(".plans");
+      plans.style.opacity = "1";
+      plans.style.backgroundColor = "";
+      popUpWindow.style.opacity = "0";
+      popUpBackground.style.opacity = "0";
 
-    const MonthStyles = {
-      color: 'silver',
-      fontSize: "1.8rem",
-    }
+      setTimeout(deletePopUp, 500);
 
-    const premiumColor = { color: '#F2994A'}
-    const premiumBackgroundColor = { backgroundColor: '#F2994A' };
-    const premiumBorder = { border: '3.5px solid #34D086' }
-    const superPremiumColor = { color: '#34D086'}
-    const superPremiumBackgroundColor = { backgroundColor: '#34D086' };
+      function deletePopUp(){
+        popUpWindow.style.display = "none";
+        popUpBackground.style.display = "none";
+      };
+    };
+
+    function appearPopUp(){
+      const popUpWindow = document.querySelector(".container-pop-up");
+      const popUpBackground = document.querySelector(".pop-up-background");
+      const plans = document.querySelector(".plans");
+      plans.style.opacity = "47%";
+      plans.style.backgroundColor = "#245FAB";
+      popUpWindow.style.opacity = "1";
+      popUpBackground.style.opacity = "1";
+      popUpWindow.style.display = "flex";
+      popUpBackground.style.display = "flex";
+    };
 
     return (
-      <div>
+      <div className="plans-folder">
         <MainHeader />
 
-        <div className="Plans">
-          <div className="wrapper-plans">
-            <div>
-              <h1 className="top-title">{this.getLangText("PlansTitle")}</h1>
-              <p className="top-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
-              <p className="top-subtitle">{this.getLangText("2-PlansSubtitle")}</p>
-              <p className="top-subtitle">{this.getLangText("3-PlansSubtitle")}</p>
+        <PopUpWindow action={removePopUp} text={this.props.text}/>
+        <PopUpBackground />
+        <div className="plans">
+          <div className="plans_wrapper">
+            <div className="plans_wrapper_head">
+              <h1 className="head-title">{this.getLangText("PlansTitle")}</h1>
+              <p className="head-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
+              <p className="head-subtitle">{this.getLangText("2-PlansSubtitle")}</p>
             </div>
 
-            <div className="container">
-              <container className="item">
-                <div className="content">
-                  <div className="header">
-                    <h2>{this.getLangText("Standart")}</h2>
-                    <h1>{this.getLangText("Free")}</h1>
+            <div className="plans_wrapper_container">
+              <div className="container-item" id="item-standard">
+                <div className="container-item_content">
+                  <div className="container-item_content_header">
+                    <h2 id="unique-item-paragraph">{this.getLangText("Standard")}</h2>
+                    <h1>{this.getLangText("StandardCondition")}</h1>
+                    <h3>{this.getLangText("StandardSubtitle")}</h3>
                   </div>
-                  <div className="advantages">
-                    <div className="advantages-item">
-                      <img src={blue_dot} />
-                      <p>{this.getLangText("1-StandartPoint")}</p>
+                  <div className="container-item_content_main">
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image"/>
+                      <p>{this.getLangText("1-StandardPoint")}</p>
                     </div>
-                    <div className="advantages-item">
-                      <img src={blue_dot} />
-                      <p>{this.getLangText("2-StandartPoint")}</p>
+                    <div className="main-item">
+                      <p>{this.getLangText("2-StandardPoint")}</p>
                     </div>
+                  </div>
+                  <div className="container-item_content_footer">
+                    <input type="button" className="container-item_content_footer_btn"
+                           target="_blank"  rel="noopener noreferrer" id="unique-item-button"
+                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
+                    </input>
                   </div>
                 </div>
-              </container>
+              </div>
 
-              <container className="item">
-                <div className="content">
-                  <div className="header">
-                    <h2 style={premiumColor}>{this.getLangText("Premium")}</h2>
-                    <h1><span style={dollarSize}>$</span>
-                        7.99
-                      <span style={MonthStyles}>{this.getLangText("Month")}</span>
-                    </h1>
+              <div className="container-item" id="item-premium">
+                <div className="container-item_content">
+                  <div className="container-item_content_header">
+                    <h2>{this.getLangText("Premium")}</h2>
+                    <h1>{this.getLangText("PremiumCondition")}</h1>
+                    <h3>{this.getLangText("PremiumSubtitle")}</h3>
                   </div>
-                  <div className="advantages">
-                    <div className="advantages-item">
-                      <img src={yellow_dot} />
+                  <div className="container-item_content_main">
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("1-PremiumPoint")}</p>
                     </div>
-                    <div className="advantages-item">
-                      <img src={yellow_dot} />
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("2-PremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="button"
-                  >
-                    <a
-                      className="plans-button top"
-                      style={premiumBackgroundColor}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={myFunction}
-                    >
-                      <span>{this.getLangText("Choose")}</span>
-                    </a>
+                  <div className="container-item_content_footer">
+                    <input type="button" className="container-item_content_footer_btn"
+                           target="_blank"  rel="noopener noreferrer"
+                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
+                    </input>
                   </div>
                 </div>
-              </container>
+              </div>
 
-              <container className="item" style={premiumBorder}>
-                <div className="content">
-                  <div className="header">
-                    <h2 style={superPremiumColor}>{this.getLangText("SuperPremium")}</h2>
-                    <h1><span style={dollarSize}>$</span>
-                        4.99
-                      <span style={MonthStyles}>{this.getLangText("Month")}</span>
-                    </h1>
-                    <p>{this.getLangText("PremiumSubtitle")}</p>
+              <div className="container-item" id="item-super-premium">
+                <div className="container-item_content" >
+                  <div className="container-item_content_header">
+                    <h2>{this.getLangText("SuperPremium")}</h2>
+                    <h1>{this.getLangText("SuperPremiumCondition")}</h1>
+                    <h3>{this.getLangText("SuperPremiumSubtitle")}</h3>
                   </div>
-                  <div className="advantages">
-                    <div className="advantages-item">
-                      <img src={green_dot} />
+                  <div className="container-item_content_main">
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("1-SuperPremiumPoint")}</p>
                     </div>
-                    <div className="advantages-item">
-                      <img src={green_dot} />
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("2-SuperPremiumPoint")}</p>
                     </div>
                   </div>
-                  <div className="button">
-                    <a
-                      className="plans-button top"
-                      style={superPremiumBackgroundColor}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={myFunction}
-                    >
-                      <span>{this.getLangText("Choose")}</span>
-                    </a>
+                  <div className="container-item_content_footer">
+                    <input type="button" className="container-item_content_footer_btn"
+                           target="_blank"  rel="noopener noreferrer"
+                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
+                    </input>
                   </div>
                 </div>
-              </container>
+              </div>
             </div>
           </div>
         </div>
@@ -136,8 +144,3 @@ export default class Plans extends Component {
     );
   };
 };
-
-function myFunction() {
-  alert("На текущий момент продукт бесплатный. Для его использования вы можете ввести бесплатный купон EASYTUTOR30 в своем аккаунте. Спасибо за использование продукта!");
-  
-}

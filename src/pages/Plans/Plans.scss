@@ -1,273 +1,215 @@
 @import "../../styles/variables";
 
+@mixin flexAlignCenter{
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexAlignJustifyCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
     padding: 0;
     margin: 0;
-  }
-
-@media (min-width: 162.5rem) {
-  .container {
-    width: 65% !important;
-    margin: 5% 16% !important;
-  }
 }
-  
+
+.plans-folder{
+  background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlans.svg");
+}
+
+.plans_wrapper{
+  @include flexAlignJustifyCenter;
+  flex-direction: column;
+}
+
+.plans_wrapper_container {
+  @include flexAlignCenter;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+
+.head-title {
+  text-align: left;
+  color: $color;
+  padding-left: 4%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 1.40714px;
+  text-transform: uppercase;
+}
+
+.head-subtitle {
+  text-align: left;
+  padding: 1% 0% 0% 4%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 1.40714px;
+  color: #E6EAFF;
+  opacity: 0.8;
+}
+
   /* Desctop tariff-plans styles */
-  .Plans {
-    background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlans.svg");
+  .plans {
+    @include flexAlignJustifyCenter;
     text-align: center;
     margin-top: -100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 400px;
+    transition: 1s ease-in;
+    width: 100%;
 
-    .wrapper-plans {
-      padding: 1% 0 4%;
+    .plans_wrapper_head{
+      width: 100%;
     }
-    
-    .top-title {
-      text-transform: uppercase;
-      text-align: left;
-      color: $color;
-      font-weight: bold;
-      letter-spacing: 0.088rem;
-      margin: 2% 18% 1.5%;
-      font-size: 2.7rem;
-      line-height: 2.5rem;
-    }
-    
-    .top-subtitle {
-      color:  #E6EAFF;
-      text-align: left;
-      margin: 0 18%;
-      font-size: 1.3rem;
-      opacity: 0.8;
-      line-height: 1.625rem;
-      letter-spacing: 1.41px;
-      padding-top: 1%;
-    }
-  
-    .container {
-      width: 85%;
-      margin: 5% 9%;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-direction: row;
-    }
-  
-    .item {
+
+    .container-item {
+      @include flexAlignCenter;
       background-color: $bgColor;
-      border-radius: 2.5rem;
+      border-radius: 60px;
       box-shadow: 0px 4px 2.5rem rgba(42, 82, 130, 0.12);
-      width: 360px;
-      height: 52.5rem;
-      display: flex;
-      margin: 0 2% !important;
+      width: 446px;
+      height: 655px;
+      margin: 2% 2% !important;
       flex-direction: column;
-      align-items: center;
+
+      .container-item_content {
+        width: 90%;
+        height: 80% !important;
+        margin: 13% 0 5%;
+        align-items: center;
+
+        .container-item_content_header {
+          height: 30%;
+
+          h1 {
+            padding-top: 7%;
+            color:  #132E52;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 60px;
+            line-height: 73px;
+            letter-spacing: 1.40714px;
+            opacity: 0.8;
+
+            span{
+              font-size: 40px;
+            }
+          }
+
+          h2 {
+            color: #ff7c82;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 1.40714px;
+            text-transform: uppercase;
+          }
+
+          h3 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 1.40714px;
+            color: #132E52;
+            opacity: 0.6;
+          }
+
+          #unique-item-paragraph{
+            color: #8DB4E2;
+          }
+
+        }
+
+      }
+
     }
-  
-    .content {
-      width: 90%;
-      height: 80% !important;
-      margin: 13% 0 5%;
-      align-items: center;
-    }
-  
-    .header {
-      height: 30%;
-    }
-  
-    .content h2 { 
-      color: #759CCB;
-      font-weight: bold;
-      font-size: 1.7rem;
-      line-height: 1.5rem;
-      letter-spacing: 1.41;
-      text-transform: uppercase;
-    }
-  
-    .content h1 { 
-      padding-top: 7%;
-      color: #232323;
-      font-weight: bold;
-      font-size: 3.2rem;
-      line-height: 2.5rem;
-      letter-spacing: 1.5px;
-      opacity: 0.8;
-    }
-  
-    .content p {
-      color: $plansParagraphColor;
-      font-size: 1.4rem !important;
-      letter-spacing: 1.41px;
-    }
-  
-    .advantages {
+
+    .container-item_content_main {
+      @include flexAlignCenter;
       height: 48%;
       margin-top: 15%;
-      display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-  
-    .advantages-item {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      padding: 3% 0;
-      border-top: 1.9px solid $plansBorderTopColor;
-    }
-  
-    .advantages-item img {
-      width: 5px;
-      height: 5px;
-      margin-right: 5%;
-      margin-left: 6%;
-      margin-top: 5%;
-    }
-  
-    .advantages-item p {
-      margin-left: 2%;
-      text-align: left;
-      font-weight: 500 !important;
-      color: $plansParagraphColor;
-      font-size: 1.2rem !important;
-      line-height: 150%;
-      letter-spacing: 1.41px;
-    }
-  
-    .button {
-      border-top: 1.9px solid $plansBorderTopColor;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-top: -3%;
-      padding-top: 22%;
-    }
-    
-    .plans-button {
-      display: block;
-      width: auto;
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      color: $color;
-      font-weight: 800 !important;
-      line-height: 2rem;
-      border-radius: 80px;
-      &.top,&.bottom{
+
+      .main-item:nth-child(2){
+        border-bottom: 2px solid $plansBorderTopColor;
+      }
+
+      .main-item {
+        width: 80%;
         display: flex;
-        align-items: center;
-        padding: 4% 13%;
-      }
-    }
-  }
+        flex-direction: row;
+        padding: 3% 0;
+        border-top: 2px solid $plansBorderTopColor;
 
-  // Styles for media devices
-  @media screen and (min-width: 600px) and (max-width: 850px) {
-    .Plans {
-      .item {
-        height: 40rem;
-      }
-      .content h2 { 
-        font-size: 1.3rem;
-        line-height: 1.1rem;
-      }
-      .content h1 { 
-        font-size: 2rem;
-        line-height: 1.6rem;
-      }
-      .content p {
-        font-size: 1rem !important;
-      }
-      .advantages {
-        height: 55%;
-      }
-      .advantages-item p {
-        font-size: 0.8rem !important;
-      }
-    }
-}
-
-  // Mobile tariff-plans styles
-  @media(max-width: "600px") {
-    .Plans {
-      background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlansMobile.jpg");
-
-      .top-title {
-        font-size: 1.125rem !important;
-        line-height: 1.375rem !important;
-      }
-
-      .top-subtitle {
-          font-size: 0.875rem !important;
-          line-height: 150% !important;
-      }
-
-      .container {
-        margin: 7% auto;
-        justify-content: space-around;
-        flex-direction: column;
-      }
-
-      .item {
-        margin-bottom: 10% !important;
-        width: 85%;
-        height: 450px;
-        margin: 8% 2%;
-      }
-
-      .item-center {
-        width: 72%;
-        height: 400px;
-        margin: 10% 2%;
-      }
-
-      .content h2 { 
-        font-size: 1rem;
-        line-height: 1.25rem;
-      }
-    
-      .content h1 { 
-        padding-top: 1.25rem;
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-      }
-
-      .advantages {
-        margin-top: 20%;
-        height: 35%;
-      }
-      .advantages-item {
-        width: 80% !important;
-      }
-
-      .advantages-item p {
-        margin-left: -3%;
-        font-size: 1rem !important;
-        line-height: 0.94rem;
-      }
-
-      .advantages-item img {
-        margin-right: 7%;
-      }
-
-      .button {
-        margin-top: 15%;
-        padding-top: 20%;
-      }
-      
-      .plans-button {
-        font-size: 0.875rem;
-        letter-spacing: 1px;
-        line-height: 1.06rem;
-        border-radius: 110px;
-        &.top,&.bottom{
-          padding: 5% 10%;
+        img {
+          width: 15px;
+          height: 15px;
+          margin: 20px 10px 0px 20px;
         }
+
+        p {
+          margin-left: 2%;
+          text-align: left;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 1.40714px;
+          color: #132E52;
+          opacity: 0.6;
+          padding: 10px 0px 10px;
+
+          span {
+            padding-top: 5px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 1.40714px;
+            color: #132E52;
+            opacity: 0.6;
+          }
+        }
+
       }
+
     }
+
+    .container-item_content_footer {
+      @include flexAlignJustifyCenter;
+      width: 100%;
+    }
+    #unique-item-button {
+      background-color: #ECEFFF;
+      color: #195AA9;
+    }
+
   }
-  
-  
-  
+
+.container-item_content_footer_btn {
+  width: 227.21px;
+  height: 62.54px;
+  border-radius: 80px;
+  background-color: #34D086;
+  color: $color;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1.40714px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}

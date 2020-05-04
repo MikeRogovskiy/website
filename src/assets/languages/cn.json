@@ -164,23 +164,33 @@
 
 
     "PlansPage": {
-      "PlansTitle": "We are a free OpenSource startup that strives to help people!",
-      "1-PlansSubtitle": "However, our company has to buy services from Google. If you enjoy Easylang, consider supporting our efforts by choosing our premium-services!",
+      "PlansTitle": "We are a free OpenSource startup that strives</br>to help people!",
+      "1-PlansSubtitle": "Our company has to buy services from Google.</br>Consider supporting our efforts If you enjoy EasyLang by choosing our premium-services!",
       "2-PlansSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort.",
-      "3-PlansSubtitle": "Standart Subscription has 10 translations/day limit, after which we send you direct link to translation. <br/> Premium Subscription allows user to use the popup translation window with no limits!",
-      "Standart": "Standart",
-      "1-StandartPoint": "10 translates/day to add into your lessons",
-      "2-StandartPoint": "20 fast translations with convenient Google Translate window",
+      "Standard": "Standard",
+      "StandardCondition": "Free",
+      "StandardSubtitle": "For all time",
+      "1-StandardPoint": "Full functionality",
+      "2-StandardPoint": "10 translations/day limit.</br><span>After we will send you</br>direct link to translation.</span>",
       "Premium": "Premium",
-      "PremiumSubtitle": "if you pay $59.88 for year",
-      "1-PremiumPoint": "30 translates/day to add into your lessons",
-      "SuperPremium": "Super Premium",
-      "2-PremiumPoint": "Unlimited translations with convenient Google Translate window",
-      "1-SuperPremiumPoint": "Unlimited translates to add into your lessons",
-      "2-SuperPremiumPoint": "Unlimited translations with convenient Google Translate window",
-      "Free": "Free",
-      "Month": "/mo",
-      "Choose": "Choose"
+      "PremiumCondition": "<span>$</span>7<span>.99</span>",
+      "PremiumSubtitle": "Per month",
+      "1-PremiumPoint": "Full functionality",
+      "2-PremiumPoint": "Convenient Google Translate window",
+      "SuperPremium": "Premium",
+      "SuperPremiumCondition": "<span>$</span>4<span>.99</span>",
+      "SuperPremiumSubtitle": "Per month</br>if you pay $59.88 for year",
+      "1-SuperPremiumPoint": "Full functionality",
+      "2-SuperPremiumPoint": "Convenient Google Translate window",
+      "ButtonName": "Choose",
+
+      "PopUpWindow-header-title": "Congratulations!",
+      "PopUpWindow-header-text": "You get </br>a free coupon",
+      "PopUpWindow-main-key": "EASYTUTOR30",
+      "PopUpWindow-main-title": "-<span>Share</span> our page on</br>social networks <a href=https://easylang.app/>EasyLang</a>",
+      "PopUpWindow-main-text": "-Activate the coupon in your </br> account",
+      "PopUpWindow-footer-text": "Thanks for<br> using the product!",
+      "PopUpWindow-footer-input": "Got it!"
     },
 
     

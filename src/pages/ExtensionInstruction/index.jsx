@@ -42,7 +42,6 @@ export default class ExtensionInstruction extends Component{
             checkURL: window.location.href.includes("static"),
         }
 
-
     };
 
     getLangText(text) {
@@ -53,7 +52,7 @@ export default class ExtensionInstruction extends Component{
 
         return (
             <div className="instruction">
-                <MainHeader />
+                {/*<MainHeader />*/}
                 <div className="instruction_container">
 
                     <div className="instruction_container_header">
@@ -82,14 +81,15 @@ export default class ExtensionInstruction extends Component{
                                 </div>
 
                                 <div className="card_folder">
+                                    <p>{this.getLangText("4-InstructionCardParagraph-a")}</p>
                                     <div className="card_folder_content">
-                                        <p className="card_folder_top">{this.getLangText("3-InstructionCardParagraph-a")}</p>
+                                        {/*<p className="card_folder_top">{this.getLangText("3-InstructionCardParagraph-a")}</p>*/}
                                         <img className="card-img-a"  src={pickLanguageExample} />
                                     </div>
 
-                                    <p>{this.getLangText("4-InstructionCardParagraph-a")}</p>
-                                    <h2>{this.getLangText("2-InstructionCardHeading-a")}</h2>
-                                    <p>{this.getLangText("5-InstructionCardParagraph-a")}</p>
+
+                                    {/*<h2>{this.getLangText("2-InstructionCardHeading-a")}</h2>*/}
+                                    {/*<p>{this.getLangText("5-InstructionCardParagraph-a")}</p>*/}
                                 </div>
                             </div>
                             <div className="instruction_container_main_text-card_b">
