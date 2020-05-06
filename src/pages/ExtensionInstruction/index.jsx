@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
-import MainHeader from "../../components/MainHeader";
 
 import pickLanguageExample from "../../assets/images/extension-instruction/pickLanguageExample.svg";
 
@@ -51,7 +50,7 @@ export default class ExtensionInstruction extends Component{
 
         return (
             <div className="instruction">
-                {/*<MainHeader />*/}
+
                 <div className="instruction_container">
 
                     <div className="instruction_container_header">
@@ -81,13 +80,8 @@ export default class ExtensionInstruction extends Component{
                                 <div className="card_folder">
                                     <p>{this.getLangText("4-InstructionCardParagraph-a")}</p>
                                     <div className="card_folder_content">
-                                        {/*<p className="card_folder_top">{this.getLangText("3-InstructionCardParagraph-a")}</p>*/}
                                         <img className="card-img-a"  src={pickLanguageExample} />
                                     </div>
-
-
-                                    {/*<h2>{this.getLangText("2-InstructionCardHeading-a")}</h2>*/}
-                                    {/*<p>{this.getLangText("5-InstructionCardParagraph-a")}</p>*/}
                                 </div>
                             </div>
                             <div className="instruction_container_main_text-card_b">
