@@ -9,8 +9,9 @@ import cardB from "../../assets/images/extension-instruction/cardB.svg";
 import cardC from "../../assets/images/extension-instruction/cardC.svg";
 import cardD from "../../assets/images/extension-instruction/cardD.svg";
 
-import sectionGeneral from "../../assets/images/extension-instruction/sectionGeneral.svg";
-import sectionSpecific from "../../assets/images/extension-instruction/sectionSpecific.svg";
+import sectionStep1 from "../../assets/images/extension-instruction/sectionStep1.svg";
+import sectionStep2and3 from "../../assets/images/extension-instruction/sectionStep2and3.svg";
+import sectionStep4 from "../../assets/images/extension-instruction/sectionStep4.svg";
 
 import aNumSection from  "../../assets/images/extension-instruction/aNumSection.svg";
 import bNumSection from  "../../assets/images/extension-instruction/bNumSection.svg";
@@ -131,7 +132,7 @@ export default class ExtensionInstruction extends Component{
                                     </div>
 
                                     <div className="step_section_main">
-                                        <img src={sectionGeneral} />
+                                        <img src={sectionStep1} />
                                         <h2>{this.getLangText("3-StepLeftHeading-a")}</h2>
                                     </div>
                                 </div>
@@ -147,7 +148,7 @@ export default class ExtensionInstruction extends Component{
                                     </div>
 
                                     <div className="step_section_main">
-                                        <img src={sectionGeneral} />
+                                        <img src={sectionStep2and3} />
                                         <img src={arrow} className="step-arrow"/>
                                         <h2>{this.getLangText("3-StepLeftHeading-c")}</h2>
                                     </div>
@@ -168,7 +169,7 @@ export default class ExtensionInstruction extends Component{
                                     </div>
 
                                     <div className="step_section_main">
-                                        <img src={sectionGeneral} />
+                                        <img src={sectionStep2and3} />
                                         <h2>{this.getLangText("3-StepLeftHeading-b")}</h2>
                                     </div>
                                 </div>
@@ -185,7 +186,7 @@ export default class ExtensionInstruction extends Component{
                                     </div>
 
                                     <div className="step_section_main">
-                                        <img src={sectionSpecific} />
+                                        <img src={sectionStep4} />
                                     </div>
                                 </div>
                             </div>
