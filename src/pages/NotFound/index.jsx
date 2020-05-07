@@ -22,7 +22,7 @@ export default class NotFound extends Component {
                 <MainHeader />
                 <div className="NotFound">
 
-                    <img src={notFoundImg} />
+                    <img src={notFoundImg} alt="notFoundImg"/>
                     <h1>{this.getLangText("NotFoundTitle")}</h1>
                     <p>{this.getLangText("NotFoundSubtitle")}</p>
                     <Link to="/">

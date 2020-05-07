@@ -26,7 +26,6 @@ export default class HintArrow extends Component{
         };
     };
 
-
     render() {
 
         return (
