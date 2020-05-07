@@ -23,28 +23,27 @@ export default class Plans extends Component {
       const popUpBackground = document.querySelector(".pop-up-background");
       const plans = document.querySelector(".plans");
 
+      function changeState(opacityPlans, bgColor, opacityPopUp, display){
+        plans.style.opacity = opacityPlans;
+        plans.style.backgroundColor = bgColor;
+        popUpWindow.style.opacity = opacityPopUp;
+        popUpBackground.style.opacity = opacityPopUp;
+        popUpWindow.style.display = display;
+        popUpBackground.style.display = display;
+      };
+
+      function deletePopUp(){
+        popUpWindow.style.display = "none";
+        popUpBackground.style.display = "none";
+      };
+
       if ( popUpWindow.style.display !== "flex" && popUpBackground.style.display !== "flex" ){
-          plans.style.opacity = "47%";
-          plans.style.backgroundColor = "#245FAB";
-          popUpWindow.style.opacity = "1";
-          popUpBackground.style.opacity = "1";
-          popUpWindow.style.display = "flex";
-          popUpBackground.style.display = "flex";
+        changeState("47%", "#245FAB", "1", "flex")
       } else {
-          plans.style.opacity = "1";
-          plans.style.backgroundColor = "";
-          popUpWindow.style.opacity = "0";
-          popUpBackground.style.opacity = "0";
-
-          setTimeout(deletePopUp, 500);
-
-          function deletePopUp(){
-            popUpWindow.style.display = "none";
-            popUpBackground.style.display = "none";
-          };
+        changeState("1", "", "0", "")
+        setTimeout(deletePopUp, 500);
       };
     };
-
 
     return (
       <div className="plans-folder">
