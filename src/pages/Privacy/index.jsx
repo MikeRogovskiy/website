@@ -9,12 +9,14 @@ export default class Privacy extends Component {
 
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
-    }
+    };
 
     render() {
+
         return (
             <Fragment>
                 <MainHeader />
+
                 <div className="Privacy">
 
                     <br />
@@ -178,7 +180,8 @@ export default class Privacy extends Component {
                 </div >
             </Fragment >
 
-        )
+        );
 
-    }
-}
+    };
+
+};

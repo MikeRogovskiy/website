@@ -4,52 +4,52 @@
 
   .plans_wrapper_container{
     width: 95%;
-  }
+  };
 
   #item-standard p, #item-standard h2,
   #item-standard span, #item-standard h3,
   #item-premium p, #item-premium h2, #item-premium h3,
   #item-super-premium p, #item-super-premium h2, #item-super-premium h3{
     font-size: 18px;
-  }
+  };
 
   .container-item_content_footer_btn{
     font-size: 22px;
-  }
+  };
 
   .head-title{
     font-size: 38px;
-  }
+  };
 
   .head-subtitle{
     font-size: 28px;
-  }
+  };
 
-}
+};
 
 @media screen and (max-width: 1300px){
 
   .plans_wrapper_container{
     width: 90%;
-  }
+  };
 
   #item-standard p, #item-standard h2,
   #item-standard span, #item-standard h3,
   #item-premium p, #item-premium h2, #item-premium h3,
   #item-super-premium p, #item-super-premium h2, #item-super-premium h3{
     font-size: 16px;
-  }
+  };
 
   .container-item_content_footer_btn{
     font-size: 20px;
-  }
+  };
 
   .head-title{
     font-size: 32px;
     align-items: center;
     justify-content: center;
     display: flex;
-  }
+  };
 
   .head-subtitle{
     font-size: 20px;
@@ -57,17 +57,17 @@
     padding-left: 200px;
     display: flex;
     padding-top: 0px;
-  }
+  };
 
-}
+};
 
 @media screen and (max-width: 1200px){
 
   .plans_wrapper_container{
     width: 83%;
-  }
+  };
 
-}
+};
 
 @media screen and (max-width: 1100px){
 
@@ -76,42 +76,44 @@
   #item-premium p, #item-premium h2, #item-premium h3,
   #item-super-premium p, #item-super-premium h2, #item-super-premium h3{
     font-size: 20px;
-  }
+  };
 
   .container-item_content_footer_btn{
     font-size: 24px;
-  }
+  };
 
   .head-title{
     font-size: 40px;
-  }
+  };
 
   .head-subtitle{
     padding-left: 40px;
     font-size: 30px;
-  }
+  };
 
   .plans_wrapper_container{
     flex-direction: column;
     width: 100%;
-  }
+  };
 
   #item-premium{
     margin-top: 30px;
-  }
+  };
 
-}
+};
 
 @media screen and (max-width: 900px){
 
   .head-subtitle{
     padding-left: 30px;
-  }
+  };
 
-}
+};
 
 @media screen and (max-width: 700px){
+
   .head-subtitle{
     padding-left: 25px;
-  }
-}
+  };
+
+};

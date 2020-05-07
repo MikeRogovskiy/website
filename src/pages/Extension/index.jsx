@@ -15,12 +15,15 @@ export default class Extension extends Component {
 
   getLangText = (text) => {
     return ReactHtmlParser(this.props.text[text]);
-  }
+  };
 
   
   render() {
+
     return (
+
       <div>
+
         <MainHeader />
         
         <Header text={this.props.text} />
@@ -28,5 +31,7 @@ export default class Extension extends Component {
         <Footer text={this.props.text} />
       </div>
     );
-  }
-}
+
+  };
+
+};

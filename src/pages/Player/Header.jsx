@@ -9,7 +9,7 @@ const Header = (props) => {
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
-    }
+    };
     
     const macLink = 'https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta_mac_prod.dmg';
     const windowsLink = 'https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta_win_prod.exe';
@@ -18,6 +18,7 @@ const Header = (props) => {
     return (
         <header className="getStartedPlayer-header">
             <div className="wrapper-getStarted">
+
                 <div>
                     <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"></img>
                     <h1 className="getStarted-title">{getLangText("GetStartedPlayerText")}</h1>
@@ -43,6 +44,7 @@ const Header = (props) => {
                 <div>
                     <p className="getStarted-subtitle">{getLangText("GetStartedBottomText")}</p>
                 </div>
+                
             </div>
         </header>
     )

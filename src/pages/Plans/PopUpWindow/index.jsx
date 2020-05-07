@@ -7,14 +7,16 @@ export default class PopUpWindow extends Component{
 
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
-    }
+    };
 
     render(){
 
         return(
             <div className="pop-up-storage">
                 <div className="container-pop-up">
+
                     <div className="container-pop-up_wrapper">
+
                         <div className="container-pop-up_wrapper_header">
                             <h2>{this.getLangText("PopUpWindow-header-title")}</h2>
                             <p>{this.getLangText("PopUpWindow-header-text")}</p>
@@ -28,7 +30,9 @@ export default class PopUpWindow extends Component{
                             <p>{this.getLangText("PopUpWindow-footer-text")}</p>
                             <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.props.action}/>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         );

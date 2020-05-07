@@ -14,8 +14,7 @@ export default class Plans extends Component {
 
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
-  }
-
+  };
 
   render() {
     function popUpManipulations(){
@@ -43,6 +42,7 @@ export default class Plans extends Component {
         changeState("1", "", "0", "")
         setTimeout(deletePopUp, 500);
       };
+
     };
 
     return (
@@ -53,6 +53,7 @@ export default class Plans extends Component {
         <PopUpBackground />
         <div className="plans">
           <div className="plans_wrapper">
+
             <div className="plans_wrapper_head">
               <h1 className="head-title">{this.getLangText("PlansTitle")}</h1>
               <p className="head-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
@@ -60,14 +61,17 @@ export default class Plans extends Component {
             </div>
 
             <div className="plans_wrapper_container">
+
               <div className="container-item" id="item-standard">
                 <div className="container-item_content">
+
                   <div className="container-item_content_header">
                     <h2 id="unique-item-paragraph">{this.getLangText("Standard")}</h2>
                     <h1>{this.getLangText("StandardCondition")}</h1>
                     <h3>{this.getLangText("StandardSubtitle")}</h3>
                   </div>
                   <div className="container-item_content_main">
+
                     <div className="main-item">
                       <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("1-StandardPoint")}</p>
@@ -75,6 +79,7 @@ export default class Plans extends Component {
                     <div className="main-item">
                       <p>{this.getLangText("2-StandardPoint")}</p>
                     </div>
+
                   </div>
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
@@ -82,17 +87,20 @@ export default class Plans extends Component {
                            onClick={popUpManipulations} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
+
                 </div>
               </div>
 
               <div className="container-item" id="item-premium">
                 <div className="container-item_content">
+
                   <div className="container-item_content_header">
                     <h2>{this.getLangText("Premium")}</h2>
                     <h1>{this.getLangText("PremiumCondition")}</h1>
                     <h3>{this.getLangText("PremiumSubtitle")}</h3>
                   </div>
                   <div className="container-item_content_main">
+
                     <div className="main-item">
                       <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("1-PremiumPoint")}</p>
@@ -101,6 +109,7 @@ export default class Plans extends Component {
                       <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("2-PremiumPoint")}</p>
                     </div>
+
                   </div>
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
@@ -108,17 +117,20 @@ export default class Plans extends Component {
                            onClick={popUpManipulations} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
+
                 </div>
               </div>
 
               <div className="container-item" id="item-super-premium">
                 <div className="container-item_content" >
+
                   <div className="container-item_content_header">
                     <h2>{this.getLangText("SuperPremium")}</h2>
                     <h1>{this.getLangText("SuperPremiumCondition")}</h1>
                     <h3>{this.getLangText("SuperPremiumSubtitle")}</h3>
                   </div>
                   <div className="container-item_content_main">
+
                     <div className="main-item">
                       <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("1-SuperPremiumPoint")}</p>
@@ -127,6 +139,7 @@ export default class Plans extends Component {
                       <img src={plansV} alt="v-image"/>
                       <p>{this.getLangText("2-SuperPremiumPoint")}</p>
                     </div>
+
                   </div>
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
@@ -134,12 +147,17 @@ export default class Plans extends Component {
                            onClick={popUpManipulations} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
+
                 </div>
               </div>
+
             </div>
+
           </div>
         </div>
       </div>
     );
+
   };
+
 };

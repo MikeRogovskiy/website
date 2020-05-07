@@ -1,25 +1,25 @@
 @import "../../styles/variables";
-@import "mixins/mixins.scss";
+@import "../../styles/mixins";
 
 *{
   font-family: "Montserrat", sans-serif;
 };
 
 .instruction {
-  @include centralPositionHW;
+  @include centralColumnFlexPositionHWHundred;
 
   .instruction_container{
-    @include centralPosition;
+    @include centralFlexPosition;
+    @include flexColumn;
     width: 1020px;
     height: 100%;
-    flex-direction: column;
 
     .instruction_container_header{
-      @include centralPositionHW;
+      @include centralColumnFlexPositionHWHundred;
       padding-top: 10%;
 
       .instruction_container_header_title, .instruction_container_header_text{
-        @include centralPositionHW;
+        @include centralColumnFlexPositionHWHundred;
       };
 
       .instruction_container_header_title h1{
@@ -31,7 +31,7 @@
       };
 
       .instruction_container_header_text{
-        @include centralPositionHW;
+        @include centralColumnFlexPositionHWHundred;
         padding: 5% 0px 0px 0px;
       };
 
@@ -48,7 +48,7 @@
     };
 
     .instruction_container_start{
-      @include centralPositionHW;
+      @include centralColumnFlexPositionHWHundred;
       position: relative;
       z-index: 5;
 
@@ -78,15 +78,14 @@
     padding: 100px 0px 100px 0px;
 
     .instruction_container_main_text-card{
-      display: flex;
-      align-items: center;
+      @include centralAlignFlex;
       justify-content: space-between;
       width: 100%;
 
       .instruction_container_main_text-card_a, .instruction_container_main_text-card_b{
+        @include flexColumn;
         width: 485px;
         height: 465px;
-        flex-direction: column;
         border-radius: 13px;
         border: $extensionInstructionColor solid;
       };
@@ -104,8 +103,7 @@
       };
 
       .card_folder_top{
-        display: flex;
-        align-items: center;
+        @include centralAlignFlex;
         color: $blackColor;
       };
 
@@ -120,11 +118,10 @@
       };
 
       .card_header{
+        @include flexColumn;
         align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
-        display: flex;
-        flex-direction: column;
         padding-left: 30px;
       };
 
@@ -137,8 +134,7 @@
       };
 
       .card_folder{
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         width: 100%;
         padding-left: 30px;
 
@@ -147,7 +143,7 @@
           width: 100%;
 
           .card-img-a{
-            @include widthHeightHundred;
+            @include wHHundred;
             margin-left: -15px;
           };
 
@@ -155,6 +151,7 @@
             width: 45px;
             height: 45px;
           };
+
         };
 
         .card_folder_content p{
@@ -170,7 +167,7 @@
       };
 
       .card_footer a{
-        @include centralPosition;
+        @include centralFlexPosition;
         @include normalBoldFont;
         color: $extensionInstructionColor;
         text-decoration-line: underline;
@@ -207,8 +204,8 @@
     };
 
     .instruction_container_main_step{
-      @include widthHeightHundred;
-      display: flex;;
+      @include wHHundred;
+      display: flex;
       position: relative;
       z-index: 5;
       margin-top: 160px;
@@ -216,8 +213,7 @@
       background: linear-gradient(175.62deg, rgba(97, 120, 245, 0.1) 22.38%, rgba(25, 90, 169, 0.1) 82.85%);
 
       .instruction_container_main_step_right, .instruction_container_main_step_left{
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         justify-content: space-between;
         width: 50%;
         height: 100%;
@@ -240,7 +236,7 @@
 
       .instruction_container_main_step_right .step_section:nth-child(2)
       .step_section_main img{
-        @include widthHeightHundred;
+        @include wHHundred;
         padding: 8% 3% 0 3%;
       };
 
@@ -308,7 +304,7 @@
   };
 
   .instruction_container_footer{
-    @include centralPositionHW;
+    @include centralColumnFlexPositionHWHundred;
   };
 
   .instruction_footer_background{

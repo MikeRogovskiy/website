@@ -35,7 +35,7 @@ export default class ExtensionInstruction extends Component{
                     </a>
                 </div>,
             checkURL: window.location.href.includes("static"),
-        }
+        };
     };
 
     getLangText(text) {
@@ -45,13 +45,9 @@ export default class ExtensionInstruction extends Component{
     render() {
 
         return (
-
             <div className="instruction">
-
                 <div className="instruction_container">
-
                     <div className="instruction_container_header">
-
                         <HintArrow  urlCondition={this.state.checkURL}/>
 
                         <div className="instruction_container_header_title">
@@ -62,13 +58,11 @@ export default class ExtensionInstruction extends Component{
                             <p>{this.getLangText("1-InstructionParagraph-a")}</p>
                             <p>{this.getLangText("2-InstructionParagraph-a")}</p>
                         </div>
-
                     </div>
 
                     { this.state.checkURL !== true && this.state.extensionStartButton }
 
                     <div className="instruction_container_main">
-
                         <div className="instruction_container_main_text-card">
                             <div className="instruction_container_main_text-card_a">
 
@@ -83,8 +77,8 @@ export default class ExtensionInstruction extends Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="instruction_container_main_text-card_b">
 
+                            <div className="instruction_container_main_text-card_b">
                                 <div className="card_header">
                                     <h2 className="card_title">{this.getLangText("1-InstructionCardHeading-b")}</h2>
                                     <h2>{this.getLangText("2-InstructionCardHeading-b")}</h2>
@@ -116,6 +110,7 @@ export default class ExtensionInstruction extends Component{
 
                         <div className="instruction_container_main_step">
                             <div className="instruction_container_main_step_left">
+
                                 <div className="step_section">
                                     <div className="step_section_header">
                                         <div className="step_section_header_image">
@@ -132,6 +127,7 @@ export default class ExtensionInstruction extends Component{
                                         <h2>{this.getLangText("3-StepLeftHeading-a")}</h2>
                                     </div>
                                 </div>
+
                                 <div className="step_section">
                                     <div className="step_section_header">
                                         <div className="step_section_header_image">
@@ -150,9 +146,9 @@ export default class ExtensionInstruction extends Component{
                                     </div>
                                 </div>
 
-
                             </div>
                             <div className="instruction_container_main_step_right">
+
                                 <div className="step_section">
                                     <div className="step_section_header">
                                         <div className="step_section_header_image">
@@ -185,9 +181,9 @@ export default class ExtensionInstruction extends Component{
                                         <img src={sectionStep4} />
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-
                     </div>
 
                     <div className="instruction_container_footer">
@@ -201,5 +197,5 @@ export default class ExtensionInstruction extends Component{
             </div>
         );
 
-    }
-}
+    };
+};

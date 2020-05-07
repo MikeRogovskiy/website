@@ -68,22 +68,28 @@ export default class Home extends React.Component {
       behavior: "smooth"
     });
   };
+
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-  }
+  };
+
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
-  }
+  };
+
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
-  }
+  };
+
   render() {
     const mobileClasses = classNames("img-phone-front", {
       show: this.state.showMobileWow
     });
+
     return (
       <div className="Home">
         <header className="hero">
+
           <div className="wrapper-hero">
             <div>
               <h1 className="hero-title">{this.getLangText("headerTitle")}</h1>
@@ -101,10 +107,12 @@ export default class Home extends React.Component {
               </Link>
             </div> */}
           </div>
+
         </header>
 
         <div className="container">
           <section className="content-home content-enjoyLearning">
+
             <div className="enjoyIt-wrapper">
               <div className="enjoyIt-heading">
                 <h2>{this.getLangText("headPleasure")}</h2>
@@ -114,9 +122,11 @@ export default class Home extends React.Component {
                 <img src={imgEnjoy} alt="Enjoy learning" />
               </div>
             </div>
+
           </section>
 
           <section className="content-home content-context-memory">
+
             <div className="context-title">
               <h2 className="context-heading">
                 {this.getLangText("headMemory")}
@@ -126,6 +136,7 @@ export default class Home extends React.Component {
             <div className="img-context-puzzle">
               <img src={puzzle} alt="Context puzzle" />
             </div>
+
           </section>
 
           <section
@@ -133,6 +144,7 @@ export default class Home extends React.Component {
             id={this.sections.toGetStarted.id}
             ref={this.sections.toGetStarted.ref}
           >
+
             <div className="app-download-wrapper">
               <div className="img-phone">
                 <img
@@ -172,6 +184,7 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
+
           </section>
 
           <div className="call-to-action">
@@ -180,6 +193,7 @@ export default class Home extends React.Component {
               id={this.sections.source.id}
               ref={this.sections.source.ref}
             >
+
               <div className="sources-wrapper">
                 <div className="sources-title">
                   <h2>{this.getLangText("headSource")}</h2>
@@ -221,6 +235,7 @@ export default class Home extends React.Component {
                   </div>
                 </div>
               </div>
+
             </section>
           </div>
         </div>
@@ -243,5 +258,7 @@ export default class Home extends React.Component {
         </footer>
       </div>
     );
-  }
-}
+
+  };
+
+};

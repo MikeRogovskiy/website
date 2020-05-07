@@ -18,13 +18,13 @@ export default class Player extends Component {
   state = {
     bgImgId: 0,
     imgId: 0,
-  }
+  };
 
   imgTopOffset = 150;
 
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
-  }
+  };
 
   playerContent = [
     {
@@ -91,11 +91,11 @@ export default class Player extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", this.scrollPageView);
-  }
+  };
 
   componentWillUnmount() {
     document.removeEventListener("scroll", this.scrollPageView);
-  }
+  };
 
   scrollPageView = () => {
     const pos = window.pageYOffset;
@@ -121,8 +121,8 @@ export default class Player extends Component {
     return (
       <div>
         <MainHeader />
-        <Header text={this.props.text} />
 
+        <Header text={this.props.text} />
 
         {/* Player Scroll Content */}
         <div className="scrolled-content-header">
@@ -189,6 +189,7 @@ export default class Player extends Component {
         <Footer text={this.props.text} />
       </div>
     );
-  }
-}
 
+  };
+
+};

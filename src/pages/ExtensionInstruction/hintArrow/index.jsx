@@ -14,23 +14,26 @@ export default class HintArrow extends Component{
                 </div>,
             extensionArrowInfo:
                 <div className="instruction-hint">
+
                     <div className="instruction-hint_content">
                         <div className="instruction-hint_content_triangle"></div>
                         <p>Для доступа ко всем функциям<br />нажмите на иконку
                             <span> EasyLang,</span> на<br />верхней панели браузера
                         </p>
                     </div>
-                </div>,
-        }
-    }
+
+                </div>
+        };
+    };
 
 
     render() {
+
         return (
             <div>
                 { this.props.urlCondition === true && this.state.extensionArrowAnimation }
                 { this.props.urlCondition === true && this.state.extensionArrowInfo }
             </div>
         );
-    }
-}
+    };
+};

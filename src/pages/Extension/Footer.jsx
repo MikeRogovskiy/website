@@ -7,7 +7,7 @@ const Footer = (props) => {
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
-    }
+    };
 
     return (
         <footer className="getStarted-footer">
@@ -23,7 +23,7 @@ const Footer = (props) => {
                 </a>
             </div>
         </footer>
-    )
+    );
 
 };
 

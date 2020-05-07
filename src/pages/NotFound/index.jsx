@@ -13,13 +13,15 @@ export default class NotFound extends Component {
 
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
-    }
+    };
 
     render() {
+
         return (
             <Fragment>
                 <MainHeader />
                 <div className="NotFound">
+
                     <img src={notFoundImg} />
                     <h1>{this.getLangText("NotFoundTitle")}</h1>
                     <p>{this.getLangText("NotFoundSubtitle")}</p>
@@ -28,8 +30,9 @@ export default class NotFound extends Component {
                             {this.getLangText("HomePage")}
                         </div>
                     </Link>
+
                 </div>
             </Fragment>
         );
-    }
-}
+    };
+};

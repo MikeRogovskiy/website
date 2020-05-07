@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 @keyframes pop-up-block-appear{
   from{
@@ -22,22 +23,11 @@ $top: -8%;
   }
 };
 
-
-
-
-
 .pop-up-storage{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  @include centralRowFlexPositionHWHundred;
 
   .container-pop-up{
-    background: $bgColor;
-    background-size: 110%;
-    background-image: url("../../../assets/images/animation/confetti-pop-up-window.svg");
-    background-repeat: no-repeat;
+    background: 110% no-repeat url("../../../assets/images/animation/confetti-pop-up-window.svg") $bgColor;
     display: none;
     border-radius: 60px;
     height: 70%;
@@ -54,7 +44,6 @@ $top: -8%;
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, -50%);
-
   };
 
   .container-pop-up_wrapper{
@@ -64,7 +53,6 @@ $top: -8%;
     height: 100%;
     align-items: center;
     justify-content: center;
-
   };
 
   .container-pop-up_wrapper p{
@@ -113,7 +101,9 @@ $top: -8%;
     outline: none;
     font-size: 30px;
   };
+
 };
+
 .pop-up-background{ // Background confetti for pop-up-window
   display: none;
   background-image: url("../../../assets/images/animation/animation-confetti.svg");
