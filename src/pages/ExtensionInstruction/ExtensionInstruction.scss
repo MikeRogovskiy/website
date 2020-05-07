@@ -1,27 +1,5 @@
 @import "../../styles/variables";
-
-@mixin centralPosition{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-};
-
-@mixin centralPositionHW{
-  // H - Height;
-  // W - Width;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-};
-
-@mixin buttonCorrect{
-  outline: none;
-  border: none;
-  cursor: pointer;
-};
+@import "mixins/mixins.scss";
 
 *{
   font-family: "Montserrat", sans-serif;
@@ -35,7 +13,6 @@
     width: 1020px;
     height: 100%;
     flex-direction: column;
-
 
     .instruction_container_header{
       @include centralPositionHW;
@@ -51,7 +28,6 @@
         font-size: 59px;
         line-height: 72px;
         line-height: 100%;
-
       };
 
       .instruction_container_header_text{
@@ -78,13 +54,12 @@
 
       .start-free{
         @include buttonCorrect;
+        @include normalBoldFont;
         background-color: $startBtnColor;
         color: $color;
         height: 89.52px;
         width: 483px;
         border-radius: 110px;
-        font-style: normal;
-        font-weight: bold;
         font-size: 28px;
         line-height: 34px;
         margin-top: 100px;
@@ -93,7 +68,7 @@
 
       .start-free:hover{
         background-color: #ffb43f;
-      }
+      };
 
     };
 
@@ -161,10 +136,6 @@
         color: $blackColor;
       };
 
-      //.instruction_container_main_text-card_a .card_folder{
-      //  //margin-top: 30px;
-      //};
-
       .card_folder{
         display: flex;
         flex-direction: column;
@@ -176,8 +147,7 @@
           width: 100%;
 
           .card-img-a{
-            width: 100%;
-            height: 100%;
+            @include widthHeightHundred;
             margin-left: -15px;
           };
 
@@ -201,10 +171,9 @@
 
       .card_footer a{
         @include centralPosition;
+        @include normalBoldFont;
         color: $extensionInstructionColor;
         text-decoration-line: underline;
-        font-style: normal;
-        font-weight: bold;
         font-size: 16px;
         line-height: 20px;
         padding-right: 50px;
@@ -218,14 +187,13 @@
 
         .register{
           @include buttonCorrect;
+          @include normalBoldFont;
           width: 221px;
           margin-right: 15px;
           background: linear-gradient(179.1deg, #6178F5 22.38%, #195AA9 82.85%);
           border-radius: 5px;
           height: 40px;
-          font-style: normal;
-          font-weight: bold;
-          max-font-size: 16px;
+          font-size: 16px;
           line-height: 20px;
           color: $color;
         };
@@ -239,9 +207,8 @@
     };
 
     .instruction_container_main_step{
-      display: flex;
-      width: 100%;
-      height: 100%;
+      @include widthHeightHundred;
+      display: flex;;
       position: relative;
       z-index: 5;
       margin-top: 160px;
@@ -273,8 +240,7 @@
 
       .instruction_container_main_step_right .step_section:nth-child(2)
       .step_section_main img{
-        width: 100%;
-        height: 100%;
+        @include widthHeightHundred;
         padding: 8% 3% 0 3%;
       };
 
@@ -334,11 +300,7 @@
       .step-arrow{
         width: 40%;
         position: relative;
-        z-index: 0;
-        margin-bottom: -40px;
-        margin-top: -90px;
-        margin-left: 75%;
-
+        margin: -90px 0px -40px 75%;
       };
 
     };

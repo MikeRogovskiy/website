@@ -1,0 +1,32 @@
+@mixin centralPosition{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+};
+
+@mixin centralPositionHW{
+  // H - Height;
+  // W - Width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+};
+
+@mixin buttonCorrect{
+  outline: none;
+  border: none;
+  cursor: pointer;
+};
+
+@mixin widthHeightHundred{
+  width: 100%;
+  height: 100%;
+};
+
+@mixin normalBoldFont{
+  font-style: normal;
+  font-weight: bold;
+};
