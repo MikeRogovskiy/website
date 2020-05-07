@@ -13,6 +13,7 @@ import phone from "../../assets/images/home/phone.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
 
+
 export default class Home extends React.Component {
   constructor(props) {
     super(props);

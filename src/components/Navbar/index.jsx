@@ -3,6 +3,7 @@ import { Link } from "@reach/router";
 import "./Navbar.scss";
 import classNames from "classnames";
 import ReactHtmlParser from "react-html-parser";
+import StartBtn from "../StartBtn";
 
 export default class Navbar extends React.Component {
     constructor(props) {
@@ -130,14 +131,14 @@ export default class Navbar extends React.Component {
                                             </Link>
                                         </li>
                                         <li>
-                                            <a
+                                            <Link
                                                 className="menu-nav__link start-button"
-                                                href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
+                                                to="extension-instruction/"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
                                                 {this.props.text.GetStartedButton}
-                                            </a>
+                                            </Link>
                                         </li>
                                         {/* <li>
                                         <Link
