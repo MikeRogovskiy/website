@@ -9,48 +9,48 @@ import "./PlansMedia.scss";
 
 import plansV from "../../assets/images/Plans/plansV.svg";
 
+
 export default class Plans extends Component {
 
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
   }
 
-  render() {
 
-    function removePopUp(){
+  render() {
+    function popUpManipulations(){
       const popUpWindow = document.querySelector(".container-pop-up");
       const popUpBackground = document.querySelector(".pop-up-background");
       const plans = document.querySelector(".plans");
-      plans.style.opacity = "1";
-      plans.style.backgroundColor = "";
-      popUpWindow.style.opacity = "0";
-      popUpBackground.style.opacity = "0";
 
-      setTimeout(deletePopUp, 500);
+      if ( popUpWindow.style.display !== "flex" && popUpBackground.style.display !== "flex" ){
+          plans.style.opacity = "47%";
+          plans.style.backgroundColor = "#245FAB";
+          popUpWindow.style.opacity = "1";
+          popUpBackground.style.opacity = "1";
+          popUpWindow.style.display = "flex";
+          popUpBackground.style.display = "flex";
+      } else {
+          plans.style.opacity = "1";
+          plans.style.backgroundColor = "";
+          popUpWindow.style.opacity = "0";
+          popUpBackground.style.opacity = "0";
 
-      function deletePopUp(){
-        popUpWindow.style.display = "none";
-        popUpBackground.style.display = "none";
+          setTimeout(deletePopUp, 500);
+
+          function deletePopUp(){
+            popUpWindow.style.display = "none";
+            popUpBackground.style.display = "none";
+          };
       };
     };
 
-    function appearPopUp(){
-      const popUpWindow = document.querySelector(".container-pop-up");
-      const popUpBackground = document.querySelector(".pop-up-background");
-      const plans = document.querySelector(".plans");
-      plans.style.opacity = "47%";
-      plans.style.backgroundColor = "#245FAB";
-      popUpWindow.style.opacity = "1";
-      popUpBackground.style.opacity = "1";
-      popUpWindow.style.display = "flex";
-      popUpBackground.style.display = "flex";
-    };
 
     return (
       <div className="plans-folder">
         <MainHeader />
 
-        <PopUpWindow action={removePopUp} text={this.props.text}/>
+        <PopUpWindow action={popUpManipulations} text={this.props.text}/>
         <PopUpBackground />
         <div className="plans">
           <div className="plans_wrapper">
@@ -80,7 +80,7 @@ export default class Plans extends Component {
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
                            target="_blank"  rel="noopener noreferrer" id="unique-item-button"
-                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
+                           onClick={popUpManipulations} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export default class Plans extends Component {
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
                            target="_blank"  rel="noopener noreferrer"
-                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
+                           onClick={popUpManipulations} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ export default class Plans extends Component {
                   <div className="container-item_content_footer">
                     <input type="button" className="container-item_content_footer_btn"
                            target="_blank"  rel="noopener noreferrer"
-                           onClick={appearPopUp} value={this.getLangText("ButtonName")}>
+                           onClick={popUpManipulations} value={this.getLangText("ButtonName")}>
                     </input>
                   </div>
                 </div>
