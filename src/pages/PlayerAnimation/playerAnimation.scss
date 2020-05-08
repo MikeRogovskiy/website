@@ -14,38 +14,25 @@ html, body{
 }
 
 .test-btn{
-  cursor: pointer;
-}
+  @include buttonCorrect;
+};
 
 #main-field{
-  display: flex;
-  width: 100%;
-  height: 1200px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include centralColumnFlexPositionHWHundred;
 };
 
 #main-field_container{
-  width: 100%;
-  height: 100%;
-  background: url("../../assets/images/player-animation/playerBackgroundTestA.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include wHHundred;
   position: relative;
   transition: background 1s ease-in;
-  //overflow: hidden;
+  background: no-repeat bottom/cover url("../../assets/images/player-animation/playerBackgroundTestA.svg");
 };
 
 #main-field_background{
-  background-color: #245FAB;
-  background-repeat: no-repeat;
-  opacity: 47%;
-  width: 100%;
-  height: 120%;
-  display: flex;
+  @include wHHundred;
+  background: no-repeat/cover;
+  background-color: #6AB2F5;
+  opacity: 0.2;
   position: absolute;
   transition:  1s ease-in;
-  /*background-image: radial-gradient(31px circle at  right 175px top 31% , black 50px, transparent 50px);*/
-  /*background-image: radial-gradient(61px circle at  right 1665px top 80% , black 100px, transparent 50px);*/
 };

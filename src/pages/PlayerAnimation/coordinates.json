@@ -10,26 +10,34 @@
     "cyOuter": "253",
     "rOuter": "50",
     "strokeWidthOuter": "40",
+
     "blackSize": "61px",
     "blackRight": "82.5%",
-    "blackTop": "85%",
-    "blackSize2": "100px"
+    "blackTop": "84%",
+    "blackSize2": "100px",
+
+    "rectX": "90",
+    "rectY": "200"
   },
 
   "stepB": {
     "cxInner": "450",
-    "cyInner": "170",
-    "rInner": "55",
-    "strokeWidthInner": "5",
+    "cyInner": "190",
+    "rInner": "50",
+    "strokeWidthInner": "7",
     "delay": "0",
     "cxOuter": "450",
-    "cyOuter": "170",
-    "rOuter": "60",
+    "cyOuter": "190",
+    "rOuter": "55",
     "strokeWidthOuter": "10",
+
     "blackSize": "300px",
     "blackRight": "10%",
-    "blackTop": "58%",
-    "blackSize2": "215px"
+    "blackTop": "63%",
+    "blackSize2": "190px",
+
+    "rectX": "300",
+    "rectY": "50"
   },
 
   "stepC": {
