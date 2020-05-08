@@ -159,7 +159,11 @@ export default class PlayerAnimation extends Component {
                                 strokeWidth="25" stroke="#6AB2F5"  strokeOpacity="0.1" />
 
                         {/* <image xlinkHref={rectangleA} x="330" y="30" width="100" height="50" /> */}
-                        <rect  x="330" y="30" width="100" height="50" fill="white" />
+                        <rect  x="330" y="30" width="100" height="50" fill="white">
+                          
+                        </rect>
+                        <text  x="340" y="60">FOR STEP1</text>
+
 
                         
                     </svg>

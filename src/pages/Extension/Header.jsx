@@ -28,7 +28,7 @@ const Header = (props) => {
                 >
                   <span>{getLangText("GetStartedButton")}</span>
                 </a> */}
-                 <StartBtn link={"/extension-instruction"} id={"extension-btn"} text={getLangText("GetStartedButton")} />
+                 <StartBtn link={"/player"} id={"extension-btn"} text={getLangText("GetStartedButton")} />
               </div>
               <div>
                 <p className="getStarted-subtitle">{getLangText("GetStartedBottomText")}</p>

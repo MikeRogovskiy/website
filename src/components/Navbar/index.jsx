@@ -131,7 +131,7 @@ export default class Navbar extends React.Component {
                                             </Link>
                                         </li>
                                         <li>
-                                            <StartBtn link={"/extension-instruction"} text={this.props.text.GetStartedButton} id={"nav-btn"}/>
+                                            <StartBtn link={"/player"} text={this.props.text.GetStartedButton} id={"nav-btn"}/>
                                             {/* <Link
                                                 className="menu-nav__link start-button"
                                                 to="extension-instruction/"
