@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
 import HintArrow from "./hintArrow";
+// import StartBtn from "../../components/StartBtn";
 
 
 import pickLanguageExample from "../../assets/images/extension-instruction/pickLanguageExample.svg";
@@ -33,6 +34,7 @@ export default class ExtensionInstruction extends Component{
                     <a href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel" target="_blank">
                         <input type="button" value={this.getLangText("InstructionStartButton")} className="start-free"/>
                     </a>
+                     {/* <StartBtn link={"/extension-instruction"} id={"instruction-btn"} text={this.getLangText("InstructionStartButton")} /> */}
                 </div>,
             checkURL: window.location.href.includes("static"),
         };

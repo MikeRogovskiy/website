@@ -170,6 +170,11 @@ a.menu-nav__link {
     text-transform: none;
 }
 
+#nav-btn{
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
 .menu-nav__link {
     font-weight: normal;
     font-size: 1.1rem;
@@ -178,50 +183,50 @@ a.menu-nav__link {
     transition: border-bottom 0.1s ease-in-out;
 }
   
-  .start-button {
-    display: block;
-    width: auto;
+//   .start-button {
+//     display: block;
+//     width: auto;
 
-    border-bottom: 0 !important;
-    transition: unset !important;
+//     border-bottom: 0 !important;
+//     transition: unset !important;
   
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: $color !important;
-    font-weight: bold;
-    font-style: normal;
-    padding: 5% 20px;
+//     font-size: 1rem;
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     color: $color !important;
+//     font-weight: bold;
+//     font-style: normal;
+//     padding: 5% 20px;
   
-    background-color: #FF6A70;
-    border: none;
-    border-radius: 110px;
-    transition: all 0.3s linear;
-    &:hover {
-      background-color: #ffb43f;
-    }
-    &.top,&.bottom{
-      display: flex;
-      align-items: center;
-      padding: 5% 10px;
-    }
-    &.bottom {
-      font-size: 1.1rem;
-    }
-    &.blog-button {
-      padding: 20px 20px;
-      max-width: 360px;
-    }
-  }
+//     background-color: #FF6A70;
+//     border: none;
+//     border-radius: 110px;
+//     transition: all 0.3s linear;
+//     &:hover {
+//       background-color: #ffb43f;
+//     }
+//     &.top,&.bottom{
+//       display: flex;
+//       align-items: center;
+//       padding: 5% 10px;
+//     }
+//     &.bottom {
+//       font-size: 1.1rem;
+//     }
+//     &.blog-button {
+//       padding: 20px 20px;
+//       max-width: 360px;
+//     }
+//   }
   
 
-.menu-nav__link:hover {
-    border-bottom: 3px solid #03a9f4;
-}
+// .menu-nav__link:hover {
+//     border-bottom: 3px solid #03a9f4;
+// }
 
-.menu-btn {
-    display: none;
-}
+// .menu-btn {
+//     display: none;
+// }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .menu-wrapper {
