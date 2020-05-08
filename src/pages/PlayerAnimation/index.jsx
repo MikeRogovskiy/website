@@ -1,18 +1,10 @@
 import React, { Component } from "react";
 import * as d3 from 'd3';
 import coordinates from './coordinates.json';
+import ReactHtmlParser from "react-html-parser";
 
 
 import "./playerAnimation.scss";
-
-// import rectangleA from "../../assets/images/player-animation/step1Rect.svg";
-// import rectangleB from "../../assets/images/player-animation/step2Rect.svg";
-// import rectangleC from "../../assets/images/player-animation/step3Rect.svg";
-// import rectangleD from "../../assets/images/player-animation/step4Rect.svg";
-// import rectangleE from "../../assets/images/player-animation/step5Rect.svg";
-// import rectangleF from "../../assets/images/player-animation/step6Rect.svg";
-// import rectangleG from "../../assets/images/player-animation/step7Rect.svg";
-
 
 import backgroundA from "../../assets/images/player-animation/playerBackgroundTestA.svg";
 import backgroundB from "../../assets/images/player-animation/playerBackgroundTestB.svg";
@@ -23,9 +15,29 @@ export default class PlayerAnimation extends Component {
             "right 8.5% top 2.3% , black 100px, transparent 50px)";
     };
 
+    getLangText(text) {
+        return ReactHtmlParser(this.props.text[text]);
+    };
+
     render(){
+        
+        function changeBackground(backgroundImage){
+            document.querySelector("#main-field_container").style.backgroundImage = `url(${backgroundImage})`;
+        };
+
+        function changeBackgroundColor(size, right, top, size2){
+            document.querySelector("#main-field_background").style.backgroundImage = `radial-gradient(${size} circle at  ` +
+                `right ${right} top ${top} , black ${size2}, transparent 50px)`;
+        };
+
+
         function moveCircle(cxInner, cyInner, rInner, strokeWidthInner, delay,
-                            cxOuter, cyOuter, rOuter, strokeWidthOuter, rectX, rectY) {
+                            cxOuter, cyOuter, rOuter, strokeWidthOuter,
+                            rectX, rectY,
+                            textRectXA, textRectYA, textRectXB, textRectYB, textRectXC, textRectYC,
+                            // textA, textB, textC
+                            ) {
+
 
             d3.select("#circleInner")
                 .transition()
@@ -44,6 +56,7 @@ export default class PlayerAnimation extends Component {
                 .attr("cy", cyOuter)
                 .attr("r", rOuter)
                 .attr("stroke-width", strokeWidthOuter)
+
             d3.select("rect")
                 .transition()
                 .delay(delay)
@@ -51,26 +64,42 @@ export default class PlayerAnimation extends Component {
                 // .attr("xlink:href", rect)
                 .attr("x", rectX)
                 .attr("y", rectY)
-                
+
+            d3.select("#textA")
+                .transition()
+                .delay(delay)
+                .duration(2000)
+                .attr("x", textRectXA)
+                .attr("y", textRectYA)
+                // .attr("text", textA )
+            d3.select("#textB")
+                .transition()
+                .delay(delay)
+                .duration(2000)
+                .attr("x", textRectXB)
+                .attr("y", textRectYB)
+                // .attr("text",  textB)
+            d3.select("#textC")
+                .transition()
+                .delay(delay)
+                .duration(2000)
+                .attr("x", textRectXC)
+                .attr("y", textRectYC)
+                // .attr("text", textC)
         };
-
-        function changeBackground(backgroundImage){
-            document.querySelector("#main-field_container").style.backgroundImage = `url(${backgroundImage})`;
-        };
-
-        function changeBackgroundColor(size, right, top, size2){
-            document.querySelector("#main-field_background").style.backgroundImage = `radial-gradient(${size} circle at  ` +
-                `right ${right} top ${top} , black ${size2}, transparent 50px)`;
-        };
-
-
 
 
         function stepA(){
             moveCircle(coordinates.stepA.cxInner, coordinates.stepA.cyInner, coordinates.stepA.rInner,
                 coordinates.stepA.strokeWidthInner, coordinates.stepA.delay, coordinates.stepA.cxOuter,
                 coordinates.stepA.cyOuter, coordinates.stepA.rOuter, coordinates.stepA.strokeWidthOuter,
-                coordinates.stepA.rectX, coordinates.stepA.rectY);
+                coordinates.stepA.rectX, coordinates.stepA.rectY,
+                coordinates.stepA.textRectXA, coordinates.stepA.textRectYA,
+                coordinates.stepA.textRectXB, coordinates.stepA.textRectYB,
+                coordinates.stepA.textRectXC, coordinates.stepA.textRectYC,
+                
+                
+                );
 
             setTimeout(changeBackgroundColor(coordinates.stepA.blackSize, coordinates.stepA.blackRight,
                 coordinates.stepA.blackTop, coordinates.stepA.blackSize2), 2700);
@@ -98,7 +127,6 @@ export default class PlayerAnimation extends Component {
 
             setTimeout(changeBackgroundColor(coordinates.stepC.blackSize, coordinates.stepC.blackRight,
                 coordinates.stepC.blackTop, coordinates.stepC.blackSize2), 2700);
-
 
         };
 
@@ -158,19 +186,22 @@ export default class PlayerAnimation extends Component {
                         <circle id="circleOuter" cx="457" cy="7" r="20" fill="none"
                                 strokeWidth="25" stroke="#6AB2F5"  strokeOpacity="0.1" />
 
-                        {/* <image xlinkHref={rectangleA} x="330" y="30" width="100" height="50" /> */}
-                        <rect  x="330" y="30" width="100" height="50" fill="white">
-                          
-                        </rect>
-                        <text  x="340" y="60">FOR STEP1</text>
-
-
-                        
+                        <g>
+                            <rect  x="330" y="30" width="100" height="50" fill="white" />
+                            <text id="textA" className="rectangle-text" x="340" y="50">
+                                {this.getLangText("step1A")}
+                            </text>
+                            <text id="textB" className="rectangle-text" x="340" y="60">
+                                {this.getLangText("step1B")}
+                            </text>
+                            <text id="textC" className="rectangle-text" x="340" y="70">
+                                {this.getLangText("step1C")}
+                            </text>
+                        </g>
                     </svg>
 
                 </div>
 
-                
             </div>
         );
 

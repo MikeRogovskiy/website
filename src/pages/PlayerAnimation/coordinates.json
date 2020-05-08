@@ -17,7 +17,16 @@
     "blackSize2": "100px",
 
     "rectX": "120",
-    "rectY": "140"
+    "rectY": "140",
+
+    "textRectXA": "130",
+    "textRectYA": "160",
+
+    "textRectXB": "130",
+    "textRectYB": "170",
+
+    "textRectXC": "130",
+    "textRectYC": "180"
   },
 
   "stepB": {
