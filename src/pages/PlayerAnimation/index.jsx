@@ -5,13 +5,13 @@ import coordinates from './coordinates.json';
 
 import "./playerAnimation.scss";
 
-import rectangleA from "../../assets/images/player-animation/step1Rect.svg";
-import rectangleB from "../../assets/images/player-animation/step2Rect.svg";
-import rectangleC from "../../assets/images/player-animation/step3Rect.svg";
-import rectangleD from "../../assets/images/player-animation/step4Rect.svg";
-import rectangleE from "../../assets/images/player-animation/step5Rect.svg";
-import rectangleF from "../../assets/images/player-animation/step6Rect.svg";
-import rectangleG from "../../assets/images/player-animation/step7Rect.svg";
+// import rectangleA from "../../assets/images/player-animation/step1Rect.svg";
+// import rectangleB from "../../assets/images/player-animation/step2Rect.svg";
+// import rectangleC from "../../assets/images/player-animation/step3Rect.svg";
+// import rectangleD from "../../assets/images/player-animation/step4Rect.svg";
+// import rectangleE from "../../assets/images/player-animation/step5Rect.svg";
+// import rectangleF from "../../assets/images/player-animation/step6Rect.svg";
+// import rectangleG from "../../assets/images/player-animation/step7Rect.svg";
 
 
 import backgroundA from "../../assets/images/player-animation/playerBackgroundTestA.svg";
@@ -24,10 +24,8 @@ export default class PlayerAnimation extends Component {
     };
 
     render(){
-        // const mainField = document.querySelector("#main-field_container");
-        // const mainFieldBackground = document.querySelector("#main-field_background");
         function moveCircle(cxInner, cyInner, rInner, strokeWidthInner, delay,
-                            cxOuter, cyOuter, rOuter, strokeWidthOuter, rect, rectX, rectY) {
+                            cxOuter, cyOuter, rOuter, strokeWidthOuter, rectX, rectY) {
 
             d3.select("#circleInner")
                 .transition()
@@ -46,11 +44,11 @@ export default class PlayerAnimation extends Component {
                 .attr("cy", cyOuter)
                 .attr("r", rOuter)
                 .attr("stroke-width", strokeWidthOuter)
-            d3.select("image")
+            d3.select("rect")
                 .transition()
                 .delay(delay)
                 .duration(2000)
-                .attr("xlink:href", rect)
+                // .attr("xlink:href", rect)
                 .attr("x", rectX)
                 .attr("y", rectY)
                 
@@ -72,7 +70,7 @@ export default class PlayerAnimation extends Component {
             moveCircle(coordinates.stepA.cxInner, coordinates.stepA.cyInner, coordinates.stepA.rInner,
                 coordinates.stepA.strokeWidthInner, coordinates.stepA.delay, coordinates.stepA.cxOuter,
                 coordinates.stepA.cyOuter, coordinates.stepA.rOuter, coordinates.stepA.strokeWidthOuter,
-                rectangleB, coordinates.stepA.rectX, coordinates.stepA.rectY);
+                coordinates.stepA.rectX, coordinates.stepA.rectY);
 
             setTimeout(changeBackgroundColor(coordinates.stepA.blackSize, coordinates.stepA.blackRight,
                 coordinates.stepA.blackTop, coordinates.stepA.blackSize2), 2700);
@@ -84,12 +82,58 @@ export default class PlayerAnimation extends Component {
             moveCircle(coordinates.stepB.cxInner, coordinates.stepB.cyInner, coordinates.stepB.rInner,
                 coordinates.stepB.strokeWidthInner, coordinates.stepB.delay, coordinates.stepB.cxOuter,
                 coordinates.stepB.cyOuter, coordinates.stepB.rOuter, coordinates.stepB.strokeWidthOuter,
-                rectangleC,  coordinates.stepB.rectX, coordinates.stepB.rectY);
+                coordinates.stepB.rectX, coordinates.stepB.rectY);
 
             setTimeout(changeBackgroundColor(coordinates.stepB.blackSize, coordinates.stepB.blackRight,
                 coordinates.stepB.blackTop, coordinates.stepB.blackSize2), 2700);
 
             setTimeout(changeBackground(backgroundB), 300)
+        };
+
+        function stepC(){
+            moveCircle(coordinates.stepC.cxInner, coordinates.stepC.cyInner, coordinates.stepC.rInner,
+                coordinates.stepC.strokeWidthInner, coordinates.stepC.delay, coordinates.stepC.cxOuter,
+                coordinates.stepC.cyOuter, coordinates.stepC.rOuter, coordinates.stepC.strokeWidthOuter,
+                coordinates.stepC.rectX, coordinates.stepC.rectY);
+
+            setTimeout(changeBackgroundColor(coordinates.stepC.blackSize, coordinates.stepC.blackRight,
+                coordinates.stepC.blackTop, coordinates.stepC.blackSize2), 2700);
+
+
+        };
+
+        function stepD(){
+            moveCircle(coordinates.stepD.cxInner, coordinates.stepD.cyInner, coordinates.stepD.rInner,
+                coordinates.stepD.strokeWidthInner, coordinates.stepD.delay, coordinates.stepD.cxOuter,
+                coordinates.stepD.cyOuter, coordinates.stepD.rOuter, coordinates.stepD.strokeWidthOuter,
+                coordinates.stepD.rectX, coordinates.stepD.rectY);
+
+            setTimeout(changeBackgroundColor(coordinates.stepD.blackSize, coordinates.stepD.blackRight,
+                coordinates.stepD.blackTop, coordinates.stepD.blackSize2), 2700);
+
+        };
+
+        
+        function stepE(){
+            moveCircle(coordinates.stepE.cxInner, coordinates.stepE.cyInner, coordinates.stepE.rInner,
+                coordinates.stepE.strokeWidthInner, coordinates.stepE.delay, coordinates.stepE.cxOuter,
+                coordinates.stepE.cyOuter, coordinates.stepE.rOuter, coordinates.stepE.strokeWidthOuter,
+                coordinates.stepE.rectX, coordinates.stepE.rectY);
+
+            setTimeout(changeBackgroundColor(coordinates.stepE.blackSize, coordinates.stepE.blackRight,
+                coordinates.stepE.blackTop, coordinates.stepE.blackSize2), 2700);
+
+        };
+
+        function stepF(){
+            moveCircle(coordinates.stepF.cxInner, coordinates.stepF.cyInner, coordinates.stepF.rInner,
+                coordinates.stepF.strokeWidthInner, coordinates.stepF.delay, coordinates.stepF.cxOuter,
+                coordinates.stepF.cyOuter, coordinates.stepF.rOuter, coordinates.stepF.strokeWidthOuter,
+                coordinates.stepF.rectX, coordinates.stepF.rectY);
+
+            // setTimeout(changeBackgroundColor(coordinates.stepF.blackSize, coordinates.stepF.blackRight,
+            //     coordinates.stepF.blackTop, coordinates.stepF.blackSize2), 2700);
+
         };
 
 
@@ -98,7 +142,10 @@ export default class PlayerAnimation extends Component {
                 <div id="btn-folder">
                     <button className="test-btn" onClick={stepA}>StepA</button>
                     <button className="test-btn" onClick={stepB}>StepB</button>
-                    <button className="test-btn" onClick={stepA}>StepC</button>
+                    <button className="test-btn" onClick={stepC}>StepC</button>
+                    <button className="test-btn" onClick={stepD}>StepD</button>
+                    <button className="test-btn" onClick={stepE}>StepE</button>
+                    <button className="test-btn" onClick={stepF}>StepF</button>
                 </div>
 
                 <div id="main-field_container">
@@ -111,7 +158,10 @@ export default class PlayerAnimation extends Component {
                         <circle id="circleOuter" cx="457" cy="7" r="20" fill="none"
                                 strokeWidth="25" stroke="#6AB2F5"  strokeOpacity="0.1" />
 
-                        <image xlinkHref={rectangleA} x="330" y="30" width="100" height="50" />
+                        {/* <image xlinkHref={rectangleA} x="330" y="30" width="100" height="50" /> */}
+                        <rect  x="330" y="30" width="100" height="50" fill="white" />
+
+                        
                     </svg>
 
                 </div>
