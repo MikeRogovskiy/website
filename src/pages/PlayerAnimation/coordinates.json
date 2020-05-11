@@ -16,17 +16,20 @@
     "blackTop": "84%",
     "blackSize2": "100px",
 
-    "rectX": "120",
+    "rectX": "150",
     "rectY": "140",
+    "rectH": "40",
+    "rectW": "90",
 
-    "textRectXA": "130",
-    "textRectYA": "160",
 
-    "textRectXB": "130",
-    "textRectYB": "170",
+    "textRectXA": "170",
+    "textRectYA": "155",
 
-    "textRectXC": "130",
-    "textRectYC": "180"
+    "textRectXB": "165",
+    "textRectYB": "168",
+
+    "textRectXC": "0",
+    "textRectYC": "0"
   },
 
   "stepB": {
@@ -45,8 +48,19 @@
     "blackTop": "63%",
     "blackSize2": "190px",
 
-    "rectX": "300",
-    "rectY": "50"
+    "rectX": "220",
+    "rectY": "50",
+    "rectH": "40",
+    "rectW": "190",
+
+    "textRectXA": "230",
+    "textRectYA": "70",
+
+    "textRectXB": "250",
+    "textRectYB": "80",
+
+    "textRectXC": "0",
+    "textRectYC": "0"
   },
 
   "stepC": {
@@ -65,8 +79,19 @@
     "blackTop": "80%",
     "blackSize2": "200px",
 
-    "rectX": "60",
-    "rectY": "60"
+    "rectX": "30",
+    "rectY": "80",
+    "rectH": "25",
+    "rectW": "130",
+
+    "textRectXA": "40",
+    "textRectYA": "95",
+
+    "textRectXB": "40",
+    "textRectYB": "105",
+
+    "textRectXC": "0",
+    "textRectYC": "0"
   },
 
   "stepD": {
@@ -85,8 +110,19 @@
     "blackTop": "80%",
     "blackSize2": "100px",
 
-    "rectX": "170",
-    "rectY": "150"
+    "rectX": "155",
+    "rectY": "150",
+    "rectH": "30",
+    "rectW": "130",
+
+    "textRectXA": "172",
+    "textRectYA": "163",
+
+    "textRectXB": "162",
+    "textRectYB": "173",
+
+    "textRectXC": "0",
+    "textRectYC": "0"
   },
 
   "stepE": {
@@ -106,7 +142,18 @@
     "blackSize2": "100px",
 
     "rectX": "190",
-    "rectY": "120"
+    "rectY": "120",
+    "rectH": "35",
+    "rectW": "90",
+
+    "textRectXA": "205",
+    "textRectYA": "135",
+
+    "textRectXB": "202",
+    "textRectYB": "145",
+
+    "textRectXC": "202",
+    "textRectYC": "155"
   },
 
   "stepF": {
@@ -125,8 +172,19 @@
     "blackTop": "1%",
     "blackSize2": "370px",
 
-    "rectX": "240",
-    "rectY": "110"
+    "rectX": "170",
+    "rectY": "110",
+    "rectH": "40",
+    "rectW": "155",
+
+    "textRectXA": "180",
+    "textRectYA": "123",
+
+    "textRectXB": "200",
+    "textRectYB": "133",
+
+    "textRectXC": "210",
+    "textRectYC": "143"
   }
 
 }

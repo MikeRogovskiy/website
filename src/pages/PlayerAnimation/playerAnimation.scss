@@ -37,10 +37,13 @@ html, body{
   transition:  1s ease-in;
 };
 
+
+
 .rectangle-text{
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 41px;
+  color: $blackColor;
 };
