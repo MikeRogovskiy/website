@@ -22,7 +22,7 @@ export default class PlayerAnimation extends Component {
     render(){
 
         const textData = this.props.text;
-        
+
         function changeBackground(backgroundImage){
             document.querySelector("#main-field_container").style.backgroundImage = `url(${backgroundImage})`;
         };
@@ -94,6 +94,122 @@ export default class PlayerAnimation extends Component {
                 .text(textC)
         };
 
+        function moveArrows(generalBtnX, generalBtnY, generealBtnSize,
+            rightBtnX, rightBtnY,
+            downBtnY,
+            leftBtnX, leftBtnY,
+
+            delay,
+
+            topArrowRectangleX, topArrowRectangleY, topArrowTriangle, topArrowTextX, topArrowTextY, topArrowFill,
+            rightArrowRectangleX, rightArrowRectangleY, rightArrowTriangle, rightArrowTextX, rightArrowTextYA, rightArrowTextYB, rightArrowFill,
+            downArrowRectangleX, downArrowRectangleY, downArrowTriangle, downArrowFill,
+            leftArrowRectangleX, leftArrowRectangleY, leftArrowTriangle, leftArrowTextX, leftArrowTextYA, leftArrowTextYB, leftArrowFill
+
+            ){
+            d3.select("#low-arrows")
+                .attr("visibility", "visible")
+
+            d3.selectAll(".rectangle-arrows")
+                .attr("x", generalBtnX)
+                .attr("y", generalBtnY)
+                .attr("width", generealBtnSize)
+                .attr("height", generealBtnSize)
+                .attr("stroke-width", "0.2")
+                .attr("fill", "none")
+                .attr("rx", "5")
+
+            d3.select("#arrow-top")
+                .attr("stroke", topArrowFill)
+            d3.select("#arrow-right")
+                .attr("x", rightBtnX)
+                .attr("y", rightBtnY)
+                .attr("stroke", rightArrowFill)
+            d3.select("#arrow-down")
+                .attr("y", downBtnY)
+                .attr("stroke", downArrowFill)
+            d3.select("#arrow-left")
+                .attr("x", leftBtnX)
+                .attr("y", leftBtnY)
+                .attr("stroke", leftArrowFill)
+
+            d3.select("#arrow-rectangle-top")
+                .attr("x", topArrowRectangleX)
+                .attr("y", topArrowRectangleY)
+                .attr("width", "1")
+                .attr("height", "5")
+                .attr("fill", topArrowFill)
+            d3.select("#arrow-triangle-top")
+                .attr("points", topArrowTriangle)
+                .attr("fill", topArrowFill)
+            d3.select("#top-arrow-text")
+                .attr("x", topArrowTextX)
+                .attr("y", topArrowTextY)
+                .attr("fill", topArrowFill)
+
+            d3.select("#arrow-rectangle-right")
+                .attr("x", rightArrowRectangleX)
+                .attr("y", rightArrowRectangleY)
+                .attr("width", "5")
+                .attr("height", "1")
+                .attr("fill", rightArrowFill)
+            d3.select("#arrow-triangle-right")
+                .attr("points", rightArrowTriangle)
+                .attr("fill", rightArrowFill)
+            d3.select("#right-arrow-textA")
+                .attr("x", rightArrowTextX)
+                .attr("y", rightArrowTextYA)
+                .attr("fill", rightArrowFill)
+            d3.select("#right-arrow-textB")
+                .attr("x", rightArrowTextX)
+                .attr("y", rightArrowTextYB)
+                .attr("fill", rightArrowFill)
+
+
+            d3.select("#arrow-rectangle-down")
+                .attr("x", downArrowRectangleX)
+                .attr("y", downArrowRectangleY)
+                .attr("width", "1")
+                .attr("height", "5")
+                .attr("fill", downArrowFill)
+            d3.select("#arrow-triangle-down")
+                .attr("points", downArrowTriangle)
+                .attr("fill", downArrowFill)
+
+
+            d3.select("#arrow-rectangle-left")
+                .attr("x", leftArrowRectangleX)
+                .attr("y", leftArrowRectangleY)
+                .attr("width", "5")
+                .attr("height", "1")
+                .attr("fill", leftArrowFill)
+            d3.select("#arrow-triangle-left")
+                .attr("points", leftArrowTriangle)
+                .attr("fill", leftArrowFill)
+            d3.select("#left-arrow-textA")
+                .attr("x", leftArrowTextX)
+                .attr("y", leftArrowTextYA)
+                .attr("fill", leftArrowFill)
+            d3.select("#left-arrow-textB")
+                .attr("x", leftArrowTextX)
+                .attr("y", leftArrowTextYB)
+                .attr("fill", leftArrowFill)
+        };
+
+        function hideArrows(){
+            d3.select("#low-arrows")
+                .attr("visibility", "hidden")
+        }
+
+
+
+
+
+
+
+
+
+
         function stepA(){
             moveCircle(coordinates.stepA.cxInner, coordinates.stepA.cyInner, coordinates.stepA.rInner,
                 coordinates.stepA.strokeWidthInner, coordinates.stepA.delay, coordinates.stepA.cxOuter,
@@ -110,9 +226,12 @@ export default class PlayerAnimation extends Component {
                 textData.step2A,  textData.step2B,  textData.step2C
             );
 
+
             setTimeout(changeBackgroundColor(coordinates.stepA.blackSize, coordinates.stepA.blackRight,
                 coordinates.stepA.blackTop, coordinates.stepA.blackSize2), 2700
             );
+
+            hideArrows()
 
             setTimeout(changeBackground(backgroundA), 300);
         };
@@ -122,7 +241,7 @@ export default class PlayerAnimation extends Component {
                 coordinates.stepB.strokeWidthInner, coordinates.stepB.delay, coordinates.stepB.cxOuter,
                 coordinates.stepB.cyOuter, coordinates.stepB.rOuter, coordinates.stepB.strokeWidthOuter,
             );
-            
+
             moveRectangle(coordinates.stepB.delay, coordinates.stepB.rectX, coordinates.stepB.rectY,
                 coordinates.stepB.rectH, coordinates.stepB.rectW
             );
@@ -131,6 +250,23 @@ export default class PlayerAnimation extends Component {
                 coordinates.stepB.textRectXB, coordinates.stepB.textRectYB,
                 coordinates.stepB.textRectXC, coordinates.stepB.textRectYC,
                 textData.step3A,  textData.step3B,  textData.step3C
+            );
+
+            moveArrows(coordinates.arrowsB.generalBtnX, coordinates.arrowsB.generalBtnY, coordinates.arrowsB.generealBtnSize,
+                coordinates.arrowsB.rightBtnX, coordinates.arrowsB.rightBtnY,
+                coordinates.arrowsB.downBtnY,
+                coordinates.arrowsB.leftBtnX, coordinates.arrowsB.leftBtnY, coordinates.arrowsB.delay,
+                coordinates.arrowsB.topArrowRectangleX, coordinates.arrowsB.topArrowRectangleY,
+                coordinates.arrowsB.topArrowTriangle, coordinates.arrowsB.topArrowTextX,
+                coordinates.arrowsB.topArrowTextY, coordinates.arrowsB.topArrowFill,
+                coordinates.arrowsB.rightArrowRectangleX, coordinates.arrowsB.rightArrowRectangleY,
+                coordinates.arrowsB.rightArrowTriangle, coordinates.arrowsB.rightArrowTextX,
+                coordinates.arrowsB.rightArrowTextYA,  coordinates.arrowsB.rightArrowTextYB, coordinates.arrowsB.rightArrowFill,
+                coordinates.arrowsB.downArrowRectangleX, coordinates.arrowsB.downArrowRectangleY,
+                coordinates.arrowsB.downArrowTriangle, coordinates.arrowsB.downArrowFill,
+                coordinates.arrowsB.leftArrowRectangleX, coordinates.arrowsB.leftArrowRectangleY,
+                coordinates.arrowsB.leftArrowTriangle, coordinates.arrowsB.leftArrowTextX,
+                coordinates.arrowsB.leftArrowTextYA, coordinates.arrowsB.leftArrowTextYB, coordinates.arrowsB.leftArrowFill
             );
 
             setTimeout(changeBackgroundColor(coordinates.stepB.blackSize, coordinates.stepB.blackRight,
@@ -156,6 +292,23 @@ export default class PlayerAnimation extends Component {
                 textData.step4A,  textData.step4B,  textData.step4C
             );
 
+            moveArrows(coordinates.arrowsA.generalBtnX, coordinates.arrowsA.generalBtnY, coordinates.arrowsA.generealBtnSize,
+                coordinates.arrowsA.rightBtnX, coordinates.arrowsA.rightBtnY,
+                coordinates.arrowsA.downBtnY,
+                coordinates.arrowsA.leftBtnX, coordinates.arrowsA.leftBtnY,  coordinates.arrowsA.delay,
+                coordinates.arrowsA.topArrowRectangleX, coordinates.arrowsA.topArrowRectangleY,
+                coordinates.arrowsA.topArrowTriangle, coordinates.arrowsA.topArrowTextX,
+                coordinates.arrowsA.topArrowTextY, coordinates.arrowsA.topArrowFill,
+                coordinates.arrowsA.rightArrowRectangleX, coordinates.arrowsA.rightArrowRectangleY,
+                coordinates.arrowsA.rightArrowTriangle, coordinates.arrowsA.rightArrowTextX,
+                coordinates.arrowsA.rightArrowTextYA,  coordinates.arrowsA.rightArrowTextYB, coordinates.arrowsA.rightArrowFill,
+                coordinates.arrowsA.downArrowRectangleX, coordinates.arrowsA.downArrowRectangleY,
+                coordinates.arrowsA.downArrowTriangle, coordinates.arrowsA.downArrowFill,
+                coordinates.arrowsA.leftArrowRectangleX, coordinates.arrowsA.leftArrowRectangleY,
+                coordinates.arrowsA.leftArrowTriangle, coordinates.arrowsA.leftArrowTextX,
+                coordinates.arrowsA.leftArrowTextYA, coordinates.arrowsA.leftArrowTextYB, coordinates.arrowsA.leftArrowFill
+            );
+
             setTimeout(changeBackgroundColor(coordinates.stepC.blackSize, coordinates.stepC.blackRight,
                 coordinates.stepC.blackTop, coordinates.stepC.blackSize2), 2700
             );
@@ -178,6 +331,8 @@ export default class PlayerAnimation extends Component {
                 textData.step5A,  textData.step5B,  textData.step5C
             );
 
+            hideArrows()
+
             setTimeout(changeBackgroundColor(coordinates.stepD.blackSize, coordinates.stepD.blackRight,
                 coordinates.stepD.blackTop, coordinates.stepD.blackSize2), 2700);
 
@@ -199,6 +354,8 @@ export default class PlayerAnimation extends Component {
                 textData.step6A,  textData.step6B,  textData.step6C
             );
 
+            hideArrows()
+
             setTimeout(changeBackgroundColor(coordinates.stepE.blackSize, coordinates.stepE.blackRight,
                 coordinates.stepE.blackTop, coordinates.stepE.blackSize2), 2700);
 
@@ -219,6 +376,8 @@ export default class PlayerAnimation extends Component {
                 coordinates.stepF.textRectXC, coordinates.stepF.textRectYC,
                 textData.step7A,  textData.step7B,  textData.step7C
             );
+
+            hideArrows()
 
             // setTimeout(changeBackgroundColor(coordinates.stepF.blackSize, coordinates.stepF.blackRight,
             //     coordinates.stepF.blackTop, coordinates.stepF.blackSize2), 2700);
@@ -258,6 +417,40 @@ export default class PlayerAnimation extends Component {
                             </text>
                             <text id="textC" className="rectangle-text" x="346" y="90">
                                 {this.getLangText("step1C")}
+                            </text>
+                        </g>
+                       
+                        <g id="low-arrows">
+                            <g>
+                                <rect id="arrow-top" className="rectangle-arrows"></rect>
+                                <rect id="arrow-right" className="rectangle-arrows"></rect>
+                                <rect id="arrow-down" className="rectangle-arrows"></rect>
+                                <rect id="arrow-left" className="rectangle-arrows"></rect>
+                            </g>
+                            <rect id="arrow-rectangle-top"></rect>
+                            <polygon id="arrow-triangle-top"></polygon>
+                            <text id="top-arrow-text" className="arrows-text">
+                                {this.getLangText("topArrowText")}
+                            </text>
+
+                            <rect id="arrow-rectangle-right"></rect>
+                            <polygon id="arrow-triangle-right"></polygon>
+                            <text id="right-arrow-textA" className="arrows-text">
+                                {this.getLangText("rightArrowTextA")}
+                            </text>
+                            <text id="right-arrow-textB" className="arrows-text">
+                                {this.getLangText("rightArrowTextB")}
+                            </text>
+
+                            <rect id="arrow-rectangle-down"></rect>
+                            <polygon id="arrow-triangle-down"></polygon>
+
+                            <rect id="arrow-rectangle-left"></rect>
+                            <polygon id="arrow-triangle-left"></polygon>
+                            <text id="left-arrow-textA" className="arrows-text">
+                            {this.getLangText("leftArrowTextA")}</text>
+                            <text id="left-arrow-textB" className="arrows-text">
+                                {this.getLangText("leftArrowTextB")}
                             </text>
                         </g>
                     </svg>

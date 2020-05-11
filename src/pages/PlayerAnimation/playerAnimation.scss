@@ -37,8 +37,6 @@ html, body{
   transition:  1s ease-in;
 };
 
-
-
 .rectangle-text{
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -46,4 +44,12 @@ html, body{
   font-size: 9px;
   line-height: 41px;
   color: $blackColor;
+};
+
+.arrows-text{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 41px;
 };

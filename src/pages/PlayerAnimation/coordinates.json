@@ -185,6 +185,88 @@
 
     "textRectXC": "210",
     "textRectYC": "143"
+  },
+
+  "arrowsA": {
+    "generalBtnX": "100",
+    "generalBtnY": "120",
+    "generealBtnSize": "25",
+    "rightBtnX": "130",
+    "rightBtnY": "150",
+    "downBtnY": "150",
+    "leftBtnX": "70",
+    "leftBtnY": "150",
+
+    "delay": "0",
+
+    "topArrowRectangleX": "112",
+    "topArrowRectangleY": "160",
+    "topArrowFill": "#005AAD",
+    "topArrowTriangle": "110 130, 112.5 125, 115 130",
+    "topArrowTextX": "130",
+    "topArrowTextY": "135",
+
+    "rightArrowRectangleX": "137",
+    "rightArrowRectangleY": "162",
+    "rightArrowFill": "#FFFFFF",
+    "rightArrowTriangle": "142 160, 142 165, 147 162.5",
+    "rightArrowTextX": "157",
+    "rightArrowTextYA": "165",
+    "rightArrowTextYB": "172",
+
+    "downArrowRectangleX": "112",
+    "downArrowRectangleY": "130",
+    "downArrowFill": "#005AAD",
+    "downArrowTriangle": "110 165, 112.5 170, 115 165",
+
+    "leftArrowRectangleX": "82",
+    "leftArrowRectangleY": "162",
+    "leftArrowFill": "#FFFFFF",
+    "leftArrowTriangle": "82 160, 82 165, 77 162.5",
+    "leftArrowTextX": "40",
+    "leftArrowTextYA": "165",
+    "leftArrowTextYB": "172"
+  },
+
+  "arrowsB": {
+    "generalBtnX": "300",
+    "generalBtnY": "120",
+    "generealBtnSize": "25",
+    "rightBtnX": "330",
+    "rightBtnY": "150",
+    "downBtnY": "150",
+    "leftBtnX": "270",
+    "leftBtnY": "150",
+
+    "delay": "0",
+
+    "topArrowRectangleX": "312",
+    "topArrowRectangleY": "160",
+    "topArrowFill": "#FFFFFF",
+    "topArrowTriangle": "310 130, 312.5 125, 315 130",
+    "topArrowTextX": "330",
+    "topArrowTextY": "135",
+
+    "rightArrowRectangleX": "337",
+    "rightArrowRectangleY": "162",
+    "rightArrowFill": "#005AAD",
+    "rightArrowTriangle": "342 160, 342 165, 347 162.5",
+    "rightArrowTextX": "357",
+    "rightArrowTextYA": "165",
+    "rightArrowTextYB": "172",
+
+    "downArrowRectangleX": "312",
+    "downArrowRectangleY": "130",
+    "downArrowFill": "#FFFFFF",
+    "downArrowTriangle": "310 165, 312.5 170, 315 165",
+
+    "leftArrowRectangleX": "282",
+    "leftArrowRectangleY": "162",
+    "leftArrowFill": "#005AAD",
+    "leftArrowTriangle": "282 160, 282 165, 277 162.5",
+    "leftArrowTextX": "240",
+    "leftArrowTextYA": "165",
+    "leftArrowTextYB": "172"
   }
 
 }

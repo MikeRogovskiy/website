@@ -159,7 +159,13 @@
 
     "step7A": "Открой игры в Tutor с помощью",
     "step7B": "мобильного телефона",
-    "step7C": "или в браузере"
+    "step7C": "или в браузере",
+
+    "topArrowText": "Repeat",
+    "rightArrowTextA": "Next",
+    "rightArrowTextB": "Subtitle",
+    "leftArrowTextA": "Previous",
+    "leftArrowTextB": "Subtitle"
   },
 
   "PlayerPage": {
