@@ -11,10 +11,10 @@
     "rOuter": "50",
     "strokeWidthOuter": "40",
 
-    "blackSize": "61px",
     "blackRight": "82.5%",
     "blackTop": "84%",
-    "blackSize2": "100px",
+    "blackSize": "3%",
+    "blackSize2": "2.5%",
 
     "rectX": "150",
     "rectY": "140",
@@ -43,10 +43,10 @@
     "rOuter": "55",
     "strokeWidthOuter": "10",
 
-    "blackSize": "300px",
     "blackRight": "10%",
     "blackTop": "63%",
-    "blackSize2": "190px",
+    "blackSize": "10%",
+    "blackSize2": "2.5%",
 
     "rectX": "220",
     "rectY": "50",
@@ -74,10 +74,10 @@
     "rOuter": "35",
     "strokeWidthOuter": "10",
 
-    "blackSize": "110px",
     "blackRight": "82%",
     "blackTop": "80%",
-    "blackSize2": "200px",
+    "blackSize": "6%",
+    "blackSize2": "2.5%",
 
     "rectX": "30",
     "rectY": "80",
@@ -105,10 +105,10 @@
     "rOuter": "30",
     "strokeWidthOuter": "15",
 
-    "blackSize": "61px",
     "blackRight": "56.5%",
     "blackTop": "80%",
-    "blackSize2": "100px",
+    "blackSize": "5%",
+    "blackSize2": "2.5%",
 
     "rectX": "155",
     "rectY": "150",
@@ -136,10 +136,10 @@
     "rOuter": "30",
     "strokeWidthOuter": "15",
 
-    "blackSize": "58px",
     "blackRight": "52%",
     "blackTop": "71.5%",
-    "blackSize2": "100px",
+    "blackSize": "5%",
+    "blackSize2": "2.5%",
 
     "rectX": "190",
     "rectY": "120",
@@ -267,6 +267,8 @@
     "leftArrowTextX": "240",
     "leftArrowTextYA": "165",
     "leftArrowTextYB": "172"
-  }
+  },
+
+  "delayForBlackCircles": 2700
 
 }

@@ -1,6 +1,15 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
+@keyframes smoothAppearBlackCircle{
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+};
+
 html, body{
  @include pureBody;
 };
@@ -10,7 +19,7 @@ html, body{
   width: 200px;
   height: 50px;
   position: absolute;
-  z-index: 20;
+  z-index: 50;
 }
 
 .test-btn{
@@ -32,10 +41,19 @@ html, body{
   @include wHHundred;
   background: no-repeat/cover;
   background-color: #6AB2F5;
-  opacity: 0.2;
+  opacity: 0.5;
   position: absolute;
   transition:  1s ease-in;
+  // animation: smoothAppearBlackCircle 3s ease-in-out infinite;
 };
+
+#black-circle{
+  @include wHHundred;
+  position: absolute;
+  transition:  1s ease-in;
+  opacity: 1;
+  // animation: smoothAppearBlackCircle 3s ease-in-out;
+}
 
 .rectangle-text{
   font-family: 'Open Sans', sans-serif;
@@ -53,3 +71,12 @@ html, body{
   font-size: 7px;
   line-height: 41px;
 };
+
+#steps{
+  position: relative;
+  z-index: 5;
+};
+
+// #circleInner{
+//   fill-opacity: 0.5;
+// }
