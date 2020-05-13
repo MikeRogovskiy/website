@@ -5,6 +5,21 @@
   0% {
     opacity: 0
   }
+  50% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+};
+
+@keyframes smoothAppearArrows{
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 0
+  }
   100% {
     opacity: 1
   }
@@ -33,8 +48,10 @@ html, body{
 #main-field_container{
   @include wHHundred;
   position: relative;
-  transition: background 1s ease-in;
-  background: no-repeat bottom/cover url("../../assets/images/player-animation/playerBackgroundTestA.svg");
+  transition: background 1.5s ease-in;
+  background: no-repeat bottom/cover url("../../assets/images/player-animation/background-images/playerBackground1.svg");
+  // transform: translateZ(0);
+  // will-change: transform;
 };
 
 #main-field_background{
@@ -44,7 +61,6 @@ html, body{
   opacity: 0.5;
   position: absolute;
   transition:  1s ease-in;
-  // animation: smoothAppearBlackCircle 3s ease-in-out infinite;
 };
 
 #black-circle{
@@ -52,8 +68,7 @@ html, body{
   position: absolute;
   transition:  1s ease-in;
   opacity: 1;
-  // animation: smoothAppearBlackCircle 3s ease-in-out;
-}
+};
 
 .rectangle-text{
   font-family: 'Open Sans', sans-serif;
@@ -77,6 +92,3 @@ html, body{
   z-index: 5;
 };
 
-// #circleInner{
-//   fill-opacity: 0.5;
-// }

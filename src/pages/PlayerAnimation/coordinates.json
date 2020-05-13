@@ -15,6 +15,7 @@
     "blackTop": "84%",
     "blackSize": "3%",
     "blackSize2": "2.5%",
+    "blackDelay": "3s",
 
     "rectX": "150",
     "rectY": "140",
@@ -29,7 +30,10 @@
     "textRectYB": "168",
 
     "textRectXC": "0",
-    "textRectYC": "0"
+    "textRectYC": "0",
+
+    "circleImageVisibility": "hidden",
+    "rectangleImageVisibilityBlue": "hidden"
   },
 
   "stepB": {
@@ -47,6 +51,7 @@
     "blackTop": "63%",
     "blackSize": "10%",
     "blackSize2": "2.5%",
+    "blackDelay": "2.5s",
 
     "rectX": "220",
     "rectY": "50",
@@ -60,7 +65,10 @@
     "textRectYB": "80",
 
     "textRectXC": "0",
-    "textRectYC": "0"
+    "textRectYC": "0",
+
+    "circleImageVisibility": "hidden",
+    "rectangleImageVisibilityBlue": "hidden"
   },
 
   "stepC": {
@@ -78,6 +86,7 @@
     "blackTop": "80%",
     "blackSize": "6%",
     "blackSize2": "2.5%",
+    "blackDelay": "2.5s",
 
     "rectX": "30",
     "rectY": "80",
@@ -91,7 +100,10 @@
     "textRectYB": "105",
 
     "textRectXC": "0",
-    "textRectYC": "0"
+    "textRectYC": "0",
+
+    "circleImageVisibility": "visible",
+    "rectangleImageVisibilityBlue": "hidden"
   },
 
   "stepD": {
@@ -109,6 +121,7 @@
     "blackTop": "80%",
     "blackSize": "5%",
     "blackSize2": "2.5%",
+    "blackDelay": "3s",
 
     "rectX": "155",
     "rectY": "150",
@@ -122,7 +135,10 @@
     "textRectYB": "173",
 
     "textRectXC": "0",
-    "textRectYC": "0"
+    "textRectYC": "0",
+
+    "circleImageVisibility": "hidden",
+    "rectangleImageVisibilityBlue": "visible"
   },
 
   "stepE": {
@@ -140,6 +156,7 @@
     "blackTop": "71.5%",
     "blackSize": "5%",
     "blackSize2": "2.5%",
+    "blackDelay": "2.5s",
 
     "rectX": "190",
     "rectY": "120",
@@ -153,7 +170,10 @@
     "textRectYB": "145",
 
     "textRectXC": "202",
-    "textRectYC": "155"
+    "textRectYC": "155",
+
+    "circleImageVisibility": "hidden",
+    "rectangleImageVisibilityBlue": "hidden"
   },
 
   "stepF": {
@@ -171,6 +191,7 @@
     "blackRight": "30%",
     "blackTop": "1%",
     "blackSize2": "370px",
+    "blackDelay": "4s",
 
     "rectX": "170",
     "rectY": "110",
@@ -184,7 +205,10 @@
     "textRectYB": "133",
 
     "textRectXC": "210",
-    "textRectYC": "143"
+    "textRectYC": "143",
+
+    "circleImageVisibility": "hidden",
+    "rectangleImageVisibilityBlue": "hidden"
   },
 
   "arrowsA": {

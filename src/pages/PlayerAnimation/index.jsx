@@ -1,19 +1,131 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
-import coordinates from "./coordinates.json";
+// import coordinates from "./coordinates.json";
 import ReactHtmlParser from "react-html-parser";
-
 
 import "./playerAnimation.scss";
 
-import backgroundA from "../../assets/images/player-animation/playerBackgroundTestA.svg";
-import backgroundB from "../../assets/images/player-animation/playerBackgroundTestB.svg";
-// import logo from "../../assets/images/player-animation/roundLetterArrow.svg";
+import backgroundA from "../../assets/images/player-animation/background-images/playerBackground2.svg";
+import backgroundB from "../../assets/images/player-animation/background-images/playerBackground3.svg";
+import backgroundСD from "../../assets/images/player-animation/background-images/playerBackground3.svg";
+import backgroundEF from "../../assets/images/player-animation/background-images/playerBackground4.svg";
+import backgroundG from "../../assets/images/player-animation/background-images/playerBackground5.svg";
+import backgroundH from "../../assets/images/player-animation/background-images/playerBackground6.svg";
+import backgroundI from "../../assets/images/player-animation/background-images/playerBackground7.svg";
+// import leftArrow from "../../assets/images/player-animation/background-images/leftArrow";
+// import rightArrow from "../../assets/images/player-animation/background-images/rightArrow";
+
+function Coordinates(
+    cxInner, cyInner, rInner, strokeWidthInner, delay,
+    cxOuter, cyOuter, rOuter, strokeWidthOuter,
+    blackRight, blackTop,
+    blackSize, blackSize2, blackDelay,
+    rectX, rectY, rectH, rectW,
+    textRectXA, textRectYA, textRectXB, textRectYB, textRectXC, textRectYC,
+
+    ){
+
+    this.cxInner = cxInner;
+    this.cyInner = cyInner;
+    this.rInner = rInner;
+    this.strokeWidthInner = strokeWidthInner;
+    this.delay = delay;
+    this.cxOuter = cxOuter;
+    this.cyOuter = cyOuter;
+    this.rOuter = rOuter;
+    this.strokeWidthOuter = strokeWidthOuter;
+
+    this.blackRight = blackRight;
+    this.blackTop = blackTop;
+    this.blackSize = blackSize;
+    this.blackSize2 = blackSize2;
+    this.blackDelay = blackDelay;
+
+    this.rectX = rectX;
+    this.rectY = rectY;
+    this.rectH = rectH;
+    this.rectW = rectW;
+
+    this.textRectXA = textRectXA;
+    this.textRectYA = textRectYA;
+    this.textRectXB = textRectXB;
+    this.textRectYB = textRectYB;
+    this.textRectXC = textRectXC;
+    this.textRectYC = textRectYC;
+
+};
+
+const coordinatesA = new Coordinates(
+    "220", "190", "45", "10", "0",
+    "220", "190", "50", "20",
+    "56%", "63.5%", "12%", "2.5%", "2.5s",
+    "220", "117", "23", "80",
+    "230", "130", "230", "130", "230", "130",
+);
+
+const coordinatesB = new Coordinates(
+    "340", "140", "85", "13", "0",
+    "340",  "140", "90",  "23.5",
+    "33%", "47%", "23%", "2.5%", "2.2s",
+    "135", "65", "45", "150",
+    "182", "77", "150", "89", "175", "99",
+);
+
+const coordinatesC = new Coordinates(
+    "240", "250", "150", "20", "0",
+    "240",  "250", "170",  "23.5",
+    "52%", "85%", "40%", "2.5%", "2.3s",
+    "135", "65", "45", "150",
+    "182", "77", "150", "89", "175", "99",
+);
+
+const coordinatesD = new Coordinates(
+    "450", "190", "50", "7", "0",
+    "450",  "190", "55",  "10",
+    "10%", "63%", "10%", "2.5%", "2.4s",
+    "220", "50", "40", "190",
+    "230", "70", "250", "80", "230", "70",
+);
+
+const coordinatesE = new Coordinates(
+    "330", "235", "30", "5", "0",
+    "330", "235", "35", "10",
+    "34.2%", "78%", "7%", "2.5%", "2.5s",
+    "250", "80", "25", "130",
+    "260", "95", "40", "105", "260", "95",
+);
+
+const coordinatesF = new Coordinates(
+    "221", "230", "21", "10", "0",
+    "221", "230", "31", "15",
+    "55%", "76%", "5.5%", "2.5%", "2.5s",
+    "155", "150", "30", "130",
+    "172", "163", "162", "173", "172", "163",
+);
+
+const coordinatesG = new Coordinates(
+    "272", "212", "20", "10", "0",
+    "272", "212", "30", "15",
+    "46%", "70.5%", "5%", "2.5%", "2.5s",
+    "190", "120", "35", "90",
+    "205", "135", "202", "145", "202", "155",
+);
+
+const coordinatesH = new Coordinates(
+    "272", "212", "70", "10", "0",
+    "272", "212", "80", "15",
+    "46%", "70.5%", "21%", "2.5%", "2s",
+    "190", "120", "35", "90",
+    "205", "135", "202", "145", "202", "155",
+);
+
 
 export default class PlayerAnimation extends Component {
+
     componentDidMount() {
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
-            "right 8.5% top 2.3% , black 1%, transparent 2.5%)";
+            "right 82.5% top 84% , black 3%, transparent 2.5%)";
+
     };
 
     getLangText(text) {
@@ -21,378 +133,277 @@ export default class PlayerAnimation extends Component {
     };
 
     render(){
-
         const textData = this.props.text;
+
+        function move(cxInner, cyInner, rInner, strokeWidthInner, delay,
+            cxOuter, cyOuter, rOuter, strokeWidthOuter,
+            blackRight, blackTop,
+            blackSize, blackSize2, blackDelay,
+            rectX, rectY, rectH, rectW,
+            textRectXA, textRectYA, textRectXB, textRectYB, textRectXC, textRectYC,
+
+            ){
+                function moveCircle(){
+
+                    d3.select("#circleInner")
+                        .transition()
+                        .delay(delay)
+                        .duration(2000)
+                        .attr("cx", cxInner)
+                        .attr("cy", cyInner)
+                        .attr("r", rInner)
+                    .attr("stroke-width", strokeWidthInner)
+
+                    d3.select("#circleOuter")
+                        .transition()
+                        .delay(delay)
+                        .duration(2000)
+                        .attr("cx", cxOuter)
+                        .attr("cy", cyOuter)
+                        .attr("r", rOuter)
+                    .attr("stroke-width", strokeWidthOuter)
+
+
+                };
+                moveCircle();
+
+                function moveRectangle(){
+
+                    d3.select("rect")
+                        .transition()
+                        .delay(delay)
+                        .duration(2000)
+                        .attr("x", rectX)
+                        .attr("y", rectY)
+                        .attr("height", rectH)
+                    .attr("width", rectW)
+
+                };
+                moveRectangle();
+
+                function moveText(){
+        
+                    d3.select("#textA")
+                        .transition()
+                        .delay(delay)
+                        .duration(2000)
+                        .attr("x", textRectXA)
+                    .attr("y", textRectYA)
+                    d3.select("#textB")
+                        .transition()
+                        .delay(delay)
+                        .duration(2000)
+                        .attr("x", textRectXB)
+                    .attr("y", textRectYB)
+                    d3.select("#textC")
+                        .transition()
+                        .delay(delay)
+                        .duration(2000)
+                        .attr("x", textRectXC)
+                    .attr("y", textRectYC)
+
+                };
+                moveText()
+
+                function changeBackgroundColor(){
+
+                    const blackCircle = document.querySelector("#black-circle");
+
+                    blackCircle.style.backgroundImage = `radial-gradient(circle at  ` +
+                        `right ${blackRight} top ${blackTop} , black ${blackSize}, transparent ${blackSize2})`;
+
+                    blackCircle.style.animation = `smoothAppearBlackCircle ${blackDelay} ease-in`;
+
+                    function stopAnimation(){
+                        blackCircle.style.animation = "none";
+                    };
+                    setTimeout(stopAnimation, 3000)
+
+                };
+                changeBackgroundColor();
+
+        };
 
         function changeBackground(backgroundImage){
             document.querySelector("#main-field_container").style.backgroundImage = `url(${backgroundImage})`;
         };
 
-        function changeBackgroundColor(right, top, size, size2){
-
-            const blackCircle = document.querySelector("#black-circle");
-
-            blackCircle.style.backgroundImage = `radial-gradient(circle at  ` +
-                `right ${right} top ${top} , black ${size}, transparent ${size2})`;
-            blackCircle.style.animation = "smoothAppearBlackCircle 3s ease-in-out";
-
-            function stopAnimation(){
-                blackCircle.style.animation = "none";
-            };
-
-            setTimeout(stopAnimation, 3000)
-           
-
-        };
-
-        function moveCircle(cxInner, cyInner, rInner, strokeWidthInner, delay, // done
-            cxOuter, cyOuter, rOuter, strokeWidthOuter){
-
-            d3.select("#circleInner")
-                .transition()
-                .delay(delay)
-                .duration(2000)
-                .attr("cx", cxInner)
-                .attr("cy", cyInner)
-                .attr("r", rInner)
-            .attr("stroke-width", strokeWidthInner)
-
-            d3.select("#circleOuter")
-                .transition()
-                .delay(delay)
-                .duration(2000)
-                .attr("cx", cxOuter)
-                .attr("cy", cyOuter)
-                .attr("r", rOuter)
-            .attr("stroke-width", strokeWidthOuter)
-        };
-
-        function moveRectangle(delay, rectX, rectY, rectH, rectW){ // done
-
-            d3.select("rect")
-                .transition()
-                .delay(delay)
-                .duration(2000)
-                .attr("x", rectX)
-                .attr("y", rectY)
-                .attr("height", rectH)
-            .attr("width", rectW)
-
-        };
-
-        function moveText(delay, textRectXA, textRectYA,
-                        textRectXB, textRectYB, textRectXC, textRectYC,
-                        textA, textB, textC){
-
+        function changeText(textA, textB, textC){
             d3.select("#textA")
-                .transition()
-                .delay(delay)
-                .duration(2000)
-                .attr("x", textRectXA)
-                .attr("y", textRectYA)
             .text(textA)
             d3.select("#textB")
-                .transition()
-                .delay(delay)
-                .duration(2000)
-                .attr("x", textRectXB)
-                .attr("y", textRectYB)
             .text(textB)
             d3.select("#textC")
-                .transition()
-                .delay(delay)
-                .duration(2000)
-                .attr("x", textRectXC)
-                .attr("y", textRectYC)
             .text(textC)
-
         };
 
-        function moveArrows(generalBtnX, generalBtnY, generealBtnSize, // done
-            rightBtnX, rightBtnY,
-            downBtnY,
-            leftBtnX, leftBtnY,
-
-            delay,
-
-            topArrowRectangleX, topArrowRectangleY, topArrowTriangle, topArrowTextX, topArrowTextY, topArrowFill,
-            rightArrowRectangleX, rightArrowRectangleY, rightArrowTriangle, rightArrowTextX, rightArrowTextYA, rightArrowTextYB, rightArrowFill,
-            downArrowRectangleX, downArrowRectangleY, downArrowTriangle, downArrowFill,
-            leftArrowRectangleX, leftArrowRectangleY, leftArrowTriangle, leftArrowTextX, leftArrowTextYA, leftArrowTextYB, leftArrowFill
-
-            ){
-            d3.select("#low-arrows")
-            .attr("visibility", "visible")
-
-            d3.selectAll(".rectangle-arrows")
-                .attr("x", generalBtnX)
-                .attr("y", generalBtnY)
-                .attr("width", generealBtnSize)
-                .attr("height", generealBtnSize)
-                .attr("stroke-width", "0.2")
-                .attr("fill", "none")
-            .attr("rx", "5")
-
-            d3.select("#arrow-top")
-            .attr("stroke", topArrowFill)
-            d3.select("#arrow-right")
-                .attr("x", rightBtnX)
-                .attr("y", rightBtnY)
-            .attr("stroke", rightArrowFill)
-            d3.select("#arrow-down")
-                .attr("y", downBtnY)
-            .attr("stroke", downArrowFill)
-            d3.select("#arrow-left")
-                .attr("x", leftBtnX)
-                .attr("y", leftBtnY)
-            .attr("stroke", leftArrowFill)
-
-            d3.select("#arrow-rectangle-top")
-                .attr("x", topArrowRectangleX)
-                .attr("y", topArrowRectangleY)
-                .attr("width", "1")
-                .attr("height", "5")
-            .attr("fill", topArrowFill)
-            d3.select("#arrow-triangle-top")
-                .attr("points", topArrowTriangle)
-            .attr("fill", topArrowFill)
-            d3.select("#top-arrow-text")
-                .attr("x", topArrowTextX)
-                .attr("y", topArrowTextY)
-            .attr("fill", topArrowFill)
-
-            d3.select("#arrow-rectangle-right")
-                .attr("x", rightArrowRectangleX)
-                .attr("y", rightArrowRectangleY)
-                .attr("width", "5")
-                .attr("height", "1")
-            .attr("fill", rightArrowFill)
-            d3.select("#arrow-triangle-right")
-                .attr("points", rightArrowTriangle)
-            .attr("fill", rightArrowFill)
-
-            d3.select("#right-arrow-textA")
-                .attr("x", rightArrowTextX)
-                .attr("y", rightArrowTextYA)
-            .attr("fill", rightArrowFill)
-            d3.select("#right-arrow-textB")
-                .attr("x", rightArrowTextX)
-                .attr("y", rightArrowTextYB)
-            .attr("fill", rightArrowFill)
-
-
-            d3.select("#arrow-rectangle-down")
-                .attr("x", downArrowRectangleX)
-                .attr("y", downArrowRectangleY)
-                .attr("width", "1")
-                .attr("height", "5")
-            .attr("fill", downArrowFill)
-            d3.select("#arrow-triangle-down")
-                .attr("points", downArrowTriangle)
-            .attr("fill", downArrowFill)
-
-            d3.select("#arrow-rectangle-left")
-                .attr("x", leftArrowRectangleX)
-                .attr("y", leftArrowRectangleY)
-                .attr("width", "5")
-                .attr("height", "1")
-            .attr("fill", leftArrowFill)
-            d3.select("#arrow-triangle-left")
-                .attr("points", leftArrowTriangle)
-            .attr("fill", leftArrowFill)
-
-            d3.select("#left-arrow-textA")
-                .attr("x", leftArrowTextX)
-                .attr("y", leftArrowTextYA)
-            .attr("fill", leftArrowFill)
-            d3.select("#left-arrow-textB")
-                .attr("x", leftArrowTextX)
-                .attr("y", leftArrowTextYB)
-            .attr("fill", leftArrowFill)
-        };
+        
 
         function hideArrows(){ // done
             d3.select("#low-arrows")
             .attr("visibility", "hidden")
         };
 
-
-
         function stepA(){
-            moveCircle(coordinates.stepA.cxInner, coordinates.stepA.cyInner, coordinates.stepA.rInner,
-                coordinates.stepA.strokeWidthInner, coordinates.stepA.delay, coordinates.stepA.cxOuter,
-                coordinates.stepA.cyOuter, coordinates.stepA.rOuter, coordinates.stepA.strokeWidthOuter,
-            );
-
-            moveRectangle(coordinates.stepA.delay, coordinates.stepA.rectX, coordinates.stepA.rectY,
-                coordinates.stepA.rectH, coordinates.stepA.rectW
-            );
-
-            moveText( coordinates.stepA.delay, coordinates.stepA.textRectXA, coordinates.stepA.textRectYA,
-                coordinates.stepA.textRectXB, coordinates.stepA.textRectYB,
-                coordinates.stepA.textRectXC, coordinates.stepA.textRectYC,
-                textData.step2A,  textData.step2B,  textData.step2C
-            );
-            
-            changeBackgroundColor(coordinates.stepA.blackRight,coordinates.stepA.blackTop,
-                coordinates.stepA.blackSize, coordinates.stepA.blackSize2
-            );
-
-            hideArrows()
-
+            move(... Object.values(coordinatesA));
+            changeText(textData.step1A, textData.step1B, textData.step1C);
+            hideArrows();
             setTimeout(changeBackground(backgroundA), 300);
         };
 
         function stepB(){
-            moveCircle(coordinates.stepB.cxInner, coordinates.stepB.cyInner, coordinates.stepB.rInner,
-                coordinates.stepB.strokeWidthInner, coordinates.stepB.delay, coordinates.stepB.cxOuter,
-                coordinates.stepB.cyOuter, coordinates.stepB.rOuter, coordinates.stepB.strokeWidthOuter,
-            );
-
-            moveRectangle(coordinates.stepB.delay, coordinates.stepB.rectX, coordinates.stepB.rectY,
-                coordinates.stepB.rectH, coordinates.stepB.rectW
-            );
-
-            moveText( coordinates.stepB.delay, coordinates.stepB.textRectXA, coordinates.stepB.textRectYA,
-                coordinates.stepB.textRectXB, coordinates.stepB.textRectYB,
-                coordinates.stepB.textRectXC, coordinates.stepB.textRectYC,
-                textData.step3A,  textData.step3B,  textData.step3C
-            );
-
-            moveArrows(coordinates.arrowsB.generalBtnX, coordinates.arrowsB.generalBtnY, coordinates.arrowsB.generealBtnSize,
-                coordinates.arrowsB.rightBtnX, coordinates.arrowsB.rightBtnY,
-                coordinates.arrowsB.downBtnY,
-                coordinates.arrowsB.leftBtnX, coordinates.arrowsB.leftBtnY, coordinates.arrowsB.delay,
-                coordinates.arrowsB.topArrowRectangleX, coordinates.arrowsB.topArrowRectangleY,
-                coordinates.arrowsB.topArrowTriangle, coordinates.arrowsB.topArrowTextX,
-                coordinates.arrowsB.topArrowTextY, coordinates.arrowsB.topArrowFill,
-                coordinates.arrowsB.rightArrowRectangleX, coordinates.arrowsB.rightArrowRectangleY,
-                coordinates.arrowsB.rightArrowTriangle, coordinates.arrowsB.rightArrowTextX,
-                coordinates.arrowsB.rightArrowTextYA,  coordinates.arrowsB.rightArrowTextYB, coordinates.arrowsB.rightArrowFill,
-                coordinates.arrowsB.downArrowRectangleX, coordinates.arrowsB.downArrowRectangleY,
-                coordinates.arrowsB.downArrowTriangle, coordinates.arrowsB.downArrowFill,
-                coordinates.arrowsB.leftArrowRectangleX, coordinates.arrowsB.leftArrowRectangleY,
-                coordinates.arrowsB.leftArrowTriangle, coordinates.arrowsB.leftArrowTextX,
-                coordinates.arrowsB.leftArrowTextYA, coordinates.arrowsB.leftArrowTextYB, coordinates.arrowsB.leftArrowFill
-            );
-
-            changeBackgroundColor(coordinates.stepB.blackRight, coordinates.stepB.blackTop,
-                coordinates.stepB.blackSize, coordinates.stepB.blackSize2
-            );
-
+            move(... Object.values(coordinatesB));
+            changeText(textData.step2A, textData.step2B, textData.step2C);
+            hideArrows();
             setTimeout(changeBackground(backgroundB), 300);
         };
 
         function stepC(){
-            moveCircle(coordinates.stepC.cxInner, coordinates.stepC.cyInner, coordinates.stepC.rInner,
-                coordinates.stepC.strokeWidthInner, coordinates.stepC.delay, coordinates.stepC.cxOuter,
-                coordinates.stepC.cyOuter, coordinates.stepC.rOuter, coordinates.stepC.strokeWidthOuter,
-            );
-
-            moveRectangle(coordinates.stepC.delay, coordinates.stepC.rectX, coordinates.stepC.rectY,
-                coordinates.stepC.rectH, coordinates.stepC.rectW
-            );
-
-            moveText( coordinates.stepC.delay, coordinates.stepC.textRectXA, coordinates.stepC.textRectYA,
-                coordinates.stepC.textRectXB, coordinates.stepC.textRectYB,
-                coordinates.stepC.textRectXC, coordinates.stepC.textRectYC,
-                textData.step4A,  textData.step4B,  textData.step4C
-            );
-
-            moveArrows(coordinates.arrowsA.generalBtnX, coordinates.arrowsA.generalBtnY, coordinates.arrowsA.generealBtnSize,
-                coordinates.arrowsA.rightBtnX, coordinates.arrowsA.rightBtnY,
-                coordinates.arrowsA.downBtnY,
-                coordinates.arrowsA.leftBtnX, coordinates.arrowsA.leftBtnY,  coordinates.arrowsA.delay,
-                coordinates.arrowsA.topArrowRectangleX, coordinates.arrowsA.topArrowRectangleY,
-                coordinates.arrowsA.topArrowTriangle, coordinates.arrowsA.topArrowTextX,
-                coordinates.arrowsA.topArrowTextY, coordinates.arrowsA.topArrowFill,
-                coordinates.arrowsA.rightArrowRectangleX, coordinates.arrowsA.rightArrowRectangleY,
-                coordinates.arrowsA.rightArrowTriangle, coordinates.arrowsA.rightArrowTextX,
-                coordinates.arrowsA.rightArrowTextYA,  coordinates.arrowsA.rightArrowTextYB, coordinates.arrowsA.rightArrowFill,
-                coordinates.arrowsA.downArrowRectangleX, coordinates.arrowsA.downArrowRectangleY,
-                coordinates.arrowsA.downArrowTriangle, coordinates.arrowsA.downArrowFill,
-                coordinates.arrowsA.leftArrowRectangleX, coordinates.arrowsA.leftArrowRectangleY,
-                coordinates.arrowsA.leftArrowTriangle, coordinates.arrowsA.leftArrowTextX,
-                coordinates.arrowsA.leftArrowTextYA, coordinates.arrowsA.leftArrowTextYB, coordinates.arrowsA.leftArrowFill
-            );
-
-            changeBackgroundColor(coordinates.stepC.blackRight, coordinates.stepC.blackTop,
-                coordinates.stepC.blackSize, coordinates.stepC.blackSize2
-            );
-
+            move(... Object.values(coordinatesC));
+            changeText(textData.step3A, textData.step3B, textData.step3C);
+            hideArrows();
+            setTimeout(changeBackground(backgroundСD), 300);
         };
 
         function stepD(){
-            moveCircle(coordinates.stepD.cxInner, coordinates.stepD.cyInner, coordinates.stepD.rInner,
-                coordinates.stepD.strokeWidthInner, coordinates.stepD.delay, coordinates.stepD.cxOuter,
-                coordinates.stepD.cyOuter, coordinates.stepD.rOuter, coordinates.stepD.strokeWidthOuter,
-            );
-
-            moveRectangle(coordinates.stepD.delay, coordinates.stepD.rectX, coordinates.stepD.rectY,
-                coordinates.stepD.rectH, coordinates.stepD.rectW
-            );
-
-            moveText(coordinates.stepD.delay, coordinates.stepD.textRectXA, coordinates.stepD.textRectYA,
-                coordinates.stepD.textRectXB, coordinates.stepD.textRectYB,
-                coordinates.stepD.textRectXC, coordinates.stepD.textRectYC,
-                textData.step5A,  textData.step5B,  textData.step5C
-            );
-
-            hideArrows()
-
-            changeBackgroundColor(coordinates.stepD.blackRight, coordinates.stepD.blackTop,
-                coordinates.stepD.blackSize, coordinates.stepD.blackSize2
-            );
-
+            move(... Object.values(coordinatesD));
+            changeText(textData.step4A, textData.step4B, textData.step4C);
+            hideArrows();
+            setTimeout(changeBackground(backgroundEF), 300);
         };
 
         function stepE(){
-            moveCircle(coordinates.stepE.cxInner, coordinates.stepE.cyInner, coordinates.stepE.rInner,
-                coordinates.stepE.strokeWidthInner, coordinates.stepE.delay, coordinates.stepE.cxOuter,
-                coordinates.stepE.cyOuter, coordinates.stepE.rOuter, coordinates.stepE.strokeWidthOuter,
-            );
-
-            moveRectangle(coordinates.stepE.delay, coordinates.stepE.rectX, coordinates.stepE.rectY,
-                coordinates.stepE.rectH, coordinates.stepE.rectW
-            );
-
-            moveText(coordinates.stepE.delay, coordinates.stepE.textRectXA, coordinates.stepE.textRectYA,
-                coordinates.stepE.textRectXB, coordinates.stepE.textRectYB,
-                coordinates.stepE.textRectXC, coordinates.stepE.textRectYC,
-                textData.step6A,  textData.step6B,  textData.step6C
-            );
-
-            hideArrows()
-
-            changeBackgroundColor(coordinates.stepE.blackRight, coordinates.stepE.blackTop,
-                coordinates.stepE.blackSize, coordinates.stepE.blackSize2
-            );
-
+            move(... Object.values(coordinatesE));
+            changeText(textData.step5A, textData.step5B, textData.step5C);
+            hideArrows();
+            setTimeout(changeBackground(backgroundEF), 300);
         };
 
         function stepF(){
-            moveCircle(coordinates.stepF.cxInner, coordinates.stepF.cyInner, coordinates.stepF.rInner,
-                coordinates.stepF.strokeWidthInner, coordinates.stepF.delay, coordinates.stepF.cxOuter,
-                coordinates.stepF.cyOuter, coordinates.stepF.rOuter, coordinates.stepF.strokeWidthOuter,
-                coordinates.stepF.rectX, coordinates.stepF.rectY);
-
-            moveRectangle(coordinates.stepF.delay, coordinates.stepF.rectX, coordinates.stepF.rectY,
-                coordinates.stepF.rectH, coordinates.stepF.rectW
-            );
-
-            moveText(coordinates.stepF.delay, coordinates.stepF.textRectXA, coordinates.stepF.textRectYA,
-                coordinates.stepF.textRectXB, coordinates.stepF.textRectYB,
-                coordinates.stepF.textRectXC, coordinates.stepF.textRectYC,
-                textData.step7A,  textData.step7B,  textData.step7C
-            );
-
-            hideArrows()
-
-            // setTimeout(changeBackgroundColor(coordinates.stepF.blackSize, coordinates.stepF.blackRight,
-            //     coordinates.stepF.blackTop, coordinates.stepF.blackSize2), 2700);
-
+            move(... Object.values(coordinatesF));
+            changeText(textData.step6A, textData.step6B, textData.step6C);
+            hideArrows();
+            setTimeout(changeBackground(backgroundG), 300);
         };
 
+        function stepG(){
+            move(... Object.values(coordinatesG));
+            changeText(textData.step7A, textData.step7B, textData.step7C);
+            hideArrows();
+            setTimeout(changeBackground(backgroundH), 300);
+        };
+
+        function stepH(){
+            move(... Object.values(coordinatesH));
+            changeText(textData.step7A, textData.step7B, textData.step7C);
+            hideArrows();
+            setTimeout(changeBackground(backgroundI), 300);
+        };
+
+
+
+
+        // function moveArrows(generalBtnX, generalBtnY, generealBtnSize, // done
+        //     rightBtnX, rightBtnY,
+        //     downBtnY,
+        //     leftBtnX, leftBtnY,
+
+        //     delay,
+
+        //     topArrowRectangleX, topArrowRectangleY, topArrowTriangle, topArrowTextX, topArrowTextY, topArrowFill,
+        //     rightArrowRectangleX, rightArrowRectangleY, rightArrowTriangle, rightArrowTextX, rightArrowTextYA, rightArrowTextYB, rightArrowFill,
+        //     downArrowRectangleX, downArrowRectangleY, downArrowTriangle, downArrowFill,
+        //     leftArrowRectangleX, leftArrowRectangleY, leftArrowTriangle, leftArrowTextX, leftArrowTextYA, leftArrowTextYB, leftArrowFill
+        //     ){
+        //     d3.select("#low-arrows")
+        //     .attr("visibility", "visible")
+
+        //     d3.selectAll(".rectangle-arrows")
+        //         .attr("x", generalBtnX)
+        //         .attr("y", generalBtnY)
+        //         .attr("width", generealBtnSize)
+        //         .attr("height", generealBtnSize)
+        //         .attr("stroke-width", "0.2")
+        //         .attr("fill", "none")
+        //     .attr("rx", "5")
+
+        //     d3.select("#arrow-top")
+        //     .attr("stroke", topArrowFill)
+        //     d3.select("#arrow-right")
+        //         .attr("x", rightBtnX)
+        //         .attr("y", rightBtnY)
+        //     .attr("stroke", rightArrowFill)
+        //     d3.select("#arrow-down")
+        //         .attr("y", downBtnY)
+        //     .attr("stroke", downArrowFill)
+        //     d3.select("#arrow-left")
+        //         .attr("x", leftBtnX)
+        //         .attr("y", leftBtnY)
+        //     .attr("stroke", leftArrowFill)
+
+        //     d3.select("#arrow-rectangle-top")
+        //         .attr("x", topArrowRectangleX)
+        //         .attr("y", topArrowRectangleY)
+        //         .attr("width", "1")
+        //         .attr("height", "5")
+        //     .attr("fill", topArrowFill)
+        //     d3.select("#arrow-triangle-top")
+        //         .attr("points", topArrowTriangle)
+        //     .attr("fill", topArrowFill)
+        //     d3.select("#top-arrow-text")
+        //         .attr("x", topArrowTextX)
+        //         .attr("y", topArrowTextY)
+        //     .attr("fill", topArrowFill)
+
+        //     d3.select("#arrow-rectangle-right")
+        //         .attr("x", rightArrowRectangleX)
+        //         .attr("y", rightArrowRectangleY)
+        //         .attr("width", "5")
+        //         .attr("height", "1")
+        //     .attr("fill", rightArrowFill)
+        //     d3.select("#arrow-triangle-right")
+        //         .attr("points", rightArrowTriangle)
+        //     .attr("fill", rightArrowFill)
+
+        //     d3.select("#right-arrow-textA")
+        //         .attr("x", rightArrowTextX)
+        //         .attr("y", rightArrowTextYA)
+        //     .attr("fill", rightArrowFill)
+        //     d3.select("#right-arrow-textB")
+        //         .attr("x", rightArrowTextX)
+        //         .attr("y", rightArrowTextYB)
+        //     .attr("fill", rightArrowFill)
+
+
+        //     d3.select("#arrow-rectangle-down")
+        //         .attr("x", downArrowRectangleX)
+        //         .attr("y", downArrowRectangleY)
+        //         .attr("width", "1")
+        //         .attr("height", "5")
+        //     .attr("fill", downArrowFill)
+        //     d3.select("#arrow-triangle-down")
+        //         .attr("points", downArrowTriangle)
+        //     .attr("fill", downArrowFill)
+
+        //     d3.select("#arrow-rectangle-left")
+        //         .attr("x", leftArrowRectangleX)
+        //         .attr("y", leftArrowRectangleY)
+        //         .attr("width", "5")
+        //         .attr("height", "1")
+        //     .attr("fill", leftArrowFill)
+        //     d3.select("#arrow-triangle-left")
+        //         .attr("points", leftArrowTriangle)
+        //     .attr("fill", leftArrowFill)
+
+        //     d3.select("#left-arrow-textA")
+        //         .attr("x", leftArrowTextX)
+        //         .attr("y", leftArrowTextYA)
+        //     .attr("fill", leftArrowFill)
+        //     d3.select("#left-arrow-textB")
+        //         .attr("x", leftArrowTextX)
+        //         .attr("y", leftArrowTextYB)
+        //     .attr("fill", leftArrowFill)
+        // };
 
         return(
             <div id="main-field">
@@ -404,6 +415,8 @@ export default class PlayerAnimation extends Component {
                     <button className="test-btn" onClick={stepD}>StepD</button>
                     <button className="test-btn" onClick={stepE}>StepE</button>
                     <button className="test-btn" onClick={stepF}>StepF</button>
+                    <button className="test-btn" onClick={stepG}>StepG</button>
+                    <button className="test-btn" onClick={stepH}>StepH</button>
                 </div>
 
                 <div id="main-field_container">
@@ -413,23 +426,25 @@ export default class PlayerAnimation extends Component {
                     </div>
 
                     <svg viewBox="0 0 500 300" id="steps" >
-                        <circle id="circleInner"  cx="457" cy="7" r="12" fill="none"
-                                strokeWidth="8" stroke="#6AB2F5" />
+                        <g id="circle-group">
+                            <circle id="circleInner"  cx="87" cy="253" r="25" fill="none"
+                                    strokeWidth="20" stroke="#6AB2F5" />
 
-                        <circle id="circleOuter" cx="457" cy="7" r="28" fill="none"
-                                strokeWidth="25" stroke="#6AB2F5"  strokeOpacity="0.1" />
+                            <circle id="circleOuter" cx="87" cy="253" r="50" fill="none"
+                                    strokeWidth="40" stroke="#6AB2F5"  strokeOpacity="0.5" />
+                        </g>
 
                         <g>
-                            <rect id="rectangle" x="330" y="50" width="100" height="50"
+                            <rect id="rectangle" x="150" y="140" width="90" height="40"
                                     fill="white" stroke="#6AB2F5"  rx="2" />
-                            <text id="textA" className="rectangle-text" x="340" y="65">
-                                {this.getLangText("step1A")}
+                            <text id="textA" className="rectangle-text" x="170" y="155">
+                                {this.getLangText("stepInitialA")}
                             </text>
-                            <text id="textB" className="rectangle-text" x="342" y="78">
-                                {this.getLangText("step1B")}
+                            <text id="textB" className="rectangle-text" x="165" y="168">
+                                {this.getLangText("stepInitialB")}
                             </text>
-                            <text id="textC" className="rectangle-text" x="346" y="90">
-                                {this.getLangText("step1C")}
+                            <text id="textC" className="rectangle-text" x="0" y="0">
+                                {this.getLangText("stepInitialC")}
                             </text>
                         </g>
 
