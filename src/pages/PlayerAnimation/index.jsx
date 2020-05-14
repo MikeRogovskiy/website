@@ -5,10 +5,12 @@ import ReactHtmlParser from "react-html-parser";
 
 import "./playerAnimation.scss";
 
+import initialBackground from "../../assets/images/player-animation/background-images/initialStepBackground.png";
+
 import backgroundA from "../../assets/images/player-animation/background-images/stepBackground1.png";
 import backgroundB from "../../assets/images/player-animation/background-images/stepBackground2.png";
 import backgroundС from "../../assets/images/player-animation/background-images/stepBackground3.png";
-import backgroundD from "../../assets/images/player-animation/background-images/stepBackground4.png";
+// import backgroundD from "../../assets/images/player-animation/background-images/stepBackground4.png";
 import backgroundE from "../../assets/images/player-animation/background-images/stepBackground5.png";
 import backgroundF from "../../assets/images/player-animation/background-images/stepBackground6.png";
 import backgroundG from "../../assets/images/player-animation/background-images/stepBackground7.png";
@@ -24,6 +26,7 @@ import smallArrowsB from "../../assets/images/player-animation/background-images
 export default class PlayerAnimation extends Component {
 
     componentDidMount() {
+        document.querySelector("#main-field_container").style.background = `no-repeat bottom/cover url(${initialBackground})`
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
             "right 82.5% top 84% , black 3%, transparent 2.5%)";
     };
