@@ -26,7 +26,7 @@ import smallArrowsB from "../../assets/images/player-animation/background-images
 export default class PlayerAnimation extends Component {
 
     componentDidMount() {
-        document.querySelector("#main-field_container").style.background = `no-repeat bottom/cover url(${initialBackground})`
+        document.querySelector("#main-field_container").style.background = `no-repeat bottom/cover url(${initialBackground})`;
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
             "right 82.5% top 84% , black 3%, transparent 2.5%)";
     };
@@ -37,7 +37,6 @@ export default class PlayerAnimation extends Component {
 
     render(){
         const textData = this.props.text;
-        let clicks = 0;
 
         function moveFigures(cxInner, cyInner, rInner, strokeWidthInner, delay,
             cxOuter, cyOuter, rOuter, strokeWidthOuter,
@@ -101,7 +100,7 @@ export default class PlayerAnimation extends Component {
                     .attr("width", rectW)
 
                     function moveText(){
-        
+
                         d3.select("#textA")
                             .transition()
                             .delay(delay)
@@ -120,9 +119,9 @@ export default class PlayerAnimation extends Component {
                             .duration(2000)
                             .attr("x", textRectXC)
                         .attr("y", textRectYC)
-    
+
                     };
-                    moveText()
+                    moveText();
 
                 };
                 rectangleAction();
@@ -171,7 +170,7 @@ export default class PlayerAnimation extends Component {
                 .attr("y", "65%")
             };
             setTimeout(addBigRightArrow, 2000)
-         
+
         };
 
         function removeBigArrows(){
@@ -221,6 +220,8 @@ export default class PlayerAnimation extends Component {
             change(backgroundImage, textStepA, textStepB, textStepC);
         };
 
+        let clicks = 0;
+
         function action(){
             clicks += 1;
             switch(clicks){
@@ -263,9 +264,12 @@ export default class PlayerAnimation extends Component {
                 function(event){
                     if(event.which === 39){
                         action()
+                    } else if (event.which === 37){
+                        // clicks -= 2;
+                        action()
                     }
                 }
-            )
+            );
 
         };
 

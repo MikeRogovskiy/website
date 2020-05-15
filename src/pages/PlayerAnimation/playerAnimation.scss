@@ -46,11 +46,12 @@ html, body{
 };
 
 #main-field_container{
-  @include wHHundred;
+  // @include wHHundred;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
   position: relative;
   transition: background 1.5s ease-in;
-
-  // background: no-repeat bottom/cover url("../../assets/images/player-animation/background-images/initialStepBackground.png");
 };
 
 #main-field_background{
