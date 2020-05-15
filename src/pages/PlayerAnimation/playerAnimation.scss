@@ -29,13 +29,13 @@ html, body{
  @include pureBody;
 };
 
-#btn-folder{
-  display: flex;
-  width: 200px;
-  height: 50px;
-  position: absolute;
-  z-index: 50;
-}
+// #btn-folder{
+//   display: flex;
+//   width: 200px;
+//   height: 50px;
+//   position: absolute;
+//   z-index: 50;
+// }
 
 .test-btn{
   @include buttonCorrect;
@@ -46,9 +46,9 @@ html, body{
 };
 
 #main-field_container{
-  // @include wHHundred;
-  height: 100%;
-  width: 100vw;
+  @include wHHundred;
+  // height: 100vh;
+  // width: 100%;
   overflow: hidden;
   position: relative;
   transition: background 1.5s ease-in;

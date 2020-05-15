@@ -220,10 +220,16 @@ export default class PlayerAnimation extends Component {
             change(backgroundImage, textStepA, textStepB, textStepC);
         };
 
-        let clicks = 0;
+        var clicks = 0;
 
-        function action(){
-            clicks += 1;
+        function action(value){
+
+            var sum = clicks + value;
+            if (sum > 0 && sum < 8) {
+                clicks = sum;
+            };
+
+
             switch(clicks){
                 case 1:
                     makeStep(step.coordinatesA, backgroundA, textData.step1A, textData.step1B, textData.step1C);
@@ -260,18 +266,17 @@ export default class PlayerAnimation extends Component {
 
             };
 
-            window.addEventListener("keydown",
-                function(event){
-                    if(event.which === 39){
-                        action()
-                    } else if (event.which === 37){
-                        // clicks -= 2;
-                        action()
-                    }
-                }
-            );
-
         };
+
+        window.addEventListener("keydown",
+            function(event){
+                if(event.which === 39){
+                    action(1)
+                } else if (event.which === 37){
+                    action(-1)
+                }
+            }
+        );
 
 
         return(
@@ -283,7 +288,7 @@ export default class PlayerAnimation extends Component {
                         <div id="black-circle"></div>
                     </div>
 
-                    <svg viewBox="0 0 500 300" id="steps" onClick={action}>
+                    <svg viewBox="0 0 500 300" id="steps" onClick={() => action(1)}>
                         <g id="circle-group">
                             <circle id="circleInner"  cx="87" cy="253" r="25" fill="none"
                                     strokeWidth="20" stroke="#6AB2F5" />
