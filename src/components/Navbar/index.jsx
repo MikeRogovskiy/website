@@ -63,9 +63,10 @@ export default class Navbar extends React.Component {
                 {l.name}
             </option>
         ));
+
         return (
             <div>
-                { window.location.href.includes("instruction") !== true, window.location.href.includes("player-animation") !== true
+                { window.location.href.includes("instruction")||  window.location.href.includes("player-animation") !== true
                 &&  <nav className={navBarClass}>
 
                     <div className="sticky-bar">
