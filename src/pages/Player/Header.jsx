@@ -11,8 +11,9 @@ const Header = (props) => {
         return ReactHtmlParser(props.text[text]);
     };
     
-    const macLink = 'https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta_mac_prod.dmg';
-    const windowsLink = 'https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta_win_prod.exe';
+    const macLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg';
+    const windowsLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe';
+    // http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg
     
 
     return (
