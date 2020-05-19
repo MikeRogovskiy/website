@@ -10,7 +10,6 @@ import initialBackground from "../../assets/images/player-animation/background-i
 import backgroundA from "../../assets/images/player-animation/background-images/stepBackground1.png";
 import backgroundB from "../../assets/images/player-animation/background-images/stepBackground2.png";
 import backgroundС from "../../assets/images/player-animation/background-images/stepBackground3.png";
-// import backgroundD from "../../assets/images/player-animation/background-images/stepBackground4.png";
 import backgroundE from "../../assets/images/player-animation/background-images/stepBackground5.png";
 import backgroundF from "../../assets/images/player-animation/background-images/stepBackground6.png";
 import backgroundG from "../../assets/images/player-animation/background-images/stepBackground7.png";
@@ -26,7 +25,7 @@ import smallArrowsB from "../../assets/images/player-animation/background-images
 export default class PlayerAnimation extends Component {
 
     componentDidMount() {
-        document.querySelector("#main-field_container").style.background = `no-repeat bottom/cover url(${initialBackground})`;
+        // document.querySelector("#main-field_container").style.background = `no-repeat 100% 100% url(${initialBackground})`;
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
             "right 82.5% top 84% , black 3%, transparent 2.5%)";
     };
@@ -79,7 +78,7 @@ export default class PlayerAnimation extends Component {
 
                         blackCircle.style.backgroundImage = `radial-gradient(circle at  ` +
                             `right ${blackRight} top ${blackTop} , black ${blackSize}, transparent ${blackSize2})`;
-                        blackCircle.style.animation = `smoothAppearBlackCircle ${blackDelay} ease-in`;
+                        blackCircle.style.animation = `smoothAppear ${blackDelay} ease-in`;
 
                         showBlackCircle();
                     };
@@ -138,13 +137,13 @@ export default class PlayerAnimation extends Component {
             function createBigArrow(arrowType, arrowImage, x, y){
                 d3.select(arrowType)
                     .attr("xlink:href", arrowImage)
-                    .attr("height", "100")
-                    .attr("width", "100")
+                    .attr("height", "420")
+                    .attr("width", "420")
                     .attr("x", x)
                 .attr("y", y)
             };
-            createBigArrow("#big-arrow-left", leftArrow, "38%", "51%")
-            setTimeout(function() { createBigArrow("#big-arrow-right", rightArrow, "45.5%", "65%");}, 2000)
+            createBigArrow("#big-arrow-left", leftArrow, "37%", "50%")
+            setTimeout(function() { createBigArrow("#big-arrow-right", rightArrow, "44.5%", "65%");}, 2000)
         };
 
         function removeBigArrows(){
@@ -156,8 +155,8 @@ export default class PlayerAnimation extends Component {
             d3.select(arrowsTypeA)
                 .attr("opacity", "1")
                 .attr("xlink:href", arrowsImage)
-                .attr("height", "150")
-                .attr("width", "150")
+                .attr("height", "550")
+                .attr("width", "550")
                 .attr("x", x)
             .attr("y", y)
 
@@ -187,7 +186,7 @@ export default class PlayerAnimation extends Component {
         function action(value){
 
             var sum = clicks + value;
-            if (sum > 0 && sum < 8) {
+            if (sum > 0 && sum < 9) {
                 clicks = sum;
             };
 
@@ -212,7 +211,7 @@ export default class PlayerAnimation extends Component {
                     break;
                 case 5:
                     makeStep(step.coordinatesE, backgroundE, textData.step5A, textData.step5B, textData.step5C);
-                    addSmallArrows("#small-arrows_b", "#small-arrows_a", smallArrowsB, "46%", "29%")
+                    addSmallArrows("#small-arrows_b", "#small-arrows_a", smallArrowsB, "46%", "23.5%")
                     break;
                 case 6:
                     makeStep(step.coordinatesF, backgroundF, textData.step6A, textData.step6B, textData.step6C);
@@ -250,22 +249,22 @@ export default class PlayerAnimation extends Component {
                         <div id="black-circle"></div>
                     </div>
 
-                    <svg viewBox="0 0 500 300" id="steps-svg-field" onClick={() => action(1)}>
+                    <svg  viewBox="0 0 1980 1080" id="steps-svg-field" onClick={() => action(1)}>
                         <g id="steps-svg-field_circle-group">
-                            <circle id="circleInner"  cx="87" cy="253" r="25" fill="none"
-                                    strokeWidth="20" stroke="#6AB2F5" />
+                            <circle id="circleInner"  cx="17.5%" cy="84%" r="5.5%" fill="none"
+                                    strokeWidth="4%" stroke="#6AB2F5" />
 
-                            <circle id="circleOuter" cx="87" cy="253" r="50" fill="none"
-                                    strokeWidth="40" stroke="#6AB2F5"  strokeOpacity="0.5" />
+                            <circle id="circleOuter" cx="17.5%" cy="84%" r="10%" fill="none"
+                                    strokeWidth="10%" stroke="#6AB2F5"  strokeOpacity="0.5" />
                         </g>
 
                         <g id="steps-svg-field_rectangle-group">
-                            <rect id="rectangle-container" x="150" y="140" width="90" height="40"
-                                    fill="white" stroke="#6AB2F5"  rx="2" />
-                            <text id="rectangle-textA" className="rectangle-text" x="160" y="155">
+                            <rect id="rectangle-container" x="30%" y="50%" width="18%" height="13%"
+                                    fill="white" stroke="#6AB2F5"  rx="5" strokeWidth="0.3%" />
+                            <text id="rectangle-textA" className="rectangle-text" x="31%" y="55%">
                                 {this.getLangText("stepInitialA")}
                             </text>
-                            <text id="rectangle-textB" className="rectangle-text" x="164" y="168">
+                            <text id="rectangle-textB" className="rectangle-text" x="31.5%" y="60%">
                                 {this.getLangText("stepInitialB")}
                             </text>
                             <text id="rectangle-textC" className="rectangle-text" x="0" y="0">
