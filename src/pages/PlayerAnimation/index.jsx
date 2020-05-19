@@ -25,7 +25,7 @@ import smallArrowsB from "../../assets/images/player-animation/background-images
 export default class PlayerAnimation extends Component {
 
     componentDidMount() {
-        // document.querySelector("#main-field_container").style.background = `no-repeat 100% 100% url(${initialBackground})`;
+        document.querySelector("#main-field_container").style.backgroundImage = `url(${initialBackground})`;
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
             "right 82.5% top 84% , black 3%, transparent 2.5%)";
     };
