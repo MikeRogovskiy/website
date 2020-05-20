@@ -14,28 +14,38 @@ import backgroundE from "../../assets/images/player-animation/background-images/
 import backgroundF from "../../assets/images/player-animation/background-images/stepBackground6.png";
 import backgroundG from "../../assets/images/player-animation/background-images/stepBackground7.png";
 import backgroundH from "../../assets/images/player-animation/background-images/stepBackground8.png";
+import backgroundFinal from "../../assets/images/player-animation/background-images/finalBackground.png";
 
-import leftArrow from "../../assets/images/player-animation/background-images/leftArrow.svg";
-import rightArrow from "../../assets/images/player-animation/background-images/rightArrow.svg";
+import leftArrow from "../../assets/images/player-animation/arrow-images/leftArrow.svg";
+import rightArrow from "../../assets/images/player-animation/arrow-images/rightArrow.svg";
 
-import smallArrowsA from "../../assets/images/player-animation/background-images/smallArrowsA.svg";
-import smallArrowsB from "../../assets/images/player-animation/background-images/smallArrowsB.svg";
+import smallArrowsA from "../../assets/images/player-animation/arrow-images/smallArrowsA.svg";
+import smallArrowsB from "../../assets/images/player-animation/arrow-images/smallArrowsB.svg";
+
+import instruction from "../../assets/images/player-animation/step-images/instructionGeneral.svg";
+
 
 
 export default class PlayerAnimation extends Component {
 
-    componentDidMount() {
+    componentDidMount(){
         document.querySelector("#main-field_container").style.backgroundImage = `url(${initialBackground})`;
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
             "right 82.5% top 84% , black 3%, transparent 2.5%)";
+        d3.select("#instruction-image")
+            .attr("x", "30%")
+            .attr("y", "3%")
+            .attr("height", "17%")
+            .attr("width", "45%")
+            .attr("visibility", "visible")
+        .attr("xlink:href", instruction);
     };
 
-    getLangText(text) {
+    getLangText(text){
         return ReactHtmlParser(this.props.text[text]);
     };
 
     render(){
-        const textData = this.props.text;
 
         function moveFigures(cxInner, cyInner, rInner, strokeWidthInner, delay,
             cxOuter, cyOuter, rOuter, strokeWidthOuter,
@@ -67,7 +77,7 @@ export default class PlayerAnimation extends Component {
                             .attr("cy", cy)
                             .attr("r", r)
                             .attr("stroke-width", strokeWidth)
-                        .on("end", moveBackgroundCircle)
+                        .on("end", moveBackgroundCircle);
                     };
                     transformCircles(circleInner, cxInner, cyInner, rInner, strokeWidthInner);
                     transformCircles(circleOuter, cxOuter, cyOuter, rOuter, strokeWidthOuter);
@@ -94,7 +104,7 @@ export default class PlayerAnimation extends Component {
                         .attr("x", rectX)
                         .attr("y", rectY)
                         .attr("height", rectH)
-                    .attr("width", rectW)
+                    .attr("width", rectW);
 
                     function moveText(textType, textX, textY){
                         d3.select(textType)
@@ -102,7 +112,7 @@ export default class PlayerAnimation extends Component {
                             .delay(delay)
                             .duration(2000)
                             .attr("x", textX)
-                        .attr("y", textY)
+                        .attr("y", textY);
                     };
                     moveText("#rectangle-textA", textRectXA, textRectYA);
                     moveText("#rectangle-textB", textRectXB, textRectYB);
@@ -122,7 +132,7 @@ export default class PlayerAnimation extends Component {
 
             function changeText(textType, textContent){
                 d3.select(textType)
-                .text(textContent)
+                .text(textContent);
             };
             changeText("#rectangle-textA", textA);
             changeText("#rectangle-textB", textB);
@@ -140,15 +150,15 @@ export default class PlayerAnimation extends Component {
                     .attr("height", "420")
                     .attr("width", "420")
                     .attr("x", x)
-                .attr("y", y)
+                .attr("y", y);
             };
-            createBigArrow("#big-arrow-left", leftArrow, "37%", "50%")
-            setTimeout(function() { createBigArrow("#big-arrow-right", rightArrow, "44.5%", "65%");}, 2000)
+            createBigArrow("#big-arrow-left", leftArrow, "37%", "50%");
+            setTimeout(function() { createBigArrow("#big-arrow-right", rightArrow, "44.5%", "65%");}, 2000);
         };
 
         function removeBigArrows(){
             d3.selectAll(".big-arrows")
-            .attr("opacity", "0")
+            .attr("opacity", "0");
         };
 
         function addSmallArrows(arrowsTypeA, arrowsTypeB, arrowsImage, x, y){
@@ -158,19 +168,19 @@ export default class PlayerAnimation extends Component {
                 .attr("height", "550")
                 .attr("width", "550")
                 .attr("x", x)
-            .attr("y", y)
+            .attr("y", y);
 
             function removeSmallArrowsA(){
                 d3.select(arrowsTypeB)
-                .attr("opacity", "0")
+                .attr("opacity", "0");
             };
-            removeSmallArrowsA()
+            removeSmallArrowsA();
         };
 
 
         function removeAllSmallArrows(){
             d3.selectAll(".small-arrows")
-            .attr("opacity", "0")
+            .attr("opacity", "0");
         };
 
         function makeStep(coordinates, backgroundImage, textStepA, textStepB, textStepC){
@@ -181,12 +191,39 @@ export default class PlayerAnimation extends Component {
 
         };
 
+        function hideContentOf(typeOfContent){
+            d3.select(typeOfContent)
+            .attr("visibility", "hidden");
+        }
+
+        function appearContentOf(typeOfContent){
+            d3.select(typeOfContent)
+            .attr("visibility", "visible");
+        }
+
+        function changeTextColorOn(color){
+            d3.selectAll(".rectangle-text")
+            .attr("fill", color)
+        };
+
+        window.addEventListener("keydown",
+            function(event){
+                if(event.which === 39){
+                    action(1);
+                } else if (event.which === 37){
+                    action(-1);
+                };
+            }
+        );
+
+        const textData = this.props.text;
+
         var clicks = 0;
 
         function action(value){
 
             var sum = clicks + value;
-            if (sum > 0 && sum < 9) {
+            if (sum > 0 && sum < 10) {
                 clicks = sum;
             };
 
@@ -221,24 +258,19 @@ export default class PlayerAnimation extends Component {
                     makeStep(step.coordinatesG, backgroundG, textData.step7A, textData.step7B, textData.step7C);
                     break;
                 case 8:
+                    changeTextColorOn("black")
                     makeStep(step.coordinatesH, backgroundH, textData.step8A, textData.step8B, textData.step8C);
+                    appearContentOf(document.querySelector("#instruction-image"));
                     break;
+                case 9:
+                    hideContentOf(document.querySelector("#instruction-image"));
+                    changeTextColorOn("white")
+                    makeStep(step.coordinatesFinal, backgroundFinal, textData.stepFinalA, textData.stepFinalB, textData.stepFinalC);
                 default:
 
             };
 
         };
-
-        window.addEventListener("keydown",
-            function(event){
-                if(event.which === 39){
-                    action(1)
-                } else if (event.which === 37){
-                    action(-1)
-                };
-            }
-        );
-
 
         return(
             <div id="main-field">
@@ -256,6 +288,10 @@ export default class PlayerAnimation extends Component {
 
                             <circle id="circleOuter" cx="17.5%" cy="84%" r="10%" fill="none"
                                     strokeWidth="10%" stroke="#6AB2F5"  strokeOpacity="0.5" />
+                        </g>
+
+                        <g id="steps-svg-field_instruction-group">
+                            <image id="instruction-image"></image>
                         </g>
 
                         <g id="steps-svg-field_rectangle-group">
