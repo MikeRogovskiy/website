@@ -223,12 +223,15 @@ export default class PlayerAnimation extends Component {
         function action(value){
 
             var sum = clicks + value;
-            if (sum > 0 && sum < 10) {
+            if (sum >= 0 && sum < 10) {
                 clicks = sum;
             };
 
 
             switch(clicks){
+                case 0:
+                    makeStep(step.coordinatesInitial, initialBackground, textData.stepInitialA, textData.stepInitialB, textData.stepInitialC);
+                    break
                 case 1:
                     makeStep(step.coordinatesA, backgroundA, textData.step1A, textData.step1B, textData.step1C);
                     break;

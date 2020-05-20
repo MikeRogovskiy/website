@@ -44,7 +44,7 @@ html, body{
 #black-circle{
   @include wHHundred;
   position: absolute;
-  transition: 1s ease-in;
+  transition: 500ms ease-in;
   opacity: 1;
 };
 

@@ -45,6 +45,14 @@ function Coordinates(
 
 };
 
+export const coordinatesInitial = new Coordinates(
+    "17.5%", "84%", "5.5%", "4%", "0",
+    "17.5%", "84%", "10%", "10%",
+    "82.5%", "84%", "3%", "2.5%", "0s",
+    "30%", "50%", "13%", "18%",
+    "31%", "55%", "31.5%", "60%", "0%", "0%",
+);
+
 export const coordinatesA = new Coordinates(
     "44%", "63%", "10%", "3%", "0",
     "44%", "63%", "13%", "8%",
