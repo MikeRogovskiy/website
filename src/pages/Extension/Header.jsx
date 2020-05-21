@@ -20,15 +20,15 @@ const Header = (props) => {
                 <h1 className="getStarted-title">{getLangText("GetStartedText")}</h1>
               </div>
               <div className="getStarted-button">
-                {/* <a
+                <a
                   className="started-button top"
                   href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span>{getLangText("GetStartedButton")}</span>
-                </a> */}
-                 <StartBtn link={"/player"} id={"extension-btn"} text={getLangText("GetStartedButton")} />
+                </a>
+                 {/* <StartBtn link={"/player"} id={"extension-btn"} text={getLangText("GetStartedButton")} /> */}
               </div>
               <div>
                 <p className="getStarted-subtitle">{getLangText("GetStartedBottomText")}</p>

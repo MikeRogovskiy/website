@@ -12,7 +12,6 @@ export default class StartBtn extends React.Component {
     render() {
         return (
             <Link 
-                // to="/extension-instruction"
                 to={this.props.link}
                 rel="noopener noreferrer"
                 id={this.props.id}

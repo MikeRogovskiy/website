@@ -75,9 +75,9 @@
 
     "ExtensionPage": {
       "AddToChromeButton": "Add to Chrome",
-      "GetStartedButton": "FREE START",
-      "GetStartedText": "Handy extension <br/> in Google Chrome for learning language",
-      "GetStartedBottomText": "Translate words while reading an article or watching your favourite movie <br/> Add words to your personal lessons or train them in the text <br/> Repeat words in the exact context you found them <br/> Understand jokes and expressions <br/> Enrich your personal vocabulary <br/>Learn and repeat words with Easylang Tutor",
+      "GetStartedButton": "Add to Chrome/Edge",
+      "GetStartedText": "Translate and learn in<br/>browser",
+      "GetStartedBottomText": "Translate word and phrases within sentences<br />Revise words in context (that you have read it in)<br />Revise via games (available on mobile)<br />Expand your vocabulary",
       "ScrolledContentHeader": "Powerful tool <br/> for learning language",
       "1-SlideExtensionHeader": "Choose any content",
       "1-SlideExtensionBody": "Every single article may become a worthy learning material to strengthen your knowledge of foreign language. What’s more important is that you enjoy such content.",
@@ -85,7 +85,7 @@
       "2-SlideExtensionBody": "You may choose to translate a singular word, few words, or an entire sentence. Besides, we can quickly send the selected part for translation.",
       "3-SlideExtensionHeader": "Translate it",
       "3-SlideExtensionBody": "You may keep the translation window open, we got hold on it the entire time.",
-      "4-SlideExtensionHeader": "Save the word <br/> to repeat",
+      "4-SlideExtensionHeader": "Save the word to repeat",
       "4-SlideExtensionBody": "If you select “Save to Tutor” option, we will save it for comfortable learning.",
       "5-SlideExtensionHeader": "In one place  the whole <br /> history of learning",
       "5-SlideExtensionBody": "You read a lot, but only some pages will be used to study foreign language.",

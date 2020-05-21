@@ -13,7 +13,7 @@ const Footer = (props) => {
     return (
         <footer className="getStarted-footer">
             <div className="getStarted-button">
-                {/* <a
+                <a
                     className="started-button top"
                     style={{ marginTop: "-20px" }}
                     href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
@@ -21,8 +21,8 @@ const Footer = (props) => {
                     rel="noopener noreferrer"
                 >
                     <span>{getLangText("GetStartedButton")}</span>
-                </a> */}
-                <StartBtn  link={"/player"} id={"extension-btn"} text={getLangText("GetStartedButton")} />
+                </a>
+                {/* <StartBtn  link={"/player"} id={"extension-btn"} text={getLangText("GetStartedButton")} /> */}
             </div>
         </footer>
     );

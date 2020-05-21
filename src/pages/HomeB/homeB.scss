@@ -1,0 +1,34 @@
+
+#homeB-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#homeB-container_page{
+    background-image: url("../../assets/images/test/testMainPage.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 220vh;
+    display: flex;
+};
+
+// .homeB-container_page_buttons-folder{
+//     display: flex;
+//     // align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     margin-top: 50%;
+// }
+
+// #start-button{
+//     width: 15%;
+//     height: 7%;
+//     background-color: red;
+//     position: absolute;
+// }

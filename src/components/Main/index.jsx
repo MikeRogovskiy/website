@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 import Blog from "../Blog";
 import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
-import { Home, Extension, ExtensionInstruction, NotFound, Plans, Player, Privacy, PlansTest, PlayerAnimation } from '../../pages';
+import { Home, HomeB, Extension, ExtensionInstruction, NotFound, Plans, Player, Privacy, PlansTest, PlayerAnimation } from '../../pages';
 
 
 export default class App extends React.Component {
@@ -35,6 +35,7 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text.HomePage}></Home>
+            <HomeB path="/B/" ></HomeB>
             <Privacy path="/privacy" text={this.props.text}></Privacy>
             <Extension path="/extension/" text={this.props.text.ExtensionPage} lang={this.props.language} />
             <ExtensionInstruction path="/extension-instruction-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />

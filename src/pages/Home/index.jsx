@@ -12,6 +12,8 @@ import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
+import testPage from "../../assets/images/test/testMainPage.svg"; // for test
+
 
 
 export default class Home extends React.Component {
