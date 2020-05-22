@@ -6,7 +6,6 @@ import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
 import { Home, HomeB, Extension, ExtensionInstruction, NotFound, Plans, Player, Privacy, PlansTest, PlayerAnimation } from '../../pages';
 
-
 export default class App extends React.Component {
 
   urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*privacy.*/g];
@@ -35,7 +34,8 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text.HomePage}></Home>
-            <HomeB path="/B/" ></HomeB>
+            <HomeB path="/B/"></HomeB>
+            <HomeB path="/C/"></HomeB>
             <Privacy path="/privacy" text={this.props.text}></Privacy>
             <Extension path="/extension/" text={this.props.text.ExtensionPage} lang={this.props.language} />
             <ExtensionInstruction path="/extension-instruction-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
