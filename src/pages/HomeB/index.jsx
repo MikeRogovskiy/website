@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./homeB.scss";
 
-import step1 from "../../assets/images/test/step1Test.svg";
-import step2 from "../../assets/images/test/step2Test.svg";
-import step3 from "../../assets/images/test/step3Test.svg";
-import step4 from "../../assets/images/test/step4Test.svg";
-import step5 from "../../assets/images/test/step5Test.svg";
-import step6 from "../../assets/images/test/step6Test.svg";
+import step1 from "../../assets/images/test/step1Test.png";
+import step2 from "../../assets/images/test/step2Test.png";
+import step3 from "../../assets/images/test/step3Test.png";
+import step4 from "../../assets/images/test/step4Test.png";
+import step5 from "../../assets/images/test/step5Test.png";
+import step6 from "../../assets/images/test/step6Test.png";
+import step7 from "../../assets/images/test/step7Test.png";
 
 import backgroundForTest1 from "../../assets/images/test/testMainPageA.svg";
 import backgroundForTest2 from "../../assets/images/test/testMainPageB.svg";
@@ -60,6 +61,9 @@ export default class HomeB extends Component {
                 case 5:
                     changeStep(step6)
                     break;
+                case 6:
+                    changeStep(step7)
+                    break;
                 default:
 
             };
@@ -71,8 +75,8 @@ export default class HomeB extends Component {
                      <div className="container_page_btn">
                         <button id="button-height" className="start-test-button">НАЧАТЬ БЕСПЛАТНО</button>
                         <div id="container_page_steps">
-                            <img id="step-img" src={step1}></img>
                             <button id="make-step" onClick={() => {action(1)}}>Следующий шаг</button>
+                            <img id="step-img" src={step1}></img>
                         </div>
                         <button id="button-low" className="start-test-button">НАЧАТЬ БЕСПЛАТНО</button>
                     </div>
