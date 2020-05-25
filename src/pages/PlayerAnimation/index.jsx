@@ -300,13 +300,13 @@ export default class PlayerAnimation extends Component {
                         <g id="steps-svg-field_rectangle-group">
                             <rect id="rectangle-container" x="30%" y="50%" width="18%" height="13%"
                                     fill="white" stroke="#6AB2F5"  rx="5" strokeWidth="0.3%" />
-                            <text id="rectangle-textA" className="rectangle-text" x="31%" y="55%">
+                            <text id="rectangle-textA" className="rectangle-text" x="39%" y="55%" textAnchor="middle">
                                 {this.getLangText("stepInitialA")}
                             </text>
-                            <text id="rectangle-textB" className="rectangle-text" x="31.5%" y="60%">
+                            <text id="rectangle-textB" className="rectangle-text" x="39%" y="60%" textAnchor="middle">
                                 {this.getLangText("stepInitialB")}
                             </text>
-                            <text id="rectangle-textC" className="rectangle-text" x="0" y="0">
+                            <text id="rectangle-textC" className="rectangle-text" x="0" y="0" textAnchor="middle">
                                 {this.getLangText("stepInitialC")}
                             </text>
                         </g>
