@@ -136,6 +136,8 @@
       "stepInitialA": "Нажми на кнопку",
       "stepInitialB": "и откройте TED",
       "stepInitialC": "",
+
+      "stepInitialInstruction": "To navigate in text, press",
   
       "step1A": "Выбери видео",
       "step1B": "",

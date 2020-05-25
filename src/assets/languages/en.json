@@ -137,6 +137,8 @@
     "stepInitialB": "on TED",
     "stepInitialC": "",
 
+    "stepInitialInstruction": "To navigate in text, press",
+
     "step1A": "Choose a video",
     "step1B": "",
     "step1C": "",

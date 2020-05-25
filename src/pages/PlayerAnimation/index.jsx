@@ -22,7 +22,7 @@ import rightArrow from "../../assets/images/player-animation/arrow-images/rightA
 import smallArrowsA from "../../assets/images/player-animation/arrow-images/smallArrowsA.svg";
 import smallArrowsB from "../../assets/images/player-animation/arrow-images/smallArrowsB.svg";
 
-import instruction from "../../assets/images/player-animation/step-images/instructionGeneral.svg";
+import instruction from "../../assets/images/player-animation/step-images/instructionArrows.svg";
 
 
 
@@ -33,9 +33,9 @@ export default class PlayerAnimation extends Component {
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
             "right 82.5% top 84% , black 3%, transparent 2.5%)";
         d3.select("#instruction-image")
-            .attr("x", "30%")
-            .attr("y", "3%")
-            .attr("height", "17%")
+            .attr("x", "44%")
+            .attr("y", "6%")
+            .attr("height", "11%")
             .attr("width", "45%")
             .attr("visibility", "visible")
         .attr("xlink:href", instruction);
@@ -293,9 +293,7 @@ export default class PlayerAnimation extends Component {
                                     strokeWidth="10%" stroke="#6AB2F5"  strokeOpacity="0.5" />
                         </g>
 
-                        <g id="steps-svg-field_instruction-group">
-                            <image id="instruction-image"></image>
-                        </g>
+                    
 
                         <g id="steps-svg-field_rectangle-group">
                             <rect id="rectangle-container" x="30%" y="50%" width="18%" height="13%"
@@ -308,6 +306,14 @@ export default class PlayerAnimation extends Component {
                             </text>
                             <text id="rectangle-textC" className="rectangle-text" x="0" y="0" textAnchor="middle">
                                 {this.getLangText("stepInitialC")}
+                            </text>
+                        </g>
+
+                        <g id="steps-svg-field_instruction-group">
+                            <image id="instruction-image"></image>
+                            <rect width="45%" height="14%" x="30%" y="5%" rx="10px" fill=" rgba(0, 0, 0, 0.3)"></rect>
+                            <text x="47%" y="13%" textAnchor="middle" fontSize="30px" fill="white">
+                                {this.getLangText("stepInitialInstruction")}
                             </text>
                         </g>
 
