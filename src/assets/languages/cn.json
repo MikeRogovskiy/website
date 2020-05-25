@@ -76,8 +76,8 @@
     "ExtensionPage": {
       "AddToChromeButton": "Add to Chrome",
       "GetStartedButton": "Add to Chrome/Edge",
-      "GetStartedText": "Translate and learn in<br/>browser",
-      "GetStartedBottomText": "Translate word and phrases within sentences<br />Revise words in context (that you have read it in)<br />Revise via games (available on mobile)<br />Expand your vocabulary",
+      "GetStartedText": "Translate and Learn Languages<br/>in Web Browser",
+      "GetStartedBottomText": "<ul><li>Translate word and phrases within sentences</li><li>Revise words in context (that you have read it in)</li><li>Revise via games (available on mobile)</li><li>Expand your vocabulary</li></ul>",
       "ScrolledContentHeader": "Powerful tool <br/> for learning language",
       "1-SlideExtensionHeader": "Choose any content",
       "1-SlideExtensionBody": "Every single article may become a worthy learning material to strengthen your knowledge of foreign language. What’s more important is that you enjoy such content.",

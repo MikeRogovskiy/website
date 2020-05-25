@@ -12,6 +12,21 @@ body {
   padding-top: 100px;
 };
 
+.getStarted-subtitle{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+.getStarted-subtitle li{
+  margin-left: 50px;
+  list-style: disc;
+  font-size: 1.2rem;
+};
+
 .wrapper-getStarted {
   padding: 1% 0 4%;
 };
@@ -64,16 +79,6 @@ body {
   line-height: 44px;
 };
 
-.getStarted-subtitle {
-  color:  #195AA9;
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 165.7%;
-  letter-spacing: 0.41px;
-  margin-bottom: 5rem;
-  padding-top: 3%;
-};
-
 .getStarted-button {
   @include centralJustifyFlex;
   width: 100%;
@@ -85,6 +90,7 @@ body {
   // };
 
 };
+
 
 
 
