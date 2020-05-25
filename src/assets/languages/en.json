@@ -133,45 +133,45 @@
   },
 
   "PlayerAnimation": {
-    "stepInitialA": "Нажми на кнопку",
-    "stepInitialB": "и откройте TED",
+    "stepInitialA": "Click",
+    "stepInitialB": "on TED",
     "stepInitialC": "",
 
-    "step1A": "Выбери видео",
+    "step1A": "Choose a video",
     "step1B": "",
     "step1C": "",
 
-    "step2A": "Смотри видео",
-    "step2B": "с параллельными субтитрами",
-    "step2C": "на разных языках",
+    "step2A": "Watch the video",
+    "step2B": "with subtitles",
+    "step2C": "in multiple languages",
 
-    "step3A": "Смотри видео",
-    "step3B": "с параллельными субтитрами",
-    "step3C": "на разных языках",
+    "step3A": "Watch the video",
+    "step3B": "with subtitles",
+    "step3C": "in multiple languages",
 
-    "step4A": "Попробуй переместиться по субтитрам",
-    "step4B": "с помощью горячих клавиш",
+    "step4A": "Try navigate around",
+    "step4B": "with hotkeys",
     "step4C": "",
 
-    "step5A": "Повтори текущий субтитр",
+    "step5A": "Repeat current subtitle",
     "step5B": "",
     "step5C": "",
 
-    "step6A": "Выдели курсором слово",
-    "step6B": "или его часть для перевода",
+    "step6A": "Highlight a word",
+    "step6B": "or a part of it to translate",
     "step6C": "",
 
-    "step7A": "Добавь в Tutor",
-    "step7B": "для повторения",
+    "step7A": "Add to Tutor",
+    "step7B": "for revision",
     "step7C": "",
   
-    "step8A": "Открой Tutor",
-    "step8B": "и повтори новые",
-    "step8C": "слова в играх",
+    "step8A": "Open Tutor",
+    "step8B": "and revise",
+    "step8C": "words in games",
 
-    "stepFinalA": "Учи английский язык",
-    "stepFinalB": "вместе с нами!",
-    "stepFinalC": "Твой EasyLang",
+    "stepFinalA": "Learn english",
+    "stepFinalB": "with us!",
+    "stepFinalC": "Your EasyLang",
 
     "topArrowText": "Repeat",
     "rightArrowTextA": "Next",
