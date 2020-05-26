@@ -3,8 +3,8 @@ import { Router, createHistory, LocationProvider } from "@reach/router";
 import "./App.scss";
 import languageEn from "../../assets/languages/en.json";
 import languageRu from "../../assets/languages/ru.json";
-import languageCn from "../../assets/languages/cn.json";
-import languageSp from "../../assets/languages/sp.json";
+import languageZh from "../../assets/languages/zh.json";
+import languageEs from "../../assets/languages/es.json";
 import Main from "../Main";
 import createHashSource from "hash-source";
 
@@ -17,9 +17,9 @@ class App extends React.Component {
     super(props);
     this.langStore = {
       en: languageEn,
-      sp: languageSp,
+      es: languageEs,
       ru: languageRu,
-      cn: languageCn,
+      zh: languageZh,
     };
   }
   getUserLanguageFromInputList() {
