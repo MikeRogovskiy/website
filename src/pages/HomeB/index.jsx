@@ -9,6 +9,8 @@ import step5 from "../../assets/images/test/step5Test.png";
 import step6 from "../../assets/images/test/step6Test.png";
 import step7 from "../../assets/images/test/step7Test.png";
 
+import nextBtn from "../../assets/images/test/orangeNextStepBtn.svg";
+
 import backgroundForTest1 from "../../assets/images/test/testMainPageA.svg";
 import backgroundForTest2 from "../../assets/images/test/testMainPageB.svg";
 
@@ -75,7 +77,7 @@ export default class HomeB extends Component {
                      <div className="container_page_btn">
                         <button id="button-height" className="start-test-button">НАЧАТЬ БЕСПЛАТНО</button>
                         <div id="container_page_steps">
-                            <button id="make-step" onClick={() => {action(1)}}>Следующий шаг</button>
+                            <input id="make-step" src={nextBtn} type="image" onClick={() => {action(1)}}></input>
                             <img id="step-img" src={step1}></img>
                         </div>
                         <button id="button-low" className="start-test-button">НАЧАТЬ БЕСПЛАТНО</button>
