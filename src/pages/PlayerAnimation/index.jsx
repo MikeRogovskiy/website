@@ -225,9 +225,9 @@ export default class PlayerAnimation extends Component {
             var sum = clicks + value;
             if (sum >= 0 && sum < 10) {
                 clicks = sum;
-                parent.postMessage(
+                window.parent.postMessage(
                     {
-                      step: _STEP_
+                      step: clicks
                     },
                     "*"
                   );
