@@ -1,0 +1,10 @@
+@import "../../styles/mixins";
+
+#inner-instruction-container{
+    @include centralColumnFlexPositionHWHundred;
+
+    img{
+        width:314px;
+        height: 354px;
+    };
+}
