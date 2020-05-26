@@ -4,6 +4,7 @@ import * as step from "./coordinates.jsx";
 import ReactHtmlParser from "react-html-parser";
 
 import "./playerAnimation.scss";
+import "./playerAnimationMedia.scss";
 
 import initialBackground from "../../assets/images/player-animation/background-images/initialStepBackground.png";
 
