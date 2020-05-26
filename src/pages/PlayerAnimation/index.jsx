@@ -40,6 +40,7 @@ export default class PlayerAnimation extends Component {
             .attr("width", "45%")
             .attr("visibility", "visible")
         .attr("xlink:href", instruction);
+        document.querySelector("body").style.overflow = "hidden"
     };
 
     getLangText(text){
