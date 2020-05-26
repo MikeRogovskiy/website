@@ -225,6 +225,12 @@ export default class PlayerAnimation extends Component {
             var sum = clicks + value;
             if (sum >= 0 && sum < 10) {
                 clicks = sum;
+                parent.postMessage(
+                    {
+                      step: _STEP_
+                    },
+                    "*"
+                  );
             };
 
 
@@ -293,8 +299,6 @@ export default class PlayerAnimation extends Component {
                                     strokeWidth="10%" stroke="#6AB2F5"  strokeOpacity="0.5" />
                         </g>
 
-                    
-
                         <g id="steps-svg-field_rectangle-group">
                             <rect id="rectangle-container" x="30%" y="50%" width="18%" height="13%"
                                     fill="white" stroke="#6AB2F5"  rx="5" strokeWidth="0.3%" />
@@ -312,7 +316,7 @@ export default class PlayerAnimation extends Component {
                         <g id="steps-svg-field_instruction-group">
                             <image id="instruction-image"></image>
                             <rect width="45%" height="14%" x="30%" y="5%" rx="10px" fill=" rgba(0, 0, 0, 0.3)"></rect>
-                            <text x="47%" y="13%" textAnchor="middle" fontSize="30px" fill="white">
+                            <text x="45%" y="13%" textAnchor="middle" fontSize="30px" fill="white">
                                 {this.getLangText("stepInitialInstruction")}
                             </text>
                         </g>
