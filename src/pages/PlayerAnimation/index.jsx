@@ -241,9 +241,13 @@ export default class PlayerAnimation extends Component {
                     makeStep(step.coordinatesInitial, initialBackground, textData.stepInitialA, textData.stepInitialB, textData.stepInitialC);
                     break
                 case 1:
+                    appearContentOf(document.querySelector("#steps-svg-field_instruction-group"));
+                    appearContentOf(document.querySelector("#instruction-image"));
                     makeStep(step.coordinatesA, backgroundA, textData.step1A, textData.step1B, textData.step1C);
                     break;
                 case 2:
+                    hideContentOf(document.querySelector("#steps-svg-field_instruction-group"));
+                    hideContentOf(document.querySelector("#instruction-image"));
                     makeStep(step.coordinatesB, backgroundB, textData.step2A, textData.step2B, textData.step2C);
                     removeBigArrows();
                     break;
@@ -271,10 +275,8 @@ export default class PlayerAnimation extends Component {
                 case 8:
                     changeTextColorOn("black")
                     makeStep(step.coordinatesH, backgroundH, textData.step8A, textData.step8B, textData.step8C);
-                    appearContentOf(document.querySelector("#instruction-image"));
                     break;
                 case 9:
-                    hideContentOf(document.querySelector("#instruction-image"));
                     changeTextColorOn("white")
                     makeStep(step.coordinatesFinal, backgroundFinal, textData.stepFinalA, textData.stepFinalB, textData.stepFinalC);
                 default:
