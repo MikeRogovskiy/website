@@ -37,38 +37,23 @@ export default class ExtensionInnerInstruction extends Component {
                 )
             };
 
-            firstText.addEventListener("click", function(){
-                changeEllipseColor(fisrtEllipse, secondEllipse, thirdEllipse, fourthEllipse, step1);
-            }, false);
+            function makeAMove(text, ellipse, elA, elB, elC, step){
+                text.addEventListener("click", function(){
+                    changeEllipseColor(ellipse, elA, elB, elC, step);
+                }, false);
 
-            secondText.addEventListener("click", function(){
-                changeEllipseColor(secondEllipse, fisrtEllipse, thirdEllipse, fourthEllipse, step2);
-            }, false);
+                ellipse.addEventListener("click", function(){
+                    changeEllipseColor(ellipse, elA, elB, elC, step);
+                }, false);
+            };
 
-            thirdText.addEventListener("click", function(){
-                changeEllipseColor(thirdEllipse, fisrtEllipse, secondEllipse, fourthEllipse, step3);
-            }, false);
+            makeAMove(firstText, fisrtEllipse, secondEllipse, thirdEllipse, fourthEllipse, step1);
 
-            fourthText.addEventListener("click", function(){
-                changeEllipseColor(fourthEllipse, fisrtEllipse, secondEllipse, thirdEllipse, step4);
-            }, false);
+            makeAMove(secondText, secondEllipse, fisrtEllipse, thirdEllipse, fourthEllipse, step2);
 
+            makeAMove(thirdText, thirdEllipse, fisrtEllipse, secondEllipse, fourthEllipse, step3);
 
-            fisrtEllipse.addEventListener("click", function(){
-                changeEllipseColor(fisrtEllipse, secondEllipse, thirdEllipse, fourthEllipse, step1);
-            }, false);
-
-            secondEllipse.addEventListener("click",function(){
-                changeEllipseColor(secondEllipse, fisrtEllipse, thirdEllipse, fourthEllipse, step2);
-            }, false);
-
-            thirdEllipse.addEventListener("click",function(){
-                changeEllipseColor(thirdEllipse, fisrtEllipse, secondEllipse, fourthEllipse, step3);
-            }, false);
-
-            fourthEllipse.addEventListener("click",function(){
-                changeEllipseColor(fourthEllipse, fisrtEllipse, secondEllipse, thirdEllipse, step4);
-            }, false);
+            makeAMove(fourthText, fourthEllipse, fisrtEllipse, secondEllipse, thirdEllipse, step4);
 
         });
     }
