@@ -73,9 +73,6 @@ export default class ExtensionInnerInstruction extends Component {
         });
     }
     render(){
-        function makeChange(){
-            
-        }
         return(
             <div id="inner-instruction-container">
                 <object id="container_svg" type="image/svg+xml" data={step1}></object>

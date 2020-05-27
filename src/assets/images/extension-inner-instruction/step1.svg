@@ -19,14 +19,14 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M189.574 225.832V230.695H190.574V225.832H194.246H195.246V224.832V220.348V219.348H194.246H190.574V217.402H189.574V219.348H185.901H184.901V220.348V224.832V225.832H185.901H189.574ZM190.574 224.832H194.246V220.348H190.574V224.832ZM189.574 220.348V224.832H185.901V220.348H189.574Z" fill="#333333" fill-opacity="0.5"/>
 </g>
 <path d="M47 39H295" stroke="url(#paint0_linear)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/>
-<circle id="stepA" cx="55" cy="39" r="15" fill="url(#paint1_linear)"/>
-<circle id="stepB" cx="135" cy="39" r="15" fill="#C4C4C4"/>
-<circle id="stepC" cx="215" cy="39" r="15" fill="#C4C4C4"/>
-<text id="stepAText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="50.1367" y="47.104">1</tspan></text>
-<text id="stepBText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="127.816" y="47.104">2</tspan></text>
-<text id="stepCText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="207.77" y="47.104">3</tspan></text>
-<circle id="stepD" cx="295" cy="39" r="15" fill="#C4C4C4"/>
-<text id="stepDText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="286.598" y="47.104">4</tspan></text>
+<circle cursor="pointer" id="stepA" cx="55" cy="39" r="15" fill="url(#paint1_linear)"/>
+<circle cursor="pointer" id="stepB" cx="135" cy="39" r="15" fill="#C4C4C4"/>
+<circle cursor="pointer" id="stepC" cx="215" cy="39" r="15" fill="#C4C4C4"/>
+<text cursor="pointer" id="stepAText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="50.1367" y="47.104">1</tspan></text>
+<text cursor="pointer" id="stepBText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="127.816" y="47.104">2</tspan></text>
+<text cursor="pointer" id="stepCText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="207.77" y="47.104">3</tspan></text>
+<circle cursor="pointer" id="stepD" cx="295" cy="39" r="15" fill="#C4C4C4"/>
+<text cursor="pointer" id="stepDText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="286.598" y="47.104">4</tspan></text>
 <path d="M55 217L48.9917 207.139L43.4562 217.273L55 217ZM32 181.575C32 167.46 39.8959 155.178 51.5356 148.879L50.5838 147.121C38.3267 153.753 30 166.694 30 181.575H32ZM47.6819 211.871C38.1868 205.127 32 194.07 32 181.575H30C30 194.747 36.5249 206.4 46.5238 213.501L47.6819 211.871Z" fill="url(#paint2_linear)"/>
 <circle cx="50" cy="148" r="6.5" fill="white" stroke="url(#paint3_linear)" stroke-width="3"/>
 </g>
