@@ -15,43 +15,6 @@
     flex-direction: column;
 };
 
-#container_page_steps{
+#svgObject{
     @include centralRowFlexPositionHWHundred;
-};
-
-#step-img{
-    width: 90vw;
-    padding-top: 30%;
-};
-
-#make-step{
-    @include buttonCorrect;
-    width: 10%;
-    height: 60px;
-    margin-top: 22%;
-    margin-left: -25%;
-    position: absolute;
-    background-size: 100%;
-};
-
-.container_page_btn{
-    @include centralRowFlexPositionHWHundred;
-};
-
-.start-test-button{
-    @include buttonCorrect;
-    background-color: green;
-    border-radius: 5px;
-    color: white;
-    position: absolute;
-    font-size: 1.2vw;
-    padding: 1%;
-};
-
-#button-height{
-    margin-top: -23.5%;
-};
-
-#button-low{
-    margin-top: 32%;
 };
