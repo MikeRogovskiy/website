@@ -3,7 +3,7 @@
 
 #homeB-container{
     @include centralColumnFlexPositionHWHundred;
-    overflow: hidden;
+    // overflow: hidden;
 };
 
 #homeB-container_page{
@@ -18,3 +18,14 @@
 #svgObject{
     @include centralRowFlexPositionHWHundred;
 };
+
+#step2Object{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+   top: 120%;
+}

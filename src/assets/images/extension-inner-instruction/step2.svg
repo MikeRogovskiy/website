@@ -38,14 +38,16 @@
 <path d="M294 327L299.379 316.782L305.538 326.549L294 327ZM300.946 321.453C308.23 315.024 311.922 304.799 311.845 293.145C311.769 281.5 307.924 268.52 300.253 256.745C284.939 233.238 254.363 214.519 208.139 220.99L207.861 219.01C254.825 212.435 286.175 231.471 301.929 255.654C309.792 267.724 313.766 281.073 313.845 293.132C313.924 305.181 310.107 316.035 302.269 322.952L300.946 321.453Z" fill="url(#paint2_linear)"/>
 <circle r="7" transform="matrix(-1 0 0 1 208 220)" fill="white" stroke="url(#paint3_linear)" stroke-width="2"/>
 <path d="M47 39H295" stroke="url(#paint4_linear)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/>
-<circle cursor="pointer" id="stepA" cx="55" cy="39" r="15" fill="#C4C4C4"/>
-<circle cursor="pointer" id="stepB" cx="135" cy="39" r="15" fill="url(#paint5_linear)"/>
-<circle cursor="pointer" id="stepC" cx="215" cy="39" r="15" fill="#C4C4C4"/>
-<text cursor="pointer" id="stepAText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="50.1367" y="47.104">1</tspan></text>
-<text cursor="pointer" id="stepBText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="127.816" y="47.104">2</tspan></text>
-<text cursor="pointer" id="stepCText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="207.77" y="47.104">3</tspan></text>
-<circle cursor="pointer" id="stepD" cx="295" cy="39" r="15" fill="#C4C4C4"/>
-<text cursor="pointer" id="stepDText" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan onselectstart="return false" x="286.598" y="47.104">4</tspan></text>
+<circle id="stepA" cursor="pointer" cx="55" cy="39" r="15" fill="#C4C4C4"/>
+<circle id="stepB" cursor="pointer" cx="135" cy="39" r="15" fill="url(#paint5_linear)"/>
+<circle id="stepC" cursor="pointer" cx="215" cy="39" r="15" fill="#C4C4C4"/>
+<text  id="stepAText" cursor="pointer" user-select="none" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="50.1367" y="47.104">1</tspan></text>
+<text  id="stepBText" cursor="pointer" user-select="none" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="127.816" y="47.104">2</tspan></text>
+<text  id="stepCText" cursor="pointer" user-select="none" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="207.77" y="47.104">3</tspan></text>
+<circle id="stepD" cursor="pointer" cx="295" cy="39" r="15" fill="#C4C4C4"/>
+<text  id="stepDText" cursor="pointer" user-select="none" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="286.598" y="47.104">4</tspan></text>
+<path id="right-arrow" cursor="pointer" d="M328.625 201.25L340.375 189.5L328.625 177.75" stroke="url(#paint6_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="left-arrow" cursor="pointer" d="M21.375 201.25L9.625 189.5L21.375 177.75" stroke="url(#paint7_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
 <filter id="filter0_d" x="56" y="283" width="237" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -102,6 +104,14 @@
 <stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="paint5_linear" x1="128.684" y1="30.5455" x2="130.373" y2="50.1041" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6178F5"/>
+<stop offset="1" stop-color="#195AA9"/>
+</linearGradient>
+<linearGradient id="paint6_linear" x1="332.026" y1="182.877" x2="334.615" y2="197.865" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6178F5"/>
+<stop offset="1" stop-color="#195AA9"/>
+</linearGradient>
+<linearGradient id="paint7_linear" x1="17.9737" y1="182.877" x2="15.3848" y2="197.865" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6178F5"/>
 <stop offset="1" stop-color="#195AA9"/>
 </linearGradient>

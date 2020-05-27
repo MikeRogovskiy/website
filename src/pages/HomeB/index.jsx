@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import * as d3 from "d3";
 import "./homeB.scss";
 
-import step1 from "../../assets/images/test/step1Test.png";
-import step2 from "../../assets/images/test/step2Test.png";
-import step3 from "../../assets/images/test/step3Test.png";
-import step4 from "../../assets/images/test/step4Test.png";
-import step5 from "../../assets/images/test/step5Test.png";
-import step6 from "../../assets/images/test/step6Test.png";
-import step7 from "../../assets/images/test/step7Test.png";
+import step1 from "../../assets/images/test/step1Test.svg";
+import step2 from "../../assets/images/test/step2Test.svg";
+import step3 from "../../assets/images/test/step3Test.svg";
+import step4 from "../../assets/images/test/step4Test.svg";
+import step5 from "../../assets/images/test/step5Test.svg";
+import step6 from "../../assets/images/test/step6Test.svg";
+// import step7 from "../../assets/images/test/step7Test.png";
 
 import nextBtn from "../../assets/images/test/orangeNextStepBtn.svg";
 
@@ -19,20 +19,63 @@ import backgroundForTest2 from "../../assets/images/test/testMainPageB.svg";
 
 export default class HomeB extends Component {
     componentDidMount(){
-        var main = document.getElementById("svgObject");
+        const main = document.getElementById("svgObject");
+        const extensionLink = "https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel";
+        const blogLink = "https://easylang.app/blog";
+        const readNLearnLink = "https://easylang.app/extension";
+        const watchNLearnLink = "https://easylang.app/player";
 
         main.addEventListener("load",function(){
-            var svgDoc = main.contentDocument;
-            var startBtn = svgDoc.getElementById("start-btn-test");
-                // nextStepBtn
+            const svgDoc = main.contentDocument;
+            let placeForStep = svgDoc.getElementById("step-place");
+
+            placeForStep.style.visibility = "hidden";
+        
+
+            const startBtnNav = svgDoc.getElementById("start-btn-test-nav");
+            const startBtnHeigh = svgDoc.getElementById("start-btn-test-heigh");
+            const startBtnLow = svgDoc.getElementById("start-btn-test-low");
+
+            const blog = svgDoc.getElementById("blog")
+            const readNLearn = svgDoc.getElementById("read-n-learn");
+            const watchNLearn = svgDoc.getElementById("watch-n-learn");
+
+            const nextStepMain = svgDoc.getElementById("nextStepBtn");
                 //step1 ... 7
-            startBtn.addEventListener("click",function(){
-                    // alert('hello world!')
-                    document.location="https://easylang.app/player"
+
+            startBtnNav.addEventListener("click",function(){
+                document.location = extensionLink;
             }, false);
+
+            startBtnHeigh.addEventListener("click",function(){
+                document.location = extensionLink;
+            }, false);
+
+            startBtnLow.addEventListener("click",function(){
+                document.location = extensionLink;
+            }, false);
+
+            blog.addEventListener("click",function(){
+                document.location = blogLink;
+            }, false);
+
+            readNLearn.addEventListener("click",function(){
+                document.location = readNLearnLink;
+            }, false);
+
+            watchNLearn.addEventListener("click",function(){
+                document.location = watchNLearnLink;
+            }, false);
+
+
+
+
+
+
+
         }, false);
     }
- 
+
     render(){
 
         // function changeStep(step){
@@ -77,7 +120,13 @@ export default class HomeB extends Component {
         //     };
 
         return (
-            <object id="svgObject"  type="image/svg+xml" data={backgroundForTest1} />
+            <div>
+                {/* <img id="step2Object" src={step2}></img> */}
+                <object id="svgObject"  type="image/svg+xml" data={backgroundForTest1}>
+                    
+                </object>
+               
+            </div>
         )
     }
 }
