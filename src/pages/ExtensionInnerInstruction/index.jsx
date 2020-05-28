@@ -10,40 +10,63 @@ import step4 from "../../assets/images/extension-inner-instruction/step4.svg";
 export default class ExtensionInnerInstruction extends Component {
     componentDidMount(){
         let main = document.getElementById("container_svg");
-        const stepsArray = [step1,step2,step3,step4];
-        
+
         var i = 1;
         main.addEventListener("load",function(){
-            let svgDoc = main.contentDocument;
+            const svgDoc = main.contentDocument;
 
-            let leftArrow = svgDoc.getElementById("left-arrow");
-            let rightArrow = svgDoc.getElementById("right-arrow");
+            const leftArrow = svgDoc.getElementById("left-arrow");
+            const rightArrow = svgDoc.getElementById("right-arrow");
+            const rightArrowCircle = svgDoc.getElementById("right-arrow-circle");
+            const leftArrowCircle = svgDoc.getElementById("left-arrow-circle");
 
-            function changeSVG(step){
-                main.data = step
+            function nextSlide(event){
+                event.addEventListener("click", function(){
+                    switch(i){
+                        case 1:
+                        i++
+                        main.data = step2;
+                        leftArrow.style.visibility = "hidden";
+                        break;
+                    case 2:
+                        i++
+                        main.data = step3;
+                        break;
+                    case 3:
+                        i++
+                        main.data = step4;
+                        break;
+                    }
+                })
             };
 
-            function makeAMove(step){
-
-                rightArrow.addEventListener("click", function(){
-                    if(i < 3){
-                        i++;
+            function previousSlide(event){
+                event.addEventListener("click", function(){
+                    switch(i){
+                        case 1:
+                            main.data = step1;
+                            break;
+                        case 2:
+                            i--
+                            main.data = step1;
+                            break;
+                        case 3:
+                            i--
+                            main.data = step2;
+                            break;
+                        case 4:
+                            i--
+                            main.data = step3;
+                            break;
                     }
-                    changeSVG(step);
-                }, false);
-
-                leftArrow.addEventListener("click", function(){
-                    if(i > 0){
-                        --i;
-                    }
-                    changeSVG(step);
-
-                }, false);
-                console.log(i)
-
+                })
             };
 
-            makeAMove( stepsArray[i]);
+            rightArrowCircle.onclick = nextSlide(rightArrowCircle);
+            rightArrow.onclick = nextSlide(rightArrow);
+
+            leftArrowCircle.onclick = previousSlide(leftArrowCircle);
+            leftArrow.onclick = previousSlide(leftArrow);
 
         });
     }

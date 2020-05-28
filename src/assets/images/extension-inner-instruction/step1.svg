@@ -30,7 +30,9 @@
 <path d="M55 217L48.9917 207.139L43.4562 217.273L55 217ZM32 181.575C32 167.46 39.8959 155.178 51.5356 148.879L50.5838 147.121C38.3267 153.753 30 166.694 30 181.575H32ZM47.6819 211.871C38.1868 205.127 32 194.07 32 181.575H30C30 194.747 36.5249 206.4 46.5238 213.501L47.6819 211.871Z" fill="url(#paint2_linear)"/>
 <circle cx="50" cy="148" r="6.5" fill="white" stroke="url(#paint3_linear)" stroke-width="3"/>
 <path id="right-arrow" cursor="pointer" d="M328.625 201.25L340.375 189.5L328.625 177.75" stroke="url(#paint4_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="left-arrow" cursor="pointer" d="M21.375 201.25L9.625 189.5L21.375 177.75" stroke="url(#paint5_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="left-arrow" visibility="hidden" cursor="pointer" d="M21.375 201.25L9.625 189.5L21.375 177.75" stroke="url(#paint5_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="right-arrow-circle" cursor="pointer" fill="white" opacity="0.1" cx="330" cy="190" r="20"></circle>
+<circle id="left-arrow-circle" visibility="hidden" cursor="pointer" fill="white" opacity="0.1" cx="20" cy="190" r="20"></circle>
 </g>
 <defs>
 <filter id="filter0_d" x="57" y="179" width="237" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
