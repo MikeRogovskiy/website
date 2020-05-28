@@ -8,7 +8,7 @@
 <rect x="57" y="308" width="235" height="64" rx="13" fill="white"/>
 </g>
 <text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="800" letter-spacing="0em"><tspan x="65" y="97.736">TRANSLATE THE SENTENCE</tspan></text>
-<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="42.3164" y="101.104">2</tspan></text>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan visibility="hidden" x="42.3164" y="101.104">2</tspan></text>
 <rect x="54" y="131" width="72" height="32" rx="2" fill="#6078F4"/>
 <text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" letter-spacing="0em"><tspan x="120.688" y="155.104"> dear friend! </tspan></text>
 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="bold" letter-spacing="0em"><tspan x="56" y="155.104">Hello</tspan></text>
