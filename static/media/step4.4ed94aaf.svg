@@ -4,14 +4,14 @@
 <text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="67" y="97.736">YOUR WORDS REPEAT GAMES</tspan></text>
 <text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="42.0977" y="101.104">4</tspan></text>
 <path d="M47 39H295" stroke="url(#paint0_linear)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/>
-<circle id="stepA"  cx="55" cy="39" r="15" fill="#C4C4C4"/>
-<circle id="stepB" cx="135" cy="39" r="15" fill="#C4C4C4"/>
-<circle id="stepC"  cx="215" cy="39" r="15" fill="#C4C4C4"/>
-<text id="stepAText"  fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="50.1367" y="47.104">1</tspan></text>
-<text id="stepBText" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="127.816" y="47.104">2</tspan></text>
-<text id="stepCText" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="207.77" y="47.104">3</tspan></text>
-<circle id="stepD" cx="295" cy="39" r="15" fill="url(#paint1_linear)"/>
-<text id="stepDText" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="286.598" y="47.104">4</tspan></text>
+<circle id="stepA" cursor="pointer" cx="55" cy="39" r="15" fill="#C4C4C4"/>
+<circle id="stepB" cursor="pointer" cx="135" cy="39" r="15" fill="#C4C4C4"/>
+<circle id="stepC" cursor="pointer" cx="215" cy="39" r="15" fill="#C4C4C4"/>
+<text id="stepAText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="50.1367" y="47.104">1</tspan></text>
+<text id="stepBText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="127.816" y="47.104">2</tspan></text>
+<text id="stepCText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="207.77" y="47.104">3</tspan></text>
+<circle id="stepD" cursor="pointer" cx="295" cy="39" r="15" fill="url(#paint1_linear)"/>
+<text id="stepDText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="286.598" y="47.104">4</tspan></text>
 <g filter="url(#filter0_d)">
 <rect x="87" y="251" width="175" height="40" rx="5" fill="#6078F4"/>
 </g>
