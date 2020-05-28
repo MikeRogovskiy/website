@@ -20,6 +20,11 @@ export default class ExtensionInnerInstruction extends Component {
             const rightArrowCircle = svgDoc.getElementById("right-arrow-circle");
             const leftArrowCircle = svgDoc.getElementById("left-arrow-circle");
 
+            svgDoc.getElementById("stepAText").style.userSelect = "none";
+            svgDoc.getElementById("stepBText").style.userSelect = "none";
+            svgDoc.getElementById("stepCText").style.userSelect = "none";
+            svgDoc.getElementById("stepDText").style.userSelect = "none";
+
             function nextSlide(event){
                 event.addEventListener("click", function(){
                     switch(i){
