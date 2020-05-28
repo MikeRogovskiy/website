@@ -209,7 +209,9 @@
       "9-SlidePlayerHeader": "Para repetir las palabras <br/> escanea el QR, <br/> y ve a los juegos",
       "9-SlidePlayerBody": "Para abrir juegos, simplemente escanea el código QR.",
       "10-SlidePlayerHeader": "¡No es necesario instalar nada!",
-      "10-SlidePlayerBody": "Todo está en tu navegador habitual. Ahora puede repetir el material en cualquier lugar conveniente para usted. Y para que no sea aburrido, creamos varios juegos para el proceso de repetir palabras."
+      "10-SlidePlayerBody": "Todo está en tu navegador habitual. Ahora puede repetir el material en cualquier lugar conveniente para usted. Y para que no sea aburrido, creamos varios juegos para el proceso de repetir palabras.",
+      "GetStartedBottomText": "<ul><li>Translate word and phrases within sentences</li><li>Revise words in context (that you have read it in)</li><li>Revise via games (available on mobile)</li><li>Expand your vocabulary</li></ul>"
+
     },
 
     "PlansPage": {

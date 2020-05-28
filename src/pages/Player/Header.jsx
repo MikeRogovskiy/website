@@ -14,7 +14,6 @@ const Header = (props) => {
     const macLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg';
     const windowsLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe';
     // http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg
-    
 
     return (
         <header className="getStartedPlayer-header">
@@ -45,7 +44,7 @@ const Header = (props) => {
                 <div>
                     <p className="getStarted-subtitle">{getLangText("GetStartedBottomText")}</p>
                 </div>
-                
+
             </div>
         </header>
     )

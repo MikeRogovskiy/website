@@ -11,13 +11,17 @@ export default class StartBtn extends React.Component {
 
     render() {
         return (
-            <Link 
-                to={this.props.link}
-                rel="noopener noreferrer"
-                id={this.props.id}
-            >
-                {this.props.text}
-            </Link>
+            <div>
+                { window.location.href.includes("player") !== true &&
+                    <Link
+                    to={this.props.link}
+                    rel="noopener noreferrer"
+                    id={this.props.id}
+                    >
+                        {this.props.text}
+                    </Link>
+                }
+            </div>
         );
 
     };

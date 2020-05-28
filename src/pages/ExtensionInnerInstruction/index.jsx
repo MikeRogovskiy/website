@@ -19,7 +19,7 @@ export default class ExtensionInnerInstruction extends Component {
             const rightArrow = svgDoc.getElementById("right-arrow");
             const rightArrowCircle = svgDoc.getElementById("right-arrow-circle");
             const leftArrowCircle = svgDoc.getElementById("left-arrow-circle");
-
+            
             svgDoc.getElementById("stepAText").style.userSelect = "none";
             svgDoc.getElementById("stepBText").style.userSelect = "none";
             svgDoc.getElementById("stepCText").style.userSelect = "none";

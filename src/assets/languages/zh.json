@@ -208,7 +208,9 @@
       "9-SlidePlayerHeader": "To repeat words <br/> just scan QR code <br/> and go to games",
       "9-SlidePlayerBody": "In order to play scan the QR code.",
       "10-SlidePlayerHeader": "Nothing to install!",
-      "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!"
+      "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!",
+      "GetStartedBottomText": "<ul><li>Translate word and phrases within sentences</li><li>Revise words in context (that you have read it in)</li><li>Revise via games (available on mobile)</li><li>Expand your vocabulary</li></ul>"
+
     },
 
 
