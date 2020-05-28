@@ -1,7 +1,9 @@
 <svg width="350" height="378" viewBox="0 0 350 378" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <rect width="350" height="378" fill="white"/>
-<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="67" y="97.736">YOUR WORDS REPEAT GAMES</tspan></text>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="60" y="97.736">YOUR SAVED WORDS</tspan></text>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="60" y="120">ARE IN GAMES</tspan></text>
+
 <text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan visibility="hidden" x="42.0977" y="101.104">4</tspan></text>
 <path d="M47 39H295" stroke="url(#paint0_linear)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/>
 <circle id="stepA" cursor="pointer" cx="55" cy="39" r="15" fill="#C4C4C4"/>

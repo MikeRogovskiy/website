@@ -71,27 +71,26 @@ export default class HomeB extends Component {
                 document.location = watchNLearnLink;
             }, false);
 
-            // function nextSlideMain(event){
-            //     event.addEventListener("click", function(){
-            //         switch(i){
-            //             case 1:
-            //             i++
-            //             place.src = step2;
-            //             break;
-            //         case 2:
-            //             i++
-            //             place.src = step3;
-            //             break;
-            //         case 3:
-            //             i++
-            //             place.src = step4;
-            //             break;
-            //         }
-            //     })
-            // };
+            function nextSlideMain(event){
+                event.addEventListener("click", function(){
+                    switch(i){
+                        case 1:
+                        i++
+                        place.style.src = step2;
+                        break;
+                    case 2:
+                        i++
+                        place.style.src = step3;
+                        break;
+                    case 3:
+                        i++
+                        place.style.src = step4;
+                        break;
+                    }
+                })
+            };
 
-            // nextStepMain.onclick = nextSlideMain(nextStepMain)
-            nextStepMain.onclick = alert("HA")
+            nextStepMain.onclick = nextSlideMain(nextStepMain)
 
 
 
