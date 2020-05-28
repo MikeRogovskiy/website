@@ -25,11 +25,13 @@ export default class HomeB extends Component {
         const readNLearnLink = "https://easylang.app/extension";
         const watchNLearnLink = "https://easylang.app/player";
 
+        var i = 1;
+
         main.addEventListener("load",function(){
             const svgDoc = main.contentDocument;
             let placeForStep = svgDoc.getElementById("step-place");
 
-            placeForStep.style.visibility = "hidden";
+            // placeForStep.style.visibility = "hidden";
         
 
             const startBtnNav = svgDoc.getElementById("start-btn-test-nav");
@@ -41,6 +43,8 @@ export default class HomeB extends Component {
             const watchNLearn = svgDoc.getElementById("watch-n-learn");
 
             const nextStepMain = svgDoc.getElementById("nextStepBtn");
+
+            const place = svgDoc.getElementById("stepObject");
                 //step1 ... 7
 
             startBtnNav.addEventListener("click",function(){
@@ -67,8 +71,27 @@ export default class HomeB extends Component {
                 document.location = watchNLearnLink;
             }, false);
 
+            // function nextSlideMain(event){
+            //     event.addEventListener("click", function(){
+            //         switch(i){
+            //             case 1:
+            //             i++
+            //             place.src = step2;
+            //             break;
+            //         case 2:
+            //             i++
+            //             place.src = step3;
+            //             break;
+            //         case 3:
+            //             i++
+            //             place.src = step4;
+            //             break;
+            //         }
+            //     })
+            // };
 
-
+            // nextStepMain.onclick = nextSlideMain(nextStepMain)
+            nextStepMain.onclick = alert("HA")
 
 
 
@@ -78,54 +101,12 @@ export default class HomeB extends Component {
 
     render(){
 
-        // function changeStep(step){
-        //     let stepPlace = document.querySelector("#step-img");
-        //     stepPlace.src = step;
-
-        // };
-        // var clicks = 0;
-
-        // function action(value){
-
-        //     var sum = clicks + value;
-        //     if (sum >= 0 && sum < 10) {
-        //         clicks = sum;
-        //     };
-
-
-        //     switch(clicks){
-        //         case 0:
-        //             changeStep(step1)
-        //             break
-        //         case 1:
-        //             changeStep(step2)
-        //             break;
-        //         case 2:
-        //             changeStep(step3)
-        //             break;
-        //         case 3:
-        //             changeStep(step4)
-        //             break;
-        //         case 4:
-        //             changeStep(step5)
-        //             break;
-        //         case 5:
-        //             changeStep(step6)
-        //             break;
-        //         case 6:
-        //             changeStep(step7)
-        //             break;
-        //         default:
-
-        //     };
-
         return (
             <div>
-                {/* <img id="step2Object" src={step2}></img> */}
+                <img id="stepObject" src={step2}></img>
                 <object id="svgObject"  type="image/svg+xml" data={backgroundForTest1}>
                     
                 </object>
-               
             </div>
         )
     }
