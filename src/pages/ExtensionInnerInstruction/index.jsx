@@ -19,13 +19,23 @@ export default class ExtensionInnerInstruction extends Component {
             const rightArrow = svgDoc.getElementById("right-arrow");
             const rightArrowCircle = svgDoc.getElementById("right-arrow-circle");
             const leftArrowCircle = svgDoc.getElementById("left-arrow-circle");
-            
-            svgDoc.getElementById("stepAText").style.userSelect = "none";
-            svgDoc.getElementById("stepBText").style.userSelect = "none";
-            svgDoc.getElementById("stepCText").style.userSelect = "none";
-            svgDoc.getElementById("stepDText").style.userSelect = "none";
 
-            function nextSlide(event){
+            const firstHeighCircle = svgDoc.getElementById("stepA");
+            const secondHeighCircle = svgDoc.getElementById("stepB");
+            const thirdHeighCircle = svgDoc.getElementById("stepC");
+            const fourthHeighCircle = svgDoc.getElementById("stepD");
+
+            const firstHeighText = svgDoc.getElementById("stepAText");
+            const secondHeighText = svgDoc.getElementById("stepBText");
+            const thirdHeighText =  svgDoc.getElementById("stepCText");
+            const fourthHeighText = svgDoc.getElementById("stepDText");
+            
+            firstHeighText.style.userSelect = "none";
+            secondHeighText.style.userSelect = "none";
+            thirdHeighText.style.userSelect = "none";
+            fourthHeighText.style.userSelect = "none";
+
+            function nextSlideArrow(event){
                 event.addEventListener("click", function(){
                     switch(i){
                         case 1:
@@ -45,7 +55,7 @@ export default class ExtensionInnerInstruction extends Component {
                 })
             };
 
-            function previousSlide(event){
+            function previousSlideArrow(event){
                 event.addEventListener("click", function(){
                     switch(i){
                         case 1:
@@ -67,11 +77,28 @@ export default class ExtensionInnerInstruction extends Component {
                 })
             };
 
-            rightArrowCircle.onclick = nextSlide(rightArrowCircle);
-            rightArrow.onclick = nextSlide(rightArrow);
+            rightArrowCircle.onclick = nextSlideArrow(rightArrowCircle);
+            rightArrow.onclick = nextSlideArrow(rightArrow);
 
-            leftArrowCircle.onclick = previousSlide(leftArrowCircle);
-            leftArrow.onclick = previousSlide(leftArrow);
+            leftArrowCircle.onclick = previousSlideArrow(leftArrowCircle);
+            leftArrow.onclick = previousSlideArrow(leftArrow);
+
+            function makeStepCircles(event, step, changedIndex){
+                event.addEventListener("click", function(){
+                    main.data = step;
+                    i = changedIndex;
+                })
+            };
+
+            firstHeighCircle.onclick = makeStepCircles(firstHeighCircle, step1, 1);
+            secondHeighCircle.onclick = makeStepCircles(secondHeighCircle, step2, 2);
+            thirdHeighCircle.onclick = makeStepCircles(thirdHeighCircle, step3, 3);
+            fourthHeighCircle.onclick = makeStepCircles(fourthHeighCircle, step4, 4);
+
+            firstHeighText.onclick = makeStepCircles(firstHeighText, step1, 1);
+            secondHeighText.onclick = makeStepCircles(secondHeighText, step2, 2);
+            thirdHeighText.onclick = makeStepCircles(thirdHeighText, step3, 3);
+            fourthHeighText.onclick = makeStepCircles(fourthHeighText, step4, 4);
 
         });
     }
