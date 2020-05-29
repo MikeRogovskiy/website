@@ -4,6 +4,9 @@ import "./playerInstruction.scss";
 import videoExplanation from "../../assets/images/player-instruction/video-explanation.svg";
 import subtitlesExplanation from "../../assets/images/player-instruction/subtitles-explanation.svg";
 
+import smallArrow from "../../assets/images/player-instruction/small-arrow.svg";
+import bigArrow from "../../assets/images/player-instruction/big-arrow.svg";
+
 
 
 export default class PlayerInstruction extends Component {
@@ -33,6 +36,10 @@ export default class PlayerInstruction extends Component {
                             <h3>Open Download Subtitles</h3>
                         </div>
                         <div id="container_footer_images" className="player-instruction-content">
+                            <div id="container_footer_images_arrows">
+                                <img src={smallArrow}></img>
+                                <img src={bigArrow}></img>
+                            </div>
                             <img src={videoExplanation}></img>
                             <img id="footer_images_subtitles" src={subtitlesExplanation}></img>
                         </div>
