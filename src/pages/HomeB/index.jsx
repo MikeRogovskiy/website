@@ -8,31 +8,30 @@ import step3 from "../../assets/images/test/step3Test.svg";
 import step4 from "../../assets/images/test/step4Test.svg";
 import step5 from "../../assets/images/test/step5Test.svg";
 import step6 from "../../assets/images/test/step6Test.svg";
-// import step7 from "../../assets/images/test/step7Test.png";
 
-import nextBtn from "../../assets/images/test/orangeNextStepBtn.svg";
 
-// import backgroundForTest1 from "../../assets/images/test/testMainPageA.svg";
+
 import backgroundForTest1 from "../../assets/images/test/testA.svg";
 import backgroundForTest2 from "../../assets/images/test/testMainPageB.svg";
 
 
 export default class HomeB extends Component {
     componentDidMount(){
-        const main = document.getElementById("svgObject");
         const extensionLink = "https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel";
         const blogLink = "https://easylang.app/blog";
         const readNLearnLink = "https://easylang.app/extension";
         const watchNLearnLink = "https://easylang.app/player";
 
+        const main = document.getElementById("svgObject");
+
         var i = 1;
+
+        // Не тот свг
 
         main.addEventListener("load",function(){
             const svgDoc = main.contentDocument;
             let placeForStep = svgDoc.getElementById("step-place");
 
-            // placeForStep.style.visibility = "hidden";
-        
 
             const startBtnNav = svgDoc.getElementById("start-btn-test-nav");
             const startBtnHeigh = svgDoc.getElementById("start-btn-test-heigh");
@@ -42,10 +41,7 @@ export default class HomeB extends Component {
             const readNLearn = svgDoc.getElementById("read-n-learn");
             const watchNLearn = svgDoc.getElementById("watch-n-learn");
 
-            const nextStepMain = svgDoc.getElementById("nextStepBtn");
-
-            const place = svgDoc.getElementById("stepObject");
-                //step1 ... 7
+            const nextStepMainInitial = svgDoc.getElementById("nextStepBtn");
 
             startBtnNav.addEventListener("click",function(){
                 document.location = extensionLink;
@@ -71,29 +67,43 @@ export default class HomeB extends Component {
                 document.location = watchNLearnLink;
             }, false);
 
+
+            let place = document.getElementById("stepObject");
+
             function nextSlideMain(event){
                 event.addEventListener("click", function(){
                     switch(i){
                         case 1:
+                        // placeForStep.style.visibility = "hidden";
                         i++
-                        place.style.src = step2;
+                        // place.data = step1;
+                        placeForStep.contentDocument = step1;
                         break;
                     case 2:
                         i++
-                        place.style.src = step3;
+                        // place.data = step3;
                         break;
                     case 3:
                         i++
-                        place.style.src = step4;
+                        // place.data = step4;
+                        break;
+                    case 4:
+                        i++
+                        // place.data = step5;
+                        break;
+                    case 5:
+                        i++
+                        // place.data = step6;
+                        break;
+                    case 6:
+                        i = 1;
+                        // place.data = step1;
                         break;
                     }
                 })
             };
 
-            nextStepMain.onclick = nextSlideMain(nextStepMain)
-
-
-
+            nextStepMainInitial.onclick = nextSlideMain(nextStepMainInitial)
 
         }, false);
     }
@@ -102,10 +112,7 @@ export default class HomeB extends Component {
 
         return (
             <div>
-                <img id="stepObject" src={step2}></img>
-                <object id="svgObject"  type="image/svg+xml" data={backgroundForTest1}>
-                    
-                </object>
+                <object id="svgObject"  type="image/svg+xml" data={backgroundForTest1} />
             </div>
         )
     }

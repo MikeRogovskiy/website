@@ -1,0 +1,110 @@
+@import "../../styles/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+#player-instruction{
+    @include centralColumnFlexPositionHWHundred;
+    background-color: #000000;
+    
+
+    h1{
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 59px;
+    };
+
+    h2{
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 37px;
+        color: #FFFFFF;
+        text-align: center;
+    };
+
+    p{
+        @include pureBody;
+        padding-left: 2%;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+
+    };
+
+    #container_footer_text{
+        width: 100%;
+      
+        h3{
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 37px;
+            color: #FFFFFF;
+        };
+
+    };
+
+    #container_footer_images{
+        width: 100%;
+        padding-top: 1%;
+    };
+
+
+};
+
+#container_footer_text h3:nth-child(2){
+    margin-left: 4%;
+};
+
+#container_footer_text h3:nth-child(3){
+    margin-left: 10%;
+};
+
+#container_footer_text h3:nth-child(4){
+    margin-left: 10%;
+};
+
+#footer_images_subtitles{
+    margin-left: 10%;
+}
+
+
+#player-instruction_container{
+    padding-top: 5%;
+    padding-bottom: 20%;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+};
+
+.player-instruction-content{
+    display: inline-flex;
+};
+
+#container_header, #container_main, #container_footer{
+    padding-top: 5%;
+}
+
+.download-btn{
+    @include buttonCorrect;
+    width: 256px;
+    height: 56px;
+    background: #3CBE8A;
+    border-radius: 10px;
+    margin-left: 2%;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+};
