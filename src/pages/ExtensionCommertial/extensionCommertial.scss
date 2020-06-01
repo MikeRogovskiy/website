@@ -27,11 +27,11 @@
             width: 850px;
             position: absolute;
             margin-top: -50px;
-            margin-left: -70px;
+            margin-left: -60px;
         };
 
         #commertial_container_main{
-            padding: 50px 30px 50px 30px;
+            padding: 50px 20px 50px 10px;
             background: #1F1F1F;
             border-radius: 10px;
 
@@ -52,7 +52,7 @@
                 #commertial_container_main_content_text{
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 16px;
+                    font-size: 18px;
                     line-height: 25px;
                     color: $color;
 
@@ -63,7 +63,7 @@
                         padding-bottom: 15%;
                     };
 
-                    #commertial_container_main_content_text span{
+                    span{
                         @include normalBoldFont;
                     };
                 };
@@ -85,6 +85,7 @@
     @include normalBoldFont;
     @include buttonCorrect;
     background-color: #00B78B;
+    box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     color: $color;
     width: 300px;
