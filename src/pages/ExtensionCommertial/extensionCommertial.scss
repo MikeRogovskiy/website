@@ -5,7 +5,8 @@
 #extension-commertial{
   @include centralRowFlexPositionHWHundred;
   font-family: Open Sans;
-  margin-top: 300px;
+  padding: 100px;
+//   margin-top: 300px;
 
     h2{
         @include normalBoldFont;

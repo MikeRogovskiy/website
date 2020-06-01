@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./extensionCommertial.scss"
 
-import sideImg from "../../assets/images/extension-commertial/side-image.svg";
+import sideImgleft from "../../assets/images/extension-commertial/side-image-left.svg";
 import mainImg from "../../assets/images/extension-commertial/main-brain.svg";
-import testi from "../../assets/images/extension-commertial/Group 308.svg";
+import sideImgRight from "../../assets/images/extension-commertial/side-image-right.svg";
 
 export default class ExtensionCommertial extends Component{
     render(){
@@ -12,9 +12,8 @@ export default class ExtensionCommertial extends Component{
                 <div id="extension-commertial_conatiner">
 
                     <div id="commertial_container_header">
-                        <img src={sideImg}></img>
-                        <input id="close-pop-commertial" type="image" src={testi}></input>
-                        {/* <h3 id="close-pop-commertial">X</h3> */}
+                        <img src={sideImgleft}></img>
+                        <input id="close-pop-commertial" type="image" src={sideImgRight}></input>
                     </div>
 
                     <div id="commertial_container_main">
