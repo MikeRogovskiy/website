@@ -1,0 +1,100 @@
+@import "../../styles/mixins";
+@import "../../styles//variables";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap");
+
+#extension-commertial{
+  @include centralRowFlexPositionHWHundred;
+  font-family: Open Sans;
+  margin-top: 300px;
+
+    h2{
+        @include normalBoldFont;
+        font-family: Open Sans;
+        color: $color;
+        font-size: 36px;
+        line-height: 49px;
+    };
+
+    #extension-commertial_conatiner{
+        flex-direction: column;
+        max-width: 800px;
+        max-height: 420px;
+
+        #commertial_container_header{
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 850px;
+            position: absolute;
+            margin-top: -50px;
+            margin-left: -70px;
+        };
+
+        #commertial_container_main{
+            padding: 50px 30px 50px 30px;
+            background: #1F1F1F;
+            border-radius: 10px;
+
+            #commertial_container_main_title{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-end;
+                justify-content: flex-end;
+            };
+
+            #commertial_container_main_content{
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                #commertial_container_main_content_text{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $color;
+
+                    #commertial_container_main_content_text_title{
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        padding-bottom: 15%;
+                    };
+
+                    #commertial_container_main_content_text span{
+                        @include normalBoldFont;
+                    };
+                };
+
+                #commertial_container_main_content_text ul li{
+                    padding-bottom: 5%;
+                };
+
+            };
+
+        };
+
+    };
+
+};
+
+
+#download-extension{
+    @include normalBoldFont;
+    @include buttonCorrect;
+    background-color: #00B78B;
+    border-radius: 10px;
+    color: $color;
+    width: 300px;
+    height: 70px;
+};
+
+#close-pop-commertial{
+    @include buttonCorrect;
+    cursor: pointer;
+    padding: 1%;
+    width: 40px;
+    height: 40px;
+};

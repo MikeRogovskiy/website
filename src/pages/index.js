@@ -1,6 +1,7 @@
 export { default as Extension } from './Extension';
 export { default as ExtensionInstruction } from './ExtensionInstruction';
 export { default as ExtensionInnerInstruction } from './ExtensionInnerInstruction';
+export { default as ExtenstionCommertial } from './ExtensionCommertial';
 
 export { default as Home } from './Home';
 export { default as HomeB } from './HomeB';

@@ -4,7 +4,11 @@ import Navbar from "../Navbar";
 import Blog from "../Blog";
 import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
-import { Home, HomeB, Extension, ExtensionInstruction, ExtensionInnerInstruction, NotFound, Plans, Player, PlayerInstruction, Privacy, PlansTest, PlayerAnimation } from '../../pages';
+import { Home, HomeB, Extension, ExtensionInstruction, ExtensionInnerInstruction, ExtenstionCommertial,
+  NotFound,
+  Plans, PlansTest,
+  Player, PlayerInstruction, PlayerAnimation,
+  Privacy } from '../../pages';
 
 export default class App extends React.Component {
 
@@ -41,6 +45,7 @@ export default class App extends React.Component {
             <ExtensionInstruction path="/extension-instruction-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
             <ExtensionInstruction path="/extension-instruction/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
             <ExtensionInnerInstruction path="/extension-inner-instruction/"></ExtensionInnerInstruction>
+            <ExtenstionCommertial path="/extension-commertial/"></ExtenstionCommertial>
             <Player path="/player/" text={this.props.text.PlayerPage} />
             <PlayerAnimation path="/player-animation/" text={this.props.text.PlayerAnimation} />
             <PlayerInstruction path="player-instruction-youtube/"></PlayerInstruction>
