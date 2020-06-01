@@ -185,6 +185,10 @@
   "PlayerPage": {
     "GetPlayerButtonWindows": "DOWNLOAD for WINDOWS",
     "GetPlayerButtonMac": "DOWNLOAD for MAC",
+    "IfButtonIsForWindows":"If you're using MAC",
+    "GetPlayerButtonMac": "DOWNLOAD for MAC",
+    "IfButtonIsForMac":"If you're using Windows",
+    "LinkToAnotherOSDownload": "download here",
     "GetStartedPlayerText": "Handy program <br/> for learning language",
     "ScrolledContentPlayerHeader": "One more powerful tool <br/> for learning language",
     "PlayerHeader": "Watch videos subtitle by subtitle <br /> to practice your audition",

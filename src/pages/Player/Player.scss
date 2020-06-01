@@ -30,6 +30,7 @@ body {
     width: 90% !important;
     font-size: 0.9rem !important;
     margin: 1% 2% !important;
+  
 
     &.top,&.bottom{
       @include centralAlignFlex;
@@ -62,9 +63,20 @@ body {
 };
 
 .getStartedPlayer-button {
-  @include centralJustifyFlex;
-  width: 100%;
+  @include centralFlexPosition;
   margin-top: 2%;
+  flex-direction: column;
+
+  p{
+    @include pureBody;
+    padding-top: 10px;
+    color: #195AA9;
+  };
+
+  p a{
+    color: #195AA9;
+    text-decoration: underline;
+  }
 
   &.bottom{
     margin: 0;

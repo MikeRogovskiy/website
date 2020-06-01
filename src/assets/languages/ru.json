@@ -134,6 +134,10 @@
   "PlayerPage": {
     "GetPlayerButtonWindows": "СКАЧАТЬ для WINDOWS",
     "GetPlayerButtonMac": "СКАЧАТЬ для MAC",
+    "IfButtonIsForWindows":"Если вы используете MAC",
+    "GetPlayerButtonMac": "DOWNLOAD for MAC",
+    "IfButtonIsForMac":"Если вы используете Windows",
+    "LinkToAnotherOSDownload": "скачать тут",
     "GetStartedPlayerText": "Удобная программа <br/> для изучения иностранного языка",
     "ScrolledContentPlayerHeader": "Еще один мощный инструмент <br/> для изучения языка",
     "PlayerHeader": "Watch videos subtitle by subtitle <br /> to practice your audition",
