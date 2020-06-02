@@ -3,17 +3,21 @@ import "./extensionCommertial.scss"
 
 import sideImgleft from "../../assets/images/extension-commertial/side-image-left.svg";
 import mainImg from "../../assets/images/extension-commertial/main-brain.svg";
-import sideImgRight from "../../assets/images/extension-commertial/side-image-right.svg";
+// import sideImgRight from "../../assets/images/extension-commertial/side-image-right.svg";
 
 export default class ExtensionCommertial extends Component{
     render(){
+        function sendMessage(str){
+            window.parent.postMessage(str, "*")
+        };
+
         return(
             <div id="extension-commertial">
                 <div id="extension-commertial_conatiner">
 
                     <div id="commertial_container_header">
                         <img src={sideImgleft}></img>
-                        <input id="close-pop-commertial" type="image" src={sideImgRight}></input>
+                        {/* <input id="close-pop-commertial" type="image" src={sideImgRight}></input> */}
                     </div>
 
                     <div id="commertial_container_main">
@@ -35,7 +39,8 @@ export default class ExtensionCommertial extends Component{
                                     <li>- <span>Сохраняй</span> слова в игры для повтора</li>
                                     <li>- <span>Тренируй</span> память, вспоминая слова</li>
                                 </ul>
-                                <button id="download-extension">УСТАНОВИТЬ РАСШИРЕНИЕ</button>
+                                <button id="download-extension" onClick={() => {sendMessage("download-extension")}}>УСТАНОВИТЬ РАСШИРЕНИЕ</button>
+                                <button id="close-player" onClick={() => {sendMessage("close-player")}}>ЗАКРЫТЬ ПЛЕЕР</button>
                             </div>
                         </div>
                     </div>
