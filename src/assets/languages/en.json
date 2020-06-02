@@ -133,43 +133,47 @@
   },
 
   "PlayerAnimation": {
-    "stepInitialA": "Click",
-    "stepInitialB": "on TED",
+    "stepInitialA": "Узнай, как работает этот плеер!",
+    "stepInitialB": "Кликни для запуска инструкции!",
     "stepInitialC": "",
 
     "stepInitialInstruction": "To navigate in text, press",
 
-    "step1A": "Choose a video",
+    "step1A": "Open TED",
     "step1B": "",
     "step1C": "",
 
-    "step2A": "Watch the video",
-    "step2B": "with subtitles",
-    "step2C": "in multiple languages",
+    "step2A": "Choose a video",
+    "step2B": "",
+    "step2C": "",
 
     "step3A": "Watch the video",
     "step3B": "with subtitles",
     "step3C": "in multiple languages",
 
-    "step4A": "Try navigate around",
-    "step4B": "with hotkeys",
-    "step4C": "",
+    "step4A": "Watch the video",
+    "step4B": "with subtitles",
+    "step4C": "in multiple languages",
 
-    "step5A": "Repeat current subtitle",
-    "step5B": "",
+    "step5A": "Try navigate around",
+    "step5B": "with hotkeys",
     "step5C": "",
 
-    "step6A": "Highlight a word",
-    "step6B": "or a part of it to translate",
+    "step6A": "Repeat current subtitle",
+    "step6B": "",
     "step6C": "",
 
-    "step7A": "Add to Tutor",
-    "step7B": "for revision",
+    "step7A": "Highlight a word",
+    "step7B": "or a part of it to translate",
     "step7C": "",
+
+    "step8A": "Add to Tutor",
+    "step8B": "for revision",
+    "step8C": "",
   
-    "step8A": "Open Tutor",
-    "step8B": "and revise",
-    "step8C": "words in games",
+    "step9A": "Open Tutor",
+    "step9B": "and revise",
+    "step9C": "words in games",
 
     "stepFinalA": "Learn english",
     "stepFinalB": "with us!",

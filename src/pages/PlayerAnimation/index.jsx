@@ -6,15 +6,20 @@ import ReactHtmlParser from "react-html-parser";
 import "./playerAnimation.scss";
 import "./playerAnimationMedia.scss";
 
-import initialBackground from "../../assets/images/player-animation/background-images/initialStepBackground.png";
+import initialBackground from "../../assets/images/player-animation/background-images/initialBackground.png";
 
 import backgroundA from "../../assets/images/player-animation/background-images/stepBackground1.png";
 import backgroundB from "../../assets/images/player-animation/background-images/stepBackground2.png";
-import backgroundС from "../../assets/images/player-animation/background-images/stepBackground3.png";
-import backgroundE from "../../assets/images/player-animation/background-images/stepBackground5.png";
-import backgroundF from "../../assets/images/player-animation/background-images/stepBackground6.png";
-import backgroundG from "../../assets/images/player-animation/background-images/stepBackground7.png";
-import backgroundH from "../../assets/images/player-animation/background-images/stepBackground8.png";
+import backgroundС from "../../assets/images/player-animation/background-images/stepBackground6.png";
+
+import backgroundD from "../../assets/images/player-animation/background-images/stepBackground6.png";
+
+import backgroundE from "../../assets/images/player-animation/background-images/stepBackground6.png";
+import backgroundF from "../../assets/images/player-animation/background-images/testi.png";
+import backgroundG from "../../assets/images/player-animation/background-images/stepBackground8.png";
+import backgroundH from "../../assets/images/player-animation/background-images/stepBackground9.png";
+
+// import backgroundI from "../../assets/images/player-animation/background-images/stepBackground8.png";
 import backgroundFinal from "../../assets/images/player-animation/background-images/finalBackground.png";
 
 import leftArrow from "../../assets/images/player-animation/arrow-images/leftArrow.svg";
@@ -33,6 +38,9 @@ export default class PlayerAnimation extends Component {
         document.querySelector("#main-field_container").style.backgroundImage = `url(${initialBackground})`;
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
             "right 82.5% top 84% , black 3%, transparent 2.5%)";
+        document.querySelector("#black-circle").style.opacity = "0";
+        document.querySelector("#main-field_container_background").style.opacity = "0"
+
         d3.select("#instruction-image")
             .attr("x", "44%")
             .attr("y", "6%")
@@ -218,6 +226,20 @@ export default class PlayerAnimation extends Component {
             }
         );
 
+        function changeInitialStepOpacity(num){
+            document.querySelector("#steps-svg-field_circle-group").style.opacity = num;
+            document.querySelector("#steps-svg-field_start").style.opacity = num;
+            document.querySelector("#steps-svg-field_rectangle-group").style.opacity = num;
+        };
+        
+        function changeInitialTextOpacity(num){
+            document.querySelector("#steps-svg-field_start").style.opacity = num;
+        };
+
+        function changeBackgroundFadeVisibility(num){
+            document.querySelector("#main-field_container_background").style.opacity = num;
+        };
+
         const textData = this.props.text;
 
         var clicks = 0;
@@ -235,46 +257,57 @@ export default class PlayerAnimation extends Component {
                   );
             };
 
-
             switch(clicks){
                 case 0:
+                    changeInitialStepOpacity("0");
+                    changeBackgroundFadeVisibility("0");
+                    changeInitialTextOpacity("1");
+
                     makeStep(step.coordinatesInitial, initialBackground, textData.stepInitialA, textData.stepInitialB, textData.stepInitialC);
                     break
                 case 1:
+                    changeInitialStepOpacity("1");
+                    changeBackgroundFadeVisibility("0.5");
+                    changeInitialTextOpacity("0");
+
+                    makeStep(step.coordinatesInitial, backgroundA, textData.step1A, textData.step1B, textData.step1C);
+                    break
+                case 2:
                     appearContentOf(document.querySelector("#steps-svg-field_instruction-group"));
                     appearContentOf(document.querySelector("#instruction-image"));
-                    makeStep(step.coordinatesA, backgroundA, textData.step1A, textData.step1B, textData.step1C);
-                    break;
-                case 2:
-                    hideContentOf(document.querySelector("#steps-svg-field_instruction-group"));
-                    hideContentOf(document.querySelector("#instruction-image"));
-                    makeStep(step.coordinatesB, backgroundB, textData.step2A, textData.step2B, textData.step2C);
-                    removeBigArrows();
+                    makeStep(step.coordinatesA, backgroundB, textData.step2A, textData.step2B, textData.step2C);
                     break;
                 case 3:
-                    makeStep(step.coordinatesC, backgroundС, textData.step3A, textData.step3B, textData.step3C);
+                    hideContentOf(document.querySelector("#steps-svg-field_instruction-group"));
+                    hideContentOf(document.querySelector("#instruction-image"));
+                    makeStep(step.coordinatesB, backgroundС, textData.step3A, textData.step3B, textData.step3C);
+                    removeBigArrows();
+                    break;
+                case 4:
+                    makeStep(step.coordinatesC, backgroundD, textData.step4A, textData.step4B, textData.step4C);
                     addBigArrows();
                     removeAllSmallArrows();
                     break;
-                case 4:
-                    makeStep(step.coordinatesD, backgroundE, textData.step4A, textData.step4B, textData.step4C);
+                case 5:
+                    makeStep(step.coordinatesD, backgroundE, textData.step5A, textData.step5B, textData.step5C);
                     removeBigArrows();
                     addSmallArrows("#small-arrows_a", "#small-arrows_b", smallArrowsA, "44%", "26%")
                     break;
-                case 5:
-                    makeStep(step.coordinatesE, backgroundE, textData.step5A, textData.step5B, textData.step5C);
-                    addSmallArrows("#small-arrows_b", "#small-arrows_a", smallArrowsB, "46%", "23.5%")
-                    break;
                 case 6:
-                    makeStep(step.coordinatesF, backgroundF, textData.step6A, textData.step6B, textData.step6C);
+                    makeStep(step.coordinatesE, backgroundF, textData.step6A, textData.step6B, textData.step6C);
                     removeAllSmallArrows();
+                    // addSmallArrows("#small-arrows_b", "#small-arrows_a", smallArrowsB, "46%", "23.5%")
                     break;
                 case 7:
-                    makeStep(step.coordinatesG, backgroundG, textData.step7A, textData.step7B, textData.step7C);
+                    makeStep(step.coordinatesF, backgroundG, textData.step7A, textData.step7B, textData.step7C);
+                    removeAllSmallArrows();
                     break;
+                // case 8:
+                //     makeStep(step.coordinatesG, backgroundH, textData.step8A, textData.step8B, textData.step8C);
+                //     break;
                 case 8:
                     changeTextColorOn("black")
-                    makeStep(step.coordinatesH, backgroundH, textData.step8A, textData.step8B, textData.step8C);
+                    makeStep(step.coordinatesG, backgroundH, textData.step8A, textData.step8B, textData.step8C);
                     break;
                 case 9:
                     changeTextColorOn("white")
@@ -290,12 +323,12 @@ export default class PlayerAnimation extends Component {
 
                 <div id="main-field_container">
 
-                    <div id="main-field_container_background">
-                        <div id="black-circle"></div>
+                    <div id="main-field_container_background" >
+                        <div id="black-circle" ></div>
                     </div>
 
                     <svg  viewBox="0 0 1980 1080" id="steps-svg-field" onClick={() => action(1)}>
-                        <g id="steps-svg-field_circle-group">
+                        <g id="steps-svg-field_circle-group" opacity="0">
                             <circle id="circleInner"  cx="17.5%" cy="84%" r="5.5%" fill="none"
                                     strokeWidth="4%" stroke="#6AB2F5" />
 
@@ -303,7 +336,7 @@ export default class PlayerAnimation extends Component {
                                     strokeWidth="10%" stroke="#6AB2F5"  strokeOpacity="0.5" />
                         </g>
 
-                        <g id="steps-svg-field_rectangle-group">
+                        <g id="steps-svg-field_rectangle-group" opacity="0">
                             <rect id="rectangle-container" x="30%" y="50%" width="18%" height="13%"
                                     fill="white" stroke="#6AB2F5"  rx="5" strokeWidth="0.3%" />
                             <text id="rectangle-textA" className="rectangle-text" x="39%" y="55%" textAnchor="middle">
@@ -317,18 +350,30 @@ export default class PlayerAnimation extends Component {
                             </text>
                         </g>
 
-                        <g id="steps-svg-field_instruction-group">
+                        {/* <g id="steps-svg-field_instruction-group">
                             <image id="instruction-image"></image>
                             <rect width="45%" height="14%" x="30%" y="5%" rx="10px" fill=" rgba(0, 0, 0, 0.3)"></rect>
                             <text x="45%" y="13%" textAnchor="middle" fontSize="30px" fill="white">
                                 {this.getLangText("stepInitialInstruction")}
                             </text>
+                        </g> */}
+
+                        <g id="steps-svg-field_start" >
+                            <text x="50%" y="43%" textAnchor="middle" fill="white" fontSize="45px">
+                                {this.getLangText("stepInitialA")}
+                            </text>
+                            <text x="51%" y="49%" textAnchor="middle" fill="white" fontSize="45px">
+                                {this.getLangText("stepInitialB")}
+                            </text>
+                            <text x="45%" y="22%" textAnchor="middle" fill="white" fontSize="45px">
+                                {this.getLangText("stepInitialC")}
+                            </text>
                         </g>
 
-                        <g id="steps-svg-field_big-arrows">
+                        {/* <g id="steps-svg-field_big-arrows">
                             <image id="big-arrow-left" className="big-arrows"></image>
                             <image id="big-arrow-right"className="big-arrows"></image>
-                        </g>
+                        </g> */}
 
                         <g id="steps-svg-field_low-arrows">
                             <image id="small-arrows_a" className="small-arrows"></image>
