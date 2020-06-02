@@ -8,7 +8,7 @@ import mainImg from "../../assets/images/extension-commertial/main-brain.svg";
 export default class ExtensionCommertial extends Component{
     render(){
         function sendM(str){
-            window.parent.postMessage(str, "*")
+            window.postMessage(str, "*")
             console.log(str)
         };
 
