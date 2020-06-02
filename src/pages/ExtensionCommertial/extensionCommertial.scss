@@ -91,17 +91,17 @@
     height: 70px;
 };
 
-#close-player{
-    @include normalBoldFont;
-    @include buttonCorrect;
-    color: $color;
-    border-radius: 10px;
-    width: 300px;
-    height: 70px;
-    background-color: #1F1F1F;
-    border: 1px solid white;
-    margin-top: 2%;
-};
+// #close-player{
+//     @include normalBoldFont;
+//     @include buttonCorrect;
+//     color: $color;
+//     border-radius: 10px;
+//     width: 300px;
+//     height: 70px;
+//     background-color: #1F1F1F;
+//     border: 1px solid white;
+//     margin-top: 2%;
+// };
 
 // #close-pop-commertial{
 //     @include buttonCorrect;

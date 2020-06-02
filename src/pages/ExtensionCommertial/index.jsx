@@ -41,7 +41,7 @@ export default class ExtensionCommertial extends Component{
                                     <li>- <span>Тренируй</span> память, вспоминая слова</li>
                                 </ul>
                                 <button id="download-extension" onClick={() => {sendMessage("download-extension")}}>УСТАНОВИТЬ РАСШИРЕНИЕ</button>
-                                <button id="close-player" onClick={() => {sendMessage("close-player")}}>ЗАКРЫТЬ ПЛЕЕР</button>
+                                {/* <button id="close-player" onClick={() => {sendMessage("close-player")}}>ЗАКРЫТЬ ПЛЕЕР</button> */}
                             </div>
                         </div>
                     </div>
