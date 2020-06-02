@@ -46,7 +46,7 @@ export default class App extends React.Component {
             {/* <ExtensionInstruction       path="/extension-advertaisment-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} /> */}
             <ExtensionInstruction       path="/extension-instruction/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
             <ExtensionInnerInstruction  path="/extension-inner-instruction/"></ExtensionInnerInstruction>
-            <ExtenstionCommertial       path="/extension-commertial/"></ExtenstionCommertial>
+            <ExtenstionCommertial       path="/extension-advertisment/"></ExtenstionCommertial>
             <Player                     path="/player/" text={this.props.text.PlayerPage} />
             <PlayerAnimation            path="/player-animation/" text={this.props.text.PlayerAnimation} />
             <PlayerInstruction          path="player-instruction-youtube/"></PlayerInstruction>
