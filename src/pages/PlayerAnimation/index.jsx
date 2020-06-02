@@ -6,8 +6,7 @@ import ReactHtmlParser from "react-html-parser";
 import "./playerAnimation.scss";
 import "./playerAnimationMedia.scss";
 
-// import initialBackground from "../../assets/images/player-animation/background-images/initialStepBackground.png";
-import initialBackground from "../../assets/images/player-animation/background-images/test.png";
+import initialBackground from "../../assets/images/player-animation/background-images/initialStepBackground.png";
 
 import backgroundA from "../../assets/images/player-animation/background-images/stepBackground1.png";
 import backgroundB from "../../assets/images/player-animation/background-images/stepBackground2.png";
@@ -32,8 +31,6 @@ export default class PlayerAnimation extends Component {
 
     componentDidMount(){
         document.querySelector("#main-field_container").style.backgroundImage = `url(${initialBackground})`;
-        document.querySelector("#main-field_container_background").style.opacity = "0";
-        // document.querySelector("#main-field_container_background").style.backgroundColor = "none";
         document.querySelector("#black-circle").style.backgroundImage = "radial-gradient(circle at  " +
             "right 82.5% top 84% , black 3%, transparent 2.5%)";
         d3.select("#instruction-image")
@@ -241,11 +238,9 @@ export default class PlayerAnimation extends Component {
 
             switch(clicks){
                 case 0:
-                    document.querySelector("#main-field_container_background").style.opacity = "0";
                     makeStep(step.coordinatesInitial, initialBackground, textData.stepInitialA, textData.stepInitialB, textData.stepInitialC);
                     break
                 case 1:
-                    document.querySelector("#main-field_container_background").style.opacity = "0.5"
                     appearContentOf(document.querySelector("#steps-svg-field_instruction-group"));
                     appearContentOf(document.querySelector("#instruction-image"));
                     makeStep(step.coordinatesA, backgroundA, textData.step1A, textData.step1B, textData.step1C);
@@ -285,6 +280,7 @@ export default class PlayerAnimation extends Component {
                     changeTextColorOn("white")
                     makeStep(step.coordinatesFinal, backgroundFinal, textData.stepFinalA, textData.stepFinalB, textData.stepFinalC);
                 default:
+
             };
 
         };

@@ -7,8 +7,8 @@ import mainImg from "../../assets/images/extension-commertial/main-brain.svg";
 
 export default class ExtensionCommertial extends Component{
     render(){
-        function sendM(str){
-            window.frames.target.postMessage(str, "*")
+        function sendMessage(str){
+            window.parent.postMessage(str, "*")
             console.log(str)
         };
 
@@ -40,8 +40,8 @@ export default class ExtensionCommertial extends Component{
                                     <li>- <span>Сохраняй</span> слова в игры для повтора</li>
                                     <li>- <span>Тренируй</span> память, вспоминая слова</li>
                                 </ul>
-                                <button id="download-extension" onClick={() => {sendM("download-extension")}}>УСТАНОВИТЬ РАСШИРЕНИЕ</button>
-                                <button id="close-player" onClick={() => {sendM("close-player")}}>ЗАКРЫТЬ ПЛЕЕР</button>
+                                <button id="download-extension" onClick={() => {sendMessage("download-extension")}}>УСТАНОВИТЬ РАСШИРЕНИЕ</button>
+                                <button id="close-player" onClick={() => {sendMessage("close-player")}}>ЗАКРЫТЬ ПЛЕЕР</button>
                             </div>
                         </div>
                     </div>
