@@ -51,7 +51,7 @@ const Header = (props) => {
                     { OSName === "MacOS" &&
                         <a
                             className="startedPlayer-button top"
-                            href={windowsLink}
+                            href={macLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             >
@@ -59,7 +59,7 @@ const Header = (props) => {
                         </a>
                     }
                     { OSName === "MacOS" &&
-                        <p>{getLangText("IfButtonIsForMac")} <a href={windowsLink}>{getLangText("LinkToAnotherOSDownload")}</a></p>
+                        <p>{getLangText("IfButtonIsForMac")} <a href={macLink}>{getLangText("LinkToAnotherOSDownload")}</a></p>
                     }
                 </div>
                 <div>

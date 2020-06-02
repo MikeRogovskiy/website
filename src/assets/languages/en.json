@@ -133,8 +133,8 @@
   },
 
   "PlayerAnimation": {
-    "stepInitialA": "Узнай, как работает этот плеер!",
-    "stepInitialB": "Кликни для запуска инструкции!",
+    "stepInitialA": "Find out, how this player works!",
+    "stepInitialB": "Click to start!",
     "stepInitialC": "",
 
     "stepInitialInstruction": "To navigate in text, press",
@@ -151,24 +151,24 @@
     "step3B": "with subtitles",
     "step3C": "in multiple languages",
 
-    "step4A": "Watch the video",
-    "step4B": "with subtitles",
-    "step4C": "in multiple languages",
+    "step4A": "Get over to full",
+    "step4B": "subtitles list",
+    "step4C": "",
 
     "step5A": "Try navigate around",
-    "step5B": "with hotkeys",
+    "step5B": "with subtitles list",
     "step5C": "",
 
-    "step6A": "Repeat current subtitle",
-    "step6B": "",
+    "step6A": "Select a word with cursor",
+    "step6B": "or just a part, to translate",
     "step6C": "",
 
-    "step7A": "Highlight a word",
-    "step7B": "or a part of it to translate",
+    "step7A": "Add words",
+    "step7B": "for repeat",
     "step7C": "",
 
-    "step8A": "Add to Tutor",
-    "step8B": "for revision",
+    "step8A": "See add words",
+    "step8B": "then revise them",
     "step8C": "",
   
     "step9A": "Open Tutor",

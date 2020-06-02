@@ -50,7 +50,7 @@ export const coordinatesInitial = new Coordinates(
     "17.5%", "84%", "10%", "10%",
     "82.5%", "84%", "3%", "2.5%", "0s",
     "30%", "50%", "13%", "18%",
-    "39%", "55%", "39%", "60%", "0%", "0%",
+    "39%", "57.5%", "39%", "60%", "39%", "63%",
 );
 
 export const coordinatesA = new Coordinates(

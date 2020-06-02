@@ -302,9 +302,6 @@ export default class PlayerAnimation extends Component {
                     makeStep(step.coordinatesF, backgroundG, textData.step7A, textData.step7B, textData.step7C);
                     removeAllSmallArrows();
                     break;
-                // case 8:
-                //     makeStep(step.coordinatesG, backgroundH, textData.step8A, textData.step8B, textData.step8C);
-                //     break;
                 case 8:
                     changeTextColorOn("black")
                     makeStep(step.coordinatesG, backgroundH, textData.step8A, textData.step8B, textData.step8C);
@@ -339,13 +336,13 @@ export default class PlayerAnimation extends Component {
                         <g id="steps-svg-field_rectangle-group" opacity="0">
                             <rect id="rectangle-container" x="30%" y="50%" width="18%" height="13%"
                                     fill="white" stroke="#6AB2F5"  rx="5" strokeWidth="0.3%" />
-                            <text id="rectangle-textA" className="rectangle-text" x="39%" y="55%" textAnchor="middle">
+                            <text id="rectangle-textA" className="rectangle-text" x="39%" y="57.5%" textAnchor="middle">
                                 {this.getLangText("stepInitialA")}
                             </text>
                             <text id="rectangle-textB" className="rectangle-text" x="39%" y="60%" textAnchor="middle">
                                 {this.getLangText("stepInitialB")}
                             </text>
-                            <text id="rectangle-textC" className="rectangle-text" x="0" y="0" textAnchor="middle">
+                            <text id="rectangle-textC" className="rectangle-text" x="39" y="63" textAnchor="middle">
                                 {this.getLangText("stepInitialC")}
                             </text>
                         </g>
