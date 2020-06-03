@@ -1,9 +1,11 @@
-<svg width="536" height="328" viewBox="0 0 536 328" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="536" height="372" viewBox="0 0 536 372" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d)">
-<rect x="4" width="527.059" height="320" fill="url(#pattern0)"/>
+<rect x="4" y="44" width="527.059" height="320" fill="url(#pattern0)"/>
 </g>
+<path d="M296.999 132.5L311.273 142.311L312.632 125.043L296.999 132.5ZM457.277 9.86794C469.594 27.2295 472.408 43.6695 468.446 58.5049C464.469 73.3996 453.596 86.917 438.075 98.2248C407.02 120.851 357.833 134.266 310.532 132.061L310.392 135.058C358.241 137.289 408.135 123.75 439.842 100.65C455.702 89.0943 467.131 75.0557 471.345 59.2789C475.574 43.4428 472.468 26.0957 459.723 8.13206L457.277 9.86794Z" fill="#3CBE8A"/>
+<circle cx="455.999" cy="8" r="6.5" fill="white" stroke="#3CBE8A" stroke-width="3"/>
 <defs>
-<filter id="filter0_d" x="0" y="0" width="535.059" height="328" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="0" y="44" width="535.059" height="328" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4"/>

@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "./playerInstruction.scss";
+import "./playerInstructionMedia.scss";
 
 import videoExplanation from "../../assets/images/player-instruction/video-explanation.svg";
 import subtitlesExplanation from "../../assets/images/player-instruction/subtitles-explanation.svg";
 
-import smallArrow from "../../assets/images/player-instruction/small-arrow.svg";
-import bigArrow from "../../assets/images/player-instruction/big-arrow.svg";
+// import smallArrow from "../../assets/images/player-instruction/small-arrow.svg";
+// import bigArrow from "../../assets/images/player-instruction/big-arrow.svg";
 
 
 
@@ -29,19 +30,19 @@ export default class PlayerInstruction extends Component {
                         <button className="download-btn" onClick={() => {sendMessage("subtitles")}}>Download Subtitles</button>
                     </div>
                     <div id="container_footer">
-                        <div id="container_footer_text" className="player-instruction-content">
-                            <h2>3.</h2>
-                            <h3>Open Download Video</h3>
-                            <h3>and</h3>
-                            <h3>Open Download Subtitles</h3>
-                        </div>
-                        <div id="container_footer_images" className="player-instruction-content">
-                            <div id="container_footer_images_arrows">
-                                <img src={smallArrow}></img>
-                                <img src={bigArrow}></img>
+                    <h2>3.</h2>
+                        <div id="container_footer_folder" className="player-instruction-content"> 
+                            <div id="container_footer_folder_download" className="player-instruction-block">
+                                <h3>Open Download Video</h3>
+                                <button onClick={() => {sendMessage("video-from-image")}}><img id="footer_images_download" src={videoExplanation}></img></button>
                             </div>
-                            <img src={videoExplanation}></img>
-                            <img id="footer_images_subtitles" src={subtitlesExplanation}></img>
+                            <div id="container_footer_folder_and" className="player-instruction-block">
+                                <h3>and</h3>
+                            </div>
+                            <div id="container_footer_folder_subtitles" className="player-instruction-block">
+                                <h3>Open Download Subtitles</h3>
+                                <button onClick={() => {sendMessage("subtitles-from-image")}}><img id="footer_images_subtitles" src={subtitlesExplanation}></img></button>
+                            </div>
                         </div>
                     </div>
                 </div>
