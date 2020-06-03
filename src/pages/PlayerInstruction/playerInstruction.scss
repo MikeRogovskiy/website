@@ -36,10 +36,14 @@
 
     };
 
-    p span{
+    p button{
+        @include buttonCorrect;
         padding-left: 10px;
         padding-right: 10px;
         text-decoration: underline;
+        color: white;
+        font-size: 22px;
+        background: black;
     };
 
     #container_footer_text{

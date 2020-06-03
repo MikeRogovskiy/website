@@ -20,7 +20,7 @@ export default class PlayerInstruction extends Component {
                 <div id="player-instruction_container">
                     <h1>Download YouTube video with subtitles</h1>
                     <div id="container_header" className="player-instruction-content">
-                        <h2>1.</h2><p>Cope URL Video from <span>YouTube</span> to the buffer (Ctrl + C)</p>
+                        <h2>1.</h2><p>Cope URL Video from <button onClick={() => {sendMessage("youtube")}}>YouTube</button> to the buffer (Ctrl + C)</p>
                     </div>
                     <div id="container_main" className="player-instruction-content">
                         <h2>2.</h2>
