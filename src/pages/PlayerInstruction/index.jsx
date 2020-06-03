@@ -41,7 +41,7 @@ export default class PlayerInstruction extends Component {
                             </div>
                             <div id="container_footer_folder_subtitles" className="player-instruction-block">
                                 <h3>Open Download Subtitles</h3>
-                                <button onClick={() => {sendMessage("subtitles-from-image")}}><img id="footer_images_subtitles" src={subtitlesExplanation}></img></button>
+                                <img id="footer_images_subtitles" src={subtitlesExplanation}></img>
                             </div>
                         </div>
                     </div>
