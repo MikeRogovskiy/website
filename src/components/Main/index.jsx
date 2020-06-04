@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 import Blog from "../Blog";
 import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
-import { Home, HomeB, Extension, ExtensionInstruction, ExtensionInnerInstruction, ExtenstionCommertial,
+import { Home, HomeB, Extension, AnalyticsRedirect, ExtensionInstruction, ExtensionInnerInstruction, ExtenstionCommertial,
   NotFound,
   Plans, PlansTest,
   Player, PlayerInstruction, PlayerAnimation,
@@ -54,6 +54,7 @@ export default class App extends React.Component {
             <PlansTest                  path="/plans-b/" text={this.props.text.PlansPage_b} />
             <Blog                       path="/blog/*"></Blog>
             <NotFound                   path="*" text={this.props.text.NotFoundPage}></NotFound>
+            <AnalyticsRedirect            path="/analytics-redirect/"></AnalyticsRedirect>
           </ScrollToTop>
         </Router>
       </div>
