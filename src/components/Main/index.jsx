@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 import Blog from "../Blog";
 import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
-import { Home, HomeB, Extension, AnalyticsRedirect, ExtensionInstruction, ExtensionInnerInstruction, ExtenstionCommertial,
+import { Home, HomeB, Extension, AnalyticsRedirect, ExtensionInstruction, ExtensionInnerInstruction, ExtenstionAdvertisement,
   NotFound,
   Plans, PlansTest,
   Player, PlayerInstruction, PlayerAnimation,
@@ -43,10 +43,9 @@ export default class App extends React.Component {
             <Privacy                    path="/privacy" text={this.props.text}></Privacy>
             <Extension                  path="/extension/" text={this.props.text.ExtensionPage} lang={this.props.language} />
             <ExtensionInstruction       path="/extension-instruction-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
-            {/* <ExtensionInstruction       path="/extension-advertaisment-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} /> */}
             <ExtensionInstruction       path="/extension-instruction/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
             <ExtensionInnerInstruction  path="/extension-inner-instruction/"></ExtensionInnerInstruction>
-            <ExtenstionCommertial       path="/extension-advertisment/"></ExtenstionCommertial>
+            <ExtenstionAdvertisement    path="/extension-advertisement/"></ExtenstionAdvertisement>
             <Player                     path="/player/" text={this.props.text.PlayerPage} />
             <PlayerAnimation            path="/player-animation/" text={this.props.text.PlayerAnimation} />
             <PlayerInstruction          path="player-instruction-youtube/"></PlayerInstruction>

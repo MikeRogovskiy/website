@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./extensionCommertial.scss"
+import "./extenstionAdvertisement.scss"
 
 import sideImgleft from "../../assets/images/extension-commertial/side-image-left.svg";
 import mainImg from "../../assets/images/extension-commertial/main-brain.svg";
 // import sideImgRight from "../../assets/images/extension-commertial/side-image-right.svg";
 
-export default class ExtensionCommertial extends Component{
+export default class ExtenstionAdvertisement extends Component{
     render(){
         function sendMessage(str){
             window.parent.postMessage(str, "*")
