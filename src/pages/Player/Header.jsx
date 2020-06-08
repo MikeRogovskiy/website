@@ -59,7 +59,7 @@ const Header = (props) => {
                         </a>
                     }
                     { OSName === "MacOS" &&
-                        <p>{getLangText("IfButtonIsForMac")} <a href={macLink}>{getLangText("LinkToAnotherOSDownload")}</a></p>
+                        <p>{getLangText("IfButtonIsForMac")} <a href={windowsLink}>{getLangText("LinkToAnotherOSDownload")}</a></p>
                     }
                 </div>
                 <div>

@@ -53,7 +53,7 @@ export default class App extends React.Component {
             <PlansTest                  path="/plans-b/" text={this.props.text.PlansPage_b} />
             <Blog                       path="/blog/*"></Blog>
             <NotFound                   path="*" text={this.props.text.NotFoundPage}></NotFound>
-            <AnalyticsRedirect            path="/analytics-redirect/"></AnalyticsRedirect>
+            <AnalyticsRedirect          path="/analytics-redirect/"></AnalyticsRedirect>
           </ScrollToTop>
         </Router>
       </div>

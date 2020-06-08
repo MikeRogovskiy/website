@@ -44,7 +44,7 @@ const Footer = (props) => {
                     { OSName === "MacOS" &&
                         <a
                             className="startedPlayer-button top"
-                            href={windowsLink}
+                            href={macLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             >
