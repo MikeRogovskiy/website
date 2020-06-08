@@ -12,9 +12,10 @@ import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
-
+import ChatBotSimple from  "../../components/ChatBotSimple";
 
 export default class Home extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -89,8 +90,8 @@ export default class Home extends React.Component {
 
     return (
       <div className="Home">
+        <ChatBotSimple />
         <header className="hero">
-
           <div className="wrapper-hero">
             <div>
               <h1 className="hero-title">{this.getLangText("headerTitle")}</h1>
@@ -240,6 +241,7 @@ export default class Home extends React.Component {
             </section>
           </div>
         </div>
+
         <footer className="get-started-footer">
           {/* <div className="button-started bottom">
             <Link

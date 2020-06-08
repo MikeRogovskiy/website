@@ -1,0 +1,36 @@
+@import "../../styles/mixins";
+
+#chat-bot{
+    @include wHHundred;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 20;
+    position: fixed;
+    flex-direction: column;
+};
+
+#chat-bot_btn{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+#chat-bot_btn button{
+    @include buttonCorrect;
+    @include centralRowFlexPositionHWHundred;
+    background: none;
+    border-radius: 70%;
+    margin-left: -20px;
+};
+
+#chat-bot img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    // background-color: white;
+};
+
+#chat-bot_content{
+    margin: 0px 20px 20px 20px;
+};
