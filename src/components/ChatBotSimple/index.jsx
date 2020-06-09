@@ -73,12 +73,12 @@ export default class ChatBotSimple extends Component{
                         }
                     </div>
                     <div id="chat-bot_container_content">
-                        {this.state.on === true && 
+                        {this.state.on === true &&
                             <ThemeProvider theme={theme} >
                                 <ChatBot    headerTitle="Speech Recognition"
                                             recognitionEnable={true}
                                             steps={steps} />
-                        </ThemeProvider>}
+                            </ThemeProvider>}
                     </div>
 
 

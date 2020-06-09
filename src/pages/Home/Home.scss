@@ -396,6 +396,18 @@
     padding-top: 14%;
   };
 
+  .get-started-footer_privacy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button{
+      @include buttonCorrect;
+      background: rgba(255, 255, 255, 0);
+    }
+  };
+
   .privacy {
     margin-top: 10px;
     color: #c9c9c9;
