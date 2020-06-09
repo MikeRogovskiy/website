@@ -5,32 +5,38 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    z-index: 20;
-    position: fixed;
     flex-direction: column;
 };
 
-#chat-bot_btn{
+#chat-bot_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 10;
+    position: fixed;
+    margin-top: 90vh;
+};
+
+#chat-bot_container_btn{
     display: flex;
     width: 100px;
     height: 100px;
-}
+};
 
-#chat-bot_btn button{
+#chat-bot_container_btn button{
     @include buttonCorrect;
-    @include centralRowFlexPositionHWHundred;
     background: none;
     border-radius: 70%;
     margin-left: -20px;
 };
 
-#chat-bot img{
+#chat-bot_container img{
     width: 50px;
     height: 50px;
     border-radius: 20px;
-    // background-color: white;
 };
 
-#chat-bot_content{
+#chat-bot_container_content{
     margin: 0px 20px 20px 20px;
 };

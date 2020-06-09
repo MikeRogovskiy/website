@@ -62,21 +62,27 @@ export default class ChatBotSimple extends Component{
     render(){
         return(
             <div id="chat-bot">
-                <div id="chat-bot_btn">
-                    {this.state.on === false &&
-                        <button onClick={() => this.appearBot()}><img src={botLogo} /></button>
-                    }
-                    {this.state.on === true &&
-                        <button onClick={() => this.disappearBot()}><img src={botLogo} /></button>
-                    }
-                </div>
-                <div id="chat-bot_content">
-                    {this.state.on === true && 
-                        <ThemeProvider theme={theme} >
-                            <ChatBot    headerTitle="Speech Recognition"
-                                        recognitionEnable={true}
-                                        steps={steps} />
-                    </ThemeProvider>}
+                <div id="chat-bot_container">
+
+                    <div id="chat-bot_container_btn">
+                        {this.state.on === false &&
+                            <button onClick={() => this.appearBot()}><img src={botLogo} /></button>
+                        }
+                        {this.state.on === true &&
+                            <button onClick={() => this.disappearBot()}><img src={botLogo} /></button>
+                        }
+                    </div>
+                    <div id="chat-bot_container_content">
+                        {this.state.on === true && 
+                            <ThemeProvider theme={theme} >
+                                <ChatBot    headerTitle="Speech Recognition"
+                                            recognitionEnable={true}
+                                            steps={steps} />
+                        </ThemeProvider>}
+                    </div>
+
+
+
                 </div>
             </div>
             
