@@ -29,7 +29,7 @@ export default class Privacy extends Component {
                     <p>Please read these terms of use carefully before using EASYLANG SERVICE (hereinafter, "us", "we", service, 
                         "EASYLANG"or "EASYLANG SERVICE"). By accessing and/or using EASYLANG SERVICE (other than to read these terms 
                         of use for the first time) you are agreeing to comply with these terms of use, which may change from time 
-                        to time as set forth in section 16 below. if you do not agree to be bound by these terms of use, do not access 
+                        to time as set forth in section 13 below. if you do not agree to be bound by these terms of use, do not access 
                         or use EASYLANG SERVICE.
                     </p>
                     <p>You agree that these Terms of Use are supported by good and valuable consideration the receipt and sufficiency of which you hereby acknowledge. 
@@ -95,7 +95,7 @@ export default class Privacy extends Component {
                             person, or entity (e.g., using another person's Membership 
                             (as defined in Section B) without permission, etc.);
                         </li>
-                        <li>violate Law of the Republic of Belarus on Copyright and Related Rights, Section 56. Protection of Copyright or Related Rights, 
+                        <li>violate Law of the Republic of Belarus on Copyright and Related Rights, . Protection of Copyright or Related Rights, 
                             export laws, including, without limitation;
                         </li>
                         <li>engage in any conduct that restricts or inhibits any other user from using or enjoying our Service.</li>
@@ -267,7 +267,7 @@ export default class Privacy extends Component {
                         which by their nature should survive the suspension or termination of your Membership or these Terms of Use shall survive including,
                         but not limited to the rights and licenses that you have granted hereunder, indemnities, releases, disclaimers, limitations on 
                         liability, provisions related to choice of law, dispute resolution, no class action, no trial by jury and all of the miscellaneous 
-                        provisions in Section 13.
+                        provisions in Miscellaneous.
                     </p>
                     <br  />
                     <h2>Copyright Policy</h2>
@@ -278,7 +278,7 @@ export default class Privacy extends Component {
                         the subject of infringing activity.
                     </p>
                     <br />
-                    <p>In accordance with theLaw of the Republic of Belarus on Copyright and Related Rights, Section 56. Protection of Copyright or Related Rights, 
+                    <p>In accordance with theLaw of the Republic of Belarus on Copyright and Related Rights, . Protection of Copyright or Related Rights, 
                         we will respond promptly to claims of copyright infringement that are reported to the agent that we have designated to receive notifications 
                         of claims infringement (its "Designated Agent"). EASYLANG SERVICE's Designated Agent is:
                     </p>
@@ -309,13 +309,29 @@ export default class Privacy extends Component {
                             the owner of an exclusive right that is allegedly infringed.</li>
                     </ol>
                     <br />
-                    <p>We will investigate notices of copyright infringement and take appropriate actions under the Law of the Republic of Belarus on Copyright and Related Rights, Section 56. Protection of Copyright or Related Rights. 
+                    <p>We will investigate notices of copyright infringement and take appropriate actions under the Law of the Republic of Belarus on Copyright and Related Rights, . Protection of Copyright or Related Rights. 
                         Inquiries that do not follow this procedure may not receive a response.
                     </p>
                     <br />
                     <h2>Choice of Law</h2>
                     <p>We are responsible for the content posted by us on the EasyLang Service,
                         within the limits established by the legislation of the Republic of Belarus.
+                    </p>
+                    <br />
+                    <h2>Amendment; Additional Terms</h2>
+                    <p>We reserve the right in our sole discretion and at any time and for any reason, to modify or discontinue any aspect 
+                        or feature of our Service or to modify these Terms of Use. In addition, we reserve the right to provide you with 
+                        operating rules or additional terms that may govern your use of our Service generally, unique parts of our Service, 
+                        or both ("Additional Terms"). Any Additional Terms that we may provide to you will be incorporated by reference into 
+                        these Terms of Use. To the extent any Additional Terms conflict with these Terms of Use, the Additional Terms will 
+                        control.
+                    </p>
+                    <p>Modifications to these Terms of Use or Additional Terms will be effective immediately upon notice, either by posting 
+                        on our Service or by notification by email or conventional mail. It is your responsibility to review the Terms of 
+                        Use and our Websites from time to time for any changes or Additional Terms. Your access and use of our Service 
+                        following any modification of these Terms of Use or the provision of Additional Terms will signify your assent to 
+                        and acceptance of the same. If you object to any subsequent revision to the Terms of Use or to any Additional Terms, 
+                        you may terminate your Membership
                     </p>
                     <br />
                     <h2>Miscellaneous</h2>
