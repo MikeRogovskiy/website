@@ -3,6 +3,7 @@ import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
 import PopUpWindow from "./PopUpWindow";
 import PopUpBackground from "./PopUpBackground";
+import PrivacyBtn from "../../components/PrivacyBtn";
 
 import "./Plans.scss";
 import "./PlansMedia.scss";
@@ -155,6 +156,7 @@ export default class Plans extends Component {
 
           </div>
         </div>
+        <PrivacyBtn text={this.props.text}></PrivacyBtn>
       </div>
     );
 

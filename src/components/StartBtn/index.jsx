@@ -1,6 +1,6 @@
 import React from "react";
 import "./startBtn.scss";
-import {Link} from "@reach/router";
+import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 
 export default class StartBtn extends React.Component {
@@ -11,7 +11,7 @@ export default class StartBtn extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="list-for-start-btn">
                 { window.location.href.includes("player") !== true &&
                     <Link
                     to={this.props.link}

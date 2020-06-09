@@ -39,8 +39,11 @@
     "movie": "Фильмы",
     "movieParagraph": "Смотрите фильмы в оригинале",
     "getStarted": "Скачать Easylang",
-    "PrivacyPolicy": "Политика Конфиденциальности",
     "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО"
+  },
+
+  "PrivacyBtn": {
+    "PrivacyPolicy": "Политика Конфиденциальности"
   },
 
   "NavBar": {
@@ -75,7 +78,7 @@
 
   "ExtensionPage": {
     "GetStartedButton": "Добавить в Chrome/Edge",
-    "GetStartedText": "Переводить и изучать языки в веб<br />браузере",
+    "GetStartedText": "Изучать языки и переводить слова<br />в веб браузере",
     "GetStartedBottomText": "<ul><li>Переводи слова прямо в тексте или видео</li><li>Повторяй слова в контексте (там, где вы их встретили)</li><li>Играй и повторяй слова (есть мобильная версия)</li><li>Расширяй свой словарный запас</li></ul> ",
     "ScrolledContentHeader": "Мощный инструмент <br/> для изучения языка",
     "1-SlideExtensionHeader": "Выбирайте любой материал",

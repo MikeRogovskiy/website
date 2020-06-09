@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
+import PrivacyBtn from "../../components/PrivacyBtn";
 
 import "./Extension.scss";
 
@@ -29,6 +30,7 @@ export default class Extension extends Component {
         <Header text={this.props.text} />
         <WithScrollContent getLangText={this.getLangText} scrollContent={extensionContent} lang={this.props.lang}/>
         <Footer text={this.props.text} />
+        <PrivacyBtn text={this.props.text}></PrivacyBtn>
       </div>
     );
 

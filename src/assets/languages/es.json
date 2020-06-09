@@ -38,9 +38,13 @@
     "bookParagraph": "Lee la literatura en la lengua original",
     "movie": "Películas",
     "movieParagraph": "Mira las películas en la lengua original",
+
     "getStarted": "Descargar Easylang",
-    "PrivacyPolicy": "Política de privacidad",
     "GetStartedButton": "COMIENCE GRATIS"
+    },
+
+    "PrivacyBtn": {
+      "PrivacyPolicy": "Política de privacidad"
     },
 
     "NavBar": {

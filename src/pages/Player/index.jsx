@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
+import PrivacyBtn from "../../components/PrivacyBtn";
 
 import "./Player.scss";
 
@@ -187,6 +188,7 @@ export default class Player extends Component {
         </div>
 
         <Footer text={this.props.text} />
+        <PrivacyBtn text={this.props.text}></PrivacyBtn>
       </div>
     );
 

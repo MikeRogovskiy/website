@@ -39,8 +39,11 @@
     "movie": "movies",
     "movieParagraph": "Watch movies in original",
     "getStarted": "Add to Chrome",
-    "PrivacyPolicy": "Privacy Policy",
     "GetStartedButton": "FREE START"
+  },
+
+  "PrivacyBtn": {
+    "PrivacyPolicy": "Privacy Policy"
   },
 
   "NavBar": {
@@ -76,7 +79,7 @@
   "ExtensionPage": {
     "AddToChromeButton": "Add to Chrome",
     "GetStartedButton": "Add to Chrome/Edge",
-    "GetStartedText": "Translate and Learn Languages<br/>in Web Browser",
+    "GetStartedText": "Learn Languages and translate words<br/>in Web Browser",
     "GetStartedBottomText": "<ul><li>Translate word and phrases within sentences</li><li>Revise words in context (that you have read it in)</li><li>Revise via games (available on mobile)</li><li>Expand your vocabulary</li></ul>",
     "ScrolledContentHeader": "Powerful tool <br/> for learning language",
     "1-SlideExtensionHeader": "Choose any content",
