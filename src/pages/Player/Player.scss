@@ -4,6 +4,9 @@ body {
   @include pureBody;
 };
 
+
+
+
 /* Header of the page */
 .getStartedPlayer-header {
   background: no-repeat bottom/cover url("../../assets/images/bcgPlayerTop.png");
@@ -26,6 +29,8 @@ body {
     width: 60%;
   };
 
+  
+
   .startedPlayer-button {
     width: 90% !important;
     font-size: 0.9rem !important;
@@ -37,6 +42,10 @@ body {
       padding: 3% 2% !important;
     };
 
+  };
+
+  .getStartedPlayer-button:nth-child(1){
+    margin-top: -100px;
   };
 
 };
@@ -64,7 +73,7 @@ body {
 
 .getStartedPlayer-button {
   @include centralFlexPosition;
-  margin-top: 2%;
+  // margin-top: 2%;
   flex-direction: column;
 
   p{

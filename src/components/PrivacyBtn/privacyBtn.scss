@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     margin-top: -1.5%;
+    // margin-top: -3%;
     overflow: hidden;
 
     button{
@@ -15,3 +16,9 @@
     };
 
 };
+
+@media(max-width: "599px"){
+  #privacy-btn-container{
+    margin-top: -3.5%;
+  }
+}

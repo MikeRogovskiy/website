@@ -20,6 +20,7 @@
 
 .fixed-bar {
     display: flex;
+    position: fixed;
     width: 100%;
     background: $color !important;
     box-shadow: 0 0 4px rgba(2, 0, 0, 0.33);
@@ -344,6 +345,9 @@ a.menu-nav__link {
         transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
         -webkit-transition: all 0.2s ease-in-out;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
     };
 
     .menu-main-list li:hover:not(:first-child) {

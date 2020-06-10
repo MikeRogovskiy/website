@@ -40,6 +40,17 @@
   background-color: #ffb43f;
 };
 
+@media(max-width: "1024px"){
+
+  #list-for-start-btn a{
+    width: 150px;
+    height: 50px;
+    line-height: 20px;
+    margin: 5px 0px 5px 0px;
+  };
+
+};
+
 @media(max-width: "599px") {
 
   #extension-btn{
