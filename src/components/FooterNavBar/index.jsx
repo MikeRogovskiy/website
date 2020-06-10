@@ -36,7 +36,7 @@ export default class FooterNavBar extends Component{
 
                 </div> }
 
-                { extensionRenderingCondition == true &&
+                { extensionRenderingCondition === true &&
                 <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
 
                     <Link to="/">
@@ -53,7 +53,7 @@ export default class FooterNavBar extends Component{
 
                 </div> }
 
-                { playerRenderingCondition == true &&
+                { playerRenderingCondition === true &&
                 <div className="footer-nav-bar_links" id="player-footer-nav-bar">
                     
                     <Link to="/">
