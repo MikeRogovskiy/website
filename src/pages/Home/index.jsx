@@ -256,7 +256,7 @@ export default class Home extends React.Component {
           </div> */}
 
           <PrivacyBtn text={this.props.text}></PrivacyBtn>
-
+          
           {/* <div className="get-started-footer_privacy">
             <Link to="/privacy">
               <button className="privacy">{this.getLangText("PrivacyPolicy")}</button>
