@@ -1,4 +1,5 @@
 @import "../../styles/mixins";
+@import "../../styles/variables";
 
 #footer-nav-bar{
   @include centralFlexPosition;
@@ -8,8 +9,10 @@
   button{
     @include buttonCorrect;
     background: rgba(255, 255, 255, 0);
-    color: #c9c9c9;
-    margin: 0px 10px 0px 10px;
+    color: $color;
+    margin: 0px 70px 0px 70px;
+    font-size: 16px;
+    line-height: 20px;
   };
 
 };
@@ -45,6 +48,14 @@
 
 @media(max-width: "599px"){
 
+  #footer-nav-bar{
+
+    button{
+      margin: 0px 20px 0px 20px;
+    };
+  
+  };
+
   #landing-footer-nav-bar{
     margin-top: -10.5%;
   };
@@ -54,7 +65,7 @@
   };
 
   #player-footer-nav-bar{
-    margin-top: -4.5%;
+    margin-top: -7.5%;
   };
 
 };
