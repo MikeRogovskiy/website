@@ -43,8 +43,10 @@
     "GetStartedButton": "COMIENCE GRATIS"
     },
 
-    "PrivacyBtn": {
-      "PrivacyPolicy": "Política de privacidad"
+    "FooterNavBar": {
+      "PrivacyPolicy": "Privacy Policy",
+      "AboutUs": "About Us",
+      "ContactUs": "Contact Us"
     },
 
     "NavBar": {

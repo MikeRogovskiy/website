@@ -12,7 +12,7 @@ import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
-import PrivacyBtn from "../../components/PrivacyBtn";
+import PrivacyBtn from "../../components/FooterNavBar";
 import ChatBotSimple from  "../../components/ChatBotSimple";
 
 export default class Home extends React.Component {
@@ -254,8 +254,6 @@ export default class Home extends React.Component {
               <span>{this.getLangText("StartLearning")}</span>
             </Link>
           </div> */}
-
-          <PrivacyBtn text={this.props.text}></PrivacyBtn>
           
           {/* <div className="get-started-footer_privacy">
             <Link to="/privacy">

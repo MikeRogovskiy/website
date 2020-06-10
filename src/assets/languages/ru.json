@@ -42,8 +42,10 @@
     "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО"
   },
 
-  "PrivacyBtn": {
-    "PrivacyPolicy": "Политика Конфиденциальности"
+  "FooterNavBar": {
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "NavBar": {

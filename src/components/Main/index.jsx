@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 import Blog from "../Blog";
 import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
-import PrivacyBtn from "../PrivacyBtn";
+import FooterNavBar from "../FooterNavBar";
 import { Home, HomeB, Extension, AnalyticsRedirect, ExtensionInstruction, ExtensionInnerInstruction, ExtenstionAdvertisement,
   NotFound,
   Plans, PlansTest,
@@ -58,7 +58,7 @@ export default class App extends React.Component {
             <AnalyticsRedirect          path="/analytics-redirect/"></AnalyticsRedirect>
           </ScrollToTop>
         </Router>
-        <PrivacyBtn text={this.props.text.PrivacyBtn}></PrivacyBtn>
+        <FooterNavBar text={this.props.text.FooterNavBar}></FooterNavBar>
       </div>
     );
   }

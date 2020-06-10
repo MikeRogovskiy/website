@@ -42,8 +42,10 @@
     "GetStartedButton": "FREE START"
     },
 
-    "PrivacyBtn": {
-      "PrivacyPolicy": "Privacy Policy"
+    "FooterNavBar": {
+      "PrivacyPolicy": "Privacy Policy",
+      "AboutUs": "About Us",
+      "ContactUs": "Contact Us"
     },
 
     "NavBar": {

@@ -1,0 +1,60 @@
+@import "../../styles/mixins";
+
+#footer-nav-bar{
+  @include centralFlexPosition;
+  width: 100%;
+  overflow: hidden;
+
+  button{
+    @include buttonCorrect;
+    background: rgba(255, 255, 255, 0);
+    color: #c9c9c9;
+    margin: 0px 10px 0px 10px;
+  };
+
+};
+
+#landing-footer-nav-bar{
+  @include centralFlexPosition;
+  margin-top: -5.5%;
+  position: absolute;
+};
+
+#extension-footer-nav-bar{
+  @include centralFlexPosition;
+  margin-top: -5.5%;
+  position: absolute;
+
+  button{
+    color:#195AA9;
+  };
+
+};
+
+#player-footer-nav-bar{
+  @include centralFlexPosition;
+  margin-top: -2.5%;
+  position: absolute;
+
+  button{
+    color:#195AA9;
+  };
+
+};
+
+
+@media(max-width: "599px"){
+
+  #landing-footer-nav-bar{
+    margin-top: -10.5%;
+  };
+
+  #extension-footer-nav-bar{
+    margin-top: -2.5%;
+  };
+
+  #player-footer-nav-bar{
+    margin-top: -4.5%;
+  };
+
+};
