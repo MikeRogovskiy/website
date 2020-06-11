@@ -3,9 +3,14 @@ import "./footerNavBar.scss";
 import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 
-const generalRenderingCondition = "https://easylang.app/";
-const extensionRenderingCondition = "https://easylang.app/extension";
-const playerRenderingCondition = "https://easylang.app/player";
+const generalRenderingConditionProd = "https://easylang.app/";
+const extensionRenderingConditionProd = "https://easylang.app/extension";
+const playerRenderingConditionProd = "https://easylang.app/player";
+
+
+const generalRenderingConditionDev = "https://easylang.app/";
+const extensionRenderingConditionDev = "https://easylang.app/extension";
+const playerRenderingConditionDev = "https://easylang.app/player";
 
 export default class FooterNavBar extends Component{
 
@@ -13,14 +18,10 @@ export default class FooterNavBar extends Component{
         return ReactHtmlParser(this.props.text[text]);
     };
 
-    componentDidMount(){
-        console.log(window.location.href)
-    }
-
     render(){
         return(
             <div id="footer-nav-bar">
-                { window.location.href === generalRenderingCondition &&
+                { window.location.href === generalRenderingConditionProd &&
                 <div className="footer-nav-bar_links" id="landing-footer-nav-bar">
 
                     <Link to="/">
@@ -37,7 +38,7 @@ export default class FooterNavBar extends Component{
 
                 </div> }
 
-                { window.location.href === extensionRenderingCondition &&
+                { window.location.href === extensionRenderingConditionProd &&
                 <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
 
                     <Link to="/">
@@ -54,7 +55,7 @@ export default class FooterNavBar extends Component{
 
                 </div> }
 
-                { window.location.href === playerRenderingCondition &&
+                { window.location.href === playerRenderingConditionProd &&
                 <div className="footer-nav-bar_links" id="player-footer-nav-bar">
                     
                     <Link to="/">
