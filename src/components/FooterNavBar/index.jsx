@@ -3,15 +3,9 @@ import "./footerNavBar.scss";
 import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 
-// const generalRenderingCondition = window.location.href.includes("analytics-redirect") || window.location.href.includes("player-instruction-youtube")
-// || window.location.href.includes("player-animation") || window.location.href.includes("extension-advertisement") ||
-// window.location.href.includes("extension-inner-instruction") || window.location.href.includes("extension")
-// || window.location.href.includes("player");
-const generalRenderingCondition = window.location.href.includes("analytics-redirect") || window.location.href.includes("player-instruction-youtube")
-|| window.location.href.includes("player-animation") || window.location.href.includes("extension-advertisement") ||
-window.location.href.includes("extension-inner-instruction") || window.location.href.includes("player");
-const extensionRenderingCondition = window.location.href.includes("extension");
-const playerRenderingCondition = window.location.href.includes("player");
+const generalRenderingCondition = "https://easylang.app/";
+const extensionRenderingCondition = "https://easylang.app/extension";
+const playerRenderingCondition = "https://easylang.app/player";
 
 export default class FooterNavBar extends Component{
 
@@ -19,10 +13,14 @@ export default class FooterNavBar extends Component{
         return ReactHtmlParser(this.props.text[text]);
     };
 
+    componentDidMount(){
+        console.log(window.location.href)
+    }
+
     render(){
         return(
             <div id="footer-nav-bar">
-                { generalRenderingCondition !== true &&
+                { window.location.href === generalRenderingCondition &&
                 <div className="footer-nav-bar_links" id="landing-footer-nav-bar">
 
                     <Link to="/">
@@ -39,7 +37,7 @@ export default class FooterNavBar extends Component{
 
                 </div> }
 
-                { extensionRenderingCondition === true &&
+                { window.location.href === extensionRenderingCondition &&
                 <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
 
                     <Link to="/">
@@ -56,7 +54,7 @@ export default class FooterNavBar extends Component{
 
                 </div> }
 
-                {/* { playerRenderingCondition === true &&
+                { window.location.href === playerRenderingCondition &&
                 <div className="footer-nav-bar_links" id="player-footer-nav-bar">
                     
                     <Link to="/">
@@ -71,7 +69,7 @@ export default class FooterNavBar extends Component{
                         <button>{this.getLangText("PrivacyPolicy")}</button>
                     </Link>
 
-                </div> } */}
+                </div> }
 
             </div>
         )
