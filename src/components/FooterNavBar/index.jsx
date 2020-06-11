@@ -4,7 +4,11 @@ import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 
 const generalRenderingConditionProd = ["https://easylang.app/", "https://easylang.app/en", "https://easylang.app/es",
-"https://easylang.app/zh", "https://easylang.app/ru"];
+"https://easylang.app/zh", "https://easylang.app/ru",
+
+"https://easylang.app/plans", "https://easylang.app/en/plans", "https://easylang.app/es/plans",
+"https://easylang.app/zh/plans", "https://easylang.app/ru/plans"
+];
 const extensionRenderingConditionProd = ["https://easylang.app/extension", "https://easylang.app/en/extension", "https://easylang.app/es/extension",
 "https://easylang.app/zh/extension", "https://easylang.app/ru/extension",
 
@@ -17,9 +21,6 @@ const extensionRenderingConditionProd = ["https://easylang.app/extension", "http
 
 "https://easylang.app/blog", "https://easylang.app/en/blog", "https://easylang.app/es/blog",
 "https://easylang.app/zh/blog", "https://easylang.app/ru/blog",
-
-"https://easylang.app/plans", "https://easylang.app/en/plans", "https://easylang.app/es/plans",
-"https://easylang.app/zh/plans", "https://easylang.app/ru/plans"
 ];
 const playerRenderingConditionProd = ["https://easylang.app/player", "https://easylang.app/en/player", "https://easylang.app/es/player",
 "https://easylang.app/zh/player", "https://easylang.app/ru/player"];
