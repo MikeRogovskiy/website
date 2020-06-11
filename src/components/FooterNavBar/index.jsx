@@ -3,12 +3,12 @@ import "./footerNavBar.scss";
 import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 
-const generalRenderingConditionProd = ["http://easylang.app/", "http://easylang.app/en", "http://easylang.app/es",
-"http://easylang.app/zh", "http://easylang.app/ru"];
-const extensionRenderingConditionProd = ["http://easylang.app/extension", "http://easylang.app/en/extension", "http://easylang.app/es/extension",
-"http://easylang.app/zh/extension", "http://easylang.app/ru/extension"];
-const playerRenderingConditionProd = ["http://easylang.app/player", "http://easylang.app/en/player", "http://easylang.app/es/player",
-"http://easylang.app/zh/player", "http://easylang.app/ru/player"];
+const generalRenderingConditionProd = ["https://easylang.app/", "https://easylang.app/en", "https://easylang.app/es",
+"https://easylang.app/zh", "https://easylang.app/ru"];
+const extensionRenderingConditionProd = ["https://easylang.app/extension", "https://easylang.app/en/extension", "https://easylang.app/es/extension",
+"https://easylang.app/zh/extension", "https://easylang.app/ru/extension"];
+const playerRenderingConditionProd = ["https://easylang.app/player", "https://easylang.app/en/player", "https://easylang.app/es/player",
+"https://easylang.app/zh/player", "https://easylang.app/ru/player"];
 
 
 const generalRenderingConditionDev = ["http://localhost:3000/", "http://localhost:3000/en", "http://localhost:3000/es",
