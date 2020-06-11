@@ -17,15 +17,12 @@ export default class Extension extends Component {
     return ReactHtmlParser(this.props.text[text]);
   };
 
-  
   render() {
 
     return (
 
       <div>
-
         <MainHeader />
-        
         <Header text={this.props.text} />
         <WithScrollContent getLangText={this.getLangText} scrollContent={extensionContent} lang={this.props.lang}/>
         <Footer text={this.props.text} />
