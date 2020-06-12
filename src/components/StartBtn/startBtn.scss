@@ -42,11 +42,18 @@
 
 @media(max-width: "1024px"){
 
+  #list-for-start-btn{
+    width: 100%;
+  };
+  
+
   #list-for-start-btn a{
-    width: 150px;
+    width: 80%;
     height: 50px;
     line-height: 20px;
     margin: 5px 0px 5px 0px;
+    text-align: center;
+    justify-content: center;
   };
 
 };
