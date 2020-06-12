@@ -13,7 +13,8 @@ const Header = (props) => {
     
     const macLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg';
     const windowsLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe';
-    // http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg
+    // http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe
+    // https://github.com/easably/platform-player-extension/releases/download/0.8.88/EasyLang.Player-Beta_win_prod.exe
 
     let OSName="Unknown OS";
 
