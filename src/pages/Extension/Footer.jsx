@@ -7,7 +7,7 @@ import "./Extension.scss";
 const Footer = (props) => {
 
     const getLangText = (text) => {
-        return ReactHtmlParser(props.text[text]);
+      return ReactHtmlParser(props.text[text]);
     };
 
     function rememberLangInLocalStorage(){
@@ -23,7 +23,7 @@ const Footer = (props) => {
           localStorage.setItem("lang", "/zh")
         };
 
-      };
+    };
 
     return (
         <footer className="getStarted-footer">

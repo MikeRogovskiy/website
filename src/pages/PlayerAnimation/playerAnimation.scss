@@ -55,6 +55,7 @@ html, body{
   font-size: 40px;
   line-height: 41px;
   color: $blackColor;
+  cursor: default;
 };
 
 .arrows-text{
@@ -63,6 +64,7 @@ html, body{
   font-weight: normal;
   font-size: 7px;
   line-height: 41px;
+  cursor: default;
 };
 
 #steps-svg-field{
