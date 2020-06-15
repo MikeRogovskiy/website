@@ -16,7 +16,6 @@ export { default as PlayerInstruction } from './PlayerInstruction';
 export { default as Products } from './Products';
 
 export { default as Plans } from './Plans';
-export { default as PlansTest } from './Plans/b';
 
 export { default as AnalyticsRedirect } from './AnalyticsRedirect';
 

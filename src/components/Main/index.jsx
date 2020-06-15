@@ -7,7 +7,7 @@ import Helmet from "react-helmet";
 import FooterNavBar from "../FooterNavBar";
 import { Home, HomeB, Extension, AnalyticsRedirect, ExtensionInstruction, ExtensionInnerInstruction, ExtenstionAdvertisement,
   NotFound,
-  Plans, PlansTest,
+  Plans, 
   Player, PlayerInstruction, PlayerAnimation,
   Privacy} from '../../pages';
 
@@ -52,7 +52,6 @@ export default class App extends React.Component {
             <PlayerAnimation            path="/player-animation/" text={this.props.text.PlayerAnimation} />
             <PlayerInstruction          path="player-instruction-youtube/"></PlayerInstruction>
             <Plans                      path="/plans/" text={this.props.text.PlansPage} />
-            <PlansTest                  path="/plans-b/" text={this.props.text.PlansPage_b} />
             <Blog                       path="/blog/*"></Blog>
             <NotFound                   path="*" text={this.props.text.NotFoundPage}></NotFound>
             <AnalyticsRedirect          path="/analytics-redirect/"></AnalyticsRedirect>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./footerNavBar.scss";
 import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
-import { linksObject } from "./linksFolder"
+import { linksObject } from "./linksFolder";
 
 export default class FooterNavBar extends Component{
     constructor(props) {
@@ -22,7 +22,7 @@ export default class FooterNavBar extends Component{
                     <button>{this.getLangText("PrivacyPolicy")}</button>
                 </Link>
             </div>
-           
+
         };
     };
 
