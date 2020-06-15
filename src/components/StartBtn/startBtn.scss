@@ -31,9 +31,7 @@
 };
 
 #list-for-start-btn{
-  @include centralFlexPosition;
-  width: 100%;
-  height: 100%;
+  @include centralRowFlexPositionHWHundred;
 };
 
 #nav-btn:hover, #extension-btn:hover{

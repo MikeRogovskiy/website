@@ -16,7 +16,6 @@ const Footer = (props) => {
     let OSName="Unknown OS";
 
     function findOSName(){
-       
         if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
         if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
         // if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
