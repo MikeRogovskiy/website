@@ -97,7 +97,7 @@ export default class PlayerAnimation extends Component {
                         hideBlackCircle();
 
                         blackCircle.style.backgroundImage = `radial-gradient(circle at  ` +
-                            `right ${blackRight} top ${blackTop} , black ${blackSize}, transparent ${blackSize2})`;
+                            `right ${blackRight} top ${blackTop}, rgb(63, 61, 61) ${blackSize}, transparent ${blackSize2})`;
                         blackCircle.style.animation = `smoothAppear ${blackDelay} ease-in`;
 
                         showBlackCircle();
