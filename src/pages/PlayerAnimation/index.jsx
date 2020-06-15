@@ -262,6 +262,7 @@ export default class PlayerAnimation extends Component {
                     changeInitialStepOpacity("0");
                     changeBackgroundFadeVisibility("0");
                     changeInitialTextOpacity("1");
+                    changeTextColorOn("white");
 
                     makeStep(step.coordinatesInitial, initialBackground, textData.stepInitialA, textData.stepInitialB, textData.stepInitialC);
                     break
@@ -269,6 +270,7 @@ export default class PlayerAnimation extends Component {
                     changeInitialStepOpacity("1");
                     changeBackgroundFadeVisibility("0.5");
                     changeInitialTextOpacity("0");
+                    changeTextColorOn("black");
 
                     makeStep(step.coordinatesInitial, backgroundA, textData.step1A, textData.step1B, textData.step1C);
                     break
