@@ -31,7 +31,8 @@
 };
 
 #list-for-start-btn{
-  @include centralRowFlexPositionHWHundred;
+  @include centralFlexPosition;
+  width: 8vw;
 };
 
 #nav-btn:hover, #extension-btn:hover{
@@ -43,7 +44,6 @@
   #list-for-start-btn{
     width: 100%;
   };
-  
 
   #list-for-start-btn a{
     width: 80%;

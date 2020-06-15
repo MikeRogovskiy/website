@@ -11,15 +11,12 @@ import initialBackground from "../../assets/images/player-animation/background-i
 import backgroundA from "../../assets/images/player-animation/background-images/stepBackground1.png";
 import backgroundB from "../../assets/images/player-animation/background-images/stepBackground2.png";
 import backgroundС from "../../assets/images/player-animation/background-images/stepBackground6.png";
-
 import backgroundD from "../../assets/images/player-animation/background-images/stepBackground6.png";
-
 import backgroundE from "../../assets/images/player-animation/background-images/stepBackground6.png";
 import backgroundF from "../../assets/images/player-animation/background-images/testi.png";
 import backgroundG from "../../assets/images/player-animation/background-images/stepBackground8.png";
 import backgroundH from "../../assets/images/player-animation/background-images/stepBackground9.png";
 
-// import backgroundI from "../../assets/images/player-animation/background-images/stepBackground8.png";
 import backgroundFinal from "../../assets/images/player-animation/background-images/finalBackground.png";
 
 import leftArrow from "../../assets/images/player-animation/arrow-images/leftArrow.svg";
@@ -298,7 +295,6 @@ export default class PlayerAnimation extends Component {
                 case 6:
                     makeStep(step.coordinatesE, backgroundF, textData.step6A, textData.step6B, textData.step6C);
                     removeAllSmallArrows();
-                    // addSmallArrows("#small-arrows_b", "#small-arrows_a", smallArrowsB, "46%", "23.5%")
                     break;
                 case 7:
                     makeStep(step.coordinatesF, backgroundG, textData.step7A, textData.step7B, textData.step7C);

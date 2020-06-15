@@ -5,11 +5,15 @@ import Blog from "../Blog";
 import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
 import FooterNavBar from "../FooterNavBar";
-import { Home, HomeB, Extension, AnalyticsRedirect, ExtensionInstruction, ExtensionInnerInstruction, ExtenstionAdvertisement,
+import {
+  AnalyticsRedirect,
+  Extension,  ExtensionInstruction, ExtensionInnerInstruction, ExtenstionAdvertisement,
+  Home, HomeB,
   NotFound,
-  Plans, 
+  Plans,
   Player, PlayerInstruction, PlayerAnimation,
-  Privacy} from '../../pages';
+  Privacy
+} from '../../pages';
 
 export default class App extends React.Component {
 
@@ -36,29 +40,29 @@ export default class App extends React.Component {
             u => this.props.location.pathname.match(u) !== null
           )}
         ></Navbar>
-        
+
         <Router>
           <ScrollToTop                  path="/">
-            <Home                       path="/" text={this.props.text.HomePage}></Home>
-            <HomeB                      path="/B/"></HomeB>
-            <HomeB                      path="/C/"></HomeB>
-            <Privacy                    path="/privacy" text={this.props.text} ></Privacy>
+            <AnalyticsRedirect          path="/analytics-redirect/" />
+            <Home                       path="/" text={this.props.text.HomePage} />
+            <HomeB                      path="/B/" />
+            <HomeB                      path="/C/" />
+            <Privacy                    path="/privacy" text={this.props.text} />
             <Extension                  path="/extension/" text={this.props.text.ExtensionPage} lang={this.props.language} />
             <ExtensionInstruction       path="/extension-instruction-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
             <ExtensionInstruction       path="/extension-instruction/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
-            <ExtensionInnerInstruction  path="/extension-inner-instruction/"></ExtensionInnerInstruction>
-            <ExtenstionAdvertisement    path="/extension-advertisement/"></ExtenstionAdvertisement>
+            <ExtensionInnerInstruction  path="/extension-inner-instruction/" />
+            <ExtenstionAdvertisement    path="/extension-advertisement/" />
             <Player                     path="/player/" text={this.props.text.PlayerPage} />
             <PlayerAnimation            path="/player-animation/" text={this.props.text.PlayerAnimation} />
-            <PlayerInstruction          path="player-instruction-youtube/"></PlayerInstruction>
+            <PlayerInstruction          path="player-instruction-youtube/" />
             <Plans                      path="/plans/" text={this.props.text.PlansPage} />
-            <Blog                       path="/blog/*"></Blog>
-            <NotFound                   path="*" text={this.props.text.NotFoundPage}></NotFound>
-            <AnalyticsRedirect          path="/analytics-redirect/"></AnalyticsRedirect>
+            <Blog                       path="/blog/*" />
+            <NotFound                   path="*" text={this.props.text.NotFoundPage} />
           </ScrollToTop>
         </Router>
         <FooterNavBar text={this.props.text.FooterNavBar}></FooterNavBar>
       </div>
     );
-  }
-}
+  };
+};

@@ -3,8 +3,7 @@ import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from 'styled-components';
 import botLogo from "../../assets/images/сhatBot/robo.png"
 import "./chatBotSimple.scss";
-
-// https://lucasbassetti.com.br/react-simple-chatbot - source docs
+import { steps } from  "./chatBotSimpleLogic";
 
 const theme = {
     background: 'white',
@@ -16,35 +15,7 @@ const theme = {
     botFontColor: '#fff',
     userBubbleColor: '#fff',
     userFontColor: '#4a4a4a',
-  };
-
-const steps = [
-    {
-        id: '1',
-        message: 'What is your name?',
-        trigger: '2',
-    },
-    {
-        id: '2',
-        user: true,
-        trigger: '3',
-    },
-    {
-        id: '3',
-        message: 'Hi {previousValue}, nice to meet you!',
-        trigger: '4',
-    },
-    {
-        id: '4',
-        user: true,
-        trigger: '5',
-    },
-    {
-        id: '5',
-        message: 'I am not programed well to understand {previousValue}',
-        end: true,
-    },
-]
+};
 
 
 export default class ChatBotSimple extends Component{
@@ -54,8 +25,6 @@ export default class ChatBotSimple extends Component{
           on: false
         };
     };
-
-    
 
     appearBot = () => {
         this.setState({
@@ -75,10 +44,12 @@ export default class ChatBotSimple extends Component{
                 <div id="chat-bot_container">
 
                     <div id="chat-bot_container_btn">
-                        {this.state.on === false &&
+                        {
+                            this.state.on === false &&
                             <button onClick={() => this.appearBot()}><img src={botLogo} /></button>
                         }
-                        {this.state.on === true &&
+                        {
+                            this.state.on === true &&
                             <button onClick={() => this.disappearBot()}><img src={botLogo} /></button>
                         }
                     </div>
@@ -91,12 +62,10 @@ export default class ChatBotSimple extends Component{
                             </ThemeProvider>}
                     </div>
 
-
-
                 </div>
             </div>
-            
-        )
-    }
-}
+
+        );
+    };
+};
 
