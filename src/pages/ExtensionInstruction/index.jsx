@@ -25,6 +25,7 @@ import arrow from  "../../assets/images/extension-instruction/arrow.svg";
 import "./ExtensionInstruction.scss";
 import "./ExtensionInstructionMedia.scss";
 
+
 export default class ExtensionInstruction extends Component{
     constructor(props) {
         super(props);
@@ -44,7 +45,18 @@ export default class ExtensionInstruction extends Component{
         return ReactHtmlParser(this.props.text[text]);
     };
 
+    componentDidMount(){
+        let mainSiteLang = "/";
+
+        if(localStorage.getItem("lang") != "/" && localStorage.getItem("lang") != null){
+            mainSiteLang = localStorage.getItem("lang")
+            window.location.href = `https://easylang.app/${mainSiteLang}/extension-instruction-static`;
+            localStorage.clear();
+        }
+    };
+
     render() {
+        
 
         return (
             <div className="instruction">
