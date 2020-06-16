@@ -10,14 +10,19 @@ import initialBackground from "../../assets/images/player-animation/background-i
 
 import backgroundA from "../../assets/images/player-animation/background-images/stepBackground1.png";
 import backgroundB from "../../assets/images/player-animation/background-images/stepBackground2.png";
-import backgroundС from "../../assets/images/player-animation/background-images/stepBackground6.png";
-import backgroundD from "../../assets/images/player-animation/background-images/stepBackground6.png";
-import backgroundE from "../../assets/images/player-animation/background-images/stepBackground6.png";
-import backgroundF from "../../assets/images/player-animation/background-images/testi.png";
-import backgroundG from "../../assets/images/player-animation/background-images/stepBackground8.png";
-import backgroundH from "../../assets/images/player-animation/background-images/stepBackground9.png";
+import backgroundС from "../../assets/images/player-animation/background-images/stepBackground3.png";
+import backgroundD from "../../assets/images/player-animation/background-images/stepBackground4.png";
+import backgroundE from "../../assets/images/player-animation/background-images/stepBackground5.png";
+import backgroundF from "../../assets/images/player-animation/background-images/stepBackground6.png";
+import backgroundG from "../../assets/images/player-animation/background-images/stepBackground7.png";
+import backgroundH from "../../assets/images/player-animation/background-images/stepBackground8.png";
+import backgroundI from "../../assets/images/player-animation/background-images/stepBackground10.png";
 
 import backgroundFinal from "../../assets/images/player-animation/background-images/finalBackground.png";
+
+import keyboardA from "../../assets/images/player-animation/step-images/keyboard-arrows-a.png";
+import keyboardB from "../../assets/images/player-animation/step-images/keyboard-arrows-b.png";
+import keyboardC from "../../assets/images/player-animation/step-images/keyboard-arrows-c.png";
 
 import leftArrow from "../../assets/images/player-animation/arrow-images/leftArrow.svg";
 import rightArrow from "../../assets/images/player-animation/arrow-images/rightArrow.svg";
@@ -168,12 +173,12 @@ export default class PlayerAnimation extends Component {
             .attr("opacity", "0");
         };
 
-        function addSmallArrows(arrowsTypeA, arrowsTypeB, arrowsImage, x, y){
+        function addSideImg(arrowsTypeA, arrowsTypeB, arrowsImage, x, y){
             d3.select(arrowsTypeA)
                 .attr("opacity", "1")
                 .attr("xlink:href", arrowsImage)
-                .attr("height", "550")
-                .attr("width", "550")
+                .attr("height", "330")
+                .attr("width", "840")
                 .attr("x", x)
             .attr("y", y);
 
@@ -185,7 +190,7 @@ export default class PlayerAnimation extends Component {
         };
 
 
-        function removeAllSmallArrows(){
+        function removeSideImg(){
             d3.selectAll(".small-arrows")
             .attr("opacity", "0");
         };
@@ -244,7 +249,7 @@ export default class PlayerAnimation extends Component {
         function action(value){
 
             var sum = clicks + value;
-            if (sum >= 0 && sum < 10) {
+            if (sum >= 0 && sum < 12) {
                 clicks = sum;
                 window.parent.postMessage(
                     {
@@ -280,31 +285,35 @@ export default class PlayerAnimation extends Component {
                     hideContentOf(document.querySelector("#steps-svg-field_instruction-group"));
                     hideContentOf(document.querySelector("#instruction-image"));
                     makeStep(step.coordinatesB, backgroundС, textData.step3A, textData.step3B, textData.step3C);
-                    removeBigArrows();
                     break;
                 case 4:
                     makeStep(step.coordinatesC, backgroundD, textData.step4A, textData.step4B, textData.step4C);
-                    addBigArrows();
-                    removeAllSmallArrows();
+                    removeSideImg();
                     break;
                 case 5:
                     makeStep(step.coordinatesD, backgroundE, textData.step5A, textData.step5B, textData.step5C);
-                    removeBigArrows();
-                    addSmallArrows("#small-arrows_a", "#small-arrows_b", smallArrowsA, "44%", "26%")
+                    addSideImg("#small-arrows_a", "#small-arrows_b", keyboardA, "31%", "35%")
                     break;
                 case 6:
                     makeStep(step.coordinatesE, backgroundF, textData.step6A, textData.step6B, textData.step6C);
-                    removeAllSmallArrows();
+                    addSideImg("#small-arrows_a", "#small-arrows_b", keyboardA, "31%", "35%")
                     break;
                 case 7:
                     makeStep(step.coordinatesF, backgroundG, textData.step7A, textData.step7B, textData.step7C);
-                    removeAllSmallArrows();
+                    addSideImg("#small-arrows_a", "#small-arrows_b", keyboardA, "31%", "35%")
                     break;
                 case 8:
-                    changeTextColorOn("black")
+                    removeSideImg();
                     makeStep(step.coordinatesG, backgroundH, textData.step8A, textData.step8B, textData.step8C);
                     break;
                 case 9:
+                    makeStep(step.coordinatesH, backgroundH, textData.step9A, textData.step9B, textData.step9C);
+                    break;
+                case 10:
+                    changeTextColorOn("black")
+                    makeStep(step.coordinatesI, backgroundI, textData.step10A, textData.step10B, textData.step10C);
+                    break;
+                case 11:
                     changeTextColorOn("white")
                     makeStep(step.coordinatesFinal, backgroundFinal, textData.stepFinalA, textData.stepFinalB, textData.stepFinalC);
                 default:
@@ -357,7 +366,7 @@ export default class PlayerAnimation extends Component {
                             <text x="50%" y="43%" className="rectangle-text" textAnchor="middle" fill="white" fontSize="45px">
                                 {this.getLangText("stepInitialA")}
                             </text>
-                            <text x="51%" y="49%" className="rectangle-text" textAnchor="middle" fill="white" fontSize="45px">
+                            <text x="50%" y="49%" className="rectangle-text" textAnchor="middle" fill="white" fontSize="45px">
                                 {this.getLangText("stepInitialB")}
                             </text>
                             <text x="45%" y="22%" className="rectangle-text" textAnchor="middle" fill="white" fontSize="45px">

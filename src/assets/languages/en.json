@@ -164,21 +164,25 @@
     "step5B": "with subtitles list",
     "step5C": "",
 
-    "step6A": "Select a word with cursor",
-    "step6B": "or just a part, to translate",
+    "step6A": "Revise the current subtitle",
+    "step6B": "",
     "step6C": "",
 
-    "step7A": "Add words",
-    "step7B": "for repeat",
+    "step7A": "Revise subtitle with SlowMo",
+    "step7B": "",
     "step7C": "",
 
-    "step8A": "See add words",
-    "step8B": "then revise them",
+    "step8A": "Select a word with cursor",
+    "step8B": "or just a part, to translate",
     "step8C": "",
-  
-    "step9A": "Open Tutor",
-    "step9B": "and revise",
-    "step9C": "words in games",
+
+    "step9A": "Add words",
+    "step9B": "to revise it",
+    "step9C": "",
+
+    "step10A": "Open Tutor",
+    "step10B": "and revise words in games",
+    "step10C": "",
 
     "stepFinalA": "Learn english",
     "stepFinalB": "with us!",
