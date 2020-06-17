@@ -3,6 +3,10 @@
 
 .Home {
 
+  .container {
+    margin: 4% 17% !important;
+  };
+
   .hero {
     background: no-repeat bottom/cover url("../../assets/images/home/bcg3.svg");
     text-align: center;
@@ -344,7 +348,7 @@
   .sources-title {
     @include flexColumn;
     justify-content: flex-start;
-    padding: 20px 40px 20px 50px;
+    padding: 20px 40px 20px 0px;
     grid-area: text;
 
     h2 {
@@ -354,7 +358,7 @@
   };
 
   .blog {
-    padding: 20px 40px 0 50px;
+    padding: 20px 40px 0 0px;
     grid-area: button;
 
     p {

@@ -28,13 +28,32 @@ export default class Navbar extends React.Component {
     };
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
-    }
+    };
+
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
-    }
+
+        if(window.location.href.includes("player")){
+            document.querySelector("#nav-btn").style.display = "none";
+        } else {
+            document.querySelector("#nav-btn").style.display = "flex";
+        }
+
+        
+    };
+
     componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
-    }
+    };
+
+    hideStartBtn(){
+        document.querySelector("#nav-btn").style.display = "none";
+    };
+
+    showStartBtn(){
+        document.querySelector("#nav-btn").style.display = "flex";
+    };
+
     handleScroll = e => {
         if (window.pageYOffset > 50 && !this.state.fixedBar) {
             this.setState({
@@ -44,8 +63,11 @@ export default class Navbar extends React.Component {
             this.setState({
                 fixedBar: false
             });
-        }
+        };
     };
+
+    
+
     render() {
 
         const navBarClass = classNames("Navbar", {
@@ -64,12 +86,37 @@ export default class Navbar extends React.Component {
             </option>
         ));
 
+        window.onscroll = function (){
+            if (window.location.href.includes("player") && window.pageYOffset < 400 || window.pageYOffset >= 5000){
+                document.querySelector("#nav-btn").style.display = "none";
+            } else if(window.location.href.includes("player") && window.pageYOffset < 30){
+                document.querySelector("#nav-btn").style.display = "none";
+            } else {
+                document.querySelector("#nav-btn").style.display = "flex";
+            };
+        };
+
+        // function checkConditionForStartBtnrendering(){
+        //     if(window.location.href.includes("player") !== true){
+        //         document.querySelector("#nav-btn").style.display = "flex";
+        //     } else if (window.location.href.includes("player")) {
+        //         document.querySelector("#nav-btn").style.display = "none";
+        //     }
+        //     // alert("1")
+        // };
+
+        // window.onhashchange = checkConditionForStartBtnrendering
+        
+      
+      
+
         return (
             <div>
                 { window.location.href.includes("instruction") || window.location.href.includes("player-animation")
                 || window.location.href.includes("B") || window.location.href.includes("C")
-                || window.location.href.includes("advertisement") || window.location.href.includes("plans")!== true
-                &&  <nav className={navBarClass}>
+                || window.location.href.includes("advertisement") || window.location.href.includes("plans") !== true
+                &&
+                <nav className={navBarClass}>
 
                     <div className="sticky-bar">
                         <div className="logo">
@@ -110,7 +157,7 @@ export default class Navbar extends React.Component {
                                             <Link
                                                 to="player/"
                                                 className="menu-nav__link"
-                                                onClick={this.closeMenu}
+                                                onClick={() => {this.closeMenu(); this.hideStartBtn()}}
                                             >
                                                 {this.props.text.player}
                                             </Link>
@@ -119,7 +166,7 @@ export default class Navbar extends React.Component {
                                             <Link
                                                 to="extension/"
                                                 className="menu-nav__link"
-                                                onClick={this.closeMenu}
+                                                onClick={() => {this.closeMenu(); this.showStartBtn()}}
                                             >
                                                 {this.props.text.extension}
                                             </Link>
@@ -128,13 +175,16 @@ export default class Navbar extends React.Component {
                                             <Link
                                                 to="blog/"
                                                 className="menu-nav__link"
-                                                onClick={this.closeMenu}
+                                                onClick={() => {this.closeMenu(); this.showStartBtn()}}
                                             >
                                                 {this.props.text.ourBlog}
                                             </Link>
                                         </li>
                                         <li>
-                                            <StartBtn link={"player/"} text={this.props.text.GetStartedButton} id={"nav-btn"}/>
+                                        <StartBtn link={"player/"} text={this.props.text.GetStartedButton} id={"nav-btn"} />
+                                        
+                                
+
                                             {/* <Link
                                                 className="menu-nav__link start-button"
                                                 to="extension-instruction/"
@@ -174,10 +224,11 @@ export default class Navbar extends React.Component {
                         </div>
                     </div>
                 </nav>
-                }
+            }
             </div>
-
+            
 
         );
+        
     }
 }

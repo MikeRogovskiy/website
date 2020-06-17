@@ -1,4 +1,5 @@
 @import "../../styles/mixins";
+@import "../../styles/variables";
 
 body {
  @include pureBody;
@@ -111,10 +112,10 @@ body {
   font-size: 1.125rem;
   // text-transform: uppercase;
   letter-spacing: 1px;
-  color: #fff;
+  color: $color;
   line-height: 1.375rem;
 
-  background-color: #FF6A70;
+  background: $startBtnColor;
   border: none;
   border-radius: 110px;
   transition: all 0.3s linear;

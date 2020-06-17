@@ -138,7 +138,6 @@
     justify-content: flex-end;
     padding-right: 0;
     align-items: center;
-    text-transform: capitalize;
     width: 100%;
 };
 
@@ -168,6 +167,7 @@ a.menu-nav__link:hover{
 #nav-btn{
     font-weight: normal;
     font-size: 1.1rem;
+    background: $startBtnColor;
 };
 
 .menu-nav__link {
@@ -175,18 +175,6 @@ a.menu-nav__link:hover{
     font-size: 1.1rem;
     border-bottom: 0px solid rgba(255, 255, 255, 0);
     transition: border-bottom 0.1s ease-in-out;
-};
-
-@media (max-width: 1760px) {
-
-    .logo-light{
-        padding: 0px;
-    }
-
-    .sticky-bar {
-        width: 80vw;
-    };
-
 };
 
 /*menu button for mobile version*/
@@ -201,6 +189,10 @@ a.menu-nav__link:hover{
         width: 40vw;
         padding-left: 80px;
     };
+
+    .lang form select {
+        margin-left: 100px;
+    }
 
     .start-button {
         display: block;

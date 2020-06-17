@@ -55,7 +55,7 @@
       .start-free{
         @include buttonCorrect;
         @include normalBoldFont;
-        background-color: $startBtnColor;
+        background: $startBtnColor;
         color: $color;
         height: 89.52px;
         width: 483px;

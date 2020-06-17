@@ -1,7 +1,7 @@
-@media (min-width: 1550px) {
+@media (max-width: 1762px) {
 
     .Home .container {
-        margin: 0 20%;
+        margin: 0 8.5%;
     };
 
 };
@@ -9,6 +9,10 @@
 @media (max-width: 1024px) {
 
     .Home {
+
+        .container {
+            margin: 0 16%;
+        };
 
         .button-group {
             width: 100%;
