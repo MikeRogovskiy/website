@@ -27,8 +27,8 @@ import keyboardC from "../../assets/images/player-animation/step-images/keyboard
 import leftArrow from "../../assets/images/player-animation/arrow-images/leftArrow.svg";
 import rightArrow from "../../assets/images/player-animation/arrow-images/rightArrow.svg";
 
-import smallArrowsA from "../../assets/images/player-animation/arrow-images/smallArrowsA.svg";
-import smallArrowsB from "../../assets/images/player-animation/arrow-images/smallArrowsB.svg";
+// import smallArrowsA from "../../assets/images/player-animation/arrow-images/smallArrowsA.svg";
+// import smallArrowsB from "../../assets/images/player-animation/arrow-images/smallArrowsB.svg";
 
 import instruction from "../../assets/images/player-animation/step-images/instructionArrows.svg";
 
@@ -296,11 +296,11 @@ export default class PlayerAnimation extends Component {
                     break;
                 case 6:
                     makeStep(step.coordinatesE, backgroundF, textData.step6A, textData.step6B, textData.step6C);
-                    addSideImg("#small-arrows_a", "#small-arrows_b", keyboardA, "31%", "35%")
+                    addSideImg("#small-arrows_a", "#small-arrows_b", keyboardB, "31%", "35%")
                     break;
                 case 7:
                     makeStep(step.coordinatesF, backgroundG, textData.step7A, textData.step7B, textData.step7C);
-                    addSideImg("#small-arrows_a", "#small-arrows_b", keyboardA, "31%", "35%")
+                    addSideImg("#small-arrows_a", "#small-arrows_b", keyboardC, "31%", "35%")
                     break;
                 case 8:
                     removeSideImg();
