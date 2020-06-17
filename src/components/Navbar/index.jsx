@@ -33,13 +33,9 @@ export default class Navbar extends React.Component {
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
 
-        if(window.location.href.includes("player")){
+        if(window.location.href.includes("player") && window.location.href.includes("player-animation") !== true){
             document.querySelector("#nav-btn").style.display = "none";
-        } else {
-            document.querySelector("#nav-btn").style.display = "flex";
         }
-
-        
     };
 
     componentWillUnmount() {
