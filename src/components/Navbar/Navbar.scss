@@ -21,13 +21,6 @@
     };
 };
 
-// #getLang{
-//     height: 30px;
-//     width: 100px;
-//     border-radius: 50%;
-//     background-color: red;
-// }
-
 .Navbar {
     @include centralFlexPosition;
     position: -webkit-sticky;
@@ -44,71 +37,100 @@
     height: 100%;
 };
 
-.fixed-bar {
+// .fixed-bar {
+//     display: flex;
+//     position: fixed;
+//     width: 100%;
+//     background: $color !important;
+//     box-shadow: 0 0 4px rgba(2, 0, 0, 0.33);
+//     animation: showMenu1 0.3s;
+// };
+
+// .fixed-bar .logo-light,  .fixed-bar a,  .fixed-bar .lang select{
+//     color: #215599;
+// };
+
+.fixed-bar{
     display: flex;
     position: fixed;
     width: 100%;
     background: $color !important;
     box-shadow: 0 0 4px rgba(2, 0, 0, 0.33);
     animation: showMenu1 0.3s;
-};
 
-.fixed-bar .logo-light,  .fixed-bar a{
-    color: #215599;
-};
+    .logo-light, a, .lang select{
+        color: $navMenuColor;
+    };
 
-.fixed-bar select {
-    color: #215599;
-    background: url("../../assets/images/navbar/Triangle1.svg") right center
-        no-repeat;
-    background-size: 10%;
+    .lang select{
+        border: 1.5px solid $navMenuColor;
+        background-image: url("../../assets/images/navbar/Triangle1.svg");
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-size: 10%;
+    };
+
+    .lang select:hover{
+        color: $color;
+        background-color: $navMenuColor;
+        background-image: url("../../assets/images/navbar/Triangle1.1.svg");
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-size: 10%;
+    };
+
+    .lang select option{
+        background-color: $navMenuColor;
+        color: $color;
+    };
+
 };
 
 .no-fixed-bar {
-    animation: showMenu2 0.3s;
+    animation: showMenu2 0.3s ease-in-out;
     display: flex;
+};
+
+.lang select {
+    @include normalBoldFont;
+    @include buttonCorrect;
+    margin-left: 30px;
+    padding: 5% 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url("../../assets/images/navbar/Triangle1.1.svg") center no-repeat;
+    background-position-x: 90%;
+    background-size: 10%;
+    background-color: rgba(33, 85, 153, 0);;
+    color: $color;
+    font-size: 1.1rem;
+    letter-spacing: 0.7px;
+    border-radius: 25px;
+    border: 1.5px solid $color;
+    transition: 0.3s ease-out;
+};
+
+.lang select:hover{
+    background-image: url("../../assets/images/navbar/Triangle1.svg");
+    background-position-x: 90%;
+    background-size: 10%;
+    background-color: $color;
+    color: $navMenuColor;
+    border: 1.5px solid $navMenuColor;
+    padding: 3% 30px;
+};
+
+.lang select option{
+    background-color: $color;
+    color: $navMenuColor;
 };
 
 /*logo*/
 .menu-wrapper {
     width: 45%;
     max-height: 80px;
-};
-
-.lang {
-    justify-content: flex-start;
-    display: flex;
-    align-items: center;
-};
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    border: none;
-    background: url("../../assets/images/navbar/Triangle1.1.svg") right center
-        no-repeat;
-    background-size: 10%;
-    color: white;
-		font-size: 1.1rem;
-		letter-spacing: 0.7px;
-    text-decoration: underline;
-    padding-left: 40px;
-    padding-right: 15px;
-    cursor: pointer;
-    outline: none;
-    text-align-last: right;
-    &::after{
-        content:'';
-        @include wHHundred;
-        display: block;
-        background: red;
-    };
-};
-
-.lang option {
-    color: #215599;
 };
 
 .logo-light {
