@@ -177,6 +177,22 @@ a.menu-nav__link:hover{
     transition: border-bottom 0.1s ease-in-out;
 };
 
+@media (max-width: 1400px) {
+  
+    .logo a {
+        padding-left: 25px;
+    };
+
+};
+
+@media (max-width: 1200px) {
+  
+    .logo a {
+        padding-left: 20px;
+    };
+
+};
+
 /*menu button for mobile version*/
 @media (max-width: 1024px) {
 
@@ -422,6 +438,10 @@ a.menu-nav__link:hover{
 
 @media (max-width: 610px) {
 
+    .logo a {
+        padding-left: 0px;
+    };
+
     .sticky-bar {
         padding-left: 100px;
     };
@@ -434,17 +454,17 @@ a.menu-nav__link:hover{
         @include normalBoldFont;
         display: block;
         width: auto;
-    
+
         border-bottom: 0 !important;
         transition: unset !important;
-      
+
         font-size: 1rem;
         margin: 10px auto;
         text-transform: uppercase;
         letter-spacing: 1px;
         color: $color !important;
         padding: 1px 25px;
-      
+
         background-color: #FF6A70;
         border: none;
         border-radius: 110px;

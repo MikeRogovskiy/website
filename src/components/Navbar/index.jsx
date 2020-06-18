@@ -88,7 +88,7 @@ export default class Navbar extends React.Component {
                     currentPercentage = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
 
                 return  Math.round(currentPercentage);
-            }
+            };
 
             if(window.location.href.includes("player")){
                 checkUrlCondition(currentPercentage)

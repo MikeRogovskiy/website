@@ -20,9 +20,9 @@ import backgroundI from "../../assets/images/player-animation/background-images/
 
 import backgroundFinal from "../../assets/images/player-animation/background-images/finalBackground.png";
 
-import keyboardA from "../../assets/images/player-animation/step-images/keyboard-arrows-a.png";
-import keyboardB from "../../assets/images/player-animation/step-images/keyboard-arrows-b.png";
-import keyboardC from "../../assets/images/player-animation/step-images/keyboard-arrows-c.png";
+import keyboardA from "../../assets/images/player-animation/step-images/keyboard-arrows-a.svg";
+import keyboardB from "../../assets/images/player-animation/step-images/keyboard-arrows-b.svg";
+import keyboardC from "../../assets/images/player-animation/step-images/keyboard-arrows-c.svg";
 
 // import leftArrow from "../../assets/images/player-animation/arrow-images/leftArrow.svg";
 // import rightArrow from "../../assets/images/player-animation/arrow-images/rightArrow.svg";
