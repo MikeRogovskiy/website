@@ -23,8 +23,17 @@ export default class Extension extends Component {
 
       <div>
         <MainHeader />
-        <Header text={this.props.text} />
-        <WithScrollContent getLangText={this.getLangText} scrollContent={extensionContent} lang={this.props.lang}/>
+
+        <Header
+          text={this.props.text}
+        />
+
+        <WithScrollContent
+          getLangText={this.getLangText}
+          scrollContent={extensionContent}
+          lang={this.props.lang}
+        />
+        
         <Footer text={this.props.text} />
       </div>
     );

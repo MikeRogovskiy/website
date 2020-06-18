@@ -25,7 +25,10 @@ export default class NotFound extends Component {
                     <img src={notFoundImg} alt="notFoundImg"/>
                     <h1>{this.getLangText("NotFoundTitle")}</h1>
                     <p>{this.getLangText("NotFoundSubtitle")}</p>
-                    <Link to="/">
+
+                    <Link
+                        to="/"
+                    >
                         <div className="button-homepage">
                             {this.getLangText("HomePage")}
                         </div>

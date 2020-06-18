@@ -33,7 +33,7 @@ const Footer = (props) => {
                             href={windowsLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            >
+                        >
                             <span>{getLangText("GetPlayerButtonWindows")}</span>
                         </a>
                     }
@@ -46,7 +46,7 @@ const Footer = (props) => {
                             href={macLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            >
+                        >
                             <span>{getLangText("GetPlayerButtonMac")}</span>
                         </a>
                     }

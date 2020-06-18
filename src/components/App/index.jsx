@@ -21,7 +21,8 @@ class App extends React.Component {
       ru: languageRu,
       zh: languageZh,
     };
-  }
+  };
+
   getUserLanguageFromInputList() {
     const userLang = this.getUserLanguage;
     const langList = this.getLangList().map(l => l.value);
@@ -29,7 +30,8 @@ class App extends React.Component {
       return langList[0];
     }
     return userLang;
-  }
+  };
+
   getUserLanguage() {
     return (
       navigator.language ||
@@ -37,7 +39,8 @@ class App extends React.Component {
       navigator.userLanguage ||
       "en"
     );
-  }
+  };
+
   handleLanguage = navigate => {
     return lang => {
       const pathname = useHash ? window.location.hash : window.location.pathname;
@@ -64,11 +67,13 @@ class App extends React.Component {
       }
     };
   };
+
   getLangList() {
     return Object.keys(this.langStore).map(k => {
       return { value: k, name: this.langStore[k].name };
     });
-  }
+  };
+
   render() {
     return (
       <div className="App">
@@ -100,7 +105,7 @@ class App extends React.Component {
         </LocationProvider>
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;

@@ -24,11 +24,8 @@ import keyboardA from "../../assets/images/player-animation/step-images/keyboard
 import keyboardB from "../../assets/images/player-animation/step-images/keyboard-arrows-b.png";
 import keyboardC from "../../assets/images/player-animation/step-images/keyboard-arrows-c.png";
 
-import leftArrow from "../../assets/images/player-animation/arrow-images/leftArrow.svg";
-import rightArrow from "../../assets/images/player-animation/arrow-images/rightArrow.svg";
-
-// import smallArrowsA from "../../assets/images/player-animation/arrow-images/smallArrowsA.svg";
-// import smallArrowsB from "../../assets/images/player-animation/arrow-images/smallArrowsB.svg";
+// import leftArrow from "../../assets/images/player-animation/arrow-images/leftArrow.svg";
+// import rightArrow from "../../assets/images/player-animation/arrow-images/rightArrow.svg";
 
 import instruction from "../../assets/images/player-animation/step-images/instructionArrows.svg";
 
@@ -152,26 +149,26 @@ export default class PlayerAnimation extends Component {
 
         };
 
-        function addBigArrows(){
-            d3.selectAll(".big-arrows")
-            .attr("opacity", "1")
+        // function addBigArrows(){
+        //     d3.selectAll(".big-arrows")
+        //     .attr("opacity", "1")
 
-            function createBigArrow(arrowType, arrowImage, x, y){
-                d3.select(arrowType)
-                    .attr("xlink:href", arrowImage)
-                    .attr("height", "420")
-                    .attr("width", "420")
-                    .attr("x", x)
-                .attr("y", y);
-            };
-            createBigArrow("#big-arrow-left", leftArrow, "37%", "50%");
-            setTimeout(function() { createBigArrow("#big-arrow-right", rightArrow, "44.5%", "65%");}, 2000);
-        };
+        //     function createBigArrow(arrowType, arrowImage, x, y){
+        //         d3.select(arrowType)
+        //             .attr("xlink:href", arrowImage)
+        //             .attr("height", "420")
+        //             .attr("width", "420")
+        //             .attr("x", x)
+        //         .attr("y", y);
+        //     };
+        //     createBigArrow("#big-arrow-left", leftArrow, "37%", "50%");
+        //     setTimeout(function() { createBigArrow("#big-arrow-right", rightArrow, "44.5%", "65%");}, 2000);
+        // };
 
-        function removeBigArrows(){
-            d3.selectAll(".big-arrows")
-            .attr("opacity", "0");
-        };
+        // function removeBigArrows(){
+        //     d3.selectAll(".big-arrows")
+        //     .attr("opacity", "0");
+        // };
 
         function addSideImg(arrowsTypeA, arrowsTypeB, arrowsImage, x, y){
             d3.select(arrowsTypeA)
@@ -182,11 +179,11 @@ export default class PlayerAnimation extends Component {
                 .attr("x", x)
             .attr("y", y);
 
-            function removeSmallArrowsA(){
+            function hideSideImgLast(){
                 d3.select(arrowsTypeB)
                 .attr("opacity", "0");
             };
-            removeSmallArrowsA();
+            hideSideImgLast();
         };
 
 
@@ -206,7 +203,7 @@ export default class PlayerAnimation extends Component {
         function hideContentOf(typeOfContent){
             d3.select(typeOfContent)
             .attr("visibility", "hidden");
-        }
+        };
 
         function appearContentOf(typeOfContent){
             d3.select(typeOfContent)

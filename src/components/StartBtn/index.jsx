@@ -13,10 +13,10 @@ export default class StartBtn extends React.Component {
         return (
             <div id="list-for-start-btn">
                 <Link
-                to={this.props.link}
-                rel="noopener noreferrer"
-                id={this.props.id}
-                style={{opacity: this.props.opacity}}
+                    to={this.props.link}
+                    rel="noopener noreferrer"
+                    id={this.props.id}
+                    style={{opacity: this.props.opacity}}
                 >
                     {this.props.text}
                 </Link>

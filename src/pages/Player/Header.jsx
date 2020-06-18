@@ -13,8 +13,6 @@ const Header = (props) => {
     
     const macLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg';
     const windowsLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe';
-    // http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe
-    // https://github.com/easably/platform-player-extension/releases/download/0.8.88/EasyLang.Player-Beta_win_prod.exe
 
     let OSName="Unknown OS";
 
@@ -41,7 +39,7 @@ const Header = (props) => {
                             href={windowsLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            >
+                        >
                             <span>{getLangText("GetPlayerButtonWindows")}</span>
                         </a>
                     }
@@ -54,7 +52,7 @@ const Header = (props) => {
                             href={macLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            >
+                        >
                             <span>{getLangText("GetPlayerButtonMac")}</span>
                         </a>
                     }

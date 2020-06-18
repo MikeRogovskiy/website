@@ -35,7 +35,7 @@ export default class Navbar extends React.Component {
 
         if(window.location.href.includes("player") && window.location.href.includes("player-animation") !== true){
             document.querySelector("#nav-btn").style.display = "none";
-        }
+        };
     };
 
     componentWillUnmount() {
@@ -62,8 +62,6 @@ export default class Navbar extends React.Component {
         };
     };
 
-    
-
     render() {
 
         const navBarClass = classNames("Navbar", {
@@ -85,146 +83,110 @@ export default class Navbar extends React.Component {
         window.onscroll = function (){
             if (window.location.href.includes("player") && window.pageYOffset < 400 || window.pageYOffset >= 5000){
                 document.querySelector("#nav-btn").style.display = "none";
-            } else if(window.location.href.includes("player") && window.pageYOffset < 30){
+            } else if (window.location.href.includes("player") && window.pageYOffset < 30){
                 document.querySelector("#nav-btn").style.display = "none";
             } else {
                 document.querySelector("#nav-btn").style.display = "flex";
             };
         };
 
-        // function checkConditionForStartBtnrendering(){
-        //     if(window.location.href.includes("player") !== true){
-        //         document.querySelector("#nav-btn").style.display = "flex";
-        //     } else if (window.location.href.includes("player")) {
-        //         document.querySelector("#nav-btn").style.display = "none";
-        //     }
-        //     // alert("1")
-        // };
-
-        // window.onhashchange = checkConditionForStartBtnrendering
-        
-      
-      
-
         return (
             <div>
                 { window.location.href.includes("instruction") || window.location.href.includes("player-animation")
-                || window.location.href.includes("B") || window.location.href.includes("C")
-                || window.location.href.includes("advertisement") || window.location.href.includes("plans") !== true
-                &&
-                <nav className={navBarClass}>
+                    || window.location.href.includes("B") || window.location.href.includes("C")
+                    || window.location.href.includes("advertisement") || window.location.href.includes("plans")
+                    !== true
+                    &&
+                    <nav className={navBarClass}>
 
-                    <div className="sticky-bar">
-                        <div className="logo">
-                            <Link to="./" className="logo-light">
-                                EasyLang
-                            </Link>
-                        </div>
-                        {
-                            this.props.noUseLangSelect || (
-                                <div className="lang">
-                                    <form>
-                                        <select
-                                            name="changeLang"
-                                            id="getLang"
-                                            value={this.props.curLang}
-                                            onChange={this.changeLocale}
-                                        >
-                                            {langList}
-                                        </select>
-                                    </form>
+                        <div className="sticky-bar">
+                            <div className="logo">
+                                <Link
+                                    to="./"
+                                    className="logo-light"
+                                    onClick={() => {this.closeMenu(); this.showStartBtn()}}
+                                >
+                                    EasyLang
+                                </Link>
+                            </div>
+                            {
+                                this.props.noUseLangSelect || (
+                                    <div className="lang">
+                                        <form>
+                                            <select
+                                                name="changeLang"
+                                                id="getLang"
+                                                value={this.props.curLang}
+                                            >
+                                                {langList}
+                                            </select>
+                                        </form>
+                                    </div>
+                                )
+                            }
+                            <div className="menu-wrapper">
+                                <div className="menu-block">
+                                    <div className={menuMainClass}>
+                                        <div
+                                            className="overlay"
+                                            onClick={this.closeMenu}
+                                        ></div>
+                                        <ul className="menu-main-list">
+                                            <li>
+                                            <span className="menu-logo">
+                                                EasyLang
+                                            </span>
+                                            </li>
+                                            <li className="menu-item">
+                                                <Link
+                                                    to="player/"
+                                                    className="menu-nav__link"
+                                                    onClick={() => {this.closeMenu(); this.hideStartBtn()}}
+                                                >
+                                                    {this.props.text.player}
+                                                </Link>
+                                            </li>
+                                            <li className="menu-item">
+                                                <Link
+                                                    to="extension/"
+                                                    className="menu-nav__link"
+                                                    onClick={() => {this.closeMenu(); this.showStartBtn()}}
+                                                >
+                                                    {this.props.text.extension}
+                                                </Link>
+                                            </li>
+                                            <li className="menu-item">
+                                                <Link
+                                                    to="blog/"
+                                                    className="menu-nav__link"
+                                                    onClick={() => {this.closeMenu(); this.showStartBtn()}}
+                                                >
+                                                    {this.props.text.ourBlog}
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <StartBtn
+                                                    link={"player/"}
+                                                    text={this.props.text.GetStartedButton}
+                                                    id={"nav-btn"}
+                                                />
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            )
-                        }
-                        <div className="menu-wrapper">
-                            <div className="menu-block">
-                                <div className={menuMainClass}>
-                                    <div
-                                        className="overlay"
-                                        onClick={this.closeMenu}
-                                    ></div>
-                                    <ul className="menu-main-list">
-                                        <li>
-                                        <span className="menu-logo">
-                                            EasyLang
-                                        </span>
-                                        </li>
-                                        <li className="menu-item">
-                                            <Link
-                                                to="player/"
-                                                className="menu-nav__link"
-                                                onClick={() => {this.closeMenu(); this.hideStartBtn()}}
-                                            >
-                                                {this.props.text.player}
-                                            </Link>
-                                        </li>
-                                        <li className="menu-item">
-                                            <Link
-                                                to="extension/"
-                                                className="menu-nav__link"
-                                                onClick={() => {this.closeMenu(); this.showStartBtn()}}
-                                            >
-                                                {this.props.text.extension}
-                                            </Link>
-                                        </li>
-                                        <li className="menu-item">
-                                            <Link
-                                                to="blog/"
-                                                className="menu-nav__link"
-                                                onClick={() => {this.closeMenu(); this.showStartBtn()}}
-                                            >
-                                                {this.props.text.ourBlog}
-                                            </Link>
-                                        </li>
-                                        <li>
-                                        <StartBtn link={"player/"} text={this.props.text.GetStartedButton} id={"nav-btn"} />
-                                        
-                                
-
-                                            {/* <Link
-                                                className="menu-nav__link start-button"
-                                                to="extension-instruction/"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                {this.props.text.GetStartedButton}
-                                            </Link> */}
-                                        </li>
-                                        {/* <li>
-                                        <Link
-                                            to="./"
-                                            className="menu-nav__link"
-                                            onClick={this.closeMenu}
-                                        >
-                                            {this.props.text.home}
-                                        </Link>
-                                    </li> */}
-                                        {/* <li>
-                                        <Link
-                                            to="blog"
-                                            className="menu-nav__link"
-                                            onClick={this.closeMenu}
-                                        >
-                                            {this.props.text.ourBlog}
-                                        </Link>
-                                    </li> */}
-                                    </ul>
+                                <div
+                                    className={menuBtnClass}
+                                    onClick={this.clickMenuButton}
+                                >
+                                    <span></span>
                                 </div>
                             </div>
-                            <div
-                                className={menuBtnClass}
-                                onClick={this.clickMenuButton}
-                            >
-                                <span></span>
-                            </div>
                         </div>
-                    </div>
-                </nav>
-            }
+                    </nav>
+                }
             </div>
-            
 
         );
-        
-    }
-}
+
+    };
+};

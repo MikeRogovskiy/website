@@ -5,11 +5,6 @@ import "./playerInstructionMedia.scss";
 import videoExplanation from "../../assets/images/player-instruction/video-explanation.svg";
 import subtitlesExplanation from "../../assets/images/player-instruction/subtitles-explanation.svg";
 
-// import smallArrow from "../../assets/images/player-instruction/small-arrow.svg";
-// import bigArrow from "../../assets/images/player-instruction/big-arrow.svg";
-
-
-
 export default class PlayerInstruction extends Component {
     render(){
         function sendMessage(str){
