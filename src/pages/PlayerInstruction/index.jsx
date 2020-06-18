@@ -12,6 +12,7 @@ export default class PlayerInstruction extends Component {
         };
 
         return(
+            
             <div id="player-instruction">
                 <div id="player-instruction_container">
                     <h1>Download YouTube video with subtitles</h1>

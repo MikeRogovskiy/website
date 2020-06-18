@@ -1,7 +1,8 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 body {
-  padding: 0;
-  margin: 0;
+  @include pureBody;
 };
 
 .Description-Scroll {
@@ -13,7 +14,7 @@ body {
 
 .scrolled-content-header h1 {
   text-transform: uppercase;
-  color:  #232323;
+  color: $blackColor;
   letter-spacing: 1.41px;
   font-style: normal;
   font-size: 54px;
@@ -69,7 +70,7 @@ body {
   };
 
   .content-header h2 {
-    color: #232323 !important;
+    color: $blackColor !important;
     font-size: 1.6rem !important;
     margin-bottom: 10px !important;
   };

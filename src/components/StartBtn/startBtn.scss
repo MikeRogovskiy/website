@@ -23,7 +23,6 @@
 #nav-btn, #extension-btn{
   @include buttonCorrect;
   @include normalBoldFont;
-  // background-color: #FF6A70;
   border-radius: 110px;
   letter-spacing: 1px;
   color: $color !important;

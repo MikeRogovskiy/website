@@ -32,10 +32,6 @@ export default class Navbar extends React.Component {
 
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
-
-        // if(window.location.href.includes("player") && window.location.href.includes("player-animation") !== true){
-        //     document.querySelector("#nav-btn").style.display = "none";
-        // };
     };
 
     componentWillUnmount() {
@@ -134,6 +130,7 @@ export default class Navbar extends React.Component {
                                                 name="changeLang"
                                                 id="getLang"
                                                 value={this.props.curLang}
+                                                onChange={this.changeLocale}
                                             >
                                                 {langList}
                                             </select>
