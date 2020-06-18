@@ -61,7 +61,7 @@
     transition: all 0.3s linear;
 
     &:hover {
-      background-color: #ffb43f;
+      background: $startBtnColorHover;
 		};
 
 		&.top,&.bottom{
