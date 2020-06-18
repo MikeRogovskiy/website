@@ -33,9 +33,9 @@ export default class Navbar extends React.Component {
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
 
-        if(window.location.href.includes("player") && window.location.href.includes("player-animation") !== true){
-            document.querySelector("#nav-btn").style.display = "none";
-        };
+        // if(window.location.href.includes("player") && window.location.href.includes("player-animation") !== true){
+        //     document.querySelector("#nav-btn").style.display = "none";
+        // };
     };
 
     componentWillUnmount() {
@@ -81,22 +81,30 @@ export default class Navbar extends React.Component {
         ));
 
         window.onscroll = function (){
-            if (window.location.href.includes("player") && window.pageYOffset < 400 || window.pageYOffset >= 5000){
-                document.querySelector("#nav-btn").style.display = "none";
-            } else if (window.location.href.includes("player") && window.pageYOffset < 30){
-                document.querySelector("#nav-btn").style.display = "none";
-            } else {
-                document.querySelector("#nav-btn").style.display = "flex";
+
+            if(window.location.href.includes("player")){
+                checkUrlCondition()
+            };
+
+            function checkUrlCondition(){
+
+                if (window.location.href.includes("player") === true && window.pageYOffset < 400 || window.pageYOffset >= 5000){
+                    document.querySelector("#nav-btn").style.display = "none";
+                } else if (window.location.href.includes("player") === true && window.pageYOffset > 400 || window.pageYOffset <= 5000){
+                    document.querySelector("#nav-btn").style.display = "flex";
+                };
+
             };
         };
 
         return (
             <div>
-                { window.location.href.includes("instruction") || window.location.href.includes("player-animation")
+                {   window.location.href.includes("instruction") || window.location.href.includes("player-animation")
                     || window.location.href.includes("B") || window.location.href.includes("C")
                     || window.location.href.includes("advertisement") || window.location.href.includes("plans")
                     !== true
                     &&
+
                     <nav className={navBarClass}>
 
                         <div className="sticky-bar">
@@ -183,6 +191,7 @@ export default class Navbar extends React.Component {
                             </div>
                         </div>
                     </nav>
+                    
                 }
             </div>
 
