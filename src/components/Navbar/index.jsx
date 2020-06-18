@@ -81,20 +81,29 @@ export default class Navbar extends React.Component {
         ));
 
         window.onscroll = function (){
+            var currentPercentage = calculatePercenteges(document.body);
+
+            function calculatePercenteges(e){
+                let p = e.parentNode;
+                    currentPercentage = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
+
+                return  Math.round(currentPercentage);
+            }
 
             if(window.location.href.includes("player")){
-                checkUrlCondition()
+                checkUrlCondition(currentPercentage)
             };
 
-            function checkUrlCondition(){
+            function checkUrlCondition(percentages){
 
-                if (window.location.href.includes("player") === true && window.pageYOffset < 400 || window.pageYOffset >= 5000){
+                if (window.location.href.includes("player") === true && percentages < 10 || percentages >= 98){
                     document.querySelector("#nav-btn").style.display = "none";
-                } else if (window.location.href.includes("player") === true && window.pageYOffset > 400 || window.pageYOffset <= 5000){
+                } else if (window.location.href.includes("player") === true && percentages > 10 || percentages <= 98){
                     document.querySelector("#nav-btn").style.display = "flex";
                 };
 
             };
+
         };
 
         return (

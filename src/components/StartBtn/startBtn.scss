@@ -23,7 +23,7 @@
 #nav-btn, #extension-btn{
   @include buttonCorrect;
   @include normalBoldFont;
-  background-color: #FF6A70;
+  // background-color: #FF6A70;
   border-radius: 110px;
   letter-spacing: 1px;
   color: $color !important;
@@ -36,7 +36,7 @@
 };
 
 #nav-btn:hover, #extension-btn:hover{
-  background-color: #ffb43f;
+  background: $startBtnColorHover;
 };
 
 @media(max-width: "1024px"){

@@ -78,6 +78,26 @@
 
 };
 
+@media(max-width: "1534px"){
+
+  #player-footer-nav-bar{
+    margin-top: -7%;
+  };
+
+};
+
+@media(max-width: "700px"){
+
+  #footer-nav-bar{
+
+    a{
+      margin: 0px 30px 0px 30px;
+    };
+
+  };
+
+};
+
 @media(max-width: "599px"){
 
   #footer-nav-bar{
