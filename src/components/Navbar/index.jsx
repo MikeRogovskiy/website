@@ -86,13 +86,13 @@ export default class Navbar extends React.Component {
                 return  Math.round(currentPercentage);
             };
 
-            if(window.location.href.includes("player")){
+            if(window.location.href.includes("player") === true && window.location.href.includes("player-instruction-youtube") !== true){
                 checkUrlCondition(currentPercentage)
             };
 
             function checkUrlCondition(percentages){
 
-                if (window.location.href.includes("player") === true && percentages < 10 || percentages >= 98){
+                if (window.location.href.includes("player") === true &&  percentages < 10 || percentages >= 98){
                     document.querySelector("#nav-btn").style.display = "none";
                 } else if (window.location.href.includes("player") === true && percentages > 10 || percentages <= 98){
                     document.querySelector("#nav-btn").style.display = "flex";
