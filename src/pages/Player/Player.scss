@@ -114,12 +114,12 @@ body {
   border: none;
   border-radius: 110px;
   // transition: 3s;
-  // transition: all 0.7s linear;
+  transition: all 0.7s linear;
 
-  // &:hover {
+  &:hover {
     
-  //   background: $startBtnColorHover;
-  // };
+    background: $startBtnColorHover;
+  };
 
   &.top,&.bottom{
     @include centralAlignFlex;
@@ -178,10 +178,10 @@ body {
 
 };
 
-.startedPlayer-button:hover{
-  transition: 3s ease-in-out;
-  background: red;
-}
+// .startedPlayer-button:hover{
+//   // transition: 3s ease-in-out;
+//   background: red;
+// }
 
 @media (max-width: 540px) {
   .Description-Scroll {

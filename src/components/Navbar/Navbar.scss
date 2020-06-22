@@ -235,7 +235,7 @@ a.menu-nav__link:hover{
         border-radius: 110px;
         transition: all 0.3s linear;
         &:hover {
-          background-color: #ffb43f;
+          background-color: $startBtnColorHover;
         };
         &.top,&.bottom{
           display: flex;
