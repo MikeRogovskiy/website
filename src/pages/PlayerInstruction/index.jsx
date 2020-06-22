@@ -4,9 +4,21 @@ import "./playerInstructionMedia.scss";
 
 import videoExplanation from "../../assets/images/player-instruction/video-explanation.svg";
 import subtitlesExplanation from "../../assets/images/player-instruction/subtitles-explanation.svg";
+import approvedLinkCircle from "../../assets/images/player-instruction/greenCircleOk.svg"
 // import Clipboard from 'react-clipboard.js';
 
 export default class PlayerInstruction extends Component {
+    componentDidMount(){
+        document.querySelector("#container_header_right img").style.visibility = "hidden";
+        
+    };
+
+    checkIfUserSelectsAnotherTab = () => {
+        function testi(){
+            console.log(1)
+        }
+       document.addEventListener("onFocus", testi())
+    };
 
     render(){
 
@@ -14,36 +26,48 @@ export default class PlayerInstruction extends Component {
             window.parent.postMessage(str, "*")
         };
 
-        // function getClipboard(){
+        function getClipboard(){
 
-        //     function checkIfYouTube(clipboardData){
-        //         const admitedYouTubeName = new RegExp("https://www.youtube.com/");
-        //         const deniedYouTubeName = "Innpropriate YouTube link";
-        //         if(clipboardData.match(admitedYouTubeName)){
-        //             document.querySelector("#special-div h2").innerText = clipboardData;
-        //             alert("YES")
-        //         } else {
-        //             document.querySelector("#special-div h2").innerText = deniedYouTubeName;
-        //             alert("NOE")
-        //         }
-        //     }
+            function checkIfYouTube(clipboardData){
+                const admitedYouTubeName = new RegExp("https://www.youtube.com/");
+                const deniedYouTubeName = "Innpropriate YouTube link";
 
-        //     navigator.clipboard.readText()
-        //     .then(clipText => checkIfYouTube(clipText))
-        // }
+                if(clipboardData.match(admitedYouTubeName)){
+                    document.querySelector("#link-from-clipboard").innerText = "URL Copied";
+                    document.querySelector("#container_header_right img").style.visibility = "visible";
+                } else {
+                    document.querySelector("#link-from-clipboard").innerText = deniedYouTubeName;
+                    document.querySelector("#container_header_right img").style.visibility = "hidden";
+                };
+            };
+
+            navigator.clipboard.readText()
+            .then(clipText => checkIfYouTube(clipText))
+        };
+
+        
 
         return(
 
             <div id="player-instruction">
-                {/* 
-                <div id="special-div">
-                    <h2>aa</h2>
-                </div> */}
 
                 <div id="player-instruction_container">
                     <h1>Download YouTube video with subtitles</h1>
                     <div id="container_header" className="player-instruction-content">
-                        <h2>1.</h2><p>Cope URL Video from <button onClick={() => {sendMessage("youtube")}}>YouTube</button> to the buffer (Ctrl + C)</p>
+                        
+                        <div id="container_header_left">
+                            <h2>1.</h2>
+                            <p>Cope URL Video from 
+                                <button onClick={() => {sendMessage("youtube"); getClipboard()}}>YouTube</button> 
+                                to the buffer (Ctrl + C)
+                               
+                            </p>
+                        </div>
+                        <div id="container_header_right">
+                            <img src={approvedLinkCircle}></img>
+                            <p id="link-from-clipboard" />
+                        </div>
+
                     </div>
                     <div id="container_main" className="player-instruction-content">
                         <h2>2.</h2>
@@ -53,7 +77,7 @@ export default class PlayerInstruction extends Component {
                     </div>
                     <div id="container_footer">
                     <h2>3.</h2>
-                        <div id="container_footer_folder" className="player-instruction-content"> 
+                        <div id="container_footer_folder" className="player-instruction-content">
                             <div id="container_footer_folder_download" className="player-instruction-block">
                                 <h3>Open Download Video</h3>
                                 <button onClick={() => {sendMessage("video-from-image")}}><img id="footer_images_download" src={videoExplanation}></img></button>

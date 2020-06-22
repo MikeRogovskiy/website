@@ -56,6 +56,7 @@ export default class App extends React.Component {
             <Player                     path="/player/" text={this.props.text.PlayerPage} />
             <PlayerAnimation            path="/player-animation/" text={this.props.text.PlayerAnimation} />
             <PlayerInstruction          path="player-instruction-youtube/" />
+            <PlayerInstruction          path="/player-instruction-youtube-test/" />
             <Plans                      path="/plans/" text={this.props.text.PlansPage} />
             <Blog                       path="/blog/*" />
             <NotFound                   path="*" text={this.props.text.NotFoundPage} />
