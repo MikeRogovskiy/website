@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-// import Clipboard from 'react-clipboard.js';
 import "./playerInstruction.scss";
 import "./playerInstructionMedia.scss";
 
 import videoExplanation from "../../assets/images/player-instruction/video-explanation.svg";
 import subtitlesExplanation from "../../assets/images/player-instruction/subtitles-explanation.svg";
+// import Clipboard from 'react-clipboard.js';
 
 export default class PlayerInstruction extends Component {
-
 
     render(){
 
@@ -15,19 +14,36 @@ export default class PlayerInstruction extends Component {
             window.parent.postMessage(str, "*")
         };
 
-        function getClipboard(){
-            console.log(document.execCommand("copy"))
-        }
+        // function getClipboard(){
+
+        //     function checkIfYouTube(clipboardData){
+        //         const admitedYouTubeName = new RegExp("https://www.youtube.com/");
+        //         const deniedYouTubeName = "Innpropriate YouTube link";
+        //         if(clipboardData.match(admitedYouTubeName)){
+        //             document.querySelector("#special-div h2").innerText = clipboardData;
+        //             alert("YES")
+        //         } else {
+        //             document.querySelector("#special-div h2").innerText = deniedYouTubeName;
+        //             alert("NOE")
+        //         }
+        //     }
+
+        //     navigator.clipboard.readText()
+        //     .then(clipText => checkIfYouTube(clipText))
+        // }
 
         return(
-        //     <Clipboard data-clipboard-text="I'll be copied">
-        //     copy to clipboard
-        //   </Clipboard>
+
             <div id="player-instruction">
+                {/* 
+                <div id="special-div">
+                    <h2>aa</h2>
+                </div> */}
+
                 <div id="player-instruction_container">
                     <h1>Download YouTube video with subtitles</h1>
                     <div id="container_header" className="player-instruction-content">
-                        <h2>1.</h2><p>Cope URL Video from <button onClick={() => {sendMessage("youtube"); getClipboard()}}>YouTube</button> to the buffer (Ctrl + C)</p>
+                        <h2>1.</h2><p>Cope URL Video from <button onClick={() => {sendMessage("youtube")}}>YouTube</button> to the buffer (Ctrl + C)</p>
                     </div>
                     <div id="container_main" className="player-instruction-content">
                         <h2>2.</h2>
