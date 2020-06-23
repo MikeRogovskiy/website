@@ -4,26 +4,21 @@ import "./playerInstructionMedia.scss";
 
 import videoExplanation from "../../assets/images/player-instruction/video-explanation.svg";
 import subtitlesExplanation from "../../assets/images/player-instruction/subtitles-explanation.svg";
-import approvedLinkCircle from "../../assets/images/player-instruction/greenCircleOk.svg"
-// import Clipboard from 'react-clipboard.js';
+import approvedLinkCircle from "../../assets/images/player-instruction/greenCircleOk.svg";
 
 export default class PlayerInstruction extends Component {
     componentDidMount(){
         document.querySelector("#container_header_right img").style.visibility = "hidden";
-        
-    };
-
-    checkIfUserSelectsAnotherTab = () => {
-        function testi(){
-            console.log(1)
-        }
-       document.addEventListener("onFocus", testi())
     };
 
     render(){
 
         function sendMessage(str){
             window.parent.postMessage(str, "*")
+        };
+
+        window.document.querySelector("body").onfocus = function (){
+            getClipboard()
         };
 
         function getClipboard(){
@@ -35,17 +30,16 @@ export default class PlayerInstruction extends Component {
                 if(clipboardData.match(admitedYouTubeName)){
                     document.querySelector("#link-from-clipboard").innerText = "URL Copied";
                     document.querySelector("#container_header_right img").style.visibility = "visible";
-                } else {
+                } else if (clipboardData.length > 10){
                     document.querySelector("#link-from-clipboard").innerText = deniedYouTubeName;
                     document.querySelector("#container_header_right img").style.visibility = "hidden";
                 };
+
             };
 
             navigator.clipboard.readText()
             .then(clipText => checkIfYouTube(clipText))
         };
-
-        
 
         return(
 
@@ -54,16 +48,15 @@ export default class PlayerInstruction extends Component {
                 <div id="player-instruction_container">
                     <h1>Download YouTube video with subtitles</h1>
                     <div id="container_header" className="player-instruction-content">
-                        
+
                         <div id="container_header_left">
                             <h2>1.</h2>
-                            <p>Cope URL Video from 
-                                <button onClick={() => {sendMessage("youtube"); getClipboard()}}>YouTube</button> 
+                            <p>Cope URL Video from
+                                <button onClick={() => {sendMessage("youtube")}}>YouTube</button>
                                 to the buffer (Ctrl + C)
-                               
                             </p>
                         </div>
-                        <div id="container_header_right">
+                        <div id="container_header_right" >
                             <img src={approvedLinkCircle}></img>
                             <p id="link-from-clipboard" />
                         </div>

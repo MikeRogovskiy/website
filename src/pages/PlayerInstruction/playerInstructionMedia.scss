@@ -12,12 +12,31 @@
         font-size: 28px;
     };
 
+    #player-instruction p{
+        font-size: 20px;
+    };
+
+    // #container_header_left p{
+    //     font-size: 20px;
+    // };
+
+    #container_header_right{
+        margin-left: 50px;
+    };
 };
 
 @media screen and (max-width: 1500px){
 
     .player-instruction-block h3{
         font-size: 26px;
+    };
+
+    #container_header_left{
+        width: 60%;
+    };
+
+    #container_header_right{
+        margin-left: 0px;
     };
 
 };
@@ -28,12 +47,27 @@
         font-size: 24px;
     };
 
+    #container_header_left{
+        width: 80%;
+    };
+
+  
+
 };
 
 @media screen and (max-width: 1200px){
 
     #footer_images_download, #footer_images_subtitles{
         margin-left: 10%;
+    };
+    
+    #container_header_left{
+        width: 100%;
+    };
+
+    #container_header_right{
+        align-items: flex-end;
+        justify-content: flex-end;
     };
 
 };
@@ -47,6 +81,17 @@
         font-size: 20px;
     };
 
+    #container_header_left p{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    };
+
+    #container_header_right{
+        margin-left: 10px;
+    };
 };
 
 @media screen and (max-width: 800px){
