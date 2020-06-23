@@ -14,12 +14,12 @@ export default class PlayerInstruction extends Component {
     render(){
 
         function sendMessage(str){
-            window.parent.postMessage(str, "*")
+            window.parent.postMessage(str, "*");
         };
 
-        window.document.querySelector("body").onfocus = function (){
-            getClipboard()
-        };
+        // window.document.querySelector("body").onfocus = function (){
+        //     getClipboard();
+        // };
 
         function getClipboard(){
 
