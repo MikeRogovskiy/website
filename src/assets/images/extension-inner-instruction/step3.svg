@@ -2,41 +2,42 @@
 <g clip-path="url(#clip0)">
 <rect width="350" height="378" fill="white"/>
 <text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="800" letter-spacing="0em"><tspan x="65" y="97.736">SAVE THE WORD</tspan></text>
-<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan visibility="hidden" x="42.2695" y="101.104">3</tspan></text>
-<rect x="54" y="134" width="72" height="32" rx="2" fill="#6078F4"/>
-<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" letter-spacing="0em"><tspan x="127.484" y="160.104">dear friend! </tspan></text>
-<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="bold" letter-spacing="0em"><tspan x="56" y="160.104">Hello </tspan></text>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="42.2695" y="101.104">3</tspan></text>
+<rect x="64" y="219" width="72" height="32" rx="2" fill="#6078F4"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" letter-spacing="0em"><tspan x="137.484" y="243.104">dear friend! </tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="bold" letter-spacing="0em"><tspan x="66" y="243.104">Hello </tspan></text>
 <g filter="url(#filter0_d)">
-<rect x="58" y="182" width="235" height="80" rx="13" fill="white"/>
-<circle cx="183" cy="222" r="26" fill="white"/>
-<circle cx="183" cy="222" r="25.5" stroke="#333333" stroke-opacity="0.5"/>
-<circle cx="253" cy="222" r="25.5" fill="#6078F4" stroke="white"/>
-<path d="M241 222.25H265.5" stroke="white"/>
-<path d="M253.25 234.5V210" stroke="white"/>
-<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" letter-spacing="0em"><tspan x="82" y="232.104">Hola</tspan></text>
-<path d="M190.074 217.484V211H171V232.723H186.194" stroke="#333333" stroke-opacity="0.5"/>
-<path d="M175.203 225.59L176.385 222.672M176.385 222.672L179.405 215.215L181.992 222.672H176.385Z" stroke="#333333" stroke-opacity="0.5" stroke-linejoin="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M189.574 228.832V233.695H190.574V228.832H194.246H195.246V227.832V223.348V222.348H194.246H190.574V220.402H189.574V222.348H185.901H184.901V223.348V227.832V228.832H185.901H189.574ZM190.574 227.832H194.246V223.348H190.574V227.832ZM189.574 223.348V227.832H185.901V223.348H189.574Z" fill="#333333" fill-opacity="0.5"/>
+<rect x="58" y="123" width="235" height="80" rx="13" fill="white"/>
+<circle cx="183" cy="163" r="26" fill="white"/>
+<circle cx="183" cy="163" r="25.5" stroke="#333333" stroke-opacity="0.5"/>
+<circle cx="253" cy="163" r="25.5" fill="#6078F4" stroke="white"/>
+<path d="M241 163.25H265.5" stroke="white"/>
+<path d="M253.25 175.5V151" stroke="white"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" letter-spacing="0em"><tspan x="82" y="173.104">Hola</tspan></text>
+<path d="M190.074 158.484V152H171V173.723H186.194" stroke="#333333" stroke-opacity="0.5"/>
+<path d="M175.203 166.59L176.385 163.672M176.385 163.672L179.405 156.215L181.992 163.672H176.385Z" stroke="#333333" stroke-opacity="0.5" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M189.574 169.832V174.695H190.574V169.832H194.246H195.246V168.832V164.348V163.348H194.246H190.574V161.402H189.574V163.348H185.901H184.901V164.348V168.832V169.832H185.901H189.574ZM190.574 168.832H194.246V164.348H190.574V168.832ZM189.574 164.348V168.832H185.901V164.348H189.574Z" fill="#333333" fill-opacity="0.5"/>
 </g>
 <path d="M47 39H295" stroke="url(#paint0_linear)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/>
 <circle id="stepA" cursor="pointer" cx="55" cy="39" r="15" fill="#C4C4C4"/>
 <circle id="stepB" cursor="pointer" cx="135" cy="39" r="15" fill="#C4C4C4"/>
-<circle id="stepC" cursor="pointer" cx="215" cy="39" r="15" fill="url(#paint1_linear)"/>
-<text  id="stepAText" cursor="pointer" user-select="none" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="50.1367" y="47.104">1</tspan></text>
-<text  id="stepBText" cursor="pointer" user-select="none" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="127.816" y="47.104">2</tspan></text>
-<text  id="stepCText" cursor="pointer" user-select="none" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="207.77" y="47.104">3</tspan></text>
+<circle id="stepC" cursor="pointer" cx="215" cy="39" r="15"  fill="url(#paint1_linear)"/>
+<text id="stepAText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="50.1367" y="47.104">1</tspan></text>
+<text id="stepBText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="127.816" y="47.104">2</tspan></text>
+<text id="stepCText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="207.77" y="47.104">3</tspan></text>
 <circle id="stepD" cursor="pointer" cx="295" cy="39" r="15" fill="#C4C4C4"/>
-<text  id="stepDText" cursor="pointer" user-select="none" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="286.598" y="47.104">4</tspan></text>
+<text id="stepDText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="286.598" y="47.104">4</tspan></text>
 <g filter="url(#filter1_d)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M305.734 253.678L275.028 243.028L285.678 273.734L291.846 267.565L298.738 274.458L306.458 266.738L299.565 259.846L305.734 253.678Z" fill="url(#paint2_linear)"/>
-</g>
-<path id="right-arrow" cursor="pointer" d="M328.625 201.25L340.375 189.5L328.625 177.75" stroke="url(#paint3_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="left-arrow" cursor="pointer" d="M21.375 201.25L9.625 189.5L21.375 177.75" stroke="url(#paint4_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="right-arrow" cursor="pointer" d="M328.625 201.25L340.375 189.5L328.625 177.75" stroke="url(#paint6_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="left-arrow" cursor="pointer" d="M21.375 201.25L9.625 189.5L21.375 177.75" stroke="url(#paint7_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <circle id="right-arrow-circle" cursor="pointer" fill="white" opacity="0.1" cx="330" cy="190" r="20"></circle>
 <circle id="left-arrow-circle" cursor="pointer" fill="white" opacity="0.1" cx="20" cy="190" r="20"></circle>
 </g>
+<path d="M328.625 203.25L340.375 191.5L328.625 179.75" stroke="url(#paint3_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.375 203.25L9.625 191.5L21.375 179.75" stroke="url(#paint4_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 <defs>
-<filter id="filter0_d" x="57" y="182" width="237" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="57" y="123" width="237" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="1"/>
@@ -45,7 +46,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<filter id="filter1_d" x="265" y="231" width="49.6262" height="49.6262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d" x="248" y="156" width="49.6262" height="49.6262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dx="1" dy="-1"/>
@@ -65,15 +66,15 @@
 <stop stop-color="#6178F5"/>
 <stop offset="1" stop-color="#195AA9"/>
 </linearGradient>
-<linearGradient id="paint2_linear" x1="276.821" y1="253.266" x2="296.798" y2="269.003" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear" x1="259.821" y1="178.266" x2="279.798" y2="194.003" gradientUnits="userSpaceOnUse">
 <stop stop-color="#34DD96"/>
 <stop offset="1" stop-color="#15C0A1"/>
 </linearGradient>
-<linearGradient id="paint3_linear" x1="332.026" y1="182.877" x2="334.615" y2="197.865" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint3_linear" x1="332.026" y1="184.877" x2="334.615" y2="199.865" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6178F5"/>
 <stop offset="1" stop-color="#195AA9"/>
 </linearGradient>
-<linearGradient id="paint4_linear" x1="17.9737" y1="182.877" x2="15.3848" y2="197.865" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint4_linear" x1="17.9737" y1="184.877" x2="15.3848" y2="199.865" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6178F5"/>
 <stop offset="1" stop-color="#195AA9"/>
 </linearGradient>

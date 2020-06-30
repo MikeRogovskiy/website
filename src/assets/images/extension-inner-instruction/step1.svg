@@ -2,43 +2,32 @@
 <g clip-path="url(#clip0)">
 <rect width="350" height="378" fill="white"/>
 <text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="800" letter-spacing="0em"><tspan x="60" y="93.736">HIGHLIGHT AND TRANSLATE </tspan><tspan x="60" y="113.736">THE WORD</tspan></text>
-<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan visibility="hidden" x="42.1367" y="106.104">1</tspan></text>
-<rect x="53" y="131" width="72" height="32" rx="2" fill="#6078F4"/>
-<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" letter-spacing="0em"><tspan x="120.688" y="155.104"> dear friend! </tspan></text>
-<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="bold" letter-spacing="0em"><tspan x="56" y="155.104">Hello</tspan></text>
-<g filter="url(#filter0_d)">
-<rect x="58" y="179" width="235" height="80" rx="13" fill="white"/>
-<circle cx="183" cy="219" r="26" fill="white"/>
-<circle cx="183" cy="219" r="25.5" stroke="#333333" stroke-opacity="0.5"/>
-<circle cx="253" cy="219" r="25.5" stroke="#333333" stroke-opacity="0.5"/>
-<path opacity="0.5" d="M241 219.25H265.5" stroke="#333333"/>
-<path opacity="0.5" d="M253.25 231.5V207" stroke="#333333"/>
-<text fill="#333333" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="22" letter-spacing="0em"><tspan x="82" y="227.387">Hola</tspan></text>
-<path d="M190.074 214.484V208H171V229.723H186.194" stroke="#333333" stroke-opacity="0.5"/>
-<path d="M175.203 222.59L176.385 219.672M176.385 219.672L179.405 212.215L181.992 219.672H176.385Z" stroke="#333333" stroke-opacity="0.5" stroke-linejoin="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M189.574 225.832V230.695H190.574V225.832H194.246H195.246V224.832V220.348V219.348H194.246H190.574V217.402H189.574V219.348H185.901H184.901V220.348V224.832V225.832H185.901H189.574ZM190.574 224.832H194.246V220.348H190.574V224.832ZM189.574 220.348V224.832H185.901V220.348H189.574Z" fill="#333333" fill-opacity="0.5"/>
-</g>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="42.1367" y="106.104">1</tspan></text>
+<rect x="64" y="219" width="72" height="32" rx="2" fill="#6078F4"/>
+<text fill="#333333" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" letter-spacing="0em"><tspan x="130.688" y="243.104"> dear friend! </tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="bold" letter-spacing="0em"><tspan x="66" y="243.104">Hello</tspan></text>
 <path d="M47 39H295" stroke="url(#paint0_linear)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/>
-<circle id="stepA" cursor="pointer" cx="55" cy="39" r="15" fill="url(#paint1_linear)"/>
+<circle id="stepA" cursor="pointer" cx="55" cy="39" r="15"  fill="url(#paint1_linear)"/>
 <circle id="stepB" cursor="pointer" cx="135" cy="39" r="15" fill="#C4C4C4"/>
 <circle id="stepC" cursor="pointer" cx="215" cy="39" r="15" fill="#C4C4C4"/>
-<text id="stepAText" user-select="none" cursor="pointer" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="50.1367" y="47.104">1</tspan></text>
-<text id="stepBText" user-select="none" cursor="pointer" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="127.816" y="47.104">2</tspan></text>
-<text id="stepCText" user-select="none" cursor="pointer" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="207.77" y="47.104">3</tspan></text>
+<text id="stepAText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="50.1367" y="47.104">1</tspan></text>
+<text id="stepBText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="127.816" y="47.104">2</tspan></text>
+<text id="stepCText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="207.77" y="47.104">3</tspan></text>
 <circle id="stepD" cursor="pointer" cx="295" cy="39" r="15" fill="#C4C4C4"/>
-<text id="stepDText" cursor="pointer" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="286.598" y="47.104">4</tspan></text>
-<path d="M55 217L48.9917 207.139L43.4562 217.273L55 217ZM32 181.575C32 167.46 39.8959 155.178 51.5356 148.879L50.5838 147.121C38.3267 153.753 30 166.694 30 181.575H32ZM47.6819 211.871C38.1868 205.127 32 194.07 32 181.575H30C30 194.747 36.5249 206.4 46.5238 213.501L47.6819 211.871Z" fill="url(#paint2_linear)"/>
-<circle cx="50" cy="148" r="6.5" fill="white" stroke="url(#paint3_linear)" stroke-width="3"/>
-<path id="right-arrow" cursor="pointer" d="M328.625 201.25L340.375 189.5L328.625 177.75" stroke="url(#paint4_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="left-arrow" visibility="hidden" cursor="pointer" d="M21.375 201.25L9.625 189.5L21.375 177.75" stroke="url(#paint5_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<circle id="right-arrow-circle" cursor="pointer" fill="white" opacity="0.1" cx="330" cy="190" r="20"></circle>
-<circle id="left-arrow-circle" visibility="hidden" cursor="pointer" fill="white" opacity="0.1" cx="20" cy="190" r="20"></circle>
+<text id="stepDText" cursor="pointer" fill="white" user-select="none" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="286.598" y="47.104">4</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="286.598" y="47.104" cursor='pointer' id='stepD'>4</tspan></text>
+<path d="M328.625 203.25L340.375 191.5L328.625 179.75" stroke="url(#paint2_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cursor='pointer' id='right-arrow-circle'/>
+<path d="M75.0002 210.052C85.5215 203.977 89.1264 190.524 83.0519 180.002C76.9774 169.481 63.5239 165.876 53.0025 171.951C42.4812 178.025 38.8763 191.479 44.9508 202C51.0253 212.522 64.4788 216.126 75.0002 210.052Z" fill="#195AA9"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46.4612 204.575C45.9408 203.885 45.456 203.156 45.0108 202.391C44.4685 201.458 44.0033 200.503 43.6133 199.531C44.2119 199.186 45.0855 198.684 46.3063 197.984C46.6279 197.8 47.271 197.429 47.7355 197.161C48.2 196.892 49.0623 196.394 49.6518 196.055L50.2839 195.691C50.2592 195.633 50.2352 195.575 50.2118 195.518C49.6165 193.938 49.3027 191.958 49.3639 190.167C49.4341 188.11 49.8182 186.509 50.6716 184.716C51.8725 182.193 53.5534 180.283 55.9661 178.7C57.9344 177.408 60.09 176.546 62.0096 176.282C62.8687 176.164 64.6409 176.163 65.5305 176.281C67.8822 176.591 70.1741 177.677 72.2858 179.482C72.6542 179.797 73.1418 180.257 73.3696 180.504C74.4089 181.631 75.6085 183.298 76.0744 184.262C76.5035 185.15 76.5041 186.049 76.0759 186.922C75.747 187.594 75.2876 188.007 74.1248 188.678C73.5889 188.987 72.5657 189.577 71.8512 189.988C68.5082 191.913 67.9267 192.248 66.5894 193.021C64.3008 194.343 60.9121 196.295 60.418 196.576C60.168 196.719 59.6902 196.995 59.3565 197.19L58.7496 197.546L58.9992 197.803C59.5978 198.419 60.6892 199.097 61.6877 199.472C62.857 199.913 63.1709 199.964 64.673 199.964C65.9155 199.964 66.0504 199.952 66.6868 199.786C67.5289 199.567 68.1673 199.324 69.0006 198.906C70.8969 197.954 72.2865 196.503 73.4044 194.308C73.7118 193.704 73.8492 193.512 74.2257 193.157C75.1413 192.294 76.1702 191.987 77.272 192.246C79.1067 192.678 80.0674 194.231 79.5196 195.879C78.6683 198.441 75.9521 201.724 73.1829 203.538C72.5141 203.976 71.0772 204.715 70.1947 205.075C67.1132 206.33 63.9172 206.576 60.8107 205.798C59.5664 205.487 58.1417 204.904 57.0981 204.281C55.6523 203.417 54.0435 201.994 53.1126 200.756L53.1062 200.748L53.0622 200.773C50.7737 202.095 47.385 204.047 46.8909 204.329C46.7811 204.391 46.6274 204.479 46.4612 204.575ZM67.4335 183.71C66.5958 183.146 65.7307 182.768 64.7055 182.519C63.2278 182.16 61.5495 182.481 59.8938 183.437C57.6927 184.709 56.4272 186.253 55.8668 188.35C55.6344 189.219 55.5732 190.818 55.7365 191.756C55.8499 192.407 55.9085 192.534 56.0468 192.424C56.1186 192.367 57.1163 191.789 59.8335 190.232C60.1549 190.048 60.7981 189.677 61.2626 189.408C61.727 189.139 62.5893 188.642 63.1789 188.303C63.7685 187.964 64.7477 187.399 65.3551 187.049C65.9624 186.698 66.9856 186.108 67.6287 185.738C68.2718 185.368 68.8215 185.042 68.8502 185.014C68.9219 184.943 67.9887 184.084 67.4335 183.71Z" fill="white"/>
+<g filter="url(#filter0_d)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M106.734 198.678L76.0281 188.028L86.6776 218.734L92.8458 212.565L99.7383 219.458L107.458 211.738L100.565 204.846L106.734 198.678Z" fill="url(#paint3_linear)"/>
+</g>
 </g>
 <defs>
-<filter id="filter0_d" x="57" y="179" width="237" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="66" y="176" width="49.6262" height="49.6262" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="1"/>
+<feOffset dx="1" dy="-1"/>
 <feGaussianBlur stdDeviation="0.5"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
@@ -55,21 +44,13 @@
 <stop stop-color="#6178F5"/>
 <stop offset="1" stop-color="#195AA9"/>
 </linearGradient>
-<linearGradient id="paint2_linear" x1="37.9474" y1="163.055" x2="48.5468" y2="205.743" gradientUnits="userSpaceOnUse">
-<stop stop-color="#34DD96"/>
-<stop offset="1" stop-color="#15C0A1"/>
-</linearGradient>
-<linearGradient id="paint3_linear" x1="46.6316" y1="143.491" x2="47.5325" y2="153.922" gradientUnits="userSpaceOnUse">
-<stop stop-color="#34DD96"/>
-<stop offset="1" stop-color="#15C0A1"/>
-</linearGradient>
-<linearGradient id="paint4_linear" x1="332.026" y1="182.877" x2="334.615" y2="197.865" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear" x1="332.026" y1="184.877" x2="334.615" y2="199.865" gradientUnits="userSpaceOnUse">
 <stop stop-color="#6178F5"/>
 <stop offset="1" stop-color="#195AA9"/>
 </linearGradient>
-<linearGradient id="paint5_linear" x1="17.9737" y1="182.877" x2="15.3848" y2="197.865" gradientUnits="userSpaceOnUse">
-<stop stop-color="#6178F5"/>
-<stop offset="1" stop-color="#195AA9"/>
+<linearGradient id="paint3_linear" x1="77.821" y1="198.266" x2="97.7978" y2="214.003" gradientUnits="userSpaceOnUse">
+<stop stop-color="#34DD96"/>
+<stop offset="1" stop-color="#15C0A1"/>
 </linearGradient>
 <clipPath id="clip0">
 <rect width="350" height="378" fill="white"/>
