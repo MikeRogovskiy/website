@@ -11,13 +11,9 @@ import cardC from "../../assets/images/extension-instruction/cardC.svg";
 import cardD from "../../assets/images/extension-instruction/cardD.svg";
 
 import sectionStep1 from "../../assets/images/extension-instruction/sectionStep1.svg";
-import sectionStep2and3 from "../../assets/images/extension-instruction/sectionStep2and3.svg";
+import sectionStep2 from "../../assets/images/extension-instruction/sectionStep2.svg";
+import sectionStep3 from "../../assets/images/extension-instruction/sectionStep3.svg";
 import sectionStep4 from "../../assets/images/extension-instruction/sectionStep4.svg";
-
-import aNumSection from "../../assets/images/extension-instruction/aNumSection.svg";
-import bNumSection from "../../assets/images/extension-instruction/bNumSection.svg";
-import cNumSection from "../../assets/images/extension-instruction/cNumSection.svg";
-import dNumSection from "../../assets/images/extension-instruction/dNumSection.svg";
 
 import arrow from "../../assets/images/extension-instruction/arrow.svg";
 
@@ -146,70 +142,64 @@ export default class ExtensionInstruction extends Component {
               {/* <div className="instruction_container_main_step_left"> */}
               <div className="step_section">
                 <div className="step_section_header">
-                  <div className="step_section_header_image">
-                    <img src={aNumSection} />
-                  </div>
                   <div className="step_section_header_text">
-                    <h3>{this.getLangText("1-StepLeftHeading-a")}</h3>
-                    <h3>{this.getLangText("2-StepLeftHeading-a")}</h3>
+                    <span className="step_section_header_num">1</span>
+                    <h3>
+                      {this.getLangText("1-StepLeftHeading-a")}
+                      <br />
+                      {this.getLangText("2-StepLeftHeading-a")}
+                    </h3>
                   </div>
                 </div>
 
                 <div className="step_section_main">
                   <img src={sectionStep1} />
-                  <h2>{this.getLangText("3-StepLeftHeading-a")}</h2>
+                  {/* <h2>{this.getLangText("3-StepLeftHeading-a")}</h2> */}
                 </div>
               </div>
 
-              <div className="step_section">
-                <div className="step_section_header">
-                  <div className="step_section_header_image">
-                    <img src={cNumSection} />
-                  </div>
-                  <div className="step_section_header_text">
-                    <h3>{this.getLangText("1-StepLeftHeading-c")}</h3>
-                    <h3>{this.getLangText("2-StepLeftHeading-c")}</h3>
-                  </div>
-                </div>
-
-                <div className="step_section_main">
-                  <img src={sectionStep2and3} />
-                  <img src={arrow} className="step-arrow" />
-                  <h2>{this.getLangText("3-StepLeftHeading-c")}</h2>
-                </div>
-              </div>
               {/* </div> */}
               {/* <div className="instruction_container_main_step_right"> */}
               <div className="step_section">
                 <div className="step_section_header">
-                  <div className="step_section_header_image">
-                    <img src={bNumSection} />
-                  </div>
                   <div className="step_section_header_text">
+                    <span className="step_section_header_num">2</span>
                     <h3>{this.getLangText("1-StepLeftHeading-b")}</h3>
                     <h3>{this.getLangText("2-StepLeftHeading-b")}</h3>
                   </div>
                 </div>
 
                 <div className="step_section_main">
-                  <img src={sectionStep2and3} />
-                  <h2>{this.getLangText("3-StepLeftHeading-b")}</h2>
+                  <img src={sectionStep2} />
+                  {/* <h2>{this.getLangText("3-StepLeftHeading-b")}</h2> */}
                 </div>
               </div>
 
               <div className="step_section">
                 <div className="step_section_header">
-                  <div className="step_section_header_image">
-                    <img src={dNumSection} />
-                  </div>
                   <div className="step_section_header_text">
+                    <span className="step_section_header_num">3</span>
+                    <h3>{this.getLangText("1-StepLeftHeading-c")}</h3>
+                    <h3>{this.getLangText("2-StepLeftHeading-c")}</h3>
+                  </div>
+                </div>
+
+                <div className="step_section_main">
+                  <img src={sectionStep3} />
+                  {/* <h2>{this.getLangText("3-StepLeftHeading-c")}</h2> */}
+                </div>
+              </div>
+              <div className="step_section">
+                <div className="step_section_header">
+                  <div className="step_section_header_text">
+                    <span className="step_section_header_num">4</span>
                     <h3>{this.getLangText("1-StepLeftHeading-d")}</h3>
                     <h3>{this.getLangText("2-StepLeftHeading-d")}</h3>
                   </div>
                 </div>
 
                 <div className="step_section_main">
-                  <img src={sectionStep4} />
+                  <img src={sectionStep4} style={{ bottom: "25px" }} />
                 </div>
               </div>
               {/* </div> */}

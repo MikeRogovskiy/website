@@ -259,28 +259,30 @@
 
       .step_section_header {
         display: inline-flex;
+        margin-left: 30px;
       }
 
       .step_section_header h3 {
         color: $blackColor;
         text-transform: uppercase;
         font-weight: 700;
-        padding-left: 30px;
+        font-size: 16px;
+        margin-left: 8px;
+        text-align: start;
       }
 
       .step_section_header_text {
         padding-right: 10px;
-      }
-
-      .step_section_header_image {
+        display: flex;
         align-items: center;
-        justify-content: center;
       }
 
-      .step_section_header_image img {
-        height: 42px;
-        width: 42px;
-        margin-top: 2px;
+      .step_section_header_num {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: #333333;
       }
 
       .step_section_main img:nth-child(1) {
