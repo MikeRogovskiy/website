@@ -202,11 +202,10 @@
     .instruction_container_main_step {
       @include wHHundred;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: 2fr 2fr;
       position: relative;
       z-index: 5;
-      margin-top: 160px;
       grid-gap: 5%;
 
       .instruction_container_main_step_right,
@@ -290,6 +289,7 @@
         padding-top: 60px;
         padding-left: 80px;
         position: relative;
+        right: 10px;
         z-index: 5;
       }
 
