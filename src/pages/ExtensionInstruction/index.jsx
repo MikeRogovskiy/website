@@ -71,16 +71,16 @@ export default class ExtensionInstruction extends Component {
               <h1>{this.getLangText("InstructionHeaderTitle")}</h1>
             </div>
 
-            <div className="instruction_container_header_text">
+            {/* <div className="instruction_container_header_text">
               <p>{this.getLangText("1-InstructionParagraph-a")}</p>
               <p>{this.getLangText("2-InstructionParagraph-a")}</p>
-            </div>
+            </div> */}
           </div>
 
           {this.state.checkURL !== true && this.state.extensionStartButton}
 
           <div className="instruction_container_main">
-            <div className="instruction_container_main_text-card">
+            {/* <div className="instruction_container_main_text-card">
               <div className="instruction_container_main_text-card_a">
                 <div className="card_header">
                   <h2 className="card_title">
@@ -136,7 +136,7 @@ export default class ExtensionInstruction extends Component {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="instruction_container_main_step">
               {/* <div className="instruction_container_main_step_left"> */}
