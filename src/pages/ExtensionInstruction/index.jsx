@@ -68,7 +68,7 @@ export default class ExtensionInstruction extends Component {
             <HintArrow urlCondition={this.state.checkURL} />
 
             <div className="instruction_container_header_title">
-              <h1>{this.getLangText("InstructionHeaderTitle")}</h1>
+              <h1>Welcome to EasyLang!</h1>
             </div>
 
             {/* <div className="instruction_container_header_text">
@@ -145,9 +145,9 @@ export default class ExtensionInstruction extends Component {
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">1</span>
                     <h3>
-                      {this.getLangText("1-StepLeftHeading-a")}
+                      SELECT AND
                       <br />
-                      {this.getLangText("2-StepLeftHeading-a")}
+                      TRANSLATE WORDS
                     </h3>
                   </div>
                 </div>
@@ -164,8 +164,7 @@ export default class ExtensionInstruction extends Component {
                 <div className="step_section_header">
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">2</span>
-                    <h3>{this.getLangText("1-StepLeftHeading-b")}</h3>
-                    <h3>{this.getLangText("2-StepLeftHeading-b")}</h3>
+                    <h3>TRANSLATE THE SENTENSE</h3>
                   </div>
                 </div>
 
@@ -179,8 +178,7 @@ export default class ExtensionInstruction extends Component {
                 <div className="step_section_header">
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">3</span>
-                    <h3>{this.getLangText("1-StepLeftHeading-c")}</h3>
-                    <h3>{this.getLangText("2-StepLeftHeading-c")}</h3>
+                    <h3>SAVE THE WORD</h3>
                   </div>
                 </div>
 
@@ -193,8 +191,7 @@ export default class ExtensionInstruction extends Component {
                 <div className="step_section_header">
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">4</span>
-                    <h3>{this.getLangText("1-StepLeftHeading-d")}</h3>
-                    <h3>{this.getLangText("2-StepLeftHeading-d")}</h3>
+                    <h3>GO TO TUTOR</h3>
                   </div>
                 </div>
 
