@@ -48,6 +48,39 @@ export default class ExtensionInstruction extends Component {
     //     navigator.language.substring(0, navigator.language.indexOf("-"))
     //   );
     // }
+    this.mainSiteLang = "";
+    // const domain = "https://easylang.app/";
+    this.domain = "http://localhost:3000/";
+    console.log(window.location.href.charAt(this.domain.length + 2));
+    // console.log(mainSiteLang);
+
+    if (
+      this.supportedLangs.indexOf(
+        window.location.href.substr(this.domain.length, 2)
+      ) === -1
+    ) {
+      localStorage.setItem("lang", "en");
+      this.mainSiteLang = "en";
+      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    }
+    if (
+      window.location.href.substr(this.domain.length, 2) ===
+      localStorage.getItem("lang")
+    ) {
+      return;
+    }
+
+    if (localStorage.getItem("lang") != null) {
+      this.mainSiteLang = localStorage.getItem("lang");
+      // alert(mainSiteLang);
+      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+      // localStorage.clear();
+    } else {
+      localStorage.setItem("lang", navigator.language);
+      this.mainSiteLang = navigator.language;
+      // alert(mainSiteLang);
+      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    }
   }
 
   getLangText(text) {
@@ -55,39 +88,6 @@ export default class ExtensionInstruction extends Component {
   }
 
   componentDidMount() {
-    let mainSiteLang = "";
-    const domain = "https://easylang.app/";
-    const localDomain = "http://localhost:3000/";
-    console.log(window.location.href.charAt(domain.length + 2));
-    console.log(mainSiteLang);
-
-    if (
-      this.supportedLangs.indexOf(
-        window.location.href.substr(domain.length, 2)
-      ) === -1
-    ) {
-      localStorage.setItem("lang", "en");
-      mainSiteLang = "en";
-      window.location.href = `${domain}${mainSiteLang}/extension-instruction-static`;
-    }
-    if (
-      window.location.href.substr(domain.length, 2) ===
-      localStorage.getItem("lang")
-    ) {
-      return;
-    }
-
-    if (localStorage.getItem("lang") != null) {
-      mainSiteLang = localStorage.getItem("lang");
-      // alert(mainSiteLang);
-      window.location.href = `${domain}${mainSiteLang}/extension-instruction-static`;
-      // localStorage.clear();
-    } else {
-      localStorage.setItem("lang", navigator.language);
-      mainSiteLang = navigator.language;
-      // alert(mainSiteLang);
-      window.location.href = `${domain}${mainSiteLang}/extension-instruction-static`;
-    }
     // if (window.location.href.charAt(domain.length + 3) > -1) {
     //   localStorage.setItem(
     //     "lang",
