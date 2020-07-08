@@ -23,6 +23,7 @@ import "./ExtensionInstructionMedia.scss";
 export default class ExtensionInstruction extends Component {
   constructor(props) {
     super(props);
+    this.supportedLangs = ["en", "es", "ru", "zh"];
     this.state = {
       extensionStartButton: (
         <div className="instruction_container_start">
@@ -41,6 +42,12 @@ export default class ExtensionInstruction extends Component {
       ),
       checkURL: window.location.href.includes("static"),
     };
+    // if (navigator.language.indexOf("-") > -1) {
+    //   localStorage.setItem(
+    //     "lang",
+    //     navigator.language.substring(0, navigator.language.indexOf("-"))
+    //   );
+    // }
   }
 
   getLangText(text) {
@@ -48,16 +55,49 @@ export default class ExtensionInstruction extends Component {
   }
 
   componentDidMount() {
-    let mainSiteLang = "/";
+    let mainSiteLang = "";
+    const domain = "https://easylang.app/";
+    const localDomain = "http://localhost:3000/";
+    console.log(window.location.href.charAt(domain.length + 2));
+    console.log(mainSiteLang);
 
     if (
-      localStorage.getItem("lang") != "/" &&
-      localStorage.getItem("lang") != null
+      this.supportedLangs.indexOf(
+        window.location.href.substr(domain.length, 2)
+      ) === -1
     ) {
-      mainSiteLang = localStorage.getItem("lang");
-      window.location.href = `https://easylang.app/${mainSiteLang}/extension-instruction-static`;
-      localStorage.clear();
+      localStorage.setItem("lang", "en");
+      mainSiteLang = "en";
+      window.location.href = `${domain}${mainSiteLang}/extension-instruction-static`;
     }
+    if (
+      window.location.href.substr(domain.length, 2) ===
+      localStorage.getItem("lang")
+    ) {
+      return;
+    }
+
+    if (localStorage.getItem("lang") != null) {
+      mainSiteLang = localStorage.getItem("lang");
+      // alert(mainSiteLang);
+      window.location.href = `${domain}${mainSiteLang}/extension-instruction-static`;
+      // localStorage.clear();
+    } else {
+      localStorage.setItem("lang", navigator.language);
+      mainSiteLang = navigator.language;
+      // alert(mainSiteLang);
+      window.location.href = `${domain}${mainSiteLang}/extension-instruction-static`;
+    }
+    // if (window.location.href.charAt(domain.length + 3) > -1) {
+    //   localStorage.setItem(
+    //     "lang",
+    //     navigator.language.substring(0, navigator.language.indexOf("-"))
+    //   );
+    //   mainSiteLang = navigator.language.substring(
+    //     0,
+    //     navigator.language.indexOf("-")
+    //   );
+    // }
   }
 
   render() {
@@ -68,7 +108,7 @@ export default class ExtensionInstruction extends Component {
             <HintArrow urlCondition={this.state.checkURL} />
 
             <div className="instruction_container_header_title">
-              <h1>Welcome to EasyLang!</h1>
+              <h1>{this.getLangText("InstructionHeaderTitle")}</h1>
             </div>
 
             {/* <div className="instruction_container_header_text">
@@ -145,9 +185,9 @@ export default class ExtensionInstruction extends Component {
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">1</span>
                     <h3>
-                      SELECT AND
+                      {this.getLangText("1-StepLeftHeading-a")}
                       <br />
-                      TRANSLATE WORDS
+                      {this.getLangText("2-StepLeftHeading-a")}
                     </h3>
                   </div>
                 </div>
@@ -164,7 +204,10 @@ export default class ExtensionInstruction extends Component {
                 <div className="step_section_header">
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">2</span>
-                    <h3>TRANSLATE THE SENTENSE</h3>
+                    <h3>
+                      {this.getLangText("1-StepLeftHeading-b")} <br />
+                      {this.getLangText("2-StepLeftHeading-b")}
+                    </h3>
                   </div>
                 </div>
 
@@ -178,7 +221,11 @@ export default class ExtensionInstruction extends Component {
                 <div className="step_section_header">
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">3</span>
-                    <h3>SAVE THE WORD</h3>
+                    <h3>
+                      {this.getLangText("1-StepLeftHeading-c")}
+                      <br />
+                      {this.getLangText("2-StepLeftHeading-c")}
+                    </h3>
                   </div>
                 </div>
 
@@ -191,7 +238,11 @@ export default class ExtensionInstruction extends Component {
                 <div className="step_section_header">
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">4</span>
-                    <h3>GO TO TUTOR</h3>
+                    <h3>
+                      {this.getLangText("1-StepLeftHeading-d")}
+                      <br />
+                      {this.getLangText("2-StepLeftHeading-d")}
+                    </h3>
                   </div>
                 </div>
 
