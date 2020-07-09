@@ -1,0 +1,36 @@
+.easy-way {
+  font-weight: 900 !important;
+  font-size: 5vw !important;
+  line-height: 120% !important;
+
+  color: #1e4b8e !important;
+}
+.relax {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1 2;
+  margin-top: 58px;
+  height: 668px;
+  position: relative;
+  &-title {
+    height: 30%;
+  }
+}
+.relax-sub {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 100%;
+
+  color: #3668b0;
+}
+
+.chill {
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  &-image {
+    height: 100%;
+    width: 100%;
+  }
+}

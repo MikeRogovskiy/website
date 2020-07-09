@@ -8,6 +8,7 @@ import languageEs from "../../assets/languages/es.json";
 import Main from "../Main";
 import createHashSource from "hash-source";
 import ExtensionInstruction from "../../pages/ExtensionInstruction";
+import AppB from '../../landing-b/App'
 
 const useHash = process.env.PUBLIC_URL.indexOf("github") !== -1 ? true : false;
 const source = useHash && createHashSource();
@@ -103,6 +104,7 @@ class App extends React.Component {
                 key={this.getUserLanguageFromInputList()}
                 location={history.location}
               />
+              <AppB path='/landing' />
             </Router>
           )}
         </LocationProvider>

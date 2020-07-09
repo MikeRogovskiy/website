@@ -28,9 +28,9 @@
   "dependencies": {
     "@babel/core": "7.6.0",
     "@reach/router": "^1.2.1",
-    "@svgr/webpack": "4.3.2",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
+    "antd": "^4.4.1",
     "babel-eslint": "10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.6",
@@ -100,6 +100,7 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "devDependencies": {
+    "@svgr/webpack": "^4.3.2",
     "cross-env": "^7.0.2",
     "ftp-deploy": "^2.3.7",
     "html-loader": "^0.5.5"
