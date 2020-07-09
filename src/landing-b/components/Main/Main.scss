@@ -1,36 +1,121 @@
 .easy-way {
   font-weight: 900 !important;
-  font-size: 5vw !important;
+  font-size: 40px !important;
   line-height: 120% !important;
 
   color: #1e4b8e !important;
+}
+.relax-sub {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  white-space: wrap;
+  color: #3668b0;
 }
 .relax {
   display: flex;
   flex-direction: column;
   flex-basis: 1 2;
   margin-top: 58px;
-  height: 668px;
+
   position: relative;
   &-title {
     height: 30%;
   }
-}
-.relax-sub {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2vw;
-  line-height: 100%;
-
-  color: #3668b0;
-}
-
-.chill {
-  width: 50%;
-  height: 50%;
-  align-self: center;
-  &-image {
+  .chill-image {
     height: 100%;
     width: 100%;
+    float: right;
+  }
+  .free-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 20%;
+    border-radius: 13px;
+
+    // margin-top: 58px;
+    display: inline-block;
+  }
+}
+
+.options {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  // > div:nth-child(-n + 3) {
+  //   grid-column: span 2;
+  // }
+  // > div:nth-child(4),
+  // > div:nth-child(5) {
+  //   grid-column: span 3;
+  // }
+  display: flex;
+  flex-direction: column;
+  margin-top: 14%;
+  &-item {
+    box-shadow: 0px 4px 40px rgba(21, 45, 80, 0.1);
+    border-radius: 20px;
+    padding: 4% 2%;
+    width: 30%;
+    & i {
+      height: 0.7em;
+      width: 0.7em;
+      margin-left: 4%;
+    }
+  }
+  &-row-first {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+  &-row-second {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+  }
+}
+
+.slider {
+  margin: 14% 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  &-item {
+    padding: 2.5% 6%;
+    box-shadow: 0px 4px 40px rgba(21, 45, 80, 0.1);
+    border-radius: 20px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    & img {
+      margin-top: 25px;
+    }
+  }
+  .download {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    color: #fff !important;
+    transition: all 0.5s;
+    padding: 5% 20px;
+    background: linear-gradient(292.09deg, #ff8b4a 0%, #ffc24a 100%);
+    width: 100%;
+    &:hover {
+      background: linear-gradient(292.09deg, #ff8b4a 0%, #ff8b4a 100%);
+    }
   }
 }

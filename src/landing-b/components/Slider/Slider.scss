@@ -1,0 +1,26 @@
+.slider * {
+  outline: 0px !important;
+}
+
+.slider-item {
+  width: 1050px;
+  height: 290px;
+  background: #3668b0;
+  border-radius: 44px;
+  padding: 2.5% 6%;
+  &-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .review {
+    margin-left: 60px;
+    & p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 160%;
+      color: #f2f2f2;
+    }
+  }
+}
