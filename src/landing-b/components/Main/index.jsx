@@ -7,10 +7,12 @@ import ReactHtmlParser from "react-html-parser";
 import { useNavigate } from "@reach/router";
 
 export default function Main(props) {
-  let href =
-    navigator.platform.indexOf("Win") > -1
-      ? "http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe"
-      : "http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg";
+  const href =
+    "http://easylang.app/downloads/EasyLang.Player-Beta_" +
+      navigator.platform.indexOf("Win") >
+    -1
+      ? "win_prod.exe"
+      : "mac_prod.dmg";
 
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
