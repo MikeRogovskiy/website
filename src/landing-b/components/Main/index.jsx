@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import imgEnjoy from "../../../assets/images/home/imgEnjoy.svg";
 import "./Main.scss";
 import Slider from "../Slider";
 import EasyLangLogo from "../../assets/EasyLang-logo.svg";
 import ReactHtmlParser from "react-html-parser";
 import { useNavigate } from "@reach/router";
+
 export default function Main(props) {
+  let href =
+    navigator.platform.indexOf("Win") > -1
+      ? "http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe"
+      : "http://easylang.app/downloads/EasyLang.Player-Beta_mac_prod.dmg";
+
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
@@ -34,7 +40,7 @@ export default function Main(props) {
             <p className="easy-way">
               {getLangText("Listen")}
               <i
-                class="em em-ear"
+                className="em em-ear"
                 aria-role="presentation"
                 aria-label="EAR"
               ></i>
@@ -45,7 +51,7 @@ export default function Main(props) {
             <p className="easy-way">
               {getLangText("Navigate")}
               <i
-                class="em em-point_right"
+                className="em em-point_right"
                 aria-role="presentation"
                 aria-label="WHITE RIGHT POINTING BACKHAND INDEX"
               ></i>
@@ -56,7 +62,7 @@ export default function Main(props) {
             <p className="easy-way">
               {getLangText("Play")}
               <i
-                class="em em-table_tennis_paddle_and_ball"
+                className="em em-table_tennis_paddle_and_ball"
                 aria-role="presentation"
                 aria-label="TABLE TENNIS PADDLE AND BALL"
               ></i>
@@ -69,7 +75,7 @@ export default function Main(props) {
             <p className="easy-way">
               {getLangText("Train")}
               <i
-                class="em em-muscle"
+                className="em em-muscle"
                 aria-role="presentation"
                 aria-label="FLEXED BICEPS"
               ></i>
@@ -80,7 +86,7 @@ export default function Main(props) {
             <p className="easy-way">
               {getLangText("Understand")}
               <i
-                class="em em-brain"
+                className="em em-brain"
                 aria-role="presentation"
                 aria-label="BRAIN"
               ></i>
@@ -103,7 +109,14 @@ export default function Main(props) {
           <p className="relax-sub" style={{ marginBottom: "48px" }}>
             {getLangText("BrowserExtDescrip2")}
           </p>
-          <button className="download">{getLangText("Add")}</button>
+          <button className="download">
+            <a
+              href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
+              target="_blank"
+            >
+              {getLangText("Add")}
+            </a>
+          </button>
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="" />
@@ -112,7 +125,9 @@ export default function Main(props) {
             <span> {getLangText("PlayerDescrip1")} </span>
             <br /> <span>{getLangText("PlayerDescrip2")}</span>
           </p>
-          <button className="download">{getLangText("Download")}</button>
+          <button className="download">
+            <a href={href}>{getLangText("Download")}</a>
+          </button>
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="" />
@@ -122,7 +137,12 @@ export default function Main(props) {
             <span> {getLangText("TutorDescrip1")} </span>
             <br /> <span>{getLangText("TutorDescrip2")}</span>
           </p>
-          <button className="download">{getLangText("Start")}</button>
+          <button className="download">
+            {" "}
+            <a href="https://easy4learn.com/login" target="_blank">
+              {getLangText("Start")}
+            </a>
+          </button>
         </div>
       </section>
     </div>

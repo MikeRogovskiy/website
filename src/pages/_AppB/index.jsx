@@ -14,7 +14,7 @@ export default function _AppB(props) {
       <div className="wrapper">
         <Main text={props.text} />
       </div>
-      <Footer />
+      <Footer text={props.text} />
     </div>
   );
 }
