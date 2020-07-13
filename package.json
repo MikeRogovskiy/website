@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@babel/core": "7.6.0",
-    "@reach/router": "^1.2.1",
+    "@reach/router": "^1.3.4",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
     "antd": "^4.4.1",

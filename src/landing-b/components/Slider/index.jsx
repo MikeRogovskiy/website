@@ -5,6 +5,7 @@ import max from "../../assets/max.svg";
 import stars from "../../assets/stars.svg";
 import nextArrow from "../../assets/nextArrow.svg";
 import prevArrow from "../../assets/prevArrow.svg";
+import ReactHtmlParser from "react-html-parser";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -43,6 +44,12 @@ function SamplePrevArrow(props) {
 }
 
 export default class CustomSlider extends Component {
+  constructor(props) {
+    super(props);
+  }
+  getLangText = (text) => {
+    return ReactHtmlParser(this.props.text[text]);
+  };
   render() {
     const settings = {
       adaptiveHeight: true,
@@ -69,9 +76,9 @@ export default class CustomSlider extends Component {
                   <div className="review">
                     <img src={stars} alt="" />
                     <p>
-                      Quickly translate any text and enjoy <br /> the world
-                      content without limits! Understand everything! <br />{" "}
-                      <b>Max</b>
+                      {this.getLangText("MaxReview")}
+                      <br />
+                      <b>{this.getLangText("Max")}</b>
                     </p>
                   </div>
                 </div>
@@ -94,9 +101,8 @@ export default class CustomSlider extends Component {
                   <div className="review">
                     <img src={stars} alt="" />
                     <p>
-                      Quickly translate any text and enjoy <br /> the world
-                      content without limits! Understand everything! <br />{" "}
-                      <b>Max</b>
+                      {this.getLangText("AnnReview")} <br />{" "}
+                      <b>{this.getLangText("Ann")}</b>
                     </p>
                   </div>
                 </div>
@@ -119,9 +125,8 @@ export default class CustomSlider extends Component {
                   <div className="review">
                     <img src={stars} alt="" />
                     <p>
-                      Quickly translate any text and enjoy <br /> the world
-                      content without limits! Understand everything! <br />{" "}
-                      <b>Max</b>
+                      {this.getLangText("TimReview")} <br />{" "}
+                      <b>{this.getLangText("Tim")}</b>
                     </p>
                   </div>
                 </div>

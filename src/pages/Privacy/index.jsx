@@ -18,7 +18,7 @@ export default class Privacy extends Component {
           <br />
           <br />
           <br />
-          <h1>Terms of Use</h1>
+          <h1>Privacy Policy</h1>
 
           <br />
           <h2>Introduction and Acceptance</h2>

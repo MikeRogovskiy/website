@@ -37,6 +37,7 @@ export default class Navbar extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    console.log(this.pureArr);
   }
 
   componentWillUnmount() {
@@ -74,6 +75,7 @@ export default class Navbar extends React.Component {
     const menuMainClass = classNames("menu-main", {
       "menu-main_active": this.state.openMenu,
     });
+
     const langList = this.props.langList.map((l) => (
       <option value={l.value} key={l.value}>
         {l.name}
@@ -127,19 +129,35 @@ export default class Navbar extends React.Component {
             <nav className={navBarClass}>
               <div className="sticky-bar">
                 <div className="logo">
-                  <Link
-                    to="./"
-                    className="logo-light"
-                    onClick={() => {
-                      this.closeMenu();
-                      this.showStartBtn();
-                      window.gtag("event", "Logo click", {
-                        event_category: "Landing.Navigation bar",
-                      });
-                    }}
-                  >
-                    EasyLang
-                  </Link>
+                  {window.location.href.indexOf("landing") > -1 ? (
+                    <a
+                      href="#relax"
+                      className="logo-light"
+                      onClick={() => {
+                        this.closeMenu();
+                        this.showStartBtn();
+                        window.gtag("event", "Logo click", {
+                          event_category: "Landing.Navigation bar",
+                        });
+                      }}
+                    >
+                      EasyLang
+                    </a>
+                  ) : (
+                    <Link
+                      to="./"
+                      className="logo-light"
+                      onClick={() => {
+                        this.closeMenu();
+                        this.showStartBtn();
+                        window.gtag("event", "Logo click", {
+                          event_category: "Landing.Navigation bar",
+                        });
+                      }}
+                    >
+                      EasyLang
+                    </Link>
+                  )}
                 </div>
                 {this.props.noUseLangSelect || (
                   <div className="lang">

@@ -49,8 +49,8 @@ export default class ExtensionInstruction extends Component {
     //   );
     // }
     this.mainSiteLang = "";
-    // const domain = "https://easylang.app/";
-    this.domain = "http://localhost:3000/";
+    this.domain = "https://easylang.app/";
+    // this.domain = "http://localhost:3000/";
     console.log(window.location.href.charAt(this.domain.length + 2));
     // console.log(mainSiteLang);
 

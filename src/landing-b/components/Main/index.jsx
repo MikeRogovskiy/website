@@ -3,95 +3,82 @@ import imgEnjoy from "../../../assets/images/home/imgEnjoy.svg";
 import "./Main.scss";
 import Slider from "../Slider";
 import EasyLangLogo from "../../assets/EasyLang-logo.svg";
-
-export default function Main() {
+import ReactHtmlParser from "react-html-parser";
+import { useNavigate } from "@reach/router";
+export default function Main(props) {
+  const getLangText = (text) => {
+    return ReactHtmlParser(props.text[text]);
+  };
+  const navigate = useNavigate();
   return (
     <div>
-      <section className="relax">
-        {/* <div className="relax-title"> */}
-        <p className="easy-way">
-          Easy way <br /> to learn English
-        </p>
+      <section className="relax" id="relax">
+        <div className="relax-title">
+          <p className="easy-way">{getLangText("Title")}</p>
 
-        <p className="relax-sub">
-          Try EasyLang and enjoy learning
-          <div className="free-start">
-            <a
-              rel="noopener noreferrer"
-              id="nav-btn"
-              href="#"
-              style={{ borderRadius: "20px" }}
-            >
-              FREE START
-            </a>
-          </div>
-          <img src={imgEnjoy} alt="Enjoy learning" className="chill-image" />
-        </p>
+          <p className="relax-sub">{getLangText("SubTitle")}</p>
 
-        {/* </div> */}
-        <div className="chill">{/* <Chill /> */}</div>
+          <button
+            className="download"
+            style={{ width: "50%", borderRadius: "15px", marginTop: "5%" }}
+            onClick={() => navigate("/player")}
+          >
+            {getLangText("FreeStart")}
+          </button>
+        </div>
+        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image" />
       </section>
       <section className="options">
         <div className="options-row-first">
           <div className="options-item">
             <p className="easy-way">
-              Listen
+              {getLangText("Listen")}
               <i
                 class="em em-ear"
                 aria-role="presentation"
                 aria-label="EAR"
               ></i>
             </p>
-            <span className="relax-sub">
-              Listen and repeat phrases easily! <br /> Double subtitles for the
-              video you love!
-            </span>
+            <span className="relax-sub">{getLangText("ListenDescrip")}</span>
           </div>
           <div className="options-item">
             <p className="easy-way">
-              Navigate
+              {getLangText("Navigate")}
               <i
                 class="em em-point_right"
                 aria-role="presentation"
                 aria-label="WHITE RIGHT POINTING BACKHAND INDEX"
               ></i>
             </p>
-            <span className="relax-sub">
-              Convinient navigation in video subtitles!
-            </span>
+            <span className="relax-sub">{getLangText("NavigateDescrip")}</span>
           </div>
           <div className="options-item">
             <p className="easy-way">
-              Play
+              {getLangText("Play")}
               <i
                 class="em em-table_tennis_paddle_and_ball"
                 aria-role="presentation"
                 aria-label="TABLE TENNIS PADDLE AND BALL"
               ></i>
             </p>
-            <span className="relax-sub">
-              Play and revise added words <br /> anywhere you go.
-            </span>
+            <span className="relax-sub">{getLangText("PlayDescrip")}</span>
           </div>
         </div>
         <div className="options-row-second">
           <div className="options-item" style={{ marginRight: "10px" }}>
             <p className="easy-way">
-              Train
+              {getLangText("Train")}
               <i
                 class="em em-muscle"
                 aria-role="presentation"
                 aria-label="FLEXED BICEPS"
               ></i>
             </p>
-            <span className="relax-sub">
-              Transform content you love into a lesson! <br /> Add words and
-              phrases - EasyLang <br /> combines a unique lesson for you!
-            </span>
+            <span className="relax-sub">{getLangText("TrainDescrip")}</span>
           </div>
           <div className="options-item" style={{ marginLeft: "10px" }}>
             <p className="easy-way">
-              Understand
+              {getLangText("Understand")}
               <i
                 class="em em-brain"
                 aria-role="presentation"
@@ -99,46 +86,43 @@ export default function Main() {
               ></i>
             </p>
             <span className="relax-sub">
-              Quickly translate any text and enjoy <br /> the world content
-              without limits! <br /> Understand everything!
+              {getLangText("UnderstandDescrip")}
             </span>
           </div>
         </div>
       </section>
       <section className="slider">
-        <Slider />
+        <Slider text={props.text} />
       </section>
       <section className="products">
         <div className="products-item">
           <img src={EasyLangLogo} alt="" />
-          <p className="easy-way">Browser Extension </p>
-          <p className="relax-sub">
-            - Transform content you love into a lesson!
-          </p>{" "}
+          <p className="easy-way">{getLangText("BrowserExt")} </p>
+          <p className="relax-sub">{getLangText("BrowserExtDescrip1")}</p>{" "}
           <br />
           <p className="relax-sub" style={{ marginBottom: "48px" }}>
-            - Add words and phrases - EasyLang combines a unique lesson for you!
+            {getLangText("BrowserExtDescrip2")}
           </p>
-          <button className="download">Add</button>
+          <button className="download">{getLangText("Add")}</button>
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="" />
-          <p className="easy-way">Player</p>{" "}
+          <p className="easy-way">{getLangText("Player")}</p>{" "}
           <p className="relax-sub">
-            <span> - Convinient navigation in video </span>
-            <br /> <span>- Double subtitles</span>
+            <span> {getLangText("PlayerDescrip1")} </span>
+            <br /> <span>{getLangText("PlayerDescrip2")}</span>
           </p>
-          <button className="download">Download</button>
+          <button className="download">{getLangText("Download")}</button>
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="" />
-          <p className="easy-way">Tutor</p>
+          <p className="easy-way">{getLangText("Tutor")}</p>
           <p className="relax-sub">
             {" "}
-            <span> - Easily revise words and phrases </span>
-            <br /> <span>- Have fun while learning</span>
+            <span> {getLangText("TutorDescrip1")} </span>
+            <br /> <span>{getLangText("TutorDescrip2")}</span>
           </p>
-          <button className="download">Go To</button>
+          <button className="download">{getLangText("Start")}</button>
         </div>
       </section>
     </div>
