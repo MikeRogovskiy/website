@@ -12,7 +12,7 @@ function SampleNextArrow(props) {
   return (
     <img
       src={nextArrow}
-      alt=""
+      alt="arrow next"
       style={{
         position: "absolute",
         right: "0px",
@@ -30,7 +30,7 @@ function SamplePrevArrow(props) {
   return (
     <img
       src={prevArrow}
-      alt=""
+      alt="arrow previous"
       style={{
         position: "absolute",
         left: "0px",
@@ -72,9 +72,9 @@ export default class CustomSlider extends Component {
             >
               <div className="slider-item">
                 <div className="slider-item-content">
-                  <img src={max} alt="" />
+                  <img src={max} alt="Max" />
                   <div className="review">
-                    <img src={stars} alt="" />
+                    <img src={stars} alt="stars" />
                     <p>
                       {this.getLangText("MaxReview")}
                       <br />
@@ -97,9 +97,9 @@ export default class CustomSlider extends Component {
             >
               <div className="slider-item">
                 <div className="slider-item-content">
-                  <img src={max} alt="" />
+                  <img src={max} alt="Ann" />
                   <div className="review">
-                    <img src={stars} alt="" />
+                    <img src={stars} alt="stars" />
                     <p>
                       {this.getLangText("AnnReview")} <br />{" "}
                       <b>{this.getLangText("Ann")}</b>
@@ -121,9 +121,9 @@ export default class CustomSlider extends Component {
             >
               <div className="slider-item">
                 <div className="slider-item-content">
-                  <img src={max} alt="" />
+                  <img src={max} alt="Tim" />
                   <div className="review">
-                    <img src={stars} alt="" />
+                    <img src={stars} alt="stars" />
                     <p>
                       {this.getLangText("TimReview")} <br />{" "}
                       <b>{this.getLangText("Tim")}</b>

@@ -104,7 +104,7 @@ export default function Main(props) {
       </section>
       <section className="products">
         <div className="products-item">
-          <img src={EasyLangLogo} alt="" />
+          <img src={EasyLangLogo} alt="EasyLangLogo" />
           <p className="easy-way">{getLangText("BrowserExt")} </p>
           <p className="relax-sub">{getLangText("BrowserExtDescrip1")}</p>{" "}
           <br />
@@ -126,7 +126,7 @@ export default function Main(props) {
           </button>
         </div>
         <div className="products-item">
-          <img src={EasyLangLogo} alt="" />
+          <img src={EasyLangLogo} alt="Easy Lang Logo" />
           <p className="easy-way">{getLangText("Player")}</p>{" "}
           <p className="relax-sub">
             <span> {getLangText("PlayerDescrip1")} </span>
@@ -145,7 +145,7 @@ export default function Main(props) {
           </button>
         </div>
         <div className="products-item">
-          <img src={EasyLangLogo} alt="" />
+          <img src={EasyLangLogo} alt="Easy Lang Logo" />
           <p className="easy-way">{getLangText("Tutor")}</p>
           <p className="relax-sub">
             {" "}
