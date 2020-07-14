@@ -227,11 +227,11 @@ export default class Navbar extends React.Component {
                           </Link>
                         </li>
                         <li
-                          onClick={console.log(
+                          onClick={() => {
                             window.gtag("event", "Free start click", {
                               event_category: "Landing.Navigation bar",
-                            })
-                          )}
+                            });
+                          }}
                         >
                           <StartBtn
                             link={"player/"}

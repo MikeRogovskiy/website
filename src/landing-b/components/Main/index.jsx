@@ -111,13 +111,18 @@ export default function Main(props) {
           <p className="relax-sub" style={{ marginBottom: "48px" }}>
             {getLangText("BrowserExtDescrip2")}
           </p>
-          <button className="download">
-            <a
-              href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
-              target="_blank"
-            >
-              {getLangText("Add")}
-            </a>
+          <button
+            className="download"
+            onClick={() => {
+              window.open(
+                "https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
+              );
+              window.gtag("event", "Add Extension click", {
+                event_category: "Landing B. Page",
+              });
+            }}
+          >
+            {getLangText("Add")}
           </button>
         </div>
         <div className="products-item">
@@ -127,8 +132,16 @@ export default function Main(props) {
             <span> {getLangText("PlayerDescrip1")} </span>
             <br /> <span>{getLangText("PlayerDescrip2")}</span>
           </p>
-          <button className="download">
-            <a href={href}>{getLangText("Download")}</a>
+          <button
+            className="download"
+            onClick={() => {
+              window.open(href);
+              window.gtag("event", "Add Player click", {
+                event_category: "Landing B. Page",
+              });
+            }}
+          >
+            {getLangText("Download")}
           </button>
         </div>
         <div className="products-item">
@@ -139,11 +152,17 @@ export default function Main(props) {
             <span> {getLangText("TutorDescrip1")} </span>
             <br /> <span>{getLangText("TutorDescrip2")}</span>
           </p>
-          <button className="download">
+          <button
+            className="download"
+            onClick={() => {
+              window.open("https://easy4learn.com/login");
+              window.gtag("event", "Add Tutor click", {
+                event_category: "Landing B. Page",
+              });
+            }}
+          >
             {" "}
-            <a href="https://easy4learn.com/login" target="_blank">
-              {getLangText("Start")}
-            </a>
+            {getLangText("Start")}
           </button>
         </div>
       </section>
