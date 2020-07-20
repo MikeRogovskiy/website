@@ -1,26 +1,26 @@
 const linksObject = {
     generalRenderingConditionProd:
-                                    ["https://easylang.app/", "https://easylang.app/en", "https://easylang.app/es",
-                                    "https://easylang.app/zh", "https://easylang.app/ru",
+                                    ["https://www.easylang.app/", "https://www.easylang.app/en", "https://www.easylang.app/es",
+                                    "https://www.easylang.app/zh", "https://www.easylang.app/ru",
 
-                                    "https://easylang.app/plans", "https://easylang.app/en/plans", "https://easylang.app/es/plans",
-                                    "https://easylang.app/zh/plans", "https://easylang.app/ru/plans"],
+                                    "https://www.easylang.app/plans", "https://www.easylang.app/en/plans", "https://www.easylang.app/es/plans",
+                                    "https://www.easylang.app/zh/plans", "https://www.easylang.app/ru/plans"],
     extensionRenderingConditionProd:
-                                    ["https://easylang.app/extension", "https://easylang.app/en/extension", "https://easylang.app/es/extension",
-                                    "https://easylang.app/zh/extension", "https://easylang.app/ru/extension",
+                                    ["https://www.easylang.app/extension", "https://www.easylang.app/en/extension", "https://www.easylang.app/es/extension",
+                                    "https://www.easylang.app/zh/extension", "https://www.easylang.app/ru/extension",
 
-                                    "https://easylang.app/extension-instruction", "https://easylang.app/en/extension-instruction", "https://easylang.app/es/extension-instruction",
-                                    "https://easylang.app/zh/extension-instruction", "https://easylang.app/ru/extension-instruction",
+                                    "https://www.easylang.app/extension-instruction", "https://www.easylang.app/en/extension-instruction", "https://www.easylang.app/es/extension-instruction",
+                                    "https://www.easylang.app/zh/extension-instruction", "https://www.easylang.app/ru/extension-instruction",
 
-                                    "https://easylang.app/extension-instruction-static", "https://easylang.app/en/extension-instruction-static", 
-                                    "https://easylang.app/es/extension-instruction-static","https://easylang.app/zh/extension-instruction-static", 
-                                    "https://easylang.app/ru/extension-instruction-static",
+                                    "https://www.easylang.app/extension-instruction-static", "https://www.easylang.app/en/extension-instruction-static", 
+                                    "https://www.easylang.app/es/extension-instruction-static","https://www.easylang.app/zh/extension-instruction-static", 
+                                    "https://www.easylang.app/ru/extension-instruction-static",
 
-                                    "https://easylang.app/blog", "https://easylang.app/en/blog", "https://easylang.app/es/blog",
-                                    "https://easylang.app/zh/blog", "https://easylang.app/ru/blog"],
+                                    "https://www.easylang.app/blog", "https://www.easylang.app/en/blog", "https://www.easylang.app/es/blog",
+                                    "https://www.easylang.app/zh/blog", "https://www.easylang.app/ru/blog"],
     playerRenderingConditionProd:
-                                    ["https://easylang.app/player", "https://easylang.app/en/player", "https://easylang.app/es/player",
-                                    "https://easylang.app/zh/player", "https://easylang.app/ru/player"],
+                                    ["https://www.easylang.app/player", "https://www.easylang.app/en/player", "https://www.easylang.app/es/player",
+                                    "https://www.easylang.app/zh/player", "https://www.easylang.app/ru/player"],
     generalRenderingConditionDev:
                                     ["http://localhost:3000/", "http://localhost:3000/en", "http://localhost:3000/es",
                                     "http://localhost:3000/zh", "http://localhost:3000/ru",
