@@ -12,31 +12,30 @@ import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
-import ChatBotSimple from  "../../components/ChatBotSimple";
+import ChatBotSimple from "../../components/ChatBotSimple";
 
 export default class Home extends React.Component {
-  
   constructor(props) {
     super(props);
     this.state = {
-      showMobileWow: false
+      showMobileWow: false,
     };
     this.sections = {
       toGetStarted: {
         id: "to-get-started",
         text: "ourApp",
-        ref: React.createRef()
+        ref: React.createRef(),
       },
       howItWork: {
         id: "how-it-works",
         text: "HowItWork",
-        ref: React.createRef()
+        ref: React.createRef(),
       },
       source: {
         id: "learning-sources",
         text: "learningSources",
-        ref: React.createRef()
-      }
+        ref: React.createRef(),
+      },
     };
     this.offsetSection = 70;
     this.mobileWow = React.createRef();
@@ -67,25 +66,25 @@ export default class Home extends React.Component {
       this.offsetSection;
     window.scrollTo({
       top: top,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-  };
+  }
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
-  };
+  }
 
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
-  };
+  }
 
   render() {
     const mobileClasses = classNames("img-phone-front", {
-      show: this.state.showMobileWow
+      show: this.state.showMobileWow,
     });
 
     return (
@@ -109,12 +108,10 @@ export default class Home extends React.Component {
               </Link>
             </div> */}
           </div>
-
         </header>
 
         <div className="container">
           <section className="content-home content-enjoyLearning">
-
             <div className="enjoyIt-wrapper">
               <div className="enjoyIt-heading">
                 <h2>{this.getLangText("headPleasure")}</h2>
@@ -124,11 +121,9 @@ export default class Home extends React.Component {
                 <img src={imgEnjoy} alt="Enjoy learning" />
               </div>
             </div>
-
           </section>
 
           <section className="content-home content-context-memory">
-
             <div className="context-title">
               <h2 className="context-heading">
                 {this.getLangText("headMemory")}
@@ -138,7 +133,6 @@ export default class Home extends React.Component {
             <div className="img-context-puzzle">
               <img src={puzzle} alt="Context puzzle" />
             </div>
-
           </section>
 
           <section
@@ -146,7 +140,6 @@ export default class Home extends React.Component {
             id={this.sections.toGetStarted.id}
             ref={this.sections.toGetStarted.ref}
           >
-
             <div className="app-download-wrapper">
               <div className="img-phone">
                 <img
@@ -171,6 +164,11 @@ export default class Home extends React.Component {
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
+                      onClick={() => {
+                        window.gtag("event", "Extension Store click", {
+                          event_category: "Landing. Main screen",
+                        });
+                      }}
                     >
                       <span className="button-chrome-wrapper">
                         <img
@@ -182,11 +180,9 @@ export default class Home extends React.Component {
                       </span>
                     </a>
                   </div>
-
                 </div>
               </div>
             </div>
-
           </section>
 
           <div className="call-to-action">
@@ -195,7 +191,6 @@ export default class Home extends React.Component {
               id={this.sections.source.id}
               ref={this.sections.source.ref}
             >
-
               <div className="sources-wrapper">
                 <div className="sources-title">
                   <h2>{this.getLangText("headSource")}</h2>
@@ -203,7 +198,15 @@ export default class Home extends React.Component {
                 </div>
                 <div className="blog">
                   <p>{this.getLangText("blog")}</p>
-                  <Link to="blog" className="get-started-button blog-button">
+                  <Link
+                    to="blog"
+                    className="get-started-button blog-button"
+                    onClick={() => {
+                      window.gtag("event", "Our Blog click", {
+                        event_category: "Landing. Main screen",
+                      });
+                    }}
+                  >
                     {this.getLangText("Blog")}
                   </Link>
                 </div>
@@ -237,7 +240,6 @@ export default class Home extends React.Component {
                   </div>
                 </div>
               </div>
-
             </section>
           </div>
         </div>
@@ -253,7 +255,7 @@ export default class Home extends React.Component {
               <span>{this.getLangText("StartLearning")}</span>
             </Link>
           </div> */}
-          
+
           {/* <div className="get-started-footer_privacy">
             <Link to="/privacy">
               <button className="privacy">{this.getLangText("PrivacyPolicy")}</button>
@@ -262,7 +264,5 @@ export default class Home extends React.Component {
         </footer>
       </div>
     );
-
-  };
-
-};
+  }
+}

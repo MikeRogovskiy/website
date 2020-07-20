@@ -7,6 +7,7 @@ import languageZh from "../../assets/languages/zh.json";
 import languageEs from "../../assets/languages/es.json";
 import Main from "../Main";
 import createHashSource from "hash-source";
+import ExtensionInstruction from "../../pages/ExtensionInstruction";
 
 const useHash = process.env.PUBLIC_URL.indexOf("github") !== -1 ? true : false;
 const source = useHash && createHashSource();
@@ -21,16 +22,16 @@ class App extends React.Component {
       ru: languageRu,
       zh: languageZh,
     };
-  };
+  }
 
   getUserLanguageFromInputList() {
     const userLang = this.getUserLanguage;
-    const langList = this.getLangList().map(l => l.value);
-    if (langList.every(l => l.value !== userLang)) {
+    const langList = this.getLangList().map((l) => l.value);
+    if (langList.every((l) => l.value !== userLang)) {
       return langList[0];
     }
     return userLang;
-  };
+  }
 
   getUserLanguage() {
     return (
@@ -39,18 +40,20 @@ class App extends React.Component {
       navigator.userLanguage ||
       "en"
     );
-  };
+  }
 
-  handleLanguage = navigate => {
-    return lang => {
-      const pathname = useHash ? window.location.hash : window.location.pathname;
-			let path = pathname + window.location.search;
+  handleLanguage = (navigate) => {
+    return (lang) => {
+      const pathname = useHash
+        ? window.location.hash
+        : window.location.pathname;
+      let path = pathname + window.location.search;
       if (useHash) {
         path = path.replace("#", "");
       }
       const langs = Object.keys(this.langStore);
       if (
-        langs.every(l => {
+        langs.every((l) => {
           const reg = new RegExp("^/" + l);
           return path.search(reg) === -1;
         })
@@ -69,18 +72,18 @@ class App extends React.Component {
   };
 
   getLangList() {
-    return Object.keys(this.langStore).map(k => {
+    return Object.keys(this.langStore).map((k) => {
       return { value: k, name: this.langStore[k].name };
     });
-  };
+  }
 
   render() {
     return (
       <div className="App">
         <LocationProvider history={history}>
-          {context => (
+          {(context) => (
             <Router>
-              {Object.keys(this.langStore).map(lang => (
+              {Object.keys(this.langStore).map((lang) => (
                 <Main
                   path={`/${lang}/*`}
                   language={lang}
@@ -105,7 +108,7 @@ class App extends React.Component {
         </LocationProvider>
       </div>
     );
-  };
-};
+  }
+}
 
 export default App;

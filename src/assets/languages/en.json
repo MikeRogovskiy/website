@@ -17,8 +17,8 @@
     "contentMemory": "Training is based on materials that you love and enjoy. We use context exactly from the video and articles you watched. Translation depends on context so you shouldn’t learn everything at once.",
     "headOurApp": "Try our <span>EasyLang</span><sup> BETA</sup>",
     "contentOurApp": "Easylang is a FREE extention for your browser and a training app for web and mobile.",
-		"extensionGuide": "Installation guide",
-		"comingSoon": "Coming soon",
+    "extensionGuide": "Installation guide",
+    "comingSoon": "Coming soon",
     "headHowItWorks": "How it works?",
     "sliderCaptionFirst": "Play some video",
     "sliderCaptionSecond": "Click \"A\"(Add) button",
@@ -126,15 +126,14 @@
     "1-InstructionCardLink-b": "Sign in",
     "1-StepLeftHeading-a": "Highlight and",
     "2-StepLeftHeading-a": "translate words",
-    "3-StepLeftHeading-a": "It’s such a <span>beautiful</span> life!",
-    "1-StepLeftHeading-c": "Save new word to the context",
-    "2-StepLeftHeading-c": "menu in Tutor",
-    "3-StepLeftHeading-c": "It’s such a <span>beautiful</span> life!",
-    "1-StepLeftHeading-b": "Highlight the word and",
-    "2-StepLeftHeading-b": "translate the whole sentence",
-    "3-StepLeftHeading-b": "It’s such a <span>beautiful</span> life!",
-    "1-StepLeftHeading-d": "revise them on mobile device or",
-    "2-StepLeftHeading-d": "desktop"
+    "3-StepLeftHeading-a": "<span>Hello</span> dear friend!",
+    "1-StepLeftHeading-c": "Save THE WORD",
+
+    "3-StepLeftHeading-c": "<span>Hello</span> dear friend!",
+    "1-StepLeftHeading-b": "TRANSLATE THE SENTENSE",
+
+    "3-StepLeftHeading-b": "<span>Hello</span> dear friend!",
+    "1-StepLeftHeading-d": "go to tutor"
   },
 
   "PlayerAnimation": {
@@ -198,9 +197,9 @@
   "PlayerPage": {
     "GetPlayerButtonWindows": "DOWNLOAD for WINDOWS",
     "GetPlayerButtonMac": "DOWNLOAD for MAC",
-    "IfButtonIsForWindows":"If you're using MAC",
+    "IfButtonIsForWindows": "If you're using MAC",
     "GetPlayerButtonMac": "DOWNLOAD for MAC",
-    "IfButtonIsForMac":"If you're using Windows",
+    "IfButtonIsForMac": "If you're using Windows",
     "LinkToAnotherOSDownload": "download here",
     "GetStartedPlayerText": "The handy program <br/> for learning language",
     "ScrolledContentPlayerHeader": "One more powerful tool <br/> for learning English",
@@ -254,7 +253,7 @@
     "PopUpWindow-header-text": "You get </br>a free coupon",
     "PopUpWindow-main-key": "EASYTUTOR30",
     "PopUpWindow-main-title": "-<span>Share</span> our page on</br>social networks <a href=https://easylang.app/>EasyLang</a>",
-    "PopUpWindow-main-text": "-Activate the coupon in your </br> account",
+    "PopUpWindow-main-text": "-Activate the coupon in your </br> <a href=\"https://easy4learn.com/account?promo=easytutor30\" target=\"_blank\">account</a>",
     "PopUpWindow-footer-text": "Thanks for<br> using the product!",
     "PopUpWindow-footer-input": "Got it!"
   }

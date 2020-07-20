@@ -258,7 +258,7 @@
       "PopUpWindow-header-text": "You get </br>a free coupon",
       "PopUpWindow-main-key": "EASYTUTOR30",
       "PopUpWindow-main-title": "-<span>Share</span> our page on</br>social networks <a href=https://easylang.app/>EasyLang</a>",
-      "PopUpWindow-main-text": "-Activate the coupon in your </br> account",
+      "PopUpWindow-main-text": "-Activate the coupon in your </br> <a href=\"https://easy4learn.com/account?promo=easytutor30\" target=\"_blank\">account</a>",
       "PopUpWindow-footer-text": "Thanks for<br> using the product!",
       "PopUpWindow-footer-input": "Got it!"
     },

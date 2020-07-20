@@ -6,101 +6,157 @@ import ReactHtmlParser from "react-html-parser";
 import StartBtn from "../StartBtn";
 
 export default class Navbar extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            openMenu: false,
-            fixedBar: false
+  constructor(props) {
+    super(props);
+    this.state = {
+      openMenu: false,
+      fixedBar: false,
+    };
+  }
+  changeLocale = (e) => {
+    this.props.handleLanguage(e.target.value);
+    localStorage.setItem("lang", e.target.value);
+    window.gtag("event", "Language choose", {
+      event_category: "Landing.Navigation bar",
+      event_label: e.target.value,
+    });
+  };
+  clickMenuButton = () => {
+    this.setState((state) => {
+      return { openMenu: !state.openMenu };
+    });
+  };
+  closeMenu = () => {
+    this.setState({
+      openMenu: false,
+    });
+  };
+  getLangText(text) {
+    return ReactHtmlParser(this.props.text[text]);
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  hideStartBtn() {
+    document.querySelector("#nav-btn").style.display = "none";
+  }
+
+  showStartBtn() {
+    document.querySelector("#nav-btn").style.display = "flex";
+  }
+
+  handleScroll = (e) => {
+    if (window.pageYOffset > 50 && !this.state.fixedBar) {
+      this.setState({
+        fixedBar: true,
+      });
+    } else if (window.pageYOffset <= 50 && this.state.fixedBar) {
+      this.setState({
+        fixedBar: false,
+      });
+    }
+  };
+
+  render() {
+    const navBarClass = classNames("Navbar", {
+      "no-fixed-bar": !this.state.fixedBar,
+      "fixed-bar": this.state.fixedBar,
+    });
+    const menuBtnClass = classNames("menu-btn", {
+      "menu-btn_active": this.state.openMenu,
+    });
+    const menuMainClass = classNames("menu-main", {
+      "menu-main_active": this.state.openMenu,
+    });
+    const langList = this.props.langList.map((l) => (
+      <option value={l.value} key={l.value}>
+        {l.name}
+      </option>
+    ));
+
+    window.onscroll = function() {
+      var currentPercentage = calculatePercenteges(document.body);
+
+      function calculatePercenteges(e) {
+        let p = e.parentNode;
+        currentPercentage =
+          ((e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight)) *
+          100;
+
+        return Math.round(currentPercentage);
+      }
+
+      if (
+        window.location.href.includes("player") === true &&
+        window.location.href.includes("player-instruction-youtube") !== true
+      ) {
+        checkUrlCondition(currentPercentage);
+      }
+
+      function checkUrlCondition(percentages) {
+        if (
+          (window.location.href.includes("player") === true &&
+            percentages < 10) ||
+          percentages >= 98
+        ) {
+          document.querySelector("#nav-btn").style.display = "none";
+        } else if (
+          (window.location.href.includes("player") === true &&
+            percentages > 10) ||
+          percentages <= 98
+        ) {
+          document.querySelector("#nav-btn").style.display = "flex";
+        }
+      }
+    };
+
+        // const navBarClass = classNames("Navbar", {
+        //     "no-fixed-bar": !this.state.fixedBar,
+        //     "fixed-bar": this.state.fixedBar
+        // });
+        // const menuBtnClass = classNames("menu-btn", {
+        //     "menu-btn_active": this.state.openMenu
+        // });
+        // const menuMainClass = classNames("menu-main", {
+        //     "menu-main_active": this.state.openMenu
+        // });
+        // const langList = this.props.langList.map(l => (
+        //     <option value={l.value} key={l.value}>
+        //         {l.name}
+        //     </option>
+        // ));
+
+    window.onscroll = function (){
+        var currentPercentage = calculatePercenteges(document.body);
+
+        function calculatePercenteges(e){
+            let p = e.parentNode;
+                currentPercentage = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
+
+            return  Math.round(currentPercentage);
         };
-    };
-    changeLocale = e => {
-        this.props.handleLanguage(e.target.value);
-    };
-    clickMenuButton = () => {
-        this.setState(state => {
-            return { openMenu: !state.openMenu };
-        });
-    };
-    closeMenu = () => {
-        this.setState({
-            openMenu: false
-        });
-    };
-    getLangText(text) {
-        return ReactHtmlParser(this.props.text[text]);
-    };
 
-    componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll);
-    };
-
-    componentWillUnmount() {
-        window.removeEventListener("scroll", this.handleScroll);
-    };
-
-    hideStartBtn(){
-        document.querySelector("#nav-btn").style.display = "none";
-    };
-
-    showStartBtn(){
-        document.querySelector("#nav-btn").style.display = "flex";
-    };
-
-    handleScroll = e => {
-        if (window.pageYOffset > 50 && !this.state.fixedBar) {
-            this.setState({
-                fixedBar: true
-            });
-        } else if (window.pageYOffset <= 50 && this.state.fixedBar) {
-            this.setState({
-                fixedBar: false
-            });
+        if(window.location.href.includes("player") === true && window.location.href.includes("player-instruction-youtube") !== true){
+            checkUrlCondition(currentPercentage)
         };
-    };
 
-    render() {
+        function checkUrlCondition(percentages){
 
-        const navBarClass = classNames("Navbar", {
-            "no-fixed-bar": !this.state.fixedBar,
-            "fixed-bar": this.state.fixedBar
-        });
-        const menuBtnClass = classNames("menu-btn", {
-            "menu-btn_active": this.state.openMenu
-        });
-        const menuMainClass = classNames("menu-main", {
-            "menu-main_active": this.state.openMenu
-        });
-        const langList = this.props.langList.map(l => (
-            <option value={l.value} key={l.value}>
-                {l.name}
-            </option>
-        ));
-
-        window.onscroll = function (){
-            var currentPercentage = calculatePercenteges(document.body);
-
-            function calculatePercenteges(e){
-                let p = e.parentNode;
-                    currentPercentage = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
-
-                return  Math.round(currentPercentage);
+            if (window.location.href.includes("player") === true &&  percentages < 10 || percentages >= 98){
+                document.querySelector("#nav-btn").style.display = "none";
+            } else if (window.location.href.includes("player") === true && percentages > 10 || percentages <= 98){
+                document.querySelector("#nav-btn").style.display = "flex";
             };
 
-            if(window.location.href.includes("player") === true && window.location.href.includes("player-instruction-youtube") !== true){
-                checkUrlCondition(currentPercentage)
-            };
-
-            function checkUrlCondition(percentages){
-
-                if (window.location.href.includes("player") === true &&  percentages < 10 || percentages >= 98){
-                    document.querySelector("#nav-btn").style.display = "none";
-                } else if (window.location.href.includes("player") === true && percentages > 10 || percentages <= 98){
-                    document.querySelector("#nav-btn").style.display = "flex";
-                };
-
-            };
-
         };
+
+    };
 
         return (
             <div>
@@ -197,7 +253,7 @@ export default class Navbar extends React.Component {
                             </div>
                         </div>
                     </nav>
-                    
+
                 }
             </div>
 
