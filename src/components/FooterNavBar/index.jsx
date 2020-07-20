@@ -57,24 +57,24 @@ export default class FooterNavBar extends Component {
   render() {
     return (
       <div id="footer-nav-bar">
-        {linksObject.generalRenderingConditionProd.find(
-          (e) => e === window.location.href
+        {linksObject.generalRenderingCondition.find(
+          (e) => e === window.location.pathname
         ) && (
           <div className="footer-nav-bar_links" id="landing-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>
         )}
 
-        {linksObject.extensionRenderingConditionProd.find(
-          (e) => e === window.location.href
+        {linksObject.extensionRenderingCondition.find(
+          (e) => e === window.location.pathname
         ) && (
           <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>
         )}
 
-        {linksObject.playerRenderingConditionProd.find(
-          (e) => e === window.location.href
+        {linksObject.playerRenderingCondition.find(
+          (e) => e === window.location.pathname
         ) && (
           <div className="footer-nav-bar_links" id="player-footer-nav-bar">
             {this.state.footerNavBarContent}
