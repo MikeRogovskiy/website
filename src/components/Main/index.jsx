@@ -6,7 +6,7 @@ import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
 import FooterNavBar from "../FooterNavBar";
 import {
-  AnalyticsRedirect,
+  // AnalyticsRedirect,
   Extension,  ExtensionInstruction, ExtensionInnerInstruction, ExtenstionAdvertisement,
   Home, HomeB,
   NotFound,
@@ -43,7 +43,7 @@ export default class App extends React.Component {
 
         <Router>
           <ScrollToTop                  path="/">
-            <AnalyticsRedirect          path="/analytics-redirect/" />
+            {/* <AnalyticsRedirect          path="/analytics-redirect/" /> */}
             <Home                       path="/" text={this.props.text.HomePage} />
             <HomeB                      path="/B/" />
             <HomeB                      path="/C/" />
