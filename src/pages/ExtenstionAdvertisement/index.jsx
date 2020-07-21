@@ -16,7 +16,7 @@ export default class ExtenstionAdvertisement extends Component {
       <div id="extension-commertial">
         <div id="extension-commertial_conatiner">
           <div id="commertial_container_header">
-            <img src={sideImgleft}></img>
+            <img src={sideImgleft} alt="side image left"></img>
             {/* <input id="close-pop-commertial" type="image" src={sideImgRight}></input> */}
           </div>
 
@@ -26,7 +26,7 @@ export default class ExtenstionAdvertisement extends Component {
             </div>
             <div id="commertial_container_main_content">
               <div id="commertial_container_main_content_image">
-                <img src={mainImg}></img>
+                <img src={mainImg} alt="main image"></img>
               </div>
               <div id="commertial_container_main_content_text">
                 <div id="commertial_container_main_content_text_title">

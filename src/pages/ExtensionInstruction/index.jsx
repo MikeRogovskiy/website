@@ -49,8 +49,8 @@ export default class ExtensionInstruction extends Component {
     //   );
     // }
     this.mainSiteLang = "";
-    // const domain = "https://easylang.app/";
-    this.domain = "http://localhost:3000/";
+    this.domain = "https://easylang.app/";
+    // this.domain = "http://localhost:3000/";
     console.log(window.location.href.charAt(this.domain.length + 2));
     // console.log(mainSiteLang);
 
@@ -193,7 +193,7 @@ export default class ExtensionInstruction extends Component {
                 </div>
 
                 <div className="step_section_main">
-                  <img src={sectionStep1} />
+                  <img src={sectionStep1} alt="steep 1" />
                   {/* <h2>{this.getLangText("3-StepLeftHeading-a")}</h2> */}
                 </div>
               </div>
@@ -212,7 +212,7 @@ export default class ExtensionInstruction extends Component {
                 </div>
 
                 <div className="step_section_main">
-                  <img src={sectionStep2} />
+                  <img src={sectionStep2} alt="step 2" />
                   {/* <h2>{this.getLangText("3-StepLeftHeading-b")}</h2> */}
                 </div>
               </div>
@@ -230,7 +230,7 @@ export default class ExtensionInstruction extends Component {
                 </div>
 
                 <div className="step_section_main">
-                  <img src={sectionStep3} />
+                  <img src={sectionStep3} alt="step 3" />
                   {/* <h2>{this.getLangText("3-StepLeftHeading-c")}</h2> */}
                 </div>
               </div>
@@ -247,7 +247,11 @@ export default class ExtensionInstruction extends Component {
                 </div>
 
                 <div className="step_section_main">
-                  <img src={sectionStep4} style={{ bottom: "25px" }} />
+                  <img
+                    src={sectionStep4}
+                    style={{ bottom: "25px" }}
+                    alt="step4"
+                  />
                 </div>
               </div>
               {/* </div> */}

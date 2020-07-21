@@ -37,6 +37,7 @@ export default class Navbar extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    console.log(this.pureArr);
   }
 
   componentWillUnmount() {
@@ -74,6 +75,7 @@ export default class Navbar extends React.Component {
     const menuMainClass = classNames("menu-main", {
       "menu-main_active": this.state.openMenu,
     });
+
     const langList = this.props.langList.map((l) => (
       <option value={l.value} key={l.value}>
         {l.name}

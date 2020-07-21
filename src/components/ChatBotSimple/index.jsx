@@ -51,12 +51,12 @@ export default class ChatBotSimple extends Component {
                   });
                 }}
               >
-                <img src={botLogo} />
+                <img src={botLogo} alt="botLogo" />
               </button>
             )}
             {this.state.on === true && (
               <button onClick={() => this.disappearBot()}>
-                <img src={botLogo} />
+                <img src={botLogo} alt="botLogo" />
               </button>
             )}
           </div>
