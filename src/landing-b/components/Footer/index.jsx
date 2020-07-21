@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import "./footerMedia.scss";
 import ReactHtmlParser from "react-html-parser";
 
 export default function Footer(props) {

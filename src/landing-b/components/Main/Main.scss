@@ -1,6 +1,6 @@
 .easy-way {
   font-weight: 900 !important;
-  font-size: 40px !important;
+  font-size: 40px;
   line-height: 120% !important;
 
   color: #1e4b8e !important;
@@ -52,8 +52,10 @@
   // > div:nth-child(5) {
   //   grid-column: span 3;
   // }
+  
   display: flex;
   flex-direction: column;
+  height: 100%;
   margin-top: 14%;
   &-item {
     box-shadow: 0px 4px 40px rgba(21, 45, 80, 0.1);
@@ -113,6 +115,7 @@
   padding: 5% 20px;
   background: linear-gradient(292.09deg, #ff8b4a 0%, #ffc24a 100%);
   width: 100%;
+  margin-top: 5%;
   &:hover {
     background: linear-gradient(292.09deg, #ff8b4a 0%, #ff8b4a 100%);
   }

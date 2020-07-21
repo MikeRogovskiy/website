@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import Slider from "infinite-react-carousel";
 import "./Slider.scss";
+import "./sliderMedia.scss";
 import max from "../../assets/max.svg";
+import sasha from "../../assets/sasha.JPEG";
+import vlad from "../../assets/vlad.JPEG";
 import stars from "../../assets/stars.svg";
 import nextArrow from "../../assets/nextArrow.svg";
 import prevArrow from "../../assets/prevArrow.svg";
@@ -12,14 +15,8 @@ function SampleNextArrow(props) {
   return (
     <img
       src={nextArrow}
+      id="carousel-right"
       alt="arrow next"
-      style={{
-        position: "absolute",
-        right: "0px",
-        top: "50%",
-        zIndex: "100",
-        cursor: "pointer",
-      }}
       onClick={onClick}
     />
   );
@@ -30,14 +27,8 @@ function SamplePrevArrow(props) {
   return (
     <img
       src={prevArrow}
+      id="carousel-left"
       alt="arrow previous"
-      style={{
-        position: "absolute",
-        left: "0px",
-        top: "50%",
-        zIndex: "100",
-        cursor: "pointer",
-      }}
       onClick={onClick}
     />
   );
@@ -72,9 +63,13 @@ export default class CustomSlider extends Component {
             >
               <div className="slider-item">
                 <div className="slider-item-content">
-                  <img src={max} alt="Max" />
-                  <div className="review">
+                  <div className="slider-item-content-avatar">
+                    <img src={max} alt="Max" />
                     <img src={stars} alt="stars" />
+                  </div>
+                  
+                  <div className="review">
+                    
                     <p>
                       {this.getLangText("MaxReview")}
                       <br />
@@ -97,9 +92,12 @@ export default class CustomSlider extends Component {
             >
               <div className="slider-item">
                 <div className="slider-item-content">
-                  <img src={max} alt="Ann" />
+                <div className="slider-item-content-avatar">
+                  <img src={sasha} alt="Sasha" className="funny-avatar"/>
+                  <img src={stars} alt="stars" />
+                </div>
                   <div className="review">
-                    <img src={stars} alt="stars" />
+                    
                     <p>
                       {this.getLangText("AnnReview")} <br />{" "}
                       <b>{this.getLangText("Ann")}</b>
@@ -121,9 +119,12 @@ export default class CustomSlider extends Component {
             >
               <div className="slider-item">
                 <div className="slider-item-content">
-                  <img src={max} alt="Tim" />
+                <div className="slider-item-content-avatar">
+                  <img src={vlad} alt="Vlad" className="funny-avatar"/>
+                  <img src={stars} alt="stars" />
+                </div>
+
                   <div className="review">
-                    <img src={stars} alt="stars" />
                     <p>
                       {this.getLangText("TimReview")} <br />{" "}
                       <b>{this.getLangText("Tim")}</b>

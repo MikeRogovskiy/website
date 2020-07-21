@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import imgEnjoy from "../../../assets/images/home/imgEnjoy.svg";
 import "./Main.scss";
+import "./mainMedia.scss";
 import Slider from "../Slider";
 import EasyLangLogo from "../../assets/EasyLang-logo.svg";
 import ReactHtmlParser from "react-html-parser";
@@ -28,7 +29,7 @@ export default function Main(props) {
 
           <button
             className="download"
-            style={{ width: "50%", borderRadius: "15px", marginTop: "5%" }}
+            style={{ borderRadius: "15px"}}
             onClick={() => navigate("/player")}
           >
             {getLangText("FreeStart")}
