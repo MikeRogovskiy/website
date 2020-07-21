@@ -111,6 +111,7 @@
   .container-pop-up{
     height: 70%;
   };
+
 };
 
 @media screen and (max-height: 800px){
@@ -119,18 +120,27 @@
     height: 75%;
   };
 
-  .container-pop-up_wrapper_main h1{
-    font-size: 40px;
+  .pop-up-storage .container-pop-up_wrapper{
+
+    h1{
+      font-size: 40px;
+    };
+
+    h2{
+      font-size: 35px;
+    };
+
+    p{
+      font-size: 20px;
+    };
+
+    input{
+      height: 50px;
+      font-size: 28px;
+    };
+
   };
 
-  .container-pop-up_wrapper_header h2{
-    font-size: 35px;
-  };
-
-  .container-pop-up_wrapper_header h3, .container-pop-up_wrapper_main h1,
-  .container-pop-up_wrapper_main h3, .container-pop-up_wrapper_footer h3{
-    padding-top: 20px;
-  };
 };
 
 @media screen and (max-height: 700px){
@@ -138,13 +148,104 @@
     top: 330px;
   };
 
-  .container-pop-up_wrapper_header h3, .container-pop-up_wrapper_main h1,
-  .container-pop-up_wrapper_main h3, .container-pop-up_wrapper_footer h3{
-    padding-top: 10px;
+  .pop-up-storage .container-pop-up_wrapper{
+
+    h1{
+      font-size: 36px;
+    };
+
+    h2{
+      font-size: 31px;
+    };
+
+    p{
+      font-size: 18px;
+      padding-top: 10px;
+    };
+
+    input{
+      height: 40px;
+      font-size: 25px;
+    };
+
   };
+
 };
 
+@media screen and (max-height: 600px){
 
-@media screen and (max-height){
+  .pop-up-storage .container-pop-up_wrapper{
+
+    h1{
+      font-size: 34px;
+    };
+
+    h2{
+      font-size: 29px;
+    };
+
+    p{
+      font-size: 16px;
+      padding-top: 7px;
+    };
+
+    input{
+      height: 38px;
+      font-size: 22px;
+    };
+
+  };
   
-}
+};
+
+@media screen and (max-height: 500px){
+
+  .pop-up-storage .container-pop-up_wrapper{
+
+    h1{
+      font-size: 32px;
+    };
+
+    h2{
+      font-size: 26px;
+    };
+
+    p{
+      font-size: 14px;
+      padding-top: 5px;
+    };
+
+    input{
+      height: 34px;
+      font-size: 20px;
+    };
+
+  };
+  
+};
+
+@media screen and (max-height: 400px){
+
+  .pop-up-storage .container-pop-up_wrapper{
+
+    h1{
+      font-size: 25px;
+    };
+
+    h2{
+      font-size: 20px;
+    };
+
+    p{
+      font-size: 8px;
+      padding-top: 0px;
+    };
+
+    input{
+      height: 28px;
+      font-size: 15px;
+    };
+
+  };
+  
+};
