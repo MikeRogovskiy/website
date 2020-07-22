@@ -24,6 +24,7 @@
 
             .review{
                 margin: 0px;
+                height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -96,6 +97,17 @@
       
     #carousel-right{
         right: 5vw;
+    };
+
+    .slider-item .review{
+        margin-top: 3%;
+    };
+
+    .slider-item-content{
+
+        .review p{
+            font-size: 16px;
+        };
     };
 };
 
