@@ -121,3 +121,17 @@
   };
 
 };
+
+@media screen and (max-width: 390px){
+  #footer-nav-bar{
+
+    a{
+      padding-bottom: 5px;
+    };
+  
+    button{
+      font-size: 11px;
+    };
+  
+  };
+}
