@@ -11,18 +11,6 @@ export default function Main(props) {
   const [conditionDesctop, setConditionDesctop] = useState(false);
   const [conditionMobile, setConditionMobile] = useState(false);
 
-  const href =
-    "http://easylang.app/downloads/EasyLang.Player-Beta_" +
-      navigator.platform.indexOf("Win") >
-    -1
-      ? "win_prod.exe"
-      : "mac_prod.dmg";
-
-  const getLangText = (text) => {
-    return ReactHtmlParser(props.text[text]);
-  };
-  const navigate = useNavigate();
-
   useEffect(() => {
     const handleHead = () => {
       if(window.innerWidth <= 1024){
@@ -36,45 +24,46 @@ export default function Main(props) {
     }
     window.addEventListener("load", handleHead);
     window.addEventListener("resize", handleHead);
-
   });
 
   const DesctopHead = () => {
     if(conditionDesctop){
-      return (
-        <section className="relax" id="relax">
-          <div className="relax-title">
-            <p className="easy-way">{getLangText("Title")}</p>
-  
-            <p className="relax-sub">{getLangText("SubTitle")}</p>
-  
-            <button
-              className="download"
-              style={{ borderRadius: "15px"}}
-              onClick={() => navigate("/player")}
-            >
-              {getLangText("FreeStart")}
-            </button>
-          </div>
-          <img src={imgEnjoy} alt="Enjoy learning" className="chill-image" />
-        </section>
-      )
+      return(<img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>)
     } else {
       return null
-    }
+    };
   };
 
   const MobileHead = () => {
     if(conditionMobile){
-      return (
-        <section className="relax" id="relax">
+      return(<img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>)
+    } else {
+      return null
+    };
+  };
+
+  const href =
+    "http://easylang.app/downloads/EasyLang.Player-Beta_" +
+      navigator.platform.indexOf("Win") >
+    -1
+      ? "win_prod.exe"
+      : "mac_prod.dmg";
+
+  const getLangText = (text) => {
+    return ReactHtmlParser(props.text[text]);
+  };
+  const navigate = useNavigate();
+
+
+
+  return (
+    <div>
+      {/* <DynamicalHead  /> */}
+      <section className="relax" id="relax">
           <div className="relax-title">
             <p className="easy-way">{getLangText("Title")}</p>
-
             <p className="relax-sub">{getLangText("SubTitle")}</p>
-
-            <img src={imgEnjoy} alt="Enjoy learning" className="chill-image" />
-
+            <MobileHead />
             <button
               className="download"
               style={{ borderRadius: "15px"}}
@@ -83,25 +72,8 @@ export default function Main(props) {
               {getLangText("FreeStart")}
             </button>
           </div>
+          <DesctopHead />
         </section>
-      )
-    } else {
-      return null
-    }
-  };
-
-  const DynamicalHead = () => {
-    return (
-      <div>
-        <DesctopHead />
-        <MobileHead />
-      </div>
-    )
-  };
-
-  return (
-    <div>
-      <DynamicalHead  />
       <section className="options">
         <div className="options-row-first">
           <div className="options-item">
