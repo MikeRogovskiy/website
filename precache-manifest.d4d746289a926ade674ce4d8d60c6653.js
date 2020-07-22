@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29900ed1398b77ad83ad696e3877f864",
+    "revision": "bd97d70721e720336fc00aec34806cb9",
     "url": "https://easably.github.io/website/index.html"
   },
   {
-    "revision": "1183ee74c0b02c161b90",
+    "revision": "ecd6e543f6a80d485ed5",
     "url": "https://easably.github.io/website/static/css/2.a61d25f8.chunk.css"
   },
   {
-    "revision": "a24af9b8f6a810889d1a",
-    "url": "https://easably.github.io/website/static/css/main.daf291ea.chunk.css"
+    "revision": "c7b23359ec184e2767b5",
+    "url": "https://easably.github.io/website/static/css/main.0fabb718.chunk.css"
   },
   {
-    "revision": "1183ee74c0b02c161b90",
-    "url": "https://easably.github.io/website/static/js/2.4659e530.chunk.js"
+    "revision": "ecd6e543f6a80d485ed5",
+    "url": "https://easably.github.io/website/static/js/2.8a721a38.chunk.js"
   },
   {
-    "revision": "a24af9b8f6a810889d1a",
-    "url": "https://easably.github.io/website/static/js/main.e9c98e10.chunk.js"
+    "revision": "c7b23359ec184e2767b5",
+    "url": "https://easably.github.io/website/static/js/main.aa787080.chunk.js"
   },
   {
     "revision": "aadf42645a737281a5a1",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bde6a092abf58323d989b7d74425681a",
     "url": "https://easably.github.io/website/static/media/10.bde6a092.png"
-  },
-  {
-    "revision": "529b325c83bc2fb7004f1e41343631bf",
-    "url": "https://easably.github.io/website/static/media/12-1.529b325c.png"
   },
   {
     "revision": "345b556226420b9fb70e8007d9aea960",
@@ -284,6 +280,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://easably.github.io/website/static/media/robo.2c270c2c.png"
   },
   {
+    "revision": "180f779b2a7d58e0614e3ca6d1184e50",
+    "url": "https://easably.github.io/website/static/media/sasha.180f779b.JPEG"
+  },
+  {
     "revision": "5c8ff92bc92541de9b2c7686953cf8a0",
     "url": "https://easably.github.io/website/static/media/sectionStep1.5c8ff92b.svg"
   },
@@ -418,5 +418,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2dd0c2ea0bc2338ccabbe93d31cc08e6",
     "url": "https://easably.github.io/website/static/media/video-explanation.2dd0c2ea.svg"
+  },
+  {
+    "revision": "0cb8d16cf0e42c20e78c4254a2c4b910",
+    "url": "https://easably.github.io/website/static/media/vlad.0cb8d16c.JPEG"
   }
 ]);

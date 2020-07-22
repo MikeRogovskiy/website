@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "https://easably.github.io/website/static/css/main.daf291ea.chunk.css",
-    "main.js": "https://easably.github.io/website/static/js/main.e9c98e10.chunk.js",
-    "main.js.map": "https://easably.github.io/website/static/js/main.e9c98e10.chunk.js.map",
+    "main.css": "https://easably.github.io/website/static/css/main.0fabb718.chunk.css",
+    "main.js": "https://easably.github.io/website/static/js/main.aa787080.chunk.js",
+    "main.js.map": "https://easably.github.io/website/static/js/main.aa787080.chunk.js.map",
     "runtime-main.js": "https://easably.github.io/website/static/js/runtime-main.80fcfedf.js",
     "runtime-main.js.map": "https://easably.github.io/website/static/js/runtime-main.80fcfedf.js.map",
     "static/css/2.a61d25f8.chunk.css": "https://easably.github.io/website/static/css/2.a61d25f8.chunk.css",
-    "static/js/2.4659e530.chunk.js": "https://easably.github.io/website/static/js/2.4659e530.chunk.js",
-    "static/js/2.4659e530.chunk.js.map": "https://easably.github.io/website/static/js/2.4659e530.chunk.js.map",
+    "static/js/2.8a721a38.chunk.js": "https://easably.github.io/website/static/js/2.8a721a38.chunk.js",
+    "static/js/2.8a721a38.chunk.js.map": "https://easably.github.io/website/static/js/2.8a721a38.chunk.js.map",
     "index.html": "https://easably.github.io/website/index.html",
-    "precache-manifest.4519a7f3a8fb3e93ee5fa6671323fe5c.js": "https://easably.github.io/website/precache-manifest.4519a7f3a8fb3e93ee5fa6671323fe5c.js",
+    "precache-manifest.d4d746289a926ade674ce4d8d60c6653.js": "https://easably.github.io/website/precache-manifest.d4d746289a926ade674ce4d8d60c6653.js",
     "service-worker.js": "https://easably.github.io/website/service-worker.js",
     "static/css/2.a61d25f8.chunk.css.map": "https://easably.github.io/website/static/css/2.a61d25f8.chunk.css.map",
-    "static/css/main.daf291ea.chunk.css.map": "https://easably.github.io/website/static/css/main.daf291ea.chunk.css.map",
+    "static/css/main.0fabb718.chunk.css.map": "https://easably.github.io/website/static/css/main.0fabb718.chunk.css.map",
     "static/media/1.png": "https://easably.github.io/website/static/media/1.d005094c.png",
     "static/media/10.png": "https://easably.github.io/website/static/media/10.bde6a092.png",
-    "static/media/12-1.png": "https://easably.github.io/website/static/media/12-1.529b325c.png",
     "static/media/2.png": "https://easably.github.io/website/static/media/2.475fc709.png",
     "static/media/3.png": "https://easably.github.io/website/static/media/3.a7a71492.png",
     "static/media/4.png": "https://easably.github.io/website/static/media/4.83e9556f.png",
@@ -65,6 +64,7 @@
     "static/media/puzzle.svg": "https://easably.github.io/website/static/media/puzzle.9f647bb4.svg",
     "static/media/repeat.png": "https://easably.github.io/website/static/media/repeat.0f4abafb.png",
     "static/media/robo.png": "https://easably.github.io/website/static/media/robo.2c270c2c.png",
+    "static/media/sasha.JPEG": "https://easably.github.io/website/static/media/sasha.180f779b.JPEG",
     "static/media/sectionStep1.svg": "https://easably.github.io/website/static/media/sectionStep1.5c8ff92b.svg",
     "static/media/sectionStep2.svg": "https://easably.github.io/website/static/media/sectionStep2.5276d57f.svg",
     "static/media/sectionStep3.svg": "https://easably.github.io/website/static/media/sectionStep3.b7a6e580.svg",
@@ -95,6 +95,7 @@
     "static/media/subtitles.png": "https://easably.github.io/website/static/media/subtitles.88d5df22.png",
     "static/media/testA.svg": "https://easably.github.io/website/static/media/testA.dc6b2d02.svg",
     "static/media/testMainPageB.svg": "https://easably.github.io/website/static/media/testMainPageB.d09496f5.svg",
-    "static/media/video-explanation.svg": "https://easably.github.io/website/static/media/video-explanation.2dd0c2ea.svg"
+    "static/media/video-explanation.svg": "https://easably.github.io/website/static/media/video-explanation.2dd0c2ea.svg",
+    "static/media/vlad.JPEG": "https://easably.github.io/website/static/media/vlad.0cb8d16c.JPEG"
   }
 }
