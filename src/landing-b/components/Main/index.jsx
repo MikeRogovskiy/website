@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import imgEnjoy from "../../../assets/images/home/imgEnjoy.svg";
 import "./Main.scss";
 import "./mainMedia.scss";
@@ -8,6 +8,9 @@ import ReactHtmlParser from "react-html-parser";
 import { useNavigate } from "@reach/router";
 
 export default function Main(props) {
+  const [conditionDesctop, setConditionDesctop] = useState(false);
+  const [conditionMobile, setConditionMobile] = useState(false);
+
   const href =
     "http://easylang.app/downloads/EasyLang.Player-Beta_" +
       navigator.platform.indexOf("Win") >
@@ -19,24 +22,86 @@ export default function Main(props) {
     return ReactHtmlParser(props.text[text]);
   };
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleHead = () => {
+      if(window.innerWidth <= 1024){
+        setConditionMobile(true);
+        setConditionDesctop(false);
+      } else {
+        setConditionMobile(false);
+        setConditionDesctop(true);
+      }
+
+    }
+    window.addEventListener("load", handleHead);
+    window.addEventListener("resize", handleHead);
+
+  });
+
+  const DesctopHead = () => {
+    if(conditionDesctop){
+      return (
+        <section className="relax" id="relax">
+          <div className="relax-title">
+            <p className="easy-way">{getLangText("Title")}</p>
+  
+            <p className="relax-sub">{getLangText("SubTitle")}</p>
+  
+            <button
+              className="download"
+              style={{ borderRadius: "15px"}}
+              onClick={() => navigate("/player")}
+            >
+              {getLangText("FreeStart")}
+            </button>
+          </div>
+          <img src={imgEnjoy} alt="Enjoy learning" className="chill-image" />
+        </section>
+      )
+    } else {
+      return null
+    }
+  };
+
+  const MobileHead = () => {
+    if(conditionMobile){
+      return (
+        <section className="relax" id="relax">
+          <div className="relax-title">
+            <p className="easy-way">{getLangText("Title")}</p>
+
+            <p className="relax-sub">{getLangText("SubTitle")}</p>
+
+            <img src={imgEnjoy} alt="Enjoy learning" className="chill-image" />
+
+            <button
+              className="download"
+              style={{ borderRadius: "15px"}}
+              onClick={() => navigate("/player")}
+            >
+              {getLangText("FreeStart")}
+            </button>
+          </div>
+        </section>
+      )
+    } else {
+      return null
+    }
+  };
+
+  const DynamicalHead = () => {
+    return (
+      <div>
+        <DesctopHead />
+        <MobileHead />
+      </div>
+    )
+  };
+
   return (
     <div>
-      <section className="relax" id="relax">
-        <div className="relax-title">
-          <p className="easy-way">{getLangText("Title")}</p>
-
-          <p className="relax-sub">{getLangText("SubTitle")}</p>
-
-          <button
-            className="download"
-            style={{ borderRadius: "15px"}}
-            onClick={() => navigate("/player")}
-          >
-            {getLangText("FreeStart")}
-          </button>
-        </div>
-        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image" />
-      </section>
+      <DynamicalHead  />
       <section className="options">
         <div className="options-row-first">
           <div className="options-item">

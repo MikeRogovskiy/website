@@ -6,7 +6,7 @@
     .slider-item {
         width: 800px;
     };
-}
+};
 
 @media screen and (max-width: 1024px){
     .relax{
@@ -14,7 +14,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
         &-title{
             text-align: center;
             .easy-way{
@@ -27,7 +26,6 @@
 
             .download{
                 width: 80vw;
-                margin-top: 45rem;
                 font-size: 25px;
             };
         };
@@ -46,7 +44,6 @@
         align-items: center;
         justify-content: center;
         margin: 0;
-        
 
         &-item, .options-item{
             margin: 20px 0px 20px 0px;
@@ -62,7 +59,7 @@
                 button{
                     font-size: 25px;
                 };
-            
+
                 .relax-sub{
                     font-size: 25px;
                 };
@@ -70,45 +67,114 @@
                 img{
                     width: 30%;
                 };
-        }
+        };
+    };
+
+    .options-row-first{
+        margin-top: 40px;
     };
 };
 
-@media screen and (max-width: 800px){
-    .relax-title{
-
-        .download{
-            margin-top: 38rem;
-        };
+@media screen and (max-width: 750px){
+    .relax-title .relax-sub{
+        font-size: 30px;
     };
-   
-}
+};
 
 @media screen and (max-width: 640px){
-
-    .relax {
-
-        .chill-image{
-            margin-top: -150px;
-        };
-    }
+    .options{
+        margin: 0;
+    };
 
     .relax-title{
 
         .easy-way{
             font-size: 50px;
-            margin-top: -20%;
         };
 
         .relax-sub{
             font-size: 25px;
         };
 
-        .download{
-            margin-top: 35rem;
+    };
+
+};
+
+@media screen and (max-width: 545px){
+    .options{
+        margin: 0;
+    }
+
+    .relax-title{
+
+        .easy-way{
+            font-size: 45px;
         };
 
-        
-    }
-    
-}
+    };
+
+};
+
+@media screen and (max-width: 490px){
+
+    .relax-title{
+
+        .easy-way{
+            font-size: 35px;
+        };
+
+        .relax-sub{
+            font-size: 15px;
+        };
+
+    };
+
+    .options-row-first, .options-row-second, .products{
+        &-item, .options-item{
+                p{
+                    font-size: 35px;
+                };
+
+                .relax-sub{
+                    font-size: 20px;
+                };
+        };
+    };
+
+};
+
+@media screen and (max-width: 380px){
+    .relax-title{
+
+        .easy-way{
+            font-size: 30px;
+        };
+
+    };
+};
+
+@media screen and (max-width: 340px){
+    .relax-title{
+
+        .easy-way{
+            font-size: 25px;
+        };
+
+        .relax-sub{
+            font-size: 15px;
+        };
+
+    };
+
+    .options-row-first, .options-row-second, .products{
+        &-item, .options-item{
+                p{
+                    font-size: 25px;
+                };
+
+                .relax-sub{
+                    font-size: 18px;
+                };
+        };
+    };
+};

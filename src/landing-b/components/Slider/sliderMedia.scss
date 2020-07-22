@@ -44,14 +44,14 @@
 
     #carousel-left{
         position: absolute;
-        z-index: 100;
+        z-index: 45;
         left: 25vw;
         top: 20%;
     };
       
     #carousel-right{
         position: absolute;
-        z-index: 100;
+        z-index: 45;
         right: 25vw;
         top: 20%;
     };
@@ -84,8 +84,29 @@
 
         .review p{
             font-size: 18px;
-        }
-    }
+        };
+    };
 
-}
+};
+
+@media screen and (max-width: 450px){
+    #carousel-left{
+        left: 5vw;
+    };
+      
+    #carousel-right{
+        right: 5vw;
+    };
+};
+
+
+@media screen and (max-width: 350px){
+    #carousel-left{
+        left: 1vw;
+    };
+      
+    #carousel-right{
+        right: 1vw;
+    };
+};
 

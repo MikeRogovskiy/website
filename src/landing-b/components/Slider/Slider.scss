@@ -23,13 +23,6 @@
   &-avatar{
     flex-direction: column;
     display: flex;
-
-      // img{
-      //   border-radius: 50%;
-      //   background-repeat: no-repeat;
-      //   width: 180px;
-      //   height: 180px;
-      // }
     };
 
   }
@@ -48,7 +41,7 @@
 #carousel-left{
   cursor: pointer;
   position: absolute;
-  z-index: 100;
+  z-index: 45;
   left: 0;
   top: 50%;
 };
@@ -56,7 +49,7 @@
 #carousel-right{
   cursor: pointer;
   position: absolute;
-  z-index: 100;
+  z-index: 45;
   right: 0;
   top: 50%;
 };
