@@ -53,34 +53,38 @@ export default class ExtensionInstruction extends Component {
     // this.domain = "http://localhost:3000/";
     console.log(window.location.href.charAt(this.domain.length + 2));
     // console.log(mainSiteLang);
-
-    if (
-      this.supportedLangs.indexOf(
-        window.location.href.substr(this.domain.length, 2)
-      ) === -1
-    ) {
-      localStorage.setItem("lang", "en");
-      this.mainSiteLang = "en";
-      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
-    }
-    if (
-      window.location.href.substr(this.domain.length, 2) ===
-      localStorage.getItem("lang")
-    ) {
-      return;
-    }
-
-    if (localStorage.getItem("lang") != null) {
-      this.mainSiteLang = localStorage.getItem("lang");
-      // alert(mainSiteLang);
-      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
-      // localStorage.clear();
+    if (this.supportedLangs.indexOf(navigator.language) > -1) {
+      window.location.href = `${this.domain}${navigator.language}/extension-instruction-static`;
     } else {
-      localStorage.setItem("lang", navigator.language);
-      this.mainSiteLang = navigator.language;
-      // alert(mainSiteLang);
-      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+      window.location.href = `${this.domain}en/extension-instruction-static`;
     }
+    // if (
+    //   this.supportedLangs.indexOf(
+    //     window.location.href.substr(this.domain.length, 2)
+    //   ) === -1
+    // ) {
+    //   localStorage.setItem("lang", "en");
+    //   this.mainSiteLang = "en";
+    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    // }
+    // if (
+    //   window.location.href.substr(this.domain.length, 2) ===
+    //   localStorage.getItem("lang")
+    // ) {
+    //   return;
+    // }
+
+    // if (localStorage.getItem("lang") != null) {
+    //   this.mainSiteLang = localStorage.getItem("lang");
+    //   // alert(mainSiteLang);
+    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    //   // localStorage.clear();
+    // } else {
+    //   localStorage.setItem("lang", navigator.language);
+    //   this.mainSiteLang = navigator.language;
+    //   // alert(mainSiteLang);
+    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    // }
   }
 
   getLangText(text) {
