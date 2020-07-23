@@ -51,6 +51,7 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop                  path="/">
             {/* <AnalyticsRedirect          path="/analytics-redirect/" /> */}
+            <Blog                       path="/blog/*" text={this.props.text.BlogPage}/>
             <Home                       path="/" text={this.props.text.HomePage} />
             <HomeB                      path="/B/" />
             <HomeB                      path="/C/" />
@@ -65,7 +66,6 @@ export default class App extends React.Component {
             <PlayerInstruction          path="player-instruction-youtube/" />
             <PlayerInstruction          path="/instruction-youtube-desctop/" />
             <Plans                      path="/plans/" text={this.props.text.PlansPage} />
-            <Blog                       path="/blog/*" />
             <NotFound                   path="*" text={this.props.text.NotFoundPage} />
             <_AppB path="/landing" text={this.props.text.Landing} />
           </ScrollToTop>
