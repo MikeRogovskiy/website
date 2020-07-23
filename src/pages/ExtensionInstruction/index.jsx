@@ -48,43 +48,46 @@ export default class ExtensionInstruction extends Component {
     //     navigator.language.substring(0, navigator.language.indexOf("-"))
     //   );
     // }
+    // alert(this.supportedLangs.indexOf(navigator.language));
     this.mainSiteLang = "";
     this.domain = "https://easylang.app/";
-    // this.domain = "http://localhost:3000/";
+    // this.domain = "http://192.168.1.159:3000/";
     console.log(window.location.href.charAt(this.domain.length + 2));
     // console.log(mainSiteLang);
-    if (this.supportedLangs.indexOf(navigator.language) > -1) {
-      window.location.href = `${this.domain}${navigator.language}/extension-instruction-static`;
-    } else {
-      window.location.href = `${this.domain}en/extension-instruction-static`;
-    }
-    // if (
-    //   this.supportedLangs.indexOf(
-    //     window.location.href.substr(this.domain.length, 2)
-    //   ) === -1
-    // ) {
-    //   localStorage.setItem("lang", "en");
-    //   this.mainSiteLang = "en";
-    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
-    // }
-    // if (
-    //   window.location.href.substr(this.domain.length, 2) ===
-    //   localStorage.getItem("lang")
-    // ) {
+    // if (this.supportedLangs.indexOf(navigator.language) > -1) {
+    //   window.location.href = `${this.domain}${navigator.language}/extension-instruction-static`;
+    //   return;
+    // } else {
+    //   window.location.href = `${this.domain}en/extension-instruction-static`;
     //   return;
     // }
+    if (
+      this.supportedLangs.indexOf(
+        window.location.href.substr(this.domain.length, 2)
+      ) === -1
+    ) {
+      localStorage.setItem("lang", "en");
+      this.mainSiteLang = "en";
+      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    }
+    if (
+      window.location.href.substr(this.domain.length, 2) ===
+      localStorage.getItem("lang")
+    ) {
+      return;
+    }
 
-    // if (localStorage.getItem("lang") != null) {
-    //   this.mainSiteLang = localStorage.getItem("lang");
-    //   // alert(mainSiteLang);
-    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
-    //   // localStorage.clear();
-    // } else {
-    //   localStorage.setItem("lang", navigator.language);
-    //   this.mainSiteLang = navigator.language;
-    //   // alert(mainSiteLang);
-    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
-    // }
+    if (localStorage.getItem("lang") != null) {
+      this.mainSiteLang = localStorage.getItem("lang");
+      // alert(mainSiteLang);
+      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+      // localStorage.clear();
+    } else {
+      localStorage.setItem("lang", navigator.language);
+      this.mainSiteLang = navigator.language;
+      // alert(mainSiteLang);
+      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    }
   }
 
   getLangText(text) {
