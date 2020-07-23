@@ -48,12 +48,19 @@ export default class ExtensionInstruction extends Component {
     //     navigator.language.substring(0, navigator.language.indexOf("-"))
     //   );
     // }
+    // alert(this.supportedLangs.indexOf(navigator.language));
     this.mainSiteLang = "";
     this.domain = "https://easylang.app/";
-    // this.domain = "http://localhost:3000/";
+    // this.domain = "http://192.168.1.159:3000/";
     console.log(window.location.href.charAt(this.domain.length + 2));
     // console.log(mainSiteLang);
-
+    // if (this.supportedLangs.indexOf(navigator.language) > -1) {
+    //   window.location.href = `${this.domain}${navigator.language}/extension-instruction-static`;
+    //   return;
+    // } else {
+    //   window.location.href = `${this.domain}en/extension-instruction-static`;
+    //   return;
+    // }
     if (
       this.supportedLangs.indexOf(
         window.location.href.substr(this.domain.length, 2)
