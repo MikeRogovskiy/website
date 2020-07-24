@@ -52,7 +52,7 @@ export default function Main(props) {
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
-  const navigate = useNavigate();
+  const navigateTo = useNavigate();
 
 
 
@@ -67,7 +67,7 @@ export default function Main(props) {
             <button
               className="download"
               style={{ borderRadius: "15px"}}
-              onClick={() => navigate("/player")}
+              onClick={() => navigateTo("/player")}
             >
               {getLangText("FreeStart")}
             </button>

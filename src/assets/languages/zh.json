@@ -43,6 +43,7 @@
   },
 
   "BlogPage": {
+    "articleOneTitleMain": "<b>6 reasons ‘Why study English’</b>",
     "articleOneTitle1": "<b>Boost your salary level.</b>",
     "articleOneText1": "According to numerous recruiting agencies, knowing foreign languages can result in a <b>10-15%  increase in salary.</b> The ability to communicate in another language may be a crucial factor in your job or a job you would like to try. At the very least, this knowledge adds to your flexibility. ",
     "articleOneTitle2": "<b>Building bridges with clients and colleagues from different cultures. </b>",
@@ -56,7 +57,7 @@
     "articleOneTitle6": "<b>Moving overseas for immigration or internship. </b>",
     "articleOneText6": "If you have ever wanted to taste the other life outside your hometown, join an exotic culture, meet new amazing friends; you are free to so if you know the language.",
 
-    "articleTwoTitle1": "<b>How to start with</b> eLang?",
+    "articleTwoTitleMain": "<b>How to start with</b> eLang?",
     "articleTwoText1": "Being forced to stay home doesn’t stop motivated people from being productive. There are many ways to develop new skills online, but we figured that most people don’t know where to start. Our recommendation would be, to find the inner motivation that’s going to drive you through these times. You can find a lot of professionals talking about their fields in-depth and with passion on <a>TED</a>.",
     "articleTwoText2": "Though the TED community is very international, the majority of speakers are presenting in English. For those who learn English, we made a <a href='https://easylang.app/player'>Player</a>. Video flow controls will allow for easy understanding and selecting unknown words will give you access to functions of Extension. The <a href='https://easylang.app/extension'>Extension</a> will allow you to translate words in text and add to a digital cloud for later revision through fun games.",
     "articleTwoListTitle1": "All you need to do:",
@@ -65,12 +66,15 @@
     "articleTwoListText3": "Use eLang",
     "articleTwoText3": "It’s easier with us. ",
 
-    "articleThreeTitle1": "<b>Free English learning apps: what to expect before you sign up.</b>",
+    "articleThreeTitleMain": "<b>Free English learning apps: what to expect before you sign up.</b>",
     "articleThreeText1": "Apps for learning languages promise to teach you how to use a new language just with a computer or phone. They’re <b>similar in concept:</b> daily exercises to teach you an entire language. </br> It’s promising, especially if you’re <b>not</b> already immersed in a language environment that will give you the exposure you need to pick up a second language. The question is, <b>are they effective?</b> </br> I’m sure you are aware that a <b>language is a complex interconnected system</b> of components that build a way to communicate. I’m talking about morphology, syntax, semantics and other language goddesses. </br> Let’s face it.</br> <b>Apps help to stay motivated!</b> We live a busy life and we either before or after work. We get a notification and go to the app then choose the simplest way: do exercises on what we know by heart and get our bonuses to feel like ‘mission accomplished’. Do you get it? It's an illusion of progress.</br> You can learn how to <b>pronounce sounds and phonemes</b> - but there are plenty of exceptions when the same letter combination is pronounced differently in different words. After three(!) years of living in the UK I was able to correctly pronounce vowel sounds without my decent russian accent. </br>You can <b>learn a basic set of English words</b> - you will successfully do your exercises by clicking on the correct answers. Does this have to do with understanding words in a real situation? In real life we ​​come across a huge number of phrases in a varied context that changes their meaning and connotation. That’s confusing and curious.</br> <b>You can learn grammar</b> - but will it teach you to use language? Let’s say you are in the middle of conversation and trying to recall the grammar rule of 2 conditionals, then trying to apply to your case and finally saying that, most likely with an error. It takes about 30 seconds or more. A person you are talking to will wait once or twice, if he is British - probably about 5 times, but the situation can hardly be called ‘easy communication’ and most likely the person will start to avoid you.</br> The last question: Is it possible to learn how <b>to maintain professional dialogues,</b> for example about banking rules, software architecture or astrophysics? It is difficult if your vocab has just a basic set of words like “good”, “nice to meet you”, “how much does it cost”. </br>",
-    "articleThreeTitle2": "<b>Sun up:</b>",
+    "articleThreeTitle2": "<b>Sum up:</b>",
     "articleThreeText2": "Using popular language learning applications is the starting point and certainly not the end. If you have completed all levels or got all strikes - it’s time to find options for immersion in the real language: find a live teacher, native speaker or at least start a smooth immersion in real English with eLang.",
     
-    "articleFinal": "eLang team"
+    "articleFinal": "eLang team",
+    "articleMonth": "March",
+    "articleBtnMore": "Read more",
+    "articleBtnBack": "Back"
   },
 
   "FooterNavBar": {

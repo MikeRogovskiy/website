@@ -44,14 +44,6 @@ export default class Navbar extends React.Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
 
-  hideStartBtn() {
-    document.querySelector("#nav-btn").style.display = "none";
-  }
-
-  showStartBtn() {
-    document.querySelector("#nav-btn").style.display = "flex";
-  }
-
   handleScroll = (e) => {
     if (window.pageYOffset > 50 && !this.state.fixedBar) {
       this.setState({
@@ -82,83 +74,48 @@ export default class Navbar extends React.Component {
       </option>
     ));
 
-    window.onscroll = function() {
-      var currentPercentage = calculatePercenteges(document.body);
+    let currentPercentageScroll;
 
-      function calculatePercenteges(e) {
-        let p = e.parentNode;
-        currentPercentage =
-          ((e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight)) *
-          100;
+    function calculatePercenteges(e){
+      let p = e.parentNode;
+        currentPercentageScroll = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
 
-        return Math.round(currentPercentage);
-      }
-
-      if (
-        window.location.href.includes("player") === true &&
-        window.location.href.includes("player-instruction-youtube") !== true
-      ) {
-        checkUrlCondition(currentPercentage);
-      }
-
-      function checkUrlCondition(percentages) {
-        if (
-          (window.location.href.includes("player") === true &&
-            percentages < 10) ||
-          percentages >= 98
-        ) {
-          document.querySelector("#nav-btn").style.display = "none";
-        } else if (
-          (window.location.href.includes("player") === true &&
-            percentages > 10) ||
-          percentages <= 98
-        ) {
-          document.querySelector("#nav-btn").style.display = "flex";
-        }
-      }
+      return  Math.round(currentPercentageScroll);
     };
+    calculatePercenteges(document.body)
 
-        // const navBarClass = classNames("Navbar", {
-        //     "no-fixed-bar": !this.state.fixedBar,
-        //     "fixed-bar": this.state.fixedBar
-        // });
-        // const menuBtnClass = classNames("menu-btn", {
-        //     "menu-btn_active": this.state.openMenu
-        // });
-        // const menuMainClass = classNames("menu-main", {
-        //     "menu-main_active": this.state.openMenu
-        // });
-        // const langList = this.props.langList.map(l => (
-        //     <option value={l.value} key={l.value}>
-        //         {l.name}
-        //     </option>
-        // ));
+    const startBtnRenderCondition = window.location.href.includes("player") !== true
+    || currentPercentageScroll > 10 || currentPercentageScroll <= 98;
 
-    window.onscroll = function (){
-        var currentPercentage = calculatePercenteges(document.body);
+    // window.onload = startBtnChange;
 
-        function calculatePercenteges(e){
-            let p = e.parentNode;
-                currentPercentage = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
+    // function startBtnChange(){
+    //     var currentPercentage = calculatePercenteges(document.body);
 
-            return  Math.round(currentPercentage);
-        };
+    //     function calculatePercenteges(e){
+    //       let p = e.parentNode;
+    //           currentPercentage = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
 
-        if(window.location.href.includes("player") === true && window.location.href.includes("player-instruction-youtube") !== true){
-            checkUrlCondition(currentPercentage)
-        };
+    //       return  Math.round(currentPercentage);
+    //     };
 
-        function checkUrlCondition(percentages){
+    //     if(window.location.href.includes("player") === true && window.location.href.includes("player-instruction-youtube") !== true){
+    //         checkUrlCondition(currentPercentage)
+    //     };
 
-            if (window.location.href.includes("player") === true &&  percentages < 10 || percentages >= 98){
-                document.querySelector("#nav-btn").style.display = "none";
-            } else if (window.location.href.includes("player") === true && percentages > 10 || percentages <= 98){
-                document.querySelector("#nav-btn").style.display = "flex";
-            };
+    //     function checkUrlCondition(percentages){
 
-        };
+    //         if (window.location.href.includes("player") === true &&  percentages < 10 || percentages >= 98){
+    //             document.querySelector("#nav-btn").style.display = "none";
+    //         } else if (window.location.href.includes("player") === true && percentages > 10 || percentages <= 98){
+    //             document.querySelector("#nav-btn").style.display = "flex";
+    //         };
 
-    };
+    //     };
+    // };
+
+    // window.onscroll = startBtnChange;
+    // window.onload = startBtnChange;
 
         return (
             <div>
@@ -236,12 +193,13 @@ export default class Navbar extends React.Component {
                                                     {this.props.text.ourBlog}
                                                 </Link>
                                             </li>
-                                            <li>
+                                            <li>{startBtnRenderCondition ?
                                                 <StartBtn
                                                     link={"player/"}
                                                     text={this.props.text.GetStartedButton}
                                                     id={"nav-btn"}
-                                                />
+                                                /> : null
+                                              }
                                             </li>
                                         </ul>
                                     </div>

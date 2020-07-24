@@ -6,7 +6,6 @@ import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
 import FooterNavBar from "../FooterNavBar";
 import {
-  // AnalyticsRedirect,
   Extension,
   ExtensionInstruction,
   ExtensionInnerInstruction,
@@ -20,8 +19,9 @@ import {
   PlayerAnimation,
   Privacy,
   _AppB,
+  ArticlesPage
 } from "../../pages";
-// import AppB from "../../pages/App";
+
 export default class App extends React.Component {
   urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*privacy.*/g];
 
@@ -50,7 +50,9 @@ export default class App extends React.Component {
 
         <Router>
           <ScrollToTop                  path="/">
-            {/* <AnalyticsRedirect          path="/analytics-redirect/" /> */}
+            <ArticlesPage               path="/reasons-to-study-english/" text={this.props.text.BlogPage}/>
+            <ArticlesPage               path="/start-learning-english-with-elang/" text={this.props.text.BlogPage}/>
+            <ArticlesPage               path="/free-english-learnings-apps/" text={this.props.text.BlogPage}/>
             <Blog                       path="/blog/*" text={this.props.text.BlogPage}/>
             <Home                       path="/" text={this.props.text.HomePage} />
             <HomeB                      path="/B/" />
