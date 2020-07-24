@@ -18,6 +18,7 @@ export default function BlogMain(props){
 
     return(
         <div className="blog-content">
+            
             <div className="blog-content_container">
                 <div id="blog-content_container_a">
                     <img src={articleOne}></img>

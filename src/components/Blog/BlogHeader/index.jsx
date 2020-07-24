@@ -7,9 +7,8 @@ const BlogHeader = (props) => {
         <header className="Header">
             <div className="Header-content container">
                 <h1 className="Header-title">
-                    <Link to="">EasyLang Blog</Link>
+                    <Link to="/blog">EasyLang Blog</Link>
                 </h1>
-            {/* {search} */}
             </div>
         </header>
     );

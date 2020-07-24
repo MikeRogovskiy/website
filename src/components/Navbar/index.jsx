@@ -79,15 +79,20 @@ export default class Navbar extends React.Component {
     function calculatePercenteges(e){
       let p = e.parentNode;
         currentPercentageScroll = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
-
+        console.log(Math.round(currentPercentageScroll))
       return  Math.round(currentPercentageScroll);
     };
-    calculatePercenteges(document.body)
+    window.onscroll = calculatePercenteges(document.body);
 
     const startBtnRenderCondition = window.location.href.includes("player") !== true
     || currentPercentageScroll > 10 || currentPercentageScroll <= 98;
+    const blogBtnRenderCondition = window.location.href.includes("blog") !== true;
 
-    const blogBtnCondition = window.location.href.includes("blog") !== true
+    // const startBtnRenderCondition = () => {
+    //   if(window.location.href.includes("player") !== true
+    //   || currentPercentageScroll > 10 || currentPercentageScroll <= 98;
+    //   )
+    // }
 
     // window.onload = startBtnChange;
 
@@ -186,11 +191,11 @@ export default class Navbar extends React.Component {
                                                     {this.props.text.extension}
                                                 </Link>
                                             </li>
-                                            <li className="menu-item">{blogBtnCondition ?
+                                            <li className="menu-item">{blogBtnRenderCondition ?
                                               <Link
-                                              to="blog/"
-                                              className="menu-nav__link"
-                                              onClick={() => {this.closeMenu(); this.showStartBtn()}}
+                                                to="blog/"
+                                                className="menu-nav__link"
+                                                onClick={() => {this.closeMenu(); this.showStartBtn()}}
                                               >
                                               {this.props.text.ourBlog}
                                               </Link> : null

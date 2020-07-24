@@ -48,12 +48,19 @@
             }
         }
 
-        #article-2 img{
-            margin: 3%;
-            width: 30vw;
-        }
-
         &_block{
+            &_head{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin: 3%;
+                    width: 30vw;
+                }
+            }
+           
             &_footer{
                 display:flex;
                 align-items: center;

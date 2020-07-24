@@ -4,7 +4,10 @@ import BlogHeader from "../../components/Blog/BlogHeader";
 import "./articles.scss";
 import { useNavigate } from "@reach/router";
 
-import articleTwoB from "../../assets/images/blog/articleTwoB.png";
+import articleOne from "../../assets/images/blog/articleOne.jpeg";
+import articleTwo from "../../assets/images/blog/articleTwo.jpg";
+// import articleTwoB from "../../assets/images/blog/articleTwoB.png";
+import articleThree from "../../assets/images/blog/articleThree.jpg"
 
 export default function ArticlesPage(props){
 
@@ -17,6 +20,11 @@ export default function ArticlesPage(props){
     const ArticleOne = () => {
         return(
            <div id="article-1" className="articles_folder_block">
+               <div className="articles_folder_block_head">
+                    <h2>{getLangText("articleOneTitleMain")}</h2>
+                    <img src={articleOne}></img>
+               </div>
+
                 <h3>{getLangText("articleOneTitle1")}</h3>
                 <p>{getLangText("articleOneText1")}</p>
                 <h3>{getLangText("articleOneTitle2")}</h3>
@@ -41,10 +49,20 @@ export default function ArticlesPage(props){
     const ArticleTwo = () => {
         return(
             <div id="article-2" className="articles_folder_block">
-                 <img src={articleTwoB}></img>
-                <p>{getLangText("articleThreeText1")}</p>
-                <h2>{getLangText("articleThreeTitle2")}</h2>
-                <p>{getLangText("articleThreeText2")}</p>
+                <div className="articles_folder_block_head">
+                    <h2>{getLangText("articleTwoTitleMain")}</h2>
+                    <img src={articleTwo}></img>
+               </div>
+
+               <p>{getLangText("articleTwoText1")}</p>
+                <p>{getLangText("articleTwoText2")}</p>
+                <br /><p>{getLangText("articleTwoListTitle1")}</p>
+                <ol>
+                    <li>{getLangText("articleTwoListText1")}</li>
+                    <li>{getLangText("articleTwoListText2")}</li>
+                    <li>{getLangText("articleTwoListText3")}</li>
+                </ol>
+                <p>{getLangText("articleTwoText3")}</p>
 
                 <div className="articles_folder_block_footer">
                     <p><i>{getLangText("articleFinal")}</i></p>
@@ -57,15 +75,14 @@ export default function ArticlesPage(props){
     const ArticleThree = () => {
         return(
             <div id="article-3" className="articles_folder_block">
-                <p>{getLangText("articleTwoText1")}</p>
-                <p>{getLangText("articleTwoText2")}</p>
-                <br /><p>{getLangText("articleTwoListTitle1")}</p>
-                <ol>
-                    <li>{getLangText("articleTwoListText1")}</li>
-                    <li>{getLangText("articleTwoListText2")}</li>
-                    <li>{getLangText("articleTwoListText3")}</li>
-                </ol>
-                <p>{getLangText("articleTwoText3")}</p>
+                <div className="articles_folder_block_head">
+                    <h2>{getLangText("articleThreeTitleMain")}</h2>
+                    <img src={articleThree}></img>
+               </div>
+
+                <p>{getLangText("articleThreeText1")}</p>
+                <h2>{getLangText("articleThreeTitle2")}</h2>
+                <p>{getLangText("articleThreeText2")}</p>
 
                 <div className="articles_folder_block_footer">
                     <p><i>{getLangText("articleFinal")}</i></p>
@@ -86,7 +103,7 @@ export default function ArticlesPage(props){
             return null
         }
     }
-    
+
     return(
         <div className="articles">
             <BlogHeader/>
