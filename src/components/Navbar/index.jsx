@@ -87,6 +87,8 @@ export default class Navbar extends React.Component {
     const startBtnRenderCondition = window.location.href.includes("player") !== true
     || currentPercentageScroll > 10 || currentPercentageScroll <= 98;
 
+    const blogBtnCondition = window.location.href.includes("blog") !== true
+
     // window.onload = startBtnChange;
 
     // function startBtnChange(){
@@ -184,14 +186,16 @@ export default class Navbar extends React.Component {
                                                     {this.props.text.extension}
                                                 </Link>
                                             </li>
-                                            <li className="menu-item">
-                                                <Link
-                                                    to="blog/"
-                                                    className="menu-nav__link"
-                                                    onClick={() => {this.closeMenu(); this.showStartBtn()}}
-                                                >
-                                                    {this.props.text.ourBlog}
-                                                </Link>
+                                            <li className="menu-item">{blogBtnCondition ?
+                                              <Link
+                                              to="blog/"
+                                              className="menu-nav__link"
+                                              onClick={() => {this.closeMenu(); this.showStartBtn()}}
+                                              >
+                                              {this.props.text.ourBlog}
+                                              </Link> : null
+                                            }
+                                                
                                             </li>
                                             <li>{startBtnRenderCondition ?
                                                 <StartBtn
