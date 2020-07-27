@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ReactHtmlParser from "react-html-parser";
+import MobilePopUp from "../../components/MobilePopUp";
 
 import "./Player.scss";
 
 import PlayerLogo from "../../assets/images/PlayerLogo.png";
 
 const Header = (props) => {
+    const [popUp, setPopUp] = useState(true);
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
@@ -19,13 +21,17 @@ const Header = (props) => {
     function findOSName(){
         if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
         if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
-        // if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
-        // if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
     }
     findOSName()
 
+    function showPopUpMobile(state){
+        console.log(window.navigator.userAgent)
+        setPopUp(state)
+    }
+
     return (
         <header className="getStartedPlayer-header">
+            {popUp ? <MobilePopUp /> : null}
             <div className="wrapper-getStarted">
 
                 <div>
@@ -39,6 +45,7 @@ const Header = (props) => {
                             href={windowsLink}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => showPopUpMobile(true)}
                         >
                             <span>{getLangText("GetPlayerButtonWindows")}</span>
                         </a>
