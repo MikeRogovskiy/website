@@ -86,7 +86,7 @@ export default function ArticlesPage(props){
 
                 <div className="articles_folder_block_footer">
                     <p><i>{getLangText("articleFinal")}</i></p>
-                    <p>{getLangText("articleMonth")} 24.07.2020</p>
+                    <p>24.07.2020</p>
                 </div>
             </div>
         )

@@ -35,7 +35,6 @@
   background-size: 0% 2px;
 };
 
-
 #extension-footer-nav-bar, #player-footer-nav-bar{
   .Footer{
 
@@ -43,10 +42,9 @@
       color: black;
     };
 
-  }
-  
-}
+  };
 
+};
 
 #extension-footer-nav-bar a, #player-footer-nav-bar a{
   text-decoration: none;
@@ -57,9 +55,6 @@
   background-size: 100% 2px;
   transition: background-size .3s;
   padding-bottom: 10px;
-
-
-  
 };
 
 #extension-footer-nav-bar a:hover, #player-footer-nav-bar a:hover{
