@@ -11,7 +11,7 @@ const Header = (props) => {
         return ReactHtmlParser(props.text[text]);
     };
     
-    const macLink = 'http://easylang.app/downloads/eLang Player - Learn English_mac_prod.dmg';
+    const macLink = 'http://easylang.app/downloads/eLang_Player_-_Learn_English_mac_prod.dmg';
     const windowsLink = 'http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe';
 
     let OSName="Unknown OS";
