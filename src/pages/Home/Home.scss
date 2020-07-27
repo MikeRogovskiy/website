@@ -55,7 +55,8 @@
     text-transform: capitalize;
     color: $color;
 
-    background: $startBtnColorHover;
+    background: #637CF2;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 50px;
     transition: all 0.3s linear;
