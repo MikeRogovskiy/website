@@ -96,17 +96,6 @@ export default class Home extends React.Component {
               <h1 className="hero-title">{this.getLangText("headerTitle")}</h1>
               <p className="subtitle">{this.getLangText("headerSubtitle")}</p>
             </div>
-
-            {/* <div className="button-started">
-              <Link
-                className="get-started-button top"
-                to="extension/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>{this.getLangText("StartLearning")}</span>
-              </Link>
-            </div> */}
           </div>
         </header>
 
