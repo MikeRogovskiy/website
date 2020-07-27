@@ -3,6 +3,7 @@ import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
 
 import "./Extension.scss";
+import "./ExtensionMedia.scss";
 
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";

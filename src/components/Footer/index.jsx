@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from '@reach/router'
 import "./Footer.scss";
 
 export default class Footer extends React.Component {
@@ -7,9 +6,7 @@ export default class Footer extends React.Component {
         return (
             <footer className="Footer">
                 <div className="copyright">
-                    <p>
-                        © 2020 <Link to="/">EASYLANG</Link> CO. All Rights Reserved.
-                    </p>
+                    <p>© 2020 EASYLANG CO. All Rights Reserved.</p>
                 </div>
             </footer>
         );
