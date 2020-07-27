@@ -244,24 +244,7 @@ export default class Home extends React.Component {
           </div>
         </div>
 
-        <footer className="get-started-footer">
-          {/* <div className="button-started bottom">
-            <Link
-              className="get-started-button bottom"
-              to="extension/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>{this.getLangText("StartLearning")}</span>
-            </Link>
-          </div> */}
-
-          {/* <div className="get-started-footer_privacy">
-            <Link to="/privacy">
-              <button className="privacy">{this.getLangText("PrivacyPolicy")}</button>
-            </Link>
-          </div> */}
-        </footer>
+        <footer className="get-started-footer"></footer>
       </div>
     );
   }

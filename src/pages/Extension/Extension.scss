@@ -83,6 +83,7 @@ body {
 
 .getStarted-button {
   @include centralJustifyFlex;
+
   width: 100%;
   margin-top: 2%;
 };
@@ -101,7 +102,7 @@ body {
   letter-spacing: 1px;
   color: $color;
   line-height: 1.375rem;
-
+  // background: #56d3f1;
   background: $startBtnColor;
   border-radius: 110px;
   transition: all 0.3s linear;

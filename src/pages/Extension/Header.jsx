@@ -1,8 +1,8 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
-// import StartBtn from "../../components/StartBtn";
 
 import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
+// import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
 import "./Extension.scss";
 
@@ -51,7 +51,9 @@ const Header = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>{getLangText("GetStartedButton")}</span>
+            <span>
+              {getLangText("GetStartedButton")}
+            </span>
           </a>
           {/* <StartBtn link={"/player"} id={"extension-btn"} text={getLangText("GetStartedButton")} /> */}
         </div>

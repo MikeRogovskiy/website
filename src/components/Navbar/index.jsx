@@ -11,6 +11,8 @@ export default class Navbar extends React.Component {
     this.state = {
       openMenu: false,
       fixedBar: false,
+      startBtn: true,
+      blogBtn: true
     };
   }
   changeLocale = (e) => {
@@ -37,12 +39,24 @@ export default class Navbar extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    console.log(this.pureArr);
-  }
+
+    if(window.location.href.includes("player")){
+      this.setState({
+        startBtn: false
+      });
+    };
+
+    if(window.location.href.includes("blog")){
+      this.setState({
+        blogBtn: false
+      });
+    };
+    
+  };
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
-  }
+  };
 
   handleScroll = (e) => {
     if (window.pageYOffset > 50 && !this.state.fixedBar) {
@@ -53,7 +67,36 @@ export default class Navbar extends React.Component {
       this.setState({
         fixedBar: false,
       });
-    }
+    };
+  };
+
+  handleStartBtn = () => {
+    let currentPercentageScroll = 0;
+
+    function calculatePercenteges(percentages){
+      let p = percentages.parentNode;
+        currentPercentageScroll = (percentages.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
+      return  Math.round(currentPercentageScroll);
+    };
+    calculatePercenteges(document.body);
+
+    if(currentPercentageScroll > 12 && currentPercentageScroll < 95){
+      this.setState({
+        startBtn: true
+      })} else {
+      this.setState({
+        startBtn: false
+      });
+    };
+
+  };
+
+  handleBlogBtn = () => {
+    if(window.location.href.includes("blog")){
+      this.setState({
+        blogBtn: false
+      });
+    };
   };
 
   render() {
@@ -74,159 +117,112 @@ export default class Navbar extends React.Component {
       </option>
     ));
 
-    let currentPercentageScroll;
+    window.onscroll = window.location.href.includes("player") ? this.handleStartBtn : null;
 
-    function calculatePercenteges(e){
-      let p = e.parentNode;
-        currentPercentageScroll = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
-        console.log(Math.round(currentPercentageScroll))
-      return  Math.round(currentPercentageScroll);
-    };
-    window.onscroll = calculatePercenteges(document.body);
+    return (
+        <div>
+            { window.location.href.includes("instruction") || window.location.href.includes("player-animation")
+              || window.location.href.includes("/B") || window.location.href.includes("/C")
+              || window.location.href.includes("advertisement") || window.location.href.includes("plans")
+              !== true
+              &&
 
-    const startBtnRenderCondition = window.location.href.includes("player") !== true
-    || currentPercentageScroll > 10 || currentPercentageScroll <= 98;
-    const blogBtnRenderCondition = window.location.href.includes("blog") !== true;
+                <nav className={navBarClass}>
 
-    // const startBtnRenderCondition = () => {
-    //   if(window.location.href.includes("player") !== true
-    //   || currentPercentageScroll > 10 || currentPercentageScroll <= 98;
-    //   )
-    // }
-
-    // window.onload = startBtnChange;
-
-    // function startBtnChange(){
-    //     var currentPercentage = calculatePercenteges(document.body);
-
-    //     function calculatePercenteges(e){
-    //       let p = e.parentNode;
-    //           currentPercentage = (e.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
-
-    //       return  Math.round(currentPercentage);
-    //     };
-
-    //     if(window.location.href.includes("player") === true && window.location.href.includes("player-instruction-youtube") !== true){
-    //         checkUrlCondition(currentPercentage)
-    //     };
-
-    //     function checkUrlCondition(percentages){
-
-    //         if (window.location.href.includes("player") === true &&  percentages < 10 || percentages >= 98){
-    //             document.querySelector("#nav-btn").style.display = "none";
-    //         } else if (window.location.href.includes("player") === true && percentages > 10 || percentages <= 98){
-    //             document.querySelector("#nav-btn").style.display = "flex";
-    //         };
-
-    //     };
-    // };
-
-    // window.onscroll = startBtnChange;
-    // window.onload = startBtnChange;
-
-        return (
-            <div>
-                {   window.location.href.includes("instruction") || window.location.href.includes("player-animation")
-                    || window.location.href.includes("/B") || window.location.href.includes("/C")
-                    || window.location.href.includes("advertisement") || window.location.href.includes("plans")
-                    !== true
-                    &&
-
-                    <nav className={navBarClass}>
-
-                        <div className="sticky-bar">
-                            <div className="logo">
-                                <Link
-                                    to="./"
-                                    className="logo-light"
-                                    onClick={() => {this.closeMenu(); this.showStartBtn()}}
-                                >
-                                    EasyLang
-                                </Link>
-                            </div>
-                            {
-                                this.props.noUseLangSelect || (
-                                    <div className="lang">
-                                        <form>
-                                            <select
-                                                name="changeLang"
-                                                id="getLang"
-                                                value={this.props.curLang}
-                                                onChange={this.changeLocale}
+                    <div className="sticky-bar">
+                        <div className="logo">
+                            <Link
+                                to="./"
+                                className="logo-light"
+                                onClick={() => {this.closeMenu(); this.showStartBtn()}}
+                            >
+                                EasyLang
+                            </Link>
+                        </div>
+                        {
+                            this.props.noUseLangSelect || (
+                                <div className="lang">
+                                    <form>
+                                        <select
+                                            name="changeLang"
+                                            id="getLang"
+                                            value={this.props.curLang}
+                                            onChange={this.changeLocale}
+                                        >
+                                            {langList}
+                                        </select>
+                                    </form>
+                                </div>
+                            )
+                        }
+                        <div className="menu-wrapper">
+                            <div className="menu-block">
+                                <div className={menuMainClass}>
+                                    <div
+                                        className="overlay"
+                                        onClick={this.closeMenu}
+                                    ></div>
+                                    <ul className="menu-main-list">
+                                        <li>
+                                        <span className="menu-logo">
+                                            EasyLang
+                                        </span>
+                                        </li>
+                                        <li className="menu-item">
+                                            <Link
+                                                to="player/"
+                                                className="menu-nav__link"
+                                                onClick={() => {this.closeMenu(); this.hideStartBtn()}}
                                             >
-                                                {langList}
-                                            </select>
-                                        </form>
-                                    </div>
-                                )
-                            }
-                            <div className="menu-wrapper">
-                                <div className="menu-block">
-                                    <div className={menuMainClass}>
-                                        <div
-                                            className="overlay"
-                                            onClick={this.closeMenu}
-                                        ></div>
-                                        <ul className="menu-main-list">
-                                            <li>
-                                            <span className="menu-logo">
-                                                EasyLang
-                                            </span>
-                                            </li>
-                                            <li className="menu-item">
-                                                <Link
-                                                    to="player/"
-                                                    className="menu-nav__link"
-                                                    onClick={() => {this.closeMenu(); this.hideStartBtn()}}
-                                                >
-                                                    {this.props.text.player}
-                                                </Link>
-                                            </li>
-                                            <li className="menu-item">
-                                                <Link
-                                                    to="extension/"
-                                                    className="menu-nav__link"
-                                                    onClick={() => {this.closeMenu(); this.showStartBtn()}}
-                                                >
-                                                    {this.props.text.extension}
-                                                </Link>
-                                            </li>
-                                            <li className="menu-item">{blogBtnRenderCondition ?
-                                              <Link
-                                                to="blog/"
+                                                {this.props.text.player}
+                                            </Link>
+                                        </li>
+                                        <li className="menu-item">
+                                            <Link
+                                                to="extension/"
                                                 className="menu-nav__link"
                                                 onClick={() => {this.closeMenu(); this.showStartBtn()}}
-                                              >
-                                              {this.props.text.ourBlog}
-                                              </Link> : null
-                                            }
-                                                
-                                            </li>
-                                            <li>{startBtnRenderCondition ?
-                                                <StartBtn
-                                                    link={"player/"}
-                                                    text={this.props.text.GetStartedButton}
-                                                    id={"nav-btn"}
-                                                /> : null
-                                              }
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div
-                                    className={menuBtnClass}
-                                    onClick={this.clickMenuButton}
-                                >
-                                    <span></span>
+                                            >
+                                                {this.props.text.extension}
+                                            </Link>
+                                        </li>
+                                        <li className="menu-item">
+                                          {this.state.blogBtn ?
+                                            <Link
+                                              to="blog/"
+                                              className="menu-nav__link"
+                                              onClick={() => {this.closeMenu(); this.showStartBtn()}}
+                                            >
+                                            {this.props.text.ourBlog}
+                                            </Link> : null
+                                          }
+                                        </li>
+                                        <li>
+                                          {this.state.startBtn ?
+                                            <StartBtn
+                                                link={"player/"}
+                                                text={this.props.text.GetStartedButton}
+                                                id={"nav-btn"}
+                                            /> : null
+                                          }
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <div
+                                className={menuBtnClass}
+                                onClick={this.clickMenuButton}
+                            >
+                                <span></span>
+                            </div>
                         </div>
-                    </nav>
+                    </div>
+                </nav>
 
-                }
-            </div>
+            }
+        </div>
 
-        );
+    );
 
     };
 };
