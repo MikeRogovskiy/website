@@ -30,7 +30,6 @@ const Footer = (props) => {
       <div className="getStarted-button">
         <a
           className="started-button top"
-          style={{ marginTop: "-20px" }}
           href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
           onClick={() => {
             rememberLangInLocalStorage();
@@ -43,7 +42,6 @@ const Footer = (props) => {
         >
           <span>{getLangText("GetStartedButton")}</span>
         </a>
-        {/* <StartBtn  link={"/player"} id={"extension-btn"} text={getLangText("GetStartedButton")} /> */}
       </div>
     </footer>
   );

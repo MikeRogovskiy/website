@@ -4,9 +4,10 @@
 #footer-nav-bar{
   @include centralFlexPosition;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 
-  a{
+  .footer-nav-bar_links a{
     margin: 0px 65px 0px 65px;
   };
 
@@ -52,13 +53,13 @@
 
 #landing-footer-nav-bar{
   @include centralFlexPosition;
-  margin-top: -5.5%;
+  margin-top: -8vw;
   position: absolute;
 };
 
 #extension-footer-nav-bar{
   @include centralFlexPosition;
-  margin-top: -2.5%;
+  margin-top: -7vw;
   position: absolute;
 
   button{
@@ -69,7 +70,7 @@
 
 #player-footer-nav-bar{
   @include centralFlexPosition;
-  margin-top: -2.5%;
+  margin-top: -7vw;
   position: absolute;
 
   button{
@@ -77,61 +78,3 @@
   };
 
 };
-
-@media(max-width: "1534px"){
-
-  #player-footer-nav-bar{
-    margin-top: -7%;
-  };
-
-};
-
-@media(max-width: "700px"){
-
-  #footer-nav-bar{
-
-    a{
-      margin: 0px 30px 0px 30px;
-    };
-
-  };
-
-};
-
-@media(max-width: "599px"){
-
-  #footer-nav-bar{
-
-    a{
-      margin: 0px 20px 0px 20px;
-    };
-
-  };
-
-  #landing-footer-nav-bar{
-    margin-top: -10.5%;
-  };
-
-  #extension-footer-nav-bar{
-    margin-top: -2.5%;
-  };
-
-  #player-footer-nav-bar{
-    margin-top: -7.5%;
-  };
-
-};
-
-@media screen and (max-width: 390px){
-  #footer-nav-bar{
-
-    a{
-      padding-bottom: 5px;
-    };
-  
-    button{
-      font-size: 11px;
-    };
-  
-  };
-}

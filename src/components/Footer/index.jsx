@@ -8,8 +8,7 @@ export default class Footer extends React.Component {
             <footer className="Footer">
                 <div className="copyright">
                     <p>
-                        Copyright © 2019 <Link to="/">EasyLang</Link>. All Rights
-                        Reserved.
+                        © 2020 <Link to="/">EASYLANG</Link> CO. All Rights Reserved.
                     </p>
                 </div>
             </footer>

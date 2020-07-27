@@ -30,6 +30,12 @@ body {
 
 };
 
+@media screen and(max-width: "1000px"){
+  .startedPlayer-button {
+    width: 50%;
+  }
+}
+
 @media(max-width: "599px") {
   .getStarted-logo {
     width: 60%;

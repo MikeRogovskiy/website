@@ -218,10 +218,6 @@
 
   };
 
-  .button-group-1 {
-    margin-left: 4%;
-  };
-
   .button-group-1 .button-install {
     background-color: #45B8FF;
     font-size: 2rem;
@@ -239,61 +235,7 @@
     background-color: #5396ef;
   };
 
-  .button-install {
-		padding: 20px 20px;
-    flex: 0 0 55%;
-    background-color: #56d3f1;
-    border-radius: 50px;
-    display: block;
-		transition: all 0.2s ease-in-out;
-		text-align: center;
-		white-space: nowrap;
-
-    &:hover {
-      transform: scale(1.1);
-    };
-
-    &.disabled {
-			background-color: #c4c4c4;
-			pointer-events: none;
-      cursor: default;
-
-      &:hover {
-        transform: scale(1);
-      };
-
-    }
-
-    background-color: #2c2c2c;
-	};
-	
-	.button-chrome{
-
-		&-wrapper{
-			position: relative;
-			width: 100%;
-			padding-left: 3.2rem;
-		};
-
-		&-icon{
-			position: absolute;
-			top: 30%;
-			transform: translateY(-50%);
-			left: 0;
-			height: 3rem;
-		};
-
-	};
-
   .button-android,
-
-  .button-chrome {
-    border-right: 4px solid white;
-    border-bottom: 4px solid white;
-    border-top: 4px solid white;
-    z-index: 2;
-	};
-	
   .button-guide,
   .button-iOS {
     position: relative;

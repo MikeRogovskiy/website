@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./footerNavBar.scss";
+import "./footerNavBarMedia.scss";
 import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
+import Footer from "../Footer";
 import { linksObject } from "./linksFolder";
 
 export default class FooterNavBar extends Component {
@@ -9,7 +11,7 @@ export default class FooterNavBar extends Component {
     super(props);
     this.state = {
       footerNavBarContent: (
-        <div>
+        <div id="footer-nav-bar_content">
           <Link to="/">
             <button
               onClick={() =>
@@ -45,6 +47,9 @@ export default class FooterNavBar extends Component {
               {this.getLangText("PrivacyPolicy")}
             </button>
           </Link>
+
+          <Footer />
+
         </div>
       ),
     };

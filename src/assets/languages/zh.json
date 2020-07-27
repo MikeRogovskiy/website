@@ -138,7 +138,8 @@
     "9-SlideExtensionHeader": "Just scan",
     "9-SlideExtensionBody": "For fast transition from PC to mobile, scan the QR code available under the “Open on mobile tab”.",
     "10-SlideExtensionHeader": "And be mobile! <br /> Don't waste your time!",
-    "10-SlideExtensionBody": "Now you can revise material anywhere, with games we created for you it will be way more fun!"
+    "10-SlideExtensionBody": "Now you can revise material anywhere, with games we created for you it will be way more fun!",
+    "GetStartedButton": "FREE START"
   },
 
   "ExtensionInstructionPage": {

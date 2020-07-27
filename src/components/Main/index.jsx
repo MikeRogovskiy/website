@@ -72,7 +72,7 @@ export default class App extends React.Component {
             <_AppB path="/landing" text={this.props.text.Landing} />
           </ScrollToTop>
         </Router>
-        <FooterNavBar text={this.props.text.FooterNavBar}></FooterNavBar>
+        <FooterNavBar text={this.props.text.FooterNavBar} />
       </div>
     );
   }

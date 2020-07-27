@@ -1,5 +1,6 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
+import LoadExtensionBtn from "../../components/LoadExtensionBtn";
 
 import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
 // import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
@@ -39,23 +40,12 @@ const Header = (props) => {
           <h1 className="getStarted-title">{getLangText("GetStartedText")}</h1>
         </div>
         <div className="getStarted-button">
-          <a
-            className="started-button top"
-            href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
-            onClick={() => {
-              rememberLangInLocalStorage();
-              window.gtag("event", "Upper Add To Chrome click", {
-                event_category: "Landing. Read & Learn",
-              });
-            }}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>
-              {getLangText("GetStartedButton")}
-            </span>
-          </a>
-          {/* <StartBtn link={"/player"} id={"extension-btn"} text={getLangText("GetStartedButton")} /> */}
+
+          <LoadExtensionBtn
+            analyticsParameter={"Upper Add To Chrome click"}
+            text={props.text.GetStartedButton}
+          />
+
         </div>
         <div className="getStarted-subtitle">
           {getLangText("GetStartedBottomText")}

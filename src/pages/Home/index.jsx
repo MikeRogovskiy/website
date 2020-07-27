@@ -10,7 +10,7 @@ import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
 import puzzle from "../../assets/images/home/puzzle.svg";
 import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
-import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
+import LoadExtensionBtn from "../../components/LoadExtensionBtn";
 
 import ChatBotSimple from "../../components/ChatBotSimple";
 
@@ -158,28 +158,10 @@ export default class Home extends React.Component {
                 <h2>{this.getLangText("headOurApp")}</h2>
                 <p>{this.getLangText("contentOurApp")}</p>
                 <div className="button-block">
-                  <div className="button-group button-group-1">
-                    <a
-                      className="button-install button-chrome"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
-                      onClick={() => {
-                        window.gtag("event", "Extension Store click", {
-                          event_category: "Landing. Main screen",
-                        });
-                      }}
-                    >
-                      <span className="button-chrome-wrapper">
-                        <img
-                          src={chromeStoreSvg}
-                          alt="chrome-store"
-                          className="icon button-chrome-icon"
-                        />
-                        {this.getLangText("GetStartedButton")}
-                      </span>
-                    </a>
-                  </div>
+                  <LoadExtensionBtn
+                    analyticsParameter={"Extension Store click"}
+                    text={this.props.text.GetStartedButton}
+                  />
                 </div>
               </div>
             </div>
