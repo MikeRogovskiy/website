@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./mobilePopUp.scss";
+import "./mobilePopUpMedia.scss";
 import brainNPhone from "../../assets/images/player/brainAndPhone.svg"
 
 export default function MobilePopUp(props){
