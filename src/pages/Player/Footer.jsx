@@ -9,16 +9,14 @@ const Footer = (props) => {
   };
 
   const macLink = "http://easylang.app/downloads/eLang_Player_-_Learn_English_mac_prod.dmg";
-  const windowsLink = "http://easylang.app/downloads/EasyLang.Player-Beta_win_prod.exe";
+  const windowsLink = "http://easylang.app/downloads/eLang_Player_-_Learn_English_win_prod.exe";
 
   let OSName = "Unknown OS";
 
   function findOSName() {
     if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
     if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
-    // if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
-    // if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
-  }
+  };
   findOSName();
 
   return (

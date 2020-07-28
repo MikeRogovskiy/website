@@ -5,21 +5,34 @@
     @include centralColumnFlexPositionHWHundred;
     z-index: 25;
     position: fixed;
+    background-color: rgba(229, 229, 229, 0.6);
+    transition: all 0.3s;
 
     .pop-up_conteiner{
-        width: 90vw;
-        height: 70vh;
+        width: 80%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &_content{
-            @include centralColumnFlexPositionHWHundred;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            height: 100%;
             background-color: $bgColor;
             box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             &_header{
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
                 width: 100%;
+
+                h2{
+                    color:#202128;
+                    font-size: 2rem;
+                }
+
                 &_close{
                    display: flex;
                    width: 100%;
@@ -31,24 +44,31 @@
                        margin: -3vw -3vw 0vw 0vw;
                        width: 8vw;
                        height: 8vw;
-                       border-radius: 25px;
-                    }
-                }
+                       border-radius: 100%;
+                       background: $bgColor;
+                       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+                       font-size: 2rem;
+                    };
+                };
             };
             &_main{
-                width: 80vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
 
-                h3:nth-child(0){
+                span:nth-child(2n){
                     color: #637CF2;
-                }
+                };
 
-                img{
-                    width: 40vw;
+                span:nth-child(2n+1){
+                    color: #C73D43;
                 };
 
                 &_inputs{
                     width: 100%;
-                    height: 100%;
+                    padding-bottom: 2vw;
 
                     #email-input{
                         border: 1px solid #DADCE5;
@@ -62,6 +82,7 @@
                         background: #DADCE5;
                         color: #8A8D99;
                         border-radius: 30px;
+                        transition: all 0.3s;
                     }
 
                     #email-input, #submit-input{
@@ -72,6 +93,7 @@
                         font-family: Montserrat;
                         font-size: 15px;
                         line-height: 21px;
+                        height: 60px;
                     };
                 }
             }
