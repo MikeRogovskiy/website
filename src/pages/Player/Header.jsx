@@ -85,6 +85,7 @@ const Header = (props) => {
                             href={macLink}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => {checkIfMobile()}}
                         >
                             <span>{getLangText("GetPlayerButtonMac")}</span>
                         </a>
