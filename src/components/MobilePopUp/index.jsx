@@ -27,7 +27,9 @@ export default function MobilePopUp(props){
                     <div className="pop-up_conteiner_content">
                         <div className="pop-up_conteiner_content_header">
                             <div className="pop-up_conteiner_content_header_close">
-                                <button onClick={()  => {hidePopUp(false)}}>X</button>
+                                <div className="pop-up_conteiner_content_header_close_block" onClick={()  => {hidePopUp(false)}}>
+                                    <button onClick={()  => {hidePopUp(false)}}>X</button>
+                                </div>
                             </div>
                             <h2>Мобильная версия плеера в разработке</h2>
                         </div>

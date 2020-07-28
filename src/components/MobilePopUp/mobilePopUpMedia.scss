@@ -1,0 +1,23 @@
+@media screen and (max-height: 820px){
+    #mobile-pop-up{
+        .pop-up_conteiner{
+            height: 80%;
+            &_content{
+                &_header{
+                    h2{
+                        color:#202128;
+                        font-size: 1rem;
+                    };
+                };
+
+                img{
+                    width: 70%;
+                };
+
+                h3{
+                    font-size: 1rem;
+                };
+            };
+        };
+    };
+};
