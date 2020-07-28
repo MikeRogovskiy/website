@@ -1,6 +1,6 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
-// import StartBtn from "../../components/StartBtn";
+import LoadExtensionBtn from "../../components/LoadExtensionBtn";
 
 import "./Extension.scss";
 
@@ -28,20 +28,10 @@ const Footer = (props) => {
   return (
     <footer className="getStarted-footer">
       <div className="getStarted-button">
-        <a
-          className="started-button top"
-          href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
-          onClick={() => {
-            rememberLangInLocalStorage();
-            window.gtag("event", "Lower Add To Chrome click", {
-              event_category: "Landing. Read & Learn",
-            });
-          }}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>{getLangText("GetStartedButton")}</span>
-        </a>
+          <LoadExtensionBtn
+            analyticsParameter={"Lower Add To Chrome click"}
+            text={props.text.GetStartedButton}
+          />
       </div>
     </footer>
   );
