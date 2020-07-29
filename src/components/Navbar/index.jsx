@@ -40,22 +40,29 @@ export default class Navbar extends React.Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
 
-    if(window.location.href.includes("player")){
+    if(window.location.href.includes("player") || window.location.href.includes("blog")){
       this.setState({
         startBtn: false
-      });
-    };
-
-    if(window.location.href.includes("blog")){
+      })} else {
       this.setState({
-        blogBtn: false
+        startBtn: true
       });
-    };
-    
+    }
+
   };
+
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
+
+    if(window.location.href.includes("player") || window.location.href.includes("blog")){
+      this.setState({
+        startBtn: false
+      })} else {
+      this.setState({
+        startBtn: true
+      });
+    }
   };
 
   handleScroll = (e) => {
