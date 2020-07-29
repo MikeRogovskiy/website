@@ -12,7 +12,7 @@ export default class Navbar extends React.Component {
       openMenu: false,
       fixedBar: false,
       startBtn: true,
-      blogBtn: true
+      blogBtn: false
     };
   }
   changeLocale = (e) => {
