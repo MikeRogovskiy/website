@@ -58,7 +58,6 @@ export default function Main(props) {
 
   return (
     <div>
-      {/* <DynamicalHead  /> */}
       <section className="relax" id="relax">
           <div className="relax-title">
             <p className="easy-way">{getLangText("Title")}</p>
@@ -204,6 +203,7 @@ export default function Main(props) {
           </button>
         </div>
       </section>
+      
     </div>
   );
 }

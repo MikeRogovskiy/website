@@ -5,7 +5,7 @@ import "./footerMedia.scss";
 import ReactHtmlParser from "react-html-parser";
 
 export default function Footer(props) {
-  const [page, setPage] = useState("landing");
+  const [page, setPage] = useState("landingB");
 
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);

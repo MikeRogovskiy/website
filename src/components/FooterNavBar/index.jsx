@@ -63,6 +63,10 @@ export default class FooterNavBar extends Component {
           <div className="footer-nav-bar_links" id="landing-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>
+          : this.props.page === "landingB" ?
+          <div className="footer-nav-bar_links" id="landing-b-footer-nav-bar">
+            {this.state.footerNavBarContent}
+          </div>
           : this.props.page === "blog" || "extension" ? <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>

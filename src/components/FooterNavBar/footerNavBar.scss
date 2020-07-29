@@ -67,6 +67,11 @@
   position: absolute;
 };
 
+#landing-b-footer-nav-bar{
+  @include centralFlexPosition;
+  position: absolute;
+};
+
 #extension-footer-nav-bar{
   @include centralFlexPosition;
   margin-top: -7vw;
