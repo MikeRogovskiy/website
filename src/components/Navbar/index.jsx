@@ -14,7 +14,8 @@ export default class Navbar extends React.Component {
       startBtn: true,
       blogBtn: false
     };
-  }
+  };
+
   changeLocale = (e) => {
     this.props.handleLanguage(e.target.value);
     localStorage.setItem("lang", e.target.value);
@@ -23,21 +24,24 @@ export default class Navbar extends React.Component {
       event_label: e.target.value,
     });
   };
+
   clickMenuButton = () => {
     this.setState((state) => {
       return { openMenu: !state.openMenu };
     });
   };
+
   closeMenu = () => {
     this.setState({
       openMenu: false,
     });
   };
+
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
-  }
+  };
 
-  componentDidMount() {
+  startBtnSubscripting = () => {
     window.addEventListener("scroll", this.handleScroll);
 
     if(window.location.href.includes("player") || window.location.href.includes("blog")){
@@ -47,22 +51,16 @@ export default class Navbar extends React.Component {
       this.setState({
         startBtn: true
       });
-    }
+    };
 
   };
 
+  componentDidMount() {
+    this.startBtnSubscripting();
+  };
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-
-    if(window.location.href.includes("player") || window.location.href.includes("blog")){
-      this.setState({
-        startBtn: false
-      })} else {
-      this.setState({
-        startBtn: true
-      });
-    }
+    this.startBtnSubscripting();
   };
 
   handleScroll = (e) => {

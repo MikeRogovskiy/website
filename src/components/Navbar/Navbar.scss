@@ -490,3 +490,10 @@ a.menu-nav__link:hover{
         };
     };
 };
+
+@media screen and (max-width: 400px){
+
+    .menu-wrapper{
+        position: static;
+    }
+}

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Slider from "infinite-react-carousel";
 import "./Slider.scss";
 import "./sliderMedia.scss";
-import max from "../../assets/max.svg";
-import sasha from "../../assets/sasha.JPEG";
-import vlad from "../../assets/vlad.JPEG";
+import firstFace from "../../assets/firstFace.jpeg";
+import secondFace from "../../assets/secondFace.jpeg";
+import thirdFace from "../../assets/thirdFace.jpeg";
 import stars from "../../assets/stars.svg";
 import nextArrow from "../../assets/nextArrow.svg";
 import prevArrow from "../../assets/prevArrow.svg";
@@ -64,7 +64,7 @@ export default class CustomSlider extends Component {
               <div className="slider-item">
                 <div className="slider-item-content">
                   <div className="slider-item-content-avatar">
-                    <img src={max} alt="Max" />
+                    <img src={firstFace} alt="firstFace" className="funny-avatar"/>
                     <img src={stars} alt="stars" />
                   </div>
                   
@@ -93,7 +93,7 @@ export default class CustomSlider extends Component {
               <div className="slider-item">
                 <div className="slider-item-content">
                 <div className="slider-item-content-avatar">
-                  <img src={sasha} alt="Sasha" className="funny-avatar"/>
+                  <img src={thirdFace} alt="thirdFace" className="funny-avatar"/>
                   <img src={stars} alt="stars" />
                 </div>
                   <div className="review">
@@ -120,7 +120,7 @@ export default class CustomSlider extends Component {
               <div className="slider-item">
                 <div className="slider-item-content">
                 <div className="slider-item-content-avatar">
-                  <img src={vlad} alt="Vlad" className="funny-avatar"/>
+                  <img src={secondFace} alt="secondFace" className="funny-avatar"/>
                   <img src={stars} alt="stars" />
                 </div>
 
