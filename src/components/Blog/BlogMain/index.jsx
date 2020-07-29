@@ -3,12 +3,14 @@ import "./blogMain.scss";
 import "./blogMainMedia.scss";
 import ReactHtmlParser from "react-html-parser";
 import { useNavigate } from "@reach/router";
+// import FooterNavBar from "../../FooterNavBar"
 
 import articleOne from "../../../assets/images/blog/articleOne.jpeg";
 import articleTwo from "../../../assets/images/blog/articleTwo.jpg";
 import articleThree from "../../../assets/images/blog/articleThree.jpg";
 
 export default function BlogMain(props){
+    // const [page, setPage] = useState("blog")
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
@@ -44,6 +46,9 @@ export default function BlogMain(props){
                     </div>
                 </div>
             </div>
+            {/* <footer>
+                <FooterNavBar text={props.text} page={page}/>
+            </footer> */}
 
         </div>
     )

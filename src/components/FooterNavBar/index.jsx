@@ -4,7 +4,6 @@ import "./footerNavBarMedia.scss";
 import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 import Footer from "../Footer";
-import { linksObject } from "./linksFolder";
 
 export default class FooterNavBar extends Component {
   constructor(props) {
@@ -47,9 +46,7 @@ export default class FooterNavBar extends Component {
               {this.getLangText("PrivacyPolicy")}
             </button>
           </Link>
-
           <Footer />
-
         </div>
       ),
     };
@@ -57,35 +54,23 @@ export default class FooterNavBar extends Component {
 
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
-  }
+  };
 
   render() {
     return (
       <div id="footer-nav-bar">
-        {linksObject.generalRenderingCondition.find(
-          (e) => e === window.location.pathname
-        ) && (
+        {this.props.page === "landing" ?
           <div className="footer-nav-bar_links" id="landing-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>
-        )}
-
-        {linksObject.extensionRenderingCondition.find(
-          (e) => e === window.location.pathname
-        ) && (
-          <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
+          : this.props.page === "blog" || "extension" ? <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>
-        )}
-
-        {linksObject.playerRenderingCondition.find(
-          (e) => e === window.location.pathname
-        ) && (
-          <div className="footer-nav-bar_links" id="player-footer-nav-bar">
-            {this.state.footerNavBarContent}
-          </div>
-        )}
+          : this.props.page === "player" ? <div className="footer-nav-bar_links" id="player-footer-nav-bar">
+          {this.state.footerNavBarContent}
+        </div> : null
+        }
       </div>
     );
-  }
-}
+  };
+};

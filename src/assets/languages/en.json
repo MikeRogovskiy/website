@@ -39,7 +39,11 @@
     "movie": "movies",
     "movieParagraph": "Watch movies in original",
     "getStarted": "Add to Chrome",
-    "GetStartedButton": "FREE START"
+    "GetStartedButton": "FREE START",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "BlogPage": {
@@ -74,7 +78,11 @@
     "articleFinal": "eLang team",
     "articleMonth": "July",
     "articleBtnMore": "Read more",
-    "articleBtnBack": "Back"
+    "articleBtnBack": "Back",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "FooterNavBar": {
@@ -88,13 +96,21 @@
     "products": "Products",
     "extension": "Read & Learn",
     "player": "Watch & Learn",
-    "GetStartedButton": "FREE START"
+    "GetStartedButton": "FREE START",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "NotFoundPage": {
     "HomePage": "Home Page",
     "NotFoundTitle": "Page is not found",
-    "NotFoundSubtitle": "Sorry, but the page you are looking for is not found. Please, make sure you have typed the correct URL."
+    "NotFoundSubtitle": "Sorry, but the page you are looking for is not found. Please, make sure you have typed the correct URL.",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "ProductsPage": {
@@ -110,7 +126,11 @@
     "ContextTutorDescription": "— easy mechanics of Tutor <br>— lessons are based on your reading and viewing history <br>— we help your contextual memory works <br>— suitable for learning terms",
     "BottomInfoText": "Still have questions? <br><a href='mailto:support@easylang.by' style='color:#1E4470'><u>Сontact</u></a> us - we will surely help you!",
     "Add": "Add",
-    "GetStarted": "Start"
+    "GetStarted": "Start",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "ExtensionPage": {
@@ -139,7 +159,11 @@
     "9-SlideExtensionBody": "For the fast transition from PC to mobile, scan the QR code available under the “Open on mobile tab”.",
     "10-SlideExtensionHeader": "And be mobile! <br /> Don't waste your time!",
     "10-SlideExtensionBody": "Now you can revise material anywhere, with EasyLang games is way more fun!",
-    "GetStartedButton": "FREE START"
+    "GetStartedButton": "FREE START",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "ExtensionInstructionPage": {
@@ -169,7 +193,11 @@
     "1-StepLeftHeading-b": "TRANSLATE THE SENTENSE",
 
     "3-StepLeftHeading-b": "<span>Hello</span> dear friend!",
-    "1-StepLeftHeading-d": "go to tutor"
+    "1-StepLeftHeading-d": "go to tutor",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "PlayerAnimation": {
@@ -261,7 +289,11 @@
     "9-SlidePlayerBody": "In order to play scan the QR code.",
     "10-SlidePlayerHeader": "Nothing to install!",
     "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!",
-    "GetStartedBottomText": "<ul><li>Translate word and phrases within sentences</li><li>Revise words in context (that you have read it in)</li><li>Revise via games (available on mobile)</li><li>Expand your vocabulary</li></ul>"
+    "GetStartedBottomText": "<ul><li>Translate word and phrases within sentences</li><li>Revise words in context (that you have read it in)</li><li>Revise via games (available on mobile)</li><li>Expand your vocabulary</li></ul>",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "PlansPage": {
@@ -291,7 +323,11 @@
     "PopUpWindow-main-title": "-<span>Share</span> our page on</br>social networks <a href=https://easylang.app/>EasyLang</a>",
     "PopUpWindow-main-text": "-Activate the coupon in your </br> <a href=\"https://easy4learn.com/account?promo=easytutor30\" target=\"_blank\">account</a>",
     "PopUpWindow-footer-text": "Thanks for<br> using the product!",
-    "PopUpWindow-footer-input": "Got it!"
+    "PopUpWindow-footer-input": "Got it!",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
   "Landing": {
     "Title": "Easy way <br/> To learn English!",
@@ -325,6 +361,7 @@
     "TutorDescrip1": "- easily revise words and phrases",
     "TutorDescrip2": "- have fun while learning",
     "Start": "Start",
+    
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us"

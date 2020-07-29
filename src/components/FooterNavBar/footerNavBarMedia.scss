@@ -1,120 +1,91 @@
+@media screen and (max-width: 1534px){
 
-@media screen and (max-width: "1580px"){
-
-    #landing-footer-nav-bar{
-      margin-top: -11vw;
-    };
-
-    #extension-footer-nav-bar, #player-footer-nav-bar{
-      margin-top: -10vw;
-    }
-
+  #player-footer-nav-bar{
+    margin-top: -7%;
   };
 
-  @media screen and (max-width: "1000px"){
+};
 
-    #landing-footer-nav-bar{
-      margin-top: -15vw;
-    };
+@media screen and (max-width: 870px){
 
-    #extension-footer-nav-bar, #player-footer-nav-bar{
-      margin-top: -14vw;
-    }
+  #footer-nav-bar{
 
-  };
-
-  @media screen and (max-width: "640px"){
-
-    #footer-nav-bar{
-
-      #landing-footer-nav-bar{
-        margin-top: -19vw;
-      };
-
-      #extension-footer-nav-bar, #player-footer-nav-bar{
-        margin-top: -18vw;
-      }
-
-      button{
-        font-size: 13px;
-      };
-
+    .footer-nav-bar_links a{
+      margin: 0px 35px 0px 35px;
     };
 
   };
 
-  @media screen and (max-width: "400px"){
+};
 
-    #footer-nav-bar{
+@media screen and (max-width: 674px){
 
-      #landing-footer-nav-bar{
-        margin-top: -22vw;
-      };
+  #footer-nav-bar{
 
-      #extension-footer-nav-bar, #player-footer-nav-bar{
-        margin-top: -21vw;
-      }
-
-    };
-
-  };
-
-
-
-
-  @media screen and (max-width: "1534px"){
-
-    #player-footer-nav-bar{
-      margin-top: -7%;
-    };
-
-  };
-
-  @media(max-width: "700px"){
-
-    #footer-nav-bar{
-
-      .footer-nav-bar_links a{
-        margin: 0px 30px 0px 30px;
-      };
-
-    };
-
-  };
-
-  @media(max-width: "599px"){
-
-    #footer-nav-bar{
-
-      .footer-nav-bar_links a{
-        margin: 0px 20px 0px 20px;
-      };
-
+    .footer-nav-bar_links a{
+      margin: 0px 15px 0px 15px;
     };
 
     #landing-footer-nav-bar{
-      margin-top: -10.5%;
+      margin-top: -19vw;
     };
 
-    #extension-footer-nav-bar{
-      margin-top: -2.5%;
-    };
 
-    #player-footer-nav-bar{
-      margin-top: -7.5%;
+    button{
+      font-size: 13px;
     };
 
   };
 
-  @media screen and (max-width: 390px){
-    #footer-nav-bar{
-        .footer-nav-bar_links a{
-            padding-bottom: 5px;
-        };
+};
 
-        button{
-            font-size: 11px;
-        };
+@media(max-width: 599px){
 
+  #footer-nav-bar{
+
+    .footer-nav-bar_links a{
+      margin: 0px 10px 0px 10px;
     };
-  }
+
+  };
+
+  #landing-footer-nav-bar{
+    margin-top: -1.5%;
+  };
+
+  #extension-footer-nav-bar{
+    margin-top: -2.5%;
+  };
+
+  #player-footer-nav-bar{
+    margin-top: -7.5%;
+  };
+
+};
+
+@media screen and (max-width: 440px){
+
+  #footer-nav-bar{
+
+    .footer-nav-bar_links a{
+      margin: 0px 1px 0px 1px;
+    };
+
+  };
+
+};
+
+@media screen and (max-width: 390px){
+  #footer-nav-bar{
+
+    .footer-nav-bar_links a{
+        padding-bottom: 5px;
+    };
+
+    button{
+        font-size: 9px;
+    };
+
+  };
+
+};

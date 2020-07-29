@@ -13,12 +13,14 @@ import phone from "../../assets/images/home/phone.svg";
 import LoadExtensionBtn from "../../components/LoadExtensionBtn";
 
 import ChatBotSimple from "../../components/ChatBotSimple";
+import FooterNavBar from "../../components/FooterNavBar";
 
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       showMobileWow: false,
+      page: "landing"
     };
     this.sections = {
       toGetStarted: {
@@ -72,6 +74,7 @@ export default class Home extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    localStorage.setItem("page", "mainLanding")
   }
 
   componentWillUnmount() {
@@ -215,7 +218,9 @@ export default class Home extends React.Component {
           </div>
         </div>
 
-        <footer className="get-started-footer"></footer>
+        <footer className="get-started-footer">
+          <FooterNavBar text={this.props.text} page={this.state.page}/>
+        </footer>
       </div>
     );
   }

@@ -4,7 +4,6 @@ import Navbar from "../Navbar";
 import Blog from "../Blog";
 import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
-import FooterNavBar from "../FooterNavBar";
 import {
   Extension,
   ExtensionInstruction,
@@ -21,6 +20,7 @@ import {
   _AppB,
   ArticlesPage
 } from "../../pages";
+
 
 export default class App extends React.Component {
   urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*privacy.*/g];
@@ -69,10 +69,9 @@ export default class App extends React.Component {
             <PlayerInstruction          path="/instruction-youtube-desctop/" />
             <Plans                      path="/plans/" text={this.props.text.PlansPage} />
             <NotFound                   path="*" text={this.props.text.NotFoundPage} />
-            <_AppB path="/landing" text={this.props.text.Landing} />
+            <_AppB                      path="/landing" text={this.props.text.Landing} />
           </ScrollToTop>
         </Router>
-        <FooterNavBar text={this.props.text.FooterNavBar} />
       </div>
     );
   }

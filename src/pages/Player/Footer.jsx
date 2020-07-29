@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
+
 
 import "./Player.scss";
 
 const Footer = (props) => {
+
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
@@ -16,8 +18,6 @@ const Footer = (props) => {
   function findOSName() {
     if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
     if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
-    // if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
-    // if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
   }
   findOSName();
 

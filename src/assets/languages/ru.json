@@ -39,7 +39,11 @@
     "movie": "Фильмы",
     "movieParagraph": "Смотри фильмы в оригинале",
     "getStarted": "Скачать Easylang",
-    "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО"
+    "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "BlogPage": {
@@ -74,7 +78,11 @@
     "articleFinal": "Команда eLang",
     "articleMonth": "Июль",
     "articleBtnMore": "Подробнее",
-    "articleBtnBack": "Назад"
+    "articleBtnBack": "Назад",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "FooterNavBar": {
@@ -88,13 +96,21 @@
     "products": "Продукты",
     "extension": "Читай и Учись",
     "player": "Смотри и Учись",
-    "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО"
+    "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "NotFoundPage": {
     "HomePage": "Главная страница",
     "NotFoundTitle": "Страница не найдена",
-    "NotFoundSubtitle": "К сожалению, мы не смогли найти данную страницу. Пожалуйста, убедитесь что Вы ввели правильный URL."
+    "NotFoundSubtitle": "К сожалению, мы не смогли найти данную страницу. Пожалуйста, убедитесь что Вы ввели правильный URL.",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "ProductsPage": {
@@ -110,7 +126,11 @@
     "ContextTutorDescription": "- простая механика тренажера<br>- уроки основаны на вашей истории чтения и просмотра<br>- мы помогаем вашей контекстной памяти<br>- подходит для изучения терминов",
     "BottomInfoText": "Остались вопросы? <br><a href='mailto:support@easylang.by' style='color:#1E4470'><u>Свяжитесь</u></a> с нами - мы обязательно поможем!",
     "Add": "Добавить",
-    "GetStarted": "Начать работу"
+    "GetStarted": "Начать работу",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "ExtensionPage": {
@@ -138,7 +158,11 @@
     "9-SlideExtensionBody": "Найти свой Tutor легко, просто отсканируй QR во вкладке “Open Tutor on mobile”.",
     "10-SlideExtensionHeader": "И будь мобильным! <br /> Не теряй время!",
     "10-SlideExtensionBody": "Теперь повторять материал можно везде, а с нашими играми - это намного интереснее!",
-    "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО"
+    "GetStartedButton": "НАЧАТЬ БЕСПЛАТНО",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "ExtensionInstructionPage": {
@@ -169,7 +193,11 @@
     "2-StepLeftHeading-b": "переведи все предложение",
     "3-StepLeftHeading-b": "It’s such a <span>beautiful</span> life!",
     "1-StepLeftHeading-d": "Повтори их с помощью игр,",
-    "2-StepLeftHeading-d": "на компьютере или телефоне"
+    "2-StepLeftHeading-d": "на компьютере или телефоне",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "PlayerPage": {
@@ -203,7 +231,11 @@
     "9-SlidePlayerBody": "Отсканируйте QR-код, чтобы открыть свой уникальный словарь и тренируй слова и фразы в игровом тренажёре.",
     "10-SlidePlayerHeader": "Тренируй и ничего не устанавливай!",
     "10-SlidePlayerBody": "Играй и повторяй слова и фразы в твоем браузере. Теперь повторять материал можно в любом удобном месте.",
-    "GetStartedBottomText": "<ul><li>Переводи слова прямо в тексте или видео</li><li>Повторяй слова в контексте (там, где слово было использовано)</li><li>Играй и повторяй слова (есть мобильная версия)</li><li>Расширяй свой словарный запас</li></ul> "
+    "GetStartedBottomText": "<ul><li>Переводи слова прямо в тексте или видео</li><li>Повторяй слова в контексте (там, где слово было использовано)</li><li>Играй и повторяй слова (есть мобильная версия)</li><li>Расширяй свой словарный запас</li></ul> ",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "PlayerAnimation": {
@@ -291,7 +323,11 @@
     "PopUpWindow-main-title": "-<span>Поделитесь</span> в соцсетях нашей</br>страничкой <a href=https://easylang.app/>EasyLang</a>",
     "PopUpWindow-main-text": "-Активируйте купон в своем</br> <a href=\"https://easy4learn.com/account?promo=easytutor30\" target=\"_blank\">аккаунте</a>",
     "PopUpWindow-footer-text": "Спасибо за</br>использование продукта!",
-    "PopUpWindow-footer-input": "Понял!"
+    "PopUpWindow-footer-input": "Понял!",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
 
   "PlansPage_b": {
@@ -315,7 +351,11 @@
 
     "Free": "Бесплатно",
     "Month": "/в месяц",
-    "Choose": "Выбрать"
+    "Choose": "Выбрать",
+
+    "PrivacyPolicy": "Политика конфеденциальности",
+    "AboutUs": "О нас",
+    "ContactUs": "Связаться с нами"
   },
   "Landing": {
     "Title": "Учи английский легко! ",
@@ -349,6 +389,7 @@
     "TutorDescrip1": "- помогает вспомнить пройденное",
     "TutorDescrip2": "- помогает выучить новое",
     "Start": "Начать",
+    
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
     "ContactUs": "Связаться с нами"

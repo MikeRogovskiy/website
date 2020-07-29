@@ -40,7 +40,11 @@
     "movieParagraph": "Mira las películas en la lengua original",
 
     "getStarted": "Descargar Easylang",
-    "GetStartedButton": "COMIENCE GRATIS"
+    "GetStartedButton": "COMIENCE GRATIS",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "BlogPage": {
@@ -75,7 +79,11 @@
     "articleFinal": "eLang team",
     "articleMonth": "July",
     "articleBtnMore": "Read more",
-    "articleBtnBack": "Back"
+    "articleBtnBack": "Back",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "FooterNavBar": {
@@ -89,13 +97,21 @@
     "products": "Productos",
     "extension": "Lee y aprende",
     "player": "Mira y aprende",
-    "GetStartedButton": "COMIENCE GRATIS"
+    "GetStartedButton": "COMIENCE GRATIS",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "NotFoundPage": {
     "HomePage": "Página de inicio",
     "NotFoundTitle": "Página no encontrada",
-    "NotFoundSubtitle": "Lamentablemente, no pudimos encontrar esta página. Asegúrese de ingresar la URL correcta."
+    "NotFoundSubtitle": "Lamentablemente, no pudimos encontrar esta página. Asegúrese de ingresar la URL correcta.",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "ProductsPage": {
@@ -111,7 +127,11 @@
     "ContextTutorDescription": "Simulador simple de mecánica <br> - lecciones basadas en su historial de lectura y visualización <br> - ayudamos a su memoria contextual <br> - adecuado para aprender términos",
     "BottomInfoText": "¿Aún tienes preguntas? <br> <a href = 'mailto: support@easylang.by' style = 'color: # 1E4470 '> <u> Póngase en contacto </u> </a> con nosotros, ¡lo ayudaremos!",
     "Add": "Agregar",
-    "GetStarted": "Empezar"
+    "GetStarted": "Empezar",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "ExtensionPage": {
@@ -140,7 +160,11 @@
     "9-SlideExtensionBody": "For fast transition from PC to mobile, scan the QR code available under the “Open on mobile tab”.",
     "10-SlideExtensionHeader": "And be mobile! <br /> Don't waste your time!",
     "10-SlideExtensionBody": "Now you can revise material anywhere, with games we created for you it will be way more fun!",
-    "GetStartedButton": "COMIENCE GRATIS"
+    "GetStartedButton": "COMIENCE GRATIS",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "ExtensionInstructionPage": {
@@ -171,7 +195,11 @@
     "2-StepLeftHeading-b": "traducir toda la oración",
     "3-StepLeftHeading-b": "It’s such a <span>beautiful</span> life!",
     "1-StepLeftHeading-d": "Repítelos con juegos,",
-    "2-StepLeftHeading-d": "en computadora o teléfono"
+    "2-StepLeftHeading-d": "en computadora o teléfono",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "PlayerAnimation": {
@@ -263,7 +291,11 @@
     "9-SlidePlayerBody": "Para abrir juegos, simplemente escanea el código QR.",
     "10-SlidePlayerHeader": "¡No es necesario instalar nada!",
     "10-SlidePlayerBody": "Todo está en tu navegador habitual. Ahora puede repetir el material en cualquier lugar conveniente para usted. Y para que no sea aburrido, creamos varios juegos para el proceso de repetir palabras.",
-    "GetStartedBottomText": "<ul><li>Translate word and phrases within sentences</li><li>Revise words in context (that you have read it in)</li><li>Revise via games (available on mobile)</li><li>Expand your vocabulary</li></ul>"
+    "GetStartedBottomText": "<ul><li>Translate word and phrases within sentences</li><li>Revise words in context (that you have read it in)</li><li>Revise via games (available on mobile)</li><li>Expand your vocabulary</li></ul>",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "PlansPage": {
@@ -293,7 +325,11 @@
     "PopUpWindow-main-title": "-<span>Share</span> our page on</br>social networks <a href=https://easylang.app/>EasyLang</a>",
     "PopUpWindow-main-text": "-Activate the coupon in your </br> account",
     "PopUpWindow-footer-text": "Thanks for<br> using the product!",
-    "PopUpWindow-footer-input": "Got it!"
+    "PopUpWindow-footer-input": "Got it!",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "PlansPage_b": {
@@ -317,8 +353,13 @@
 
     "Free": "Бесплатно",
     "Month": "/в месяц",
-    "Choose": "Выбрать"
+    "Choose": "Выбрать",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
+
   "Landing": {
     "Title": "Easy way <br/> To learn English!",
     "SubTitle": "Try EasyLang and enjoy learning",
@@ -351,6 +392,7 @@
     "TutorDescrip1": "- easily revise words and phrases",
     "TutorDescrip2": "- have fun while learning",
     "Start": "Start",
+    
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us"

@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import BlogHeader from "../../components/Blog/BlogHeader";
+import FooterNavBar from "../../components/FooterNavBar"
 import "./articles.scss";
 import { useNavigate } from "@reach/router";
 
 import articleOne from "../../assets/images/blog/articleOne.jpeg";
 import articleTwo from "../../assets/images/blog/articleTwo.jpg";
-// import articleTwoB from "../../assets/images/blog/articleTwoB.png";
-import articleThree from "../../assets/images/blog/articleThree.jpg"
+import articleThree from "../../assets/images/blog/articleThree.jpg";
 
 export default function ArticlesPage(props){
+    const [page, setPage] = useState("blog");
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
@@ -111,6 +112,10 @@ export default function ArticlesPage(props){
                 <ArticlesList />
                 <button onClick={() => navigateTo("blog")}>{getLangText("articleBtnBack")}</button>
             </div>
+            <footer>
+                <FooterNavBar text={props.text} page={page}/>
+            </footer>
+
         </div>
     )
 }

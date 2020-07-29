@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import LoadExtensionBtn from "../../components/LoadExtensionBtn";
+import FooterNavBar from "../../components/FooterNavBar";
 
 import "./Extension.scss";
 
@@ -8,6 +9,7 @@ const Footer = (props) => {
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
+  const [page, setPage] = useState("extension")
 
   function rememberLangInLocalStorage() {
     let currentUrl = window.location.href;
@@ -32,7 +34,9 @@ const Footer = (props) => {
             analyticsParameter={"Lower Add To Chrome click"}
             text={props.text.GetStartedButton}
           />
+
       </div>
+      <FooterNavBar text={props.text} page={page}/>
     </footer>
   );
 };

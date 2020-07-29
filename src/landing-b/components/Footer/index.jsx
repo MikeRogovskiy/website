@@ -1,24 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import FooterNavBar from "../../../components/FooterNavBar"
 import "./Footer.scss";
 import "./footerMedia.scss";
 import ReactHtmlParser from "react-html-parser";
 
 export default function Footer(props) {
+  const [page, setPage] = useState("landing");
+
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
+
   return (
     <div>
       <footer className="footer">
-        <a href="#" className="link">
-          {getLangText("ContactUs")}
-        </a>
-        <a href="#" className="link">
-          {getLangText("AboutUs")}
-        </a>
-        <a href="/privacy" className="link">
-          {getLangText("PrivacyPolicy")}
-        </a>
+        <FooterNavBar text={props.text} page={page}/>
       </footer>
     </div>
   );

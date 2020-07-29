@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
-
+import FooterNavBar from "../../components/FooterNavBar";
 import "./Player.scss";
 
 import { playerImages } from "../../assets/images/products/scroll-pages/playerImages";
@@ -18,6 +18,7 @@ export default class Player extends Component {
   state = {
     bgImgId: 0,
     imgId: 0,
+    page: "player"
   };
 
   imgTopOffset = 150;
@@ -187,6 +188,9 @@ export default class Player extends Component {
         </div>
 
         <Footer text={this.props.text} />
+        <footer>
+          <FooterNavBar text={this.props.text} page={this.state.page}/>
+        </footer>
       </div>
     );
 

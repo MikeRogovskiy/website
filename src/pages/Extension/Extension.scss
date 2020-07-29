@@ -51,6 +51,8 @@ body {
 
 .getStarted-button {
   @include centralJustifyFlex;
+  // flex-direction: column;
+  // height: 100%;
 
   width: 100%;
   margin-top: 2%;
@@ -99,5 +101,6 @@ body {
   background: url("../../assets/images/bottom_flowers.png") bottom/cover no-repeat;
   height: 27vw;
   padding-top: 18%;
+  overflow: hidden;
 };
 
