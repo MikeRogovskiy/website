@@ -12,7 +12,7 @@ export default class Navbar extends React.Component {
     this.state = {
       openMenu: false,
       fixedBar: false,
-      showMainMenu: false,
+      showMainMenu: true,
       startBtn: false,
       blogBtn: false
     };
