@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 import "./Navbar.scss";
+import "./NavbarMedia.scss";
 import classNames from "classnames";
 import ReactHtmlParser from "react-html-parser";
 import StartBtn from "../StartBtn";
@@ -11,7 +12,8 @@ export default class Navbar extends React.Component {
     this.state = {
       openMenu: false,
       fixedBar: false,
-      startBtn: true,
+      showSideMenu: false,
+      startBtn: false,
       blogBtn: false
     };
   };
@@ -27,7 +29,7 @@ export default class Navbar extends React.Component {
 
   clickMenuButton = () => {
     this.setState((state) => {
-      return { openMenu: !state.openMenu };
+      return { openMenu: !state.openMenu, showSideMenu: !state.showSideMenu };
     });
   };
 
@@ -43,7 +45,6 @@ export default class Navbar extends React.Component {
 
   startBtnSubscripting = () => {
     window.addEventListener("scroll", this.handleScroll);
-
     if(window.location.href.includes("player") || window.location.href.includes("blog")){
       this.setState({
         startBtn: false
@@ -52,15 +53,6 @@ export default class Navbar extends React.Component {
         startBtn: true
       });
     };
-
-  };
-
-  componentDidMount() {
-    this.startBtnSubscripting();
-  };
-
-  componentWillUnmount() {
-    this.startBtnSubscripting();
   };
 
   handleScroll = (e) => {
@@ -72,7 +64,7 @@ export default class Navbar extends React.Component {
       this.setState({
         fixedBar: false,
       });
-    };
+    }
   };
 
   handleStartBtn = () => {
@@ -102,6 +94,14 @@ export default class Navbar extends React.Component {
         blogBtn: false
       });
     };
+  };
+
+  componentDidMount() {
+    this.startBtnSubscripting();
+  };
+
+  componentWillUnmount() {
+    this.startBtnSubscripting();
   };
 
   render() {
@@ -145,29 +145,37 @@ export default class Navbar extends React.Component {
                             </Link>
                         </div>
                         {
-                            this.props.noUseLangSelect || (
-                                <div className="lang">
-                                    <form>
-                                        <select
-                                            name="changeLang"
-                                            id="getLang"
-                                            value={this.props.curLang}
-                                            onChange={this.changeLocale}
-                                        >
-                                            {langList}
-                                        </select>
-                                    </form>
-                                </div>
-                            )
+                          this.props.noUseLangSelect || (
+                              <div className="lang">
+                                  <form>
+                                      <select
+                                          name="changeLang"
+                                          id="getLang"
+                                          value={this.props.curLang}
+                                          onChange={this.changeLocale}
+                                      >
+                                          {langList}
+                                      </select>
+                                  </form>
+                              </div>
+                          )
                         }
                         <div className="menu-wrapper">
                             <div className="menu-block">
                                 <div className={menuMainClass}>
-                                    <div
-                                        className="overlay"
-                                        onClick={this.closeMenu}
-                                    ></div>
-                                    <ul className="menu-main-list">
+                                  { this.state.showSideMenu
+                                  &&
+
+                                  <div
+                                    className="overlay"
+                                    onClick={() => {this.closeMenu()}}
+                                  ></div>
+
+                                  }
+
+                                  {/* {this.state.showSideMenu
+                                  && */}
+                                  <ul className="menu-main-list">
                                         <li>
                                         <span className="menu-logo">
                                             EasyLang
@@ -177,7 +185,7 @@ export default class Navbar extends React.Component {
                                             <Link
                                                 to="player/"
                                                 className="menu-nav__link"
-                                                onClick={() => {this.closeMenu(); this.hideStartBtn()}}
+                                                onClick={() => {this.closeMenu();  this.handleStartBtn()}}
                                             >
                                                 {this.props.text.player}
                                             </Link>
@@ -212,6 +220,8 @@ export default class Navbar extends React.Component {
                                           }
                                         </li>
                                     </ul>
+                                  {/* } */}
+
                                 </div>
                             </div>
                             <div

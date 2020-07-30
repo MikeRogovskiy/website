@@ -65,7 +65,7 @@ export default class CustomSlider extends Component {
                 <div className="slider-item-content">
                   <div className="slider-item-content-avatar">
                     <img src={firstFace} alt="firstFace" className="funny-avatar"/>
-                    <img src={stars} alt="stars" />
+                    <img src={stars} alt="stars" className="stars" />
                   </div>
                   
                   <div className="review">
@@ -94,7 +94,7 @@ export default class CustomSlider extends Component {
                 <div className="slider-item-content">
                 <div className="slider-item-content-avatar">
                   <img src={thirdFace} alt="thirdFace" className="funny-avatar"/>
-                  <img src={stars} alt="stars" />
+                  <img src={stars} alt="stars" className="stars" />
                 </div>
                   <div className="review">
                     
@@ -121,7 +121,7 @@ export default class CustomSlider extends Component {
                 <div className="slider-item-content">
                 <div className="slider-item-content-avatar">
                   <img src={secondFace} alt="secondFace" className="funny-avatar"/>
-                  <img src={stars} alt="stars" />
+                  <img src={stars} alt="stars" className="stars" />
                 </div>
 
                   <div className="review">
