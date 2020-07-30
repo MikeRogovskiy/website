@@ -1,0 +1,75 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+@media(max-width: "1534px"){
+
+    .getStartedPlayer-button:nth-child(1){
+        margin-top: -100px;
+    };
+
+};
+
+@media screen and(max-width: "1000px"){
+    .startedPlayer-button {
+        width: 50%;
+    }
+};
+
+@media(max-width: "599px") {
+    .getStarted-logo {
+        width: 60%;
+    };
+
+    .startedPlayer-button {
+        width: 90% !important;
+        font-size: 0.9rem !important;
+        margin: 1% 2% !important;
+
+        &.top,&.bottom{
+        @include centralAlignFlex;
+        padding: 3% 2% !important;
+        };
+    };
+
+    .getStartedPlayer-button:nth-child(1){
+        margin-top: -100px;
+    };
+
+};
+
+@media (max-width: 540px) {
+    .Description-Scroll {
+
+        .player-block h2 {
+        font-size: 1.1rem !important;
+        };
+
+        .player-block p {
+        font-size: 0.9rem !important;
+        };
+
+        .player-block {
+        margin-left: -30px;
+        };
+
+        .player-content {
+        margin: 3px;
+        height: 450px;
+        width: 100%;
+        };
+        
+        .scrolled-item img {
+        margin-right: 7px !important;
+        };
+
+    };
+
+};
+
+@media screen and (max-width: 500px){
+
+    .getStartedPlayer-button:nth-child(1){
+        margin-top: -50px;
+    };
+
+}

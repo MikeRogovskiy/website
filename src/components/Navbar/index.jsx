@@ -12,7 +12,7 @@ export default class Navbar extends React.Component {
     this.state = {
       openMenu: false,
       fixedBar: false,
-      showSideMenu: false,
+      showMainMenu: false,
       startBtn: false,
       blogBtn: false
     };
@@ -28,14 +28,18 @@ export default class Navbar extends React.Component {
   };
 
   clickMenuButton = () => {
-    this.setState((state) => {
-      return { openMenu: !state.openMenu, showSideMenu: !state.showSideMenu };
-    });
+    console.log(this.state.openMenu)
+    console.log(this.state.showMainMenu)
+    this.setState({
+      openMenu: !this.state.openMenu,
+      showMainMenu: !this.state.showMainMenu
+    })
   };
 
   closeMenu = () => {
     this.setState({
       openMenu: false,
+      showMainMenu: false
     });
   };
 
@@ -53,6 +57,21 @@ export default class Navbar extends React.Component {
         startBtn: true
       });
     };
+  };
+
+  sideMenuSubscripting = () => {
+    console.log(window.innerWidth)
+    if(window.innerWidth > 1024){
+      console.log(">")
+      this.setState({
+        showMainMenu: true
+      })
+    } else if(window.innerWidth <= 1024){
+      console.log("<")
+      this.setState({
+        showMainMenu: false
+      })
+    }
   };
 
   handleScroll = (e) => {
@@ -98,6 +117,7 @@ export default class Navbar extends React.Component {
 
   componentDidMount() {
     this.startBtnSubscripting();
+    this.sideMenuSubscripting();
   };
 
   componentWillUnmount() {
@@ -123,6 +143,7 @@ export default class Navbar extends React.Component {
     ));
 
     window.onscroll = window.location.href.includes("player") ? this.handleStartBtn : null;
+    window.onresize = this.sideMenuSubscripting;
 
     return (
         <div>
@@ -163,7 +184,7 @@ export default class Navbar extends React.Component {
                         <div className="menu-wrapper">
                             <div className="menu-block">
                                 <div className={menuMainClass}>
-                                  { this.state.showSideMenu
+                                  { this.state.showMainMenu
                                   &&
 
                                   <div
@@ -173,8 +194,8 @@ export default class Navbar extends React.Component {
 
                                   }
 
-                                  {/* {this.state.showSideMenu
-                                  && */}
+                                  {this.state.showMainMenu
+                                  &&
                                   <ul className="menu-main-list">
                                         <li>
                                         <span className="menu-logo">
@@ -220,7 +241,7 @@ export default class Navbar extends React.Component {
                                           }
                                         </li>
                                     </ul>
-                                  {/* } */}
+                                  }
 
                                 </div>
                             </div>

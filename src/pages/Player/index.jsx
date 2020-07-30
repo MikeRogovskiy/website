@@ -4,6 +4,7 @@ import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
 import FooterNavBar from "../../components/FooterNavBar";
 import "./Player.scss";
+import "./PlayerMedia.scss";
 
 import { playerImages } from "../../assets/images/products/scroll-pages/playerImages";
 import repeat from '../../assets/scroll-content/repeat.png';

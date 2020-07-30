@@ -18,12 +18,25 @@
 
 @media screen and (max-width: "640px"){
 
-    .Footer{
+  .Footer{
 
-      p{
-        font-size: 10px;
-      };
-
+    p{
+      font-size: 10px;
     };
 
   };
+
+};
+
+@media screen and (max-width: 390px){
+
+  .Footer{
+
+    p{
+      font-size: 8px;
+    };
+
+  };
+
+};
+
