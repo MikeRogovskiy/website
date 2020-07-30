@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Slider from "infinite-react-carousel";
 import "./Slider.scss";
 import "./sliderMedia.scss";
-import firstFace from "../../assets/firstFace.jpeg";
-import secondFace from "../../assets/secondFace.jpeg";
-import thirdFace from "../../assets/thirdFace.jpeg";
+import firstFace from "../../assets/firstFace.svg";
+import secondFace from "../../assets/secondFace.svg";
+import thirdFace from "../../assets/thirdFace.svg";
 import stars from "../../assets/stars.svg";
 import nextArrow from "../../assets/nextArrow.svg";
 import prevArrow from "../../assets/prevArrow.svg";
@@ -64,7 +64,9 @@ export default class CustomSlider extends Component {
               <div className="slider-item">
                 <div className="slider-item-content">
                   <div className="slider-item-content-avatar">
-                    <img src={firstFace} alt="firstFace" className="funny-avatar"/>
+                    <div className="slider-item-content-avatar_face">
+                      <img src={firstFace} alt="firstFace" className="funny-avatar"/>
+                    </div>
                     <img src={stars} alt="stars" className="stars" />
                   </div>
                   
@@ -93,7 +95,9 @@ export default class CustomSlider extends Component {
               <div className="slider-item">
                 <div className="slider-item-content">
                 <div className="slider-item-content-avatar">
-                  <img src={thirdFace} alt="thirdFace" className="funny-avatar"/>
+                  <div className="slider-item-content-avatar_face">
+                    <img src={thirdFace} alt="thirdFace" className="funny-avatar"/>
+                  </div>
                   <img src={stars} alt="stars" className="stars" />
                 </div>
                   <div className="review">
@@ -119,10 +123,12 @@ export default class CustomSlider extends Component {
             >
               <div className="slider-item">
                 <div className="slider-item-content">
-                <div className="slider-item-content-avatar">
-                  <img src={secondFace} alt="secondFace" className="funny-avatar"/>
-                  <img src={stars} alt="stars" className="stars" />
-                </div>
+                  <div className="slider-item-content-avatar">
+                    <div className="slider-item-content-avatar_face">
+                      <img src={secondFace} alt="secondFace" className="funny-avatar"/>
+                    </div>
+                    <img src={stars} alt="stars" className="stars" />
+                  </div>
 
                   <div className="review">
                     <p>
