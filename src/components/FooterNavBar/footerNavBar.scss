@@ -20,8 +20,8 @@
   };
 
 };
-
-#landing-footer-nav-bar a, #footer-nav-bar_content button{
+// , #footer-nav-bar_content button
+#landing-footer-nav-bar a, #landing-b-footer-nav-bar a{
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 50% 100%;
@@ -34,6 +34,7 @@
 #footer-nav-bar_content a:hover, #footer-nav-bar_content button:hover{
   background-size: 0% 2px;
 };
+
 
 #extension-footer-nav-bar, #player-footer-nav-bar{
   .Footer{

@@ -7,7 +7,7 @@ import "./Player.scss";
 import PlayerLogo from "../../assets/images/PlayerLogo.png";
 
 const Header = (props) => {
-    const [popUp, setPopUp] = useState(true);
+    const [popUp, setPopUp] = useState(false);
     const [ifMobile, setIfMobbile] = useState(true);
 
     const macLink = 'http://easylang.app/downloads/eLang_Player_-_Learn_English_mac_prod.dmg';
