@@ -60,14 +60,11 @@ export default class Navbar extends React.Component {
   };
 
   sideMenuSubscripting = () => {
-    console.log(window.innerWidth)
     if(window.innerWidth > 1024){
-      console.log(">")
       this.setState({
         showMainMenu: true
       })
     } else if(window.innerWidth <= 1024){
-      console.log("<")
       this.setState({
         showMainMenu: false
       })
