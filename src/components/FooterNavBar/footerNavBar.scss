@@ -21,7 +21,7 @@
 
 };
 
-#landing-footer-nav-bar a{
+#landing-footer-nav-bar a, #footer-nav-bar_content button{
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 50% 100%;
@@ -31,7 +31,7 @@
   padding-bottom: 10px;
 };
 
-#footer-nav-bar_content a:hover{
+#footer-nav-bar_content a:hover, #footer-nav-bar_content button:hover{
   background-size: 0% 2px;
 };
 
@@ -57,9 +57,9 @@
   padding-bottom: 10px;
 };
 
-#extension-footer-nav-bar a:hover, #player-footer-nav-bar a:hover{
-  background-size: 0% 2px;
-};
+// #extension-footer-nav-bar a:hover, #player-footer-nav-bar a:hover{
+//   background-size: 0% 2px;
+// };
 
 #landing-footer-nav-bar{
   @include centralFlexPosition;

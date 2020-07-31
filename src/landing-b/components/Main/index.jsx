@@ -43,7 +43,7 @@ export default function Main(props) {
   };
 
   const href =
-    "http://easylang.app/downloads/EasyLang.Player-Beta_" +
+    "http://easylang.app/downloads/eLang_Player_-_Learn_English_" +
       navigator.platform.indexOf("Win") >
     -1
       ? "win_prod.exe"
