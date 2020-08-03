@@ -1,44 +1,18 @@
-// @media screen and (max-height: 820px){
-//     #mobile-pop-up{
-//         .pop-up_conteiner{
-//             // height: 100%;
-//             // display: flex;
-//             &_content{
-//                 &_header{
-//                     h2{
-//                         color:#202128;
-//                         font-size: 1rem;
-//                     };
-//                 };
-
-//                 img{
-//                     width: 70%;
-//                 };
-
-//                 h3{
-//                     font-size: 1rem;
-//                 };
-//             };
-//         };
-//     };
-// };
-
 @media screen and (max-height: 700px){
 
-    #mobile-pop-up .pop-up_conteiner_content_header h2{
+    #mobile-pop-up .pop-up_container_content_header h2{
         font-size: 1.5rem;
-    }
+    };
 
     h3{
         font-size: 1.2rem;
-    }
+    };
 
-    #mobile-pop-up .pop-up_conteiner_content_main_inputs {
+    #mobile-pop-up .pop-up_container_content_main_inputs {
 
         #submit-input,#email-input {
             width: 100%;
             height: 5vh;
-            // height: 20%;
             font-size: 12px;
             line-height: 10px;
         };

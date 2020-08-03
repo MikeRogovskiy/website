@@ -18,7 +18,8 @@ import {
   PlayerAnimation,
   Privacy,
   _AppB,
-  ArticlesPage
+  ArticlesPage,
+  ContactUs
 } from "../../pages";
 
 
@@ -54,6 +55,7 @@ export default class App extends React.Component {
             <ArticlesPage               path="/start-learning-english-with-elang/" text={this.props.text.BlogPage}/>
             <ArticlesPage               path="/free-english-learnings-apps/" text={this.props.text.BlogPage}/>
             <Blog                       path="/blog/*" text={this.props.text.BlogPage}/>
+            <ContactUs                  path="/contact/" text={this.props.text.ContactUs}/>
             <Home                       path="/" text={this.props.text.HomePage} />
             <HomeB                      path="/B/" />
             <HomeB                      path="/C/" />

@@ -6,11 +6,41 @@ import Slider from "../Slider";
 import EasyLangLogo from "../../assets/EasyLang-logo.svg";
 import ReactHtmlParser from "react-html-parser";
 import { useNavigate } from "@reach/router";
+import MobilePopUp from "../../../components/MobilePopUp";
 
 export default function Main(props) {
   const [conditionDesctop, setConditionDesctop] = useState(false);
   const [conditionMobile, setConditionMobile] = useState(false);
+  const [popUp, setPopUp] = useState(false);
+  // const [ifMobile, setIfMobbile] = useState(true);
 
+  // let OSName="Unknown OS";
+
+  // const findOSName = () => {
+  //   if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+  //   if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+  // };
+  // findOSName();
+
+  // const checkIfMobile = () => {
+  //     const toMatch = [
+  //         /Android/i,
+  //         /webOS/i,
+  //         /iPhone/i,
+  //         /iPad/i,
+  //         /iPod/i,
+  //         /BlackBerry/i,
+  //         /Windows Phone/i
+  //     ];
+
+  //     const sortedForMobile = toMatch.some((toMatchItem) => {
+  //         return window.navigator.userAgent.match(toMatchItem);
+  //     });
+
+  //     setIfMobbile(sortedForMobile);
+  // };
+
+  // useEffect(checkIfMobile);
   useEffect(() => {
     const handleHead = () => {
       if(window.innerWidth <= 1024){
@@ -46,23 +76,27 @@ export default function Main(props) {
     "http://easylang.app/downloads/eLang_Player_-_Learn_English_" +
       navigator.platform.indexOf("Win") >
     -1
-      ? "win_prod.exe"
-      : "mac_prod.dmg";
+      ? "http://easylang.app/downloads/eLang_Player_-_Learn_English_win_prod.exe"
+      : "http://easylang.app/downloads/eLang_Player_-_Learn_English_mac_prod.dmg";
 
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
   const navigateTo = useNavigate();
 
-
+  const updateProps = (value) => {
+    setPopUp(value)
+  };
 
   return (
     <div>
+      {popUp ? <MobilePopUp updateProps={updateProps}/> : null}
       <section className="relax" id="relax">
           <div className="relax-title">
             <p className="easy-way">{getLangText("Title")}</p>
             <p className="relax-sub">{getLangText("SubTitle")}</p>
             <MobileHead />
+            
             <button
               className="download"
               style={{ borderRadius: "15px"}}
@@ -72,6 +106,7 @@ export default function Main(props) {
             </button>
           </div>
           <DesctopHead />
+          
         </section>
       <section className="options">
         <div className="options-row-first">
@@ -169,7 +204,10 @@ export default function Main(props) {
             <span> {getLangText("PlayerDescrip1")} </span>
             <br /> <span>{getLangText("PlayerDescrip2")}</span>
           </p>
-          <button
+
+          {conditionDesctop ?
+
+           <button
             className="download"
             onClick={() => {
               window.open(href);
@@ -178,8 +216,22 @@ export default function Main(props) {
               });
             }}
           >
-            {getLangText("Download")}
-          </button>
+           {getLangText("Download")}
+         </button>
+          :
+          <button
+            className="download"
+            onClick={() => {
+              setPopUp(true);
+              window.gtag("event", "Add Player click", {
+                event_category: "Landing B. Page",
+              });
+            }}
+          >
+           {getLangText("Download")}
+         </button>
+
+          }
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />

@@ -1,3 +1,6 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
 .easy-way {
   font-weight: 900 !important;
   font-size: 40px;
@@ -109,3 +112,26 @@
     background: linear-gradient(292.09deg, #ff8b4a 0%, #ff8b4a 100%);
   }
 }
+
+
+.getStartedPlayer-button {
+  @include centralFlexPosition;
+  flex-direction: column;
+
+  p{
+    @include pureBody;
+    padding-top: 10px;
+    color: #195AA9;
+  };
+
+  p a{
+    color: #195AA9;
+    text-decoration: underline;
+  }
+
+  &.bottom{
+    margin: 0;
+    transform: translateY(-50%);
+  };
+
+};

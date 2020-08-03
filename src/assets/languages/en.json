@@ -85,6 +85,17 @@
     "ContactUs": "Contact Us"
   },
 
+  "ContactUs": {
+    "title1": "CONTACT US",
+    "theName": "Republic of Belarus, Minsk",
+    "index": "220012",
+    "adress": "Tolbuhina St., 2, room 315, 3rd floor",
+    "email": "support@easylang.app",
+    "phone": "+375 29 767-35-25",
+    "title2": "WRITE TO US",
+    "text1": "Your questions and special requests are always welcome."
+  },
+
   "FooterNavBar": {
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",

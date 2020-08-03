@@ -1,3 +1,18 @@
 * {
   scroll-behavior: smooth;
 }
+
+.wrapper-landing{
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
+@media screen and (max-width: 1024px){
+  .wrapper-landing{
+    padding: 0px;
+  }
+}

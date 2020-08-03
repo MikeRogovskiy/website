@@ -28,8 +28,6 @@ export default class Navbar extends React.Component {
   };
 
   clickMenuButton = () => {
-    console.log(this.state.openMenu)
-    console.log(this.state.showMainMenu)
     this.setState({
       openMenu: !this.state.openMenu,
       showMainMenu: !this.state.showMainMenu
@@ -60,6 +58,7 @@ export default class Navbar extends React.Component {
   };
 
   sideMenuSubscripting = () => {
+    console.log(window.innerWidth)
     if(window.innerWidth > 1024){
       this.setState({
         showMainMenu: true
@@ -122,6 +121,7 @@ export default class Navbar extends React.Component {
   };
 
   render() {
+
     const navBarClass = classNames("Navbar", {
       "no-fixed-bar": !this.state.fixedBar,
       "fixed-bar": this.state.fixedBar,
@@ -142,8 +142,10 @@ export default class Navbar extends React.Component {
     window.onscroll = window.location.href.includes("player") ? this.handleStartBtn : null;
     window.onresize = this.sideMenuSubscripting;
 
+
     return (
         <div>
+         
             { window.location.href.includes("instruction") || window.location.href.includes("player-animation")
               || window.location.href.includes("/B") || window.location.href.includes("/C")
               || window.location.href.includes("advertisement") || window.location.href.includes("plans")
@@ -203,7 +205,7 @@ export default class Navbar extends React.Component {
                                             <Link
                                                 to="player/"
                                                 className="menu-nav__link"
-                                                onClick={() => {this.closeMenu();  this.handleStartBtn()}}
+                                                onClick={() => {this.closeMenu();  this.showStartBtn()}}
                                             >
                                                 {this.props.text.player}
                                             </Link>

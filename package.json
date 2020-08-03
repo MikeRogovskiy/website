@@ -54,6 +54,7 @@
     "file-loader": "3.0.1",
     "fs-extra": "7.0.1",
     "gh-pages": "^2.1.1",
+    "google-maps-react": "^2.0.6",
     "hash-source": "^1.0.4",
     "html-webpack-plugin": "4.0.0-beta.5",
     "i18next": "^19.3.4",
