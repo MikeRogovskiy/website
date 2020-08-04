@@ -213,11 +213,15 @@ export default class Navbar extends React.Component {
                                             <Link
                                                 to="player/"
                                                 className="menu-nav__link"
-                                                onClick={() => {this.closeMenu();  this.showStartBtn();
-                                                window.gtag("event", "Watch & Learn click", {
-                                                  event_category: "Landing. Navigation bar"
-                                                });
+                                                onClick={() => {
+                                                  this.closeMenu();
+                                                  this.showStartBtn()
                                                 }}
+                                                onClick={ 
+                                                  window.gtag("event", "Watch & Learn click", {
+                                                  event_category: "Landing. Navigation bar"
+                                                  })
+                                                }
                                             >
                                                 {this.props.text.player}
                                             </Link>
@@ -226,11 +230,15 @@ export default class Navbar extends React.Component {
                                             <Link
                                                 to="extension/"
                                                 className="menu-nav__link"
-                                                onClick={() => {this.closeMenu(); this.showStartBtn();
+                                                onClick={() => {
+                                                  this.closeMenu();
+                                                  this.showStartBtn()
+                                                }}
+                                                onClick={
                                                   window.gtag("event", "Read & Learn click", {
                                                     event_category: "Landing. Navigation bar"
-                                                  });
-                                                }}
+                                                  })
+                                                }
                                             >
                                                 {this.props.text.extension}
                                             </Link>
@@ -240,11 +248,15 @@ export default class Navbar extends React.Component {
                                             <Link
                                               to="blog/"
                                               className="menu-nav__link"
-                                              onClick={() => {this.closeMenu(); this.showStartBtn();
+                                              onClick={() => {
+                                                this.closeMenu();
+                                                this.showStartBtn()
+                                              }}
+                                              onClick={
                                                 window.gtag("event", "Blog click", {
                                                   event_category: "Landing. Navigation bar"
-                                                });
-                                              }}
+                                                })
+                                              }
                                             >
                                             {this.props.text.ourBlog}
                                             </Link> : null

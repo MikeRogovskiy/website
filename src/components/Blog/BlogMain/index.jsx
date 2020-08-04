@@ -18,10 +18,12 @@ export default function BlogMain(props){
 
     const ReadMoreBtn = (props) => {
         return (
-            <button onClick={() => {
-                navigateTo(props.navigationLink);
-                window.gtag(props.gtag)
-            }}>
+            <button
+                onClick={() => {
+                    navigateTo(props.navigationLink);
+                }}
+                onClick={window.gtag(props.gtag)}
+            >
                 {getLangText("articleBtnMore")}
             </button>
         );

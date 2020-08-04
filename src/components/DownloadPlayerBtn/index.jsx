@@ -85,8 +85,10 @@ export default function DownloadPlayerBtn (props){
                 rel="noopener noreferrer"
                 onClick={() => {
                     props.updateProps(true);
-                    window.gtag(props.gtag)
                 }}
+                onClick={
+                    window.gtag(props.gtag)
+                }
                 >
                     <span>{getLangText("GetPlayerButtonWindows")}</span>
                 </a>
@@ -103,8 +105,10 @@ export default function DownloadPlayerBtn (props){
                     rel="noopener noreferrer"
                     onClick={() => {
                         props.updateProps(true);
-                        window.gtag(props.gtag)
                     }}
+                    onClick={
+                        window.gtag(props.gtag)
+                    }
                 >
                     <span>{getLangText("GetPlayerButtonMac")}</span>
                 </a>

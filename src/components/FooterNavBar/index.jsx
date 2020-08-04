@@ -13,7 +13,7 @@ export default class FooterNavBar extends Component {
         <div id="footer-nav-bar_content">
           <Link to="/">
             <button
-              onClick={() =>
+              onClick={
                 window.gtag("event", "Contact Us click", {
                   event_category: "Landing. Footer",
                 })
@@ -25,7 +25,7 @@ export default class FooterNavBar extends Component {
 
           <Link to="/">
             <button
-              onClick={() =>
+              onClick={
                 window.gtag("event", "About Us click", {
                   event_category: "Landing. Footer",
                 })
@@ -37,7 +37,7 @@ export default class FooterNavBar extends Component {
 
           <Link to="/privacy">
             <button
-              onClick={() =>
+              onClick={
                 window.gtag("event", "Privacy Policy click", {
                   event_category: "Landing. Footer",
                 })
