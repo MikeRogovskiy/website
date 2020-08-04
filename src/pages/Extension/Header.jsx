@@ -43,7 +43,7 @@ const Header = (props) => {
           <LoadExtensionBtn
             gtag={
               ("event", "Upper Add To Chrome click", {
-                event_category: "Landing.Read&Learn"
+                event_category: "Landing. Read & Learn"
               })
             }
             analyticsParameter={"Upper Add To Chrome click"}

@@ -161,7 +161,7 @@ export default class Navbar extends React.Component {
                                 className="logo-light"
                                 onClick={() => {this.closeMenu(); this.showStartBtn();
                                   window.gtag("event", "Logo click", {
-                                    event_category: "Landing.Navigation bar"
+                                    event_category: "Landing. Navigation bar"
                                   })}}
                                 
                             >
@@ -211,7 +211,7 @@ export default class Navbar extends React.Component {
                                                 className="menu-nav__link"
                                                 onClick={() => {this.closeMenu();  this.showStartBtn();
                                                 window.gtag("event", "Watch & Learn click", {
-                                                  event_category: "Landing.Navigation bar"
+                                                  event_category: "Landing. Navigation bar"
                                                 });
                                                 }}
                                             >
@@ -224,7 +224,7 @@ export default class Navbar extends React.Component {
                                                 className="menu-nav__link"
                                                 onClick={() => {this.closeMenu(); this.showStartBtn();
                                                   window.gtag("event", "Read & Learn click", {
-                                                    event_category: "Landing.Navigation bar"
+                                                    event_category: "Landing. Navigation bar"
                                                   });
                                                 }}
                                             >
@@ -238,7 +238,7 @@ export default class Navbar extends React.Component {
                                               className="menu-nav__link"
                                               onClick={() => {this.closeMenu(); this.showStartBtn();
                                                 window.gtag("event", "Blog click", {
-                                                  event_category: "Landing.Navigation bar"
+                                                  event_category: "Landing. Navigation bar"
                                                 });
                                               }}
                                             >

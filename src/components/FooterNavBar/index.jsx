@@ -11,7 +11,7 @@ export default class FooterNavBar extends Component {
     this.state = {
       footerNavBarContent: (
         <div id="footer-nav-bar_content">
-          <Link to="/privacy">
+          <Link to="/">
             <button
               onClick={() =>
                 window.gtag("event", "Contact Us click", {
@@ -35,7 +35,7 @@ export default class FooterNavBar extends Component {
             </button>
           </Link>
 
-          <Link to="/">
+          <Link to="/privacy">
             <button
               onClick={() =>
                 window.gtag("event", "Privacy Policy click", {
