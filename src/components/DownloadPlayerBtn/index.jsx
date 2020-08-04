@@ -40,8 +40,8 @@ export default function DownloadPlayerBtn (props){
     useEffect(checkIfMobile);
 
     const googleAnalytics = () => {
-        window.gtag(this.props.gtagName, this.props.gtagClick,{
-            event_category: this.props.gtagCategory
+        window.gtag(props.gtagName, props.gtagClick,{
+            event_category: props.gtagCategory
         })
     }
 
