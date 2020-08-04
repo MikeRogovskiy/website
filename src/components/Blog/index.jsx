@@ -10,7 +10,14 @@ export default function Blog(props) {
     return (
         <div className="Blog">
             <BlogHeader/>
-            <BlogMain text={props.text}/>
+            <BlogMain
+                text={props.text}
+                gtag={
+                    ("event", "Read More click", {
+                        event_category: "Landing. Blog"
+                    })
+                }
+            />
             <footer>
                 <FooterNavBar text={props.text} page={page}/>
             </footer>

@@ -37,7 +37,7 @@ export default function BlogMain(props){
                     <img src={articleOne}></img>
                     <div>
                         <h2>{getLangText("articleOneTitleMain")}</h2>
-                        <ReadMoreBtn navigationLink={"reasons-to-study-english"}/>
+                        <ReadMoreBtn navigationLink={"reasons-to-study-english"} gtag={props.gtag}/>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@ export default function BlogMain(props){
                     <img src={articleTwo}></img>
                     <div>
                         <h2>{getLangText("articleTwoTitleMain")}</h2>
-                        <ReadMoreBtn navigationLink={"start-learning-english-with-elang"}/>
+                        <ReadMoreBtn navigationLink={"start-learning-english-with-elang"} gtag={props.gtag}/>
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ export default function BlogMain(props){
                     <img src={articleThree}></img>
                     <div>
                         <h2>{getLangText("articleThreeTitleMain")}</h2>
-                        <ReadMoreBtn navigationLink={"free-english-learnings-apps"}/>
+                        <ReadMoreBtn navigationLink={"free-english-learnings-apps"} gtag={props.gtag}/>
                     </div>
                 </div>
             </div>

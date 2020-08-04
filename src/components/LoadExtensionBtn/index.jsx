@@ -3,7 +3,6 @@ import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 import "./LoadExtensionBtn.scss";
 
 export default function LoadExtensionBtn (props){
-
     return(
         <div className="button-group button-group-1">
             <a

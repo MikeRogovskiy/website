@@ -270,7 +270,7 @@ export default class Navbar extends React.Component {
                                                 id={"nav-btn"}
                                                 gtag={
                                                   ("event", "Free start click", {
-                                                    event_category: "Landing.Navigation bar"
+                                                    event_category: "Landing. Navigation bar"
                                                   })
                                                 }
                                             /> : null

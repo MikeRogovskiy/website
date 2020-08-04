@@ -46,7 +46,6 @@ const Header = (props) => {
                 event_category: "Landing. Read & Learn"
               })
             }
-            analyticsParameter={"Upper Add To Chrome click"}
             text={props.text.GetStartedButton}
           />
 

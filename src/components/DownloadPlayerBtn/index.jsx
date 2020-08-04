@@ -48,7 +48,9 @@ export default function DownloadPlayerBtn (props){
                     href={windowsLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={window.gtag(props.gtag)}>
+                    onClick={
+                        window.gtag(props.gtag)
+                    }>
                         <span>{getLangText("GetPlayerButtonWindows")}</span>
                     </a>
                 }
@@ -63,9 +65,10 @@ export default function DownloadPlayerBtn (props){
                         href={macLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={window.gtag(props.gtag)}
-                    >
-                        <span>{getLangText("GetPlayerButtonMac")}</span>
+                        onClick={
+                            window.gtag(props.gtag)
+                        }>
+                            <span>{getLangText("GetPlayerButtonMac")}</span>
                     </a>
                 }
                 { OSName === "MacOS" &&
@@ -119,6 +122,7 @@ export default function DownloadPlayerBtn (props){
         </div>
         )
     };
+    // console.log(props.gtag)
 
     return (
         <div>

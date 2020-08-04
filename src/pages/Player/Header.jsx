@@ -31,12 +31,12 @@ const Header = (props) => {
                 </div>
 
                 <DonwloadPlayerBtn 
-                     gtag={
+                    gtag={
                         ("event", "Upper Download click", {
-                          event_category: "Landing. Watch&Learn"
+                            event_category: "Landing. Watch&Learn"
                         })
-                      }
-                    text={props.text} 
+                    }
+                    text={props.text}
                     updateProps={updateProps}
                 />
 
