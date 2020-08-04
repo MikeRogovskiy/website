@@ -160,22 +160,19 @@ export default class Navbar extends React.Component {
                 <nav className={navBarClass}>
 
                     <div className="sticky-bar">
-                        <div className="logo"
-                          onClick={this.googleAnalytics("Logo click")}
-                        >
+                        <div className="logo">
                             <Link
                                 to="./"
                                 className="logo-light"
+                                onClick={
+                                  window.gtag("event", "Logo click", {
+                                  event_category: "Landing. Navigation bar"
+                                  })
+                                }
                                 onClick={() => {
                                   this.closeMenu();
                                   this.showStartBtn();
-                                  
                                 }}
-                                // onClick={
-                                //   window.gtag("event", "Logo click", {
-                                //   event_category: "Landing. Navigation bar"
-                                //   })
-                                // }
                             >
                                 EasyLang
                             </Link>
@@ -217,40 +214,36 @@ export default class Navbar extends React.Component {
                                             EasyLang
                                         </span>
                                         </li>
-                                        <li className="menu-item"
-                                          onClick={this.googleAnalytics("Watch & Learn click")}
-                                        >
+                                        <li className="menu-item">
                                             <Link
                                                 to="player/"
                                                 className="menu-nav__link"
+                                                onClick={
+                                                  window.gtag("event", "Watch & Learn click", {
+                                                  event_category: "Landing. Navigation bar"
+                                                  })
+                                                }
                                                 onClick={() => {
                                                   this.closeMenu();
                                                   this.showStartBtn();
                                                 }}
-                                                // onClick={ 
-                                                //   window.gtag("event", "Watch & Learn click", {
-                                                //   event_category: "Landing. Navigation bar"
-                                                //   })
-                                                // }
                                             >
                                                 {this.props.text.player}
                                             </Link>
                                         </li>
-                                        <li className="menu-item"
-                                          onClick={this.googleAnalytics("Read & Learn click")}
-                                        >
+                                        <li className="menu-item">
                                             <Link
                                                 to="extension/"
                                                 className="menu-nav__link"
+                                                onClick={
+                                                  window.gtag("event", "Read & Learn click", {
+                                                    event_category: "Landing. Navigation bar"
+                                                  })
+                                                }
                                                 onClick={() => {
                                                   this.closeMenu();
                                                   this.showStartBtn();
                                                 }}
-                                                // onClick={
-                                                //   window.gtag("event", "Read & Learn click", {
-                                                //     event_category: "Landing. Navigation bar"
-                                                //   })
-                                                // }
                                             >
                                                 {this.props.text.extension}
                                             </Link>
@@ -260,55 +253,22 @@ export default class Navbar extends React.Component {
                                             <Link
                                               to="blog/"
                                               className="menu-nav__link"
+                                              onClick={
+                                                window.gtag("event", "Blog click", {
+                                                  event_category: "Landing. Navigation bar"
+                                                })
+                                              }
                                               onClick={() => {
                                                 this.closeMenu();
                                                 this.showStartBtn();
-                                                this.googleAnalytics("Blog click")
+                                                // this.googleAnalytics("Blog click")
                                               }}
-                                              // onClick={
-                                              //   window.gtag("event", "Blog click", {
-                                              //     event_category: "Landing. Navigation bar"
-                                              //   })
-                                              // }
                                             >
                                             {this.props.text.ourBlog}
                                             </Link> : null
                                           }
                                         </li>
-                                        {this.state.startBtn  && window.location.href.includes("landing") ? 
-                                          <li onClick={window.gtag("event", `Upper 'Free start' Click`, {
-                                                event_category: "Landing B. Page"
-                                              })}
-                                          >
-                                              <StartBtn
-                                                link={"player/"}
-                                                text={this.props.text.GetStartedButton}
-                                                id={"nav-btn"}
-                                                // gtag={
-                                                //   ("event", `Upper 'Free start' Click`, {
-                                                //     event_category: "Landing B. Page"
-                                                //   })
-                                                // }
-                                              />
-                                          </li> : this.state.startBtn  && !window.location.href.includes("landing") ?
-                                          <li onClick={window.gtag("event", `Free start click`, {
-                                                event_category: "Landing. Navigation bar"
-                                              })}
-                                          >
-                                            <StartBtn
-                                              link={"player/"}
-                                              text={this.props.text.GetStartedButton}
-                                              id={"nav-btn"}
-                                              // gtag={
-                                              //   ("event", `Free start click`, {
-                                              //     event_category: "Landing. Navigation bar"
-                                              //   })
-                                              // }
-                                            />
-                                          </li>
-                                        :null
-                                        }
-                                        {/* <li>
+                                        <li>
                                           {this.state.startBtn  && window.location.href.includes("landing") ?
                                             <StartBtn
                                                 link={"player/"}
@@ -331,7 +291,7 @@ export default class Navbar extends React.Component {
                                                 }
                                             /> : null
                                           }
-                                        </li> */}
+                                        </li>
                                     </ul>
                                   }
 
