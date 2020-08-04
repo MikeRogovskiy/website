@@ -17,7 +17,15 @@ const Footer = (props) => {
        {popUp ? <MobilePopUp updateProps={updateProps}/> : null}
 
       {/* <div className="getStartedPlayer-button"> */}
-        <DonwloadPlayerBtn text={props.text} updateProps={updateProps}/>
+        <DonwloadPlayerBtn 
+          gtag={
+            ("event", "Lower Download click", {
+              event_category: "Landing.Watch&Learn"
+            })
+          }
+          text={props.text} 
+          updateProps={updateProps}
+        />
       {/* </div> */}
 
     </footer>

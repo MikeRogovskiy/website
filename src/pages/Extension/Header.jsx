@@ -3,7 +3,6 @@ import ReactHtmlParser from "react-html-parser";
 import LoadExtensionBtn from "../../components/LoadExtensionBtn";
 
 import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
-// import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
 import "./Extension.scss";
 
@@ -42,6 +41,11 @@ const Header = (props) => {
         <div className="getStarted-button">
 
           <LoadExtensionBtn
+            gtag={
+              ("event", "Upper Add To Chrome click", {
+                event_category: "Landing.Read&Learn"
+              })
+            }
             analyticsParameter={"Upper Add To Chrome click"}
             text={props.text.GetStartedButton}
           />

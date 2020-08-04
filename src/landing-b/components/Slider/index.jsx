@@ -17,7 +17,12 @@ function SampleNextArrow(props) {
       src={nextArrow}
       id="carousel-right"
       alt="arrow next"
-      onClick={onClick}
+      onClick={
+        onClick,
+        window.gtag ("event", `Reviews left click`, {
+          event_category: "Landing B. Page"
+        })
+    }
     />
   );
 }
@@ -29,7 +34,12 @@ function SamplePrevArrow(props) {
       src={prevArrow}
       id="carousel-left"
       alt="arrow previous"
-      onClick={onClick}
+      onClick={
+        onClick,
+        window.gtag ("event", `Reviews right click`, {
+          event_category: "Landing B. Page"
+        })
+      }
     />
   );
 }
@@ -69,9 +79,9 @@ export default class CustomSlider extends Component {
                     </div>
                     <img src={stars} alt="stars" className="stars" />
                   </div>
-                  
+
                   <div className="review">
-                    
+
                     <p>
                       {this.getLangText("MaxReview")}
                       <br />
@@ -101,7 +111,7 @@ export default class CustomSlider extends Component {
                   <img src={stars} alt="stars" className="stars" />
                 </div>
                   <div className="review">
-                    
+
                     <p>
                       {this.getLangText("AnnReview")} <br />{" "}
                       <b>{this.getLangText("Ann")}</b>

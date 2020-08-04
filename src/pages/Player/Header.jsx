@@ -30,7 +30,15 @@ const Header = (props) => {
                     <h1 className="getStarted-title">{getLangText("GetStartedPlayerText")}</h1>
                 </div>
 
-                <DonwloadPlayerBtn text={props.text} updateProps={updateProps}/>
+                <DonwloadPlayerBtn 
+                     gtag={
+                        ("event", "Upper Download click", {
+                          event_category: "Landing.Watch&Learn"
+                        })
+                      }
+                    text={props.text} 
+                    updateProps={updateProps}
+                />
 
                 <div>
                     <p className="getStarted-subtitle">{getLangText("GetStartedBottomText")}</p>

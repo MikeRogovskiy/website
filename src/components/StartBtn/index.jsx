@@ -14,6 +14,7 @@ export default class StartBtn extends React.Component {
         return (
             <div id="list-for-start-btn">
                 <Link
+                    onClick={() => window.gtag(this.props.gtag)}
                     to={this.props.link}
                     rel="noopener noreferrer"
                     id={this.props.id}

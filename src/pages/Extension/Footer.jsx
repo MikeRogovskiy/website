@@ -31,7 +31,9 @@ const Footer = (props) => {
     <footer className="getStarted-footer">
       <div className="getStarted-button">
           <LoadExtensionBtn
-            analyticsParameter={"Lower Add To Chrome click"}
+            gtag={("event", "Lower Add to Chrome click", {
+              event_category: "Landing. Read & Learn"
+            })}
             text={props.text.GetStartedButton}
           />
 

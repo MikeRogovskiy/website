@@ -175,5 +175,5 @@ export default class Plans extends Component {
         </div>
       </div>
     );
-  }
-}
+  };
+};

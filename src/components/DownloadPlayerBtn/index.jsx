@@ -48,7 +48,7 @@ export default function DownloadPlayerBtn (props){
                     href={windowsLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    >
+                    onClick={window.gtag(props.gtag)}>
                         <span>{getLangText("GetPlayerButtonWindows")}</span>
                     </a>
                 }
@@ -63,7 +63,7 @@ export default function DownloadPlayerBtn (props){
                         href={macLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        
+                        onClick={window.gtag(props.gtag)}
                     >
                         <span>{getLangText("GetPlayerButtonMac")}</span>
                     </a>
@@ -83,7 +83,10 @@ export default function DownloadPlayerBtn (props){
                 className="startedPlayer-button top"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => {props.updateProps(true)}}
+                onClick={() => {
+                    props.updateProps(true);
+                    window.gtag(props.gtag)
+                }}
                 >
                     <span>{getLangText("GetPlayerButtonWindows")}</span>
                 </a>
@@ -98,7 +101,10 @@ export default function DownloadPlayerBtn (props){
                     className="startedPlayer-button top"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => {props.updateProps(true)}}
+                    onClick={() => {
+                        props.updateProps(true);
+                        window.gtag(props.gtag)
+                    }}
                 >
                     <span>{getLangText("GetPlayerButtonMac")}</span>
                 </a>

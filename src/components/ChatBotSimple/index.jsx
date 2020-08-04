@@ -46,9 +46,7 @@ export default class ChatBotSimple extends Component {
               <button
                 onClick={() => {
                   this.appearBot();
-                  window.gtag("event", "Chat Bot click", {
-                    event_category: "Landing. Main screen",
-                  });
+                  window.gtag(this.props.gtag);
                 }}
               >
                 <img src={botLogo} alt="botLogo" />

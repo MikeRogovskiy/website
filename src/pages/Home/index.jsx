@@ -92,7 +92,13 @@ export default class Home extends React.Component {
 
     return (
       <div className="Home">
-        <ChatBotSimple />
+        <ChatBotSimple 
+           gtag={
+            ("event", "Chat Bot click", {
+              event_category: "Landing. Main screen"
+            })
+          }
+        />
         <header className="hero">
           <div className="wrapper-hero">
             <div>
@@ -151,7 +157,11 @@ export default class Home extends React.Component {
                 <p>{this.getLangText("contentOurApp")}</p>
                 <div className="button-block">
                   <LoadExtensionBtn
-                    analyticsParameter={"Extension Store click"}
+                    gtag={
+                      ("event", "Extension Store click", {
+                        event_category: "Landing. Main screen"
+                      })
+                    }
                     text={this.props.text.GetStartedButton}
                   />
                 </div>
