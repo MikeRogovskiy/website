@@ -45,8 +45,8 @@ export default class ChatBotSimple extends Component {
             {this.state.on === false && (
               <button
                 onClick={() => {
-                  this.appearBot();
                   window.gtag(this.props.gtag);
+                  this.appearBot();
                 }}
               >
                 <img src={botLogo} alt="botLogo" />

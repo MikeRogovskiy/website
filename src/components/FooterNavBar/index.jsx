@@ -13,11 +13,11 @@ export default class FooterNavBar extends Component {
         <div id="footer-nav-bar_content">
           <Link 
             to="/"
-            onClick={
+            onClick={()=> {
               window.gtag("event", "Contact Us click", {
                 event_category: "Landing. Footer",
               })
-            }>
+            }}>
             <button>
               {this.getLangText("ContactUs")}
             </button>
@@ -25,11 +25,11 @@ export default class FooterNavBar extends Component {
 
           <Link 
             to="/"
-            onClick={
+            onClick={()=>{
               window.gtag("event", "About Us click", {
                 event_category: "Landing. Footer",
               })
-            }>
+            }}>
             <button>
               {this.getLangText("AboutUs")}
             </button>
@@ -37,11 +37,11 @@ export default class FooterNavBar extends Component {
 
           <Link 
             to="/privacy"
-            onClick={
+            onClick={()=> {
               window.gtag("event", "Privacy Policy click", {
                 event_category: "Landing. Footer",
               })
-            }>
+            }}>
             <button>
               {this.getLangText("PrivacyPolicy")}
             </button>
