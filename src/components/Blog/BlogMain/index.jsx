@@ -20,9 +20,9 @@ export default function BlogMain(props){
         return (
             <button
                 onClick={() => {
-                    navigateTo(props.navigationLink);
+                    window.gtag(props.gtag);
+                    navigateTo(props.navigationLink)
                 }}
-                onClick={window.gtag(props.gtag)}
             >
                 {getLangText("articleBtnMore")}
             </button>

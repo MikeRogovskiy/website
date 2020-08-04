@@ -17,11 +17,11 @@ function SampleNextArrow(props) {
       src={nextArrow}
       id="carousel-right"
       alt="arrow next"
-      onClick={
+      onClick={()=> {
         window.gtag ("event", `Reviews left click`, {
           event_category: "Landing B. Page"
         })
-      }
+      }}
       onClick={
         onClick
       }
@@ -36,11 +36,11 @@ function SamplePrevArrow(props) {
       src={prevArrow}
       id="carousel-left"
       alt="arrow previous"
-      onClick={
+      onClick={()=>{
         window.gtag ("event", `Reviews right click`, {
           event_category: "Landing B. Page"
         })
-      }
+      }}
       onClick={
         onClick
       }
