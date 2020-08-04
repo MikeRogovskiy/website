@@ -217,14 +217,15 @@ export default class Navbar extends React.Component {
                                             EasyLang
                                         </span>
                                         </li>
-                                        <li className="menu-item">
+                                        <li className="menu-item"
+                                          onClick={this.googleAnalytics("Watch & Learn click")}
+                                        >
                                             <Link
                                                 to="player/"
                                                 className="menu-nav__link"
                                                 onClick={() => {
                                                   this.closeMenu();
                                                   this.showStartBtn();
-                                                  this.googleAnalytics("Watch & Learn click")
                                                 }}
                                                 // onClick={ 
                                                 //   window.gtag("event", "Watch & Learn click", {
@@ -235,14 +236,15 @@ export default class Navbar extends React.Component {
                                                 {this.props.text.player}
                                             </Link>
                                         </li>
-                                        <li className="menu-item">
+                                        <li className="menu-item"
+                                          onClick={this.googleAnalytics("Read & Learn click")}
+                                        >
                                             <Link
                                                 to="extension/"
                                                 className="menu-nav__link"
                                                 onClick={() => {
                                                   this.closeMenu();
                                                   this.showStartBtn();
-                                                  this.googleAnalytics("Read & Learn click")
                                                 }}
                                                 // onClick={
                                                 //   window.gtag("event", "Read & Learn click", {
@@ -273,7 +275,40 @@ export default class Navbar extends React.Component {
                                             </Link> : null
                                           }
                                         </li>
-                                        <li>
+                                        {this.state.startBtn  && window.location.href.includes("landing") ? 
+                                          <li onClick={window.gtag("event", `Upper 'Free start' Click`, {
+                                                event_category: "Landing B. Page"
+                                              })}
+                                          >
+                                              <StartBtn
+                                                link={"player/"}
+                                                text={this.props.text.GetStartedButton}
+                                                id={"nav-btn"}
+                                                // gtag={
+                                                //   ("event", `Upper 'Free start' Click`, {
+                                                //     event_category: "Landing B. Page"
+                                                //   })
+                                                // }
+                                              />
+                                          </li> : this.state.startBtn  && !window.location.href.includes("landing") ?
+                                          <li onClick={window.gtag("event", `Free start click`, {
+                                                event_category: "Landing. Navigation bar"
+                                              })}
+                                          >
+                                            <StartBtn
+                                              link={"player/"}
+                                              text={this.props.text.GetStartedButton}
+                                              id={"nav-btn"}
+                                              // gtag={
+                                              //   ("event", `Free start click`, {
+                                              //     event_category: "Landing. Navigation bar"
+                                              //   })
+                                              // }
+                                            />
+                                          </li>
+                                        :null
+                                        }
+                                        {/* <li>
                                           {this.state.startBtn  && window.location.href.includes("landing") ?
                                             <StartBtn
                                                 link={"player/"}
@@ -296,7 +331,7 @@ export default class Navbar extends React.Component {
                                                 }
                                             /> : null
                                           }
-                                        </li>
+                                        </li> */}
                                     </ul>
                                   }
 
