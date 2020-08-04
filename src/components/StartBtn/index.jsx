@@ -14,7 +14,7 @@ export default class StartBtn extends React.Component {
                 <Link
                     onClick={()=>{window.gtag(this.props.gtagName, this.props.gtagClick,{
                         event_category: this.props.gtagCategory
-                    })  
+                    })
                     }}
                     to={this.props.link}
                     rel="noopener noreferrer"

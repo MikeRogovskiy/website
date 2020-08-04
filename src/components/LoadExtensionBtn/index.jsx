@@ -10,9 +10,14 @@ export default function LoadExtensionBtn (props){
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
-                onClick={()=>{
-                    window.gtag(props.gtag)
+                // onClick={()=>{
+                //     window.gtag(props.gtag)
+                // }}
+                onClick={()=>{window.gtag(this.props.gtagName, this.props.gtagClick,{
+                    event_category: this.props.gtagCategory
+                })
                 }}
+                
             >
                 <span className="button-chrome-wrapper">
                     <img

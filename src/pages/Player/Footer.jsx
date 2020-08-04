@@ -18,11 +18,14 @@ const Footer = (props) => {
 
       {/* <div className="getStartedPlayer-button"> */}
         <DonwloadPlayerBtn
-          gtag={
-            ("event", "Lower Download click", {
-              event_category: "Landing. Watch&Learn"
-            })
-          }
+         gtagName={"event"}
+         gtagClick={"Lower Download click"}
+         gtagCategory={"Landing. Watch&Learn"}
+          // gtag={
+          //   ("event", "Lower Download click", {
+          //     event_category: "Landing. Watch&Learn"
+          //   })
+          // }
           text={props.text}
           updateProps={updateProps}
         />

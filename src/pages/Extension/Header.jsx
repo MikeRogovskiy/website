@@ -41,11 +41,14 @@ const Header = (props) => {
         <div className="getStarted-button">
 
           <LoadExtensionBtn
-            gtag={
-              ("event", "Upper Add To Chrome click", {
-                event_category: "Landing. Read & Learn"
-              })
-            }
+            gtagName={"event"}
+            gtagClick={"Upper Add To Chrome click"}
+            gtagCategory={"Landing. Read & Learn"}
+            // gtag={
+            //   ("event", "Upper Add To Chrome click", {
+            //     event_category: "Landing. Read & Learn"
+            //   })
+            // }
             text={props.text.GetStartedButton}
           />
 

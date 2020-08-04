@@ -40,8 +40,9 @@ export default function DownloadPlayerBtn (props){
     useEffect(checkIfMobile);
 
     const googleAnalytics = () => {
-        window.gtag(props.gtag)
-        console.log(props.gtag)
+        window.gtag(this.props.gtagName, this.props.gtagClick,{
+            event_category: this.props.gtagCategory
+        })
     }
 
     const DownloadPlayerBtnDesctop = () => {
@@ -55,7 +56,8 @@ export default function DownloadPlayerBtn (props){
                     rel="noopener noreferrer"
                     onClick={
                         googleAnalytics
-                    }>
+                    }
+                    >
                         <span>{getLangText("GetPlayerButtonWindows")}</span>
                     </a>
                 }
