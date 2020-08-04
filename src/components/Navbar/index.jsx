@@ -160,14 +160,16 @@ export default class Navbar extends React.Component {
                 <nav className={navBarClass}>
 
                     <div className="sticky-bar">
-                        <div className="logo">
+                        <div className="logo"
+                          onClick={this.googleAnalytics("Logo click")}
+                        >
                             <Link
                                 to="./"
                                 className="logo-light"
                                 onClick={() => {
                                   this.closeMenu();
                                   this.showStartBtn();
-                                  this.googleAnalytics("Logo click")
+                                  
                                 }}
                                 // onClick={
                                 //   window.gtag("event", "Logo click", {
