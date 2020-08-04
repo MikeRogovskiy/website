@@ -265,21 +265,17 @@ export default class Navbar extends React.Component {
                                                 link={"player/"}
                                                 text={this.props.text.GetStartedButton}
                                                 id={"nav-btn"}
-                                                gtag={
-                                                  ("event", `Upper 'Free start' Click`, {
-                                                    event_category: "Landing B. Page"
-                                                  })
-                                                }
+                                                gtagName={"event"}
+                                                gtagClick={`Upper 'Free start' Click`}
+                                                gtagCategory={"Landing B. Page"}
                                             /> : this.state.startBtn  && !window.location.href.includes("landing") ?
                                             <StartBtn
                                                 link={"player/"}
                                                 text={this.props.text.GetStartedButton}
                                                 id={"nav-btn"}
-                                                gtag={
-                                                  ("event", `Free start click`, {
-                                                    event_category: "Landing. Navigation bar"
-                                                  })
-                                                }
+                                                gtagName={"event"}
+                                                gtagClick={"Free start click"}
+                                                gtagCategory={"Landing. Navigation bar"}
                                             /> : null
                                           }
                                         </li>
