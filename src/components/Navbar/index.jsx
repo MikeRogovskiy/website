@@ -159,11 +159,15 @@ export default class Navbar extends React.Component {
                             <Link
                                 to="./"
                                 className="logo-light"
-                                onClick={() => {this.closeMenu(); this.showStartBtn();
+                                onClick={() => {
+                                  this.closeMenu();
+                                  this.showStartBtn();
+                                }}
+                                onClick={
                                   window.gtag("event", "Logo click", {
-                                    event_category: "Landing. Navigation bar"
-                                  })}}
-                                
+                                  event_category: "Landing. Navigation bar"
+                                  })
+                                }
                             >
                                 EasyLang
                             </Link>
