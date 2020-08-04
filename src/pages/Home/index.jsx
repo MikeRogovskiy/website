@@ -229,7 +229,10 @@ export default class Home extends React.Component {
         </div>
 
         <footer className="get-started-footer">
-          <FooterNavBar text={this.props.text} page={this.state.page}/>
+          <FooterNavBar
+            text={this.props.text}
+            page={this.state.page}
+          />
         </footer>
       </div>
     );

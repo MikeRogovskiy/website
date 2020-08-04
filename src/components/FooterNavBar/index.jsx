@@ -35,7 +35,7 @@ export default class FooterNavBar extends Component {
             </button>
           </Link>
 
-          <Link to="/privacy">
+          <Link to="/">
             <button
               onClick={() =>
                 window.gtag("event", "Privacy Policy click", {
