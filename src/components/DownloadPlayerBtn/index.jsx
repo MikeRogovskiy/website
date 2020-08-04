@@ -39,6 +39,11 @@ export default function DownloadPlayerBtn (props){
 
     useEffect(checkIfMobile);
 
+    const googleAnalytics = () => {
+        window.gtag(props.gtag)
+        console.log(props.gtag)
+    }
+
     const DownloadPlayerBtnDesctop = () => {
         return(
             <div className="getStartedPlayer-button">
@@ -49,7 +54,7 @@ export default function DownloadPlayerBtn (props){
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={
-                        window.gtag(props.gtag)
+                        googleAnalytics
                     }>
                         <span>{getLangText("GetPlayerButtonWindows")}</span>
                     </a>
@@ -66,7 +71,7 @@ export default function DownloadPlayerBtn (props){
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={
-                            window.gtag(props.gtag)
+                            googleAnalytics
                         }>
                             <span>{getLangText("GetPlayerButtonMac")}</span>
                     </a>
@@ -90,7 +95,7 @@ export default function DownloadPlayerBtn (props){
                     props.updateProps(true);
                 }}
                 onClick={
-                    window.gtag(props.gtag)
+                    googleAnalytics
                 }
                 >
                     <span>{getLangText("GetPlayerButtonWindows")}</span>
@@ -110,7 +115,7 @@ export default function DownloadPlayerBtn (props){
                         props.updateProps(true);
                     }}
                     onClick={
-                        window.gtag(props.gtag)
+                        googleAnalytics
                     }
                 >
                     <span>{getLangText("GetPlayerButtonMac")}</span>
@@ -122,7 +127,6 @@ export default function DownloadPlayerBtn (props){
         </div>
         )
     };
-    // console.log(props.gtag)
 
     return (
         <div>

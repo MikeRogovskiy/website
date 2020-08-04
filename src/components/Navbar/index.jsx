@@ -58,7 +58,6 @@ export default class Navbar extends React.Component {
   };
 
   sideMenuSubscripting = () => {
-    console.log(window.innerWidth)
     if(window.innerWidth > 1024){
       this.setState({
         showMainMenu: true
@@ -111,6 +110,12 @@ export default class Navbar extends React.Component {
     };
   };
 
+  googleAnalytics = (value) => {
+    window.gtag("event", value, {
+      event_category: "Landing. Navigation bar"
+    })
+  }
+
   componentDidMount() {
     this.startBtnSubscripting();
     this.sideMenuSubscripting();
@@ -162,12 +167,13 @@ export default class Navbar extends React.Component {
                                 onClick={() => {
                                   this.closeMenu();
                                   this.showStartBtn();
+                                  this.googleAnalytics("Logo click")
                                 }}
-                                onClick={
-                                  window.gtag("event", "Logo click", {
-                                  event_category: "Landing. Navigation bar"
-                                  })
-                                }
+                                // onClick={
+                                //   window.gtag("event", "Logo click", {
+                                //   event_category: "Landing. Navigation bar"
+                                //   })
+                                // }
                             >
                                 EasyLang
                             </Link>
@@ -215,13 +221,14 @@ export default class Navbar extends React.Component {
                                                 className="menu-nav__link"
                                                 onClick={() => {
                                                   this.closeMenu();
-                                                  this.showStartBtn()
+                                                  this.showStartBtn();
+                                                  this.googleAnalytics("Watch & Learn click")
                                                 }}
-                                                onClick={ 
-                                                  window.gtag("event", "Watch & Learn click", {
-                                                  event_category: "Landing. Navigation bar"
-                                                  })
-                                                }
+                                                // onClick={ 
+                                                //   window.gtag("event", "Watch & Learn click", {
+                                                //   event_category: "Landing. Navigation bar"
+                                                //   })
+                                                // }
                                             >
                                                 {this.props.text.player}
                                             </Link>
@@ -232,13 +239,14 @@ export default class Navbar extends React.Component {
                                                 className="menu-nav__link"
                                                 onClick={() => {
                                                   this.closeMenu();
-                                                  this.showStartBtn()
+                                                  this.showStartBtn();
+                                                  this.googleAnalytics("Read & Learn click")
                                                 }}
-                                                onClick={
-                                                  window.gtag("event", "Read & Learn click", {
-                                                    event_category: "Landing. Navigation bar"
-                                                  })
-                                                }
+                                                // onClick={
+                                                //   window.gtag("event", "Read & Learn click", {
+                                                //     event_category: "Landing. Navigation bar"
+                                                //   })
+                                                // }
                                             >
                                                 {this.props.text.extension}
                                             </Link>
@@ -250,13 +258,14 @@ export default class Navbar extends React.Component {
                                               className="menu-nav__link"
                                               onClick={() => {
                                                 this.closeMenu();
-                                                this.showStartBtn()
+                                                this.showStartBtn();
+                                                this.googleAnalytics("Blog click")
                                               }}
-                                              onClick={
-                                                window.gtag("event", "Blog click", {
-                                                  event_category: "Landing. Navigation bar"
-                                                })
-                                              }
+                                              // onClick={
+                                              //   window.gtag("event", "Blog click", {
+                                              //     event_category: "Landing. Navigation bar"
+                                              //   })
+                                              // }
                                             >
                                             {this.props.text.ourBlog}
                                             </Link> : null
