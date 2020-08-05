@@ -51,25 +51,25 @@ export default class App extends React.Component {
 
         <Router>
           <ScrollToTop                  path="/">
-            <ArticlesPage               path="/reasons-to-study-english/" text={this.props.text.BlogPage}/>
-            <ArticlesPage               path="/start-learning-english-with-elang/" text={this.props.text.BlogPage}/>
-            <ArticlesPage               path="/free-english-learnings-apps/" text={this.props.text.BlogPage}/>
-            <Blog                       path="/blog/*" text={this.props.text.BlogPage}/>
-            <ContactUs                  path="/contact/" text={this.props.text.ContactUs}/>
+            <ArticlesPage               path="/reasons-to-study-english" text={this.props.text.BlogPage}/>
+            <ArticlesPage               path="/start-learning-english-with-elang" text={this.props.text.BlogPage}/>
+            <ArticlesPage               path="/free-english-learnings-apps" text={this.props.text.BlogPage}/>
+            <Blog                       path="/blog*" text={this.props.text.BlogPage}/>
+            <ContactUs                  path="/contact" text={this.props.text.ContactUs}/>
             <Home                       path="/" text={this.props.text.HomePage} />
-            <HomeB                      path="/B/" />
-            <HomeB                      path="/C/" />
+            <HomeB                      path="/B" />
+            <HomeB                      path="/C" />
             <Privacy                    path="/privacy" text={this.props.text} />
-            <Extension                  path="/extension/" text={this.props.text.ExtensionPage} lang={this.props.language} />
-            <ExtensionInstruction       path="/extension-instruction-static/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
-            <ExtensionInstruction       path="/extension-instruction/" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
-            <ExtensionInnerInstruction  path="/extension-inner-instruction/" />
-            <ExtenstionAdvertisement    path="/extension-advertisement/" />
-            <Player                     path="/player/" text={this.props.text.PlayerPage} />
-            <PlayerAnimation            path="/player-animation/" text={this.props.text.PlayerAnimation} />
-            <PlayerInstruction          path="player-instruction-youtube/" />
-            <PlayerInstruction          path="/instruction-youtube-desctop/" />
-            <Plans                      path="/plans/" text={this.props.text.PlansPage} />
+            <Extension                  path="/extension" text={this.props.text.ExtensionPage} lang={this.props.language} />
+            <ExtensionInstruction       path="/extension-instruction-static" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
+            <ExtensionInstruction       path="/extension-instruction" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
+            <ExtensionInnerInstruction  path="/extension-inner-instruction" />
+            <ExtenstionAdvertisement    path="/extension-advertisement" />
+            <Player                     path="/player" text={this.props.text.PlayerPage} />
+            <PlayerAnimation            path="/player-animation" text={this.props.text.PlayerAnimation} />
+            <PlayerInstruction          path="player-instruction-youtube" />
+            <PlayerInstruction          path="/instruction-youtube-desctop" />
+            <Plans                      path="/plans" text={this.props.text.PlansPage} />
             <NotFound                   path="*" text={this.props.text.NotFoundPage} />
             <_AppB                      path="/landing" text={this.props.text.Landing} />
           </ScrollToTop>

@@ -5,5 +5,16 @@
     @include centralRowFlexPositionHWHundred;
     &_container{
         @include centralRowFlexPositionHWHundred;
+        padding-top: 20px;
+        &_text{
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            flex-direction: column;
+            width: 50vw;
+        }
+        &_map{
+            width: 50vw;
+        }
     }
 }
