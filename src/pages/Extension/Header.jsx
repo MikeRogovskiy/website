@@ -1,6 +1,6 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
-import LoadExtensionBtn from "../../components/LoadExtensionBtn";
+import LoadExtensionBtn from "../../components/Buttons/LoadExtensionBtn";
 
 import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
 

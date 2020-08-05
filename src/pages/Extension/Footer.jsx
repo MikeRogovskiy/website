@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
-import LoadExtensionBtn from "../../components/LoadExtensionBtn";
+import LoadExtensionBtn from "../../components/Buttons/LoadExtensionBtn";
 import FooterNavBar from "../../components/FooterNavBar";
 
 import "./Extension.scss";

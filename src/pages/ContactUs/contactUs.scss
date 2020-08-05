@@ -3,18 +3,18 @@
 
 .contact-us{
     @include centralRowFlexPositionHWHundred;
+    flex-direction: column;
     &_container{
-        @include centralRowFlexPositionHWHundred;
+        @include centralJustifyFlex;
+        @include wHHundred;
         padding-top: 20px;
         &_text{
             display: flex;
-            justify-content: center;
-            // align-items: center;
             flex-direction: column;
-            width: 50vw;
+            padding: 0px 3vw;
         }
         &_map{
-            width: 50vw;
+            padding: 0px 3vw;
         }
     }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
+import chromeStoreSvg from "../../../assets/images/home/chromeStore.svg";
 import "./LoadExtensionBtn.scss";
 
 export default function LoadExtensionBtn (props){
@@ -10,14 +10,10 @@ export default function LoadExtensionBtn (props){
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
-                // onClick={()=>{
-                //     window.gtag(props.gtag)
-                // }}
                 onClick={()=>{window.gtag(props.gtagName, props.gtagClick,{
                     event_category: props.gtagCategory
                 })
                 }}
-                
             >
                 <span className="button-chrome-wrapper">
                     <img

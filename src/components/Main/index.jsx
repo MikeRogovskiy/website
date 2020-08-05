@@ -48,6 +48,7 @@ export default class App extends React.Component {
           noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
             (u) => this.props.location.pathname.match(u) !== null
           )}
+          location={this.props.location}
         ></Navbar>
 
         <Router>

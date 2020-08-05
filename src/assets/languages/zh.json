@@ -93,7 +93,11 @@
     "email": "support@easylang.app",
     "phone": "+375 29 767-3525",
     "title2": "WRITE TO US",
-    "text1": "Your questions and special requests are always welcome."
+    "text1": "Your questions and special requests are always welcome.",
+
+    "PrivacyPolicy": "Privacy Policy",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
   },
 
   "FooterNavBar": {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import MobilePopUp from "../../components/MobilePopUp";
-import DonwloadPlayerBtn from "../../components/DownloadPlayerBtn";
+import DonwloadPlayerBtn from "../../components/Buttons/DownloadPlayerBtn";
 
 import "./Player.scss";
 

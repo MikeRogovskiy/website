@@ -10,7 +10,7 @@ import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
 import puzzle from "../../assets/images/home/puzzle.svg";
 import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
-import LoadExtensionBtn from "../../components/LoadExtensionBtn";
+import LoadExtensionBtn from "../../components/Buttons/LoadExtensionBtn";
 
 import ChatBotSimple from "../../components/ChatBotSimple";
 import FooterNavBar from "../../components/FooterNavBar";
@@ -96,11 +96,6 @@ export default class Home extends React.Component {
           gtagName={"event"}
           gtagClick={"Chat Bot click"}
           gtagCategory={"Landing. Main screen"}
-          //  gtag={
-          //   ("event", "Chat Bot click", {
-          //     event_category: "Landing. Main screen"
-          //   })
-          // }
         />
         <header className="hero">
           <div className="wrapper-hero">
@@ -163,11 +158,6 @@ export default class Home extends React.Component {
                     gtagName={"event"}
                     gtagClick={"Extension Store click"}
                     gtagCategory={"Landing. Main screen"}
-                    // gtag={
-                    //   ("event", "Extension Store click", {
-                    //     event_category: "Landing. Main screen"
-                    //   })
-                    // }
                     text={this.props.text.GetStartedButton}
                   />
                 </div>

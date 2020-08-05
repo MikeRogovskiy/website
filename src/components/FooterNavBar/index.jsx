@@ -100,7 +100,7 @@ export default class FooterNavBar extends Component {
   render() {
     return (
       <div id="footer-nav-bar">
-        {this.props.page === "landing" ?
+        {this.props.page === "landing"  ?
           <div className="footer-nav-bar_links" id="landing-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>
@@ -108,7 +108,7 @@ export default class FooterNavBar extends Component {
           <div className="footer-nav-bar_links" id="landing-b-footer-nav-bar">
             {this.state.footerNavBarContentB}
           </div>
-          : this.props.page === "blog" || "extension" ?
+          : this.props.page === "blog" || "extension" || "contact" ?
           <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>

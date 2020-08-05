@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState }from "react";
 import ReactHtmlParser from "react-html-parser";
-import SimpleMap from "../../components/SimpleMap";
+import FooterNavBar from "../../components/FooterNavBar"
 import "./contactUs.scss";
 
 export default function ContactUs(props){
+    const [page, setPage] = useState("contact");
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
@@ -23,9 +24,24 @@ export default function ContactUs(props){
                     <p>{getLangText("text1")}</p>
                 </div>
                 <div className="contact-us_container_map">
-                    <SimpleMap />
+                    <iframe
+                        width="520"
+                        height="400"
+                        frameborder="0"
+                        scrolling="yes"
+                        marginheight="0"
+                        marginwidth="0"
+                        id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=vulica%20Talbuchina%202,%20Minsk%20Minsk+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe>
                 </div>
             </div>
+            <footer className="getStarted-footer">
+                <FooterNavBar 
+                    text={props.text}
+                    page={page}
+                />
+            </footer>
         </div>
     )
 }
