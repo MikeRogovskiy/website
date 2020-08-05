@@ -28,11 +28,12 @@ export default class App extends React.Component {
 
   render() {
     if (typeof window.gtag === "function") {
+      const searchText = this.props.location.search.text || "";
       window.gtag("config", "UA-4027447-9", {
         page_title: document.title,
         page_location: this.props.location.href,
         page_path:
-          this.props.location.pathname + this.props.location.search.text,
+          this.props.location.pathname + searchText,
       });
     }
 
