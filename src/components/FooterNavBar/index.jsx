@@ -49,6 +49,47 @@ export default class FooterNavBar extends Component {
           <Footer />
         </div>
       ),
+
+      footerNavBarContentB: (
+        <div id="footer-nav-bar_content">
+          <Link 
+            to="/"
+            onClick={()=> {
+              window.gtag("event", "Contact Us click", {
+                event_category: "Landing B. Footer",
+              })
+            }}>
+            <button>
+              {this.getLangText("ContactUs")}
+            </button>
+          </Link>
+
+          <Link 
+            to="/"
+            onClick={()=>{
+              window.gtag("event", "About Us click", {
+                event_category: "Landing B. Footer",
+              })
+            }}>
+            <button>
+              {this.getLangText("AboutUs")}
+            </button>
+          </Link>
+
+          <Link 
+            to="/privacy"
+            onClick={()=> {
+              window.gtag("event", "Privacy Policy click", {
+                event_category: "Landing B. Footer",
+              })
+            }}>
+            <button>
+              {this.getLangText("PrivacyPolicy")}
+            </button>
+          </Link>
+          <Footer />
+        </div>
+      )
     };
   }
 
@@ -65,7 +106,7 @@ export default class FooterNavBar extends Component {
           </div>
           : this.props.page === "landingB" ?
           <div className="footer-nav-bar_links" id="landing-b-footer-nav-bar">
-            {this.state.footerNavBarContent}
+            {this.state.footerNavBarContentB}
           </div>
           : this.props.page === "blog" || "extension" ?
           <div className="footer-nav-bar_links" id="extension-footer-nav-bar">

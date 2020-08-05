@@ -45,10 +45,9 @@ export default class ChatBotSimple extends Component {
             {this.state.on === false && (
               <button
                 onClick={() => {
-                  // window.gtag(this.props.gtag);
-                  {window.gtag(this.props.gtagName, this.props.gtagClick,{
-                    event_category: this.props.gtagCategory
-                  })}
+                  window.gtag(this.props.gtagName, this.props.gtagClick,{
+                  event_category: this.props.gtagCategory
+                  })
                   this.appearBot();
                 }}
               >

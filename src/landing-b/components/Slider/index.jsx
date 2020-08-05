@@ -10,41 +10,49 @@ import nextArrow from "../../assets/nextArrow.svg";
 import prevArrow from "../../assets/prevArrow.svg";
 import ReactHtmlParser from "react-html-parser";
 
+function googleAnalytics(event, click, category){
+  window.gtag(event, click, {
+    event_category: category
+  })
+}
+
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <img
-      src={nextArrow}
-      id="carousel-right"
-      alt="arrow next"
-      onClick={()=> {
-        window.gtag ("event", `Reviews left click`, {
-          event_category: "Landing B. Page"
-        })
-      }}
+    <div
       onClick={
         onClick
       }
-    />
+    >
+      <img
+        src={nextArrow}
+        id="carousel-right"
+        alt="arrow next"
+        onClick={() => {
+          googleAnalytics("event", "Reviews right click", "Landing B. Page")
+        }}
+      />
+    </div>
   );
 }
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <img
-      src={prevArrow}
-      id="carousel-left"
-      alt="arrow previous"
-      onClick={()=>{
-        window.gtag ("event", `Reviews right click`, {
-          event_category: "Landing B. Page"
-        })
-      }}
+    <div
       onClick={
         onClick
       }
-    />
+    >
+      <img
+        src={prevArrow}
+        id="carousel-left"
+        alt="arrow previous"
+        onClick={() => {
+          googleAnalytics("event", "Reviews left click", "Landing B. Page")
+        }}
+      />
+    </div>
   );
 }
 

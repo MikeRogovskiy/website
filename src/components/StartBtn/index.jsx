@@ -12,10 +12,11 @@ export default class StartBtn extends React.Component {
         return (
             <div id="list-for-start-btn">
                 <Link
-                    onClick={()=>{window.gtag(this.props.gtagName, this.props.gtagClick,{
+                    onClick={()=>{
+                        window.gtag(this.props.gtagName, this.props.gtagClick,{
                         event_category: this.props.gtagCategory
-                    })
-                    }}
+                        })}
+                    }
                     to={this.props.link}
                     rel="noopener noreferrer"
                     id={this.props.id}
