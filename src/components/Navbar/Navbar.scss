@@ -59,6 +59,7 @@
 .no-fixed-bar {
     animation: showMenu2 0.3s ease-in-out;
     display: flex;
+    position: fixed;
     background: linear-gradient(180deg, #17365F -12.16%, #254F7E 200%) !important;
 };
 

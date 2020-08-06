@@ -1,7 +1,10 @@
 import React, { useState }from "react";
 import ReactHtmlParser from "react-html-parser";
-import FooterNavBar from "../../components/FooterNavBar"
+import FooterNavBar from "../../components/FooterNavBar";
+import email from "../../assets/images/contact/email.png";
+import call from "../../assets/images/contact/call.svg";
 import "./contactUs.scss";
+import "./contactUsMedia.scss";
 
 export default function ContactUs(props){
     const [page, setPage] = useState("contact");
@@ -14,19 +17,35 @@ export default function ContactUs(props){
         <div className="contact-us">
             <div className="contact-us_container">
                 <div className="contact-us_container_text">
-                    <h2>{getLangText("title1")}</h2>
-                    <p>{getLangText("theName")}</p>
-                    <p>{getLangText("index")}</p>
-                    <p>{getLangText("adress")}</p>
-                    <p>{getLangText("email")}</p>
-                    <p><a href="tel:+375 29 767-35-25">{getLangText("phone")}</a></p>
+                    <div classNmae="contact-us_container_text_block">
+                        <h2>{getLangText("title1")}</h2>
+                        <p>{getLangText("theName")}</p>
+                        <p>{getLangText("index")}</p>
+                        <p>{getLangText("adress")}</p>
+                    </div>
+
+                    <div className="contact-us_container_text_links">
+
+                        <div className="contact-us_container_text_links_animation">
+                            <a className="imageLink" href="mailto:support@easylang.app">
+                                <img src={email}/>
+                            </a>
+                            <a  className="textAppear" href="mailto:support@easylang.app">{getLangText("email")}</a>
+                        </div>
+
+                        <div className="contact-us_container_text_links_animation">
+                            <a className="imageLink" href="tel:+375 29 767-35-25">
+                                <img src={call}/>
+                            </a>
+                            <a  className="textAppear" href="tel:+375 29 767-35-25">{getLangText("phone")}</a>
+                        </div>
+
+                    </div>
                     <h2>{getLangText("title2")}</h2>
                     <p>{getLangText("text1")}</p>
                 </div>
                 <div className="contact-us_container_map">
                     <iframe
-                        width="520"
-                        height="400"
                         frameborder="0"
                         scrolling="yes"
                         marginheight="0"
@@ -37,7 +56,7 @@ export default function ContactUs(props){
                 </div>
             </div>
             <footer className="getStarted-footer">
-                <FooterNavBar 
+                <FooterNavBar
                     text={props.text}
                     page={page}
                 />

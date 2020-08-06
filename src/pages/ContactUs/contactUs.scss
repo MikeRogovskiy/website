@@ -2,19 +2,78 @@
 @import "../../styles/mixins";
 
 .contact-us{
-    @include centralRowFlexPositionHWHundred;
+    @include centralFlexPosition;
     flex-direction: column;
+    width: 100%;
+    height: 100vh;
     &_container{
-        @include centralJustifyFlex;
-        @include wHHundred;
-        padding-top: 20px;
+        @include centralFlexPosition;
+        margin-top: 200px;
+        height: 80vh;
         &_text{
             display: flex;
             flex-direction: column;
             padding: 0px 3vw;
+            &_links{
+                display: flex;
+                flex-direction: column;
+                transition: all .3s ease;
+
+                a{
+                    padding-left: 10px;
+                    text-align: left;
+                    color: $textColor;
+                    font-size: 1.5rem;
+                };
+                &_animation{
+                    display: inline-flex;
+                    align-items: center;
+
+                    .textAppear{
+                        opacity: 0;
+                        margin-left: -30%;
+                    };
+
+                    .imageLink img{
+                        @include buttonCorrect;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 50px;
+                        height: 50px;
+                        transition: all .3s ease;
+                    };
+                };
+                &_animation:hover > .textAppear{
+                    opacity: 1;
+                    margin-left: 0%;
+                    transition: all .3s ease;
+                };
+                &_animation:hover > .imageLink img{
+                    width: 60px;
+                    height: 60px;
+                    transition: all .3s ease;
+                };
+
+            };
+
+            h2{
+                font-size: 3rem;
+            };
+
+            p{
+                font-size: 1.5rem;
+            };
+
         }
         &_map{
             padding: 0px 3vw;
-        }
-    }
-}
+
+            iframe{
+                width: 520px;
+                height: 400px;
+            };
+
+        };
+    };
+};
