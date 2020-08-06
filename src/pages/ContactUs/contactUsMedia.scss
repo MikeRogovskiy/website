@@ -4,7 +4,7 @@
         &_container{
             flex-direction: column;
             align-items: flex-start;
-            width: 70vw;
+            // width: 70vw;
             &_text{
                 padding: 0;
                 h2{
@@ -17,6 +17,7 @@
 
             };
             &_map{
+                margin-top: 300px;
                 padding: 5% 0;
 
                 iframe{
