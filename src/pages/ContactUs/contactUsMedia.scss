@@ -4,6 +4,7 @@
         &_container{
             flex-direction: column;
             align-items: flex-start;
+            margin-top: 100px;
             // width: 70vw;
             &_text{
                 padding: 0;
@@ -17,7 +18,6 @@
 
             };
             &_map{
-                margin-top: 300px;
                 padding: 5% 0;
 
                 iframe{
@@ -33,7 +33,8 @@
 @media screen and (max-width: 610px){
     .contact-us{
         &_container{
-            margin-top: 250px;
+            text-align: center;
+            align-items: center;
         };
     };
 };
