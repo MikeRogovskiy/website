@@ -1,11 +1,9 @@
 @media screen and (max-width: 1024px){
     .contact-us{
-        // height: 800px;
         &_container{
             flex-direction: column;
             align-items: flex-start;
             margin-top: 100px;
-            // width: 70vw;
             &_text{
                 padding: 0;
                 h2{
@@ -35,7 +33,16 @@
         &_container{
             text-align: center;
             align-items: center;
+            &_text{
+                &_links{
+                    a{
+                        padding-left: 10%;
+                    }
+                }
+            }
         };
+       
+      
     };
 };
 
