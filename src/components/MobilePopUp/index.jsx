@@ -6,7 +6,6 @@ import brainNPhone from "../../assets/images/player/brainAndPhone.svg"
 export default function MobilePopUp(props){
     const [bgColor, setBgColor] = useState("#DADCE5");
     const [color, setColor] = useState("#8A8D99");
-    // const [popUpAlign, setPopUpAlign] = useState("central");
     
     const checkInputValidity = () => {
         if(document.querySelector("#email-input").validity.valid){
@@ -18,44 +17,10 @@ export default function MobilePopUp(props){
         }
     };
 
-    // const hidePopUp = (data) => {
-    //     props.passPopUpState(data)
-    // };
-
-    // let currentPercentageScroll = 0;
-    // const calculatePercantages = () => {
-
-    //     function calculatePercenteges(percentages){
-    //       let p = percentages.parentNode;
-    //         currentPercentageScroll = (percentages.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
-    //       return  Math.round(currentPercentageScroll);
-    //     };
-    //     calculatePercenteges(document.body);
-        
-    //     console.log(currentPercentageScroll)
-        
-    //     if(currentPercentageScroll < 0.003){
-    //         console.log("<")
-    //         setPopUpMargin("5vh")
-    //     } else if (currentPercentageScroll > 1){
-    //         console.log(">=")
-    //         setPopUpMargin("0vh")
-    //     }
-    // };
-
-    // window.addEventListener('scroll', function() {
-    //     console.log(window.pageYOffset + 'px');
-    // });
-
-    // window.onscroll = window.pageYOffset = 0 ? setPopUpAlign("none") : null;
-
     return(
         <div id="mobile-pop-up">
-            <div className="pop-up_container"
-                // style={{
-                //     alignItems: popUpAlign
-                // }}
-            >
+            <div className="pop-up_container">
+
                 <div className="pop-up_container_content">
                     <div className="pop-up_container_content_header">
                         <div className="pop-up_container_content_header_close">
