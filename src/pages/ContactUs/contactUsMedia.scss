@@ -1,11 +1,10 @@
 @media screen and (max-width: 1024px){
     .contact-us{
-        height: 800px;
+        // height: 800px;
         &_container{
             flex-direction: column;
             align-items: flex-start;
             width: 70vw;
-            // margin: 0px;
             &_text{
                 padding: 0;
                 h2{
@@ -30,6 +29,14 @@
     };
 };
 
+@media screen and (max-width: 610px){
+    .contact-us{
+        &_container{
+            margin-top: 250px;
+        };
+    };
+};
+
 @media screen and (max-width: 400px){
     .contact-us{
         &_container{
@@ -38,3 +45,4 @@
         };
     };
 };
+
