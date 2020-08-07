@@ -19,7 +19,8 @@ import {
   Privacy,
   _AppB,
   ArticlesPage,
-  ContactUs
+  ContactUs,
+  AboutUs
 } from "../../pages";
 
 
@@ -53,6 +54,7 @@ export default class App extends React.Component {
 
         <Router>
           <ScrollToTop                  path="/">
+            <AboutUs                    path="about" text={this.props.text.AboutUs}/>
             <ArticlesPage               path="/reasons-to-study-english" text={this.props.text.BlogPage}/>
             <ArticlesPage               path="/start-learning-english-with-elang" text={this.props.text.BlogPage}/>
             <ArticlesPage               path="/free-english-learnings-apps" text={this.props.text.BlogPage}/>

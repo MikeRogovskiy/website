@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.about-us{
+    @include centralFlexPosition;
+    flex-direction: column;
+    width: 100%;
+    &_container{
+        @include centralFlexPosition;
+        max-width: 1400px;
+        flex-direction: column;
+        margin-top: 100px;
+
+        h2{
+            padding-top: 3%;
+        }
+        &_head{
+
+            p{
+                margin: 0;
+                text-indent: 3vw;
+            }
+
+        }
+        &_main{
+            p{
+                margin: 0;
+            }
+            p:nth-child(2), p:nth-child(4){
+                text-indent: 3vw;
+            }
+
+            p:nth-child(4){
+                padding-top: 3%;
+            }
+
+            ul li{
+                padding-left: 3%;
+            }
+
+        }
+        &_footer{
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            img{
+                width: 50px;
+                height: 50px;
+            };
+
+        }
+    }
+}

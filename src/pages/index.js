@@ -20,3 +20,4 @@ export { default as Plans } from "./Plans";
 export { default as _AppB } from "./_AppB";
 export { default as ArticlesPage } from "./BlogArticlesFolder";
 export { default as ContactUs } from "./ContactUs";
+export { default as AboutUs } from "./AboutUs";
