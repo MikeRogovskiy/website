@@ -1,5 +1,17 @@
 @media screen and (max-width: 850px){
     h2{
         font-size: 15px;
+        // font-size: 0.8em;
     };
+
+    .blog-content{
+        &_container{
+            img{
+                width: 40%;
+            };
+            #blog-content_container_a, #blog-content_container_b, #blog-content_container_c{
+                height: 20vh;
+            }
+        }
+    }
 };

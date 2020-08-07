@@ -18,7 +18,9 @@ export default function MobilePopUp(props){
     };
 
     return(
+        
         <div id="mobile-pop-up">
+
             <div className="pop-up_container">
 
                 <div className="pop-up_container_content">
@@ -35,7 +37,9 @@ export default function MobilePopUp(props){
                         <h3>Для компьютера <br/><span>eLang</span> <span>Player</span><br/> доступен сейчас</h3>
 
                         <div className="pop-up_container_content_main_inputs">
-                            <form>
+                            <form 
+                                method="POST" 
+                            >
                                 <input
                                     type="email"
                                     placeholder="Email"
@@ -51,6 +55,9 @@ export default function MobilePopUp(props){
                                         backgroundColor: bgColor,
                                         color: color
                                     }} />
+
+
+
                             </form>
                         </div>
 
