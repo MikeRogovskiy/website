@@ -15,41 +15,41 @@ export default function Main(props) {
 
   useEffect(() => {
     const handleHead = () => {
-      if(window.innerWidth <= 1024){
+      if (window.innerWidth <= 1024) {
         setConditionMobile(true);
         setConditionDesctop(false);
       } else {
         setConditionMobile(false);
         setConditionDesctop(true);
       }
-
-    }
+    };
     window.addEventListener("load", handleHead);
     window.addEventListener("resize", handleHead);
   });
 
   const DesctopHead = () => {
-    if(conditionDesctop){
-      return(<img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>)
+    if (conditionDesctop) {
+      return (
+        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>
+      );
     } else {
-      return null
-    };
+      return null;
+    }
   };
 
   const MobileHead = () => {
-    if(conditionMobile){
-      return(<img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>)
+    if (conditionMobile) {
+      return (
+        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>
+      );
     } else {
-      return null
-    };
+      return null;
+    }
   };
 
   const href =
-    "http://easylang.app/downloads/eLang_Player_-_Learn_English_" +
-      navigator.platform.indexOf("Win") >
-    -1
-      ? "http://easylang.app/downloads/eLang_Player_-_Learn_English_win_prod.exe"
-      : "http://easylang.app/downloads/eLang_Player_-_Learn_English_mac_prod.dmg";
+    "https://easylang.app/downloads/eLang_Player_-_Learn_English_" +
+    (navigator.platform.indexOf("Win") > -1 ? "win_prod.exe" : "mac_prod.dmg");
 
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
@@ -57,41 +57,41 @@ export default function Main(props) {
   const navigateTo = useNavigate();
 
   const updateProps = (value) => {
-    setPopUp(value)
+    setPopUp(value);
   };
 
   return (
     <div>
-      {popUp ? <MobilePopUp updateProps={updateProps}/> : null}
+      {popUp ? <MobilePopUp updateProps={updateProps} /> : null}
       <section className="relax" id="relax">
-          <div className="relax-title">
-            <p className="easy-way">{getLangText("Title")}</p>
-            <p className="relax-sub">{getLangText("SubTitle")}</p>
-            <MobileHead />
-            
-            <button
-              className="download"
-              style={{ borderRadius: "15px"}}
-              onClick={() => {
-                navigateTo("/player");
-                window.gtag ("event", `main "Free Start" click`, {
-                    event_category: "Landing B. Page"
-                  })
-              }}
-            >
-              {getLangText("FreeStart")}
-            </button>
-          </div>
-          <DesctopHead />
-          
-        </section>
+        <div className="relax-title">
+          <p className="easy-way">{getLangText("Title")}</p>
+          <p className="relax-sub">{getLangText("SubTitle")}</p>
+          <MobileHead />
+
+          <button
+            className="download"
+            style={{ borderRadius: "15px" }}
+            onClick={() => {
+              navigateTo("/player");
+              window.gtag("event", `main "Free Start" click`, {
+                event_category: "Landing B. Page",
+              });
+            }}
+          >
+            {getLangText("FreeStart")}
+          </button>
+        </div>
+        <DesctopHead />
+      </section>
       <section className="options">
         <div className="options-row-first">
-          <div className="options-item"
+          <div
+            className="options-item"
             onClick={() => {
-              window.gtag ("event", `Listen' click`, {
-                  event_category: "Landing B. Page"
-                })
+              window.gtag("event", `Listen' click`, {
+                event_category: "Landing B. Page",
+              });
             }}
           >
             <p className="easy-way">
@@ -104,11 +104,12 @@ export default function Main(props) {
             </p>
             <span className="relax-sub">{getLangText("ListenDescrip")}</span>
           </div>
-          <div className="options-item"
+          <div
+            className="options-item"
             onClick={() => {
-              window.gtag ("event", `Navigate' click`, {
-                  event_category: "Landing B. Page"
-                })
+              window.gtag("event", `Navigate' click`, {
+                event_category: "Landing B. Page",
+              });
             }}
           >
             <p className="easy-way">
@@ -121,11 +122,12 @@ export default function Main(props) {
             </p>
             <span className="relax-sub">{getLangText("NavigateDescrip")}</span>
           </div>
-          <div className="options-item"
+          <div
+            className="options-item"
             onClick={() => {
-              window.gtag ("event", `Play' click`, {
-                  event_category: "Landing B. Page"
-                })
+              window.gtag("event", `Play' click`, {
+                event_category: "Landing B. Page",
+              });
             }}
           >
             <p className="easy-way">
@@ -140,14 +142,15 @@ export default function Main(props) {
           </div>
         </div>
         <div className="options-row-second">
-          <div className="options-item" 
-            style={{ 
-              marginRight: "10px" 
+          <div
+            className="options-item"
+            style={{
+              marginRight: "10px",
             }}
             onClick={() => {
-              window.gtag ("event", `Train' click`, {
-                  event_category: "Landing B. Page"
-                })
+              window.gtag("event", `Train' click`, {
+                event_category: "Landing B. Page",
+              });
             }}
           >
             <p className="easy-way">
@@ -160,14 +163,15 @@ export default function Main(props) {
             </p>
             <span className="relax-sub">{getLangText("TrainDescrip")}</span>
           </div>
-          <div className="options-item"
+          <div
+            className="options-item"
             style={{
-              marginLeft: "10px"
+              marginLeft: "10px",
             }}
             onClick={() => {
-              window.gtag ("event", `Understand' click`, {
-                  event_category: "Landing B. Page"
-              })
+              window.gtag("event", `Understand' click`, {
+                event_category: "Landing B. Page",
+              });
             }}
           >
             <p className="easy-way">
@@ -217,34 +221,31 @@ export default function Main(props) {
             <span> {getLangText("PlayerDescrip1")} </span>
             <br /> <span>{getLangText("PlayerDescrip2")}</span>
           </p>
-
-          {conditionDesctop ?
-
-           <button
-            className="download"
-            onClick={() => {
-              window.open(href);
-              window.gtag("event", "Add Player' click", {
-                event_category: "Landing B. Page",
-              });
-            }}
-          >
-           {getLangText("Download")}
-         </button>
-          :
-          <button
-            className="download"
-            onClick={() => {
-              setPopUp(true);
-              window.gtag("event", "Add Player' click", {
-                event_category: "Landing B. Page",
-              });
-            }}
-          >
-           {getLangText("Download")}
-         </button>
-
-          }
+          {conditionDesctop ? (
+            <button
+              className="download"
+              onClick={() => {
+                window.open(href);
+                window.gtag("event", "Add Player' click", {
+                  event_category: "Landing B. Page",
+                });
+              }}
+            >
+              {getLangText("Download")}
+            </button>
+          ) : (
+            <button
+              className="download"
+              onClick={() => {
+                setPopUp(true);
+                window.gtag("event", "Add Player' click", {
+                  event_category: "Landing B. Page",
+                });
+              }}
+            >
+              {getLangText("Download")}
+            </button>
+          )}
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />
@@ -268,7 +269,6 @@ export default function Main(props) {
           </button>
         </div>
       </section>
-      
     </div>
   );
 }
