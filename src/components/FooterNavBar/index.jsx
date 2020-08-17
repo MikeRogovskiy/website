@@ -11,40 +11,37 @@ export default class FooterNavBar extends Component {
     this.state = {
       footerNavBarContent: (
         <div id="footer-nav-bar_content">
-          <Link 
+          <Link
             to="/contact"
-            onClick={()=> {
+            onClick={() => {
               window.gtag("event", "Contact Us click", {
                 event_category: "Landing. Footer",
-              })
-            }}>
-            <button>
-              {this.getLangText("ContactUs")}
-            </button>
+              });
+            }}
+          >
+            <button>{this.getLangText("ContactUs")}</button>
           </Link>
 
-          <Link 
-            to="/"
-            onClick={()=>{
+          <Link
+            to="/about"
+            onClick={() => {
               window.gtag("event", "About Us click", {
                 event_category: "Landing. Footer",
-              })
-            }}>
-            <button>
-              {this.getLangText("AboutUs")}
-            </button>
+              });
+            }}
+          >
+            <button>{this.getLangText("AboutUs")}</button>
           </Link>
 
-          <Link 
+          <Link
             to="/privacy"
-            onClick={()=> {
+            onClick={() => {
               window.gtag("event", "Privacy Policy click", {
                 event_category: "Landing. Footer",
-              })
-            }}>
-            <button>
-              {this.getLangText("PrivacyPolicy")}
-            </button>
+              });
+            }}
+          >
+            <button>{this.getLangText("PrivacyPolicy")}</button>
           </Link>
           <Footer />
         </div>
@@ -52,72 +49,69 @@ export default class FooterNavBar extends Component {
 
       footerNavBarContentB: (
         <div id="footer-nav-bar_content">
-          <Link 
+          <Link
             to="/contact"
-            onClick={()=> {
+            onClick={() => {
               window.gtag("event", "Contact Us click", {
                 event_category: "Landing B. Footer",
-              })
-            }}>
-            <button>
-              {this.getLangText("ContactUs")}
-            </button>
+              });
+            }}
+          >
+            <button>{this.getLangText("ContactUs")}</button>
           </Link>
 
-          <Link 
+          <Link
             to="/"
-            onClick={()=>{
+            onClick={() => {
               window.gtag("event", "About Us click", {
                 event_category: "Landing B. Footer",
-              })
-            }}>
-            <button>
-              {this.getLangText("AboutUs")}
-            </button>
+              });
+            }}
+          >
+            <button>{this.getLangText("AboutUs")}</button>
           </Link>
 
-          <Link 
+          <Link
             to="/privacy"
-            onClick={()=> {
+            onClick={() => {
               window.gtag("event", "Privacy Policy click", {
                 event_category: "Landing B. Footer",
-              })
-            }}>
-            <button>
-              {this.getLangText("PrivacyPolicy")}
-            </button>
+              });
+            }}
+          >
+            <button>{this.getLangText("PrivacyPolicy")}</button>
           </Link>
           <Footer />
         </div>
-      )
+      ),
     };
   }
 
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
-  };
+  }
 
   render() {
     return (
       <div id="footer-nav-bar">
-        {this.props.page === "landing"  ?
+        {this.props.page === "landing" ? (
           <div className="footer-nav-bar_links" id="landing-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>
-          : this.props.page === "landingB" ?
+        ) : this.props.page === "landingB" ? (
           <div className="footer-nav-bar_links" id="landing-b-footer-nav-bar">
             {this.state.footerNavBarContentB}
           </div>
-          : this.props.page === "blog" || "extension" || "contact" ?
+        ) : this.props.page === "blog" || "extension" || "contact" ? (
           <div className="footer-nav-bar_links" id="extension-footer-nav-bar">
             {this.state.footerNavBarContent}
           </div>
-          : this.props.page === "player" ?
+        ) : this.props.page === "player" ? (
           <div className="footer-nav-bar_links" id="player-footer-nav-bar">
-          {this.state.footerNavBarContent}
-        </div> : null
-        }
+            {this.state.footerNavBarContent}
+          </div>
+        ) : null}
       </div>
     );
-  };
-};
+  }
+}
