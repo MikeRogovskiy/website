@@ -7,15 +7,33 @@ import brainNPhone from "../../assets/images/player/Brain.png"
 export default function MobilePopUp(props){
     const [bgColor, setBgColor] = useState("#DADCE5");
     const [color, setColor] = useState("#8A8D99");
+    const [email, setEmail] = useState('');
     
-    const checkInputValidity = () => {
+    const checkInputValidity = (event) => {
         if(document.querySelector("#email-input").validity.valid){
             setBgColor("#637CF2");
             setColor("#FFFFFF");
+            setEmail(event.target.value);
         } else {
             setBgColor("#DADCE5");
             setColor("#8A8D99");
         }
+    };
+
+    const sendUserEmail = (event) => {
+        fetch('http://localhost:3000/api/utility/add_user', {
+            method: 'POST',
+            mode: 'cors',
+            body: JSON.stringify({
+                userEmail: email,
+                userAgent: navigator.userAgent
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(res => console.log(res));
+        event.preventDefault();
+        props.updateProps(false);
     };
 
     return(
@@ -39,14 +57,15 @@ export default function MobilePopUp(props){
 
                         <div className="pop-up_container_content_main_inputs">
                             <form 
-                                method="POST" 
+                                method="POST"
+                                onSubmit={sendUserEmail}
                             >
                                 <input
                                     type="email"
                                     placeholder="Email"
                                     id="email-input"
                                     pattern="[^ @]*@[^ @]*"
-                                    onChange={() => {checkInputValidity()}}
+                                    onChange={checkInputValidity}
                                     required />
                                 <input
                                     type="submit"
@@ -56,9 +75,6 @@ export default function MobilePopUp(props){
                                         backgroundColor: bgColor,
                                         color: color
                                     }} />
-
-
-
                             </form>
                         </div>
 
