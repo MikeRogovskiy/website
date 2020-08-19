@@ -1,6 +1,6 @@
 import React, { useState }from "react";
 import ReactHtmlParser from "react-html-parser";
-import facebook from "../../assets/images/about/fb.svg";
+import facebook from "../../assets/images/about/Facebook-01.svg";
 import vkontakte from "../../assets/images/about/vk.svg";
 import instagram from "../../assets/images/about/instagram.svg";
 import "./aboutUs.scss";

@@ -36,12 +36,13 @@
 
             ul li{
                 padding-left: 3%;
+                font-size: 1.2rem;
             }
 
         }
         &_footer{
             width: 100%;
-            display: flex;
+            display: block;
             justify-content: start;
             align-items: flex-start;
             flex-direction: column;
