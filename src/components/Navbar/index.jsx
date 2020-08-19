@@ -17,7 +17,7 @@ export default class Navbar extends React.Component {
       blogBtn: false,
       landingGTAGCondition: window.location.href.includes("landing")
     };
-    localStorage.setItem("lang", 'en');
+    //localStorage.setItem("lang", 'en');
 
   };
 
