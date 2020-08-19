@@ -21,7 +21,7 @@ export default function MobilePopUp(props){
     };
 
     const sendUserEmail = (event) => {
-        fetch('http://localhost:3000/api/utility/add_user', {
+        fetch('https://2mymemory.com/api/utility/add_user', {
             method: 'POST',
             mode: 'cors',
             body: JSON.stringify({
