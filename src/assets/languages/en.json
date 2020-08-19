@@ -74,7 +74,7 @@
     "articleThreeText1": "Apps for learning languages promise to teach you how to use a new language just with a computer or phone. They’re <b>similar in concept:</b> daily exercises to teach you an entire language.</br></br> It’s promising, especially if you’re <b>not</b> already immersed in a language environment that will give you the exposure you need to pick up a second language. The question is, <b>are they effective?</b> </br></br> I’m sure you are aware that a <b>language is a complex interconnected system</b> of components that build a way to communicate. I’m talking about morphology, syntax, semantics and other language goddesses. </br></br> Let’s face it.</br></br> <b>Apps help to stay motivated!</b> We live a busy life and we either before or after work. We get a notification and go to the app then choose the simplest way: do exercises on what we know by heart and get our bonuses to feel like ‘mission accomplished’. Do you get it? It's an illusion of progress.</br></br> You can learn how to <b>pronounce sounds and phonemes</b> - but there are plenty of exceptions when the same letter combination is pronounced differently in different words. After three(!) years of living in the UK I was able to correctly pronounce vowel sounds without my decent russian accent. </br></br>You can <b>learn a basic set of English words</b> - you will successfully do your exercises by clicking on the correct answers. Does this have to do with understanding words in a real situation? In real life we ​​come across a huge number of phrases in a varied context that changes their meaning and connotation. That’s confusing and curious.</br></br> <b>You can learn grammar</b> - but will it teach you to use language? Let’s say you are in the middle of conversation and trying to recall the grammar rule of 2 conditionals, then trying to apply to your case and finally saying that, most likely with an error. It takes about 30 seconds or more. A person you are talking to will wait once or twice, if he is British - probably about 5 times, but the situation can hardly be called ‘easy communication’ and most likely the person will start to avoid you.</br></br> The last question: Is it possible to learn how <b>to maintain professional dialogues,</b> for example about banking rules, software architecture or astrophysics? It is difficult if your vocab has just a basic set of words like “good”, “nice to meet you”, “how much does it cost”. </br></br>",
     "articleThreeTitle2": "<b>Sum up:</b>",
     "articleThreeText2": "Using popular language learning applications is the starting point and certainly not the end. If you have completed all levels or got all strikes - it’s time to find options for immersion in the real language: find a live teacher, native speaker or at least start a smooth immersion in real English with eLang.",
-    
+
     "articleFinal": "eLang team",
     "articleMonth": "July",
     "articleBtnMore": "Read more",
@@ -86,15 +86,15 @@
   },
 
   "AboutUs": {
-    "title1": "<b>Кто мы?</b>",
-    "text1": "eLang - это команда из 10 человек, вдохновленных идеей изучения языков, с опытом проживания в 7 странах мира и свободно говорящих на 6 языках. Наш основатель, Сергей Федоренко, развивал идею eLang порядка 10 лет и в ноябре 2019 запустил разработку в Минске.",
-    "title2": "<b>Наш подход</b>",
-    "text2": "Мы видим основную проблему при изучении языка в мотивации. Ее может хватить, чтобы начать изучение, но в процессе мы неизбежно ее теряем. eLang за обучение без скучных правил, заучивание ненужных слов и долгого поиска по словарям.",
-    "text2.1": "<b>Наше решение</b> - искать мотивацию для изучения языка в интересах самого ученика: спортивные автомобили, кулинария, спорт, видеоигры, косметика и не ограничивать его в этом выборе.",
-    "text3": "Мы сделали <b>сервис</b> который делает поиск по видео на любимых платформах YouTube и TED и с возможностью доступа к видео файлам с компьютера.",
-    "text3.1": "Мы позаботились о:",
-    "text3.1.list": "<li>- одновременном показе двойных субтитров</li><li>- удобной навигации по видео (управление по субтитрам)</li><li>- замедленном повторе фраз - у нас это быстро и просто</li><li>- встроенном переводе субтитров (фраз, слов, части слов)</li><li>- ведении своего словаря</li><li>- повторе слов в уникальных играх со ссылкой на контекст использования</li>",
-    "title4": "<b>Наши соц сети:</b>",
+    "title1": "<b>About Us</b>",
+    "text1": "eLang is a 10-person team, which is inspired by the idea of language learning. We have got experience of living in 7 countries and speak fluently in 6 languages. Our founder, Sergey Fedorenko, has been developing the idea of eLang for about 10 years and in November 2019 launched the product development in Minsk, Belarus.",
+    "title2": "<b>Our Approach</b>",
+    "text2": "We see motivation as the main component of language learning. There may be enough motivation to start learning, but in the process we inevitably lose it. Our solution is to look for self-driven motivation in the interests of students themself: cars, cooking, sports, video games, cosmetics and not to limit their choices.",
+    "text2.1": "<b>Our solution</b> is to look for self-driven motivation in the interests of students themself: cars, cooking, sports, video games, cosmetics and not to limit their choices.",
+    "text3": "We build a <b>player</b> that searches for video within your favorite platforms as YouTube and TED and gives you access to video files from your computer.",
+    "text3.1": "We take care of:",
+    "text3.1.list": "<li>double languages subtitles</li><li>handy video navigation (subtitle control)</li><li>slow repeat of phrases</li><li>built-in translation of subtitles (phrases, words, parts of words)</li><li>expand your own vocabulary</li><li>unique games for revising words with reference to the context of usage</li>",
+    "title4": "<b>Stay tuned with us</b>",
     "linkInstagram": "https://www.instagram.com/easylang.app_ru/",
     "linkFB": "https://www.facebook.com/EasyLangGames/",
     "linkVK": "https://vk.com/public196837780"
@@ -109,6 +109,9 @@
     "phone": "+375 29 767-35-25",
     "title2": "WRITE TO US",
     "text1": "Your questions and special requests are always welcome.",
+    "linkInstagram": "https://www.instagram.com/easylang.app_ru/",
+    "linkFB": "https://www.facebook.com/EasyLangGames/",
+    "linkVK": "https://vk.com/public196837780",
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
@@ -391,7 +394,7 @@
     "TutorDescrip1": "- easily revise words and phrases",
     "TutorDescrip2": "- have fun while learning",
     "Start": "Start",
-    
+
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us"
