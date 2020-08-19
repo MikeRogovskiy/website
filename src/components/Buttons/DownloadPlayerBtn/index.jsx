@@ -5,8 +5,8 @@ import "./downloadPlayerBtn.scss";
 export default function DownloadPlayerBtn (props){
     const [ifMobile, setIfMobbile] = useState(true);
 
-    const macLink = 'http://easylang.app/downloads/eLang_Player_-_Learn_English_mac_prod.dmg';
-    const windowsLink = 'http://easylang.app/downloads/eLang_Player_-_Learn_English_win_prod.exe';
+    const macLink = 'https://easylang.app/downloads/eLang_Player_-_Learn_English_mac_prod.dmg';
+    const windowsLink = 'https://easylang.app/downloads/eLang_Player_-_Learn_English_win_prod.exe';
     let OSName="Unknown OS";
 
     const getLangText = (text) => {
