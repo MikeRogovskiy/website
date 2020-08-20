@@ -4,6 +4,7 @@
 #mobile-pop-up{
     @include centralColumnFlexPositionHWHundred;
     z-index: 46;
+    top: 0;
     position: fixed;
     background-color: rgba(229, 229, 229, 0.6);
     transition: all 0.3s;
