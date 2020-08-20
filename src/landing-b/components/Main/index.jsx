@@ -1,36 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import imgEnjoy from "../../../assets/images/home/imgEnjoy.svg";
 import "./Main.scss";
 import "./mainMedia.scss";
 import Slider from "../Slider";
 import EasyLangLogo from "../../assets/EasyLang-logo.svg";
 import ReactHtmlParser from "react-html-parser";
-import { useNavigate } from "@reach/router";
 import MobilePopUp from "../../../components/MobilePopUp";
 
 export default function Main(props) {
-  const [conditionDesctop, setConditionDesctop] = useState(false);
-  const [conditionMobile, setConditionMobile] = useState(false);
+  const isMobile = props.isMobile;
   const [popUp, setPopUp] = useState(false);
 
-  useEffect(() => {
-    const handleHead = () => {
-      if (window.innerWidth <= 1024) {
-        setConditionMobile(true);
-        setConditionDesctop(false);
-      } else {
-        setConditionMobile(false);
-        setConditionDesctop(true);
-      }
-    };
-    window.addEventListener("load", handleHead);
-    window.addEventListener("resize", handleHead);
-  });
-
-  const DesctopHead = () => {
-    if (conditionDesctop) {
+  const DesktopHead = () => {
+    if (!isMobile) {
       return (
-        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>
+        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"/>
       );
     } else {
       return null;
@@ -38,9 +22,9 @@ export default function Main(props) {
   };
 
   const MobileHead = () => {
-    if (conditionMobile) {
+    if (isMobile) {
       return (
-        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>
+        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"/>
       );
     } else {
       return null;
@@ -94,7 +78,7 @@ export default function Main(props) {
               </button>
           )}
         </div>
-        <DesctopHead />
+        <DesktopHead />
       </section>
       <section className="options">
         <div className="options-row-first">
@@ -208,7 +192,7 @@ export default function Main(props) {
             <span> {getLangText("PlayerDescrip1")} </span>
             <br /> <span>{getLangText("PlayerDescrip2")}</span>
           </p>
-          {conditionDesctop ? (
+          {!isMobile ? (
             <button
               className="download"
               onClick={() => {
