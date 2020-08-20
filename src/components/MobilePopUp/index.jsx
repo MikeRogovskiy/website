@@ -33,7 +33,7 @@ export default function MobilePopUp(props){
             }
         }).then(res => console.log(res));
         event.preventDefault();
-        props.updateProps(false);
+        props.setPopupVisibility(false);
     };
 
     return(
@@ -46,13 +46,13 @@ export default function MobilePopUp(props){
                     <div className="pop-up_container_content_header">
                         <div className="pop-up_container_content_header_close">
                             <div className="pop-up_container_content_header_close_block">
-                                <button onClick={()  => {props.updateProps(false)}}>X</button>
+                                <button onClick={()  => {props.setPopupVisibility(false)}}>X</button>
                             </div>
                         </div>
                         <h2>Мобильная версия плеера в разработке</h2>
                     </div>
                     <div className="pop-up_container_content_main">
-                        <img src={brainNPhone}></img>
+                        <img src={brainNPhone}/>
                         <h3>Для компьютера <br/><span>eLang</span> <span>Player</span><br/> доступен сейчас</h3>
 
                         <div className="pop-up_container_content_main_inputs">

@@ -39,13 +39,13 @@ export default function Main(props) {
     return ReactHtmlParser(props.text[text]);
   };
 
-  const updateProps = (value) => {
+  const setPopupVisibility = (value) => {
     setPopUp(value);
   };
 
   return (
     <div>
-      {popUp ? <MobilePopUp updateProps={updateProps} /> : null}
+      {popUp ? <MobilePopUp setPopupVisibility={setPopupVisibility} /> : null}
       <section className="relax" id="relax">
         <div className="relax-title">
           <p className="easy-way">{getLangText("Title")}</p>

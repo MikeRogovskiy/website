@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ReactHtmlParser from "react-html-parser";
 import "./downloadPlayerBtn.scss";
 
 export default function DownloadPlayerBtn (props){
-    const [ifMobile, setIfMobbile] = useState(true);
 
     const macLink = 'https://easylang.app/downloads/eLang_Player_-_Learn_English_mac_prod.dmg';
     const windowsLink = 'https://easylang.app/downloads/eLang_Player_-_Learn_English_win_prod.exe';
@@ -14,30 +13,10 @@ export default function DownloadPlayerBtn (props){
     };
 
     function findOSName(){
-        if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
-        if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
-    };
+        if (navigator.appVersion.indexOf("Win") !== -1) OSName="Windows";
+        if (navigator.appVersion.indexOf("Mac") !== -1) OSName="MacOS";
+    }
     findOSName();
-
-    function checkIfMobile(){
-        const toMatch = [
-            /Android/i,
-            /webOS/i,
-            /iPhone/i,
-            /iPad/i,
-            /iPod/i,
-            /BlackBerry/i,
-            /Windows Phone/i
-        ];
-
-        const sortedForMobile = toMatch.some((toMatchItem) => {
-            return window.navigator.userAgent.match(toMatchItem);
-        });
-
-        setIfMobbile(sortedForMobile);
-    };
-
-    useEffect(checkIfMobile);
 
     const googleAnalytics = () => {
         window.gtag(props.gtagName, props.gtagClick,{
@@ -45,7 +24,7 @@ export default function DownloadPlayerBtn (props){
         })
     }
 
-    const DownloadPlayerBtnDesctop = () => {
+    const DownloadPlayerBtnDesktop = () => {
         return(
             <div className="getStartedPlayer-button">
                 { OSName === "Windows" &&
@@ -94,18 +73,17 @@ export default function DownloadPlayerBtn (props){
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {
-                    props.updateProps(true);
+                    props.setPopupVisibility(true);
+                    googleAnalytics();
+                    console.log('works')
                 }}
-                onClick={
-                    googleAnalytics
-                }
                 >
                     <span>{getLangText("GetPlayerButtonWindows")}</span>
                 </a>
             }
 
             { OSName === "Windows" &&
-                <p>{getLangText("IfButtonIsForWindows")} <a onClick={() => {props.updateProps(true)}}>{getLangText("LinkToAnotherOSDownload")}</a></p>
+                <p>{getLangText("IfButtonIsForWindows")} <a onClick={() => {props.setPopupVisibility(true)}}>{getLangText("LinkToAnotherOSDownload")}</a></p>
             }
 
             { OSName === "MacOS" &&
@@ -114,17 +92,15 @@ export default function DownloadPlayerBtn (props){
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => {
-                        props.updateProps(true);
+                        props.setPopupVisibility(true);
+                        googleAnalytics();
                     }}
-                    onClick={
-                        googleAnalytics
-                    }
                 >
                     <span>{getLangText("GetPlayerButtonMac")}</span>
                 </a>
             }
             { OSName === "MacOS" &&
-                <p>{getLangText("IfButtonIsForMac")} <a onClick={() => {props.updateProps(true)}}>{getLangText("LinkToAnotherOSDownload")}</a></p>
+                <p>{getLangText("IfButtonIsForMac")} <a onClick={() => {props.setPopupVisibility(true)}}>{getLangText("LinkToAnotherOSDownload")}</a></p>
             }
         </div>
         )
@@ -132,7 +108,7 @@ export default function DownloadPlayerBtn (props){
 
     return (
         <div>
-            { ifMobile ? <DownloadPlayerBtnMobile />  : <DownloadPlayerBtnDesctop /> }
+            { props.isMobile ? <DownloadPlayerBtnMobile />  : <DownloadPlayerBtnDesktop /> }
         </div>
     )
 }

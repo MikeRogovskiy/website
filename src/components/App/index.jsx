@@ -22,8 +22,8 @@ class App extends React.Component {
       ru: languageRu,
       zh: languageZh,
     };
-    const isMobile = mobileCheck(navigator.userAgent||navigator.vendor||window.opera,'http://detectmobilebrowser.com/mobile');
-    if (isMobile) {
+    this.isMobile = mobileCheck(navigator.userAgent||navigator.vendor||window.opera,'http://detectmobilebrowser.com/mobile');
+    if (this.isMobile) {
       localStorage.setItem('isMobile', 'true');
     } else {
       localStorage.setItem('isMobile', 'false');
@@ -98,6 +98,7 @@ class App extends React.Component {
                   text={this.langStore[lang]}
                   key={lang}
                   location={history.location}
+                  isMobile={this.isMobile}
                 />
               ))}
               <Main
@@ -108,6 +109,7 @@ class App extends React.Component {
                 text={this.langStore[this.getUserLanguageFromInputList()]}
                 key={this.getUserLanguageFromInputList()}
                 location={history.location}
+                isMobile={this.isMobile}
               />
             </Router>
           )}
