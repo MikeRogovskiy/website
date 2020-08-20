@@ -7,6 +7,7 @@ import languageZh from "../../assets/languages/zh.json";
 import languageEs from "../../assets/languages/es.json";
 import Main from "../Main";
 import createHashSource from "hash-source";
+import mobileCheck from "./mobilecheck";
 
 const useHash = process.env.PUBLIC_URL.indexOf("github") !== -1 ? true : false;
 const source = useHash && createHashSource();
@@ -21,6 +22,12 @@ class App extends React.Component {
       ru: languageRu,
       zh: languageZh,
     };
+    const isMobile = mobileCheck(navigator.userAgent||navigator.vendor||window.opera,'http://detectmobilebrowser.com/mobile');
+    if (isMobile) {
+      localStorage.setItem('isMobile', 'true');
+    } else {
+      localStorage.setItem('isMobile', 'false');
+    }
   }
 
   getUserLanguageFromInputList() {
