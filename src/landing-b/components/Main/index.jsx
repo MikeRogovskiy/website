@@ -54,7 +54,6 @@ export default function Main(props) {
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
-  const navigateTo = useNavigate();
 
   const updateProps = (value) => {
     setPopUp(value);
@@ -69,18 +68,31 @@ export default function Main(props) {
           <p className="relax-sub">{getLangText("SubTitle")}</p>
           <MobileHead />
 
-          <button
-            className="download"
-            style={{ borderRadius: "15px" }}
-            onClick={() => {
-              navigateTo("/player");
-              window.gtag("event", `main "Free Start" click`, {
-                event_category: "Landing B. Page",
-              });
-            }}
-          >
-            {getLangText("FreeStart")}
-          </button>
+          {!isMobile ? (
+              <button
+                  className="download"
+                  onClick={() => {
+                    window.open(href);
+                    window.gtag("event", "Add Player' click", {
+                      event_category: "Landing B. Page",
+                    });
+                  }}
+              >
+                {getLangText("FreeStart")}
+              </button>
+          ) : (
+              <button
+                  className="download"
+                  onClick={() => {
+                    setPopUp(true);
+                    window.gtag("event", "Add Player' click", {
+                      event_category: "Landing B. Page",
+                    });
+                  }}
+              >
+                {getLangText("FreeStart")}
+              </button>
+          )}
         </div>
         <DesctopHead />
       </section>
