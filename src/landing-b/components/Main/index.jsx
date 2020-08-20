@@ -96,11 +96,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Listen")}
-              <i
-                className="em em-ear"
-                aria-role="presentation"
-                aria-label="EAR"
-              ></i>
             </p>
             <span className="relax-sub">{getLangText("ListenDescrip")}</span>
           </div>
@@ -114,11 +109,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Navigate")}
-              <i
-                className="em em-point_right"
-                aria-role="presentation"
-                aria-label="WHITE RIGHT POINTING BACKHAND INDEX"
-              ></i>
             </p>
             <span className="relax-sub">{getLangText("NavigateDescrip")}</span>
           </div>
@@ -132,11 +122,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Play")}
-              <i
-                className="em em-table_tennis_paddle_and_ball"
-                aria-role="presentation"
-                aria-label="TABLE TENNIS PADDLE AND BALL"
-              ></i>
             </p>
             <span className="relax-sub">{getLangText("PlayDescrip")}</span>
           </div>
@@ -155,11 +140,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Train")}
-              <i
-                className="em em-muscle"
-                aria-role="presentation"
-                aria-label="FLEXED BICEPS"
-              ></i>
             </p>
             <span className="relax-sub">{getLangText("TrainDescrip")}</span>
           </div>
@@ -176,11 +156,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Understand")}
-              <i
-                className="em em-brain"
-                aria-role="presentation"
-                aria-label="BRAIN"
-              ></i>
             </p>
             <span className="relax-sub">
               {getLangText("UnderstandDescrip")}
