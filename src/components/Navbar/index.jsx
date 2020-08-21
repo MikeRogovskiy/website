@@ -128,6 +128,16 @@ export default class Navbar extends React.Component {
     this.startBtnSubscripting();
   };
 
+  getHomePage(){
+    if (localStorage.getItem("page") != null){
+      if (localStorage.getItem("page") == "mainLanding"){
+        return "./"
+      } else {
+        return "landing/"
+      }
+    }
+  }
+
   render() {
 
     const navBarClass = classNames("Navbar", {
@@ -164,7 +174,7 @@ export default class Navbar extends React.Component {
                     <div className="sticky-bar">
                         <div className="logo">
                             <Link
-                              to="./"
+                              to={this.getHomePage()}
                               className="logo-light"
                               onClick={() => {
                                 !this.state.landingGTAGCondition ?
