@@ -8,20 +8,20 @@ import "./Player.scss";
 import PlayerLogo from "../../assets/images/PlayerLogo.png";
 
 const Header = (props) => {
-    const [popUp, setPopUp] = useState(false);
+    const [playerPopup, setPlayerPopup] = useState(false);
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
     };
 
     const setPopupVisibility = (value) => {
-        setPopUp(value)
+        setPlayerPopup(value)
     };
 
     return (
         <header className="getStartedPlayer-header">
 
-            {popUp ? <MobilePopUp setPopupVisibility={setPopupVisibility}/> : null}
+            {playerPopup ? <MobilePopUp setPopupVisibility={setPopupVisibility} text={props.mobilePopupText} product={"Player"}/> : null}
 
             <div className="wrapper-getStarted">
 

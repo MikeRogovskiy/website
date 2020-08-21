@@ -5,16 +5,16 @@ import DownloadPlayerBtn from "../../components/Buttons/DownloadPlayerBtn"
 import "./Player.scss";
 
 const Footer = (props) => {
-  const [popUp, setPopUp] = useState(false);
+  const [playerPopup, setPlayerPopUp] = useState(false);
 
   const setPopupVisibility = (value) => {
-    setPopUp(value);
+    setPlayerPopUp(value);
   };
 
   return (
     <footer className="getStarted-footer">
 
-       {popUp ? <MobilePopUp setPopupVisibility={setPopupVisibility}/> : null}
+       {playerPopup ? <MobilePopUp setPopupVisibility={setPopupVisibility} text={props.mobilePopupText} product={"Player"}/> : null}
 
       {/* <div className="getStartedPlayer-button"> */}
         <DownloadPlayerBtn
