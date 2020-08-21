@@ -1,20 +1,46 @@
 import React, { useState } from "react";
 import "./mobilePopUp.scss";
 import "./mobilePopUpMedia.scss";
-import brainNPhone from "../../assets/images/player/brainAndPhone.svg"
+// import brainNPhone from "../../assets/images/player/brainAndPhone.svg"
+import brainNPhone from "../../assets/images/player/Brain.png"
+import brainExtension from "../../assets/images/player/brainExtension.svg"
+import ReactHtmlParser from "react-html-parser";
 
 export default function MobilePopUp(props){
     const [bgColor, setBgColor] = useState("#DADCE5");
     const [color, setColor] = useState("#8A8D99");
-    
-    const checkInputValidity = () => {
+    const [email, setEmail] = useState('');
+
+    const checkInputValidity = (event) => {
         if(document.querySelector("#email-input").validity.valid){
             setBgColor("#637CF2");
             setColor("#FFFFFF");
+            setEmail(event.target.value);
         } else {
             setBgColor("#DADCE5");
             setColor("#8A8D99");
         }
+    };
+
+    const getLangText = (text) => {
+        return ReactHtmlParser(props.text[text]);
+    };
+
+    const sendUserEmail = (event) => {
+        fetch('https://2mymemory.com/api/utility/add_user', {
+            method: 'POST',
+            mode: 'cors',
+            body: JSON.stringify({
+                userEmail: email,
+                userAgent: navigator.userAgent,
+                product: props.product
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(res => console.log(res));
+        event.preventDefault();
+        props.setPopupVisibility(false);
     };
 
     return(
@@ -27,37 +53,36 @@ export default function MobilePopUp(props){
                     <div className="pop-up_container_content_header">
                         <div className="pop-up_container_content_header_close">
                             <div className="pop-up_container_content_header_close_block">
-                                <button onClick={()  => {props.updateProps(false)}}>X</button>
+                                <button onClick={()  => {props.setPopupVisibility(false)}}>X</button>
                             </div>
                         </div>
-                        <h2>Мобильная версия плеера в разработке</h2>
+                        <h2>{getLangText(props.product + "PopupTitle")}</h2>
                     </div>
                     <div className="pop-up_container_content_main">
-                        <img src={brainNPhone}></img>
-                        <h3>Для компьютера <br/><span>eLang</span> <span>Player</span><br/> доступен сейчас</h3>
+                        <img src={props.product === "Player" ? brainNPhone : brainExtension}/>
+                        <h3>{getLangText(props.product + "PopupMain")}</h3>
 
                         <div className="pop-up_container_content_main_inputs">
                             <form 
-                                method="POST" 
+                                method="POST"
+                                onSubmit={sendUserEmail}
                             >
                                 <input
                                     type="email"
                                     placeholder="Email"
                                     id="email-input"
                                     pattern="[^ @]*@[^ @]*"
-                                    onChange={() => {checkInputValidity()}}
+                                    onChange={checkInputValidity}
                                     required />
-                                <input
+                                <button
                                     type="submit"
                                     id="submit-input"
-                                    value="Submit"
                                     style={{
                                         backgroundColor: bgColor,
                                         color: color
-                                    }} />
-
-
-
+                                    }} >
+                                    {getLangText("SendButton")}
+                                </button>
                             </form>
                         </div>
 

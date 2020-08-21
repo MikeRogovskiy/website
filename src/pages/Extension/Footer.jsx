@@ -4,12 +4,19 @@ import LoadExtensionBtn from "../../components/Buttons/LoadExtensionBtn";
 import FooterNavBar from "../../components/FooterNavBar";
 
 import "./Extension.scss";
+import MobilePopUp from "../../components/MobilePopUp";
 
 const Footer = (props) => {
+  const [extensionPopup, setExtensionPopup] = useState(false);
+  const [page, setPage] = useState("extension");
+
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
-  const [page, setPage] = useState("extension")
+
+  const setPopupVisibility = (value) => {
+    setExtensionPopup(value)
+  };
 
   function rememberLangInLocalStorage() {
     let currentUrl = window.location.href;
@@ -29,6 +36,10 @@ const Footer = (props) => {
 
   return (
     <footer className="getStarted-footer">
+
+      {extensionPopup ? <MobilePopUp setPopupVisibility={setPopupVisibility}
+                                     text={props.mobilePopupText} product={"Extension"}/> : null}
+
       <div className="getStarted-button">
           <LoadExtensionBtn
             gtagName={"event"}
@@ -40,6 +51,8 @@ const Footer = (props) => {
             //   })
             // }
             text={props.text.GetStartedButton}
+            setPopupVisibility={setPopupVisibility}
+            isMobile={props.isMobile}
           />
 
       </div>

@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import MobilePopUp from "../../components/MobilePopUp";
-import DonwloadPlayerBtn from "../../components/Buttons/DownloadPlayerBtn"
+import DownloadPlayerBtn from "../../components/Buttons/DownloadPlayerBtn"
 
 import "./Player.scss";
 
 const Footer = (props) => {
-  const [popUp, setPopUp] = useState(false);
+  const [playerPopup, setPlayerPopUp] = useState(false);
 
-  const updateProps = (value) => {
-    setPopUp(value);
+  const setPopupVisibility = (value) => {
+    setPlayerPopUp(value);
   };
 
   return (
     <footer className="getStarted-footer">
 
-       {popUp ? <MobilePopUp updateProps={updateProps}/> : null}
+       {playerPopup ? <MobilePopUp setPopupVisibility={setPopupVisibility} text={props.mobilePopupText} product={"Player"}/> : null}
 
       {/* <div className="getStartedPlayer-button"> */}
-        <DonwloadPlayerBtn
+        <DownloadPlayerBtn
          gtagName={"event"}
          gtagClick={"Lower Download click"}
          gtagCategory={"Landing. Watch&Learn"}
@@ -26,8 +26,9 @@ const Footer = (props) => {
           //     event_category: "Landing. Watch&Learn"
           //   })
           // }
-          text={props.text}
-          updateProps={updateProps}
+         text={props.text}
+         setPopupVisibility={setPopupVisibility}
+         isMobile={props.isMobile}
         />
       {/* </div> */}
 

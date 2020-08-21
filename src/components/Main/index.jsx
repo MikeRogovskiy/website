@@ -50,7 +50,7 @@ export default class App extends React.Component {
             (u) => this.props.location.pathname.match(u) !== null
           )}
           location={this.props.location}
-        ></Navbar>
+        />
 
         <Router>
           <ScrollToTop                  path="/">
@@ -64,18 +64,23 @@ export default class App extends React.Component {
             <HomeB                      path="/B" />
             <HomeB                      path="/C" />
             <Privacy                    path="/privacy" text={this.props.text} />
-            <Extension                  path="/extension" text={this.props.text.ExtensionPage} lang={this.props.language} />
-            <ExtensionInstruction       path="/extension-instruction-static" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
-            <ExtensionInstruction       path="/extension-instruction" text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
+            <Extension                  path="/extension" text={this.props.text.ExtensionPage} lang={this.props.language}
+                                        isMobile={this.props.isMobile} mobilePopupText={this.props.text.MobilePopup}/>
+            <ExtensionInstruction       path="/extension-instruction-static"
+                                          text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
+            <ExtensionInstruction       path="/extension-instruction"
+                                          text={this.props.text.ExtensionInstructionPage} lang={this.props.language} />
             <ExtensionInnerInstruction  path="/extension-inner-instruction" />
             <ExtenstionAdvertisement    path="/extension-advertisement" />
-            <Player                     path="/player" text={this.props.text.PlayerPage} />
+            <Player                     path="/player" text={this.props.text.PlayerPage} isMobile={this.props.isMobile}
+                                          mobilePopupText={this.props.text.MobilePopup}/>
             <PlayerAnimation            path="/player-animation" text={this.props.text.PlayerAnimation} />
             <PlayerInstruction          path="player-instruction-youtube" />
             <PlayerInstruction          path="/instruction-youtube-desctop" />
             <Plans                      path="/plans" text={this.props.text.PlansPage} />
             <NotFound                   path="*" text={this.props.text.NotFoundPage} />
-            <_AppB                      path="/landing" text={this.props.text.Landing} />
+            <_AppB                      path="/landing" text={this.props.text.Landing}
+                                        mobilePopupText={this.props.text.MobilePopup}/>
           </ScrollToTop>
         </Router>
       </div>

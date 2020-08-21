@@ -398,5 +398,12 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us"
+  },
+  "MobilePopup": {
+    "PlayerPopupTitle": "Mobile version in progress",
+    "PlayerPopupMain": "For your desktop <br/><span>eLang</span> <span>Player</span><br/> is available now",
+    "ExtensionPopupTitle": "Sorry, just for desktops",
+    "ExtensionPopupMain": "For Chrome on your desktop <br/><span>eLang</span> <span>Extension</span><br/> is available now",
+    "SendButton": "Send me invitation"
   }
 }

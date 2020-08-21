@@ -6,13 +6,14 @@ import MainHeader from "../../components/MainHeader";
 
 export default function _AppB(props) {
 
-  localStorage.setItem("page", "additionalLanding")
+  localStorage.setItem("page", "additionalLanding");
+  const isMobile = localStorage.getItem('isMobile') === 'true';
 
   return (
     <div>
       <MainHeader />
       <div className="wrapper-landing">
-        <Main text={props.text} />
+        <Main text={props.text} isMobile={isMobile} mobilePopupText={props.mobilePopupText}/>
       </div>
       <Footer text={props.text} />
     </div>

@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React from "react";
 import ReactHtmlParser from "react-html-parser";
 import FooterNavBar from "../../components/FooterNavBar";
 import email from "../../assets/images/contact/email.png";
@@ -10,7 +10,7 @@ import "./contactUs.scss";
 import "./contactUsMedia.scss";
 
 export default function ContactUs(props){
-    const [page, setPage] = useState("contact");
+    const page = "contact";
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);

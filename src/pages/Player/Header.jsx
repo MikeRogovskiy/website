@@ -1,36 +1,36 @@
 import React, { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import MobilePopUp from "../../components/MobilePopUp";
-import DonwloadPlayerBtn from "../../components/Buttons/DownloadPlayerBtn";
+import DownloadPlayerBtn from "../../components/Buttons/DownloadPlayerBtn";
 
 import "./Player.scss";
 
 import PlayerLogo from "../../assets/images/PlayerLogo.png";
 
 const Header = (props) => {
-    const [popUp, setPopUp] = useState(false);
+    const [playerPopup, setPlayerPopup] = useState(false);
 
     const getLangText = (text) => {
         return ReactHtmlParser(props.text[text]);
     };
 
-    const updateProps = (value) => {
-        setPopUp(value)
+    const setPopupVisibility = (value) => {
+        setPlayerPopup(value)
     };
 
     return (
         <header className="getStartedPlayer-header">
 
-            {popUp ? <MobilePopUp updateProps={updateProps}/> : null}
+            {playerPopup ? <MobilePopUp setPopupVisibility={setPopupVisibility} text={props.mobilePopupText} product={"Player"}/> : null}
 
             <div className="wrapper-getStarted">
 
                 <div>
-                    <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"></img>
+                    <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"/>
                     <h1 className="getStarted-title">{getLangText("GetStartedPlayerText")}</h1>
                 </div>
 
-                <DonwloadPlayerBtn 
+                <DownloadPlayerBtn
                  gtagName={"event"}
                  gtagClick={"Upper Download click"}
                  gtagCategory={"Landing. Watch&Learn"}
@@ -39,8 +39,9 @@ const Header = (props) => {
                     //         event_category: "Landing. Watch&Learn"
                     //     })
                     // }
-                    text={props.text}
-                    updateProps={updateProps}
+                 text={props.text}
+                 isMobile={props.isMobile}
+                 setPopupVisibility={setPopupVisibility}
                 />
 
                 <div>
