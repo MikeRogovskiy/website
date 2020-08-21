@@ -61,7 +61,7 @@ export default class FooterNavBar extends Component {
           </Link>
 
           <Link
-            to="/"
+            to="/about"
             onClick={() => {
               window.gtag("event", "About Us click", {
                 event_category: "Landing B. Footer",
