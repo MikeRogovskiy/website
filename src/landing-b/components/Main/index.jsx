@@ -98,7 +98,7 @@ export default function Main(props) {
             }}
           >
             <p className="easy-way">
-              {getLangText("Listen")}
+              {getLangText("Listen")} &#128066;
             </p>
             <span className="relax-sub">{getLangText("ListenDescrip")}</span>
           </div>
@@ -111,7 +111,7 @@ export default function Main(props) {
             }}
           >
             <p className="easy-way">
-              {getLangText("Navigate")}
+              {getLangText("Navigate")} &#128073;
             </p>
             <span className="relax-sub">{getLangText("NavigateDescrip")}</span>
           </div>
@@ -124,7 +124,7 @@ export default function Main(props) {
             }}
           >
             <p className="easy-way">
-              {getLangText("Play")}
+              {getLangText("Play")} &#127955;
             </p>
             <span className="relax-sub">{getLangText("PlayDescrip")}</span>
           </div>
@@ -142,7 +142,7 @@ export default function Main(props) {
             }}
           >
             <p className="easy-way">
-              {getLangText("Train")}
+              {getLangText("Train")} &#128170;
             </p>
             <span className="relax-sub">{getLangText("TrainDescrip")}</span>
           </div>
@@ -158,7 +158,7 @@ export default function Main(props) {
             }}
           >
             <p className="easy-way">
-              {getLangText("Understand")}
+              {getLangText("Understand")} &#129504;
             </p>
             <span className="relax-sub">
               {getLangText("UnderstandDescrip")}
