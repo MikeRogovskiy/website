@@ -36,19 +36,22 @@
 
             ul li{
                 padding-left: 3%;
+                font-size: 1.2rem;
             }
 
         }
         &_footer{
             width: 100%;
-            display: flex;
+            display: block;
             justify-content: start;
             align-items: flex-start;
             flex-direction: column;
 
             img{
-                width: 50px;
-                height: 50px;
+                width: 60px;
+                height: 60px;
+                padding-top: 10px;
+                padding-bottom: 10px;
             };
 
         }

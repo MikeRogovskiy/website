@@ -13,6 +13,11 @@
     .startedPlayer-button {
         width: 50%;
     }
+    .wrapper-getStarted{
+      img{
+        padding-top: 10%;
+      }
+    }
 };
 
 @media(max-width: "599px") {
@@ -34,6 +39,11 @@
     .getStartedPlayer-button:nth-child(1){
         margin-top: -100px;
     };
+    .wrapper-getStarted{
+      img{
+        padding-top: 15%;
+      }
+    }
 
 };
 
@@ -57,14 +67,18 @@
         height: 450px;
         width: 100%;
         };
-        
+
         .scrolled-item img {
         margin-right: 7px !important;
         };
 
     };
-
-};
+    .wrapper-getStarted{
+      img{
+        padding-top: 20%;
+      }
+    }
+  };
 
 @media screen and (max-width: 500px){
 

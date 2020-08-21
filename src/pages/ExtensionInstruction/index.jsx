@@ -36,40 +36,42 @@ export default class ExtensionInstruction extends Component {
       checkURL: window.location.href.includes("static"),
       page: "extension"
     };
-    
-    this.mainSiteLang = "";
-    this.domain = "https://easylang.app/";
-    console.log(window.location.href.charAt(this.domain.length + 2));
 
-    if (
-      this.supportedLangs.indexOf(
-        window.location.href.substr(this.domain.length, 2)
-      ) === -1
-    ) {
-      localStorage.setItem("lang", "en");
-      this.mainSiteLang = "en";
-      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
-    }
-    if (
-      window.location.href.substr(this.domain.length, 2) ===
-      localStorage.getItem("lang")
-    ) {
-      return;
-    }
-
-    if (localStorage.getItem("lang") != null) {
-      this.mainSiteLang = localStorage.getItem("lang");
-      // alert(mainSiteLang);
-      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
-      // localStorage.clear();
-    } else {
-      localStorage.setItem("lang", navigator.language);
-      this.mainSiteLang = navigator.language;
-      // alert(mainSiteLang);
-      window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
-    }
+    // this.mainSiteLang = "";
+    // this.domain = "https://easylang.app/";
+    // // this.domain = "http://localhost:3000/";
+    // console.log(window.location.href.charAt(this.domain.length + 2));
+    // // console.log(mainSiteLang);
+    //
+    // if (
+    //   this.supportedLangs.indexOf(
+    //     window.location.href.substr(this.domain.length, 2)
+    //   ) === -1
+    // ) {
+    //   localStorage.setItem("lang", "en");
+    //   this.mainSiteLang = "en";
+    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    // }
+    // if (
+    //   window.location.href.substr(this.domain.length, 2) ===
+    //   localStorage.getItem("lang")
+    // ) {
+    //   return;
+    // }
+    //
+    // if (localStorage.getItem("lang") != null) {
+    //   this.mainSiteLang = localStorage.getItem("lang");
+    //   // alert(mainSiteLang);
+    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    //   // localStorage.clear();
+    // } else {
+    //   localStorage.setItem("lang", navigator.language);
+    //   this.mainSiteLang = navigator.language;
+    //   // alert(mainSiteLang);
+    //   window.location.href = `${this.domain}${this.mainSiteLang}/extension-instruction-static`;
+    // }
   }
-  
+
 
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
