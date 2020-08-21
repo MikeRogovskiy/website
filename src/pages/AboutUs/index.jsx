@@ -1,8 +1,8 @@
 import React, { useState }from "react";
 import ReactHtmlParser from "react-html-parser";
-import facebook from "../../assets/images/about/fb.svg";
-import vkontakte from "../../assets/images/about/vk.svg";
-import instagram from "../../assets/images/about/instagram.svg";
+import facebook from "../../assets/images/about/facebook@2x.svg";
+import vkontakte from "../../assets/images/about/vk@2x.svg";
+import instagram from "../../assets/images/about/Inst@2x.svg";
 import "./aboutUs.scss";
 
 export default function AboutUs(props){

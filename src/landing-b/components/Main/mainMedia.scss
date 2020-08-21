@@ -19,8 +19,10 @@
         align-items: center;
         &-title{
             text-align: center;
+            padding: 10%;
             .easy-way{
                 font-size: 60px;
+                padding-top: 10%;
             };
 
             .relax-sub{
@@ -82,7 +84,7 @@
     .relax-title .relax-sub{
         font-size: 30px;
     };
-};
+  };
 
 @media screen and (max-width: 640px){
     .options{
@@ -100,6 +102,11 @@
         };
 
     };
+  
+    .privacy {
+        margin-top: -5px;
+        color: #c9c9c9;
+      };
 
 };
 
@@ -151,6 +158,7 @@
 
         .easy-way{
             font-size: 30px;
+            padding-top: 30%;
         };
 
     };
@@ -161,6 +169,8 @@
 
         .easy-way{
             font-size: 25px;
+            padding-top: 40%;
+
         };
 
         .relax-sub{
@@ -238,7 +248,7 @@
 //         height: 450px;
 //         width: 100%;
 //         };
-        
+
 //         .scrolled-item img {
 //         margin-right: 7px !important;
 //         };

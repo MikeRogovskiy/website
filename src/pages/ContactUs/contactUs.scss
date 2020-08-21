@@ -18,20 +18,21 @@
                 display: flex;
                 flex-direction: column;
                 transition: all .3s ease;
-
+                padding-top: 1%;
+                padding-bottom: 2%;
                 a{
                     padding-left: 10px;
                     text-align: left;
                     color: $textColor;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 };
                 &_animation{
                     display: inline-flex;
                     align-items: center;
 
                     .textAppear{
-                        opacity: 0;
-                        margin-left: -30%;
+            //          opacity: 0;
+            //            margin-left: -30%;
                     };
 
                     .imageLink img{
@@ -39,31 +40,35 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 50px;
-                        height: 50px;
+                        width: 45px;
+                        height: 45px;
                         transition: all .3s ease;
                     };
                 };
-                &_animation:hover > .textAppear{
-                    opacity: 1;
-                    margin-left: 0%;
-                    transition: all .3s ease;
-                };
-                &_animation:hover > .imageLink img{
-                    width: 60px;
-                    height: 60px;
-                    transition: all .3s ease;
-                };
+                // &_animation:hover > .textAppear{
+                //     opacity: 1;
+                //     margin-left: 0%;
+                //     transition: all .3s ease;
+                // };
+                // &_animation:hover > .imageLink img{
+                //     width: 60px;
+                //     height: 60px;
+                //     transition: all .3s ease;
+                // };
 
             };
+            &_socials{
+              display: block;
 
-            h2{
-                font-size: 3rem;
-            };
+              img{
+                  width: 60px;
+                  height: 60px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+              };
+            }
 
-            p{
-                font-size: 1.5rem;
-            };
+
 
         }
         &_map{

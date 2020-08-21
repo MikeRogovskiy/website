@@ -3,6 +3,9 @@ import ReactHtmlParser from "react-html-parser";
 import FooterNavBar from "../../components/FooterNavBar";
 import email from "../../assets/images/contact/email.png";
 import call from "../../assets/images/contact/call.svg";
+import facebook from "../../assets/images/contact/facebook@2x.svg";
+import vkontakte from "../../assets/images/contact/vk@2x.svg";
+import instagram from "../../assets/images/contact/Inst@2x.svg";
 import "./contactUs.scss";
 import "./contactUsMedia.scss";
 
@@ -41,8 +44,13 @@ export default function ContactUs(props){
                         </div>
 
                     </div>
-                    <h2>{getLangText("title2")}</h2>
-                    <p>{getLangText("text1")}</p>
+                    <div className="contact-us_container_text_socials">
+                      <h2>{getLangText("title2")}</h2>
+                      <p>{getLangText("text1")}</p>
+                      <a href={getLangText("linkInstagram")}><img src={instagram}></img></a>
+                      <a href={getLangText("linkFB")}><img src={facebook}></img></a>
+                      <a href={getLangText("linkVK")}><img src={vkontakte}></img></a>
+                    </div>
                 </div>
                 <div className="contact-us_container_map">
                     <iframe
