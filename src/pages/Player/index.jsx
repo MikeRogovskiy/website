@@ -124,7 +124,7 @@ export default class Player extends Component {
       <div>
         <MainHeader />
 
-        <Header text={this.props.text} />
+        <Header text={this.props.text} isMobile={this.props.isMobile}/>
 
         {/* Player Scroll Content */}
         <div className="scrolled-content-header">
@@ -188,7 +188,7 @@ export default class Player extends Component {
           </div>
         </div>
 
-        <Footer text={this.props.text} />
+        <Footer text={this.props.text} isMobile={this.props.isMobile}/>
         <footer>
           <FooterNavBar text={this.props.text} page={this.state.page}/>
         </footer>

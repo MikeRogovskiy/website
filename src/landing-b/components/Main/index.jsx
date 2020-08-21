@@ -1,38 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import imgEnjoy from "../../../assets/images/home/imgEnjoy.svg";
 import "./Main.scss";
 import "./mainMedia.scss";
 import Slider from "../Slider";
 import EasyLangLogo from "../../assets/EasyLang-logo.svg";
 import ReactHtmlParser from "react-html-parser";
-import { useNavigate } from "@reach/router";
 import MobilePopUp from "../../../components/MobilePopUp";
 
 export default function Main(props) {
-  const [conditionDesctop, setConditionDesctop] = useState(false);
-  const [conditionMobile, setConditionMobile] = useState(false);
+  const isMobile = props.isMobile;
   const [popUp, setPopUp] = useState(false);
 
-
-
-  useEffect(() => {
-    const handleHead = () => {
-      if (window.innerWidth <= 1024) {
-        setConditionMobile(true);
-        setConditionDesctop(false);
-      } else {
-        setConditionMobile(false);
-        setConditionDesctop(true);
-      }
-    };
-    window.addEventListener("load", handleHead);
-    window.addEventListener("resize", handleHead);
-  });
-
-  const DesctopHead = () => {
-    if (conditionDesctop) {
+  const DesktopHead = () => {
+    if (!isMobile) {
       return (
-        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>
+        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"/>
       );
     } else {
       return null;
@@ -40,9 +22,9 @@ export default function Main(props) {
   };
 
   const MobileHead = () => {
-    if (conditionMobile) {
+    if (isMobile) {
       return (
-        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"></img>
+        <img src={imgEnjoy} alt="Enjoy learning" className="chill-image"/>
       );
     } else {
       return null;
@@ -56,35 +38,47 @@ export default function Main(props) {
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
   };
-  const navigateTo = useNavigate();
 
-  const updateProps = (value) => {
+  const setPopupVisibility = (value) => {
     setPopUp(value);
   };
 
   return (
     <div>
-      {popUp ? <MobilePopUp updateProps={updateProps} /> : null}
+      {popUp ? <MobilePopUp setPopupVisibility={setPopupVisibility} /> : null}
       <section className="relax" id="relax">
         <div className="relax-title">
           <p className="easy-way">{getLangText("Title")}</p>
           <p className="relax-sub">{getLangText("SubTitle")}</p>
           <MobileHead />
 
-          <button
-            className="download"
-            style={{ borderRadius: "15px" }}
-            onClick={() => {
-              navigateTo("/player");
-              window.gtag("event", `main "Free Start" click`, {
-                event_category: "Landing B. Page",
-              });
-            }}
-          >
-            {getLangText("FreeStart")}
-          </button>
+          {!isMobile ? (
+              <button
+                  className="download"
+                  onClick={() => {
+                    window.open(href);
+                    window.gtag("event", "Add Player' click", {
+                      event_category: "Landing B. Page",
+                    });
+                  }}
+              >
+                {getLangText("FreeStart")}
+              </button>
+          ) : (
+              <button
+                  className="download"
+                  onClick={() => {
+                    setPopUp(true);
+                    window.gtag("event", "Add Player' click", {
+                      event_category: "Landing B. Page",
+                    });
+                  }}
+              >
+                {getLangText("FreeStart")}
+              </button>
+          )}
         </div>
-        <DesctopHead />
+        <DesktopHead />
       </section>
       <section className="options">
         <div className="options-row-first">
@@ -98,9 +92,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Listen")}
-
-              <i class="em em-ear" aria-role="presentation" aria-label="EAR"></i>
-
             </p>
             <span className="relax-sub">{getLangText("ListenDescrip")}</span>
           </div>
@@ -114,13 +105,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Navigate")}
-
-              <i
-                className="em em-point_right"
-                aria-role="presentation"
-                aria-label="WHITE RIGHT POINTING BACKHAND INDEX"
-              ></i>
-
             </p>
             <span className="relax-sub">{getLangText("NavigateDescrip")}</span>
           </div>
@@ -134,11 +118,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Play")}
-              <i
-                className="em em-table_tennis_paddle_and_ball"
-                aria-role="presentation"
-                aria-label="TABLE TENNIS PADDLE AND BALL"
-              ></i>
             </p>
             <span className="relax-sub">{getLangText("PlayDescrip")}</span>
           </div>
@@ -157,12 +136,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Train")}
-              <i
-               className="em em-muscle"
-               aria-role="presentation"
-               aria-label="FLEXED BICEPS"
-             ></i>
-
             </p>
             <span className="relax-sub">{getLangText("TrainDescrip")}</span>
           </div>
@@ -179,12 +152,6 @@ export default function Main(props) {
           >
             <p className="easy-way">
               {getLangText("Understand")}
-              <i
-                className="em em-brain"
-                aria-role="presentation"
-                aria-label="BRAIN"
-              ></i>
-
             </p>
             <span className="relax-sub">
               {getLangText("UnderstandDescrip")}
@@ -225,7 +192,7 @@ export default function Main(props) {
             <span> {getLangText("PlayerDescrip1")} </span>
             <br /> <span>{getLangText("PlayerDescrip2")}</span>
           </p>
-          {conditionDesctop ? (
+          {!isMobile ? (
             <button
               className="download"
               onClick={() => {

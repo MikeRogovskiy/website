@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import MobilePopUp from "../../components/MobilePopUp";
-import DonwloadPlayerBtn from "../../components/Buttons/DownloadPlayerBtn";
+import DownloadPlayerBtn from "../../components/Buttons/DownloadPlayerBtn";
 
 import "./Player.scss";
 
@@ -14,23 +14,23 @@ const Header = (props) => {
         return ReactHtmlParser(props.text[text]);
     };
 
-    const updateProps = (value) => {
+    const setPopupVisibility = (value) => {
         setPopUp(value)
     };
 
     return (
         <header className="getStartedPlayer-header">
 
-            {popUp ? <MobilePopUp updateProps={updateProps}/> : null}
+            {popUp ? <MobilePopUp setPopupVisibility={setPopupVisibility}/> : null}
 
             <div className="wrapper-getStarted">
 
                 <div>
-                    <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"></img>
+                    <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"/>
                     <h1 className="getStarted-title">{getLangText("GetStartedPlayerText")}</h1>
                 </div>
 
-                <DonwloadPlayerBtn 
+                <DownloadPlayerBtn
                  gtagName={"event"}
                  gtagClick={"Upper Download click"}
                  gtagCategory={"Landing. Watch&Learn"}
@@ -39,8 +39,9 @@ const Header = (props) => {
                     //         event_category: "Landing. Watch&Learn"
                     //     })
                     // }
-                    text={props.text}
-                    updateProps={updateProps}
+                 text={props.text}
+                 isMobile={props.isMobile}
+                 setPopupVisibility={setPopupVisibility}
                 />
 
                 <div>
