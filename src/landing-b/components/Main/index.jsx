@@ -9,7 +9,8 @@ import MobilePopUp from "../../../components/MobilePopUp";
 
 export default function Main(props) {
   const isMobile = props.isMobile;
-  const [popUp, setPopUp] = useState(false);
+  const [playerPopup, setPlayerPopup] = useState(false);
+  const [extensionPopup, setExtensionPopup] = useState(false);
 
   const DesktopHead = () => {
     if (!isMobile) {
@@ -39,13 +40,19 @@ export default function Main(props) {
     return ReactHtmlParser(props.text[text]);
   };
 
-  const setPopupVisibility = (value) => {
-    setPopUp(value);
+  const setPlayerPopupVisibility = (value) => {
+    setPlayerPopup(value);
+  };
+
+  const setExtensionPopupVisibility = (value) => {
+    setExtensionPopup(value);
   };
 
   return (
     <div>
-      {popUp ? <MobilePopUp setPopupVisibility={setPopupVisibility} /> : null}
+      {playerPopup || extensionPopup ? <MobilePopUp
+          setPopupVisibility={playerPopup ? setPlayerPopupVisibility : setExtensionPopupVisibility}
+          text={props.mobilePopupText} product={playerPopup ? "Player" : "Extension"}/> : null}
       <section className="relax" id="relax">
         <div className="relax-title">
           <p className="easy-way">{getLangText("Title")}</p>
@@ -68,7 +75,7 @@ export default function Main(props) {
               <button
                   className="download"
                   onClick={() => {
-                    setPopUp(true);
+                    setPlayerPopup(true);
                     window.gtag("event", "Add Player' click", {
                       event_category: "Landing B. Page",
                     });
@@ -171,19 +178,33 @@ export default function Main(props) {
           <p className="relax-sub" style={{ marginBottom: "48px" }}>
             {getLangText("BrowserExtDescrip2")}
           </p>
-          <button
-            className="download"
-            onClick={() => {
-              window.open(
-                "https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
-              );
-              window.gtag("event", "Add Extension' click", {
-                event_category: "Landing B. Page",
-              });
-            }}
-          >
-            {getLangText("Add")}
-          </button>
+          {!isMobile ? (
+              <button
+                className="download"
+                onClick={() => {
+                  window.open(
+                    "https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
+                  );
+                  window.gtag("event", "Add Extension' click", {
+                    event_category: "Landing B. Page",
+                  });
+                }}
+              >
+                {getLangText("Add")}
+              </button>
+              ) : (
+              <button
+                className="download"
+                onClick={() => {
+                  setExtensionPopup(true);
+                  window.gtag("event", "Add Extension' click", {
+                    event_category: "Landing B. Page",
+                  });
+                }}
+              >
+                {getLangText("Add")}
+              </button>
+          )}
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />
@@ -208,7 +229,7 @@ export default function Main(props) {
             <button
               className="download"
               onClick={() => {
-                setPopUp(true);
+                setPlayerPopup(true);
                 window.gtag("event", "Add Player' click", {
                   event_category: "Landing B. Page",
                 });

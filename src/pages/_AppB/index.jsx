@@ -13,7 +13,7 @@ export default function _AppB(props) {
     <div>
       <MainHeader />
       <div className="wrapper-landing">
-        <Main text={props.text} isMobile={isMobile}/>
+        <Main text={props.text} isMobile={isMobile} mobilePopupText={props.mobilePopupText}/>
       </div>
       <Footer text={props.text} />
     </div>
