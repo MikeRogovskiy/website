@@ -423,5 +423,12 @@
     "PrivacyPolicy": "Политика конфиденциальности",
     "AboutUs": "О нас",
     "ContactUs": "Связаться с нами"
+  },
+  "MobilePopup": {
+    "PlayerPopupTitle": "Мобильная версия плеера в разработке",
+    "PlayerPopupMain": "Для компьютера <br/><span>eLang</span> <span>Player</span><br/> доступен сейчас",
+    "ExtensionPopupTitle": "Ой, пока только для компьютера",
+    "ExtensionPopupMain": "Для Chrome на компьютере <br/><span>eLang</span> <span>Extension</span><br/> доступен сейчас",
+    "SendButton": "Отправить приглашение"
   }
 }
