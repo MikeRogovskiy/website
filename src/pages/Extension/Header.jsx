@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactHtmlParser from "react-html-parser";
 import LoadExtensionBtn from "../../components/Buttons/LoadExtensionBtn";
 
 import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
 
 import "./Extension.scss";
+import MobilePopUp from "../../components/MobilePopUp";
 
 const Header = (props) => {
+  const [extensionPopup, setExtensionPopup] = useState(false);
+
   const getLangText = (text) => {
     return ReactHtmlParser(props.text[text]);
+  };
+
+  const setPopupVisibility = (value) => {
+    setExtensionPopup(value)
   };
 
   function rememberLangInLocalStorage() {
@@ -29,13 +36,17 @@ const Header = (props) => {
 
   return (
     <header className="getStartedExt-header">
+
+      {extensionPopup ? <MobilePopUp setPopupVisibility={setPopupVisibility}
+                        text={props.mobilePopupText} product={"Extension"}/> : null}
+
       <div className="wrapper-getStarted">
         <div>
           <img
             src={ExtensionLogo}
             className="getStarted-logo"
             alt="Logo_image"
-          ></img>
+          />
           <h1 className="getStarted-title">{getLangText("GetStartedText")}</h1>
         </div>
         <div className="getStarted-button">
@@ -50,6 +61,8 @@ const Header = (props) => {
             //   })
             // }
             text={props.text.GetStartedButton}
+            setPopupVisibility={setPopupVisibility}
+            isMobile={props.isMobile}
           />
 
         </div>

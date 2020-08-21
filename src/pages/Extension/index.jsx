@@ -27,6 +27,8 @@ export default class Extension extends Component {
 
         <Header
           text={this.props.text}
+          isMobile={this.props.isMobile}
+          mobilePopupText={this.props.mobilePopupText}
         />
 
         <WithScrollContent
@@ -35,7 +37,7 @@ export default class Extension extends Component {
           lang={this.props.lang}
         />
         
-        <Footer text={this.props.text} />
+        <Footer text={this.props.text} isMobile={this.props.isMobile} mobilePopupText={this.props.mobilePopupText}/>
       </div>
     );
 
