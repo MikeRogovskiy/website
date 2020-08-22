@@ -33,7 +33,8 @@ export default function MobilePopUp(props){
             body: JSON.stringify({
                 userEmail: email,
                 userAgent: navigator.userAgent,
-                product: props.product
+                product: props.product,
+                language: localStorage.getItem('lang'),
             }),
             headers: {
                 'Content-Type': 'application/json'
