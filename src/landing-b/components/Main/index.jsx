@@ -260,9 +260,6 @@ export default function Main(props) {
             {getLangText("Start")}
           </button>
         </div>
-        SendGrid
-        SendGrid
-        SendGrid
       </section>
     </div>
   );
