@@ -74,7 +74,6 @@ export default class Home extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    localStorage.setItem("page", "mainLanding")
   }
 
   componentWillUnmount() {
@@ -216,7 +215,7 @@ export default class Home extends React.Component {
                       <h3>{this.getLangText("music")}</h3>
                       <p>{this.getLangText("musicParagraph")}</p>
                     </div>
-                    <div className="sources-paragraph disabled"></div>
+                    <div className="sources-paragraph disabled"/>
                   </div>
                 </div>
               </div>

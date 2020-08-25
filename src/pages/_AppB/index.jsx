@@ -6,7 +6,6 @@ import MainHeader from "../../components/MainHeader";
 
 export default function _AppB(props) {
 
-  localStorage.setItem("page", "additionalLanding");
   const isMobile = localStorage.getItem('isMobile') === 'true';
 
   return (

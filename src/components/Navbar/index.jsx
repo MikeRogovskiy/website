@@ -57,7 +57,7 @@ export default class Navbar extends React.Component {
       this.setState({
         startBtn: true
       });
-    };
+    }
   };
 
   sideMenuSubscripting = () => {
@@ -91,7 +91,7 @@ export default class Navbar extends React.Component {
       let p = percentages.parentNode;
         currentPercentageScroll = (percentages.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
       return  Math.round(currentPercentageScroll);
-    };
+    }
     calculatePercenteges(document.body);
 
     if(currentPercentageScroll > 12 && currentPercentageScroll < 95){
@@ -101,7 +101,7 @@ export default class Navbar extends React.Component {
       this.setState({
         startBtn: false
       });
-    };
+    }
 
   };
 
@@ -110,7 +110,7 @@ export default class Navbar extends React.Component {
       this.setState({
         blogBtn: false
       });
-    };
+    }
   };
 
   googleAnalytics(event, click, category){
@@ -127,16 +127,6 @@ export default class Navbar extends React.Component {
   componentWillUnmount() {
     this.startBtnSubscripting();
   };
-
-  getHomePage(){
-    if (localStorage.getItem("page") != null){
-      if (localStorage.getItem("page") == "mainLanding"){
-        return "./"
-      } else {
-        return "landing/"
-      }
-    }
-  }
 
   render() {
 
@@ -174,7 +164,7 @@ export default class Navbar extends React.Component {
                     <div className="sticky-bar">
                         <div className="logo">
                             <Link
-                              to={this.getHomePage()}
+                              to={this.props.location.pathname.includes('landing') ? '/landing' : './'}
                               className="logo-light"
                               onClick={() => {
                                 !this.state.landingGTAGCondition ?
@@ -212,7 +202,7 @@ export default class Navbar extends React.Component {
                                   <div
                                     className="overlay"
                                     onClick={() => {this.closeMenu()}}
-                                  ></div>
+                                  />
 
                                   }
 
