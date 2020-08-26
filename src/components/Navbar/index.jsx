@@ -164,7 +164,7 @@ export default class Navbar extends React.Component {
                     <div className="sticky-bar">
                         <div className="logo">
                             <Link
-                              to={this.props.location.pathname.includes('landing') ? '/landing' : './'}
+                              to={'/landing'}
                               className="logo-light"
                               onClick={() => {
                                 !this.state.landingGTAGCondition ?

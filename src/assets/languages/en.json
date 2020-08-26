@@ -121,7 +121,10 @@
   "FooterNavBar": {
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "linkInstagram": "https://www.instagram.com/easylang.app_ru/",
+    "linkFB": "https://www.facebook.com/EasyLangGames/",
+    "linkVK": "https://vk.com/public196837780"
   },
 
   "NavBar": {

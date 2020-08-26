@@ -88,7 +88,10 @@
   "FooterNavBar": {
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "linkInstagram": "https://www.instagram.com/easylang.app_ru/",
+    "linkFB": "https://www.facebook.com/EasyLangGames/",
+    "linkVK": "https://vk.com/public196837780"
   },
 
   "AboutUs": {
