@@ -3,7 +3,7 @@
 
 body {
   @include pureBody;
-};
+}
 
 /* Header of the page */
 .getStartedPlayer-header {
@@ -11,19 +11,19 @@ body {
   text-align: center;
   margin-top: -100px;
   padding-top: 100px;
-};
+}
 
 .wrapper-getStarted {
   padding: 1% 0 4%;
-};
+}
 
 .getStarted-logo {
   text-align: center;
   padding-top: 5%;
-};
+}
 
 .getStarted-title {
-  color:  #195AA9;
+  color: #195aa9;
   text-align: center;
   letter-spacing: 1.41px;
   margin: 1% 15% 0.5%;
@@ -31,41 +31,38 @@ body {
   font-size: 2.3rem;
   font-weight: 300;
   line-height: 44px;
-};
+}
 
 .getStarted-subtitle {
-  color:  #195AA9;
+  color: #195aa9;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 165.7%;
   letter-spacing: 0.41px;
   margin-bottom: 5rem;
   padding-top: 3%;
-};
+}
 
 .getStartedPlayer-button {
   @include centralFlexPosition;
   flex-direction: column;
 
-  p{
+  p {
     @include pureBody;
     padding-top: 10px;
-    color: #195AA9;
-  };
+    color: #195aa9;
+  }
 
-  p a{
-    color: #195AA9;
+  p a {
+    color: #195aa9;
     text-decoration: underline;
   }
 
-  &.bottom{
+  &.bottom {
     margin: 0;
     transform: translateY(-50%);
-  };
-
-};
-
-
+  }
+}
 
 .startedPlayer-button {
   @include normalBoldFont;
@@ -87,38 +84,38 @@ body {
 
   &:hover {
     background: $startBtnColorHover;
-  };
+  }
 
-  &.top,&.bottom{
+  &.top,
+  &.bottom {
     @include centralAlignFlex;
     padding: 1.2% 1.2%;
-  };
+    z-index: 1000;
+  }
 
   &.bottom {
     font-size: 1.4rem;
-  };
+  }
 
   &.blog-button {
     padding: 20px 20px;
     max-width: 360px;
-  };
-
-};
+  }
+}
 
 .player-content {
   height: 360px;
-};
+}
 
 .Description-Scroll {
-
   .extension-header-top {
     width: 100%;
-  };
+  }
 
   margin-bottom: 2vh;
   padding: 1% 8%;
   font-style: "Comfortaa", sans-serif !important;
-};
+}
 
 .Description-Scroll-image {
   padding-top: 40px;
@@ -126,22 +123,19 @@ body {
   img {
     width: 60%;
     height: 100%;
-  };
-
-};
+  }
+}
 
 .Description-Scroll {
-
   .footer-button {
     margin-top: 30%;
-  };
+  }
 
   .player-block {
     margin-bottom: 50px;
-  };
+  }
 
   .extension-header {
     display: flex;
-  };
-
-};
+  }
+}

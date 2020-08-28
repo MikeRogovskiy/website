@@ -140,18 +140,14 @@ export default class FooterNavBar extends Component {
   }
 
   render() {
-    if (this.props.page === "landingB") {
-      return (
-        <div className={this.classes.footerNavBar}>
-          {this.footerNavBarContentB}
-        </div>
-      );
-    } else {
-      return (
-        <div className={this.classes.footerNavBar}>
-          {this.footerNavBarContent}
-        </div>
-      );
-    }
+    // if (this.props.page === "landingB") {
+    return <div className="footer-nav-bar-b">{this.footerNavBarContentB}</div>;
+    // } else {
+    // return (
+    //   <div className={this.classes.footerNavBar}>
+    //     {this.footerNavBarContent}
+    //   </div>
+    // );
+    // }
   }
 }

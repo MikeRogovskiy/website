@@ -1,26 +1,25 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
 
-.footer-nav-bar{
+.footer-nav-bar {
   @include centralFlexPosition;
   width: 100%;
   height: 100%;
   overflow: hidden;
 
-  .footer-nav-bar_links a{
+  .footer-nav-bar_links a {
     margin: 0px 65px 0px 65px;
-  };
+  }
 
-  button{
+  button {
     font-size: 20px;
     line-height: 20px;
     @include buttonCorrect;
     background: rgba(255, 255, 255, 0);
     color: $color;
-  };
-
-};
-.footer-nav-bar-b{
+  }
+}
+.footer-nav-bar-b {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,50 +27,52 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  background: #1e4b8e;
 
   // .footer-nav-bar_links a{
   //   margin: 0px 65px 0px 65px;
   // };
 
-  button{
+  button {
     font-size: 20px;
     line-height: 20px;
     @include buttonCorrect;
     background: rgba(255, 255, 255, 0);
     color: $color;
-  };
+  }
+}
 
-};
-
-#landing-footer-nav-bar a{
+#landing-footer-nav-bar a {
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 100% 2px;
-  transition: background-size .3s;
+  transition: background-size 0.3s;
   padding-bottom: 10px;
-};
+}
 
-#landing-b-footer-nav-bar a{
+#landing-b-footer-nav-bar a {
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 100% 2px;
-  transition: background-size .3s;
+  transition: background-size 0.3s;
   padding-bottom: 10px;
   margin-right: 20px;
-};
+}
 
-#footer-nav-bar_content a:hover, #footer-nav-bar_content button:hover{
+#footer-nav-bar_content a:hover,
+#footer-nav-bar_content button:hover {
   background-size: 0% 2px;
-};
-#footer-nav-bar_content-b a:hover, #footer-nav-bar_content-b button:hover{
+}
+#footer-nav-bar_content-b a:hover,
+#footer-nav-bar_content-b button:hover {
   background-size: 0% 2px;
-};
+}
 
-#footer-nav-bar_content-b{
+#footer-nav-bar_content-b {
   display: flex;
   padding: 40px 100px 40px 100px;
   width: 100%;
@@ -81,76 +82,71 @@
   align-items: center;
 }
 
-
-#extension-footer-nav-bar, #player-footer-nav-bar{
-  .Footer{
-
-    p{
+#extension-footer-nav-bar,
+#player-footer-nav-bar {
+  .Footer {
+    p {
       color: black;
-    };
+    }
+  }
+}
 
-  };
-
-};
-
-#extension-footer-nav-bar a, #player-footer-nav-bar a{
+#extension-footer-nav-bar a,
+#player-footer-nav-bar a {
   text-decoration: none;
   color: $navMenuColor;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 100% 2px;
-  transition: background-size .3s;
+  transition: background-size 0.3s;
   padding-bottom: 10px;
-};
+}
 
 // #extension-footer-nav-bar a:hover, #player-footer-nav-bar a:hover{
 //   background-size: 0% 2px;
 // };
 
-#landing-footer-nav-bar{
+#landing-footer-nav-bar {
   @include centralFlexPosition;
   margin-top: -8vw;
   position: absolute;
-};
+}
 
-#landing-b-footer-nav-bar{
+#landing-b-footer-nav-bar {
   //@include centralFlexPosition;
   width: 100%;
   height: 100%;
-};
-#footer-nav-bar-text{
+}
+#footer-nav-bar-text {
   align-items: center;
   p {
     color: $color;
     font-size: 15px;
     font-weight: 400;
     padding-top: 20px;
-  };
+  }
 }
-#footer-nav-bar-logos{
+#footer-nav-bar-logos {
   @include centralFlexPosition;
-
 }
 
-#extension-footer-nav-bar{
+#extension-footer-nav-bar {
   @include centralFlexPosition;
   margin-top: -7vw;
   position: absolute;
 
-  button{
-    color:$navMenuColor;
-  };
+  button {
+    color: $navMenuColor;
+  }
+}
 
-};
-
-#player-footer-nav-bar{
+#player-footer-nav-bar {
   @include centralFlexPosition;
   margin-top: -7vw;
   position: absolute;
 
-  button{
-    color:$navMenuColor;
-  };
-
-};
+  button {
+    color: $navMenuColor;
+  }
+}

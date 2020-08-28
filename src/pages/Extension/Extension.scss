@@ -2,8 +2,8 @@
 @import "../../styles/variables";
 
 body {
- @include pureBody;
-};
+  @include pureBody;
+}
 
 /* Header of the page */
 .getStartedExt-header {
@@ -11,35 +11,35 @@ body {
   text-align: center;
   margin-top: -100px;
   padding-top: 100px;
-};
+}
 
-.getStarted-subtitle{
+.getStarted-subtitle {
   @include centralRowFlexPositionHWHundred;
   text-align: start;
-};
+}
 
-.getStarted-subtitle li{
+.getStarted-subtitle li {
   margin-left: 50px;
   list-style: disc;
   font-size: 1.2rem;
-};
+}
 
 .wrapper-getStarted {
   padding: 1% 0 4%;
-};
+}
 
-.wrapper-getStarted img{
+.wrapper-getStarted img {
   width: 50%;
   height: 50%;
-};
+}
 
 .getStarted-logo {
   text-align: center;
   padding-top: 5%;
-};
+}
 
 .getStarted-title {
-  color:  $extensionInstructionColor;
+  color: $extensionInstructionColor;
   text-align: center;
   letter-spacing: 1.41px;
   margin: 1% 15% 0.5%;
@@ -47,7 +47,7 @@ body {
   font-size: 2.3rem;
   font-weight: 300;
   line-height: 44px;
-};
+}
 
 .getStarted-button {
   @include centralJustifyFlex;
@@ -56,12 +56,12 @@ body {
 
   width: 100%;
   margin-top: 2%;
-};
+}
 
-.getStarted-button:nth-child(1){
+.getStarted-button:nth-child(1) {
   margin: 0;
   transform: translateY(-50%);
-};
+}
 
 .started-button {
   @include normalBoldFont;
@@ -79,27 +79,28 @@ body {
 
   &:hover {
     background: $startBtnColorHover;
-  };
+  }
 
-  &.top,&.bottom{
+  &.top,
+  &.bottom {
     @include centralAlignFlex;
     justify-content: center;
-  };
+  }
 
   &.bottom {
     font-size: 1.4rem;
-  };
+  }
 
   &.blog-button {
     padding: 20px 20px;
     max-width: 360px;
-  };
-
-};
+  }
+}
 
 .getStarted-footer {
-  background: url("../../assets/images/bottom_flowers.png") bottom/cover no-repeat;
-  height: 27vw;
-  padding-top: 10%;
-  overflow: hidden;
-};
+  background: url("../../assets/images/bottom_flowers.png") bottom/cover
+    no-repeat;
+  // height: 27vw;
+  // padding-top: 10%;
+  // overflow: hidden;
+}
