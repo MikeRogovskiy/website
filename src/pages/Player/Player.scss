@@ -90,7 +90,6 @@ body {
   &.bottom {
     @include centralAlignFlex;
     padding: 1.2% 1.2%;
-    z-index: 1000;
   }
 
   &.bottom {
