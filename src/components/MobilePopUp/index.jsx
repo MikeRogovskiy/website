@@ -45,7 +45,7 @@ export default function MobilePopUp(props){
     };
 
     return(
-        
+
         <div id="mobile-pop-up">
 
             <div className="pop-up_container">
@@ -54,7 +54,12 @@ export default function MobilePopUp(props){
                     <div className="pop-up_container_content_header">
                         <div className="pop-up_container_content_header_close">
                             <div className="pop-up_container_content_header_close_block">
-                                <button onClick={()  => {props.setPopupVisibility(false)}}>X</button>
+                                <button onClick={()  => {
+                                  window.gtag("event", props.product === "Player" ? `Add Player Close click` : `Add Extension Close click`, {
+                                    event_category: "Landing B. Page",
+                                  });
+                                  props.setPopupVisibility(false);
+                                  }}>X</button>
                             </div>
                         </div>
                         <h2>{getLangText(props.product + "PopupTitle")}</h2>
@@ -64,7 +69,7 @@ export default function MobilePopUp(props){
                         <h3>{getLangText(props.product + "PopupMain")}</h3>
 
                         <div className="pop-up_container_content_main_inputs">
-                            <form 
+                            <form
                                 method="POST"
                                 onSubmit={sendUserEmail}
                             >
@@ -81,6 +86,11 @@ export default function MobilePopUp(props){
                                     style={{
                                         backgroundColor: bgColor,
                                         color: color
+                                    }}
+                                    onClick={() => {
+                                      window.gtag("event",  props.product === "Player" ? `Add Player Submit click` : `Add Extension Submit click`, {
+                                        event_category: "Landing B. Page",
+                                      });
                                     }} >
                                     {getLangText("SendButton")}
                                 </button>
@@ -90,7 +100,7 @@ export default function MobilePopUp(props){
                     </div>
                 </div>
             </div>
-               
+
         </div>
     )
 }
