@@ -2,180 +2,180 @@
 @import "../../styles/mixins";
 
 @keyframes showMenu1 {
-    0% {
-        background-color: rgba(255, 255, 255, 0);
-    };
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
 
-    100% {
-        background-color: white;
-    };
-};
+  100% {
+    background-color: white;
+  }
+}
 
 @keyframes showMenu2 {
-    0% {
-        background-color: $color;
-    };
+  0% {
+    background-color: $color;
+  }
 
-    100% {
-        background-color: rgba(255, 255, 255, 0);
-    };
-};
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
 
 .Navbar {
-    @include centralFlexPosition;
-    position: -webkit-sticky;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    z-index: 50;
-    min-height: 70px;
-};
+  @include centralFlexPosition;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2000;
+  min-height: 70px;
+}
 
 .sticky-bar {
-    @include centralFlexPosition;
-    width: 67vw;
-    height: 100%;
-};
+  @include centralFlexPosition;
+  width: 67vw;
+  height: 100%;
+}
 
-.fixed-bar{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    background: $color !important;
-    box-shadow: 0 0 4px rgba(2, 0, 0, 0.33);
-    animation: showMenu1 0.3s;
+.fixed-bar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background: $color !important;
+  box-shadow: 0 0 4px rgba(2, 0, 0, 0.33);
+  animation: showMenu1 0.3s;
 
-    .logo-light, a, .lang select{
-        color: $navMenuColor;
-    };
+  .logo-light,
+  a,
+  .lang select {
+    color: $navMenuColor;
+  }
 
-    .lang select option{
-        background-color: $navMenuColor;
-        color: $color;
-    };
-
-};
+  .lang select option {
+    background-color: $navMenuColor;
+    color: $color;
+  }
+}
 
 .no-fixed-bar {
-    animation: showMenu2 0.3s ease-in-out;
-    display: flex;
-    position: fixed;
-    background: linear-gradient(180deg, #17365F -12.16%, #254F7E 200%) !important;
-};
+  animation: showMenu2 0.3s ease-in-out;
+  display: flex;
+  position: fixed;
+  background: linear-gradient(180deg, #17365f -12.16%, #254f7e 200%) !important;
+}
 
 .lang {
-    @include centralFlexPosition;
-    width: 10%;
-};
+  @include centralFlexPosition;
+  width: 10%;
+}
 
-.lang form{
-    @include centralRowFlexPositionHWHundred;
-};
+.lang form {
+  @include centralRowFlexPositionHWHundred;
+}
 
 .lang form select {
-    @include normalBoldFont;
-    @include buttonCorrect;
-    margin-left: 50px;
-    padding-top: 10px;
-    background: url("../../assets/images/navbar/Triangle1.1.svg") center no-repeat;
-    background-position-x: 94%;
-    color: $color;
-    font-size: 1.1rem;
-    letter-spacing: 0.7px;
-    transition: 0.3s ease-out;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 50% 100%;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-    padding-bottom: 10px;
-};
+  @include normalBoldFont;
+  @include buttonCorrect;
+  margin-left: 50px;
+  padding-top: 10px;
+  background: url("../../assets/images/navbar/Triangle1.1.svg") center no-repeat;
+  background-position-x: 94%;
+  color: $color;
+  font-size: 1.1rem;
+  letter-spacing: 0.7px;
+  transition: 0.3s ease-out;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  padding-bottom: 10px;
+}
 
-.lang select:hover{
-    background-size: 100% 2px;
-};
+.lang select:hover {
+  background-size: 100% 2px;
+}
 
-.lang select option{
-    background-color: $color;
-    color: $navMenuColor;
-};
+.lang select option {
+  background-color: $color;
+  color: $navMenuColor;
+}
 
 /*logo*/
 .menu-wrapper {
-    width: 45%;
-    max-height: 80px;
-};
+  width: 45%;
+  max-height: 80px;
+}
 
 .logo-light {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding-left: 1.6vw;
-};
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1.6vw;
+}
 
 /*menu*/
 .menu-wrapper {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex: 1 0 auto;
-    justify-content: space-around;
-    margin-right: 50px;
-};
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: space-around;
+  margin-right: 50px;
+}
 
 .menu-block {
-    width: 100%;
-};
+  width: 100%;
+}
 
 .menu-logo {
-    display: none;
-};
+  display: none;
+}
 
 .menu-main-list {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 0;
-    align-items: center;
-    width: 100%;
-};
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+  align-items: center;
+  width: 100%;
+}
 
 .menu-main-list li {
-    text-align: right;
-    margin-right: 30px;
-};
+  text-align: right;
+  margin-right: 30px;
+}
 
-.menu-main-list li:nth-child(5){
-    margin: 0px;
-};
+.menu-main-list li:nth-child(5) {
+  margin: 0px;
+}
 
 a.menu-nav__link {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 1px;
-    transition: background-size .3s;
-    padding-bottom: 10px;
-};
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+  padding-bottom: 10px;
+}
 
-a.menu-nav__link:hover{
-    background-size: 100% 1px;
-};
+a.menu-nav__link:hover {
+  background-size: 100% 1px;
+}
 
-#nav-btn{
-    font-weight: normal;
-    font-size: 1.1rem;
-    background: $startBtnColor;
-};
+#nav-btn {
+  font-weight: normal;
+  font-size: 1.1rem;
+  background: $startBtnColor;
+}
 
 .menu-nav__link {
-    font-weight: normal;
-    font-size: 1.1rem;
-    border-bottom: 0px solid rgba(255, 255, 255, 0);
-    transition: border-bottom 0.1s ease-in-out;
-};
-
+  font-weight: normal;
+  font-size: 1.1rem;
+  border-bottom: 0px solid rgba(255, 255, 255, 0);
+  transition: border-bottom 0.1s ease-in-out;
+}
