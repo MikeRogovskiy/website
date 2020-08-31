@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactHtmlParser from "react-html-parser";
 import "./downloadPlayerBtn.scss";
 
@@ -17,8 +17,12 @@ export default function DownloadPlayerBtn(props) {
     if (navigator.appVersion.indexOf("Win") !== -1) OSName = "Windows";
     if (navigator.appVersion.indexOf("Mac") !== -1) OSName = "MacOS";
   }
-  findOSName();
+  // findOSName();
 
+  useEffect(() => {
+    findOSName();
+  }, [OSName]);
+  useEffect(() => console.log(OSName));
   const googleAnalytics = () => {
     window.gtag(props.gtagName, props.gtagClick, {
       event_category: props.gtagCategory,
@@ -71,34 +75,34 @@ export default function DownloadPlayerBtn(props) {
   const DownloadPlayerBtnMobile = () => {
     return (
       <div className="getStartedPlayer-button">
-        {OSName === "Windows" && (
+        {/* {OSName === "Unknow OS" && ( */}
+        <a
+          className="startedPlayer-button top"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {
+            props.setPopupVisibility(true);
+            googleAnalytics();
+            console.log("works");
+          }}
+        >
+          <span>{getLangText("GetPlayerButtonWindows")}</span>
+        </a>
+        {/* )} */}
+
+        {/* {OSName === "Unknow OS" && ( */}
+        <p>
+          {getLangText("IfButtonIsForWindows")}{" "}
           <a
-            className="startedPlayer-button top"
-            target="_blank"
-            rel="noopener noreferrer"
             onClick={() => {
               props.setPopupVisibility(true);
-              googleAnalytics();
-              console.log("works");
             }}
           >
-            <span>{getLangText("GetPlayerButtonWindows")}</span>
+            {getLangText("LinkToAnotherOSDownload")}
           </a>
-        )}
-
-        {OSName === "Windows" && (
-          <p>
-            {getLangText("IfButtonIsForWindows")}{" "}
-            <a
-              onClick={() => {
-                props.setPopupVisibility(true);
-              }}
-            >
-              {getLangText("LinkToAnotherOSDownload")}
-            </a>
-          </p>
-        )}
-
+        </p>
+        {/* )} */}
+        {/* 
         {OSName === "MacOS" && (
           <a
             className="startedPlayer-button top"
@@ -123,7 +127,7 @@ export default function DownloadPlayerBtn(props) {
               {getLangText("LinkToAnotherOSDownload")}
             </a>
           </p>
-        )}
+        )} */}
       </div>
     );
   };
