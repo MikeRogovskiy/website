@@ -13,16 +13,18 @@ export default function DownloadPlayerBtn(props) {
     return ReactHtmlParser(props.text[text]);
   };
 
-  function findOSName() {
+  const findOSName = () => {
     if (navigator.appVersion.indexOf("Win") !== -1) OSName = "Windows";
-    if (navigator.appVersion.indexOf("Mac") !== -1) OSName = "MacOS";
-  }
-  // findOSName();
+    if (navigator.appVersion.indexOf("Mac") !== -1) {
+      OSName = "MacOS";
+      console.log(OSName === "MacOS");
+    }
+  };
+  findOSName();
 
-  useEffect(() => {
-    findOSName();
-  }, [OSName]);
-  useEffect(() => console.log(OSName));
+  // useEffect(() => {
+  //}, [OSName]);
+
   const googleAnalytics = () => {
     window.gtag(props.gtagName, props.gtagClick, {
       event_category: props.gtagCategory,
@@ -33,40 +35,41 @@ export default function DownloadPlayerBtn(props) {
     return (
       <div className="getStartedPlayer-button">
         {OSName === "Windows" && (
-          <a
-            className="startedPlayer-button top"
-            href={windowsLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={googleAnalytics}
-          >
-            <span>{getLangText("GetPlayerButtonWindows")}</span>
-          </a>
-        )}
+          <React.Fragment>
+            <a
+              className="startedPlayer-button top"
+              href={windowsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={googleAnalytics}
+            >
+              <span>{getLangText("GetPlayerButtonWindows")}</span>
+            </a>
 
-        {OSName === "Windows" && (
-          <p>
-            {getLangText("IfButtonIsForWindows")}{" "}
-            <a href={macLink}>{getLangText("LinkToAnotherOSDownload")}</a>
-          </p>
+            <p>
+              {getLangText("IfButtonIsForWindows")}{" "}
+              <a href={macLink}>{getLangText("LinkToAnotherOSDownload")}</a>
+            </p>
+          </React.Fragment>
         )}
 
         {OSName === "MacOS" && (
-          <a
-            className="startedPlayer-button bottom"
-            href={macLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={googleAnalytics}
-          >
-            <span>{getLangText("GetPlayerButtonMac")}</span>
-          </a>
-        )}
-        {OSName === "MacOS" && (
-          <p>
-            {getLangText("IfButtonIsForMac")}{" "}
-            <a href={windowsLink}>{getLangText("LinkToAnotherOSDownload")}</a>
-          </p>
+          <React.Fragment>
+            <a
+              className="startedPlayer-button bottom"
+              href={macLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={googleAnalytics}
+            >
+              <span>{getLangText("GetPlayerButtonMac")}</span>
+            </a>
+
+            <p>
+              {getLangText("IfButtonIsForMac")}{" "}
+              <a href={windowsLink}>{getLangText("LinkToAnotherOSDownload")}</a>
+            </p>
+          </React.Fragment>
         )}
       </div>
     );
