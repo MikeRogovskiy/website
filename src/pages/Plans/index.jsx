@@ -81,6 +81,12 @@ export default class Plans extends Component {
                     <div className="main-item">
                       <p>{this.getLangText("2-StandardPoint")}</p>
                     </div>
+                    <div className="main-item">
+                      <p>{this.getLangText("3-StandardPoint")}</p>
+                    </div>
+                    <div className="main-item">
+                      <p>{this.getLangText("4-StandardPoint")}</p>
+                    </div>
                   </div>
                   <div className="container-item_content_footer">
                     <input
@@ -117,6 +123,14 @@ export default class Plans extends Component {
                       <img src={plansV} alt="v-image" />
                       <p>{this.getLangText("2-PremiumPoint")}</p>
                     </div>
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image" />
+                      <p>{this.getLangText("3-PremiumPoint")}</p>
+                    </div>
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image" />
+                      <p>{this.getLangText("4-PremiumPoint")}</p>
+                    </div>
                   </div>
                   <div className="container-item_content_footer">
                     <input
@@ -151,6 +165,14 @@ export default class Plans extends Component {
                     <div className="main-item">
                       <img src={plansV} alt="v-image" />
                       <p>{this.getLangText("2-SuperPremiumPoint")}</p>
+                    </div>
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image" />
+                      <p>{this.getLangText("3-SuperPremiumPoint")}</p>
+                    </div>
+                    <div className="main-item">
+                      <img src={plansV} alt="v-image" />
+                      <p>{this.getLangText("4-SuperPremiumPoint")}</p>
                     </div>
                   </div>
                   <div className="container-item_content_footer">
