@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FarewellExtensionPage.scss";
 import brainCry from "../../assets/images/brainCry.svg";
+import thankYou from "../../assets/images/thank-you.svg";
 
 export default function FarewellExtensionPage() {
+  const [showModal, setShowModal] = useState(false);
+
   const OPTIONS = [
     "Hard to use",
     "I don’t want to create account",
@@ -12,14 +15,32 @@ export default function FarewellExtensionPage() {
     "Not needed",
   ];
 
-  const createCheckbox = (option) => (
-    <label>
+  const createCheckbox = (option, key) => (
+    <label key={key}>
       <input type="checkbox" className="checkbox" />
       {option}
     </label>
   );
 
-  const createCheckboxes = OPTIONS.map((item) => createCheckbox(item));
+  const createCheckboxes = OPTIONS.map((item, i) => createCheckbox(item, i));
+
+  const handleSubmit = (submitEvent) => {
+    submitEvent.preventDefault();
+    setShowModal(true);
+  };
+
+  const modalWindow = (
+    <div className="popup-wrapper">
+      {" "}
+      <div className="popup">
+        <img src={thankYou} alt="" />
+        <p className="popup-text">
+          Thank you <br />
+          for feedback!
+        </p>
+      </div>
+    </div>
+  );
 
   return (
     <div className="farewell-main">
@@ -45,7 +66,7 @@ export default function FarewellExtensionPage() {
       </div>
       <div className="farewell-main__right">
         <p className="farewell-main__right--title">Tell us why you leave?</p>
-        <form className="farewell-main__right--form">
+        <form className="farewell-main__right--form" onSubmit={handleSubmit}>
           {createCheckboxes}
           <div>
             <p>
@@ -58,6 +79,7 @@ export default function FarewellExtensionPage() {
           </button>
         </form>
       </div>
+      {showModal && modalWindow}
     </div>
   );
 }
