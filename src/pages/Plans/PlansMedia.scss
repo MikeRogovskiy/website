@@ -118,3 +118,41 @@
   };
 
 };
+//----------------------------------------------------------------------------------------
+@media screen and (max-width: 470px) {
+  .head-title {
+    padding: 0 12px;
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .head-subtitle {
+    padding: 1% 0% 0% 4%;
+    font-size: 20px;
+    line-height: 27px;
+   
+  }
+
+  .plans_wrapper_container {
+    padding: 10px;
+  }
+
+  .container-item {
+    width: 100% !important;
+      
+    &_content {
+      width: 100%;
+      
+      &_header {}
+      &_main {
+
+        .main-item {
+          // width: 100% !important;
+        }
+      }
+
+      &_footer {}
+    }
+  }
+
+}
