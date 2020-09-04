@@ -19,6 +19,7 @@ body {
   @include centralAlignFlex;
   @include wHHundred;
   flex-direction: row;
+  align-items: stretch;
 };
 
 .head-title {
@@ -66,15 +67,18 @@ body {
       width: 446px;
       margin: 2% 2% !important;
       flex-direction: column;
+      padding: 40px 0 60px;
 
       .container-item_content {
         width: 90%;
-        height: 80% !important;
-        margin: 13% 0 5%;
+        // margin: 13% 0 5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
 
         .container-item_content_header {
-          height: 30%;
+          height: 150px;
 
           h1 {
             padding-top: 7%;
@@ -123,9 +127,9 @@ body {
 
     .container-item_content_main {
       @include centralAlignFlex;
-      height: 48%;
-      margin-top: 15%;
+      margin: 15% 0 8%;
       flex-direction: column;
+      width: 100%;
 
       // .main-item:nth-child(2){
       //   border-bottom: 2px solid $plansBorderTopColor;
@@ -178,6 +182,7 @@ body {
     .container-item_content_footer {
       @include centralFlexPosition;
       width: 100%;
+      margin-top: auto;
     };
 
     #unique-item-button {
