@@ -8,6 +8,7 @@ import "./Plans.scss";
 import "./PlansMedia.scss";
 
 import plansV from "../../assets/images/Plans/plansV.svg";
+import plansVFree from "../../assets/images/Plans/plansVFree.svg";
 
 export default class Plans extends Component {
   getLangText(text) {
@@ -79,12 +80,15 @@ export default class Plans extends Component {
                       <p>{this.getLangText("1-StandardPoint")}</p>
                     </div>
                     <div className="main-item">
+                      <img src={plansVFree} alt="v-image" />
                       <p>{this.getLangText("2-StandardPoint")}</p>
                     </div>
                     <div className="main-item">
+                      <img src={plansVFree} alt="v-image" />
                       <p>{this.getLangText("3-StandardPoint")}</p>
                     </div>
                     <div className="main-item">
+                      <img src={plansVFree} alt="v-image" />
                       <p>{this.getLangText("4-StandardPoint")}</p>
                     </div>
                   </div>
