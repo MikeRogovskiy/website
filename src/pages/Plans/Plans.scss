@@ -19,11 +19,12 @@ body {
   @include centralAlignFlex;
   @include wHHundred;
   flex-direction: row;
+  align-items: stretch;
 };
 
 .head-title {
   @include normalBoldFont;
-  text-align: left;
+  text-align: center;
   color: $color;
   padding-left: 4%;
   font-size: 40px;
@@ -33,7 +34,7 @@ body {
 };
 
 .head-subtitle {
-  text-align: left;
+  text-align: center;
   padding: 1% 0% 0% 4%;
   font-style: normal;
   font-weight: 300;
@@ -63,22 +64,24 @@ body {
       background-color: $bgColor;
       border-radius: 60px;
       box-shadow: 0px 4px 2.5rem rgba(42, 82, 130, 0.12);
-      // height: 900px; // del
       width: 446px;
       margin: 2% 2% !important;
       flex-direction: column;
+      padding: 40px 0 60px;
 
       .container-item_content {
         width: 90%;
-        height: 80% !important;
-        margin: 13% 0 5%;
+        // margin: 13% 0 5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
 
         .container-item_content_header {
-          height: 30%;
+          height: 150px;
 
           h1 {
-            padding-top: 7%;
+            padding-top: 12px;
             color:  #132E52;
             font-style: normal;
             font-weight: 800;
@@ -124,13 +127,13 @@ body {
 
     .container-item_content_main {
       @include centralAlignFlex;
-      height: 48%;
-      margin-top: 15%;
+      margin: 15% 0 8%;
       flex-direction: column;
+      width: 100%;
 
-      .main-item:nth-child(2){
-        border-bottom: 2px solid $plansBorderTopColor;
-      };
+      // .main-item:nth-child(2){
+      //   border-bottom: 2px solid $plansBorderTopColor;
+      // };
 
       .main-item {
         width: 80%;
@@ -142,7 +145,7 @@ body {
         img {
           width: 15px;
           height: 15px;
-          margin: 20px 10px 0px 20px;
+          margin: 20px 10px 0px 20px;  
         };
 
         p {
@@ -179,6 +182,7 @@ body {
     .container-item_content_footer {
       @include centralFlexPosition;
       width: 100%;
+      margin-top: auto;
     };
 
     #unique-item-button {
