@@ -55,7 +55,6 @@
 };
 
 @media screen and (max-width: 1200px){
-
   .plans_wrapper_container{
     width: 83%;
   };
@@ -63,7 +62,6 @@
 };
 
 @media screen and (max-width: 1100px){
-
   .container-item_content_header h3,
   .container-item_content_header  h2 {
     font-size: 20px;
@@ -89,6 +87,12 @@
 };
 
 @media screen and (max-width: 470px) {
+  .plans-folder {
+    // background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlans.svg");
+    background-repeat: no-repeat;
+    background-position: 65% 0%;
+  }
+  
   .head-title {
     font-size: 18px;
     line-height: 22px;
@@ -99,7 +103,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-   
   }
 
   .container-item_content_header h2 {
@@ -108,43 +111,53 @@
   }
 
   .plans_wrapper_container {
-    padding: 120px 57px;
+    padding: 0px 57px;
   }
 
-  .container-item {
+  .plans {
+    .container-item {
     width: 100% !important;
     border-radius: 30px !important;
-    margin-top: 140px;
-      
-    &_content {
-      width: 100%;
-      
-      &_header {
-        h2 {
-          font-size: 6px;
-          line-height: 20px;
+    margin-top: 120px;
+    padding: 30px 0 40px;
+    
+      &_content {
+        width: 100%;
+        
+        &_header {
+          height: 100%;
+          h2 {
+            font-size: 16px;
+            line-height: 20px;
+          }
+          
+          h1 {
+            font-size: 36px;
+            line-height: 44px;
+          }
+          
+          h3 {
+            font-size: 13px;
+            line-height: 16px;
+          }
         }
-
-        h1 {
-          font-size: 36px;
-          line-height: 44px;
+        &_main {
+          
+          .main-item p {
+            font-size: 12px;
+            line-height: 15px;
+          }
         }
+        
+        &_footer {
+          padding: 11px 29px;
+          input {
 
-        h3 {
-          font-weight: 500;
-          font-size: 13px;
-          line-height: 16px;
-          text-align: center;
-          letter-spacing: 1.40714px;
+            font-size: 14px;
+            line-height: 17px;
+          }
         }
       }
-      &_main {
-
-        .main-item { }
-      }
-
-      &_footer {}
     }
   }
-
 }
