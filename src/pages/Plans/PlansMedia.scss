@@ -6,10 +6,8 @@
     width: 95%;
   };
 
-  #item-standard p, #item-standard h2,
-  #item-standard span, #item-standard h3,
-  #item-premium p, #item-premium h2, #item-premium h3,
-  #item-super-premium p, #item-super-premium h2, #item-super-premium h3{
+  .container-item_content_header h3,
+  .container-item_content_header h2 {
     font-size: 18px;
   };
 
@@ -33,10 +31,8 @@
     width: 90%;
   };
 
-  #item-standard p, #item-standard h2,
-  #item-standard span, #item-standard h3,
-  #item-premium p, #item-premium h2, #item-premium h3,
-  #item-super-premium p, #item-super-premium h2, #item-super-premium h3{
+  .container-item_content_header h3,
+  .container-item_content_header h2 {
     font-size: 16px;
   };
 
@@ -45,24 +41,20 @@
   };
 
   .head-title{
+    padding: 0 57px;
     font-size: 32px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    text-align: center;
   };
-
+  
   .head-subtitle{
+    padding: 0 57px;
     font-size: 20px;
-    align-items: center;
-    padding-left: 200px;
-    display: flex;
-    padding-top: 0px;
+    text-align: center;
   };
 
 };
 
 @media screen and (max-width: 1200px){
-
   .plans_wrapper_container{
     width: 83%;
   };
@@ -70,11 +62,8 @@
 };
 
 @media screen and (max-width: 1100px){
-
-  #item-standard p, #item-standard h2,
-  #item-standard span, #item-standard h3,
-  #item-premium p, #item-premium h2, #item-premium h3,
-  #item-super-premium p, #item-super-premium h2, #item-super-premium h3{
+  .container-item_content_header h3,
+  .container-item_content_header  h2 {
     font-size: 20px;
   };
 
@@ -87,7 +76,6 @@
   };
 
   .head-subtitle{
-    padding-left: 40px;
     font-size: 30px;
   };
 
@@ -96,63 +84,80 @@
     align-items: center;
     width: 100%;
   };
-
-  #item-premium{
-    margin-top: 30px;
-  };
-
 };
 
-@media screen and (max-width: 900px){
-
-  .head-subtitle{
-    padding-left: 30px;
-  };
-
-};
-
-@media screen and (max-width: 700px){
-
-  .head-subtitle{
-    padding-left: 25px;
-  };
-
-};
-//----------------------------------------------------------------------------------------
 @media screen and (max-width: 470px) {
+  .plans-folder {
+    // background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlans.svg");
+    background-repeat: no-repeat;
+    background-position: 65% 0%;
+  }
+  
   .head-title {
-    padding: 0 12px;
-    font-size: 30px;
-    line-height: 39px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .head-subtitle {
-    padding: 1% 0% 0% 4%;
-    font-size: 20px;
-    line-height: 27px;
-   
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .container-item_content_header h2 {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .plans_wrapper_container {
-    padding: 10px;
+    padding: 0px 57px;
   }
 
-  .container-item {
+  .plans {
+    .container-item {
     width: 100% !important;
-      
-    &_content {
-      width: 100%;
-      
-      &_header {}
-      &_main {
+    border-radius: 30px !important;
+    margin-top: 120px;
+    padding: 30px 0 40px;
+    
+      &_content {
+        width: 100%;
+        
+        &_header {
+          height: 100%;
+          h2 {
+            font-size: 16px;
+            line-height: 20px;
+          }
+          
+          h1 {
+            font-size: 36px;
+            line-height: 44px;
+          }
+          
+          h3 {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+        &_main {
+          
+          .main-item p {
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+        
+        &_footer {
+          padding: 11px 29px;
+          input {
 
-        .main-item {
-          // width: 100% !important;
+            font-size: 14px;
+            line-height: 17px;
+          }
         }
       }
-
-      &_footer {}
     }
   }
-
 }
