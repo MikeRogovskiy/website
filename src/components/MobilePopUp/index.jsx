@@ -27,6 +27,7 @@ export default function MobilePopUp(props){
     };
 
     const sendUserEmail = (event) => {
+        const lang = localStorage.getItem('lang');
         fetch('https://2mymemory.com/api/utility/add_user', {
             method: 'POST',
             mode: 'cors',
@@ -34,7 +35,7 @@ export default function MobilePopUp(props){
                 userEmail: email,
                 userAgent: navigator.userAgent,
                 product: props.product,
-                language: localStorage.getItem('lang'),
+                language: lang ? lang : /\/ru\//.test(document.location.href) ? 'ru' : 'en',
             }),
             headers: {
                 'Content-Type': 'application/json'
