@@ -20,6 +20,7 @@ body {
   @include wHHundred;
   flex-direction: row;
   align-items: stretch;
+  justify-content: center;
 };
 
 .head-title {
