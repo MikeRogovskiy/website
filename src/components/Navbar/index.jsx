@@ -168,7 +168,7 @@ export default class Navbar extends React.Component {
           window.location.href.includes("/B") ||
           window.location.href.includes("/C") ||
           window.location.href.includes("advertisement") ||
-          (window.location.href.includes("plans") === false && (
+          ((
             <nav className={navBarClass}>
               <div className="sticky-bar">
                 <div className="logo">
