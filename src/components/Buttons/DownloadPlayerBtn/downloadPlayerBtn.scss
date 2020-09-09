@@ -7,8 +7,11 @@
 
   p {
     @include pureBody;
-    padding-top: 10px;
+    margin-top: 10px;
     color: #195aa9;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.407143px;
   }
 
   p a {
@@ -25,7 +28,7 @@
 .startedPlayer-button {
   @include normalBoldFont;
   display: block;
-  width: 17%;
+  // width: 17%;
   justify-content: center;
 
   font-size: 14px;
@@ -34,14 +37,23 @@
   line-height: 17px;
   margin: 0 1.5%;
 
-  background: $startBtnColor;
+  background: #2DC3A0;
   border: none;
   border-radius: 110px;
   // transition: 3s;
-  transition: all 0.7s linear;
-
+  transition: all .7s linear;
+  
   &:hover {
-    background: $startBtnColorHover;
+    // background: $startBtnColorHover;
+    background: linear-gradient(180deg, #FF8A00 0%, #FFB800 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    background: linear-gradient(180deg, #FF8A00 0%, #FFB800 100%);
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
   }
 
   &.top,
