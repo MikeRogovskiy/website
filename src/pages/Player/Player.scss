@@ -7,13 +7,14 @@ body {
 
 /* Header of the page */
 .getStartedPlayer-header {
-  background: url('../../assets/images/bcgPlayerTop.png') no-repeat 110px 0px;
+  background: url('../../assets/images/bcgPlayerTop.png') no-repeat;
   background-size: cover;
+  background-position: center center;
   text-align: center;
 }
 
 .wrapper-getStarted {
-  padding: 1% 0 4%;
+  padding: 1% 0 80px;
 }
 
 .getStarted-logo {
@@ -96,6 +97,7 @@ body {
   margin-top: 70px;
   max-width: 70px;
   transition: .4s;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.1);

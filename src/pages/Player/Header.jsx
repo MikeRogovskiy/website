@@ -89,9 +89,8 @@ const Header = (props) => {
 
 
 
-                    <a href="#description">
-                        <img src={btnDown} className="getStarted-down-btn" alt="down btn" />
-                    </a>
+                        <img src={btnDown} className="getStarted-down-btn" alt="down btn" 
+                        onClick={() => { window.scrollTo(0, props.moveToSecondSection.current.offsetTop - 70)} } />
                 </div>
 
 

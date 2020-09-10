@@ -29,10 +29,6 @@
   position: relative;
   background: #1e4b8e;
 
-  // .footer-nav-bar_links a{
-  //   margin: 0px 65px 0px 65px;
-  // };
-
   button {
     font-size: 20px;
     line-height: 20px;
@@ -60,7 +56,12 @@
   background-size: 100% 2px;
   transition: background-size 0.3s;
   padding-bottom: 10px;
-  margin-right: 20px;
+}
+
+
+#landing-b-footer-nav-bar a+a,
+#footer-nav-bar-logos a+a{
+  margin-left: 20px;
 }
 
 #footer-nav-bar_content a:hover,

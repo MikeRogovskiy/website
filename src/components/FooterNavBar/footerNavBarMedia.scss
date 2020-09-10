@@ -99,7 +99,7 @@
   #footer-nav-bar_content-b {
     flex-direction: column;
     justify-content: center;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 50px 40px 50px;
   }
   .footer-nav-bar-b {
     button {
@@ -134,4 +134,12 @@
       font-size: 9px;
     }
   }
+  #footer-nav-bar-text-links a {
+    padding: 10px 0px 4px;
+  }
+
+  #footer-nav-bar-text-links a+a {
+    margin-left: 0;
+  }
+
 }
