@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import Fade from "react-reveal/Fade";
 import ReactHtmlParser from "react-html-parser";
 import MainHeader from "../../components/MainHeader";
@@ -15,6 +15,10 @@ import Footer from "./Footer.jsx";
 
 
 export default class Player extends Component {
+  constructor(props) {
+    super(props)
+    this.moveToSecondSection = createRef()
+  }
 
   state = {
     bgImgId: 0,
@@ -124,7 +128,7 @@ export default class Player extends Component {
       <div>
         <MainHeader />
 
-        <Header text={this.props.text} isMobile={this.props.isMobile} mobilePopupText={this.props.mobilePopupText}/>
+        <Header text={this.props.text} isMobile={this.props.isMobile} mobilePopupText={this.props.mobilePopupText} moveToSecondSection={this.moveToSecondSection}/>
 
         {/* Player Scroll Content */}
         <div className="scrolled-content-header">
@@ -132,7 +136,7 @@ export default class Player extends Component {
         </div>
 
  
-        <div className="Description-Scroll">
+        <div className="Description-Scroll" ref={this.moveToSecondSection}>
 
           <div style={{ display: "flex" }}>
 
