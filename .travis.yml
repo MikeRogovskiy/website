@@ -12,5 +12,5 @@ os: osx
 osx_image: xcode12
 branches:
   only:
-    - develop
+    - master
 script: node scripts/build.js && node ftp.js

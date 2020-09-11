@@ -28,7 +28,6 @@ class App extends React.Component {
     } else {
       localStorage.setItem('isMobile', 'false');
 		}
-		console.log('Test travis')
   }
 
   getUserLanguageFromInputList() {
