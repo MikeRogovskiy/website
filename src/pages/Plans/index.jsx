@@ -33,18 +33,23 @@ export default class Plans extends Component {
       function deletePopUp() {
         popUpWindow.style.display = "none";
         popUpBackground.style.display = "none";
+        plans.style.opacity = "1";
       }
 
       if (
         popUpWindow.style.display !== "flex" &&
         popUpBackground.style.display !== "flex"
       ) {
-        changeState("47%", "#245FAB", "1", "flex");
+        changeState("28%", "#245FAB", "1", "flex");
+        popUpBackground.addEventListener('click', () => {
+          deletePopUp();
+        })
       } else {
         changeState("1", "", "0", "");
         setTimeout(deletePopUp, 500);
       }
     }
+
 
     return (
       <div className="plans-folder">
