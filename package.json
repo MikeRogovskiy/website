@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "cross-env PUBLIC_URL=https://easylang.app/client GENERATE_SOURCEMAP=false node scripts/build.js",
-    "test": "node scripts/test.js ",
+    "test": "node scripts/test.js",
     "predeploy": "cross-env PUBLIC_URL=https://easably.github.io/website node scripts/build.js",
     "deploy": "gh-pages -d build",
     "ftp": "npm run build && node ftp.js"

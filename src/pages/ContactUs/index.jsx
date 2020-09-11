@@ -3,9 +3,9 @@ import ReactHtmlParser from "react-html-parser";
 import FooterNavBar from "../../components/FooterNavBar";
 import email from "../../assets/images/contact/email.png";
 import call from "../../assets/images/contact/call.svg";
-import facebook from "../../assets/images/contact/facebook@2x.svg";
-import vkontakte from "../../assets/images/contact/vk@2x.svg";
-import instagram from "../../assets/images/contact/Inst@2x.svg";
+import facebook from "../../assets/images/contact/facebook_2x.svg";
+import vkontakte from "../../assets/images/contact/vk_2x.svg";
+import instagram from "../../assets/images/contact/Inst_2x.svg";
 import "./contactUs.scss";
 import "./contactUsMedia.scss";
 
