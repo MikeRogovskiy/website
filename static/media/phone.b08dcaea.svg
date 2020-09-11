@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="357px" height="535px" viewBox="0 0 357 535" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.99796334" width="250" height="489.002037" rx="40"></rect>
+        <filter x="-14.8%" y="-6.7%" width="128.8%" height="114.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="3" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="-1" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.368526519   0 0 0 0 0.489322469   0 0 0 0 0.582257699  0 0 0 0.348776224 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M27,288 L285,288 C299.911688,288 312,300.088312 312,315 L312,345 C312,359.911688 299.911688,372 285,372 L27,372 C12.0883118,372 1.82615513e-15,359.911688 0,345 L0,315 C-1.82615513e-15,300.088312 12.0883118,288 27,288 Z M27,192 L269,192 C283.911688,192 296,204.088312 296,219 L296,249 C296,263.911688 283.911688,276 269,276 L27,276 C12.0883118,276 1.82615513e-15,263.911688 0,249 L0,219 C-1.82615513e-15,204.088312 12.0883118,192 27,192 Z M27,96 L253,96 C267.911688,96 280,108.088312 280,123 L280,153 C280,167.911688 267.911688,180 253,180 L27,180 C12.0883118,180 1.82615513e-15,167.911688 0,153 L0,123 C-1.82615513e-15,108.088312 12.0883118,96 27,96 Z M27,0 L237,3.55271368e-15 C251.911688,8.13480987e-16 264,12.0883118 264,27 L264,57 C264,71.9116882 251.911688,84 237,84 L27,84 C12.0883118,84 1.82615513e-15,71.9116882 0,57 L0,27 C-1.82615513e-15,12.0883118 12.0883118,2.73923269e-15 27,0 Z" id="path-3"></path>
+        <filter x="-2.2%" y="-1.3%" width="104.5%" height="103.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.666535488   0 0 0 0 0.764391284   0 0 0 0 0.823228034  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="landing-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.2" transform="translate(-144.000000, -829.000000)">
+            <g id="2" transform="translate(1.000000, 777.000000)">
+                <g id="phone" transform="translate(167.000000, 71.000000)">
+                    <g id="Group-8">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#F6FAFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M30,0.99796334 L220,0.99796334 C236.568542,0.99796334 250,14.4294208 250,30.9979633 L250,52.9979633 L0,52.9979633 L0,30.9979633 C-2.02906125e-15,14.4294208 13.4314575,0.99796334 30,0.99796334 Z" id="Rectangle-Copy-3" fill="#6CADFF"></path>
+                        <rect id="Rectangle-Copy" stroke="#000000" stroke-width="12" x="-6" y="-5.00203666" width="262" height="501.002037" rx="40"></rect>
+                        <path d="M57,0 L193,0 L193,6 C193,11.5228475 188.522847,16 183,16 L67,16 C61.4771525,16 57,11.5228475 57,6 L57,0 Z" id="Rectangle" fill="#000000"></path>
+                        <path d="M106,3 L144,3 C145.104569,3 146,3.8954305 146,5 C146,6.1045695 145.104569,7 144,7 L106,7 C104.895431,7 104,6.1045695 104,5 C104,3.8954305 104.895431,3 106,3 Z M152,3 C153.104569,3 154,3.8954305 154,5 C154,6.1045695 153.104569,7 152,7 C150.895431,7 150,6.1045695 150,5 C150,3.8954305 150.895431,3 152,3 Z" id="Combined-Shape" fill="#1A1A1A"></path>
+                        <text id="All-lessons" font-family="Comfortaa-Regular_Bold, Comfortaa" font-size="22" font-weight="bold" letter-spacing="-0.077" fill="#FFFFFF">
+                            <tspan x="66.2205" y="43">All lessons</tspan>
+                        </text>
+                    </g>
+                    <g id="уроки" transform="translate(17.000000, 70.000000)">
+                        <g id="Combined-Shape">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <text id="4.-Help-me-in-this…" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" letter-spacing="-0.056" fill="#50525B">
+                            <tspan x="22" y="322">4. Help me in this…</tspan>
+                        </text>
+                        <text id="3-day-ago" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" letter-spacing="-0.049" fill="#D3DBE7">
+                            <tspan x="22" y="343">3 day ago</tspan>
+                        </text>
+                        <g id="Group" transform="translate(268.000000, 319.000000)">
+                            <circle id="Oval-Copy" fill="#FF9055" cx="11" cy="11" r="11"></circle>
+                            <path d="M11,22 C11,22 11,1.42108547e-14 11,1.42108547e-14 C4.92486775,1.42108547e-14 1.33226763e-14,4.92486775 1.33226763e-14,11 C1.33226763e-14,17.0751322 4.92486775,22 11,22 Z" id="Oval-Copy-2" fill="#FFEB5D"></path>
+                            <circle id="Oval" fill="#FFFFFF" cx="11" cy="11" r="7.33333333"></circle>
+                        </g>
+                        <text id="3.-And-EASYLANG…" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" letter-spacing="-0.056" fill="#50525B">
+                            <tspan x="22" y="226">3. And EASYLANG</tspan>
+                            <tspan x="162.800625" y="226" font-family="Kodchasan-SemiBold, Kodchasan SemiBold" font-weight="500">…</tspan>
+                        </text>
+                        <text id="3-day-ago" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" letter-spacing="-0.049" fill="#D3DBE7">
+                            <tspan x="22" y="247">3 day ago</tspan>
+                        </text>
+                        <g id="Group" transform="translate(252.000000, 222.000000)">
+                            <circle id="Oval-Copy" fill="#AFF265" cx="11" cy="11" r="11"></circle>
+                            <circle id="Oval" fill="#FFFFFF" cx="11" cy="11" r="7.33333333"></circle>
+                        </g>
+                        <text id="2.-And-getting-bette" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" letter-spacing="-0.056" fill="#50525B">
+                            <tspan x="22" y="130">2. And getting better…</tspan>
+                        </text>
+                        <text id="2-day-ago" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" letter-spacing="-0.049" fill="#D3DBE7">
+                            <tspan x="22" y="151">2 day ago</tspan>
+                        </text>
+                        <text id="1.-I-study…" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold" letter-spacing="-0.056" fill="#50525B">
+                            <tspan x="21" y="34">1. I study…</tspan>
+                        </text>
+                        <text id="Day-ago" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" letter-spacing="-0.049" fill="#D3DBE7">
+                            <tspan x="21" y="55">Day ago</tspan>
+                        </text>
+                        <circle id="Oval" fill="#E5EBF6" cx="231" cy="42" r="11"></circle>
+                        <g id="Group" transform="translate(241.000000, 127.000000)">
+                            <circle id="Oval-Copy" fill="#FF9861" cx="11" cy="11" r="11"></circle>
+                            <path d="M11,22 C11,22 11,1.42108547e-14 11,1.42108547e-14 C4.92486775,1.42108547e-14 1.33226763e-14,4.92486775 1.33226763e-14,11 C1.33226763e-14,17.0751322 4.92486775,22 11,22 Z" id="Oval-Copy-2" fill="#FFEB5D"></path>
+                            <path d="M11,11 C11,5.40283307 11,-1.77635684e-15 11,-1.77635684e-15 C4.92486775,-1.77635684e-15 8.8817842e-15,4.92486775 8.8817842e-15,11 C2.40989899,11 9.19522181,11 11,11 Z" id="Oval-Copy-3" fill="#AFF265"></path>
+                            <circle id="Oval" fill="#FFFFFF" cx="11" cy="11" r="7.33333333"></circle>
+                        </g>
+                    </g>
+                    <g id="добавить-copy" transform="translate(173.000000, 416.000000)">
+                        <circle id="Oval-Copy" fill="#FFFFFF" cx="27" cy="27" r="27"></circle>
+                        <circle id="Oval-Copy-2" fill="#6CD8FF" cx="27.4909091" cy="27.4909091" r="22.5818182"></circle>
+                        <path d="M27.4909091,27.4909091 L27.4909091,19.6363636 L27.4909091,27.4909091 L19.6363636,27.4909091 L27.4909091,27.4909091 Z M27.4909091,27.4909091 L35.3454545,27.4909091 L27.4909091,27.4909091 L27.4909091,35.3454545 L27.4909091,27.4909091 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
