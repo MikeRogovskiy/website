@@ -11,4 +11,4 @@ osx_image: xcode12
 branches:
   only:
   - develop
-script: npm run ftp
+script: node scripts/build.js && node ftp.js
