@@ -8,12 +8,7 @@ install:
   - npm install
 os: osx
 osx_image: xcode12
-deploy:
-  - provider: script
-    script: npm run deploy
-    on:
-      branch: develop
-  - provider: script
-    script: echo "Master branch publish..."
-    on:
-      branch: master
+branches:
+  only:
+  - develop
+script: npm run ftp
