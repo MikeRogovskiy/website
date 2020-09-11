@@ -10,7 +10,7 @@ os: osx
 osx_image: xcode12
 deploy:
   - provider: script
-    script: echo "Develop branch publish..."
+    script: npm run deploy
     on:
       branch: develop
   - provider: script
