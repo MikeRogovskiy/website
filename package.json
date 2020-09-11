@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "cross-env PUBLIC_URL=https://easylang.app/client GENERATE_SOURCEMAP=false node scripts/build.js",
+    "build": "./node_modules/.bin/cross-env PUBLIC_URL=https://easylang.app/client GENERATE_SOURCEMAP=false node scripts/build.js",
     "test": "node scripts/test.js",
-    "predeploy": "cross-env PUBLIC_URL=https://easably.github.io/website node scripts/build.js",
+    "predeploy": "./node_modules/.bin/cross-env PUBLIC_URL=https://easably.github.io/website node scripts/build.js",
     "deploy": "gh-pages -d build",
     "ftp": "npm run build && node ftp.js"
   },
