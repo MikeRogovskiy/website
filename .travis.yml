@@ -8,8 +8,6 @@ install:
   - npm install
 os: osx
 osx_image: xcode12
-before_script:
-  - rm -rf ./node_modules package-lock.json
 deploy:
   - provider: script
     script: npm run deploy
