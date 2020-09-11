@@ -103,11 +103,11 @@
     "webpack": "4.40.2",
     "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "4.3.1"
+    "workbox-webpack-plugin": "4.3.1",
+		"cross-env": "^7.0.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.3.3",
-    "cross-env": "^7.0.2",
     "ftp-deploy": "^2.3.7",
     "html-loader": "^0.5.5"
   },
