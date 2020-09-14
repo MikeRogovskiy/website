@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "cross-env PUBLIC_URL=https://easylang.app/client GENERATE_SOURCEMAP=false node scripts/build.js",
-    "test": "node scripts/test.js ",
+    "test": "node scripts/test.js",
     "predeploy": "cross-env PUBLIC_URL=https://easably.github.io/website node scripts/build.js",
     "deploy": "gh-pages -d build",
     "ftp": "npm run build && node ftp.js"
@@ -103,11 +103,11 @@
     "webpack": "4.40.2",
     "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "4.3.1"
+    "workbox-webpack-plugin": "4.3.1",
+    "cross-env": "^7.0.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.3.3",
-    "cross-env": "^7.0.2",
     "ftp-deploy": "^2.3.7",
     "html-loader": "^0.5.5"
   },

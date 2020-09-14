@@ -27,7 +27,7 @@ class App extends React.Component {
       localStorage.setItem('isMobile', 'true');
     } else {
       localStorage.setItem('isMobile', 'false');
-    }
+		}
   }
 
   getUserLanguageFromInputList() {

@@ -4,9 +4,9 @@ import "./footerNavBarMedia.scss";
 import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 import Footer from "../Footer";
-import facebook from "../../assets/images/footerNavBar/Facebook_footer@2x.svg";
-import vkontakte from "../../assets/images/footerNavBar/Vk_footer@2x.svg";
-import instagram from "../../assets/images/footerNavBar/Instagram_footer@2x.svg";
+import facebook from "../../assets/images/footerNavBar/Facebook_footer_2x.svg";
+import vkontakte from "../../assets/images/footerNavBar/Vk_footer_2x.svg";
+import instagram from "../../assets/images/footerNavBar/Instagram_footer_2x.svg";
 import classNames from "classnames";
 //"landing-footer-nav-bar"
 export default class FooterNavBar extends Component {
