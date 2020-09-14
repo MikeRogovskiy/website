@@ -45,7 +45,7 @@ export default class PopUpWindow extends Component{
 
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
-    };
+    }
 
 
     render(){
@@ -80,13 +80,12 @@ export default class PopUpWindow extends Component{
                                 </div>
                                 <div className="main-item">
                                     <span></span>
-                                    <p>{this.getLangText("3-SuperPremiumPoint")}</p>
+                                    <p>{this.getLangText("4-SuperPremiumPoint")}</p>
                                 </div>
                             </div>
-                            {/* <h1>{this.getLangText("PopUpWindow-main-key")}</h1> */}
 
                             <div className="container-pop-up_wrapper_footer">
-                                <input type="button" value="Apply Now" onClick={this.checkedPromo}  />
+                                <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.checkedPromo}  />
                             </div>
                         </div>
 
@@ -94,15 +93,15 @@ export default class PopUpWindow extends Component{
                      <div className="container-pop-up_wrapper">
 
                         <div className="container-pop-up_wrapper_header">
-                            <h2>{this.getLangText("PopUpWindow-header-title")}</h2>
+                            <h2>{this.getLangText("PopUpWindow-header-title-2")}</h2>
                         </div>
 
                         <div className="container-pop-up_wrapper_promo-cod">
-                            <p>Your Promo code has been successfully applied!</p>
+                            <p>{this.getLangText("PopUpWindow-main-promo-cod")}</p>
                         </div>
 
                         <div className="container-pop-up_wrapper_footer">
-                                    <input type="button" value="Apply Now" onClick={this.goToAccount}/>
+                                    <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.goToAccount}/>
                         </div>
                     </div>
                 )}
