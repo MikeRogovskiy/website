@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
 import "./popUp.scss";
 import "./popUpMedia.scss";
-// import {dotItem} from '../../../assets/images/Plans/dot.svg';
 
 
 export default class PopUpWindow extends Component{
@@ -85,10 +84,8 @@ export default class PopUpWindow extends Component{
                                 </div>
                             </div>
                             {/* <h1>{this.getLangText("PopUpWindow-main-key")}</h1> */}
-                            {/* <p>{this.getLangText("PopUpWindow-main-title")}</p> */}
 
                             <div className="container-pop-up_wrapper_footer">
-                                {/* <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.props.action}/> */}
                                 <input type="button" value="Apply Now" onClick={this.checkedPromo}  />
                             </div>
                         </div>
@@ -98,7 +95,6 @@ export default class PopUpWindow extends Component{
 
                         <div className="container-pop-up_wrapper_header">
                             <h2>{this.getLangText("PopUpWindow-header-title")}</h2>
-                            {/* <p>{this.getLangText("PopUpWindow-header-text")}</p> */}
                         </div>
 
                         <div className="container-pop-up_wrapper_promo-cod">
@@ -106,8 +102,6 @@ export default class PopUpWindow extends Component{
                         </div>
 
                         <div className="container-pop-up_wrapper_footer">
-                            {/* <p>{this.getLangText("PopUpWindow-footer-text")}</p> */}
-                            {/* <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.props.action}/> */}
                                     <input type="button" value="Apply Now" onClick={this.goToAccount}/>
                         </div>
                     </div>
