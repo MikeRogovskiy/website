@@ -105,19 +105,44 @@
   };
 };
 
-// Height section
+@media screen and (max-width: 420px){
+  .container-pop-up {
+    padding: 40px 20px;
+    width: 90%;
 
-@media screen and (max-height: 900px){
-  .container-pop-up{
-    height: 70%;
-  };
+    &_wrapper {
+      min-height: 460px;
 
+      &_main {
+        padding: 20px 0px;
+
+        .main-item {
+          width: 100%;
+          padding: 20px;
+
+          img {
+            width: 12px;
+            height: 12px;
+            margin: 0 30px 0 0;
+          }
+        }
+      }
+    }
+  }
 };
+
+// Height section
 
 @media screen and (max-height: 800px){
   .container-pop-up{
-    top: 420px;
-    height: 75%;
+    &_wrapper {
+      &_main {
+        .main-item {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    }
   };
 
   .pop-up-storage .container-pop-up_wrapper{
@@ -127,7 +152,8 @@
     };
 
     h2{
-      font-size: 35px;
+      line-height: 35px;
+      font-size: 25px;
     };
 
     p{
@@ -135,7 +161,7 @@
     };
 
     input{
-      height: 50px;
+      // height: 50px;
       font-size: 28px;
     };
 
@@ -145,7 +171,7 @@
 
 @media screen and (max-height: 700px){
   .container-pop-up{
-    top: 330px;
+    margin-top: 30px;
   };
 
   .pop-up-storage .container-pop-up_wrapper{
@@ -155,7 +181,7 @@
     };
 
     h2{
-      font-size: 31px;
+      font-size: 25px;
     };
 
     p{
@@ -164,7 +190,7 @@
     };
 
     input{
-      height: 40px;
+      // height: 40px;
       font-size: 25px;
     };
 
@@ -173,6 +199,26 @@
 };
 
 @media screen and (max-height: 600px){
+  .container-pop-up {
+    padding: 20px;
+
+    &_wrapper {
+      min-height: 300px;
+
+      &_main {
+        padding: 10px 0px;
+
+        .main-item {
+          width: 100%;
+          padding: 10px;
+
+          img {
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+    }
+  }
 
   .pop-up-storage .container-pop-up_wrapper{
 
@@ -181,7 +227,7 @@
     };
 
     h2{
-      font-size: 29px;
+      font-size: 20px;
     };
 
     p{
@@ -190,7 +236,6 @@
     };
 
     input{
-      height: 38px;
       font-size: 22px;
     };
 
@@ -216,7 +261,7 @@
     };
 
     input{
-      height: 34px;
+      // height: 34px;
       font-size: 20px;
     };
 
@@ -242,7 +287,7 @@
     };
 
     input{
-      height: 28px;
+      // height: 28px;
       font-size: 15px;
     };
 

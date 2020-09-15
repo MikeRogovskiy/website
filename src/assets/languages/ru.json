@@ -362,13 +362,15 @@
     "4-SuperPremiumPoint": "Неограниченные подсказок для eLang игр",
     "ButtonName": "Выбрать",
 
-    "PopUpWindow-header-title": "Поздравляем!",
+    "PopUpWindow-header-title-1": "ВАШ ПРОМО КОД",
+    "PopUpWindow-header-title-2": "Поздравляем!",
     "PopUpWindow-header-text": "Ты получаешь</br>бесплатный купон",
     "PopUpWindow-main-key": "EASYUNLIM",
+    "PopUpWindow-main-promo-cod": "Ваш промокод успешно применён!",
     "PopUpWindow-main-title": "-<span>Поделитесь</span> в соцсетях нашей</br>страничкой <a href=https://easylang.app/>EasyLang</a>",
     "PopUpWindow-main-text": "-Активируйте купон в своем</br> <a href=\"https://easy4learn.com/account?promo=easyunlim\" target=\"_blank\">аккаунте</a>",
     "PopUpWindow-footer-text": "Спасибо за</br>использование продукта!",
-    "PopUpWindow-footer-input": "Понял!",
+    "PopUpWindow-footer-input": "Применить!",
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
