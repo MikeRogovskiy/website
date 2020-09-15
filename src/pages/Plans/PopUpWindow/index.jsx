@@ -32,7 +32,8 @@ export default class PopUpWindow extends Component{
         });
     }
 
-    checkedPromo() {
+    checkedPromo(e) {
+        e.preventDefault();
         this.setState({ 
             congratulation: true,
             inputPromo: this.state.inputPromo
@@ -55,7 +56,7 @@ export default class PopUpWindow extends Component{
 
                 { !this.state.congratulation ? (
                     <div className="container-pop-up">
-                        <div className="container-pop-up_wrapper">
+                        <form className="container-pop-up_wrapper" onSubmit={this.checkedPromo} >
 
                             <div className="container-pop-up_wrapper_header">
                                 <h2>{this.getLangText("PopUpWindow-header-title-1")}</h2>
@@ -87,7 +88,7 @@ export default class PopUpWindow extends Component{
                             <div className="container-pop-up_wrapper_footer">
                                 <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.checkedPromo}  />
                             </div>
-                        </div>
+                        </form>
                     </div>
 
                 ) : (
