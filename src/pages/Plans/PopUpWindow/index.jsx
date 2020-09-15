@@ -52,9 +52,9 @@ export default class PopUpWindow extends Component{
 
         return(
             <div className="pop-up-storage">
-                <div className="container-pop-up">
 
                 { !this.state.congratulation ? (
+                    <div className="container-pop-up">
                         <div className="container-pop-up_wrapper">
 
                             <div className="container-pop-up_wrapper_header">
@@ -88,25 +88,26 @@ export default class PopUpWindow extends Component{
                                 <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.checkedPromo}  />
                             </div>
                         </div>
+                    </div>
 
                 ) : (
-                     <div className="container-pop-up_wrapper">
+                    <div className="container-pop-up other-bg">
+                        <div className="container-pop-up_wrapper other-bg">
 
-                        <div className="container-pop-up_wrapper_header">
-                            <h2>{this.getLangText("PopUpWindow-header-title-2")}</h2>
-                        </div>
+                            <div className="container-pop-up_wrapper_header">
+                                <h2>{this.getLangText("PopUpWindow-header-title-2")}</h2>
+                            </div>
 
-                        <div className="container-pop-up_wrapper_promo-cod">
-                            <p>{this.getLangText("PopUpWindow-main-promo-cod")}</p>
-                        </div>
+                            <div className="container-pop-up_wrapper_promo-cod">
+                                <p>{this.getLangText("PopUpWindow-main-promo-cod")}</p>
+                            </div>
 
-                        <div className="container-pop-up_wrapper_footer">
-                                    <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.goToAccount}/>
+                            <div className="container-pop-up_wrapper_footer">
+                                        <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.goToAccount}/>
+                            </div>
                         </div>
                     </div>
                 )}
-
-                </div>
             </div>
         );
     };
