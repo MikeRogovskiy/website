@@ -37,8 +37,8 @@
     align-items: center;
     text-align: center;
 
-    &_header {
 
+    &_header {
       h2 {
         font-family: Montserrat;
         font-weight: bold;
@@ -48,10 +48,20 @@
         text-transform: uppercase;
         color: #34D086;
       }
+
+      &.congratulation {
+        margin-top: 60px;        
+        h2 {
+          font-size: 22px;
+          line-height: 27px;
+        }
+      }
     }
 
     &_promo-cod {
       margin-top: 20px;
+      max-width: 290px;
+      width: 100%;
 
       input {
         text-align: center;
@@ -78,13 +88,13 @@
       }
 
       p {
-        margin-top: 120px;
+        margin-top: 60px;
         max-width: 340px; 
         font-family: Montserrat, sans-serif;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        line-height: 27px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
         text-align: center;
         color: #454545;
       }
@@ -141,7 +151,7 @@
         color: #fff;
         background: #34D086;
         border-radius: 80px;
-        font-family: Montserrat, sans-serif;
+        font-family: Montserrat;
         padding: 17px 22px;
         text-align: center;
         border: none;

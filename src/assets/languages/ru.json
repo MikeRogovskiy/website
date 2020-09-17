@@ -369,7 +369,8 @@
     "PopUpWindow-main-title": "-<span>Поделитесь</span> в соцсетях нашей</br>страничкой <a href=https://easylang.app/>EasyLang</a>",
     "PopUpWindow-main-text": "-Активируйте купон в своем</br> <a href=\"https://easy4learn.com/account?promo=easyunlim\" target=\"_blank\">аккаунте</a>",
     "PopUpWindow-footer-text": "Спасибо за</br>использование продукта!",
-    "PopUpWindow-footer-input": "Применить!",
+    "PopUpWindow-footer-add": "Применить!",
+    "PopUpWindow-footer-back": "Вернуться",
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
