@@ -7,22 +7,14 @@ import "./popUpMedia.scss";
 export default class PopUpWindow extends Component{
     constructor(props) {
         super(props)
-        this.setInputPromo = this.setInputPromo.bind(this)
         this.handleChangePromo = this.handleChangePromo.bind(this)
         this.checkedPromo = this.checkedPromo.bind(this)
         this.goToAccount = this.goToAccount.bind(this)
 
         this.state = {
-            inputPromo: "PROMO",
+            inputPromo: "EASYMONTH21",
             congratulation: false
         }
-    }
-
-    setInputPromo() {
-        this.setState({
-            inputPromo: "",
-            congratulation: this.state.congratulation
-        })
     }
 
     handleChangePromo(event) {
@@ -66,7 +58,6 @@ export default class PopUpWindow extends Component{
                                 <input
                                     type="text"
                                     value={this.state.inputPromo}
-                                    onClick={this.setInputPromo}
                                     onChange={this.handleChangePromo}></input>
                             </div>
 
@@ -86,7 +77,7 @@ export default class PopUpWindow extends Component{
                             </div>
 
                             <div className="container-pop-up_wrapper_footer">
-                                <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.checkedPromo}  />
+                                <input type="button" value={this.getLangText("PopUpWindow-footer-add")} onClick={this.checkedPromo}  />
                             </div>
                         </form>
                     </div>
@@ -95,7 +86,7 @@ export default class PopUpWindow extends Component{
                     <div className="container-pop-up other-bg">
                         <div className="container-pop-up_wrapper other-bg">
 
-                            <div className="container-pop-up_wrapper_header">
+                            <div className="container-pop-up_wrapper_header congratulation">
                                 <h2>{this.getLangText("PopUpWindow-header-title-2")}</h2>
                             </div>
 
@@ -103,8 +94,8 @@ export default class PopUpWindow extends Component{
                                 <p>{this.getLangText("PopUpWindow-main-promo-cod")}</p>
                             </div>
 
-                            <div className="container-pop-up_wrapper_footer">
-                                        <input type="button" value={this.getLangText("PopUpWindow-footer-input")} onClick={this.goToAccount}/>
+                                <div className="container-pop-up_wrapper_footer congratulation">
+                                        <input type="button" value={this.getLangText("PopUpWindow-footer-back")} onClick={this.goToAccount}/>
                             </div>
                         </div>
                     </div>
