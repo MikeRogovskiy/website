@@ -7,7 +7,6 @@ import "./popUpMedia.scss";
 export default class PopUpWindow extends Component{
     constructor(props) {
         super(props)
-        this.setInputPromo = this.setInputPromo.bind(this)
         this.handleChangePromo = this.handleChangePromo.bind(this)
         this.checkedPromo = this.checkedPromo.bind(this)
         this.goToAccount = this.goToAccount.bind(this)
@@ -16,13 +15,6 @@ export default class PopUpWindow extends Component{
             inputPromo: "EASYMONTH21",
             congratulation: false
         }
-    }
-
-    setInputPromo() {
-        this.setState({
-            inputPromo: "",
-            congratulation: this.state.congratulation
-        })
     }
 
     handleChangePromo(event) {
@@ -66,7 +58,6 @@ export default class PopUpWindow extends Component{
                                 <input
                                     type="text"
                                     value={this.state.inputPromo}
-                                    onClick={this.setInputPromo}
                                     onChange={this.handleChangePromo}></input>
                             </div>
 
