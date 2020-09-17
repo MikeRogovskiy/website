@@ -364,7 +364,8 @@
     "PopUpWindow-main-title": "-<span>Share</span> our page on</br>social networks <a href=https://easylang.app/>EasyLang</a>",
     "PopUpWindow-main-text": "-Activate the coupon in your </br> <a href=\"https://easy4learn.com/account?promo=easyunlim\" target=\"_blank\">account</a>",
     "PopUpWindow-footer-text": "Thanks for<br> using the product!",
-    "PopUpWindow-footer-input": "Add promo!",
+    "PopUpWindow-footer-add": "Add promo!",
+    "PopUpWindow-footer-back": "Back to account",
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
