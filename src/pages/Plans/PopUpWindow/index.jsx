@@ -13,7 +13,7 @@ export default class PopUpWindow extends Component{
         this.goToAccount = this.goToAccount.bind(this)
 
         this.state = {
-            inputPromo: "PROMO",
+            inputPromo: "EASYMONTH21",
             congratulation: false
         }
     }
