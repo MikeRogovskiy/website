@@ -121,13 +121,34 @@ export default class FooterNavBar extends Component {
             href={this.links.linkInstagram}
             target="_blank"
             rel="noreferrer noopener"
+            onClick={() => {
+              window.gtag("event", "Instagram Link click", {
+                event_category: "Landing. Footer",
+              });
+            }}
           >
             <img src={instagram}></img>
           </a>
-          <a href={this.links.linkVK} target="_blank" rel="noreferrer noopener">
+          <a 
+            href={this.links.linkVK} 
+            target="_blank" 
+            rel="noreferrer noopener"
+            onClick={() => {
+              window.gtag("event", "VK Link click", {
+                event_category: "Landing. Footer",
+              });
+            }}>
             <img src={vkontakte}></img>
           </a>
-          <a href={this.links.linkFB} target="_blank" rel="noreferrer noopener">
+          <a 
+            href={this.links.linkFB} 
+            target="_blank" 
+            rel="noreferrer noopener"
+            onClick={() => {
+              window.gtag("event", "Fb Link click", {
+                event_category: "Landing. Footer",
+              });
+            }}>
             <img src={facebook}></img>
           </a>
         </div>
