@@ -27,10 +27,17 @@ export default class Navbar extends React.Component {
   changeLocale = (e) => {
     this.props.handleLanguage(e.target.value);
     localStorage.setItem("lang", e.target.value);
-    window.gtag("event", "Language choose", {
-      event_category: "Landing.Navigation bar",
-      event_label: e.target.value,
-    });
+    if (!this.state.landingGTAGCondition) {
+      window.gtag("event", "Language choose", {
+        event_category: "Landing.Navigation bar",
+        event_label: e.target.value,
+      });
+    } else {
+      window.gtag("event", "Language choose", {
+        event_category: "Landing B. Navigation Bar",
+        event_label: e.target.value,
+      });
+    }
   };
 
   clickMenuButton = () => {
