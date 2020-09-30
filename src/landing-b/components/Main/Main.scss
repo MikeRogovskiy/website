@@ -20,6 +20,7 @@
 }
 .relax {
   margin-top: 8%;
+  padding-bottom: 50px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -48,32 +49,34 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-top: 14%;
+  padding: 50px 0;
+  
   &-item {
     box-shadow: 0px 4px 40px rgba(21, 45, 80, 0.1);
     border-radius: 20px;
     padding: 4% 2%;
     width: 30%;
+    // width: 100%;
+    margin: 0 10px;
     & i {
       height: 0.7em;
       width: 0.7em;
       margin-left: 4%;
     }
   }
-  &-row-first {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2%;
-  }
+  &-row-first,
   &-row-second {
+    padding: 15px 0;
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+  }
+  &-row-first .options-item {
+    width: 100%;
   }
 }
 
 .slider {
-  margin: 14% 0 50px 0;
+  margin: 50px 0;
 }
 
 .blog {
@@ -159,12 +162,16 @@
   letter-spacing: 1px;
   color: #fff !important;
   transition: all 0.5s;
-  padding: 5% 20px;
+  padding: 20px 50px;
   background: linear-gradient(292.09deg, #ff8b4a 0%, #ffc24a 100%);
-  width: 100%;
-  margin-top: 40px;
+  // width: 100%;
+  margin-top: 60px;
   &:hover {
     background: linear-gradient(292.09deg, #ff8b4a 0%, #ff8b4a 100%);
+  }
+
+  &.fullWidth {
+    width: 100%;
   }
 }
 

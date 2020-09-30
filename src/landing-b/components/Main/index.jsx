@@ -231,7 +231,7 @@ export default function Main(props) {
           </p>
           {!isMobile ? (
             <button
-              className="download"
+              className="download fullWidth"
               onClick={() => {
                 window.open(href);
                 window.gtag("event", "Add Player' click", {
@@ -243,7 +243,7 @@ export default function Main(props) {
             </button>
           ) : (
             <button
-              className="download"
+                className="download fullWidth"
               onClick={() => {
                 setPlayerPopup(true);
                 window.gtag("event", "Add Player' click", {
@@ -263,7 +263,7 @@ export default function Main(props) {
             <p className="products-item__subtitle"> {getLangText("TutorDescrip2")} </p>
           </p>
           <button
-            className="download"
+            className="download fullWidth"
             onClick={() => {
               window.open("https://easy4learn.com/login");
               window.gtag("event", "Add Tutor' click", {
