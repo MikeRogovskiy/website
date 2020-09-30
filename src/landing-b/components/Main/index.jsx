@@ -3,7 +3,8 @@ import imgEnjoy from "../../../assets/images/home/imgEnjoy.svg";
 import "./Main.scss";
 import "./mainMedia.scss";
 import Slider from "../Slider";
-import EasyLangLogo from "../../assets/EasyLang-logo.svg";
+// import EasyLangLogo from "../../assets/EasyLang-logo.svg";
+import EasyLangLogo from "../../assets/EasyLang-products.svg";
 import ReactHtmlParser from "react-html-parser";
 import MobilePopUp from "../../../components/MobilePopUp";
 
@@ -172,11 +173,10 @@ export default function Main(props) {
       <section className="products">
         <div className="products-item">
           <img src={EasyLangLogo} alt="EasyLangLogo" />
-          <p className="easy-way">{getLangText("BrowserExt")} </p>
-          <p className="relax-sub">{getLangText("BrowserExtDescrip1")}</p>{" "}
-          <br />
-          <p className="relax-sub" style={{ marginBottom: "48px" }}>
-            {getLangText("BrowserExtDescrip2")}
+          <p className="products-item__title">{getLangText("BrowserExt")} </p>
+          <p className="products-item__subs">
+            <p className="products-item__subtitle"> {getLangText("BrowserExtDescrip1")} </p>
+            <p className="products-item__subtitle"> {getLangText("BrowserExtDescrip2")} </p>
           </p>
           {!isMobile ? (
               <button
@@ -208,10 +208,10 @@ export default function Main(props) {
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />
-          <p className="easy-way">{getLangText("Player")}</p>{" "}
-          <p className="relax-sub">
-            <span> {getLangText("PlayerDescrip1")} </span>
-            <br /> <span>{getLangText("PlayerDescrip2")}</span>
+          <p className="products-item__title">{getLangText("Player")}</p>{" "}
+          <p className="products-item__subs">
+            <p className="products-item__subtitle"> {getLangText("PlayerDescrip1")} </p>
+            <p className="products-item__subtitle"> {getLangText("PlayerDescrip2")} </p>
           </p>
           {!isMobile ? (
             <button
@@ -241,11 +241,10 @@ export default function Main(props) {
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />
-          <p className="easy-way">{getLangText("Tutor")}</p>
-          <p className="relax-sub">
-            {" "}
-            <span> {getLangText("TutorDescrip1")} </span>
-            <br /> <span>{getLangText("TutorDescrip2")}</span>
+          <p className="products-item__title">{getLangText("Tutor")}</p>
+          <p className="products-item__sub">
+            <p className="products-item__subtitle"> {getLangText("TutorDescrip1")} </p>
+            <p className="products-item__subtitle"> {getLangText("TutorDescrip2")} </p>
           </p>
           <button
             className="download"

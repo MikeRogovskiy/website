@@ -43,7 +43,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "BlogPage": {
@@ -82,7 +83,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "AboutUs": {
@@ -115,7 +117,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "FooterNavBar": {
@@ -166,7 +169,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "ExtensionPage": {
@@ -199,7 +203,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "ExtensionInstructionPage": {
@@ -233,7 +238,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "PlayerAnimation": {
@@ -331,7 +337,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "PlansPage": {
@@ -374,7 +381,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
   "Landing": {
     "Title": "Easy way <br/> To learn English!",
@@ -411,7 +419,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
   "MobilePopup": {
     "PlayerPopupTitle": "Mobile version in progress",

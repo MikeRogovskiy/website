@@ -78,7 +78,9 @@ export default class FooterNavBar extends Component {
   );
   footerNavBarContentB = (
     <div className="footer-nav-bar_links" id="landing-b-footer-nav-bar">
+        <div class="wrapper-landing">
       <div id="footer-nav-bar_content-b">
+
         <div id="footer-nav-bar-text">
           <div id="footer-nav-bar-text-links">
             <Link
@@ -112,6 +114,17 @@ export default class FooterNavBar extends Component {
               }}
             >
               <button>{this.getLangText("PrivacyPolicy")}</button>
+            </Link>
+
+            <Link
+                to="/blog"
+              onClick={() => {
+                window.gtag("event", "Blog click", {
+                  event_category: "Landing B. Footer",
+                });
+              }}
+            >
+                <button>{this.getLangText("Blog")}</button>
             </Link>
           </div>
           <p>© 2020 EASYLANG CO. All Rights Reserved.</p>
@@ -153,6 +166,7 @@ export default class FooterNavBar extends Component {
           </a>
         </div>
       </div>
+        </div>
     </div>
   );
 

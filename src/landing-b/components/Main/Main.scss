@@ -8,7 +8,7 @@
   line-height: 120% !important;
   color: #1e4b8e !important;
 }
-.relax-sub {
+.relax-sub { // DEL ?
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -86,28 +86,50 @@
     margin: 0 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: flex-start;
     & img {
       margin-top: 25px;
     }
+
+    &__title {
+      margin-top: 40px;
+      flex-grow: 1;
+
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 120%;
+      color: #1E4B8E;
+    }
+    &__subs {
+      margin-top: 30px;
+    }
+    &__subtitle {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #3668B0;
+    }
   }
 }
 .download {
-  font-size: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
   outline: none;
   border: none;
   cursor: pointer;
   font-style: normal;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 30px;
   letter-spacing: 1px;
   color: #fff !important;
   transition: all 0.5s;
   padding: 5% 20px;
   background: linear-gradient(292.09deg, #ff8b4a 0%, #ffc24a 100%);
   width: 100%;
-  margin-top: 5%;
+  margin-top: 40px;
   &:hover {
     background: linear-gradient(292.09deg, #ff8b4a 0%, #ff8b4a 100%);
   }
