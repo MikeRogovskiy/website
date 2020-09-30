@@ -196,7 +196,7 @@ export default function Main(props) {
           </p>
           {!isMobile ? (
               <button
-                className="download"
+              className="download fullWidth"
                 onClick={() => {
                   window.open(
                     "https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
@@ -210,7 +210,7 @@ export default function Main(props) {
               </button>
               ) : (
               <button
-                className="download"
+                className="download fullWidth"
                 onClick={() => {
                   setExtensionPopup(true);
                   window.gtag("event", "Add Extension' click", {
@@ -258,7 +258,7 @@ export default function Main(props) {
         <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />
           <p className="products-item__title">{getLangText("Tutor")}</p>
-          <p className="products-item__sub">
+          <p className="products-item__subs">
             <p className="products-item__subtitle"> {getLangText("TutorDescrip1")} </p>
             <p className="products-item__subtitle"> {getLangText("TutorDescrip2")} </p>
           </p>

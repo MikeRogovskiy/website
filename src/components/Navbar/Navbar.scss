@@ -114,6 +114,18 @@
   display: flex;
   align-items: center;
   padding-left: 1.6vw;
+  
+  &__img {
+    margin-right: 10px;    
+    &.active {
+      filter: invert(80%) sepia(78%) saturate(2269%) hue-rotate(206deg) brightness(95%) contrast(80%);
+    }
+  }
+
+  &__text {
+    color: #3CAFFF;
+    margin-top: 4px;
+  }
 }
 
 /*menu*/
