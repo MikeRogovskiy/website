@@ -73,10 +73,42 @@
 }
 
 .slider {
-  margin: 14% 0;
+  margin: 14% 0 50px 0;
+}
+
+.blog {
+  padding: 50px 40px;
+  text-align: center;
+
+    
+  &-btn {
+    max-width: 820px;
+    width: 100%;
+    cursor: pointer;
+    width: 100%;
+    padding: 30px;
+    background: #3CAFFF;
+    box-shadow: 0px 4px 40px rgba(21, 45, 80, 0.1);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    transition: .3s;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+
+    &:hover {
+      background: #3668B0;
+    }
+  }
 }
 
 .products {
+  padding: 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   &-item {
@@ -86,7 +118,7 @@
     margin: 0 10px;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: flex-start;
     & img {
       margin-top: 25px;
@@ -114,6 +146,7 @@
     }
   }
 }
+
 .download {
   font-size: 1.4rem;
   line-height: 1.9rem;

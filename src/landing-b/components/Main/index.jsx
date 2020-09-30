@@ -167,9 +167,25 @@ export default function Main(props) {
           </div>
         </div>
       </section>
+
       <section className="slider">
         <Slider text={props.text} />
       </section>
+
+      <section className="blog">
+          <button
+            className="blog-btn"
+            onClick={() => {
+              window.open("https://easy4learn.com/login");
+              window.gtag("event", "Blog button click", {
+                event_category: "Landing B. Page",
+              });
+            }}
+          >
+            {getLangText("Start")}
+          </button>
+      </section>
+
       <section className="products">
         <div className="products-item">
           <img src={EasyLangLogo} alt="EasyLangLogo" />
