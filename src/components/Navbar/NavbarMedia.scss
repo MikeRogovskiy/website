@@ -23,6 +23,11 @@
 
 /*menu button for mobile version*/
 @media (max-width: 1024px) {
+    .logo-light {
+        &__img {
+            margin-left: 70px;
+        }
+    }
 
     .Navbar{
         align-items: center;

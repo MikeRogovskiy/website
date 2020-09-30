@@ -153,21 +153,50 @@
 }
 
 .download {
-  font-size: 1.4rem;
-  line-height: 1.9rem;
+
+  font-size: 2rem;
+  line-height: 2.4rem;
   outline: none;
   border: none;
   cursor: pointer;
   font-style: normal;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 40px;
   letter-spacing: 1px;
   color: #fff !important;
   padding: 20px 50px;
   background: linear-gradient(292.09deg, #ff8b4a 0%, #ffc24a 100%);
-  // width: 100%;
   margin-top: 60px;
-  transition: .3s linear;
+
+  display: block;
+  position: relative;
+
+  &__child {
+    position: relative;
+    z-index: 3;
+  }
+
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: linear-gradient(120deg, #ff8b4a 0%, #ffc24a 90%);
+    // background: linear-gradient(292.09deg, #ffc24a 0%, #ff8b4a 100%);
+    transition: opacity .6s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  &:hover:after {
+    opacity: 1;
+  }
+
+
   
   &:hover {
     background: linear-gradient(292.09deg, #ff8b4a 0%, #ff8b4a 100%);

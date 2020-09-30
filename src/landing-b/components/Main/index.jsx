@@ -72,7 +72,9 @@ export default function Main(props) {
                     });
                   }}
               >
+              <span className="download__child">
                 {getLangText("FreeStart")}
+              </span>
               </button>
           ) : (
               <button
@@ -184,7 +186,9 @@ export default function Main(props) {
           }}
         >
           <button className="blog-btn" >
-            {getLangText("Blog")}
+            <span className="download__child">
+              {getLangText("Blog")}
+            </span>
           </button>
         </Link>
       </section>
@@ -209,7 +213,9 @@ export default function Main(props) {
                   });
                 }}
               >
-                {getLangText("Add")}
+                <span className="download__child">
+                  {getLangText("Add")}
+                </span>
               </button>
               ) : (
               <button
@@ -221,7 +227,9 @@ export default function Main(props) {
                   });
                 }}
               >
-                {getLangText("Add")}
+                <span className="download__child">
+                  {getLangText("Add")}
+                </span>
               </button>
           )}
         </div>
@@ -242,7 +250,9 @@ export default function Main(props) {
                 });
               }}
             >
+              <span className="download__child">
               {getLangText("Download")}
+              </span>
             </button>
           ) : (
             <button
@@ -254,7 +264,9 @@ export default function Main(props) {
                 });
               }}
             >
-              {getLangText("Download")}
+              <span className="download__child">
+                {getLangText("Download")}
+              </span>
             </button>
           )}
         </div>
@@ -274,8 +286,9 @@ export default function Main(props) {
               });
             }}
           >
-            {" "}
-            {getLangText("Start")}
+            <span className="download__child">
+              {getLangText("Start")}
+            </span>
           </button>
         </div>
       </section>
