@@ -163,15 +163,16 @@
   border-radius: 30px;
   letter-spacing: 1px;
   color: #fff !important;
-  transition: all 0.5s;
   padding: 20px 50px;
   background: linear-gradient(292.09deg, #ff8b4a 0%, #ffc24a 100%);
   // width: 100%;
   margin-top: 60px;
+  transition: .3s linear;
+  
   &:hover {
     background: linear-gradient(292.09deg, #ff8b4a 0%, #ff8b4a 100%);
   }
-
+  
   &.fullWidth {
     width: 100%;
   }

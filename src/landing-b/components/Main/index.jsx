@@ -7,6 +7,8 @@ import Slider from "../Slider";
 import EasyLangLogo from "../../assets/EasyLang-products.svg";
 import ReactHtmlParser from "react-html-parser";
 import MobilePopUp from "../../../components/MobilePopUp";
+import { Link } from "@reach/router";
+
 
 export default function Main(props) {
   const isMobile = props.isMobile;
@@ -65,7 +67,7 @@ export default function Main(props) {
                   className="download"
                   onClick={() => {
                     window.open(href);
-                    window.gtag("event", "Add Player' click", {
+                    window.gtag("event", "Main 'Free Start' Click", {
                       event_category: "Landing B. Page",
                     });
                   }}
@@ -77,7 +79,7 @@ export default function Main(props) {
                   className="download"
                   onClick={() => {
                     setPlayerPopup(true);
-                    window.gtag("event", "Add Player' click", {
+                    window.gtag("event", "Main 'Free Start' Click", {
                       event_category: "Landing B. Page",
                     });
                   }}
@@ -173,17 +175,18 @@ export default function Main(props) {
       </section>
 
       <section className="blog">
-          <button
-            className="blog-btn"
-            onClick={() => {
-              window.open("https://easy4learn.com/login");
-              window.gtag("event", "Blog button click", {
-                event_category: "Landing B. Page",
-              });
-            }}
-          >
-            {getLangText("Start")}
+        <Link
+          to="/blog"
+          onClick={() => {
+            window.gtag("event", "Blog button click", {
+              event_category: "Landing B. Page",
+            });
+          }}
+        >
+          <button className="blog-btn" >
+            {getLangText("Blog")}
           </button>
+        </Link>
       </section>
 
       <section className="products">
