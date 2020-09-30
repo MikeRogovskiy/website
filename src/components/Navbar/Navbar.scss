@@ -116,6 +116,7 @@
   padding-left: 1.6vw;
   
   &__img {
+    margin-left: 20px;
     margin-right: 10px;    
     &.active {
       filter: invert(80%) sepia(78%) saturate(2269%) hue-rotate(206deg) brightness(95%) contrast(80%);
