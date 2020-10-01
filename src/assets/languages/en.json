@@ -43,7 +43,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "BlogPage": {
@@ -82,7 +83,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "AboutUs": {
@@ -115,7 +117,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "FooterNavBar": {
@@ -132,7 +135,7 @@
     "products": "Products",
     "extension": "Read & Learn",
     "player": "Watch & Learn",
-    "GetStartedButton": "FREE START",
+    "GetStartedButton": "Free Start",
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
@@ -166,7 +169,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "ExtensionPage": {
@@ -199,7 +203,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "ExtensionInstructionPage": {
@@ -233,7 +238,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "PlayerAnimation": {
@@ -331,7 +337,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
 
   "PlansPage": {
@@ -374,12 +381,13 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
   "Landing": {
     "Title": "Easy way <br/> To learn English!",
     "SubTitle": "Try EasyLang and enjoy learning",
-    "FreeStart": "FREE START",
+    "FreeStart": "Free Start",
     "Listen": "Listen",
     "ListenDescrip": "Listen and repeat phrases easily! <br /> Double subtitles for the video you love!",
     "Navigate": "Navigate",
@@ -411,7 +419,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Blog"
   },
   "MobilePopup": {
     "PlayerPopupTitle": "Mobile version in progress",

@@ -3,9 +3,12 @@ import imgEnjoy from "../../../assets/images/home/imgEnjoy.svg";
 import "./Main.scss";
 import "./mainMedia.scss";
 import Slider from "../Slider";
-import EasyLangLogo from "../../assets/EasyLang-logo.svg";
+// import EasyLangLogo from "../../assets/EasyLang-logo.svg";
+import EasyLangLogo from "../../assets/EasyLang-products.svg";
 import ReactHtmlParser from "react-html-parser";
 import MobilePopUp from "../../../components/MobilePopUp";
+import { Link } from "@reach/router";
+
 
 export default function Main(props) {
   const isMobile = props.isMobile;
@@ -64,19 +67,21 @@ export default function Main(props) {
                   className="download"
                   onClick={() => {
                     window.open(href);
-                    window.gtag("event", "Add Player' click", {
+                    window.gtag("event", "Main 'Free Start' Click", {
                       event_category: "Landing B. Page",
                     });
                   }}
               >
+              <span className="download__child">
                 {getLangText("FreeStart")}
+              </span>
               </button>
           ) : (
               <button
                   className="download"
                   onClick={() => {
                     setPlayerPopup(true);
-                    window.gtag("event", "Add Player' click", {
+                    window.gtag("event", "Main 'Free Start' Click", {
                       event_category: "Landing B. Page",
                     });
                   }}
@@ -166,21 +171,39 @@ export default function Main(props) {
           </div>
         </div>
       </section>
+
       <section className="slider">
         <Slider text={props.text} />
       </section>
+
+      <section className="blog">
+        <Link
+          to="/blog"
+          onClick={() => {
+            window.gtag("event", "Blog button click", {
+              event_category: "Landing B. Page",
+            });
+          }}
+        >
+          <button className="blog-btn" >
+            <span className="download__child">
+              {getLangText("Blog")}
+            </span>
+          </button>
+        </Link>
+      </section>
+
       <section className="products">
         <div className="products-item">
           <img src={EasyLangLogo} alt="EasyLangLogo" />
-          <p className="easy-way">{getLangText("BrowserExt")} </p>
-          <p className="relax-sub">{getLangText("BrowserExtDescrip1")}</p>{" "}
-          <br />
-          <p className="relax-sub" style={{ marginBottom: "48px" }}>
-            {getLangText("BrowserExtDescrip2")}
+          <p className="products-item__title">{getLangText("BrowserExt")} </p>
+          <p className="products-item__subs">
+            <p className="products-item__subtitle"> {getLangText("BrowserExtDescrip1")} </p>
+            <p className="products-item__subtitle"> {getLangText("BrowserExtDescrip2")} </p>
           </p>
           {!isMobile ? (
               <button
-                className="download"
+              className="download fullWidth"
                 onClick={() => {
                   window.open(
                     "https://chrome.google.com/webstore/detail/easylangapp-beta/cgelaojeiipaehoiiabkbickcpmpanel"
@@ -190,11 +213,13 @@ export default function Main(props) {
                   });
                 }}
               >
-                {getLangText("Add")}
+                <span className="download__child">
+                  {getLangText("Add")}
+                </span>
               </button>
               ) : (
               <button
-                className="download"
+                className="download fullWidth"
                 onClick={() => {
                   setExtensionPopup(true);
                   window.gtag("event", "Add Extension' click", {
@@ -202,20 +227,22 @@ export default function Main(props) {
                   });
                 }}
               >
-                {getLangText("Add")}
+                <span className="download__child">
+                  {getLangText("Add")}
+                </span>
               </button>
           )}
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />
-          <p className="easy-way">{getLangText("Player")}</p>{" "}
-          <p className="relax-sub">
-            <span> {getLangText("PlayerDescrip1")} </span>
-            <br /> <span>{getLangText("PlayerDescrip2")}</span>
+          <p className="products-item__title">{getLangText("Player")}</p>{" "}
+          <p className="products-item__subs">
+            <p className="products-item__subtitle"> {getLangText("PlayerDescrip1")} </p>
+            <p className="products-item__subtitle"> {getLangText("PlayerDescrip2")} </p>
           </p>
           {!isMobile ? (
             <button
-              className="download"
+              className="download fullWidth"
               onClick={() => {
                 window.open(href);
                 window.gtag("event", "Add Player' click", {
@@ -223,11 +250,13 @@ export default function Main(props) {
                 });
               }}
             >
+              <span className="download__child">
               {getLangText("Download")}
+              </span>
             </button>
           ) : (
             <button
-              className="download"
+                className="download fullWidth"
               onClick={() => {
                 setPlayerPopup(true);
                 window.gtag("event", "Add Player' click", {
@@ -235,20 +264,21 @@ export default function Main(props) {
                 });
               }}
             >
-              {getLangText("Download")}
+              <span className="download__child">
+                {getLangText("Download")}
+              </span>
             </button>
           )}
         </div>
         <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />
-          <p className="easy-way">{getLangText("Tutor")}</p>
-          <p className="relax-sub">
-            {" "}
-            <span> {getLangText("TutorDescrip1")} </span>
-            <br /> <span>{getLangText("TutorDescrip2")}</span>
+          <p className="products-item__title">{getLangText("Tutor")}</p>
+          <p className="products-item__subs">
+            <p className="products-item__subtitle"> {getLangText("TutorDescrip1")} </p>
+            <p className="products-item__subtitle"> {getLangText("TutorDescrip2")} </p>
           </p>
           <button
-            className="download"
+            className="download fullWidth"
             onClick={() => {
               window.open("https://easy4learn.com/login");
               window.gtag("event", "Add Tutor' click", {
@@ -256,8 +286,9 @@ export default function Main(props) {
               });
             }}
           >
-            {" "}
-            {getLangText("Start")}
+            <span className="download__child">
+              {getLangText("Start")}
+            </span>
           </button>
         </div>
       </section>
