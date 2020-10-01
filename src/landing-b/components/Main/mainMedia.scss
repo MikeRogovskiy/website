@@ -78,6 +78,12 @@
     .options-row-first{
         margin-top: 40px;
     };
+
+    .products {
+        &-item p{
+            font-size: 22px;
+        };
+    };
 };
 
 @media screen and (max-width: 750px){
@@ -139,7 +145,14 @@
 
     };
 
-    .options-row-first, .options-row-second, .products{
+    .products {
+        &-item p {
+            font-size: 16px;
+        };
+    };
+
+
+    .options-row-first, .options-row-second,{
         &-item, .options-item{
                 p{
                     font-size: 35px;

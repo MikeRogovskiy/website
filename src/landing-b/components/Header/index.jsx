@@ -81,7 +81,7 @@ export default function Header(props) {
                   href="#"
                   style={{ color: "#215599" }}
                 >
-                  FREE START
+                  Free start
                 </a>
               </div>
             </li>

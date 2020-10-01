@@ -3,6 +3,11 @@
     margin-top: -7%;
   }
 }
+@media screen and (max-width: 1100px) {
+    #footer-nav-bar_content-b {
+      padding: 40px 20px;
+    }
+}
 
 @media screen and (max-width: 870px) {
   #footer-nav-bar_content-b {
@@ -39,6 +44,7 @@
   }
   #footer-nav-bar-text {
     p {
+      text-align: center;
       font-size: 12px;
     }
   }

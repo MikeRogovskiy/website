@@ -5,6 +5,7 @@ import "./NavbarMedia.scss";
 import classNames from "classnames";
 import ReactHtmlParser from "react-html-parser";
 import StartBtn from "../Buttons/StartBtn";
+import Logo from '../../assets/images/navbar/logo.svg';
 
 export default class Navbar extends React.Component {
   constructor(props) {
@@ -149,6 +150,9 @@ export default class Navbar extends React.Component {
     const menuBtnClass = classNames("menu-btn", {
       "menu-btn_active": this.state.openMenu,
     });
+    const menuLogoClass = classNames("logo-light__img", {
+      "active": this.state.fixedBar,
+    });
     const menuMainClass = classNames("menu-main", {
       "menu-main_active": this.state.openMenu,
     });
@@ -198,7 +202,8 @@ export default class Navbar extends React.Component {
                       this.showStartBtn();
                     }}
                   >
-                    EasyLang
+                  <img className={menuLogoClass} src={Logo} alt="Logo E-lang"/>
+                  <span className="logo-light__text">Products</span>
                   </Link>
                 </div>
                 {this.props.noUseLangSelect || (

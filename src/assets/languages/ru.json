@@ -43,7 +43,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "BlogPage": {
@@ -82,7 +83,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "FooterNavBar": {
@@ -124,7 +126,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "NavBar": {
@@ -146,7 +149,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "ProductsPage": {
@@ -166,7 +170,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "ExtensionPage": {
@@ -198,7 +203,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "ExtensionInstructionPage": {
@@ -233,7 +239,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "PlayerPage": {
@@ -273,7 +280,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "PlayerAnimation": {
@@ -374,7 +382,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "PlansPage_b": {
@@ -402,7 +411,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
   "Landing": {
     "Title": "Учи английский легко! ",
@@ -439,7 +449,8 @@
 
     "PrivacyPolicy": "Политика конфиденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
   "MobilePopup": {
     "PlayerPopupTitle": "Мобильная версия плеера в разработке",
