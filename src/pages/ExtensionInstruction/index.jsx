@@ -172,7 +172,7 @@ export default class ExtensionInstruction extends Component {
           </div>
         </div>
         <div className="instruction_footer_background"></div>
-        <footer>
+        <footer className="footer">
           <FooterNavBar text={this.props.text} page={this.state.page}/>
         </footer>
       </div>
