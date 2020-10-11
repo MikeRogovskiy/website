@@ -176,7 +176,7 @@ export default function Main(props) {
         <Slider text={props.text} />
       </section>
 
-      <section className="blog">
+      {/* <section className="blog">
         <Link
           to="/blog"
           onClick={() => {
@@ -191,7 +191,7 @@ export default function Main(props) {
             </span>
           </button>
         </Link>
-      </section>
+      </section> */}
 
       <section className="products">
         <div className="products-item">
