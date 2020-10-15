@@ -176,7 +176,7 @@ export default function Main(props) {
         <Slider text={props.text} />
       </section>
 
-      <section className="blog">
+      {/* <section className="blog">
         <Link
           to="/blog"
           onClick={() => {
@@ -191,7 +191,7 @@ export default function Main(props) {
             </span>
           </button>
         </Link>
-      </section>
+      </section> */}
 
       <section className="products">
         <div className="products-item">
@@ -270,7 +270,7 @@ export default function Main(props) {
             </button>
           )}
         </div>
-        <div className="products-item">
+        {/* <div className="products-item">
           <img src={EasyLangLogo} alt="Easy Lang Logo" />
           <p className="products-item__title">{getLangText("Tutor")}</p>
           <p className="products-item__subs">
@@ -290,7 +290,7 @@ export default function Main(props) {
               {getLangText("Start")}
             </span>
           </button>
-        </div>
+        </div> */}
       </section>
     </div>
   );

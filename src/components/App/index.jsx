@@ -33,8 +33,9 @@ class App extends React.Component {
   getUserLanguageFromInputList() {
     const userLang = this.getUserLanguage;
     const langList = this.getLangList().map((l) => l.value);
+    const usedLang = localStorage.getItem('lang');
     if (langList.every((l) => l.value !== userLang)) {
-      return langList[0];
+      return usedLang || langList[0];
     }
     return userLang;
   }

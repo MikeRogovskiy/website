@@ -44,7 +44,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
 
   "BlogPage": {
@@ -84,7 +84,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
 
   "AboutUs": {
@@ -118,7 +118,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
 
   "FooterNavBar": {
@@ -170,7 +170,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
 
   "ExtensionPage": {
@@ -204,7 +204,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
 
   "ExtensionInstructionPage": {
@@ -239,7 +239,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
 
   "PlayerAnimation": {
@@ -338,7 +338,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
 
   "PlansPage": {
@@ -382,12 +382,12 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
   "Landing": {
     "Title": "Easy way <br/> To learn English!",
     "SubTitle": "Try EasyLang and enjoy learning",
-    "FreeStart": "Free Start",
+    "FreeStart": "Download",
     "Listen": "Listen",
     "ListenDescrip": "Listen and repeat phrases easily! <br /> Double subtitles for the video you love!",
     "Navigate": "Navigate",
@@ -420,7 +420,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
-    "Blog": "Blog"
+    "Blog": "Our Blog"
   },
   "MobilePopup": {
     "PlayerPopupTitle": "Mobile version in progress",
