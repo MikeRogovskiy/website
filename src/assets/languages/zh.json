@@ -118,7 +118,8 @@
   "FooterNavBar": {
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "NavBar": {
@@ -366,7 +367,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "PlansPage_b": {
@@ -394,13 +396,14 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "Landing": {
     "Title": "Easy way <br/> To learn English!",
     "SubTitle": "Try EasyLang and enjoy learning",
-    "FreeStart": "FREE START",
+    "FreeStart": "下载",
     "Listen": "Listen",
     "ListenDescrip": "Listen and repeat phrases easily! <br /> Double subtitles for the video you love!",
     "Navigate": "Navigate",
@@ -432,7 +435,8 @@
     
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
   "MobilePopup": {
     "PlayerPopupTitle": "Mobile version in progress",

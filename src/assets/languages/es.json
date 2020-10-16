@@ -402,7 +402,7 @@
   "Landing": {
     "Title": "Easy way <br/> To learn English!",
     "SubTitle": "Try EasyLang and enjoy learning",
-    "FreeStart": "FREE START",
+    "FreeStart": "Descargar",
     "Listen": "Listen",
     "ListenDescrip": "Listen and repeat phrases easily! <br /> Double subtitles for the video you love!",
     "Navigate": "Navigate",
@@ -434,7 +434,8 @@
     
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
   "MobilePopup": {
     "PlayerPopupTitle": "Mobile version in progress",
