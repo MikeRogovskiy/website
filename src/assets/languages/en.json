@@ -125,6 +125,7 @@
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
     "ContactUs": "Contact Us",
+    "Blog": "Our Blog",
     "linkInstagram": "https://www.instagram.com/easylang.app_ru/",
     "linkFB": "https://www.facebook.com/EasyLangGames/",
     "linkVK": "https://vk.com/public196837780"
@@ -139,7 +140,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "NotFoundPage": {
@@ -149,7 +151,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "ProductsPage": {
