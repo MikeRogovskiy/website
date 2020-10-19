@@ -44,7 +44,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "BlogPage": {
@@ -83,13 +84,15 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "FooterNavBar": {
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "AboutUs": {
@@ -120,7 +123,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "NavBar": {
@@ -132,7 +136,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "NotFoundPage": {
@@ -142,7 +147,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "ProductsPage": {
@@ -162,7 +168,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "ExtensionPage": {
@@ -195,7 +202,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "ExtensionInstructionPage": {
@@ -230,7 +238,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "PlayerAnimation": {
@@ -325,7 +334,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "PlansPage": {
@@ -368,7 +378,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "PlansPage_b": {
@@ -396,7 +407,8 @@
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us"
+    "ContactUs": "Contact Us",
+    "Blog": "Our Blog"
   },
 
   "Landing": {
