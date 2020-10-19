@@ -91,6 +91,7 @@
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
     "ContactUs": "Связаться с нами",
+    "Blog": "Блог",
     "linkInstagram": "https://www.instagram.com/easylang.app_ru/",
     "linkFB": "https://www.facebook.com/EasyLangGames/",
     "linkVK": "https://vk.com/public196837780"
@@ -139,7 +140,8 @@
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
-    "ContactUs": "Связаться с нами"
+    "ContactUs": "Связаться с нами",
+    "Blog": "Блог"
   },
 
   "NotFoundPage": {

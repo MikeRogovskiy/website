@@ -12,10 +12,10 @@ export default function Footer(props) {
   };
 
   return (
-    <div>
+    <>
       <footer className="footer">
         <FooterNavBar text={props.text} page={page}/>
       </footer>
-    </div>
+    </>
   );
 }
