@@ -78,7 +78,7 @@ export default class FooterNavBar extends Component {
   );
   footerNavBarContentB = (
     <div className="footer-nav-bar_links" id="landing-b-footer-nav-bar">
-        <div class="wrapper-landing">
+        <div className="wrapper-landing">
       <div id="footer-nav-bar_content-b">
 
         <div id="footer-nav-bar-text">
