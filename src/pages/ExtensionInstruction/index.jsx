@@ -7,7 +7,8 @@ import pickLanguageExample from "../../assets/images/extension-instruction/pickL
 import sectionStep1 from "../../assets/images/extension-instruction/sectionStep1.svg";
 import sectionStep2 from "../../assets/images/extension-instruction/sectionStep2.svg";
 import sectionStep3 from "../../assets/images/extension-instruction/sectionStep3.svg";
-import sectionStep4 from "../../assets/images/extension-instruction/sectionStep4.svg";
+import sectionStep4_1 from "../../assets/images/extension-instruction/sectionStep4-1.svg";
+import sectionStep4_2 from "../../assets/images/extension-instruction/sectionStep4-2.svg";
 
 import arrow from "../../assets/images/extension-instruction/arrow.svg";
 
@@ -156,13 +157,20 @@ export default class ExtensionInstruction extends Component {
                   </div>
                 </div>
 
-                <div className="step_section_main">
+                <div className="step_section_main last">
                   <img
-                    src={sectionStep4}
-                    style={{ bottom: "25px" }}
-                    alt="step4"
+                    src={sectionStep4_1}
+                    alt="play on computer"
                   />
+                  <span>
+                    {this.getLangText("4-StepLeftHeading-or")}
+                  </span>
+                    <img
+                      src={sectionStep4_2}
+                      alt="play on mobile"
+                    />
                 </div>
+
               </div>
             </div>
           </div>
