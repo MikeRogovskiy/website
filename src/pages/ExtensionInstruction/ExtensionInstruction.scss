@@ -254,6 +254,31 @@
           rgba(97, 120, 245, 0.1) 22.38%,
           rgba(25, 90, 169, 0.1) 82.85%
         );
+
+        .step_section_main.last {
+          margin: 0px auto ;
+          width: 240px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: space-between;
+
+          span {
+            margin: 20px 0px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: #333333;
+          }
+
+          img {
+            padding: 0;
+            width: 100%;
+            right: 0;
+          }
+        }
       }
 
       .step_section_header {
@@ -284,10 +309,17 @@
         color: #333333;
       }
 
-      .step_section_main img:nth-child(1) {
+      .step_section_main {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        height: 70%;
+        padding: 20px;
+      }
+
+      .step_section_main img {
         width: 85%;
-        padding-top: 60px;
-        padding-left: 80px;
         position: relative;
         right: 10px;
         z-index: 5;
