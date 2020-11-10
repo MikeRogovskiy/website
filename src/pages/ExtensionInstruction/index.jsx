@@ -134,8 +134,8 @@ export default class ExtensionInstruction extends Component {
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">3</span>
                     <h3>
-                      {this.getLangText("1-StepLeftHeading-c")}
-                      <br />
+                      {/* {this.getLangText("1-StepLeftHeading-c")}
+                      <br /> */}
                       {this.getLangText("2-StepLeftHeading-c")}
                     </h3>
                   </div>
