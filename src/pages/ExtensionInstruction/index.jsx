@@ -83,6 +83,7 @@ export default class ExtensionInstruction extends Component {
     return (
       <div className="instruction">
         <div className="instruction_container">
+          {/* ARROW top right */}
           {/* <div className="instruction_container_header">
             <HintArrow urlCondition={this.state.checkURL} />
 
@@ -93,10 +94,9 @@ export default class ExtensionInstruction extends Component {
 
           {this.state.checkURL !== true && this.state.extensionStartButton}
 
-          <div className="instruction_container_main"> 
+          <div className="instruction_container_main">
 
             <div className="instruction_container_main_step">
-              {/* ------------------------------------ */}
               <div className="step_section">
                 <div className="step_section_header">
                   <div className="step_section_header_text description">
@@ -130,7 +130,6 @@ export default class ExtensionInstruction extends Component {
                   <p>{this.getLangText("StepLeftHeading-with-3")}</p>
                 </div>
               </div>
-              {/* ----------------------------------- */}
 
               <div className="step_section">
                 <div className="step_section_header">
