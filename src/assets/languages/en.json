@@ -212,7 +212,7 @@
 
   "ExtensionInstructionPage": {
     "InstructionStartButton": "GET STARTED FREE",
-    "InstructionHeaderTitle": "Welcome to EasyLang!",
+    "InstructionHeaderTitle": "Welcome to eLang!",
     "1-InstructionParagraph-a": "Now you can translate words and sentences in context.",
     "2-InstructionParagraph-a": "Improve your skills with EasyLang!",
     "1-InstructionCardHeading-a": "Choose your language in the settings",
@@ -228,18 +228,31 @@
     "4-InstructionCardParagraph-b": "You can view history to go back to the source",
     "1-InstructionCardButton-b": "Sign up",
     "1-InstructionCardLink-b": "Sign in",
-    "1-StepLeftHeading-a": "Highlight and",
-    "2-StepLeftHeading-a": "translate words",
+    "1-StepLeftHeading-a": "Select a word to get a",
+    "2-StepLeftHeading-a": "quick translation ",
     "3-StepLeftHeading-a": "<span>Hello</span> dear friend!",
     "1-StepLeftHeading-c": "Save THE WORD",
-    "2-StepLeftHeading-c": "Save THE WORD",
+    "2-StepLeftHeading-c": "To the Vocabulary",
 
     "3-StepLeftHeading-c": "<span>Hello</span> dear friend!",
-    "1-StepLeftHeading-b": "TRANSLATE THE SENTENSE",
+    "1-StepLeftHeading-b": "Translate а full",
+    "2-StepLeftHeading-b": "sentence",
 
     "3-StepLeftHeading-b": "<span>Hello</span> dear friend!",
     "1-StepLeftHeading-d": "go to tutor",
     "4-StepLeftHeading-or": "or",
+
+    "StepLeftHeading-without-title": "WITHOUT REGISTRATION",
+    "StepLeftHeading-without-title-p2": "you get:",
+    "StepLeftHeading-with-title": "WITH REGISTRATION",
+    "StepLeftHeading-with-title-p2": "you get:",
+
+    "StepLeftHeading-without-1": "10 quick translations",
+    "StepLeftHeading-without-2": "YouTube (Repeat, Repeat slowly)",
+    "StepLeftHeading-without-3": "Netflix (Repeat, Repeat slowly)",
+    "StepLeftHeading-with-1": "50 quick translations",
+    "StepLeftHeading-with-2": "YouTube (Repeat, Repeat slowly)",
+    "StepLeftHeading-with-3": "Netflix (Repeat, Repeat slowly)",
 
     "PrivacyPolicy": "Privacy Policy",
     "AboutUs": "About Us",

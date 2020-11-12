@@ -83,19 +83,55 @@ export default class ExtensionInstruction extends Component {
     return (
       <div className="instruction">
         <div className="instruction_container">
-          <div className="instruction_container_header">
+          {/* <div className="instruction_container_header">
             <HintArrow urlCondition={this.state.checkURL} />
 
             <div className="instruction_container_header_title">
               <h1>{this.getLangText("InstructionHeaderTitle")}</h1>
             </div>
-          </div>
+          </div> */}
 
           {this.state.checkURL !== true && this.state.extensionStartButton}
 
-          <div className="instruction_container_main">
+          <div className="instruction_container_main"> 
 
             <div className="instruction_container_main_step">
+              {/* ------------------------------------ */}
+              <div className="step_section">
+                <div className="step_section_header">
+                  <div className="step_section_header_text description">
+                    <h3>
+                      {this.getLangText("StepLeftHeading-without-title")}
+                      <br/>
+                      {this.getLangText("StepLeftHeading-without-title-p2")}
+                    </h3>
+                  </div>
+                </div>
+                <div className="step_section_main description">
+                  <p>{this.getLangText("StepLeftHeading-without-1")}</p>
+                  <p>{this.getLangText("StepLeftHeading-without-2")}</p>
+                  <p>{this.getLangText("StepLeftHeading-without-3")}</p>
+                </div>
+              </div>
+
+              <div className="step_section">
+                <div className="step_section_header">
+                  <div className="step_section_header_text description">
+                    <h3>
+                      {this.getLangText("StepLeftHeading-with-title")}
+                      <br />
+                      {this.getLangText("StepLeftHeading-without-title-p2")}
+                    </h3>
+                  </div>
+                </div>
+                <div className="step_section_main description">
+                  <p>{this.getLangText("StepLeftHeading-with-1")}</p>
+                  <p>{this.getLangText("StepLeftHeading-with-2")}</p>
+                  <p>{this.getLangText("StepLeftHeading-with-3")}</p>
+                </div>
+              </div>
+              {/* ----------------------------------- */}
+
               <div className="step_section">
                 <div className="step_section_header">
                   <div className="step_section_header_text">
@@ -134,8 +170,8 @@ export default class ExtensionInstruction extends Component {
                   <div className="step_section_header_text">
                     <span className="step_section_header_num">3</span>
                     <h3>
-                      {/* {this.getLangText("1-StepLeftHeading-c")}
-                      <br /> */}
+                      {this.getLangText("1-StepLeftHeading-c")}
+                      <br />
                       {this.getLangText("2-StepLeftHeading-c")}
                     </h3>
                   </div>

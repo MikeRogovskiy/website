@@ -211,7 +211,7 @@
 
   "ExtensionInstructionPage": {
     "InstructionStartButton": "GET STARTED FREE",
-    "InstructionHeaderTitle": "Добро пожаловать в EasyLang!",
+    "InstructionHeaderTitle": "Добро пожаловать в eLang!",
     "1-InstructionParagraph-a": "Переводи слова и словосочетания в контексте",
     "2-InstructionParagraph-a": "Улучшай языковые навыки вместе с EasyLang",
     "1-InstructionCardHeading-a": "Выбери свой язык в настройках",
@@ -230,8 +230,8 @@
     "1-StepLeftHeading-a": "Выдели слово",
     "2-StepLeftHeading-a": "и получи перевод",
     "3-StepLeftHeading-a": "It’s such a <span>beautiful</span> life!",
-    "1-StepLeftHeading-c": "Сохрани новое слово в",
-    "2-StepLeftHeading-c": "Сохрани слово в Словарь",
+    "1-StepLeftHeading-c": "Сохрани новое слово",
+    "2-StepLeftHeading-c": "в Словарь",
     "3-StepLeftHeading-c": "It’s such a <span>beautiful</span> life!",
     "1-StepLeftHeading-b": "Выдели всё предложение",
     "2-StepLeftHeading-b": "и получи его перевод",
@@ -239,6 +239,18 @@
     "1-StepLeftHeading-d": "Повтори их с помощью",
     "2-StepLeftHeading-d": "игр на компьютере или телефоне",
     "4-StepLeftHeading-or": "или",
+
+    "StepLeftHeading-without-title": "Без регистрации",
+    "StepLeftHeading-without-title-p2": "у тебя есть:",
+    "StepLeftHeading-with-title": "с регистрацией",
+    "StepLeftHeading-with-title-p2": "у тебя есть:",
+
+    "StepLeftHeading-without-1": "10 быстрых переводов",
+    "StepLeftHeading-without-2": "Функция повтора и замедленного повтора в YouTube",
+    "StepLeftHeading-without-3": "Функция повтора и замедленного повтора в Netflix",
+    "StepLeftHeading-with-1": "50 быстрых переводов",
+    "StepLeftHeading-with-2": "Функция повтора и замедленного повтора в YouTube",
+    "StepLeftHeading-with-3": "Функция повтора и замедленного повтора в Netflix",
 
     "PrivacyPolicy": "Политика конфеденциальности",
     "AboutUs": "О нас",
