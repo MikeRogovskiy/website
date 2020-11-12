@@ -83,14 +83,14 @@ export default class ExtensionInstruction extends Component {
     return (
       <div className="instruction">
         <div className="instruction_container">
-          {/* ARROW top right */}
-          {/* <div className="instruction_container_header">
-            <HintArrow urlCondition={this.state.checkURL} />
+          <div className="instruction_container_header">
+            {/* ARROW top right */}
+            {/* <HintArrow urlCondition={this.state.checkURL} /> */}
 
             <div className="instruction_container_header_title">
               <h1>{this.getLangText("InstructionHeaderTitle")}</h1>
             </div>
-          </div> */}
+          </div>
 
           {this.state.checkURL !== true && this.state.extensionStartButton}
 
