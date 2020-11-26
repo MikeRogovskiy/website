@@ -42,7 +42,7 @@ export default class Privacy extends Component {
             In addition to these Terms of Use, EASYLANG SERVICE has established
             a Privacy Policy to explain how user information is collected and
             used by EASYLANG SERVICE. A copy of this Privacy Policy can be found
-            here: https://www.easy4learn.com/privacy/ and is incorporated by
+            here: https://easylang.app/privacy and is incorporated by
             reference into these Terms of Use. By accessing or using any of our
             Service, you are signifying your acknowledgement and agreement to
             EASYLANG SERVICE's Privacy Policy.
@@ -109,7 +109,7 @@ export default class Privacy extends Component {
             <li>
               collect or harvest any personally identifiable information from
               our Service including, without limitation, user names, passwords,
-              email addresses;
+              email addresses for communication purposes;
             </li>
             <li>
               solicit other users to join or become members of any commercial
@@ -129,7 +129,7 @@ export default class Privacy extends Component {
               extract usage data from any of our Service;
             </li>
             <li>
-              encourage conduct that violates any loca law, either civil or
+              encourage conduct that violates any local law, either civil or
               criminal, or impersonate another user, person, or entity (e.g.,
               using another person's Membership (as defined in Section B)
               without permission, etc.);
@@ -148,6 +148,14 @@ export default class Privacy extends Component {
             You agree to cooperate fully with EASYLANG SERVICE to investigate
             any suspected or actual activity that is in breach of these Terms of
             Use.
+          </p>
+          <p>
+            You agree that your cookies are stored by EASYLANG SERVICE, including
+            by third parties, for the purpose of statistical analysis of user behavior
+            and advertising optimization. Cookies are a small fragment of data sent by
+            the web server and stored on the user’s computer. The web client or web browser
+            sends the request to the web server in an HTTP format every time you attempt
+            to open the page of the website in question.
           </p>
           <br />
           <h2>User Registration</h2>
@@ -168,7 +176,7 @@ export default class Privacy extends Component {
             your Membership. You are solely responsible for the activity that
             occurs under your Membership, whether or not you have authorized the
             activity. You agree to notify us immediately at
-            https://www.easy4learn.com/contact/ of any breach of security or
+            https://easylang.app/contact of any breach of security or
             unauthorized use of your Membership.
           </p>
           <br />
